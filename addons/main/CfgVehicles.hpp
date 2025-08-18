@@ -13,7 +13,7 @@ class CfgVehicles {
     // Base BLUFOR Soldier
     class CLASS(Base_BLUFOR): SoldierWB {
         dlc = QUOTE(PREFIX);
-        author = CSTRING(Author);
+        author = "Synixe Contractors";
         displayName = "Synixe BLUFOR Base Soldier";
         faction = "";
         scope = 1;
@@ -45,7 +45,7 @@ class CfgVehicles {
     // Base OPFOR Soldier
     class CLASS(Base_OPFOR): SoldierEB {
         dlc = QUOTE(PREFIX);
-        author = CSTRING(Author);
+        author = "Synixe Contractors";
         displayName = "Synixe OPFOR Base Soldier";
         faction = "";
         scope = 1;
@@ -77,7 +77,7 @@ class CfgVehicles {
     // Base INDEP Soldier
     class CLASS(Base_INDEP): SoldierGB {
         dlc = QUOTE(PREFIX);
-        author = CSTRING(Author);
+        author = "Synixe Contractors";
         displayName = "Synixe INDEP Base Soldier";
         faction = "";
         scope = 1;
