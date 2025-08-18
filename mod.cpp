@@ -1,0 +1,12 @@
+name = "Synixe Factrions";
+picture = "logo_ca.paa";
+actionName = "GitHub";
+action = "https://github.com/SynixeContractors/Factions";
+description = "Synixe Factions provides a variety of factions for use in our contracts.";
+logo = "logo_ca.paa";
+logoOver = "logo_ca.paa";
+tooltip = "Synixe Factions";
+tooltipOwned = "Synixe Factions Owned";
+overview = "Synixe Factions provides a variety of factions for use in our contracts.";
+author = "Synixe Contractors";
+overviewPicture = "logo_ca.paa";

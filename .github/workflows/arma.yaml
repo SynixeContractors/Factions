@@ -1,0 +1,24 @@
+name: arma
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup HEMTT
+        uses: arma-actions/hemtt@v1
+
+      - name: Build Mod
+        run: hemtt release
+
+      - name: Upload
+        uses: actions/upload-artifact@v4
+        with:
+          name: factions.zip
+          path: releases/synixefactions-latest.zip

@@ -1,0 +1,25 @@
+name = "Synixe Factions"
+prefix = "factions"
+mainprefix = "synixe"
+
+[hemtt.release]
+folder = "synixe_factions"
+
+[version]
+git_hash = 0
+
+[hemtt.launch.default]
+dlc = ["ws", "rf"]
+workshop = [
+    "450814997", # CBA_A3
+    "463939057", # ACE3
+    "2369477168", # ADT
+    "1779063631", # Zeus Enhanced
+]
+
+[hemtt.launch.aegis]
+extends = "default"
+workshop = [
+    "2538332070", # Aegis - Development
+    "2538339575", # Atlas - Development
+]
