@@ -21,4 +21,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: factions.zip
-          path: releases/synixefactions-latest.zip
+          path: releases/synixe_factions-latest.zip
