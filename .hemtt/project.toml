@@ -2,21 +2,33 @@ name = "Synixe Factions"
 prefix = "synixe_factions"
 mainprefix = "s"
 
-[version]
-git_hash = 0
-
 [hemtt.launch.default]
 dlc = ["ws", "rf"]
 workshop = [
-    "450814997", # CBA_A3
-    "463939057", # ACE3
-    "3499977893", # ADT
-    "1779063631", # Zeus Enhanced
-]
-
-[hemtt.launch.aegis]
-extends = "default"
-workshop = [
-    "2538332070", # Aegis - Development
-    "2538339575", # Atlas - Development
+    "factions:@3den_attributes_fast_load",
+    "factions:@ace_realisticdispersion",
+    "factions:@cba_a3",
+    "factions:@synixe_mgp",
+    "factions:@ace",
+    "factions:@ace_tracers",
+    "factions:@cba_rf",
+    "factions:@low_visibility_attir",
+    "factions:@rf",
+    "factions:@theseus_services",
+    "factions:@ace_noactionmenu",
+    "factions:@aegis",
+    "factions:@cba_ws",
+    "factions:@mu",
+    "factions:@synixe_armoury",
+    "factions:@toh_characters",
+    "factions:@ace_nocrosshair",
+    "factions:@aegis_atlas",
+    "factions:@generic_civilian_clothing",
+    "factions:@oteden",
+    "factions:@synixe_contractors",
+    "factions:@ws",
+    "factions:@ace_particles",
+    "factions:@aegis_opposing_forces",
+    "factions:@gorkas",
+    "factions:@synixe_standardization",
 ]
