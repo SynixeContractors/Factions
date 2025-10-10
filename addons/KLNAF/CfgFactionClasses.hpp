@@ -12,24 +12,24 @@ class CfgFactionClasses
 
 class CfgEditorSubcategories 
 {
-    class SYN_KLNAF_Garrison
+    class SYN_KLNAF_garrison
     {
-            displayName = "KLNAF (Army - Garrison)";
+            displayName = "Men (Army - Garrison)";
     };
        
     class SYN_KLNAF_army
     {
-            displayName = "KLNAF (Army - Combat)";
+            displayName = "Men (Army - Combat)";
     };
     
     class SYN_KLNAF_armyNight
     {
-            displayName = "KLNAF (Army - Combat (Night))";
+            displayName = "Men (Army - Combat (Night))";
     };
 
-    class SYN_KLNAF_SOF 
+    class SYN_KLNAF_sof 
     {
-            displayName = "KLNAF (Special Forces)";
+            displayName = "Men (Special Forces)";
     };
     
 }; 
