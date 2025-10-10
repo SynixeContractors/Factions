@@ -216,11 +216,6 @@ class CLASS(SYN_KLNAF_Base): CLASS(Base_OPFOR) {
         linkedItems[] = {"V_Safety_orange_F", "H_Headset_Tactical_grn", "synixe_mgp_f_tactical", DEFAULT_ITEMS_RADIO};
         respawnLinkedItems[] = {"V_Safety_orange_F", "H_Headset_Tactical_grn", "synixe_mgp_f_tactical", DEFAULT_ITEMS_RADIO};
         uniformClass = "Atlas_U_E_SF_CombatUniformNCU_02_F";
-<<<<<<< Updated upstream
-=======
-<<<<<<< Updated upstream
-=======
->>>>>>> Stashed changes
         backpack = QCLASS(SYN_KLNAF_Pack_ToolKit);
 
     };
@@ -317,48 +312,6 @@ class CLASS(SYN_KLNAF_Base): CLASS(Base_OPFOR) {
         linkedItems[] = {"V_Rangemaster_belt", "H_Beret_EAF_01_green", "synixe_mgp_f_tactical", DEFAULT_ITEMS_RADIO};
         respawnLinkedItems[] = {"V_Rangemaster_belt", "H_Beret_EAF_01_green", "synixe_mgp_f_tactical", DEFAULT_ITEMS_RADIO};
         uniformClass = "Atlas_U_E_SF_CombatUniformNCU_02_F";
-<<<<<<< Updated upstream
-
-    };
-
-        class CLASS(SYN_O_KLNAF_A_Parade): CLASS(SYN_KLNAF_Base) {
-
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "Parade Dress";
-        editorSubcategory = "SYN_KLNAF_Garrison";
-        editorPreview = "";
-        icon = "iconMan";
-
-        weapons[] = {"Throw", "Put"};
-        respawnWeapons[] = {"Throw", "Put"};
-        magazines[] = {};
-        respawnMagazines[] = {};
-        linkedItems[] = {"H_ParadeDressCap_01_LDF_F", DEFAULT_ITEMS_RADIO};
-        respawnLinkedItems[] = {"H_ParadeDressCap_01_LDF_F", DEFAULT_ITEMS_RADIO};
-        uniformClass = "U_I_E_ParadeUniform_01_LDF_F";
-
-    };
-
-        class CLASS(SYN_O_KLNAF_A_Parade_2): CLASS(SYN_KLNAF_Base) {
-
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "Parade Dress (Decorated)";
-        editorSubcategory = "SYN_KLNAF_Garrison";
-        editorPreview = "";
-        icon = "iconMan";
-
-        weapons[] = {"Throw", "Put"};
-        respawnWeapons[] = {"Throw", "Put"};
-        magazines[] = {};
-        respawnMagazines[] = {};
-        linkedItems[] = {"H_ParadeDressCap_01_LDF_F", DEFAULT_ITEMS_RADIO};
-        respawnLinkedItems[] = {"H_ParadeDressCap_01_LDF_F", DEFAULT_ITEMS_RADIO};
-        uniformClass = "U_I_E_ParadeUniform_01_LDF_decorated_F";
-=======
->>>>>>> Stashed changes
->>>>>>> Stashed changes
 
     };
 

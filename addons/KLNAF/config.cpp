@@ -29,7 +29,6 @@ class CfgPatches {
             QCLASS(SYN_O_KLNAF_A_Logistics),
             QCLASS(SYN_O_KLNAF_A_Logistics_2),
             QCLASS(SYN_O_KLNAF_B_Machinegunner),
-<<<<<<< Updated upstream
             QCLASS(SYN_O_KLNAF_A_MP),
             QCLASS(SYN_O_KLNAF_A_Soldier),
             QCLASS(SYN_O_KLNAF_A_Parade),
@@ -37,16 +36,7 @@ class CfgPatches {
             QCLASS(SYN_O_KLNAF_B_Crewman),
             QCLASS(SYN_O_KLNAF_B_Heli_Pilot),
             QCLASS(SYN_O_KLNAF_B_Heli_Crew),
-=======
-<<<<<<< Updated upstream
-=======
-            QCLASS(SYN_O_KLNAF_A_MP),
-            QCLASS(SYN_O_KLNAF_A_Soldier),
-            QCLASS(SYN_O_KLNAF_B_Crewman),
-            QCLASS(SYN_O_KLNAF_B_Heli_Pilot),
-            QCLASS(SYN_O_KLNAF_B_Heli_Crew),
->>>>>>> Stashed changes
->>>>>>> Stashed changes
+            
         };
         weapons[] = {
             QCLASS(SYN_KLNAF_F2000_F),
