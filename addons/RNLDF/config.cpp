@@ -31,8 +31,6 @@ class CfgPatches {
             QCLASS(SYN_O_RNLDF_B_Machinegunner),
             QCLASS(SYN_O_RNLDF_A_MP),
             QCLASS(SYN_O_RNLDF_A_Soldier),
-            QCLASS(SYN_O_RNLDF_A_Parade),
-            QCLASS(SYN_O_RNLDF_A_Parade_2),
             QCLASS(SYN_O_RNLDF_B_Crewman),
             QCLASS(SYN_O_RNLDF_B_Heli_Pilot),
             QCLASS(SYN_O_RNLDF_B_Heli_Crew),

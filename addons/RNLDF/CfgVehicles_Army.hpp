@@ -315,44 +315,6 @@ class CLASS(SYN_RNLDF_Base): CLASS(Base_OPFOR) {
 
     };
 
-        class CLASS(SYN_O_RNLDF_A_Parade): CLASS(SYN_RNLDF_Base) {
-
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "Parade Dress";
-        editorSubcategory = "SYN_RNLDF_Garrison";
-        editorPreview = "";
-        icon = "iconMan";
-
-        weapons[] = {"Throw", "Put"};
-        respawnWeapons[] = {"Throw", "Put"};
-        magazines[] = {};
-        respawnMagazines[] = {};
-        linkedItems[] = {"H_ParadeDressCap_01_AAF_F", DEFAULT_ITEMS_RADIO};
-        respawnLinkedItems[] = {"H_ParadeDressCap_01_AAF_F", DEFAULT_ITEMS_RADIO};
-        uniformClass = "U_I_ParadeUniform_01_AAF_F";
-
-    };
-
-        class CLASS(SYN_O_RNLDF_A_Parade_2): CLASS(SYN_RNLDF_Base) {
-
-        scope = 2;
-        scopeCurator = 2;
-        displayName = "Parade Dress (Decorated)";
-        editorSubcategory = "SYN_RNLDF_Garrison";
-        editorPreview = "";
-        icon = "iconMan";
-
-        weapons[] = {"Throw", "Put"};
-        respawnWeapons[] = {"Throw", "Put"};
-        magazines[] = {};
-        respawnMagazines[] = {};
-        linkedItems[] = {"H_ParadeDressCap_01_AAF_F", DEFAULT_ITEMS_RADIO};
-        respawnLinkedItems[] = {"H_ParadeDressCap_01_AAF_F", DEFAULT_ITEMS_RADIO};
-        uniformClass = "U_I_ParadeUniform_01_AAF_decorated_F";
-
-    };
-
 // Combat load //
     class CLASS(SYN_O_RNLDF_B_Officer): CLASS(SYN_RNLDF_Base) {
 
@@ -446,8 +408,8 @@ class CLASS(SYN_RNLDF_Base): CLASS(Base_OPFOR) {
         respawnWeapons[] = {"SYN_RNLDF_AUG_HAMR","Aegis_hgun_P320_black_F", "Throw", "Put"};
         magazines[] = {R9("30Rnd_556x45_AUG_Mag_F"),R4("17Rnd_9x21_Mag"), R2("SmokeShell"), R2("HandGrenade")};
         respawnMagazines[] = {R9("30Rnd_556x45_AUG_Mag_F"),R4("17Rnd_9x21_Mag"), R2("SmokeShell"), R2("HandGrenade")};
-        linkedItems[] = {"V_CarrierRigKBT_01_heavy_EAF_F", "Aegis_H_Helmet_Virtus_Cover_wdl_F", "synixe_mgp_f_tactical", DEFAULT_ITEMS_RADIO};
-        respawnLinkedItems[] = {"V_CarrierRigKBT_01_heavy_EAF_F", "Aegis_H_Helmet_Virtus_Cover_wdl_F", "synixe_mgp_f_tactical", DEFAULT_ITEMS_RADIO};
+        linkedItems[] = {"Aegis_V_CarrierRigKBT_01_recon_EAF_F", "Aegis_H_Helmet_Virtus_Cover_wdl_F", "synixe_mgp_f_tactical", DEFAULT_ITEMS_RADIO};
+        respawnLinkedItems[] = {"Aegis_V_CarrierRigKBT_01_recon_EAF_F", "Aegis_H_Helmet_Virtus_Cover_wdl_F", "synixe_mgp_f_tactical", DEFAULT_ITEMS_RADIO};
         uniformClass = "Atlas_U_CombatUniformNCU_01_mcam_wdl_F";
         backpack = QCLASS(SYN_RNLDF_Pack_Engineer);
 
@@ -567,8 +529,8 @@ class CLASS(SYN_RNLDF_Base): CLASS(Base_OPFOR) {
 
         weapons[] = {"SYN_RNLDF_AUG_HAMR", "Aegis_hgun_P320_black_F", "launch_I_Titan_short_F", "Throw", "Put"};
         respawnWeapons[] = {"SYN_RNLDF_AUG_HAMR","Aegis_hgun_P320_black_F", "launch_I_Titan_short_F", "Throw", "Put"};
-        magazines[] = {R9("30Rnd_556x45_AUG_Mag_F"),R4("17Rnd_9x21_Mag"), "Vorona_HEAT", R2("SmokeShell"), R2("HandGrenade")};
-        respawnMagazines[] = {R9("30Rnd_556x45_AUG_Mag_F"),R4("17Rnd_9x21_Mag"), "Vorona_HEAT", R2("SmokeShell"), R2("HandGrenade")};
+        magazines[] = {R9("30Rnd_556x45_AUG_Mag_F"),R4("17Rnd_9x21_Mag"), "Titan_AT", R2("SmokeShell"), R2("HandGrenade")};
+        respawnMagazines[] = {R9("30Rnd_556x45_AUG_Mag_F"),R4("17Rnd_9x21_Mag"), "Titan_AT", R2("SmokeShell"), R2("HandGrenade")};
         linkedItems[] = {"Aegis_V_CarrierRigKBT_01_recon_EAF_F", "Aegis_H_Helmet_Virtus_Cover_wdl_F", "synixe_mgp_f_tactical", "Aegis_Goggles_Cover_grn_F", DEFAULT_ITEMS_RADIO};
         respawnLinkedItems[] = {"Aegis_V_CarrierRigKBT_01_recon_EAF_F", "Aegis_H_Helmet_Virtus_Cover_wdl_F", "synixe_mgp_f_tactical", "Aegis_Goggles_Cover_grn_F", DEFAULT_ITEMS_RADIO};
         uniformClass = "Atlas_U_CombatUniformNCU_02_mcam_wdl_F";
