@@ -38,13 +38,13 @@ class CfgPatches {
             QCLASS(SYN_O_KLNAF_B_Heli_Crew),
         };
         weapons[] = {
-            QCLASS(SYN_F2000_F),
-            QCLASS(SYN_F2000_VRCO),
-            QCLASS(SYN_F2000_Holo),
-            QCLASS(SYN_F2000_GL_F),
-            QCLASS(SYN_F2000_GL_Holo),
-            QCLASS(SYN_Minimi_F),
-            QCLASS(SYN_HK417_DMS),
+            QCLASS(SYN_KLNAF_F2000_F),
+            QCLASS(SYN_KLNAF_F2000_VRCO),
+            QCLASS(SYN_KLNAF_F2000_Holo),
+            QCLASS(SYN_KLNAF_F2000_GL_F),
+            QCLASS(SYN_KLNAF_F2000_GL_Holo),
+            QCLASS(SYN_KLNAF_Minimi_F),
+            QCLASS(SYN_KLNAF_HK417_DMS),
         };
 
         requiredVersion = REQUIRED_VERSION;
