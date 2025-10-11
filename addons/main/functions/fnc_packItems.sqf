@@ -62,4 +62,36 @@ switch (_name) do {
             ["APERSMine_Range_Mag", 4]
         ]
     };
+
+    case "maaws_ammo": {
+        [
+            ["MRAWS_HEAT55_F", 2],
+            ["MRAWS_HE_F", 1]
+        ]
+    };
+
+    case "titan_aa": {
+        [
+            ["Titan_AA", 2]
+        ]
+    };
+
+    case "titan_at": {
+        [
+            ["Titan_AT", 2]
+        ]
+    };
+
+    case "t2_negev_ammo": {
+        [
+            ["ACE_150Rnd_762x54_Box_tracer_red", 3]
+        ]
+    };
+
+    case "t2_hk121_ammo": {
+        [
+            ["ACE_150Rnd_93x64_Mag_red", 3]
+        ]
+    };
+    
 };
