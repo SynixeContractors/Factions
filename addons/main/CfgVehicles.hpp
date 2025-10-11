@@ -11,7 +11,7 @@ class CfgVehicles {
     };
 
     // Base BLUFOR Soldier
-    class CLASS(Base_BLUFOR): SoldierWB {
+    class GCLASS(Base_BLUFOR): SoldierWB {
         dlc = QUOTE(PREFIX);
         author = "Synixe Contractors";
         displayName = "Synixe BLUFOR Base Soldier";
@@ -43,7 +43,7 @@ class CfgVehicles {
     };
 
     // Base OPFOR Soldier
-    class CLASS(Base_OPFOR): SoldierEB {
+    class GCLASS(Base_OPFOR): SoldierEB {
         dlc = QUOTE(PREFIX);
         author = "Synixe Contractors";
         displayName = "Synixe OPFOR Base Soldier";
@@ -75,7 +75,7 @@ class CfgVehicles {
     };
 
     // Base INDEP Soldier
-    class CLASS(Base_INDEP): SoldierGB {
+    class GCLASS(Base_INDEP): SoldierGB {
         dlc = QUOTE(PREFIX);
         author = "Synixe Contractors";
         displayName = "Synixe INDEP Base Soldier";
@@ -105,4 +105,6 @@ class CfgVehicles {
         magazines[] = {};
         respawnMagazines[] = {};
     };
+    
+    // TODO base civilian (if needed)
 };

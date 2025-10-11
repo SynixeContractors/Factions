@@ -10,6 +10,7 @@
 
 // Macro
 #define MACRO_SENSITIVITY sensitivity = 6
+#define BASE_CLASSES [QGCLASS(Base_BLUFOR), QGCLASS(Base_OPFOR), QGCLASS(Base_INDEP), QGCLASS(Base_Civilian)]
 
 // Main
 
@@ -65,8 +66,11 @@
     }
 
 // Class
-#define CLASS(var1) DOUBLES(PREFIX,var1)
-#define QCLASS(var1) QUOTE(DOUBLES(PREFIX,var1))
+#define GCLASS(var1) DOUBLES(PREFIX,var1)
+#define QGCLASS(var1) QUOTE(DOUBLES(PREFIX,var1))
+
+#define CLASS(var1) TRIPLES(PREFIX,COMPONENT,var1)
+#define QCLASS(var1) QUOTE(TRIPLES(PREFIX,COMPONENT,var1))
 
 // Preivew
 #define PREVIEW(var1) editorPreview = QPATHTOF(previews\DOUBLES(PREFIX,var1).jpg)
