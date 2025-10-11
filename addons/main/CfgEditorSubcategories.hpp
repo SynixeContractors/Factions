@@ -1,9 +1,9 @@
 class CfgEditorSubcategories {
-    class GCLASS(garrison) {
+    class GCLASS(army_garrison) {
             displayName = "Men (Army - Garrison)";
     };
-       
-    class GCLASS(army) {
+
+    class GCLASS(army_combat) {
             displayName = "Men (Army - Combat)";
     };
 

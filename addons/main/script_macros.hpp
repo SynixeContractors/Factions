@@ -69,8 +69,15 @@
 #define GCLASS(var1) DOUBLES(PREFIX,var1)
 #define QGCLASS(var1) QUOTE(DOUBLES(PREFIX,var1))
 
-#define CLASS(var1) TRIPLES(PREFIX,COMPONENT,var1)
-#define QCLASS(var1) QUOTE(TRIPLES(PREFIX,COMPONENT,var1))
+#define PCLASS(var1) TRIPLES(PREFIX,COMPONENT,var1)
+#define QPCLASS(var1) QUOTE(TRIPLES(PREFIX,COMPONENT,var1))
+
+#ifdef SUBCOMPONENT
+#define CLASS(var1) DOUBLES(PCLASS(SUBCOMPONENT),var1)
+#else
+#define CLASS(var1) PCLASS(var1)
+#endif
+#define QCLASS(var1) QUOTE(CLASS(var1))
 
 // Preivew
 #define PREVIEW(var1) editorPreview = QPATHTOF(previews\DOUBLES(PREFIX,var1).jpg)

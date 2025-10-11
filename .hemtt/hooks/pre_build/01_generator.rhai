@@ -226,9 +226,6 @@ headgearList[] = {};
                 "Rifleman" => #{
                     displayName: "Rifleman",
                 },
-                "RiflemanLight" => #{
-                    displayName: "Rifleman (Light)",
-                },
                 "RiflemanAT" => #{
                     displayName: "Rifleman (AT)",
                     icon: "iconManAT",
@@ -253,11 +250,6 @@ headgearList[] = {};
                     icon: "iconManMG",
                     role: "MachineGunner",
                 },
-                "AutoriflemanLight" => #{
-                    displayName: "Autorifleman (Light)",
-                    icon: "iconManMG",
-                    role: "MachineGunner",
-                },
                 "Machinegunner" => #{
                     displayName: "Machinegunner",
                     icon: "iconManMG",
@@ -268,19 +260,8 @@ headgearList[] = {};
                     icon: "iconManRecon",
                     role: "Marksman",
                 },
-                "MarksmanLight" => #{
-                    displayName: "Marksman (Light)",
-                    icon: "iconManRecon",
-                    role: "Marksman",
-                },
                 "Medic" => #{
                     displayName: "Medic",
-                    icon: "iconManMedic",
-                    role: "Combat Life Saver",
-                    attendant: 1,
-                },
-                "MedicLight" => #{
-                    displayName: "Medic (Light)",
                     icon: "iconManMedic",
                     role: "Combat Life Saver",
                     attendant: 1,
