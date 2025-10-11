@@ -34,15 +34,23 @@ class CfgPatches {
             QCLASS(SYN_O_RNLDF_B_Crewman),
             QCLASS(SYN_O_RNLDF_B_Heli_Pilot),
             QCLASS(SYN_O_RNLDF_B_Heli_Crew),
+            
         };
         weapons[] = {
-            QCLASS(SYN_F2000_F),
-            QCLASS(SYN_F2000_VRCO),
-            QCLASS(SYN_F2000_Holo),
-            QCLASS(SYN_F2000_GL_F),
-            QCLASS(SYN_F2000_GL_Holo),
-            QCLASS(SYN_Minimi_F),
-            QCLASS(SYN_HK417_DMS),
+            QCLASS(SYN_RNLDF_AUG_F),
+            QCLASS(SYN_RNLDF_AUG_HAMR),
+            QCLASS(SYN_RNLDF_AUG_Holo),
+            QCLASS(SYN_RNLDF_AUG_GL),
+            QCLASS(SYN_RNLDF_AUG_GL_HAMR),
+            QCLASS(SYN_RNLDF_Negev_F),
+            QCLASS(SYN_RNLDF_Negev_HAMR),
+            QCLASS(SYN_RNLDF_SR25_F),
+            QCLASS(SYN_RNLDF_SR25_AMS),
+            QCLASS(SYN_RNLDF_HK121_F),
+            QCLASS(SYN_RNLDF_HK121_MRCO),
+            QCLASS(SYN_RNLDF_SMG_F),
+            QCLASS(SYN_RNLDF_SMG_Holo),
+
         };
 
         requiredVersion = REQUIRED_VERSION;
