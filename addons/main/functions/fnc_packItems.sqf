@@ -25,5 +25,10 @@ switch (_name) do {
             ["ACE_tourniquet", 4],
             ["ACE_bodyBag", 1]
         ]
+    };
+    case "t2_maintainer": {
+        [
+            ["ToolKit", 1]
+        ]
     }
 };
