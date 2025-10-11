@@ -6,10 +6,9 @@ mainprefix = "s"
 dlc = ["ws", "rf"]
 workshop = [
     "3499977893", # ADT
-    "450814997", # CBA A3
     "factions:@3den_attributes_fast_load",
     "factions:@ace_realisticdispersion",
-    # "factions:@cba_a3",
+    "factions:@cba_a3",
     "factions:@synixe_mgp",
     "factions:@ace",
     "factions:@ace_tracers",
