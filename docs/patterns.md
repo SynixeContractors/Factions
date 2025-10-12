@@ -10,9 +10,9 @@ Uniform: HEX
 
 ## Royal Nyrland Defense Force
 
-Uniform: MTP-W
-Primary: AUR-90 / AUG
-Secondary: Glock 17
-MG: HK121
-AR: Negev
-DMR: SR25 / M110
+Uniform: MTP-W  
+Primary: AUR-90 / AUG  
+Secondary: Glock 17  
+MG: HK121  
+AR: Negev  
+DMR: SR25 / M110  
