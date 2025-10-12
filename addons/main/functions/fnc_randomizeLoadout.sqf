@@ -81,7 +81,6 @@ if (_cache isEqualTo []) exitWith {true};
 if (is3DEN) then {
     _unit spawn {
         sleep 0.1;
-        systemChat format ["Saving loadout of %1", get3DENEntityID _this];
         save3DENInventory [get3DENEntityID _this];
     };
 };
