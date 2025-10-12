@@ -477,6 +477,11 @@ respawnLinkedItems[] = {};
                     icon: "iconManRecon",
                     role: "Marksman",
                 },
+                "Sniper" => #{
+                    displayName: "Sniper",
+                    icon: "iconManRecon",
+                    role: "Marksman",
+                },
                 "Medic" => #{
                     displayName: "Medic",
                     icon: "iconManMedic",
