@@ -14,8 +14,6 @@ if (_cache isEqualTo []) exitWith {true};
 
 (_unit call CBA_fnc_getLoadout) params ["_loadout", "_extendedInfo"];
 
-diag_log "Adding magazine";
-
 {
     private _weaponIndex = _x;
     private _weaponSlot = _loadout select _x;

@@ -125,6 +125,14 @@ fn weapon(name, value) {
                     ret += "{},";
                 }
             }
+            for magazine in ["loadedPrimary", "loadedSecondary"] {
+                if magazine in data {
+                    let mag = data[magazine];
+                    ret += "\"" + mag + "\",";
+                } else {
+                    ret += "\"\",";
+                }
+            }
             ret += "},";
         } else {
             ret += "{\"" + weapon + "\"," + data;
@@ -294,7 +302,7 @@ headgearList[] = {};
         "Secondary" => {
             return weapon("secondary", args);
         }
-        "Launcher" => {
+        "Launchers" => {
             return weapon("launcher", args);
         }
         "Headgear" => {
