@@ -239,6 +239,25 @@ headgearList[] = {};
                     icon: "iconManAT",
                     role: "MissileSpecialist",
                 },
+                "RiflemanAA" => #{
+                    displayName: "Missile Specialist (AA)",
+                    icon: "iconManAT",
+                    role: "MissileSpecialist",
+                },
+                "RiflemanHAT" => #{
+                    displayName: "Missile Specialist (AT)",
+                    icon: "iconManAT",
+                    role: "MissileSpecialist",
+                },
+                "RadioOperator" => #{
+                    displayName: "Radio Operator",
+                },
+                "SquadLeader" => #{
+                    displayName: "Squad Leader",
+                },
+                "TeamLeader" => #{
+                    displayName: "Team Leader",
+                },
                 "Demolitions" => #{
                     displayName: "Demolitions",
                     icon: "iconManEngineer",
@@ -253,6 +272,21 @@ headgearList[] = {};
                     engineer: 1,
                     canDeactivateMines: 1,
                 },
+                "Maintainer" => #{
+                    displayName: "Maintainer",
+                    icon: "iconManEngineer",
+                    role: "Sapper",
+                    engineer: 1,
+                },
+                "Worker" => #{
+                    displayName: "Worker",
+                },
+                "Crewman" => #{
+                    displayName: "Crewman",
+                },
+                "HeliPilot" => #{
+                    displayName: "Helicopter Pilot",
+                },
                 "Autorifleman" => #{
                     displayName: "Autorifleman",
                     icon: "iconManMG",
@@ -262,6 +296,9 @@ headgearList[] = {};
                     displayName: "Machinegunner",
                     icon: "iconManMG",
                     role: "MachineGunner",
+                },
+                "AsstMachinegunner" => #{
+                    displayName: "Asst. Machinegunner",
                 },
                 "Marksman" => #{
                     displayName: "Marksman",

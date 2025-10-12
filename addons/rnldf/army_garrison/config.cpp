@@ -2,7 +2,7 @@
 
 class CfgPatches {
     class ADDON {
-        name = QUOTE(COMPONENT);
+        name = QUOTE(DOUBLES(COMPONENT,SUBCOMPONENT));
         units[] = {};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
@@ -12,6 +12,4 @@ class CfgPatches {
     };
 };
 
-#include "CfgEventHandlers.hpp"
 #include "CfgVehicles.hpp"
-#include "CfgEditorSubcategories.hpp"
