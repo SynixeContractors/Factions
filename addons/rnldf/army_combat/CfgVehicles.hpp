@@ -16,9 +16,9 @@ class CfgVehicles {
 
         @Vests({
             "variants": {
+                "V_PlateCarrier4_rgr_F": 0.5,
                 "WSLV_Platecarrier_GRN_NF": 0.25,
                 "V_MU_PlateCarrier2_2_rgr": 0.25,
-                "V_PlateCarrier4_rgr_F": 0.5,
             },
             "packs": [
                 "t2_standard",
@@ -63,12 +63,12 @@ class CfgVehicles {
             },
         });
 
-            ///////// Add M72 magazine when feature is added
-
         @Launchers({
             "weapons": {
+                "": 0.95,
                 "JCA_launch_M72_olive_F": {
                     "probability": 0.05,
+                    "loadedPrimary": "JCA_M72_HEAT_F",
                 },
             },
         });
@@ -131,9 +131,9 @@ class CfgVehicles {
 
         @Vests({
             "variants": {
+                "V_PlateCarrier1_rgr_noflag_F": 0.5,
                 "V_MU_PlateCarrier_green": 0.25,
                 "V_PlateCarrier2_rgr_noflag_F": 0.25,
-                "V_PlateCarrier1_rgr_noflag_F": 0.5,
             },
             "magazines": {
                 "SmokeShell": 2,
@@ -145,6 +145,9 @@ class CfgVehicles {
                 "LMG_Zafir_black_F": {
                     "magazinesVest": {
                         "ACE_150Rnd_762x54_Box_red": 4,
+                    },
+                    "magazinesBackpack": {
+                        "ACE_150Rnd_762x54_Box_tracer_red": 4,
                     },
                 },
             },
@@ -171,9 +174,6 @@ class CfgVehicles {
             "variants": {
                 "B_AssaultPack_wdl_F": 1,
             },
-            "packs": [
-                "t2_negev_ammo",
-            ],
         });
 
     };
@@ -183,9 +183,9 @@ class CfgVehicles {
 
         @Vests({
             "variants": {
+                "V_PlateCarrier1_rgr_noflag_F": 0.5,
                 "V_MU_PlateCarrier_green": 0.25,
                 "V_PlateCarrier2_rgr_noflag_F": 0.25,
-                "V_PlateCarrier1_rgr_noflag_F": 0.5,
             },
             "magazines": {
                 "SmokeShell": 2,
@@ -197,6 +197,9 @@ class CfgVehicles {
                 "MMG_01_black_F": {
                     "magazinesVest": {
                         "ACE_150Rnd_93x64_Mag_red": 2,
+                    },
+                    "magazinesBackpack": {
+                        "ACE_150Rnd_93x64_Mag_red": 3,
                     },
                 },
             },
@@ -226,9 +229,6 @@ class CfgVehicles {
             "variants": {
                 "B_AssaultPack_wdl_F": 1,
             },
-            "packs": [
-                "t2_hk121_ammo",
-            ],
         });
 
     };
@@ -251,9 +251,9 @@ class CfgVehicles {
 
         @Vests({
             "variants": {
+                "V_PlateCarrier1_rgr_noflag_F": 0.5,
                 "V_MU_PlateCarrier_green": 0.25,
                 "V_PlateCarrier2_rgr_noflag_F": 0.25,
-                "V_PlateCarrier1_rgr_noflag_F": 0.5,
             },
             "magazines": {
                 "SmokeShell": 2,
@@ -310,9 +310,10 @@ class CfgVehicles {
         @Launchers({
             "weapons": {
                 "launch_MRAWS_green_F": {
-                    "magazinesVest": {
-                        "MRAWS_HEAT55_F": 1,
-                    }
+                    "magazinesBackpack": {
+                        "MRAWS_HEAT55_F": 2,
+                        "MRAWS_HE_F": 1,
+                    },
                 },
             },
         });
@@ -321,9 +322,6 @@ class CfgVehicles {
             "variants": {
                 "B_Kitbag_wdl_F": 1,
             },
-            "packs": [
-                "maaws_ammo",
-            ],
         });
     };
 
@@ -333,9 +331,9 @@ class CfgVehicles {
         @Launchers({
             "weapons": {
                 "launch_B_Titan_olive_F": {
-                    "magazinesVest": {
-                        "Titan_AA": 1,
-                    }
+                    "magazinesBackpack": {
+                        "Titan_AA": 2,
+                    },
                 },
             },
         });
@@ -356,9 +354,9 @@ class CfgVehicles {
         @Launchers({
             "weapons": {
                 "launch_I_Titan_short_F": {
-                    "magazinesVest": {
-                        "Titan_AT": 1,
-                    }
+                    "magazinesBackpack": { 
+                        "Titan_AT": 2,
+                    },
                 },
             },
         });
@@ -368,7 +366,7 @@ class CfgVehicles {
                 "B_Kitbag_wdl_F": 1,
             },
             "packs": [
-                "titan_aa",
+                "titan_at",
             ],
         });
     };
