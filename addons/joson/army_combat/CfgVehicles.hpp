@@ -9,16 +9,18 @@ class CfgVehicles {
 
         @Uniforms({
             "variants": {
-              "tacs_Uniform_combat_LS_ATACS_IX": 1,
+              "tacs_Uniform_combat_LS_ATACS_IX": 0.75,
+              "tacs_Uniform_Combat_RS_ATACS_IX": 0.25,
             },
             "packs": [
                 "t2_rifleman_medical",
+                "t2_standard",
             ],
         });
         @Vests({
             "variants": {
-                "V_TacVest_grn": 0.9,
-                "V_PlateCarrierIA2_dgtl": 0.1,
+                "V_TacVest_grn": 0.95,
+                "V_PlateCarrierIA2_grn": 0.05,
             },
             "magazines": {
                 "HandGrenade": 1,
@@ -81,6 +83,30 @@ class CfgVehicles {
             },
        });
     };
+    class CLASS(RiflemanSpecial): CLASS(Rifleman) {
+        @Role(Hidden);
+        @Primary({
+            "weapons": {
+                "arifle_NCAR15B_F": {
+                    "probability": 0.95,
+                    "magazinesVest": {
+                        "30Rnd_580x42_Mag_F": 5,
+                    },
+                },
+                "arifle_NCAR15_F": {
+                    "probability": 0.05,
+                    "magazinesVest": {
+                        "30Rnd_580x42_Mag_F": 5,
+                    },
+                },
+            },
+            "optics": {
+                "": 0.6,
+                "Aegis_optic_1p87": 0.3,
+                "optic_LRCO_blk_F": 0.1,
+            },
+       });
+    };
     class CLASS(SquadLeader): CLASS(Rifleman) {
         @Role(SquadLeader);
         @Primary({
@@ -106,8 +132,7 @@ class CfgVehicles {
                 "arifle_NCAR15_MG_F": {
                     "probability": 1,
                     "magazinesVest": {
-                        "30Rnd_580x42_Mag_F": 8,
-                        "1Rnd_HEDP_Grenade_shell": 9,
+                        "ACE_100Rnd_580x42_Drum_tracer_red": 6,
                     },
                 },
             },
@@ -118,28 +143,22 @@ class CfgVehicles {
             },
        });
     };
-    class CLASS(Medic): CLASS(Rifleman) {
+    class CLASS(Machinegunner): CLASS(Autorifleman) {
+        @Role(Machinegunner); // i dont want this faction to have mg
+    };
+    class CLASS(AsstMachineGunner): CLASS(RiflemanSpecial) {
+        @Role(AsstMachinegunner);
+        @Backpacks({
+            "variants": {
+                "B_AssaultPack_rgr": 1,
+            },
+            "magazines": {
+                "ACE_100Rnd_580x42_Drum_tracer_red": 6,
+            },
+       });
+    };
+    class CLASS(Medic): CLASS(RiflemanSpecial) {
         @Role(Medic);
-        @Primary({
-            "weapons": {
-                "arifle_NCAR15B_F": {
-                    "probability": 0.95,
-                    "magazinesVest": {
-                        "30Rnd_580x42_Mag_F": 8,
-                    },
-                },
-                "arifle_NCAR15_F": {
-                    "probability": 0.05,
-                    "magazinesVest": {
-                        "30Rnd_580x42_Mag_F": 8,
-                    },
-                },
-            },
-            "optics": {
-                "Aegis_optic_1p87": 0.7,
-                "optic_LRCO_blk_F": 0.3,
-            },
-          });
         @Backpacks({
             "variants": {
                 "B_AssaultPack_rgr": 1,
@@ -181,6 +200,18 @@ class CfgVehicles {
             },
         });
     };
+    class CLASS(RiflemanAA): CLASS(RiflemanAT) {
+        @Role(RiflemanAA);
+        @Launchers({
+            "weapons": {
+                "launch_B_Titan_olive_F": {
+                    "magazinesBackpack": {
+                        "Titan_AA": 1,
+                    },
+                },
+            },
+        });
+    };
     class CLASS(RiflemanHAT): CLASS(RiflemanAT) {
         @Role(RiflemanHAT);
         @Launchers({
@@ -193,7 +224,7 @@ class CfgVehicles {
             },
         });
     };
-    class CLASS(Engineer): CLASS(Rifleman) {
+    class CLASS(Engineer): CLASS(RiflemanSpecial) {
         @Role(Engineer);
         @Backpacks({
             "variants": {
@@ -202,6 +233,47 @@ class CfgVehicles {
             "packs": [
                 "toolkit",
             ],
+        });
+    };
+    class CLASS(RadioOperator): CLASS(RiflemanSpecial) {
+        @Role(RadioOperator);
+        @Backpacks({
+            "variants": {
+                "B_RadioBag_01_green_F": 1,
+            },
+        });
+    };
+    class CLASS(Demolitions): CLASS(RiflemanSpecial) {
+        @Role(Demolitions);
+
+        @Backpacks({
+            "variants": {
+                "B_AssaultPack_wdl_F": 1,
+            },
+            "packs": [
+                "eod",
+                "demo",
+            ],
+        });
+        @Secondary({
+            "weapons": {
+                "ACE_VMH3": {},
+            },
+        });
+    };
+    class CLASS(Crewman): CLASS(RiflemanSpecial) {
+        @Role(Crewman);
+        @Headgear({
+            "H_Tank_black_F": 0.75,
+            "tacs_Helmet_Modular_Headset_FG": 0.25,
+        });
+    };
+    class CLASS(HeliPilot): CLASS(Crewman) {
+        @Role(HeliPilot);
+        @Headgear({
+            "H_PilotHelmetHeli_O_visor_up": 0.3,
+            "H_PilotHelmetHeli_O": 0.4,
+            "H_CrewHelmetHeli_O": 0.3,
         });
     };
     class CLASS(Marksman): CLASS(Rifleman) {
