@@ -177,6 +177,12 @@ class CfgVehicles {
                     "optic_Arco_AK_blk_F": 1,
                 },
             });
+
+            @Backpacks({
+                "variants": {
+                    "B_AssaultPack_eaf_F": 1,
+                },
+            });
         };
 
         class CLASS(AsstMachinegunner): CLASS(Rifleman) {
@@ -186,9 +192,9 @@ class CfgVehicles {
                 "variants": {
                     "B_AssaultPack_eaf_F": 1,
                 },
-                "packs": [
-                    "t2_fnmag_ammo",
-                ],
+                "magazines": {
+                    "Aegis_200Rnd_762x51_MAG_Yellow_Tracer_F": 3,
+                },
             });
         };
 
