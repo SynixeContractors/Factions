@@ -72,7 +72,6 @@ fn container(name, value) {
     let ret = "Synixe_" + name + "[] = {";
     if "variants" in value {
         let variants = value.variants;
-        print("Variants: " + variants);
         for v in variants.keys() {
             let probability = variants[v];
             ret += "\"" + v + "\"," + probability + ",";
@@ -172,15 +171,12 @@ fn parse_macro(line) {
     let args_start = name_end + 1;
 
     let args = [];
-    debug("JSON check: " + line[args_start]);
     if line[args_start] == "{" {
-        debug("Macro uses json");
         let json_end = line.index_of("});");
         if json_end == -1 {
             fatal("Macro does not have closing json brace: " + line);
         }
         let raw_json = line.sub_string(args_start, json_end - args_start + 1);
-        debug("Raw JSON: " + raw_json);
         args = parse_json(raw_json);
     } else {
         let args_end = line.index_of(')', args_start);
@@ -396,8 +392,7 @@ for addon in addons {
             index += 1;
         }
         if touched {
-            print("Writing modified file: " + file);
-            debug("New content: " + replacement);
+            debug("Writing modified file: " + file);
             file.create_file().write(replacement);
         }
     }
