@@ -62,4 +62,14 @@ switch (_name) do {
             ["APERSMine_Range_Mag", 4]
         ]
     };
+        case "t2_hk121_ammo": {
+        [
+            ["ACE_150Rnd_93x64_Mag_red", 4]
+        ]
+    };
+        case "t2_fnmag_ammo": {
+        [
+            ["ACE_150Rnd_93x64_Mag_red", 4]
+        ]
+    };
 };
