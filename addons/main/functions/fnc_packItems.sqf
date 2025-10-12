@@ -17,7 +17,7 @@ switch (_name) do {
             ["SmokeShell", 2],
             ["NVGoggles_OPFOR", 1],
             ["Chemlight_green", 1],
-            ["Chemlight_blue", 1]           
+            ["Chemlight_blue", 1]
         ];
     };
     case "t2_medic": {

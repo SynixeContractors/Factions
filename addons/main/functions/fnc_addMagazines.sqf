@@ -14,8 +14,6 @@ if (_cache isEqualTo []) exitWith {true};
 
 (_unit call CBA_fnc_getLoadout) params ["_loadout", "_extendedInfo"];
 
-diag_log "Adding magazine";
-
 {
     private _weaponIndex = _x;
     private _weaponSlot = _loadout select _x;
@@ -44,6 +42,12 @@ diag_log "Adding magazine";
             };
         } forEach _magazines;
     } forEach [3,4,5];
+
+    {
+        private _loaded = _weaponCache select 2 select _x;
+        if (_loaded == "") then { continue; };
+        _weaponSlot set [_x + 1, [_loaded, 1]];
+    } forEach [3,4];
 } forEach [0,1,2];
 
 {

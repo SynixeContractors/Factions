@@ -72,7 +72,6 @@ fn container(name, value) {
     let ret = "Synixe_" + name + "[] = {";
     if "variants" in value {
         let variants = value.variants;
-        print("Variants: " + variants);
         for v in variants.keys() {
             let probability = variants[v];
             ret += "\"" + v + "\"," + probability + ",";
@@ -125,6 +124,14 @@ fn weapon(name, value) {
                     ret += "{},";
                 }
             }
+            for magazine in ["loadedPrimary", "loadedSecondary"] {
+                if magazine in data {
+                    let mag = data[magazine];
+                    ret += "\"" + mag + "\",";
+                } else {
+                    ret += "\"\",";
+                }
+            }
             ret += "},";
         } else {
             ret += "{\"" + weapon + "\"," + data;
@@ -164,15 +171,12 @@ fn parse_macro(line) {
     let args_start = name_end + 1;
 
     let args = [];
-    debug("JSON check: " + line[args_start]);
     if line[args_start] == "{" {
-        debug("Macro uses json");
         let json_end = line.index_of("});");
         if json_end == -1 {
             fatal("Macro does not have closing json brace: " + line);
         }
         let raw_json = line.sub_string(args_start, json_end - args_start + 1);
-        debug("Raw JSON: " + raw_json);
         args = parse_json(raw_json);
     } else {
         let args_end = line.index_of(')', args_start);
@@ -331,7 +335,7 @@ headgearList[] = {};
         "Secondary" => {
             return weapon("secondary", args);
         }
-        "Launcher" => {
+        "Launchers" => {
             return weapon("launcher", args);
         }
         "Headgear" => {
@@ -388,8 +392,7 @@ for addon in addons {
             index += 1;
         }
         if touched {
-            print("Writing modified file: " + file);
-            debug("New content: " + replacement);
+            debug("Writing modified file: " + file);
             file.create_file().write(replacement);
         }
     }
