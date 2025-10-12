@@ -1,10 +1,10 @@
 class CfgVehicles {
-    class PCLASS(base);
-    class CLASS(base): PCLASS(base) {
+    class PCLASS(Base);
+    class CLASS(Base): PCLASS(Base) {
         displayName = "JSR Base Army Combat";
         editorSubcategory = QGCLASS(army_combat);
     };
-    class CLASS(rifleman): CLASS(base) {
+    class CLASS(Rifleman): CLASS(Base) {
         @Role(Rifleman);
 
         @Uniforms({
@@ -12,7 +12,7 @@ class CfgVehicles {
                 "tacs_Uniform_combat_LS_ATACS_IX": 1,
             },
             "packs": [
-        "t2_rifleman_medical",
+		"t2_rifleman_medical",
             ],
         });
 
