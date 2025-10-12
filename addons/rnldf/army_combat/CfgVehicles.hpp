@@ -124,8 +124,6 @@ class CfgVehicles {
                 "Aegis_acc_pointer_DM": 0.4,
             },
         });
-
-
     };
 
     class CLASS(Autorifleman): CLASS(Base) {
@@ -169,7 +167,7 @@ class CfgVehicles {
             },
         });
         
-                @Backpacks({
+        @Backpacks({
             "variants": {
                 "B_AssaultPack_wdl_F": 1,
             },

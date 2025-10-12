@@ -9,7 +9,7 @@ class CfgVehicles {
             "Head_Euro",
             "Head_Enoch",
             "Head_NATO"
-            };
+        };
         genericNames = "EnochMen";
         @Templated();
     };

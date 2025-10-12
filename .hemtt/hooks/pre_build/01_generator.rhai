@@ -273,10 +273,10 @@ headgearList[] = {};
                 "Worker" => #{
                     displayName: "Worker",
                 },
-                    "Crewman" => #{
+                "Crewman" => #{
                     displayName: "Crewman",
                 },
-                    "HeliPilot" => #{
+                "HeliPilot" => #{
                     displayName: "Helicopter Pilot",
                 },
                 "Autorifleman" => #{
