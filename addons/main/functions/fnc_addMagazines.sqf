@@ -42,6 +42,11 @@ if (_cache isEqualTo []) exitWith {true};
             };
         } forEach _magazines;
     } forEach [3,4,5];
+
+    {
+        private _loaded = _weaponCache select 2 select _x;
+        if (_loaded == "") then { continue; };
+    } forEach [3,4];
 } forEach [0,1,2];
 
 {
