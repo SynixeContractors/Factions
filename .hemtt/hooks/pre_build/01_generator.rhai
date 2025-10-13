@@ -322,6 +322,30 @@ fn groups(args) {
                 GROUP_UNIT(CLASS(`+type+`_Demolitions),0);
                 GROUP_UNIT(CLASS(`+type+`_Demolitions),0);
             };`;
+            ret += `class CLASS(SquadMAT): CLASS(Fireteam) {
+                name = "Squad (MAT)";
+                __COUNTER_RESET__
+                GROUP_UNIT(CLASS(`+type+`_SquadLeader),0);
+                GROUP_UNIT(CLASS(`+type+`_RiflemanMAT),0);
+                GROUP_UNIT(CLASS(`+type+`_TeamLeader),0);
+                GROUP_UNIT(CLASS(`+type+`_Rifleman),0);
+                GROUP_UNIT(CLASS(`+type+`_Medic),0);
+                GROUP_UNIT(CLASS(`+type+`_Marksman),0);
+                GROUP_UNIT(CLASS(`+type+`_Autorifleman),0);
+                GROUP_UNIT(CLASS(`+type+`_Rifleman),0);
+            };`;
+            ret += `class CLASS(SquadMG): CLASS(Fireteam) {
+                name = "Squad (MG)";
+                __COUNTER_RESET__
+                GROUP_UNIT(CLASS(`+type+`_SquadLeader),0);
+                GROUP_UNIT(CLASS(`+type+`_Rifleman),0);
+                GROUP_UNIT(CLASS(`+type+`_TeamLeader),0);
+                GROUP_UNIT(CLASS(`+type+`_Rifleman),0);
+                GROUP_UNIT(CLASS(`+type+`_Medic),0);
+                GROUP_UNIT(CLASS(`+type+`_Marksman),0);
+                GROUP_UNIT(CLASS(`+type+`_Machinegunner),0);
+                GROUP_UNIT(CLASS(`+type+`_Rifleman),0);
+            };`;
             }
         }
     };
