@@ -309,9 +309,9 @@ class CfgVehicles {
         @Role(Sniper);
         @Primary({
             "weapons": {
-                "srifle_DMR_05_ghex_F": {
+                "srifle_DMR_05_blk_F": {
                     "magazinesVest": {
-                        "srifle_DMR_05_blk_F": 6,
+                        "10Rnd_93x64_DMR_05_Mag": 6,
                     },
                 },
             },
