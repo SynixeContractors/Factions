@@ -402,6 +402,10 @@ respawnLinkedItems[] = {};
                 icon: "iconMan",
             };
             let overlay = switch role_name {
+                "Hidden" => #{
+                    scope: 0,
+                    scopeCurator: 0,
+                },
                 "Rifleman" => #{
                     displayName: "Rifleman",
                 },
@@ -473,6 +477,11 @@ respawnLinkedItems[] = {};
                 },
                 "Marksman" => #{
                     displayName: "Marksman",
+                    icon: "iconManRecon",
+                    role: "Marksman",
+                },
+                "Sniper" => #{
+                    displayName: "Sniper",
                     icon: "iconManRecon",
                     role: "Marksman",
                 },
