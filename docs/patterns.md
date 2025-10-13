@@ -34,6 +34,6 @@ Uniform: ATACS IX
 Primary: NCAR-15 / NCAR-15B  
 Secondary: P320  
 MG: NCAR-15-1  
-AR: NCAR-15-1  
+AR: Negev  
 DMR: SVD  
 Sniper: Cyrus  

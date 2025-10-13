@@ -132,7 +132,7 @@ class CfgVehicles {
                 "arifle_NCAR15_MG_F": {
                     "probability": 1,
                     "magazinesVest": {
-                        "ACE_100Rnd_580x42_Drum_tracer_red": 6,
+                        "100Rnd_580x42_Mag_Tracer_F": 6,
                     },
                 },
             },
@@ -144,7 +144,30 @@ class CfgVehicles {
        });
     };
     class CLASS(Machinegunner): CLASS(Autorifleman) {
-        @Role(Machinegunner); // i dont want this faction to have mg
+        @Role(Machinegunner);
+        @Primary({
+            "weapons": {
+                "LMG_Zafir_black_F": {
+                    "probability": 1,
+                    "magazinesVest": {
+                        "150Rnd_762x54_Box": 1,
+                    },
+                },
+            },
+            "optics": {
+                "":0.2,
+                "Aegis_optic_1p87": 0.4,
+                "optic_LRCO_blk_F": 0.4,
+            },
+       });
+       @Backpacks({
+           "variants": {
+                "B_AssaultPack_rgr": 1,
+            },
+            "magazines": {
+                "150Rnd_762x54_Box": 2,
+            },
+       });
     };
     class CLASS(AsstMachineGunner): CLASS(RiflemanCarabine) {
         @Role(AsstMachinegunner);
@@ -153,7 +176,7 @@ class CfgVehicles {
                 "B_AssaultPack_rgr": 1,
             },
             "magazines": {
-                "ACE_100Rnd_580x42_Drum_tracer_red": 6,
+                "150Rnd_762x54_Box": 2,
             },
        });
     };
