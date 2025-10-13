@@ -218,7 +218,6 @@ fn groups(args) {
     let side = args[1];
     let type = args[2];
     let faction = to_lower(tier) + "_" + to_lower(side);
-    print("Generating groups for " + tier + " " + side + " " + type + ", faction: " + faction);
     let side = switch side {
         "BLUFOR" => 1,
         "OPFOR" => 0,
@@ -581,9 +580,6 @@ for addon in addons {
         }
         if touched {
             debug("Writing modified file: " + file);
-            if file.to_string().ends_with("CfgGroups.hpp") {
-                print("Modified file: " + replacement);
-            }
             file.create_file().write(replacement);
         }
     }
