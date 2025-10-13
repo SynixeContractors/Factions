@@ -3,8 +3,8 @@ class CfgVehicles {
     class CLASS(Base): GCLASS(Base_OPFOR) {
         faction = QCLASS(t2_opfor);
         displayName = "Base Unit";
-        identityTypes[] = {"LanguageFRE_F", "Head_Euro"};
-        genericNames = "NATOMen";
+        identityTypes[] = {"LanguageFRE_F", "Head_Euro"}; //FIXME: change to Chinese+Asian
+        genericNames = "NATOMen"; //FIXME: change to Asian/Chinese Names
         @Templated();
     };
 };
