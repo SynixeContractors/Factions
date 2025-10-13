@@ -404,6 +404,7 @@ respawnLinkedItems[] = {};
             let overlay = switch role_name {
                 "Hidden" => #{
                     scope: 0,
+                    scopeCurator: 0,
                 },
                 "Rifleman" => #{
                     displayName: "Rifleman",

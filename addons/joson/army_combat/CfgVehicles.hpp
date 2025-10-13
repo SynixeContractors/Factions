@@ -83,7 +83,7 @@ class CfgVehicles {
             },
        });
     };
-    class CLASS(RiflemanSpecial): CLASS(Rifleman) {
+    class CLASS(RiflemanCarabine): CLASS(Rifleman) {
         @Role(Hidden);
         @Primary({
             "weapons": {
@@ -146,7 +146,7 @@ class CfgVehicles {
     class CLASS(Machinegunner): CLASS(Autorifleman) {
         @Role(Machinegunner); // i dont want this faction to have mg
     };
-    class CLASS(AsstMachineGunner): CLASS(RiflemanSpecial) {
+    class CLASS(AsstMachineGunner): CLASS(RiflemanCarabine) {
         @Role(AsstMachinegunner);
         @Backpacks({
             "variants": {
@@ -157,7 +157,7 @@ class CfgVehicles {
             },
        });
     };
-    class CLASS(Medic): CLASS(RiflemanSpecial) {
+    class CLASS(Medic): CLASS(RiflemanCarabine) {
         @Role(Medic);
         @Backpacks({
             "variants": {
@@ -168,7 +168,7 @@ class CfgVehicles {
             ],
           });
     };
-    class CLASS(RiflemanMAT): CLASS(RiflemanSpecial) {
+    class CLASS(RiflemanMAT): CLASS(RiflemanCarabine) {
         @Role(RiflemanMAT);
         @Launchers({
             "weapons": {
@@ -185,7 +185,7 @@ class CfgVehicles {
             },
         });
     };
-    class CLASS(RiflemanAA): CLASS(RiflemanSpecial) {
+    class CLASS(RiflemanAA): CLASS(RiflemanCarabine) {
         @Role(RiflemanAA);
         @Launchers({
             "weapons": {
@@ -197,7 +197,7 @@ class CfgVehicles {
             },
         });
     };
-    class CLASS(RiflemanHAT): CLASS(RiflemanSpecial) {
+    class CLASS(RiflemanHAT): CLASS(RiflemanCarabine) {
         @Role(RiflemanHAT);
         @Launchers({
             "weapons": {
@@ -209,7 +209,7 @@ class CfgVehicles {
             },
         });
     };
-    class CLASS(Engineer): CLASS(RiflemanSpecial) {
+    class CLASS(Engineer): CLASS(RiflemanCarabine) {
         @Role(Engineer);
         @Backpacks({
             "variants": {
@@ -220,7 +220,7 @@ class CfgVehicles {
             ],
         });
     };
-    class CLASS(RadioOperator): CLASS(RiflemanSpecial) {
+    class CLASS(RadioOperator): CLASS(RiflemanCarabine) {
         @Role(RadioOperator);
         @Backpacks({
             "variants": {
@@ -228,7 +228,7 @@ class CfgVehicles {
             },
         });
     };
-    class CLASS(Demolitions): CLASS(RiflemanSpecial) {
+    class CLASS(Demolitions): CLASS(RiflemanCarabine) {
         @Role(Demolitions);
 
         @Backpacks({
@@ -246,7 +246,7 @@ class CfgVehicles {
             },
         });
     };
-    class CLASS(Crewman): CLASS(RiflemanSpecial) {
+    class CLASS(Crewman): CLASS(RiflemanCarabine) {
         @Role(Crewman);
         @Headgear({
             "H_Tank_black_F": 0.75,
