@@ -168,23 +168,8 @@ class CfgVehicles {
             ],
           });
     };
-    class CLASS(RiflemanAT): CLASS(Rifleman) {
-        @Role(RiflemanAT);
-        @Primary({
-            "weapons": {
-                "arifle_NCAR15B_F": {
-                    "probability": 1,
-                    "magazinesVest": {
-                        "30Rnd_580x42_Mag_F": 8,
-                    },
-                },
-            },
-            "optics": {
-                "": 0.85,
-                "Aegis_optic_1p87": 0.1,
-                "optic_LRCO_blk_F": 0.05,
-            },
-        });
+    class CLASS(RiflemanMAT): CLASS(RiflemanSpecial) {
+        @Role(RiflemanMAT);
         @Launchers({
             "weapons": {
                 "launch_RPG32_green_F": {
@@ -200,7 +185,7 @@ class CfgVehicles {
             },
         });
     };
-    class CLASS(RiflemanAA): CLASS(RiflemanAT) {
+    class CLASS(RiflemanAA): CLASS(RiflemanSpecial) {
         @Role(RiflemanAA);
         @Launchers({
             "weapons": {
@@ -212,7 +197,7 @@ class CfgVehicles {
             },
         });
     };
-    class CLASS(RiflemanHAT): CLASS(RiflemanAT) {
+    class CLASS(RiflemanHAT): CLASS(RiflemanSpecial) {
         @Role(RiflemanHAT);
         @Launchers({
             "weapons": {
