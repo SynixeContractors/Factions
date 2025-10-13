@@ -197,8 +197,8 @@ class CfgVehicles {
         });
 
         @Secondary({
-            "": 0.85,
             "weapons": {
+                "": 0.85,
                 "probability": 0.15,
                 "hgun_Rook40_F": {
                     "magazinesVest": {
@@ -276,8 +276,8 @@ class CfgVehicles {
         });
 
         @Secondary({
-            "": 0.85,
             "weapons": {
+                "": 0.85,
                 "hgun_Rook40_F": {
                     "probability": 0.15,
                     "magazinesVest": {
