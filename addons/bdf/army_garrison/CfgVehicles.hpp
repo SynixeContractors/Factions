@@ -15,8 +15,7 @@ class CfgVehicles {
         });
 
         @Headgear({
-            "H_Beret_Colonel": 1,
-            "H_MU_Beret_Colonel_eagle": 1,
+            "H_Beret_ocamo": 1,
             "H_Cap_headphones_rvs_tan": 1,
             "H_Cap_headphones_tan": 1,
         });
