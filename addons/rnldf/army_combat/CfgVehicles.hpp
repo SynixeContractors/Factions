@@ -342,9 +342,6 @@ class CfgVehicles {
             "variants": {
                 "B_Kitbag_wdl_F": 1,
             },
-            "packs": [
-                "titan_aa",
-            ],
         });
     };
 
@@ -365,9 +362,6 @@ class CfgVehicles {
             "variants": {
                 "B_Kitbag_wdl_F": 1,
             },
-            "packs": [
-                "titan_at",
-            ],
         });
     };
 
