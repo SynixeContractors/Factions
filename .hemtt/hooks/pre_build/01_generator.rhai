@@ -221,7 +221,7 @@ fn groups(args) {
     let side = switch side {
         "BLUFOR" => 1,
         "OPFOR" => 0,
-        "INDFOR" => 2,
+        "INDEP" => 2,
         "CIV" => 3,
         _ => {
             fatal("Unknown side: " + side);
