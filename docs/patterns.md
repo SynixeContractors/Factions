@@ -16,3 +16,12 @@ Secondary: Glock 17
 MG: HK121  
 AR: Negev  
 DMR: SR25 / M110  
+
+## Breznian Defense Force
+
+Uniform: MTP  
+Primary: AK-12 and AK-74N  
+Secondary: MP-443  
+MG: LWMMG  
+AR: RPK-12  
+DMR: SVD  
