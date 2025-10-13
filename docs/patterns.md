@@ -16,3 +16,12 @@ Secondary: Glock 17
 MG: HK121  
 AR: Negev  
 DMR: SR25 / M110  
+
+## Livonian Defense Force
+
+Uniform: Geometric & Pantera  
+Primary: Mk20 / F2000
+Secondary: Glock 17  
+MG: FN MAG / M240  
+AR: FN Minimi  
+DMR: HK417  
