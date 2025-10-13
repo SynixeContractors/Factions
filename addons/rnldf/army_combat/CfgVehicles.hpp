@@ -305,8 +305,8 @@ class CfgVehicles {
         });
     };
 
-    class CLASS(RiflemanAT): CLASS(Rifleman) {
-        @Role(RiflemanAT);
+    class CLASS(RiflemanMAT): CLASS(Rifleman) {
+        @Role(RiflemanMAT);
 
         @Launchers({
             "weapons": {

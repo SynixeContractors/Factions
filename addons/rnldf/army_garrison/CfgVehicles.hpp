@@ -68,6 +68,30 @@ class CfgVehicles {
         });
     };
 
+    class CLASS(TeamLeader): CLASS(Rifleman) {
+        @Role(TeamLeader);
+
+        @Primary({
+            "weapons": {
+                "arifle_AUG_GL_black_F": {
+                    "magazinesVest": {
+                        "30Rnd_556x45_AUG_Mag_F": 9,
+                        "1Rnd_HEDP_Grenade_shell": 9,
+                    }
+                },
+            },
+            "optics": {
+                "optic_Hamr": 0.6,
+                "optic_MRCO": 0.2,
+                "optic_Holosight_blk_F": 0.2,
+            },
+            "pointers": {
+                "saber_light_lxWS": 0.6,
+                "Aegis_acc_pointer_DM": 0.4,
+            },
+        });
+    };
+
     class CLASS(Autorifleman): CLASS(Rifleman) {
         @Role(Autorifleman);
 

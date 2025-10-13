@@ -210,6 +210,125 @@ fn assigned(value) {
     return ret;
 }
 
+fn groups(args) {
+    if args.len() != 3 {
+        fatal("Groups macro requires exactly 3 arguments");
+    }
+    let tier = args[0];
+    let side = args[1];
+    let type = args[2];
+    let faction = to_lower(tier) + "_" + to_lower(side);
+    print("Generating groups for " + tier + " " + side + " " + type + ", faction: " + faction);
+    let side = switch side {
+        "BLUFOR" => 1,
+        "OPFOR" => 0,
+        "INDFOR" => 2,
+        "CIV" => 3,
+        _ => {
+            fatal("Unknown side: " + side);
+        }
+    };
+    let id = tier + "_" + type;
+    let ret = "class CLASS(" + id + ") {\n";
+    let parts = type.split("_");
+    if parts.len() == 2 {
+        ret += "name = \"" + parts[0] + " (" + parts[1] + ")\";\n";
+    } else {
+        ret += "name = \"" + type + "\";\n";
+    }
+    make_lower(type);
+    switch id {
+        "T2_Army_Combat" | "T2_Army_Garrison" => {
+            ret += `class CLASS(Patrol) {
+            name = "Patrol";
+            side = ` + side + `;
+            faction = "` + faction + `";
+            icon = "\a3\ui_f\data\map\markers\nato\n_inf.paa";
+            __COUNTER_RESET__
+            GROUP_UNIT(CLASS(`+type+`_Rifleman),0);
+            GROUP_UNIT(CLASS(`+type+`_Rifleman),0);
+        };
+        class CLASS(Fireteam): CLASS(Patrol) {
+            name = "Fireteam";
+            __COUNTER_RESET__
+            GROUP_UNIT(CLASS(`+type+`_TeamLeader),0);
+            GROUP_UNIT(CLASS(`+type+`_Rifleman),0);
+            GROUP_UNIT(CLASS(`+type+`_Rifleman),0);
+            GROUP_UNIT(CLASS(`+type+`_Autorifleman),0);
+        };`;
+        if id == "T2_Army_Combat" {
+            ret += `class CLASS(Squad): CLASS(Fireteam) {
+                name = "Squad";
+                __COUNTER_RESET__
+                GROUP_UNIT(CLASS(`+type+`_SquadLeader),0);
+                GROUP_UNIT(CLASS(`+type+`_RadioOperator),0);
+                GROUP_UNIT(CLASS(`+type+`_Rifleman),0);
+                GROUP_UNIT(CLASS(`+type+`_Medic),0);
+                GROUP_UNIT(CLASS(`+type+`_TeamLeader),0);
+                GROUP_UNIT(CLASS(`+type+`_Marksman),0);
+                GROUP_UNIT(CLASS(`+type+`_Autorifleman),0);
+                GROUP_UNIT(CLASS(`+type+`_Rifleman),0);
+            };`;
+            ret += `class CLASS(Squadstub): CLASS(Fireteam) {
+                name = "Squad (Stub)";
+                __COUNTER_RESET__
+                GROUP_UNIT(CLASS(`+type+`_SquadLeader),0);
+                GROUP_UNIT(CLASS(`+type+`_RadioOperator),0);
+                GROUP_UNIT(CLASS(`+type+`_Rifleman),0);
+                GROUP_UNIT(CLASS(`+type+`_Medic),0);
+            };class CLASS(FireteamAT): CLASS(Fireteam) {
+                name = "Fireteam (AT)";
+                __COUNTER_RESET__
+                GROUP_UNIT(CLASS(`+type+`_TeamLeader),0);
+                GROUP_UNIT(CLASS(`+type+`_RiflemanMAT),0);
+                GROUP_UNIT(CLASS(`+type+`_Rifleman),0);
+                GROUP_UNIT(CLASS(`+type+`_Rifleman),0);
+            };`;
+            ret += `class CLASS(FireteamAA): CLASS(Fireteam) {
+                name = "Fireteam (AA)";
+                __COUNTER_RESET__
+                GROUP_UNIT(CLASS(`+type+`_TeamLeader),0);
+                GROUP_UNIT(CLASS(`+type+`_RiflemanAA),0);
+                GROUP_UNIT(CLASS(`+type+`_Rifleman),0);
+                GROUP_UNIT(CLASS(`+type+`_Rifleman),0);
+            };class CLASS(FireteamHAT): CLASS(Fireteam) {
+                name = "Fireteam (HAT)";
+                __COUNTER_RESET__
+                GROUP_UNIT(CLASS(`+type+`_TeamLeader),0);
+                GROUP_UNIT(CLASS(`+type+`_RiflemanHAT),0);
+                GROUP_UNIT(CLASS(`+type+`_Rifleman),0);
+                GROUP_UNIT(CLASS(`+type+`_Rifleman),0);
+            };`;
+            ret+=`class CLASS(FireteamMachinegunner): CLASS(Fireteam) {
+                name = "Fireteam (Machinegunner)";
+                __COUNTER_RESET__
+                GROUP_UNIT(CLASS(`+type+`_TeamLeader),0);
+                GROUP_UNIT(CLASS(`+type+`_Rifleman),0);
+                GROUP_UNIT(CLASS(`+type+`_Machinegunner),0);
+                GROUP_UNIT(CLASS(`+type+`_AsstMachinegunner),0);
+            };class CLASS(FireteamEngineer): CLASS(Fireteam) {
+                name = "Fireteam (Engineer)";
+                __COUNTER_RESET__
+                GROUP_UNIT(CLASS(`+type+`_TeamLeader),0);
+                GROUP_UNIT(CLASS(`+type+`_Rifleman),0);
+                GROUP_UNIT(CLASS(`+type+`_Engineer),0);
+                GROUP_UNIT(CLASS(`+type+`_Engineer),0);
+            };`;
+            ret+=`class CLASS(FireteamDemolitions): CLASS(Fireteam) {
+                name = "Fireteam (Demolitions)";
+                __COUNTER_RESET__
+                GROUP_UNIT(CLASS(`+type+`_TeamLeader),0);
+                GROUP_UNIT(CLASS(`+type+`_Rifleman),0);
+                GROUP_UNIT(CLASS(`+type+`_Demolitions),0);
+                GROUP_UNIT(CLASS(`+type+`_Demolitions),0);
+            };`;
+            }
+        }
+    };
+    ret += "};\n";
+    return ret;
+}
+
 fn parse_macro(line) {
     if !line.starts_with("@") {
         fatal("Line does not start with @: " + line);
@@ -287,8 +406,8 @@ respawnLinkedItems[] = {};
                 "Rifleman" => #{
                     displayName: "Rifleman",
                 },
-                "RiflemanAT" => #{
-                    displayName: "Rifleman (AT)",
+                "RiflemanMAT" => #{
+                    displayName: "Rifleman (MAT)",
                     icon: "iconManAT",
                     role: "MissileSpecialist",
                 },
@@ -407,6 +526,9 @@ respawnLinkedItems[] = {};
         "Assigned" => {
             return assigned(args);
         }
+        "Groups" => {
+            return groups(args);
+        }
         _ => {
             fatal("Unknown macro name: " + name);
         }
@@ -459,6 +581,9 @@ for addon in addons {
         }
         if touched {
             debug("Writing modified file: " + file);
+            if file.to_string().ends_with("CfgGroups.hpp") {
+                print("Modified file: " + replacement);
+            }
             file.create_file().write(replacement);
         }
     }
