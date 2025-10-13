@@ -338,7 +338,7 @@ fn groups(args) {
                 name = "Squad (MG)";
                 __COUNTER_RESET__
                 GROUP_UNIT(CLASS(`+type+`_SquadLeader),0);
-                GROUP_UNIT(CLASS(`+type+`_Rifleman),0);
+                GROUP_UNIT(CLASS(`+type+`_AsstMachinegunner),0);
                 GROUP_UNIT(CLASS(`+type+`_TeamLeader),0);
                 GROUP_UNIT(CLASS(`+type+`_Rifleman),0);
                 GROUP_UNIT(CLASS(`+type+`_Medic),0);
