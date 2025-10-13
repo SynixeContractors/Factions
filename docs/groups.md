@@ -14,6 +14,7 @@ Required Units:
 
 - Squad Leader
 - Team Leader
+- Radio Operator
 - Rifleman
 - Rifleman MAT
 - Rifleman HAT
