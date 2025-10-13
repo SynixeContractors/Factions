@@ -48,7 +48,7 @@ fn strip_comments(line) {
 }
 
 fn probability_list(name, value) {
-    let ret = name + "[] = {";
+    let ret = "Synixe_" + name + "[] = {";
     for key in value.keys() {
         let v = value[key];
         ret += "\"" + key + "\"," + v + ",";
@@ -58,7 +58,7 @@ fn probability_list(name, value) {
 }
 
 fn quantity_list(name, value) {
-    let ret = name + "[] = {";
+    let ret = "Synixe_" + name + "[] = {";
     for key in value.keys() {
         let v = value[key];
         ret += "{\"" + key + "\"," + v + "},";
@@ -82,11 +82,11 @@ fn container(name, value) {
     ret += "};\n";
 
     if "items" in value {
-        ret += quantity_list("Synixe_" + name + "Items", value.items) + "\n";
+        ret += quantity_list(name + "Items", value.items) + "\n";
     }
 
     if "magazines" in value {
-        ret += quantity_list("Synixe_" + name + "Magazines", value.magazines) + "\n";
+        ret += quantity_list(name + "Magazines", value.magazines) + "\n";
     }
 
     if "packs" in value {
@@ -140,16 +140,16 @@ fn weapon(name, value) {
     ret += "};\n";
 
     if "optics" in value {
-        ret += probability_list("Synixe_" + name + "Optics", value.optics) + "\n";
+        ret += probability_list(name + "Optics", value.optics) + "\n";
     }
     if "muzzles" in value {
-        ret += probability_list("Synixe_" + name + "Muzzles", value.muzzles) + "\n";
+        ret += probability_list(name + "Muzzles", value.muzzles) + "\n";
     }
     if "bipods" in value {
-        ret += probability_list("Synixe_" + name + "Bipods", value.bipods) + "\n";
+        ret += probability_list(name + "Bipods", value.bipods) + "\n";
     }
     if "pointers" in value {
-        ret += probability_list("Synixe_" + name + "Pointers", value.pointers) + "\n";
+        ret += probability_list(name + "Pointers", value.pointers) + "\n";
     }
     return ret;
 }
@@ -396,13 +396,13 @@ respawnLinkedItems[] = {};
             return weapon("launcher", args);
         }
         "Binoculars" => {
-            return weapon("binoculars", args);
+            return weapon("binocular", args);
         }
         "Headgear" => {
-            return probability_list("Synixe_headgear", args);
+            return probability_list("headgear", args);
         }
         "Facewear" => {
-            return probability_list("Synixe_facewear", args);
+            return probability_list("facewear", args);
         }
         "Assigned" => {
             return assigned(args);
