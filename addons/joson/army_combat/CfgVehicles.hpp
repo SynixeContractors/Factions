@@ -112,7 +112,6 @@ class CfgVehicles {
         @Primary({
             "weapons": {
                 "arifle_NCAR15_GL_F": {
-                    "probability": 1,
                     "magazinesVest": {
                         "30Rnd_580x42_Mag_F": 8,
                         "1Rnd_HEDP_Grenade_shell": 4,
@@ -130,7 +129,6 @@ class CfgVehicles {
         @Primary({
             "weapons": {
                 "arifle_NCAR15_MG_F": {
-                    "probability": 1,
                     "magazinesVest": {
                         "100Rnd_580x42_Mag_Tracer_F": 6,
                     },
@@ -148,7 +146,6 @@ class CfgVehicles {
         @Primary({
             "weapons": {
                 "LMG_Zafir_black_F": {
-                    "probability": 1,
                     "magazinesVest": {
                         "150Rnd_762x54_Box": 1,
                     },
@@ -289,7 +286,6 @@ class CfgVehicles {
         @Primary({
             "weapons": {
                 "Aegis_srifle_SVD_blk_f": {
-                    "probability": 1,
                     "magazinesVest": {
                         "Aegis_10Rnd_762x54_SVD_Red_Mag_F": 6,
                     },
@@ -314,7 +310,6 @@ class CfgVehicles {
         @Primary({
             "weapons": {
                 "srifle_DMR_05_ghex_F": {
-                    "probability": 1,
                     "magazinesVest": {
                         "10Rnd_93x64_DMR_05_Mag": 6,
                     },
