@@ -62,5 +62,4 @@ switch (_name) do {
             ["APERSMine_Range_Mag", 4]
         ]
     };
-    
 };
