@@ -28,7 +28,7 @@ if (_cache isEqualTo []) exitWith {true};
     };
     _slot set [0, selectRandomWeighted (_cached select 0)];
     private _packs = _cached select 1;
-    private _items = _cached select 2;
+    private _items = +(_cached select 2);
     {
         _items append ([_x] call FUNC(packItems));
     } forEach _packs;
