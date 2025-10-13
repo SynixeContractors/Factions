@@ -241,9 +241,9 @@ class CfgVehicles {
             "variants": {
                 "B_AssaultPack_wdl_F": 1,
             },
-            "packs": [
-                "t2_hk121_ammo",
-            ],
+            "magazines": {
+                "ACE_150Rnd_93x64_Mag_red": 3,
+            },
         });
     };
 
