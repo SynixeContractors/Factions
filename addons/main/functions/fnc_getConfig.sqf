@@ -46,5 +46,8 @@ GVAR(randomLoadoutUnits) getOrDefaultCall [typeOf _unit, {
 
     _items pushBack ("binocular" call _fnc_addWeapon);
 
+    // Assigned items
+    _items pushBack (getArray (_unitConfig >> "Synixe_assignedItems"));
+
     _items
 }, true]

@@ -105,7 +105,6 @@ fn weapon(name, value) {
     for weapon in value.weapons.keys() {
         let data = value.weapons[weapon];
         if type_of(data) == "map" {
-
             let probability = 1;
             if "probability" in data {
                 probability = data.probability;
@@ -152,6 +151,62 @@ fn weapon(name, value) {
     if "pointers" in value {
         ret += probability_list("Synixe_" + name + "Pointers", value.pointers) + "\n";
     }
+    return ret;
+}
+
+fn assigned(value) {
+    let items = #{
+        map: "ItemMap",
+        compass: "ItemCompass",
+        watch: "ItemWatch",
+        radio: "",
+        gps: "",
+        nvg: "",
+    };
+    let preset = "Default";
+    if type_of(value) == "array" {
+        preset = value[0];
+    } else if "preset" in value {
+        preset = value.preset;
+    }
+    switch preset {
+        "Default" => {}
+        "Civilian" => {
+            items.gps = "ItemSmartPhone";
+        }
+        "Military" => {
+            items.radio = "ItemRadio";
+            items.gps = "ItemGPS";
+        }
+        _ => {
+            fatal("Unknown assigned preset: " + preset);
+        }
+    }
+    if "map" in value {
+        items.map = value.map;
+    }
+    if "compass" in value {
+        items.compass = value.compass;
+    }
+    if "watch" in value {
+        items.watch = value.watch;
+    }
+    if "radio" in value {
+        items.radio = value.radio;
+    }
+    if "gps" in value {
+        items.gps = value.gps;
+    }
+    if "nvg" in value {
+        items.nvg = value.nvg;
+    }
+    let ret = "Synixe_assignedItems[] = {";
+    for key in ["map", "gps", "radio", "compass", "watch", "nvg"] {
+        let v = items[key];
+        ret += "\"" + v + "\",";
+    }
+    ret += "};\n";
+
     return ret;
 }
 
@@ -211,6 +266,8 @@ respawnWeapons[] = {"Throw","Put"};
 magazines[] = {};
 respawnMagazines[] = {};
 headgearList[] = {};
+linkedItems[] = {};
+respawnLinkedItems[] = {};
 `;
             return ret;
         }
@@ -338,11 +395,20 @@ headgearList[] = {};
         "Launchers" => {
             return weapon("launcher", args);
         }
+        "Binoculars" => {
+            return weapon("binoculars", args);
+        }
         "Headgear" => {
             return probability_list("Synixe_headgear", args);
         }
         "Facewear" => {
             return probability_list("Synixe_facewear", args);
+        }
+        "Assigned" => {
+            return assigned(args);
+        }
+        _ => {
+            fatal("Unknown macro name: " + name);
         }
     }
 }

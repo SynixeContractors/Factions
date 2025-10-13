@@ -24,6 +24,7 @@ class CfgVehicles {
             "synixe_mgp_f_face_shield_cb_tactical": 0.1,
         });
 
+        @Assigned(Military);
     };
 
     class CLASS(Rifleman): CLASS(Base) {

@@ -22,6 +22,8 @@ class CfgVehicles {
             not need to be marked as templated themselves.
         */
         @Templated();
+
+        @Assigned(Military);
     };
 
     /*

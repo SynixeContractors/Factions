@@ -48,7 +48,7 @@ if (_cache isEqualTo []) exitWith {true};
         if (_loaded == "") then { continue; };
         _weaponSlot set [_x + 1, [_loaded, 1]];
     } forEach [3,4];
-} forEach [0,1,2];
+} forEach [0,1,2,8];
 
 {
     private _slot = _loadout select _x;

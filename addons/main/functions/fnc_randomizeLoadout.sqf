@@ -76,6 +76,15 @@ if (_cache isEqualTo []) exitWith {true};
     _loadout set [_x, selectRandomWeighted _cached];
 } forEach [6];
 
+// Assigned Items
+private _assignedCache = _cache select 9;
+if (_assignedCache isNotEqualTo []) then {
+    private _assignedSlot = _loadout select 9;
+    {
+        _assignedSlot set [_x, _assignedCache select _x];
+    } forEach [0,1,2,3,4,5];
+};
+
 [_unit, [_loadout, _extendedInfo]] call CBA_fnc_setLoadout;
 
 if (is3DEN) then {
