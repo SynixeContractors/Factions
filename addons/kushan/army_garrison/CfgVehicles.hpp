@@ -93,7 +93,7 @@ class CfgVehicles {
                 "LMG_Mk200_F": {
                     "magazinesVest": {
                         "200Rnd_65x39_cased_Box_Tracer_Red": 1,
-                    }
+                    },
                     "magazinesBackpack": {
                         "200Rnd_65x39_cased_Box_Tracer_Red": 2,
                     }
@@ -104,7 +104,7 @@ class CfgVehicles {
             },
             "bipod": {
                 "bipod_01_F_blk": 1,
-            },
+            }
         });
     };
 
@@ -163,7 +163,7 @@ class CfgVehicles {
         @Headgear({
             "H_EarProtectors_black_F": 0.2,
             "H_Construction_earprot_white_F": 0.4,
-            "H_Construction_earprot_yellow_F": 0.4,           
+            "H_Construction_earprot_yellow_F": 0.4,         
         });
 
         @Vests({
