@@ -40,7 +40,7 @@ class CfgVehicles {
         });
 
         @Headgear({
-            "H_Beret_EAF_01_F": 0.8,
+            "H_Beret_ocamo": 0.8,
             "H_Booniehat_oicamo": 0.2,
             "H_Cap_oicamo": 0.2,
         });
