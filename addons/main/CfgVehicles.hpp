@@ -106,5 +106,34 @@ class CfgVehicles {
         respawnMagazines[] = {};
     };
     
-    // TODO base civilian (if needed)
+    class C_man_1;
+    class GCLASS(Base_CIV): C_man_1 {
+        dlc = QUOTE(PREFIX);
+        author = "Synixe Contractors";
+        displayName = "Synixe CIV Base Civilian";
+        faction = "";
+        scope = 1;
+        scopeCurator = 1;
+        side = 3;
+        MACRO_SENSITIVITY;
+        sensitivityEar = 0.125;
+        dentityTypes[] = {"LanguageGRE_F", "Head_Greek", "NoGlasses"};
+        genericNames = "GreekMen";
+        icon = "iconMan";
+        role = "Unarmed";
+        canDeactivateMines = 0;
+        engineer = 0;
+        attendant = 0;
+        uavHacker = 0;
+        uniformClass = "";
+        backpack = "";
+        linkedItems[] = {DEFAULT_ITEMS_RADIO};
+        respawnLinkedItems[] = {DEFAULT_ITEMS_RADIO};
+        items[] = {};
+        respawnItems[] = {};
+        weapons[] = {"Throw", "Put"};
+        respawnWeapons[] = {"Throw", "Put"};
+        magazines[] = {};
+        respawnMagazines[] = {};
+    };
 };
