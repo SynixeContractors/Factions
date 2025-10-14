@@ -29,11 +29,10 @@ class CfgVehicles {
         });
 
         @Headgear({
-            "Atlas_H_HelmetCCH_Cover_dst_F": 0.3,
-            "H_Booniehat_oicamo": 0.2,
-            "H_Cap_oicamo": 0.2,
+            "Atlas_H_HelmetCCH_Cover_dst_F": 0.6,
+            "H_Booniehat_oicamo": 0.1,
+            "H_Cap_oicamo": 0.1,
             "lxWS_H_turban_03_sand": 0.1,
-            "lxWS_H_turban_03_green": 0.1,
             "lxWS_H_turban_03_black": 0.1,
         });
 
@@ -41,9 +40,6 @@ class CfgVehicles {
             "Aegis_G_Condor_EyePro_F": 0.2,
             "G_Balaclava_snd_lxWS": 0.2,
             "G_Balaclava_blk_lxWS": 0.3,
-            "G_Bandanna_oli": 0.1,
-            "G_Bandanna_khk": 0.1,
-            "G_Shades_Black": 0.1,
         });
 
         @Assigned(Military);
@@ -92,6 +88,10 @@ class CfgVehicles {
         @Role(SquadLeader);
 
         @Vests({
+            "variants": {
+                "V_CarrierRigKBT_01_light_Coyote_F": 0.5,
+                "Aegis_V_CarrierRigKBT_01_recon_cbr_F": 0.5,
+            },
             "magazines": {
                 "SmokeShell": 2,
                 "MiniGrenade": 1,
@@ -141,6 +141,10 @@ class CfgVehicles {
         @Role(Autorifleman);
 
         @Vests({
+            "variants": {
+                "V_CarrierRigKBT_01_light_Coyote_F": 0.5,
+                "Aegis_V_CarrierRigKBT_01_recon_cbr_F": 0.5,
+            },
             "magazines": {
                 "SmokeShell": 1,
             },
@@ -189,7 +193,6 @@ class CfgVehicles {
 
     class CLASS(Machinegunner): CLASS(Autorifleman) {
         @Role(Machinegunner);
-
 
         @Primary({
             "weapons": {
@@ -245,6 +248,10 @@ class CfgVehicles {
         @Role(Marksman);
 
         @Vests({
+            "variants": {
+                "V_CarrierRigKBT_01_light_Coyote_F": 0.5,
+                "Aegis_V_CarrierRigKBT_01_recon_cbr_F": 0.5,
+            },
             "magazines": {
                 "SmokeShell": 2
             },

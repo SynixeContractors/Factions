@@ -60,6 +60,9 @@ class CfgVehicles {
                 "": 0.5,
                 "optic_Holosight": 0.5
             },
+            "pointers": {
+                "saber_light_lxWS": 1
+            },
         });
     };
 
