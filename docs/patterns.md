@@ -37,3 +37,14 @@ MG: Negev
 AR: NCAR-15-1  
 DMR: SVD  
 Sniper: Cyrus  
+
+## Armed Forces of Kushan
+
+Voice: French
+Head: Takistani / African
+Uniform: HEX Desert
+Primary: L85A3 / L22A3
+Secondary: C-1911
+MG: HK121
+AR: Stoner 99 LMG
+DMR: L85A3

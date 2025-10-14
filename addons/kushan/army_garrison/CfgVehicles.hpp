@@ -40,12 +40,9 @@ class CfgVehicles {
         });
 
         @Headgear({
-            "H_Beret_EAF_01_F": 0.3,
+            "H_Beret_EAF_01_F": 0.8,
             "H_Booniehat_oicamo": 0.2,
             "H_Cap_oicamo": 0.2,
-            "lxWS_H_turban_03_sand": 0.1,
-            "lxWS_H_turban_03_green": 0.1,
-            "lxWS_H_turban_03_black": 0.1
         });
 
         @Primary({
@@ -57,8 +54,8 @@ class CfgVehicles {
                 },
             },
             "optics": {
-                "": 0.5,
-                "optic_Holosight": 0.5
+                "": 0.7,
+                "optic_Holosight": 0.3
             },
             "pointers": {
                 "saber_light_lxWS": 1
@@ -101,6 +98,10 @@ class CfgVehicles {
                         "200Rnd_65x39_cased_Box_Tracer_Red": 2
                     }
                 }
+            },
+            "optics": {
+                "": 0.5,
+                "optic_Holosight": 0.5
             },
             "pointers": {
                 "saber_light_lxWS": 1

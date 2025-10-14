@@ -38,8 +38,9 @@ class CfgVehicles {
 
         @Facewear({
             "Aegis_G_Condor_EyePro_F": 0.2,
-            "G_Balaclava_snd_lxWS": 0.2,
+            "G_Balaclava_snd_lxWS": 0.3,
             "G_Balaclava_blk_lxWS": 0.3,
+            "G_Combat_lxWS": 0.2
         });
 
         @Assigned(Military);
@@ -96,6 +97,31 @@ class CfgVehicles {
                 "SmokeShell": 2,
                 "MiniGrenade": 1,
             },
+            "packs": [
+                "t2_standard",
+            ],
+        });
+
+        @Primary({
+            "weapons": {
+                "arifle_SA80_snd_F": {
+                    "magazinesVest": {
+                        "30Rnd_65x39_caseless_black_mag": 5,
+                        "30Rnd_65x39_caseless_black_mag_Tracer": 3,
+                    }
+                },
+            },
+            "optics": {
+                "optic_Arco_blk_F": 1,
+            },
+            "pointers": {
+                "ACE_DBAL_A3_Green": 1
+            },
+            "muzzles": {
+                "": 0.4,
+                "muzzle_snds_H": 0.3,
+                "muzzle_snds_H_snd_F": 0.3
+            }
         });
 
         @Secondary({
@@ -148,6 +174,9 @@ class CfgVehicles {
             "magazines": {
                 "SmokeShell": 1,
             },
+            "packs": [
+                "t2_standard",
+            ],
         });
 
         @Primary({
@@ -162,11 +191,10 @@ class CfgVehicles {
                 },
             },
             "optics": {
-                "optic_Holosight_blk_F": 1,
+                "optic_Holosight": 1,
             },
             "pointers": {
-                "saber_light_lxWS": 0.6,
-                "Aegis_acc_pointer_DM": 0.4,
+                "Aegis_acc_pointer_DM": 1,
             },
             "bipod": {
                 "bipod_01_F_blk": 1,
@@ -204,6 +232,10 @@ class CfgVehicles {
                         "ACE_150Rnd_93x64_Mag_red": 2,
                     },
                 },
+            },
+            "optics": {
+                "": 0.6,
+                "optic_Arco_blk_F": 0.4,
             },
             "pointers": {
                 "ACE_DBAL_A3_Green": 1,
@@ -255,6 +287,9 @@ class CfgVehicles {
             "magazines": {
                 "SmokeShell": 2
             },
+            "packs": [
+                "t2_standard",
+            ],
         });
 
         @Primary({
@@ -327,6 +362,24 @@ class CfgVehicles {
     class CLASS(RiflemanAA): CLASS(Rifleman) {
         @Role(RiflemanAA);
 
+        @Primary({
+            "weapons": {
+                "arifle_SA80_C_snd_F": {
+                    "magazinesVest": {
+                        "30Rnd_65x39_caseless_black_mag": 4
+                    }
+                },
+            },
+            "optics": {
+                "": 0.5,
+                "optic_Holosight": 0.5,
+
+            },
+            "pointers": {
+                "ACE_DBAL_A3_Green": 1
+            },
+        });
+
         @Launchers({
             "weapons": {
                 "launch_B_Titan_coyote_F": {
@@ -346,6 +399,24 @@ class CfgVehicles {
 
     class CLASS(RiflemanHAT): CLASS(Rifleman) {
         @Role(RiflemanHAT);
+
+        @Primary({
+            "weapons": {
+                "arifle_SA80_C_snd_F": {
+                    "magazinesVest": {
+                        "30Rnd_65x39_caseless_black_mag": 4
+                    }
+                },
+            },
+            "optics": {
+                "": 0.5,
+                "optic_Holosight": 0.5,
+
+            },
+            "pointers": {
+                "ACE_DBAL_A3_Green": 1
+            },
+        });
 
         @Launchers({
             "weapons": {
