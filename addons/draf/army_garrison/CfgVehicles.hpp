@@ -91,9 +91,10 @@ class CfgVehicles {
                 "LMG_Mk200_black_F": {
                     "magazinesVest": {
                         "200Rnd_65x39_cased_Box_Tracer_Red": 1,
-                    }
-                    "magazinesBackpack"
+                    },
+                    "magazinesBackpack": {
                         "200Rnd_65x39_cased_Box_Tracer_Red": 2,
+                    },
                 },
             },
             "pointers": {
@@ -162,7 +163,7 @@ class CfgVehicles {
         @Role(Worker);
 
         @Headgear({
-            "H_EarProtectors_black_F" 0.3,
+            "H_EarProtectors_black_F": 0.3,
             "H_Construction_earprot_white_F": 0.4,
             "H_Construction_earprot_yellow_F": 0.3,
         });
