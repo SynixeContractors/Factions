@@ -99,7 +99,7 @@ class CfgVehicles {
                     }
                     "magazinesBackpack"
                         "200Rnd_65x39_cased_Box_Tracer_Red": 2,
-                }
+                },
             },
             "pointers": {
                 "saber_light_lxWS": 1,
