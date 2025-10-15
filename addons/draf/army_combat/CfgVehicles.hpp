@@ -193,7 +193,7 @@ class CfgVehicles {
             "pointers": {
                 "ACE_DBAL_A3_Red": 1,
             },
-            "bipod": {
+            "bipods": {
                 "bipod_01_F_blk": 1,
             },
         });
