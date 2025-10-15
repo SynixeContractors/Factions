@@ -40,7 +40,7 @@ class CfgVehicles {
             "Aegis_G_Condor_EyePro_F": 0.2,
             "G_Balaclava_snd_lxWS": 0.3,
             "G_Balaclava_blk_lxWS": 0.3,
-            "G_Combat_lxWS": 0.2
+            "G_Combat_lxWS": 0.2,
         });
 
         @Assigned(Military);
@@ -60,15 +60,15 @@ class CfgVehicles {
             "optics": {
                 "": 0.3,
                 "optic_Arco_blk_F": 0.3,
-                "optic_Holosight": 0.4
+                "optic_Holosight": 0.4,
             },
             "pointers": {
-                "ACE_DBAL_A3_Green": 1
+                "ACE_DBAL_A3_Green": 1,
             },
             "muzzles": {
                 "": 0.8,
                 "muzzle_snds_H": 0.1,
-                "muzzle_snds_H_snd_F": 0.1
+                "muzzle_snds_H_snd_F": 0.1,
             }
         });
 
@@ -115,12 +115,12 @@ class CfgVehicles {
                 "optic_Arco_blk_F": 1,
             },
             "pointers": {
-                "ACE_DBAL_A3_Green": 1
+                "ACE_DBAL_A3_Green": 1,
             },
             "muzzles": {
                 "": 0.4,
                 "muzzle_snds_H": 0.3,
-                "muzzle_snds_H_snd_F": 0.3
+                "muzzle_snds_H_snd_F": 0.3,
             }
         });
 
@@ -150,15 +150,15 @@ class CfgVehicles {
             },
             "optics": {
                 "optic_Arco_blk_F": 0.2,
-                "optic_Holosight": 0.8
+                "optic_Holosight": 0.8,
             },
             "pointers": {
-                "ACE_DBAL_A3_Green": 1
+                "ACE_DBAL_A3_Green": 1,
             },
             "muzzles": {
                 "": 0.8,
                 "muzzle_snds_H": 0.1,
-                "muzzle_snds_H_snd_F": 0.1
+                "muzzle_snds_H_snd_F": 0.1,
             }
         });
     };
@@ -285,7 +285,7 @@ class CfgVehicles {
                 "Aegis_V_CarrierRigKBT_01_recon_cbr_F": 0.5,
             },
             "magazines": {
-                "SmokeShell": 2
+                "SmokeShell": 2,
             },
             "packs": [
                 "t2_standard",
@@ -296,20 +296,20 @@ class CfgVehicles {
             "weapons": {
                 "arifle_SA80_snd_F": {
                     "magazinesVest": {
-                        "30Rnd_65x39_caseless_black_mag": 6
+                        "30Rnd_65x39_caseless_black_mag": 6,
                     }
                 },
             },
             "optics": {
-                "optic_DMS": 1
+                "optic_DMS": 1,
 
             },
             "pointers": {
-                "ACE_DBAL_A3_Green": 1
+                "ACE_DBAL_A3_Green": 1,
             },
             "muzzles": {
                 "muzzle_snds_H": 0.5,
-                "muzzle_snds_H_snd_F": 0.5
+                "muzzle_snds_H_snd_F": 0.5,
             }
         });
 
@@ -317,7 +317,7 @@ class CfgVehicles {
             "weapons": {
                 "hgun_ACPC2_black_F": {
                     "magazinesVest": {
-                        "9Rnd_45ACP_Mag": 3
+                        "9Rnd_45ACP_Mag": 3,
                     },
                 },
             },
@@ -330,10 +330,10 @@ class CfgVehicles {
 
         @Backpacks({
             "variants": {
-                "tacs_Backpack_Kitbag_Medic_Coyote": 1
+                "tacs_Backpack_Kitbag_Medic_Coyote": 1,
             },
             "packs": [
-                "t2_medic"
+                "t2_medic",
             ],
         });
     };
@@ -346,7 +346,7 @@ class CfgVehicles {
                 "launch_RPG32_tan_lxWS": {
                     "magazinesBackpack": {
                         "RPG32_F": 2,
-                        "RPG32_HE_F": 1
+                        "RPG32_HE_F": 1,
                     },
                 },
             },
@@ -354,7 +354,7 @@ class CfgVehicles {
 
         @Backpacks({
             "variants": {
-                "B_Kitbag_cbr": 1
+                "B_Kitbag_cbr": 1,
             },
         });
     };
@@ -366,7 +366,7 @@ class CfgVehicles {
             "weapons": {
                 "arifle_SA80_C_snd_F": {
                     "magazinesVest": {
-                        "30Rnd_65x39_caseless_black_mag": 4
+                        "30Rnd_65x39_caseless_black_mag": 4,
                     }
                 },
             },
@@ -376,7 +376,7 @@ class CfgVehicles {
 
             },
             "pointers": {
-                "ACE_DBAL_A3_Green": 1
+                "ACE_DBAL_A3_Green": 1,
             },
         });
 
@@ -384,7 +384,7 @@ class CfgVehicles {
             "weapons": {
                 "launch_B_Titan_coyote_F": {
                     "magazinesBackpack": {
-                        "Titan_AA": 2
+                        "Titan_AA": 2,
                     },
                 },
             },
@@ -392,7 +392,7 @@ class CfgVehicles {
 
         @Backpacks({
             "variants": {
-                "B_Kitbag_cbr": 1
+                "B_Kitbag_cbr": 1,
             },
         });
     };
@@ -404,7 +404,7 @@ class CfgVehicles {
             "weapons": {
                 "arifle_SA80_C_snd_F": {
                     "magazinesVest": {
-                        "30Rnd_65x39_caseless_black_mag": 4
+                        "30Rnd_65x39_caseless_black_mag": 4,
                     }
                 },
             },
@@ -414,7 +414,7 @@ class CfgVehicles {
 
             },
             "pointers": {
-                "ACE_DBAL_A3_Green": 1
+                "ACE_DBAL_A3_Green": 1,
             },
         });
 
@@ -422,7 +422,7 @@ class CfgVehicles {
             "weapons": {
                 "launch_O_Vorona_brown_F": {
                     "magazinesBackpack": { 
-                        "Vorona_HEAT": 2
+                        "Vorona_HEAT": 2,
                     },
                 },
             },
@@ -430,7 +430,7 @@ class CfgVehicles {
 
         @Backpacks({
             "variants": {
-                "B_Kitbag_cbr": 1
+                "B_Kitbag_cbr": 1,
             },
         });
     };
@@ -440,7 +440,7 @@ class CfgVehicles {
 
         @Backpacks({
             "variants": {
-                "B_RadioBag_01_oicamo_F": 1
+                "B_RadioBag_01_oicamo_F": 1,
             },
         });
     };
@@ -450,10 +450,10 @@ class CfgVehicles {
 
         @Backpacks({
             "variants": {
-                "B_AssaultPackSpec_cbr": 1
+                "B_AssaultPackSpec_cbr": 1,
             },
             "packs": [
-                "toolkit"
+                "toolkit",
             ],
         });
     };
@@ -463,11 +463,11 @@ class CfgVehicles {
 
         @Backpacks({
             "variants": {
-                "B_Kitbag_cbr": 1
+                "B_Kitbag_cbr": 1,
             },
             "packs": [
                 "eod",
-                "demo"
+                "demo",
             ],
         });
 
@@ -486,19 +486,19 @@ class CfgVehicles {
                 "V_CarrierRigKBT_01_Coyote_F": 1
             },
             "packs": [
-                "t2_standard"
+                "t2_standard",
             ],
         });
 
         @Headgear({
-            "lxWS_H_HelmetCrew_I": 1
+            "lxWS_H_HelmetCrew_I": 1,
         });
 
         @Primary({
             "weapons": {
                 "arifle_SA80_C_snd_F": {
                     "magazinesVest": {
-                        "30Rnd_65x39_caseless_black_mag": 4
+                        "30Rnd_65x39_caseless_black_mag": 4,
                     }
                 },
             },
@@ -511,7 +511,7 @@ class CfgVehicles {
         @Headgear({
             "H_PilotHelmetHeli_B_visor_up": 0.2,
             "H_PilotHelmetHeli_B": 0.4,
-            "H_CrewHelmetHeli_B": 0.4
+            "H_CrewHelmetHeli_B": 0.4,
         });
     };
 
