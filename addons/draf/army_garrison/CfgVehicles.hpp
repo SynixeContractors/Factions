@@ -1,7 +1,7 @@
 class CfgVehicles {
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {
-        displayName = "RNLDF Base Army Garrison";
+        displayName = "DRAF Base Army Garrison";
         editorSubcategory = QGCLASS(army_garrison);
 
        @Uniforms({
@@ -15,8 +15,9 @@ class CfgVehicles {
         });
 
         @Headgear({
-            "Aegis_H_Helmet_Virtus_Cover_wdl_F": 0.6,
-            "Aegis_H_Helmet_Virtus_Scrim_wdl_F": 0.4,
+            "Atlas_H_HelmetCCH_Cover_whex_F": 0.2,
+            "H_Booniehat_whex_F": 0.2,
+            "Atlas_H_MilCap_nohs_whex_F": 0.6,
         });
 
         @Facewear({
@@ -39,12 +40,6 @@ class CfgVehicles {
             "magazines": {
                 "SmokeShell": 2,
             },
-        });
-
-        @Headgear({
-            "Atlas_H_HelmetCCH_Cover_whex_F": 0.2,
-            "H_Booniehat_whex_F": 0.2,
-            "Atlas_H_MilCap_nohs_whex_F": 0.6,
         });
 
         @Primary({
