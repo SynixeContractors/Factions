@@ -25,3 +25,15 @@ Secondary: MP-443
 MG: LWMMG  
 AR: RPK-12  
 DMR: SVD  
+
+## Joson Socialist Republic
+
+Voice: Chinese  
+Head: Asian  
+Uniform: ATACS IX  
+Primary: NCAR-15 / NCAR-15B  
+Secondary: P320  
+MG: Negev  
+AR: NCAR-15-1  
+DMR: SVD  
+Sniper: Cyrus  

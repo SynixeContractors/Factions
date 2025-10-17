@@ -10,7 +10,7 @@
 
 // Macro
 #define MACRO_SENSITIVITY sensitivity = 6
-#define BASE_CLASSES [QGCLASS(Base_BLUFOR), QGCLASS(Base_OPFOR), QGCLASS(Base_INDEP), QGCLASS(Base_Civilian)]
+#define BASE_CLASSES [QGCLASS(Base_BLUFOR), QGCLASS(Base_OPFOR), QGCLASS(Base_INDEP), QGCLASS(Base_CIV)]
 
 // Main
 

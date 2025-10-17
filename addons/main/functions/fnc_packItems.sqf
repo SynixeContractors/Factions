@@ -35,6 +35,19 @@ switch (_name) do {
             ["ACE_bodyBag", 1]
         ]
     };
+    case "t4_medic": {
+        [
+            ["ACE_suture", 10],
+            ["ACE_elasticBandage", 20],
+            ["ACE_quikclot", 10],
+            ["ACE_salineIV_500", 2],
+            ["ACE_salineIV_250", 1],
+            ["ACE_painkillers", 1],
+            ["ACE_surgicalKit", 1],
+            ["ACE_splint", 1],
+            ["ACE_tourniquet", 2]
+        ]
+    };
     case "toolkit": {
         [
             ["ToolKit", 1]

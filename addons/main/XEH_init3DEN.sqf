@@ -7,3 +7,12 @@ add3DENEventHandler ["OnEditableEntityAdded", {
         [_entity] call FUNC(randomizeLoadout);
     };
 }];
+
+add3DENEventHandler ["OnPaste", {
+    private _entities = get3DENSelected "object";
+    {
+        if (BASE_CLASSES findIf { _x isKindOf _x } != -1) then {
+            [_x] call FUNC(randomizeLoadout);
+        };
+    } forEach _entities;
+}];
