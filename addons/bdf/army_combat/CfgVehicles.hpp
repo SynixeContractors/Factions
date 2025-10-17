@@ -29,6 +29,9 @@ class CfgVehicles {
             "Aegis_H_Helmet_Virtus_Scrim_mtp_F": 1,
             "Aegis_H_Helmet_Virtus_Headset_snd_F": 1,
             "Aegis_H_Helmet_Virtus_Headset_rgr_F": 1,
+            "Aegis_H_Helmet_FASTMT_Headset_cbr_F": 1,
+            "Aegis_H_Helmet_FASTMT_Headset_tan_F": 1,
+            "Aegis_H_Helmet_FASTMT_Headset_rgr_F": 1,
         });
 
         @Facewear({

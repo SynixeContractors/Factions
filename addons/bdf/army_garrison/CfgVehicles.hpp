@@ -197,10 +197,10 @@ class CfgVehicles {
         });
 
         @Secondary({
+            "": 0.85,
             "weapons": {
-                "": 0.85,
-                "probability": 0.15,
                 "hgun_Rook40_F": {
+                "probability": 0.15,
                     "magazinesVest": {
                         "17Rnd_9x21_Mag": 3,
                     },
@@ -226,7 +226,7 @@ class CfgVehicles {
             "H_Headset_Tactical_grn": 0.2,
             "H_Headset_Tactical_khk": 0.2,
             "H_Construction_earprot_white_F": 0.2,
-            "H_Construction_earprot_yellow_F": 0.2,
+            "H_Construction_earprot_yellow_F": 0.2,           
         });
 
         @Vests({
