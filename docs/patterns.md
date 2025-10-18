@@ -40,7 +40,6 @@ Sniper: Cyrus
 
 ## Dal Riada Armed Forces
 
-Voice: British English
 Uniform: HEX Woodland
 Primary: FAMAS G4
 Secondary: C-1911
