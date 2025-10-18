@@ -21,9 +21,10 @@ class CfgVehicles {
         });
 
         @Facewear({
-            "G_Balaclava_blk": 0.5,
-            "G_Bandanna_blk": 0.2,
-            "Aegis_G_Condor_EyePro_F": 0.3,
+            "G_Balaclava_blk": 0.4,
+            "synixe_mgp_f_face_shield_blk": 0.2,
+            "synixe_mgp_f_face_shield_rgr": 0.2
+            "Aegis_G_Condor_EyePro_F": 0.2,
         });
 
         @Assigned(Military);

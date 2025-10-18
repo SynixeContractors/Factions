@@ -44,5 +44,5 @@ Voice: British English
 Uniform: HEX Woodland
 Primary: FAMAS G4
 Secondary: C-1911
-MG: HK121 
+MG: HK121
 AR: Stoner
