@@ -20,7 +20,7 @@ class CfgVehicles {
             "Aegis_G_Condor_EyePro_F": 0.25,
             "synixe_mgp_f_face_shield_rgr_tactical": 0.25,
             "G_Balaclava_blk": 0.25,
-            "G_Bandanna_blk": 0.25,
+            "synixe_mgp_f_face_shield_blk": 0.25,
         });
 
         @Assigned(Military);
