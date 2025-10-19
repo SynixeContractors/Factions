@@ -3,7 +3,7 @@
 params ["_name"];
 
 switch (_name) do {
-    case "t2_rifleman_medical": {
+    case "t3_rifleman_medical": {
         [
             ["ACE_elasticBandage", 6],
             ["ACE_tourniquet", 1],
@@ -11,7 +11,7 @@ switch (_name) do {
             ["ACE_painkillers", 1]
         ];
     };
-    case "t2_standard": {
+    case "t3_standard": {
         [
             ["ACE_CableTie", 6],
             ["SmokeShell", 2],
@@ -20,7 +20,7 @@ switch (_name) do {
             ["Chemlight_blue", 1]
         ];
     };
-    case "t2_medic": {
+    case "t3_medic": {
         [
             ["ACE_suture", 40],
             ["ACE_elasticBandage", 30],
