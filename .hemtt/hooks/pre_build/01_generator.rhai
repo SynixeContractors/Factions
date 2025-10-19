@@ -1,3 +1,6 @@
+// Add HEMTT_VFS to global::
+const HEMTT_VFS = HEMTT_VFS;
+
 fn is_config(file) {
     // Replace with future HEMTT
     // file.file_ext() == "hpp" || file.file_ext() == "cpp"
@@ -235,95 +238,27 @@ fn groups(args) {
     } else {
         ret += "name = \"" + type + "\";\n";
     }
-    make_lower(type);
-    switch id {
-        "T2_Army_Combat" | "T2_Army_Garrison" => {
-            ret += `class CLASS(Patrol) {
-            name = "Patrol";
-            side = ` + side + `;
-            faction = "` + faction + `";
-            icon = "\a3\ui_f\data\map\markers\nato\n_inf.paa";
-            __COUNTER_RESET__
-            GROUP_UNIT(CLASS(`+type+`_Rifleman),0);
-            GROUP_UNIT(CLASS(`+type+`_Rifleman),0);
-        };
-        class CLASS(Fireteam): CLASS(Patrol) {
-            name = "Fireteam";
-            __COUNTER_RESET__
-            GROUP_UNIT(CLASS(`+type+`_TeamLeader),0);
-            GROUP_UNIT(CLASS(`+type+`_Rifleman),0);
-            GROUP_UNIT(CLASS(`+type+`_Rifleman),0);
-            GROUP_UNIT(CLASS(`+type+`_Autorifleman),0);
-        };`;
-        if id == "T2_Army_Combat" {
-            ret += `class CLASS(Squad): CLASS(Fireteam) {
-                name = "Squad";
-                __COUNTER_RESET__
-                GROUP_UNIT(CLASS(`+type+`_SquadLeader),0);
-                GROUP_UNIT(CLASS(`+type+`_RadioOperator),0);
-                GROUP_UNIT(CLASS(`+type+`_Rifleman),0);
-                GROUP_UNIT(CLASS(`+type+`_Medic),0);
-                GROUP_UNIT(CLASS(`+type+`_TeamLeader),0);
-                GROUP_UNIT(CLASS(`+type+`_Marksman),0);
-                GROUP_UNIT(CLASS(`+type+`_Autorifleman),0);
-                GROUP_UNIT(CLASS(`+type+`_Rifleman),0);
-            };`;
-            ret += `class CLASS(Squadstub): CLASS(Fireteam) {
-                name = "Squad (Stub)";
-                __COUNTER_RESET__
-                GROUP_UNIT(CLASS(`+type+`_SquadLeader),0);
-                GROUP_UNIT(CLASS(`+type+`_RadioOperator),0);
-                GROUP_UNIT(CLASS(`+type+`_Rifleman),0);
-                GROUP_UNIT(CLASS(`+type+`_Medic),0);
-            };class CLASS(FireteamAT): CLASS(Fireteam) {
-                name = "Fireteam (AT)";
-                __COUNTER_RESET__
-                GROUP_UNIT(CLASS(`+type+`_TeamLeader),0);
-                GROUP_UNIT(CLASS(`+type+`_RiflemanMAT),0);
-                GROUP_UNIT(CLASS(`+type+`_Rifleman),0);
-                GROUP_UNIT(CLASS(`+type+`_Rifleman),0);
-            };`;
-            ret += `class CLASS(FireteamAA): CLASS(Fireteam) {
-                name = "Fireteam (AA)";
-                __COUNTER_RESET__
-                GROUP_UNIT(CLASS(`+type+`_TeamLeader),0);
-                GROUP_UNIT(CLASS(`+type+`_RiflemanAA),0);
-                GROUP_UNIT(CLASS(`+type+`_Rifleman),0);
-                GROUP_UNIT(CLASS(`+type+`_Rifleman),0);
-            };class CLASS(FireteamHAT): CLASS(Fireteam) {
-                name = "Fireteam (HAT)";
-                __COUNTER_RESET__
-                GROUP_UNIT(CLASS(`+type+`_TeamLeader),0);
-                GROUP_UNIT(CLASS(`+type+`_RiflemanHAT),0);
-                GROUP_UNIT(CLASS(`+type+`_Rifleman),0);
-                GROUP_UNIT(CLASS(`+type+`_Rifleman),0);
-            };`;
-            ret+=`class CLASS(FireteamMachinegunner): CLASS(Fireteam) {
-                name = "Fireteam (Machinegunner)";
-                __COUNTER_RESET__
-                GROUP_UNIT(CLASS(`+type+`_TeamLeader),0);
-                GROUP_UNIT(CLASS(`+type+`_Rifleman),0);
-                GROUP_UNIT(CLASS(`+type+`_Machinegunner),0);
-                GROUP_UNIT(CLASS(`+type+`_AsstMachinegunner),0);
-            };class CLASS(FireteamEngineer): CLASS(Fireteam) {
-                name = "Fireteam (Engineer)";
-                __COUNTER_RESET__
-                GROUP_UNIT(CLASS(`+type+`_TeamLeader),0);
-                GROUP_UNIT(CLASS(`+type+`_Rifleman),0);
-                GROUP_UNIT(CLASS(`+type+`_Engineer),0);
-                GROUP_UNIT(CLASS(`+type+`_Engineer),0);
-            };`;
-            ret+=`class CLASS(FireteamDemolitions): CLASS(Fireteam) {
-                name = "Fireteam (Demolitions)";
-                __COUNTER_RESET__
-                GROUP_UNIT(CLASS(`+type+`_TeamLeader),0);
-                GROUP_UNIT(CLASS(`+type+`_Rifleman),0);
-                GROUP_UNIT(CLASS(`+type+`_Demolitions),0);
-                GROUP_UNIT(CLASS(`+type+`_Demolitions),0);
-            };`;
+    let group_source = parse_json((global::HEMTT_VFS.join("generator/groups/" + to_lower(tier) + ".json")).open_file().read());
+    for section in group_source.groups {
+        if type in section.types {
+            for group in section.groups {
+                ret += "class CLASS(" + group.class + ")";
+                if "parent" in group {
+                    ret += ": CLASS(" + group.parent + ")";
+                }
+                ret += " {\n";
+                ret += "side = " + side + ";\n";
+                ret += "faction = \"" + faction + "\";\n";
+                ret += "icon = \"" + section.icon + "\";\n";
+                ret += "name = \"" + group.name + "\";\n";
+                ret += "__COUNTER_RESET__\n";
+                for unit in group.units {
+                    ret += "GROUP_UNIT(CLASS(" + type + "_" + unit + ")," + side + ");\n";
+                }
+                ret += "};\n";
             }
         }
-    };
+    }
     ret += "};\n";
     return ret;
 }
@@ -401,100 +336,11 @@ respawnLinkedItems[] = {};
                 displayName: "Unknown",
                 icon: "iconMan",
             };
-            let overlay = switch role_name {
-                "Hidden" => #{
-                    scope: 0,
-                    scopeCurator: 0,
-                },
-                "Rifleman" => #{
-                    displayName: "Rifleman",
-                },
-                "RiflemanMAT" => #{
-                    displayName: "Rifleman (MAT)",
-                    icon: "iconManAT",
-                    role: "MissileSpecialist",
-                },
-                "RiflemanAA" => #{
-                    displayName: "Missile Specialist (AA)",
-                    icon: "iconManAT",
-                    role: "MissileSpecialist",
-                },
-                "RiflemanHAT" => #{
-                    displayName: "Missile Specialist (AT)",
-                    icon: "iconManAT",
-                    role: "MissileSpecialist",
-                },
-                "RadioOperator" => #{
-                    displayName: "Radio Operator",
-                },
-                "SquadLeader" => #{
-                    displayName: "Squad Leader",
-                },
-                "TeamLeader" => #{
-                    displayName: "Team Leader",
-                },
-                "Demolitions" => #{
-                    displayName: "Demolitions",
-                    icon: "iconManEngineer",
-                    role: "Sapper",
-                    engineer: 1,
-                    canDeactivateMines: 1,
-                },
-                "Engineer" => #{
-                    displayName: "Engineer",
-                    icon: "iconManEngineer",
-                    role: "Sapper",
-                    engineer: 1,
-                    canDeactivateMines: 1,
-                },
-                "Maintainer" => #{
-                    displayName: "Maintainer",
-                    icon: "iconManEngineer",
-                    role: "Sapper",
-                    engineer: 1,
-                },
-                "Worker" => #{
-                    displayName: "Worker",
-                },
-                "Crewman" => #{
-                    displayName: "Crewman",
-                },
-                "HeliPilot" => #{
-                    displayName: "Helicopter Pilot",
-                },
-                "Autorifleman" => #{
-                    displayName: "Autorifleman",
-                    icon: "iconManMG",
-                    role: "MachineGunner",
-                },
-                "Machinegunner" => #{
-                    displayName: "Machinegunner",
-                    icon: "iconManMG",
-                    role: "MachineGunner",
-                },
-                "AsstMachinegunner" => #{
-                    displayName: "Asst. Machinegunner",
-                },
-                "Marksman" => #{
-                    displayName: "Marksman",
-                    icon: "iconManRecon",
-                    role: "Marksman",
-                },
-                "Sniper" => #{
-                    displayName: "Sniper",
-                    icon: "iconManRecon",
-                    role: "Marksman",
-                },
-                "Medic" => #{
-                    displayName: "Medic",
-                    icon: "iconManMedic",
-                    role: "Combat Life Saver",
-                    attendant: 1,
-                },
-                _ => {
-                    fatal("Unknown role name: " + role_name);
-                }
-            };
+            let overlay = parse_json(global::HEMTT_VFS.join("generator/roles.json").open_file().read());
+            if !(role_name in overlay) {
+                fatal("Role not found in roles.json: " + role_name);
+            }
+            overlay = overlay[role_name];
             for key in overlay.keys() {
                 properties[key] = overlay[key];
             }

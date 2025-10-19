@@ -1,4 +1,3 @@
-class Car_F;
 class Offroad_02_base_F: Car_F {
     class TextureSources {
         class Black;

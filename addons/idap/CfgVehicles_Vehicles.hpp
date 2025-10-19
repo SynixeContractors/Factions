@@ -43,3 +43,26 @@ class CLASS(VanCargo): GCLASS(VanCargo) {
     crew = QCLASS(AidWorker);
     typicalCargo[] = {QCLASS(AidWorker)};
 };
+
+class GCLASS(Offroad);
+class CLASS(Offroad): GCLASS(Offroad) {
+    SCOPE_DLC;
+    faction = QCLASS(civilian);
+    displayName = "Offroad";
+    textureList[] = {"IDAP",1};
+    editorPreview = "\A3\EditorPreviews_F_Orange\Data\CfgVehicles\C_IDAP_Offroad_01_F.jpg";
+    crew = QCLASS(AidWorker);
+    typicalCargo[] = {QCLASS(AidWorker)};
+    hiddenSelectionsTextures[] = {"\A3\Soft_F_Orange\Offroad_01\Data\Offroad_01_ext_IDAP_CO.paa","\A3\Soft_F_Orange\Offroad_01\Data\Offroad_01_ext_IDAP_CO.paa"};
+};
+class GCLASS(OffroadServices);
+class CLASS(OffroadServices): GCLASS(OffroadServices) {
+    SCOPE_DLC;
+    faction = QCLASS(civilian);
+    displayName = "Offroad (Services)";
+    textureList[] = {"IDAP",1};
+    editorPreview = "\A3\EditorPreviews_F_Orange\Data\CfgVehicles\C_IDAP_Offroad_01_F.jpg";
+    crew = QCLASS(AidWorker);
+    typicalCargo[] = {QCLASS(AidWorker)};
+    hiddenSelectionsTextures[] = {"\A3\Soft_F_Orange\Offroad_01\Data\Offroad_01_ext_IDAP_CO.paa","\A3\Soft_F_Orange\Offroad_01\Data\Offroad_01_ext_IDAP_CO.paa"};
+};
