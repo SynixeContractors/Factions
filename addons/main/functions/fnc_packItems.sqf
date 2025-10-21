@@ -20,6 +20,14 @@ switch (_name) do {
             ["Chemlight_blue", 1]
         ];
     };
+    case "t3_standard_nonvg": {
+        [
+            ["ACE_CableTie", 6],
+            ["SmokeShell", 2],
+            ["Chemlight_green", 1],
+            ["Chemlight_blue", 1]
+        ];
+    };
     case "t3_medic": {
         [
             ["ACE_suture", 40],
