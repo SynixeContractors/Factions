@@ -22,9 +22,9 @@ class CfgVehicles {
             "packs": [
                 "t3_standard",
             ],
-            "magazines": [
-                "MiniGrenade": 1,
-            ]
+            "magazines": {
+                "MiniGrenade": 2,
+            },
         });
 
         @Headgear({
@@ -35,8 +35,8 @@ class CfgVehicles {
 
         @Facewear({
             "G_Balaclava_light_blk_F": 0.2,
-           "synixe_mgp_f_face_shield_rgr": 0.2,
-           "synixe_mgp_f_face_shield_rgr_tactical": 0.2,
+            "synixe_mgp_f_face_shield_rgr": 0.2,
+            "synixe_mgp_f_face_shield_rgr_tactical": 0.2,
             "synixe_mgp_f_face_shield_blk": 0.2,
             "synixe_mgp_f_face_shield_blk_tactical": 0.2,
         });
@@ -328,7 +328,7 @@ class CfgVehicles {
         @Launchers({
             "weapons": {
                 "launch_I_Titan_short_F": {
-                    "magazinesBackpack": { 
+                    "magazinesBackpack": {
                         "Titan_AT": 2,
                     },
                 },

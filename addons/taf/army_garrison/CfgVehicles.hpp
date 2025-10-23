@@ -170,7 +170,7 @@ class CfgVehicles {
             "H_EarProtectors_white_F": 0.2,
             "H_EarProtectors_orange_F": 0.2,
             "H_Construction_earprot_white_F": 0.2,
-            "H_Construction_earprot_yellow_F": 0.2,           
+            "H_Construction_earprot_yellow_F": 0.2,
         });
 
         @Vests({
