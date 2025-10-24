@@ -10,5 +10,9 @@ class CfgEditorSubcategories {
     class GCLASS(SOF) {
             displayName = "Men (Special Forces)";
     };
+
+    class GCLASS(reserves) {
+            displayName = "Men (Reserves)";
+    };
     
 }; 
