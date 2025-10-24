@@ -11,8 +11,8 @@ class CfgEditorSubcategories {
             displayName = "Men (Special Forces)";
     };
 
-    class GCLASS(natres) {
-            displayName = "Men (National Reserves)";
+    class GCLASS(reserves) {
+            displayName = "Men (Reserves)";
     };
     
 }; 
