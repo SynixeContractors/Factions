@@ -1,19 +1,21 @@
 class CfgVehicles {
     class PCLASS(Base);
-        class CLASS(Base): PCLASS(Base) {
-            displayName = "LDF Base Army Garrison";
-            editorSubcategory = QGCLASS(army_garrison);
-            
-            @Uniforms({
-                "variants": {
-                    "Atlas_U_E_SF_CombatUniformNCU_01_F": 0.5,
-                    "Atlas_U_E_SF_CombatUniformNCU_02_F": 0.5,
-                },
-                "packs": [
-                    "t2_rifleman_medical",
-                ],
-            });
-        };
+    class CLASS(Base): PCLASS(Base) {
+        displayName = "LDF Base Army Garrison";
+        editorSubcategory = QGCLASS(army_garrison);
+        
+        @Uniforms({
+            "variants": {
+                "U_I_E_Uniform_01_F": 0.5,
+                "U_I_E_Uniform_01_shortsleeve_F": 0.5,
+                "U_I_E_Uniform_01_sweater_F": 0.5,
+                "U_I_L_Uniform_01_camo_F": 0.1,
+            },
+            "packs": [
+                "t2_rifleman_medical",
+            ],
+        });
+    };
 
     class CLASS(Rifleman): CLASS(Base) {
         @Role(Rifleman);
@@ -38,23 +40,15 @@ class CfgVehicles {
 
         @Primary({
             "weapons": {
-                "arifle_Mk20_black_F": {
-                    "probability": 1,
+                "arifle_MSBS65_camo_F": {
                     "magazinesVest": {
-                        "30Rnd_556x45_Stanag": 9,
-                    }
-                },
-                "arifle_Mk20C_black_F": {
-                    "probability": 1,
-                    "magazinesVest": {
-                        "30Rnd_556x45_Stanag": 9,
-                    }
+                        "tacgt_30Rnd_65x39_EPR_MSBS": 7,
+                        "tacgt_30Rnd_65x39_Ball_Tracer_MSBS": 2,
+                    },
                 },
             },
             "optics": {
-                "optic_VRCO_RF": 1,
-                "JCA_optic_MROS_black_magnifier": 1,
-                "JCA_optic_MROS_black": 1,
+                "optic_ico_01_camo_f": 1,
             },
             "pointers": {
                 "saber_light_lxWS": 0.6,
@@ -63,14 +57,39 @@ class CfgVehicles {
         });
 
         @Secondary({
-                "weapons": {
-                    "hgun_G17_black_F": {
-                        "magazinesVest": {
-                            "17Rnd_9x21_Mag": 3,
-                        },
+            "weapons": {
+                "hgun_G17_black_F": {
+                    "magazinesVest": {
+                        "17Rnd_9x21_Mag": 3,
                     },
                 },
-            });
+            },
+        });
+    };
+
+    class CLASS(TeamLeader): CLASS(Rifleman) {
+        @Role(TeamLeader);
+
+        @Primary({
+            "weapons": {
+                "arifle_MSBS65_GL_camo_F": {
+                    "magazinesVest": {
+                        "tacgt_30Rnd_65x39_EPR_MSBS": 5,
+                        "tacgt_30Rnd_65x39_Ball_Tracer_MSBS": 2,
+                        "1Rnd_HE_Grenade_shell": 6,
+                        "1Rnd_Smoke_Grenade_shell": 2,
+                    },
+                    "loadedSecondary": "1Rnd_HE_Grenade_shell",
+                },
+            },
+            "optics": {
+                "optic_ico_01_camo_f": 1,
+            },
+            "pointers": {
+                "saber_light_lxWS": 0.6,
+                "Aegis_acc_pointer_DM": 0.4,
+            },
+        });
     };
 
     class CLASS(Autorifleman): CLASS(Rifleman) {
@@ -78,12 +97,12 @@ class CfgVehicles {
 
         @Primary({
             "weapons": {
-                "LMG_03_F": {
+                "LMG_Mk200_black_F": {
                     "magazinesVest": {
-                        "200Rnd_556x45_Box_Tracer_F": 4,
+                        "tacgt_200Rnd_65x39_EPR_Belt": 4,
                     },
                     "magazinesBackpack": {
-                        "200Rnd_556x45_Box_Tracer_F": 4,
+                        "tacgt_200Rnd_65x39_EPR_Belt": 4,
                     },
                 },
             },
@@ -123,6 +142,12 @@ class CfgVehicles {
 
     class CLASS(Maintainer): CLASS(Base) {
         @Role(Maintainer);
+
+        @Uniforms({
+            "variants": {
+                "U_I_E_Uniform_01_coveralls_F": 1,
+            },
+        });
 
         @Headgear({
             "H_Headset_Tactical": 1,
@@ -181,17 +206,16 @@ class CfgVehicles {
         @Primary({
             "weapons": {
                 "": 0.85,
-                "arifle_Mk20_black_F": {
+                "arifle_MSBS65_camo_F": {
                     "probability": 0.15,
                     "magazinesVest": {
-                        "30Rnd_556x45_Stanag": 5,
-                    }
+                        "tacgt_30Rnd_65x39_EPR_MSBS": 7,
+                        "tacgt_30Rnd_65x39_Ball_Tracer_MSBS": 2,
+                    },
                 },
             },
             "optics": {
-                "optic_VRCO_RF": 1,
-                "JCA_optic_MROS_black_magnifier": 1,
-                "JCA_optic_MROS_black": 1,
+                "optic_ico_01_camo_f": 1,
             },
             "pointers": {
                 "saber_light_lxWS": 0.6,

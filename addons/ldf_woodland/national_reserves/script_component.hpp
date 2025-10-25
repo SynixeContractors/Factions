@@ -1,3 +1,3 @@
-#define SUBCOMPONENT natres
+#define SUBCOMPONENT reserves
 
 #include "..\script_component.hpp"
