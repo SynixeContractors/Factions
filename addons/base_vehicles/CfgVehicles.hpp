@@ -4,6 +4,7 @@ class CfgVehicles {
     class Car_F;
     class Tank_F;
     class Wheeled_APC_F;
+    class MBT_02_base_F;
 
     #include "CfgVehicles_Badger.hpp"
     #include "CfgVehicles_Jeep.hpp"
@@ -11,4 +12,5 @@ class CfgVehicles {
     #include "CfgVehicles_Ram.hpp"
     #include "CfgVehicles_Van.hpp"
     #include "CfgVehicles_Warrior.hpp"
+    #include "CfgVehicles_T100.hpp"
 };
