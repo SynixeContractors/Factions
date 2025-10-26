@@ -1,7 +1,8 @@
-class Tank_Tracked_02_cannon_F: MBT_02_base_F {
+class MBT_02_base_F: Tank_F {
     class TextureSources;
 };
-class Tank_Tracked_02_cannon_v2_F: Tank_Tracked_02_cannon_F {
+
+class MBT_02_base_v2_F: MBT_02_base_F {
     class TextureSources: TextureSources {
         //FIXME: actuall add correct camos
         class Ardistan;
@@ -13,7 +14,7 @@ class Tank_Tracked_02_cannon_v2_F: Tank_Tracked_02_cannon_F {
         class WoodlandHex;
     };
 };
-class GCLASS(T100): Tank_Tracked_02_cannon_v2_F {
+class GCLASS(T100): MBT_02_base_v2_F {
     faction = QGCLASS(base_vehicles);
     side = 3;
     scope = 2;
