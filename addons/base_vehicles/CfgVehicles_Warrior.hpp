@@ -42,4 +42,7 @@ class GCLASS(Warrior): APC_Tracked_03_base_v2_F {
             factions[] = {};
         };
     };
+    delete TransportItems;
+    delete TransportMagazines;
+    delete TransportWeapons;
 };

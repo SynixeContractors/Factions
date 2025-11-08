@@ -35,6 +35,10 @@ class GCLASS(Badger): APC_Wheeled_01_base_v2_F {
             factions[] = {};
         };
     };
+    class TransportItems {};
+    class TransportMagazines {};
+    class TransportWeapons {};
+    class TransportBackpacks {};
 };
 
 class APC_Wheeled_01_command_base_lxWS: APC_Wheeled_01_base_F {
@@ -82,6 +86,10 @@ class GCLASS(Badger_Command): APC_Wheeled_01_command_base_lxWS {
             factions[] = {};
         };
     };
+    class TransportItems {};
+    class TransportMagazines {};
+    class TransportWeapons {};
+    class TransportBackpacks {};
 };
 
 class APC_Wheeled_01_mortar_base_lxWS: APC_Wheeled_01_base_F {
@@ -129,6 +137,10 @@ class GCLASS(Badger_Mortar): APC_Wheeled_01_mortar_base_lxWS {
             factions[] = {};
         };
     };
+    class TransportItems {};
+    class TransportMagazines {};
+    class TransportWeapons {};
+    class TransportBackpacks {};
 };
 
 class APC_Wheeled_01_atgm_base_lxWS: APC_Wheeled_01_base_F {
@@ -179,6 +191,10 @@ class GCLASS(Badger_ATGM): APC_Wheeled_01_atgm_base_v2 {
             factions[] = {};
         };
     };
+    class TransportItems {};
+    class TransportMagazines {};
+    class TransportWeapons {};
+    class TransportBackpacks {};
 };
 
 class B_APC_Wheeled_01_base_F: APC_Wheeled_01_base_F {
@@ -218,4 +234,8 @@ class GCLASS(Badger_Medical): B_APC_Wheeled_01_medical_F {
             factions[] = {};
         };
     };
+    class TransportItems {};
+    class TransportMagazines {};
+    class TransportWeapons {};
+    class TransportBackpacks {};
 };

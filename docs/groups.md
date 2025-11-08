@@ -24,6 +24,12 @@ Required Units:
 - Marksman
 - Medic
 
+#### Crewed Vehicles
+
+If the faction uses crewed vehicles, the following units are also required:
+
+- Crewman
+
 ### Army Garrison
 
 These units are intended for base garrison and patrol duties, they can be as "geared up" as the combat units, but can also be less so.
@@ -34,3 +40,9 @@ Required Units:
 - Rifleman
 - Autorifleman
 - Medic
+
+#### Crewed Vehicles
+
+If the combat faction uses crewed vehicles, the following units are also required:
+
+- Maintainer

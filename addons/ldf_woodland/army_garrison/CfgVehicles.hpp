@@ -79,6 +79,7 @@ class CfgVehicles {
                         "1Rnd_HE_Grenade_shell": 6,
                         "1Rnd_Smoke_Grenade_shell": 2,
                     },
+                    "loadedPrimary": "tacgt_30Rnd_65x39_EPR_MSBS",
                     "loadedSecondary": "1Rnd_HE_Grenade_shell",
                 },
             },
