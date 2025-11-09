@@ -29,7 +29,8 @@
         },
         {
             "types": [
-                "Army_Combat"
+                "Army_Combat",
+                "Army_Recon"
             ],
             "icon": "\\a3\\ui_f\\data\\map\\markers\\nato\\n_inf.paa",
             "groups": [
@@ -58,8 +59,8 @@
                     ]
                 },
                 {
-                    "class": "FireteamAT",
-                    "name": "Fireteam (AT)",
+                    "class": "FireteamMAT",
+                    "name": "Fireteam (MAT)",
                     "units": [
                         "TeamLeader",
                         "RiflemanMAT",
@@ -67,6 +68,35 @@
                         "Rifleman"
                     ]
                 },
+                {
+                    "class": "FireteamEngineer",
+                    "name": "Fireteam (Engineer)",
+                    "units": [
+                        "TeamLeader",
+                        "Rifleman",
+                        "Engineer",
+                        "Engineer"
+                    ]
+                },
+                {
+                    "class": "FireteamDemolitions",
+                    "name": "Fireteam (Demolitions)",
+                    "units": [
+                        "TeamLeader",
+                        "Rifleman",
+                        "Demolitions",
+                        "Demolitions"
+                    ]
+                }
+            ]
+        },
+        {
+            "types": [
+                "Army_Combat"
+            ],
+            "icon": "\\a3\\ui_f\\data\\map\\markers\\nato\\n_inf.paa",
+            "groups": [
+                
                 {
                     "class": "FireteamAA",
                     "name": "Fireteam (AA)",
@@ -96,25 +126,21 @@
                         "Machinegunner",
                         "AsstMachinegunner"
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "types": [
+                "Army_Recon"
+            ],
+            "icon": "\\a3\\ui_f\\data\\map\\markers\\nato\\n_inf.paa",
+            "groups": [
                 {
-                    "class": "FireteamEngineer",
-                    "name": "Fireteam (Engineer)",
+                    "class": "SniperSpotter",
+                    "name": "Sniper Team",
                     "units": [
-                        "TeamLeader",
-                        "Rifleman",
-                        "Engineer",
-                        "Engineer"
-                    ]
-                },
-                {
-                    "class": "FireteamDemolitions",
-                    "name": "Fireteam (Demolitions)",
-                    "units": [
-                        "TeamLeader",
-                        "Rifleman",
-                        "Demolitions",
-                        "Demolitions"
+                        "Spotter",
+                        "Sniper"
                     ]
                 }
             ]

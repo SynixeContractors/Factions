@@ -14,6 +14,12 @@ class CfgVehicles {
                 "t2_rifleman_medical",
             ],
         });
+
+        @Binoculars({
+            "weapons": {
+                "Binocular": 1,
+            }
+        });
     };
 
     class CLASS(Rifleman): CLASS(Base) {

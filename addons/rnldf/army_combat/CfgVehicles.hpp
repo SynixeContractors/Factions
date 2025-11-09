@@ -40,10 +40,6 @@ class CfgVehicles {
         });
 
         @Assigned(Military);
-    };
-
-    class CLASS(Rifleman): CLASS(Base) {
-        @Role(Rifleman);
 
         @Primary({
             "weapons": {
@@ -63,12 +59,16 @@ class CfgVehicles {
                 "Aegis_acc_pointer_DM": 0.4,
             },
         });
+    };
+
+    class CLASS(Rifleman): CLASS(Base) {
+        @Role(Rifleman);
 
         @Launchers({
             "weapons": {
-                "": 0.95,
+                "": 0.9,
                 "JCA_launch_M72_olive_F": {
-                    "probability": 0.05,
+                    "probability": 0.1,
                     "loadedPrimary": "JCA_M72_HEAT_F",
                 },
             },
@@ -179,7 +179,7 @@ class CfgVehicles {
 
     };
 
-    class CLASS(Machinegunner): CLASS(Autorifleman) {
+    class CLASS(Machinegunner): CLASS(Base) {
         @Role(Machinegunner);
 
         @Vests({
@@ -211,7 +211,7 @@ class CfgVehicles {
                 "saber_light_lxWS": 0.6,
                 "Aegis_acc_pointer_DM": 0.4,
             },
-            "bipod": {
+            "bipods": {
                 "bipod_01_F_blk": 1,
             },
         });
@@ -234,7 +234,7 @@ class CfgVehicles {
 
     };
 
-    class CLASS(AsstMachinegunner): CLASS(Rifleman) {
+    class CLASS(AsstMachinegunner): CLASS(Base) {
         @Role(AsstMachinegunner);
 
         @Backpacks({
@@ -247,7 +247,7 @@ class CfgVehicles {
         });
     };
 
-    class CLASS(Marksman): CLASS(Rifleman) {
+    class CLASS(Marksman): CLASS(Base) {
         @Role(Marksman);
 
         @Vests({
@@ -275,7 +275,7 @@ class CfgVehicles {
             "pointers": {
                 "Aegis_acc_pointer_DM": 1,
             },
-            "bipod": {
+            "bipods": {
                 "bipod_01_F_blk": 1,
             },
         });
@@ -292,7 +292,7 @@ class CfgVehicles {
 
     };
 
-    class CLASS(Medic): CLASS(Rifleman) {
+    class CLASS(Medic): CLASS(Base) {
         @Role(Medic);
 
         @Backpacks({
@@ -305,7 +305,7 @@ class CfgVehicles {
         });
     };
 
-    class CLASS(RiflemanMAT): CLASS(Rifleman) {
+    class CLASS(RiflemanMAT): CLASS(Base) {
         @Role(RiflemanMAT);
 
         @Launchers({
@@ -326,7 +326,7 @@ class CfgVehicles {
         });
     };
 
-    class CLASS(RiflemanAA): CLASS(Rifleman) {
+    class CLASS(RiflemanAA): CLASS(Base) {
         @Role(RiflemanAA);
 
         @Launchers({
@@ -346,7 +346,7 @@ class CfgVehicles {
         });
     };
 
-    class CLASS(RiflemanHAT): CLASS(Rifleman) {
+    class CLASS(RiflemanHAT): CLASS(Base) {
         @Role(RiflemanHAT);
 
         @Launchers({
@@ -366,7 +366,7 @@ class CfgVehicles {
         });
     };
 
-    class CLASS(RadioOperator): CLASS(Rifleman) {
+    class CLASS(RadioOperator): CLASS(Base) {
         @Role(RadioOperator);
 
         @Backpacks({
@@ -376,7 +376,7 @@ class CfgVehicles {
         });
     };
 
-    class CLASS(Engineer): CLASS(Rifleman) {
+    class CLASS(Engineer): CLASS(Base) {
         @Role(Engineer);
 
         @Backpacks({
@@ -389,7 +389,7 @@ class CfgVehicles {
         });
     };
 
-    class CLASS(Demolitions): CLASS(Rifleman) {
+    class CLASS(Demolitions): CLASS(Base) {
         @Role(Demolitions);
 
         @Backpacks({
@@ -455,6 +455,4 @@ class CfgVehicles {
             "H_CrewHelmetHeli_O": 0.3,
         });
     };
-
 };
-

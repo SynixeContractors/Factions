@@ -46,3 +46,19 @@ Required Units:
 If the combat faction uses crewed vehicles, the following units are also required:
 
 - Maintainer
+
+### Army Recon
+
+These units are the reconnaissance forces of the faction, intended for scouting.
+
+Required Units:
+
+- Squad Leader
+- Team Leader
+- Radio Operator
+- Rifleman
+- Rifleman MAT
+- Marksman
+- Medic
+- Sniper
+- Spotter

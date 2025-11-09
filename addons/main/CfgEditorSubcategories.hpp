@@ -7,7 +7,11 @@ class CfgEditorSubcategories {
             displayName = "Men (Army - Combat)";
     };
 
-    class GCLASS(SOF) {
+    class GCLASS(army_recon) {
+            displayName = "Men (Army - Recon)";
+    };
+
+    class GCLASS(special_forces) {
             displayName = "Men (Special Forces)";
     };
 
