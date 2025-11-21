@@ -63,17 +63,10 @@ class CfgVehicles {
                         "30Rnd_556x45_Stanag_Tracer_Yellow": 2,
                     },
                 },
-                "Aegis_arifle_M4A1_F": {
+                "arifle_AUG_C_black_F": {
                     "magazinesVest": {
-                        "30Rnd_556x45_Stanag": 5,
-                        "30Rnd_556x45_Stanag_Tracer_Yellow": 2,
-                    },
-                },
-                "Aegis_arifle_M4A1_grip_F": {
-                    "magazinesVest": {
-                        "30Rnd_556x45_Stanag": 5,
-                        "30Rnd_556x45_Stanag_Tracer_Yellow": 2,
-                    },
+                        "30Rnd_556x45_AUG_Mag_F": 9,
+                    }
                 },
                 "Aegis_arifle_M4A1_short_F": {
                     "magazinesVest": {
@@ -154,6 +147,15 @@ class CfgVehicles {
                     "magazinesVest": {
                         "30Rnd_556x45_Stanag": 5,
                         "30Rnd_556x45_Stanag_Tracer_Yellow": 2,
+                        "1Rnd_HE_Grenade_shell": 6,
+                        "1Rnd_Smoke_Grenade_shell": 2,
+                    },
+                    "loadedPrimary": "30Rnd_556x45_Stanag",
+                    "loadedSecondary": "1Rnd_HE_Grenade_shell",
+                },
+                "arifle_AUG_GL_black_F": {
+                    "magazinesVest": {
+                        "30Rnd_556x45_AUG_Mag_F": 9,
                         "1Rnd_HE_Grenade_shell": 6,
                         "1Rnd_Smoke_Grenade_shell": 2,
                     },
@@ -333,17 +335,10 @@ class CfgVehicles {
                         "30Rnd_556x45_Stanag_Tracer_Yellow": 2,
                     },
                 },
-                "Aegis_arifle_M4A1_F": {
+                "arifle_AUG_C_black_F": {
                     "magazinesVest": {
-                        "30Rnd_556x45_Stanag": 5,
-                        "30Rnd_556x45_Stanag_Tracer_Yellow": 2,
-                    },
-                },
-                "Aegis_arifle_M4A1_grip_F": {
-                    "magazinesVest": {
-                        "30Rnd_556x45_Stanag": 5,
-                        "30Rnd_556x45_Stanag_Tracer_Yellow": 2,
-                    },
+                        "30Rnd_556x45_AUG_Mag_F": 9,
+                    }
                 },
                 "Aegis_arifle_M4A1_short_F": {
                     "magazinesVest": {
