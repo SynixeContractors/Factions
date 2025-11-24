@@ -37,3 +37,12 @@ MG: Negev
 AR: NCAR-15-1  
 DMR: SVD  
 Sniper: Cyrus  
+
+## Viatken Defense Forces
+
+Uniform: Blotch  
+Primary: AK-15  
+Secondary: Glock 17  
+MG: HK121  
+AR: RPK-15  
+DMR: VS-120
