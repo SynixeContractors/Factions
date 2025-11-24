@@ -6,8 +6,8 @@ class CfgVehicles {
         
         @Uniforms({
             "variants": {
-                "synixe_mgp_g3_field_set_m81_m81": 0.5,
-                "synixe_mgp_g3_tshirt_blk_m81": 0.5,
+                "synixe_mgp_g3_field_set_m81_m81": 0.75,
+                "synixe_mgp_g3_tshirt_blk_m81": 0.25,
             },
             "packs": [
                 "t2_rifleman_medical",
@@ -30,7 +30,6 @@ class CfgVehicles {
             "H_HelmetB_plain_wdl": 0.2,
             "H_HelmetSpecB_wdl": 0.2,
             "H_HelmetB_camo_wdl": 0.4,
-            "synixe_mgp_h_cap_m81_earphones": 0.2,
         });
 
         @Facewear({
