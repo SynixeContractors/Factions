@@ -9,17 +9,11 @@ class CfgPatches {
             QCLASS(TeamLeader),
             QCLASS(Autorifleman),
             QCLASS(Machinegunner),
-            QCLASS(AsstMachinegunner),
             QCLASS(Marksman),
             QCLASS(Medic),
             QCLASS(RiflemanMAT),
-            QCLASS(RiflemanHAT),
-            QCLASS(RiflemanAA),
-            QCLASS(RadioOperator),
             QCLASS(Engineer),
             QCLASS(Demolitions),
-            QCLASS(Crewman),
-            QCLASS(HeliPilot)
         };
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;

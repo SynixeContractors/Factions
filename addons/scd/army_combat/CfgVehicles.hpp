@@ -407,14 +407,6 @@ class CfgVehicles {
 
         @Primary({
             "weapons": {
-                "LMG_Zafir_black_F": {
-                    "magazinesVest": {
-                        "ACE_150Rnd_762x54_Box_red": 4,
-                    },
-                    "magazinesBackpack": {
-                        "ACE_150Rnd_762x54_Box_tracer_red": 4,
-                    },
-                },
                 "arifle_AKM_F": {
                     "magazinesVest": {
                         "75Rnd_762x39_Mag_F": 4,
@@ -478,6 +470,14 @@ class CfgVehicles {
 
         @Primary({
             "weapons": {
+                "LMG_Zafir_black_F": {
+                    "magazinesVest": {
+                        "ACE_150Rnd_762x54_Box_red": 4,
+                    },
+                    "magazinesBackpack": {
+                        "ACE_150Rnd_762x54_Box_tracer_red": 4,
+                    },
+                },
                 "LMG_03_F": {
                     "magazinesVest": {
                         "200Rnd_556x45_Box_F": 2,
