@@ -6,8 +6,8 @@ class CfgVehicles {
 
          @Uniforms({
             "variants": {
-                "synixe_mgp_g3_field_set_m81_m81": 0.5,
-                "synixe_mgp_g3_tshirt_blk_m81": 0.5,
+                "Atlas_U_UniformBDU_01_m81_F": 0.5,
+                "Atlas_U_UniformBDU_02_m81_F": 0.5,
             },
             "packs": [
                 "t2_rifleman_medical",
