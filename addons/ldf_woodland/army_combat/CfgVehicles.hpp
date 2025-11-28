@@ -1,63 +1,84 @@
 class CfgVehicles {
+    #include "CfgVehicles_APC.hpp"
+
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {
-        displayName = "RNLDF Base Army Combat";
+        displayName = "LDF Base Army Combat";
         editorSubcategory = QGCLASS(army_combat);
         
         @Uniforms({
             "variants": {
-                "Atlas_U_CombatUniformNCU_02_mcam_wdl_F": 0.5,
-                "Atlas_U_CombatUniformNCU_01_mcam_wdl_F": 0.5,
+                "U_I_E_Uniform_01_F": 1,
+                "U_I_E_Uniform_01_shortsleeve_F": 1,
+                "U_I_E_Uniform_01_sweater_F": 1,
             },
             "packs": [
-                "t3_rifleman_medical",
+                "t2_rifleman_medical",
             ],
         });
 
         @Vests({
             "variants": {
-                "V_PlateCarrier4_rgr_F": 0.5,
-                "WSLV_Platecarrier_GRN_NF": 0.25,
-                "V_MU_PlateCarrier2_2_rgr": 0.25,
+                "Aegis_V_CarrierRigKBT_01_cqb_EAF_F": 1,
+                "V_CarrierRigKBT_01_heavy_EAF_F": 1,
             },
             "packs": [
-                "t3_standard",
+                "t2_standard",
             ],
         });
 
         @Headgear({
-            "Aegis_H_Helmet_Virtus_Cover_wdl_F": 0.6,
-            "Aegis_H_Helmet_Virtus_Scrim_wdl_F": 0.4,
+            "H_HelmetHBK_ear_F": 0.5,
+            "H_HelmetHBK_headset_F": 0.5,
+            "H_HelmetHBK_F": 0.5,
         });
 
         @Facewear({
-            "synixe_mgp_f_tactical": 0.25,
-            "G_Shemag_tactical": 0.15,
-            "synixe_mgp_f_face_shield_rgr_tactical": 0.15,
-            "synixe_mgp_f_face_shield_mc_tactical": 0.15,
-            "synixe_mgp_f_face_shield_khk_tactical": 0.15,
-            "synixe_mgp_f_face_shield_cb_tactical": 0.15,
+            "G_Headset_Tactical": 1,
+            "G_Headset_Tactical_grn": 1,
+            "G_Headset_Tactical_khk": 1,
+            "G_Headset_lxWS": 1,
+            "synixe_mgp_f_tactical": 1,
+            "Aegis_G_Condor_EyePro_F": 1,
+            "G_Combat_lxWS": 1,
+            "tacs_Goggles_Black": 1,
+            "tacs_Goggles_Green": 1,
+            "tacs_Goggles_Tan": 1,
+            "synixe_mgp_f_ess": 1,
         });
-
-        @Assigned(Military);
 
         @Primary({
             "weapons": {
-                "arifle_AUG_black_F": {
+                "arifle_MSBS65_camo_F": {
                     "magazinesVest": {
-                        "30Rnd_556x45_AUG_Mag_F": 9,
-                    }
+                        "tacgt_30Rnd_65x39_EPR_MSBS": 5,
+                        "tacgt_30Rnd_65x39_Ball_Tracer_MSBS": 2,
+                    },
                 },
             },
             "optics": {
-                "optic_Hamr": 0.6,
-                "optic_MRCO": 0.2,
-                "optic_Holosight_blk_F": 0.2,
+                "optic_ico_01_camo_f": 1,
             },
             "pointers": {
                 "saber_light_lxWS": 0.6,
                 "Aegis_acc_pointer_DM": 0.4,
             },
+        });
+
+        @Secondary({
+            "weapons": {
+                "hgun_G17_black_F": {
+                    "magazinesVest": {
+                        "17Rnd_9x21_Mag": 3,
+                    },
+                },
+            },
+        });
+
+        @Binoculars({
+            "weapons": {
+                "Binocular": 1,
+            }
         });
     };
 
@@ -66,7 +87,7 @@ class CfgVehicles {
 
         @Launchers({
             "weapons": {
-                "": 0.9,
+                "": 0.90,
                 "JCA_launch_M72_olive_F": {
                     "probability": 0.1,
                     "loadedPrimary": "JCA_M72_HEAT_F",
@@ -78,28 +99,14 @@ class CfgVehicles {
     class CLASS(SquadLeader): CLASS(Rifleman) {
         @Role(SquadLeader);
 
-        @Vests({
-            "variants": {
-                "V_PlateCarrier1_rgr_noflag_F": 0.40,
-                "V_PlateCarrier2_rgr_noflag_F": 0.30,
-                "V_MU_PlateCarrier_green": 0.30,
-            },
-            "packs": [
-                "t3_standard",
-            ],
-            "magazines": {
-                "SmokeShell": 2,
-            },
+        @Headgear({
+            "H_HelmetHBK_headset_F": 1,
         });
 
-        @Secondary({
+        @Binoculars({
             "weapons": {
-                "hgun_G17_black_F": {
-                    "magazinesVest": {
-                        "17Rnd_9x21_Mag": 3,
-                    },
-                },
-            },
+                "Rangefinder": 1,
+            }
         });
     };
 
@@ -108,17 +115,19 @@ class CfgVehicles {
 
         @Primary({
             "weapons": {
-                "arifle_AUG_GL_black_F": {
+                "arifle_MSBS65_GL_camo_F": {
                     "magazinesVest": {
-                        "30Rnd_556x45_AUG_Mag_F": 9,
-                        "1Rnd_HEDP_Grenade_shell": 9,
-                    }
+                        "tacgt_30Rnd_65x39_EPR_MSBS": 5,
+                        "tacgt_30Rnd_65x39_Ball_Tracer_MSBS": 2,
+                        "1Rnd_HE_Grenade_shell": 6,
+                        "1Rnd_Smoke_Grenade_shell": 2,
+                    },
+                    "loadedPrimary": "tacgt_30Rnd_65x39_EPR_MSBS",
+                    "loadedSecondary": "1Rnd_HE_Grenade_shell",
                 },
             },
             "optics": {
-                "optic_Hamr": 0.6,
-                "optic_MRCO": 0.2,
-                "optic_Holosight_blk_F": 0.2,
+                "optic_ico_01_camo_f": 1,
             },
             "pointers": {
                 "saber_light_lxWS": 0.6,
@@ -130,108 +139,57 @@ class CfgVehicles {
     class CLASS(Autorifleman): CLASS(Base) {
         @Role(Autorifleman);
 
-        @Vests({
-            "variants": {
-                "V_PlateCarrier1_rgr_noflag_F": 0.5,
-                "V_MU_PlateCarrier_green": 0.25,
-                "V_PlateCarrier2_rgr_noflag_F": 0.25,
-            },
-            "magazines": {
-                "SmokeShell": 2,
-            },
-        });
-
         @Primary({
             "weapons": {
-                "LMG_Zafir_black_F": {
+                "LMG_Mk200_black_F": {
                     "magazinesVest": {
-                        "ACE_150Rnd_762x54_Box_red": 4,
+                        "tacgt_200Rnd_65x39_EPR_Belt": 4,
                     },
                     "magazinesBackpack": {
-                        "ACE_150Rnd_762x54_Box_tracer_red": 4,
+                        "tacgt_200Rnd_65x39_EPR_Belt": 4,
                     },
                 },
             },
             "optics": {
-                "optic_Holosight_blk_F": 1,
+                "JCA_optic_MROS_black": 1,
             },
             "pointers": {
                 "saber_light_lxWS": 0.6,
                 "Aegis_acc_pointer_DM": 0.4,
-            },
-        });
-
-        @Secondary({
-            "weapons": {
-                "hgun_G17_black_F": {
-                    "magazinesVest": {
-                        "17Rnd_9x21_Mag": 3,
-                    },
-                },
             },
         });
         
         @Backpacks({
             "variants": {
-                "B_AssaultPack_wdl_F": 1,
+                "B_AssaultPack_eaf_F": 1,
             },
         });
-
     };
 
     class CLASS(Machinegunner): CLASS(Base) {
         @Role(Machinegunner);
 
-        @Vests({
-            "variants": {
-                "V_PlateCarrier1_rgr_noflag_F": 0.5,
-                "V_MU_PlateCarrier_green": 0.25,
-                "V_PlateCarrier2_rgr_noflag_F": 0.25,
-            },
-            "magazines": {
-                "SmokeShell": 2,
-            },
-        });
-
         @Primary({
             "weapons": {
-                "MMG_01_black_F": {
+                "Aegis_MMG_FNMAG_240_F": {
                     "magazinesVest": {
-                        "ACE_150Rnd_93x64_Mag_red": 2,
+                        "Aegis_200Rnd_762x51_MAG_Yellow_Tracer_F": 2,
                     },
                     "magazinesBackpack": {
-                        "ACE_150Rnd_93x64_Mag_red": 3,
+                        "Aegis_200Rnd_762x51_MAG_Yellow_Tracer_F": 3,
                     },
                 },
             },
             "optics": {
-                "optic_Holosight_blk_F": 1,
-            },
-            "pointers": {
-                "saber_light_lxWS": 0.6,
-                "Aegis_acc_pointer_DM": 0.4,
-            },
-            "bipods": {
-                "bipod_01_F_blk": 1,
-            },
-        });
-
-        @Secondary({
-            "weapons": {
-                "hgun_G17_black_F": {
-                    "magazinesVest": {
-                        "17Rnd_9x21_Mag": 3,
-                    },
-                },
+                "optic_Arco_AK_blk_F": 1,
             },
         });
 
         @Backpacks({
             "variants": {
-                "B_AssaultPack_wdl_F": 1,
+                "B_AssaultPack_eaf_F": 1,
             },
         });
-
     };
 
     class CLASS(AsstMachinegunner): CLASS(Base) {
@@ -239,10 +197,10 @@ class CfgVehicles {
 
         @Backpacks({
             "variants": {
-                "B_AssaultPack_wdl_F": 1,
+                "B_AssaultPack_eaf_F": 1,
             },
             "magazines": {
-                "ACE_150Rnd_93x64_Mag_red": 3,
+                "Aegis_200Rnd_762x51_MAG_Yellow_Tracer_F": 3,
             },
         });
     };
@@ -250,27 +208,18 @@ class CfgVehicles {
     class CLASS(Marksman): CLASS(Base) {
         @Role(Marksman);
 
-        @Vests({
-            "variants": {
-                "V_PlateCarrier1_rgr_noflag_F": 0.5,
-                "V_MU_PlateCarrier_green": 0.25,
-                "V_PlateCarrier2_rgr_noflag_F": 0.25,
-            },
-            "magazines": {
-                "SmokeShell": 2,
-            },
-        });
-
         @Primary({
             "weapons": {
-                "Aegis_arifle_SR25_MR_blk_F": {
+                "arifle_MSBS65_Mark_camo_F": {
                     "magazinesVest": {
-                        "Aegis_20Rnd_762x51_SMAG": 9,
+                        "tacgt_20Rnd_65x39_EPR_MSR_MSBS": 5,
+                        "tacgt_30Rnd_65x39_AP_MSBS": 3,
+                        "tacgt_20Rnd_65x39_Ball_Tracer_MSR_MSBS": 2,
                     }
                 }
             },
             "optics": {
-                "optic_AMS": 1,
+                "optic_MRCO": 1,
             },
             "pointers": {
                 "Aegis_acc_pointer_DM": 1,
@@ -280,16 +229,11 @@ class CfgVehicles {
             },
         });
 
-        @Secondary({
+        @Binoculars({
             "weapons": {
-                "hgun_G17_black_F": {
-                    "magazinesVest": {
-                        "17Rnd_9x21_Mag": 3,
-                    },
-                },
-            },
+                "Rangefinder": 1,
+            }
         });
-
     };
 
     class CLASS(Medic): CLASS(Base) {
@@ -300,7 +244,7 @@ class CfgVehicles {
                 "tacs_Backpack_Kitbag_Medic_Sage": 1,
             },
             "packs": [
-                "t3_medic",
+                "t2_medic",
             ],
         });
     };
@@ -310,18 +254,20 @@ class CfgVehicles {
 
         @Launchers({
             "weapons": {
-                "launch_MRAWS_green_F": {
+                "launch_PSRL1_PWS_geo_RF": {
                     "magazinesBackpack": {
-                        "MRAWS_HEAT55_F": 2,
-                        "MRAWS_HE_F": 1,
+                        "PSRL1_AT_RF": 2,
+                        "PSRL1_HE_RF": 1,
+                        "PSRL1_HEAT_RF": 1,
                     },
+                    "loadedPrimary": "PSRL1_HE_RF",
                 },
             },
         });
 
         @Backpacks({
             "variants": {
-                "B_Kitbag_wdl_F": 1,
+                "B_Kitbag_eaf_F": 1,
             },
         });
     };
@@ -331,17 +277,18 @@ class CfgVehicles {
 
         @Launchers({
             "weapons": {
-                "launch_B_Titan_olive_F": {
+                "launch_I_Titan_eaf_F": {
                     "magazinesBackpack": {
                         "Titan_AA": 2,
                     },
+                    "loadedPrimary": "Titan_AA",
                 },
             },
         });
 
         @Backpacks({
             "variants": {
-                "B_Kitbag_wdl_F": 1,
+                "B_Kitbag_eaf_F": 1,
             },
         });
     };
@@ -355,13 +302,14 @@ class CfgVehicles {
                     "magazinesBackpack": { 
                         "Titan_AT": 2,
                     },
+                    "loadedPrimary": "Titan_AT",
                 },
             },
         });
 
         @Backpacks({
             "variants": {
-                "B_Kitbag_wdl_F": 1,
+                "B_Kitbag_eaf_F": 1,
             },
         });
     };
@@ -371,7 +319,7 @@ class CfgVehicles {
 
         @Backpacks({
             "variants": {
-                "B_RadioBag_01_wdl_F": 1,
+                "B_RadioBag_01_eaf_F": 1,
             },
         });
     };
@@ -381,7 +329,7 @@ class CfgVehicles {
 
         @Backpacks({
             "variants": {
-                "B_AssaultPack_wdl_F": 1,
+                "B_AssaultPack_eaf_F": 1,
             },
             "packs": [
                 "toolkit",
@@ -394,12 +342,19 @@ class CfgVehicles {
 
         @Backpacks({
             "variants": {
-                "B_TacticalPack_rgr": 1,
+                "B_TacticalPack_eaf_F": 1,
             },
             "packs": [
                 "eod",
                 "demo",
             ],
+        });
+
+        @Vests({
+            "variants": {
+                "Aegis_V_CarrierRigKBT_01_cqb_EAF_F": 1,
+                "V_CarrierRigKBT_01_heavy_EAF_F": 1,
+            }
         });
 
         @Secondary({
@@ -414,10 +369,10 @@ class CfgVehicles {
 
         @Vests({
             "variants": {
-                "V_PlateCarrier4_rgr_F": 1,
+                "V_CarrierRigKBT_01_EAF_F": 1,
             },
             "packs": [
-                "t3_standard",
+                "t2_standard",
             ],
         });
 
@@ -427,19 +382,9 @@ class CfgVehicles {
 
         @Primary({
             "weapons": {
-                "JCA_smg_MP5_FL_black_F": {
+                "JCA_smg_UMP_black_F": {
                     "magazinesVest": {
-                        "JCA_30Rnd_9x21_MP5_Mag": 5,
-                    }
-                },
-            },
-        });
-
-        @Secondary({
-            "weapons": {
-                "hgun_G17_black_F": {
-                    "magazinesVest": {
-                        "17Rnd_9x21_Mag": 3,
+                        "JCA_25Rnd_45ACP_UMP_Mag": 5,
                     }
                 },
             },
@@ -450,9 +395,21 @@ class CfgVehicles {
         @Role(HeliPilot);
 
         @Headgear({
-            "H_PilotHelmetHeli_O_visor_up": 0.3,
-            "H_PilotHelmetHeli_O": 0.4,
-            "H_CrewHelmetHeli_O": 0.3,
+            "H_PilotHelmetHeli_Black_RF": 1,
+            "H_PilotHelmetHeli_MilGreen_RF": 1,
+            "H_PilotHelmetHeli_White_RF": 1,
+        });
+
+        @Vests({
+            "variants": {
+                "Aegis_V_TacVest_RigB_grn_RF": 1,
+                "Aegis_V_TacVest_RigB_khk_RF": 1,
+                "Aegis_V_TacVest_RigB_oli_RF": 1,
+                
+            },
+            "packs": [
+                "t2_standard",
+            ],
         });
     };
 };

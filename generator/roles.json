@@ -22,7 +22,8 @@
         "role": "MissileSpecialist"
     },
     "RadioOperator": {
-        "displayName": "Radio Operator"
+        "displayName": "Radio Operator",
+        "synixe_radioOperator": 1
     },
     "SquadLeader": {
         "displayName": "Squad Leader"
@@ -77,15 +78,18 @@
         "icon": "iconManRecon",
         "role": "Marksman"
     },
-    "Sniper": {
-        "displayName": "Sniper",
-        "icon": "iconManRecon",
-        "role": "Marksman"
-    },
     "Medic": {
         "displayName": "Medic",
         "icon": "iconManMedic",
         "role": "Combat Life Saver",
         "attendant": 1
+    },
+    "Sniper": {
+        "displayName": "Sniper",
+        "icon": "iconManRecon",
+        "role": "Marksman"
+    },
+    "Spotter": {
+        "displayName": "Spotter"
     }
 }

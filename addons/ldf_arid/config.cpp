@@ -3,11 +3,7 @@
 class CfgPatches {
     class ADDON {
         name = QUOTE(COMPONENT);
-        units[] = {
-            QCLASS(Rifleman),
-            QCLASS(Autorifleman),
-            QCLASS(Medic),
-        };
+        units[] = {};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {"cba_main"};
@@ -17,4 +13,5 @@ class CfgPatches {
 };
 
 #include "CfgFactionClasses.hpp"
+#include "CfgGroups.hpp"
 #include "CfgVehicles.hpp"

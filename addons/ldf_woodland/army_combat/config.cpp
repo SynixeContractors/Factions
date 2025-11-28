@@ -13,13 +13,20 @@ class CfgPatches {
             QCLASS(Marksman),
             QCLASS(Medic),
             QCLASS(RiflemanMAT),
-            QCLASS(RiflemanHAT),
             QCLASS(RiflemanAA),
+            QCLASS(RiflemanHAT),
             QCLASS(RadioOperator),
             QCLASS(Engineer),
             QCLASS(Demolitions),
             QCLASS(Crewman),
-            QCLASS(HeliPilot)
+            QCLASS(HeliPilot),
+
+            QCLASS(Warrior),
+            QCLASS(Badger),
+            QCLASS(Badger_Command),
+            QCLASS(Badger_Mortar),
+            QCLASS(Badger_ATGM),
+            QCLASS(Badger_Medical),
         };
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;

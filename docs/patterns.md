@@ -36,14 +36,4 @@ Secondary: P320
 MG: Negev  
 AR: NCAR-15-1  
 DMR: SVD  
-Sniper: Cyrus
-
-## Armed Forces of Rajarta
-
-Uniform: Mudwalker  
-Primary: AK-74M
-Secondary: Grach  
-MG: HK121  
-AR: RPK-74M
-DMR: VS-121  
-Sniper: Cyrus
+Sniper: Cyrus  

@@ -2,11 +2,20 @@
 
 class CfgPatches {
     class ADDON {
-        name = QUOTE(COMPONENT);
+        name = QUOTE(DOUBLES(COMPONENT,SUBCOMPONENT));
         units[] = {
             QCLASS(Rifleman),
+            QCLASS(SquadLeader),
+            QCLASS(TeamLeader),
             QCLASS(Autorifleman),
+            QCLASS(Machinegunner),
+            QCLASS(AsstMachinegunner),
+            QCLASS(Marksman),
             QCLASS(Medic),
+            QCLASS(RiflemanMAT),
+            QCLASS(RadioOperator),
+            QCLASS(Engineer),
+            QCLASS(Demolitions),
         };
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
@@ -16,5 +25,4 @@ class CfgPatches {
     };
 };
 
-#include "CfgFactionClasses.hpp"
 #include "CfgVehicles.hpp"

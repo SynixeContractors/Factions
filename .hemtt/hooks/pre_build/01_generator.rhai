@@ -247,6 +247,7 @@ fn groups(args) {
                     ret += ": CLASS(" + group.parent + ")";
                 }
                 ret += " {\n";
+                ret += "scopeCurator = 2;\n";
                 ret += "side = " + side + ";\n";
                 ret += "faction = \"" + faction + "\";\n";
                 ret += "icon = \"" + section.icon + "\";\n";

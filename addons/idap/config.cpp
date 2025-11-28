@@ -3,7 +3,23 @@
 class CfgPatches {
     class ADDON {
         name = QUOTE(COMPONENT);
-        units[] = {};
+        units[] = {
+            QCLASS(AidWorker),
+            QCLASS(EOD),
+            QCLASS(Paramedic),
+
+            QCLASS(JeepWrangler),
+            QCLASS(VanAmbulance),
+            QCLASS(VanTransport),
+            QCLASS(VanCargo),
+            QCLASS(Offroad),
+            QCLASS(OffroadServices),
+            QCLASS(OffroadComms),
+            QCLASS(Ram),
+            QCLASS(RamServices),
+            QCLASS(RamWater),
+            QCLASS(RamFuel),
+        };
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {

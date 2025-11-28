@@ -7,7 +7,12 @@ class CfgPatches {
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
-            "synixe_factions_main"
+            "synixe_factions_main",
+
+            // Warrior
+            "A3_Aegis_Armor_F_Aegis_APC_Tracked_03",
+            // Badger
+            "A3_Aegis_Armor_F_Aegis_APC_Wheeled_01",
         };
         author = "Synixe Contractors";
         VERSION_CONFIG;
