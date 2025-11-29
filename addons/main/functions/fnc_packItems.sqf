@@ -29,7 +29,7 @@ switch (_name) do {
             ["ACE_CableTie", 6],
             ["SmokeShell", 2],
             ["Chemlight_green", 1],
-            ["Chemlight_blue", 1],
+            ["Chemlight_blue", 1]
         ];
     };
 
