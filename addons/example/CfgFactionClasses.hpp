@@ -1,7 +1,7 @@
 class CfgFactionClasses {
-    class CLASS(t2_blufor) {
+    class CLASS(t3_blufor) {
         SCOPE_DLC;
-        displayName = "[T2] Example";
+        displayName = "[T3] Example";
         priority = 1;
         side = 1; // BLUFOR
     };

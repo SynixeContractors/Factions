@@ -19,4 +19,4 @@ class CfgEditorSubcategories {
             displayName = "Men (Reserves)";
     };
     
-};
+}; 

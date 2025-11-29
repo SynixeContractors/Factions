@@ -45,13 +45,7 @@ class CfgVehicles {
 
         @Primary({
             "weapons": {
-                "Aegis_arifle_M4A1_F": {
-                    "probability": 0.5,
-                    "magazinesVest": {
-                        "30Rnd_556x45_Stanag_green": 6,
-                    },
-                },
-                "Aegis_arifle_M4A1_grip_F": {
+                "arifle_SPAR_02_blk_F": {
                     "probability": 0.5,
                     "magazinesVest": {
                         "30Rnd_556x45_Stanag_green": 6,
@@ -73,7 +67,7 @@ class CfgVehicles {
 
         @Primary({
             "weapons": {
-                "Aegis_arifle_M4A1_GL_F": {
+                "arifle_SPAR_01_GL_blk_F": {
                     "probability": 0.5,
                     "magazinesVest": {
                         "30Rnd_556x45_Stanag_green": 6,
@@ -96,9 +90,9 @@ class CfgVehicles {
 
         @Primary({
             "weapons": {
-                "LMG_03_F": {
+                "LMG_Zafir_black_F": {
                     "magazinesVest": {
-                        "ACE_200Rnd_556x45_Box_tracer_green": 2,
+                        "150Rnd_762x54_Box": 2,
                     },
                 },
             },

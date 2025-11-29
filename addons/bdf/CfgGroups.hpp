@@ -1,9 +1,9 @@
 class CfgGroups {
     class INDEP {
-        class CLASS(t2_indep) {
-            name = "[T2] Breznian Defense Force";
-            @Groups(T2,INDEP,Army_Combat);
-            @Groups(T2,INDEP,Army_Garrison);
+        class CLASS(t3_indep) {
+            name = "[T3] Breznian Defense Force";
+            @Groups(T3,INDEP,Army_Combat);
+            @Groups(T3,INDEP,Army_Garrison);
         };
     };
 };

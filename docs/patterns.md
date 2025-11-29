@@ -37,12 +37,3 @@ MG: Negev
 AR: NCAR-15-1  
 DMR: SVD  
 Sniper: Cyrus  
-
-## Karskoyan Armed Forces
-
-Uniform: M81 Woodland 
-Primary: M-4A1  
-Secondary: FNX-45  
-MG: M240  
-AR: Mini-Mi SPW  
-DMR: HK417A5

@@ -5,10 +5,10 @@ class CfgPatches {
         name = QUOTE(COMPONENT);
         units[] = {
             QCLASS(van),
-            QCLASS(unit_casual)
+            QCLASS(unit_casual),
         };
         weapons[] = {
-            QCLASS(casual)
+            QCLASS(casual),
         };
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {

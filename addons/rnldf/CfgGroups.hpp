@@ -1,9 +1,9 @@
 class CfgGroups {
     class EAST {
-        class CLASS(t2_opfor) {
-            name = "[T2] Royal Nyrland Defense Force";
-            @Groups(T2,OPFOR,Army_Combat);
-            @Groups(T2,OPFOR,Army_Garrison);
+        class CLASS(t3_opfor) {
+            name = "[T3] Royal Nyrland Defense Force";
+            @Groups(T3,OPFOR,Army_Combat);
+            @Groups(T3,OPFOR,Army_Garrison);
         };
     };
 };

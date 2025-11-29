@@ -10,7 +10,7 @@ class CfgVehicles {
                 "Atlas_U_CombatUniformNCU_01_mcam_wdl_F": 0.5,
             },
             "packs": [
-                "t2_rifleman_medical",
+                "t3_rifleman_medical",
             ],
         });
 
@@ -143,7 +143,7 @@ class CfgVehicles {
                 "tacs_Backpack_Kitbag_Medic_Sage": 1,
             },
             "packs": [
-                "t2_medic",
+                "t3_medic",
             ],
         });
     };

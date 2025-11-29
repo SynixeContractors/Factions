@@ -1,12 +1,12 @@
 class CfgVehicles {
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {
-        displayName = "RNLDF Base Army Combat";
+        displayName = "KAF Base Army Combat";
         editorSubcategory = QGCLASS(army_combat);
         
         @Uniforms({
             "variants": {
-                "Atlas_U_UniformBDU_01_m81_F": 0.5,
+                "Atlas_U_UniformBDU_01_m81_F": 1,
                 "Atlas_U_UniformBDU_02_m81_F": 0.5,
             },
             "packs": [
@@ -48,13 +48,7 @@ class CfgVehicles {
 
         @Primary({
             "weapons": {
-                "Aegis_arifle_M4A1_F": {
-                    "probability": 0.5,
-                    "magazinesVest": {
-                        "30Rnd_556x45_Stanag_green": 6,
-                    },
-                },
-                "Aegis_arifle_M4A1_grip_F": {
+                "arifle_SPAR_02_blk_F": {
                     "probability": 0.5,
                     "magazinesVest": {
                         "30Rnd_556x45_Stanag_green": 6,
@@ -108,7 +102,7 @@ class CfgVehicles {
 
         @Primary({
             "weapons": {
-                "Aegis_arifle_M4A1_GL_F": {
+                "arifle_SPAR_01_GL_blk_F": {
                     "probability": 0.5,
                     "magazinesVest": {
                         "30Rnd_556x45_Stanag_green": 6,
@@ -121,11 +115,21 @@ class CfgVehicles {
                 "optic_VRCO_RF": 0.4,
             },
             "pointers": {
-                "acc_pointer_IR": 0.4,
+                "acc_pointer_IR": 1,
             },
             "muzzles": {
                 "": 0.4,
                 "suppressor_l_lxWS": 0.6,
+            },
+        });
+
+        @Secondary({
+            "weapons": {
+                "hgun_Pistol_heavy_01_black_F": {
+                    "magazinesVest": {
+                        "11Rnd_45ACP_Mag": 3,
+                    },
+                },
             },
         });
     };
@@ -135,12 +139,12 @@ class CfgVehicles {
 
         @Primary({
             "weapons": {
-                "LMG_03_F": {
+                "LMG_Zafir_black_F": {
                     "magazinesVest": {
-                        "ACE_200Rnd_556x45_Box_tracer_green": 2,
+                        "150Rnd_762x54_Box": 2,
                     },
                     "magazinesBackpack": {
-                        "ACE_200Rnd_556x45_Box_tracer_green": 2,
+                        "150Rnd_762x54_Box": 2,
                     },
                 },
             },
@@ -149,10 +153,6 @@ class CfgVehicles {
             },
             "pointers": {
                 "acc_pointer_IR": 1,
-            },
-            "muzzles": {
-                "suppressor_l_lxWS": 0.5,
-                "": 0.5,
             },
         });
 
@@ -188,12 +188,12 @@ class CfgVehicles {
 
         @Primary({
             "weapons": {
-                "Aegis_MMG_FNMAG_F": {
+                "MMG_01_black_F": {
                     "magazinesVest": {
-                        "Aegis_200Rnd_762x51_MAG_Green_Tracer_F": 1,
+                        "150Rnd_93x64_Mag": 1,
                     },
                     "magazinesBackpack": {
-                        "Aegis_200Rnd_762x51_MAG_Green_Tracer_F": 2,
+                        "150Rnd_93x64_Mag": 2,
                     },
                 },
             },
@@ -228,7 +228,7 @@ class CfgVehicles {
                 "B_Kitbag_wdl_F": 1,
             },
             "magazines": {
-                "Aegis_200Rnd_762x51_MAG_Green_Tracer_F": 4,
+                "150Rnd_93x64_Mag": 4,
             },
         });
     };
@@ -238,9 +238,9 @@ class CfgVehicles {
 
         @Primary({
             "weapons": {
-                "arifle_SPAR_03_blk_F": {
+                "srifle_DMR_01_black_RF": {
                     "magazinesVest": {
-                        "20Rnd_762x51_Mag": 8,
+                        "10Rnd_762x54_Mag": 8,
                     }
                 }
             },
@@ -254,7 +254,7 @@ class CfgVehicles {
                 "bipod_01_F_blk": 1,
             },
             "muzzles": {
-                "suppressor_h_lxWS": 1,
+                "aegis_muzzle_snds_pbs_762_blk": 1,
             },
         });
 
@@ -393,7 +393,7 @@ class CfgVehicles {
 
         @Primary({
             "weapons": {
-                "Aegis_arifle_M4A1_short_F": {
+                "arifle_SPAR_01_blk_F": {
                     "magazinesVest": {
                         "30Rnd_556x45_Stanag_green": 4,
                     }
@@ -431,7 +431,7 @@ class CfgVehicles {
 
         @Primary({
             "weapons": {
-                "Aegis_arifle_M4A1_short_F": {
+                "arifle_SPAR_01_blk_F": {
                     "magazinesVest": {
                         "30Rnd_556x45_Stanag_green": 4,
                     }
@@ -490,14 +490,11 @@ class CfgVehicles {
 
         @Primary({
             "weapons": {
-                "Aegis_arifle_M4A1_short_F": {
+                "JCA_smg_UMP_black_F": {
                     "magazinesVest": {
-                        "30Rnd_556x45_Stanag_green": 4,
+                        "JCA_25Rnd_45ACP_UMP_Mag": 4,
                     }
                 },
-            },
-            "pointers": {
-                "acc_pointer_IR": 1,
             },
             "optics": {
                 "Aegis_optic_ICO": 0.5,
