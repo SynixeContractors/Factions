@@ -3,15 +3,16 @@
 class CfgVehicles {
     class Car_F;
     class Tank_F;
-    class Wheeled_APC_F: Car_F {
-        class TextureSources;
-    };
+    class Truck_F;
+    class Wheeled_APC_F;
     class Offroad_01_base_F;
 
     #include "CfgVehicles_Badger.hpp"
     #include "CfgVehicles_Jeep.hpp"
+    #include "CfgVehicles_LUT.hpp"
     #include "CfgVehicles_Offroad.hpp"
     #include "CfgVehicles_Otokar.hpp"
+    #include "CfgVehicles_Quad.hpp"
     #include "CfgVehicles_Ram.hpp"
     #include "CfgVehicles_Van.hpp"
     #include "CfgVehicles_Warrior.hpp"

@@ -1,6 +1,11 @@
 #define TEXTURES class TextureSources: TextureSources { \
         RESET_FACTIONS(Black); \
         RESET_FACTIONS(Gendarmerie); \
+        class Green { \
+            displayName = "Green"; \
+            factions[] = {}; \
+            textures[] = {"\A3_Aegis\Armor_F_Aegis\APC_Wheeled_02\Data\APC_Wheeled_02_ext_01_RUkhk_CO.paa","\A3_Aegis\Armor_F_Aegis\APC_Wheeled_02\Data\APC_Wheeled_02_ext_02_RUkhk_CO.paa","\A3_Aegis\Soft_F_Aegis\UGV_01\Data\Turret_RUkhk_CO.paa","\A3_Aegis\Armor_F_Aegis\Data\camonet_RUS_green_CO.paa","\A3_Aegis\Armor_F_Aegis\Data\cage_RUkhk_CO.paa"}; \
+        }; \
         class GreenHex: GreenHex { \
             displayName = "Hex Woodland"; \
             factions[] = {}; \
@@ -41,7 +46,9 @@
         }; \
     }
 
-class APC_Wheeled_02_base_F: Wheeled_APC_F {};
+class APC_Wheeled_02_base_F: Wheeled_APC_F {
+    class TextureSources;
+};
 class APC_Wheeled_02_base_v2_F: APC_Wheeled_02_base_F {
     class TextureSources: TextureSources {
         class Black;
@@ -88,9 +95,7 @@ class GCLASS(OtokarHMG): APC_Wheeled_02_hmg_base_lxws {
 };
 
 // RCWS
-class O_APC_Wheeled_02_rcws_v2_F: APC_Wheeled_02_base_v2_F {
-    TEXTURES;
-};
+class O_APC_Wheeled_02_rcws_v2_F;
 class GCLASS(OtokarRCWS): O_APC_Wheeled_02_rcws_v2_F {
     displayName = "Otokar Cobra II (RCWS)";
     faction = QGCLASS(base_vehicles);

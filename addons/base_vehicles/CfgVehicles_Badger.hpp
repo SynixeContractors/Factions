@@ -27,11 +27,11 @@ class GCLASS(Badger): APC_Wheeled_01_base_v2_F {
             scope = 1;
         };
         class EAF_01: EAF_01 {
-            displayName = "Geo Woodland";
+            displayName = "LDF (Geo Woodland)";
             factions[] = {};
         };
         class EAF_Arid: EAF_Arid {
-            displayName = "Geo Arid";
+            displayName = "LDF (Arid)";
             factions[] = {};
         };
     };
@@ -74,11 +74,11 @@ class GCLASS(Badger_Command): APC_Wheeled_01_command_base_lxWS {
             scope = 1;
         };
         class EAF_01: EAF_01 {
-            displayName = "Geo Woodland";
+            displayName = "LDF (Geo Woodland)";
             factions[] = {};
         };
         class EAF_Arid: EAF_Arid {
-            displayName = "Geo Arid";
+            displayName = "LDF (Arid)";
             factions[] = {};
         };
         class Sand_Desert: Sand_Desert {
@@ -125,11 +125,11 @@ class GCLASS(Badger_Mortar): APC_Wheeled_01_mortar_base_lxWS {
             scope = 1;
         };
         class EAF_01: EAF_01 {
-            displayName = "Geo Woodland";
+            displayName = "LDF (Geo Woodland)";
             factions[] = {};
         };
         class EAF_Arid: EAF_Arid {
-            displayName = "Geo Arid";
+            displayName = "LDF (Arid)";
             factions[] = {};
         };
         class Sand_Desert: Sand_Desert {
@@ -179,11 +179,11 @@ class GCLASS(Badger_ATGM): APC_Wheeled_01_atgm_base_v2 {
             scope = 1;
         };
         class EAF_01: EAF_01 {
-            displayName = "Geo Woodland";
+            displayName = "LDF (Geo Woodland)";
             factions[] = {};
         };
         class EAF_Arid: EAF_Arid {
-            displayName = "Geo Arid";
+            displayName = "LDF (Arid)";
             factions[] = {};
         };
         class Sand_Desert: Sand_Desert {
@@ -226,11 +226,11 @@ class GCLASS(Badger_Medical): B_APC_Wheeled_01_medical_F {
             scope = 1;
         };
         class EAF_01: EAF_01 {
-            displayName = "Geo Woodland";
+            displayName = "LDF (Geo Woodland)";
             factions[] = {};
         };
         class EAF_Arid: EAF_Arid {
-            displayName = "Geo Arid";
+            displayName = "LDF (Arid)";
             factions[] = {};
         };
     };

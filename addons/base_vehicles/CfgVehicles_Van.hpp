@@ -30,6 +30,7 @@ class Van_02_transport_base_F: Van_02_base_F {
     };
 };
 class GCLASS(VanTransport): Van_02_transport_base_F  {
+    displayName = "Van (Transport)";
     faction = QGCLASS(base_vehicles);
     side = 3;
     scope = 2;

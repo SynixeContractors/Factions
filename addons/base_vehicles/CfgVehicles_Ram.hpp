@@ -108,7 +108,7 @@
             factions[] = {}; \
         }; \
         class EAF: EAF { \
-            displayName = "Geo Woodland"; \
+            displayName = "LDF (Geo Woodland)"; \
             factions[] = {}; \
         }; \
         class EAF_Arid: EAF_Arid { \

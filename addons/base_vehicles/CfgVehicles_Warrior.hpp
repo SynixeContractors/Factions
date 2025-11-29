@@ -22,11 +22,11 @@ class GCLASS(Warrior): APC_Tracked_03_base_v2_F {
         RESET_FACTIONS(Olive_01);
         RESET_FACTIONS(Sand_01);
         class EAF_01: EAF_01 {
-            displayName = "Geo Woodland";
+            displayName = "LDF (Geo Woodland)";
             factions[] = {};
         };
         class EAF_Arid: EAF_Arid {
-            displayName = "Geo Arid";
+            displayName = "LDF (Arid)";
             factions[] = {};
         };
         class Indep_01: Indep_01 {

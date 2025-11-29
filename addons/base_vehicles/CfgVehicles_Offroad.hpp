@@ -30,12 +30,12 @@ class Offroad_01_military_covered_base_F: Offroad_01_military_base_F {
         };
         class EAF {
             factions[] = {};
-            displayName = "Geo Woodland";
+            displayName = "LDF (Geo Woodland)";
             textures[] = {"\a3\Soft_F_Enoch\Offroad_01\Data\offroad_01_ext_EAF_CO.paa","\a3\Soft_F_Enoch\Offroad_01\Data\offroad_01_ext_EAF_CO.paa","a3\Soft_F_Enoch\Offroad_01\Data\offroad_01_cover_eaf_co.paa"};
         };
         class EAF_Arid {
             factions[] = {};
-            displayName = "LDF Arid";
+            displayName = "LDF (Arid)";
             textures[] = {"\A3_Aegis\Soft_F_Aegis\Offroad_01\Data\Offroad_01_ext_EAF_Arid_CO.paa","\A3_Aegis\Soft_F_Aegis\Offroad_01\Data\Offroad_01_ext_EAF_Arid_CO.paa","\A3_Aegis\Soft_F_Aegis\Offroad_01\Data\Offroad_01_cover_EAF_Arid_CO.paa"};
         };
         class Gendarmerie {
@@ -274,12 +274,12 @@ class GCLASS(OffroadServices): C_Offroad_01_repair_F {
         };
         class EAF {
             factions[] = {};
-            displayName = "Geo Woodland";
+            displayName = "LDF (Geo Woodland)";
             textures[] = {"\a3\Soft_F_Enoch\Offroad_01\Data\offroad_01_ext_EAF_CO.paa","\a3\Soft_F_Enoch\Offroad_01\Data\offroad_01_ext_EAF_CO.paa","a3\Soft_F_Enoch\Offroad_01\Data\offroad_01_cover_eaf_co.paa"};
         };
         class EAF_Arid {
             factions[] = {};
-            displayName = "LDF Arid";
+            displayName = "LDF (Arid)";
             textures[] = {"\A3_Aegis\Soft_F_Aegis\Offroad_01\Data\Offroad_01_ext_EAF_Arid_CO.paa","\A3_Aegis\Soft_F_Aegis\Offroad_01\Data\Offroad_01_ext_EAF_Arid_CO.paa","\A3_Aegis\Soft_F_Aegis\Offroad_01\Data\Offroad_01_cover_EAF_Arid_CO.paa"};
         };
         class Gendarmerie {
