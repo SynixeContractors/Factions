@@ -1,5 +1,5 @@
 class CfgFactionClasses {
-    class CLASS(t3_opfor) {
+    class CLASS(t4_opfor) {
         SCOPE_DLC;
         displayName = "[T4] Sons of the Coming Dawn";
         priority = 1;

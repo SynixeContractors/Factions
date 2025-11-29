@@ -52,7 +52,7 @@ class CfgVehicles {
                 "U_MU_B_GuerillaGarment5_yellow": 1,
             },
             "packs": [
-                "t3_rifleman_medical",
+                "t4_rifleman_medical",
             ],
         });
 
@@ -98,7 +98,7 @@ class CfgVehicles {
                 "WSLV_Platecarrier_WDL_NF": 1,
             },
             "packs": [
-                "t3_standard",
+                "t4_standard",
             ],
         });
 
@@ -594,7 +594,7 @@ class CfgVehicles {
                 "tacs_Backpack_Kitbag_Medic_Tan": 1,
             },
             "packs": [
-                "t3_medic",
+                "t4_medic",
             ],
         });
     };
