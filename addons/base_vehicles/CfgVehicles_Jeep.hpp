@@ -4,7 +4,7 @@ class Offroad_02_base_F: Car_F {
         class Blue;
         class Brown;
         class Green;
-        class IDAP;
+        class IDAP ;
         class Jungle;
         class Olive;
         class Orange;

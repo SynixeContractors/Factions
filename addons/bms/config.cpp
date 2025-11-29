@@ -6,21 +6,12 @@ class CfgPatches {
         units[] = {};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {
-            "synixe_factions_main",
-
-            // Warrior
-            "A3_Aegis_Armor_F_Aegis_APC_Tracked_03",
-            // Badger
-            "A3_Aegis_Armor_F_Aegis_APC_Wheeled_01",
-
-            // Aegis Ram
-            "A3_Aegis_Soft_F_Aegis_RF_Pickup_01",
-        };
+        requiredAddons[] = {"cba_main"};
         author = "Synixe Contractors";
         VERSION_CONFIG;
     };
 };
 
 #include "CfgFactionClasses.hpp"
+#include "CfgGroups.hpp"
 #include "CfgVehicles.hpp"
