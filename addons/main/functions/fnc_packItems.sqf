@@ -24,7 +24,7 @@ switch (_name) do {
         ];
     };
 
-    case "t4_standerd": {
+    case "t4_standard": {
         [
             ["ACE_CableTie", 6],
             ["SmokeShell", 2],
