@@ -10,7 +10,7 @@ class CfgVehicles {
                 "Atlas_U_CombatUniformNCU_02_mcam_F": 1,
             },
             "packs": [
-                "t2_rifleman_medical",
+                "t3_rifleman_medical",
             ],
         });
 
@@ -41,7 +41,7 @@ class CfgVehicles {
                 "Atlas_V_OCarrierRig_CQB_khk_F": 1,
             },
             "packs": [
-                "t2_standard",
+                "t3_standard",
             ],
         });
 
@@ -89,7 +89,7 @@ class CfgVehicles {
                 "Atlas_V_OCarrierRig_Lite_alt_khk_F": 1,
             },
             "packs": [
-                "t2_standard",
+                "t3_standard",
             ],
             "magazines": {
                 "SmokeShell": 2,
@@ -176,7 +176,7 @@ class CfgVehicles {
                 "tacs_Backpack_Kitbag_Medic_MTP": 1,
             },
             "packs": [
-                "t2_medic",
+                "t3_medic",
             ],
         });
     };

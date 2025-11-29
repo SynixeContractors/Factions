@@ -37,11 +37,3 @@ MG: Negev
 AR: NCAR-15-1  
 DMR: SVD  
 Sniper: Cyrus  
-
-## Dal Riada Armed Forces
-
-Uniform: HEX Woodland
-Primary: FAMAS G4
-Secondary: C-1911
-MG: HK121
-AR: Stoner

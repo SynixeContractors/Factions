@@ -16,8 +16,7 @@ class CfgVehicles {
 
         @Vests({
             "variants": {
-                "V_PlateCarrierIA1_grn": 0.5,
-                "V_PlateCarrierIA2_grn": 0.5,
+                "V_PlateCarrierIA2_grn": 1,
             },
             "magazines": {
                 "SmokeShell": 1,
@@ -29,8 +28,7 @@ class CfgVehicles {
         });
 
         @Headgear({
-            "Atlas_H_HelmetCCH_Cover_whex_F": 0.6,
-            "H_Booniehat_whex_F": 0.4,
+            "Atlas_H_HelmetCCH_Cover_whex_F": 1,
         });
 
         @Facewear({
@@ -55,7 +53,6 @@ class CfgVehicles {
                 },
             },
             "optics": {
-                "optic_r1_low_lxWS": 0.5,
                 "optic_Aco": 0.5,
             },
             "pointers": {
@@ -121,8 +118,8 @@ class CfgVehicles {
                 },
             },
              "optics": {
-                "optic_r1_low_lxWS": 0.5,
-                "optic_Aco": 0.5,
+                "optic_ACO": 0.5,
+                "optic_LRCO_blk_F": 0.5,
             },
             "pointers": {
                 "ACE_DBAL_A3_Red": 1,
@@ -135,8 +132,7 @@ class CfgVehicles {
 
         @Vests({
             "variants": {
-                "V_PlateCarrierIA1_grn": 0.5,
-                "V_PlateCarrierIA2_grn": 0.5,
+                "V_PlateCarrierIA2_grn": 1,
             },
             "magazines": {
                 "SmokeShell": 2,
