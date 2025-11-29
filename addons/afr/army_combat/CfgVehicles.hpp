@@ -26,7 +26,6 @@ class CfgVehicles {
         @Headgear({
             "H_HelmetLuchnik_cover_sfia_F": 0.5,
             "H_HelmetLuchnik_headset_brn_F": 0.3,
-            "H_Booniehat_khk": 0.2,
         });
 
         @Facewear({
@@ -59,15 +58,21 @@ class CfgVehicles {
         @Primary({
             "weapons": {
                 "Aegis_arifle_AKM74_F": {
+                    "probability": 1,
                     "magazinesVest": {
-                        "30Rnd_545x39_AK12_Mag_F": 6,
+                        "30Rnd_545x39_Mag_Green_F": 6,
+                    },
+                },
+                "Aegis_arifle_AK74_oak_F": {
+                    "probability": 1,
+                    "magazinesVest": {
+                        "30Rnd_545x39_Mag_Green_F": 6,
                     },
                 },
             },
             "optics": {
-                "": 0.4,
-                "Aegis_optic_1p87": 0.3,
-                "Aegis_optic_ACOG": 0.3,
+                "": 1,
+                "Aegis_optic_1p87": 0.5,
             },
             "pointers": {
                 "acc_pointer_IR_pistol_RF": 1,
@@ -129,13 +134,22 @@ class CfgVehicles {
                 "arifle_AK12_GL_545_F": {
                     "magazinesVest": {
                         "arifle_AK12_GL_545_F": 6,
-                        "1Rnd_HEDP_Grenade_shell": 4,
+                        "1Rnd_HE_Grenade_shell": 4,
                     },
+                    "loadedPrimary": "30Rnd_545x39_AK12_Mag_F",
+                    "loadedSecondary": "1Rnd_HE_Grenade_shell",
+                },
+                "Aegis_arifle_AKM74_GL_F": {
+                    "magazinesVest": {
+                        "30Rnd_545x39_Mag_Green_F": 6,
+                        "1Rnd_HE_Grenade_shell": 4,
+                    },
+                    "loadedPrimary": "30Rnd_545x39_Mag_Green_F",
+                    "loadedSecondary": "1Rnd_HE_Grenade_shell",
                 },
             },
             "optics": {
                 "Aegis_optic_1p87": 0.5,
-                "Aegis_optic_ACOG": 0.5,
             },
             "pointers": {
                 "acc_pointer_IR": 1,
@@ -434,60 +448,6 @@ class CfgVehicles {
             "H_PilotHelmetHeli_O_visor_up": 0.3,
             "H_PilotHelmetHeli_O": 0.3,
             "H_CrewHelmetHeli_O": 0.4,
-        });
-    };
-
-    class CLASS(Sniper): CLASS(Marksman) {
-        @Role(Sniper);
-
-        @Vests({
-            "variants": {
-                "Aegis_V_TacVest_RigB_khk_RF": 1,
-            },
-            "magazines": {
-                "SmokeShell": 2,
-            },
-        });
-
-        @Facewear({
-            "synixe_mgp_f_face_shield_khk_shemagh_rgr": 0.4,
-            "synixe_mgp_f_face_shield_blk_shemagh_khk": 0.4,
-            "synixe_mgp_f_shemagh_khk": 0.2,
-        });
-
-        @Headgear({
-            "H_Booniehat_khk": 0.3,
-            "H_Cap_headphones_tan": 0.3,
-            "H_Cap_headphones_rvs_tan": 0.4,
-        });
-
-        @Primary({
-            "weapons": {
-                "srifle_DMR_05_tan_f": {
-                    "magazinesVest": {
-                        "10Rnd_93x64_DMR_05_Mag": 6,
-                    },
-                },
-            },
-            "optics": {
-                "optic_KHS_blk": 1,
-            },
-            "pointers": {
-                "": 1,
-            },
-            "bipods": {
-                "bipod_01_F_snd": 1,
-            },
-        });
-
-        @Secondary({
-            "weapons": {
-                "hgun_Rook40_F": {
-                    "magazinesVest": {
-                        "17Rnd_9x21_Mag": 3,
-                    },
-                },
-            },
         });
     };
 };

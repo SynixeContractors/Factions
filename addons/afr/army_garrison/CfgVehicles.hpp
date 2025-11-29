@@ -65,11 +65,13 @@ class CfgVehicles {
 
         @Primary({
             "weapons": {
-                "arifle_AK12_GL_545_F": {
+                "Aegis_arifle_AKM74_GL_F": {
                     "magazinesVest": {
-                        "arifle_AK12_GL_545_F": 6,
-                        "1Rnd_HEDP_Grenade_shell": 4,
+                        "30Rnd_545x39_Mag_Tracer_Green_F": 6,
+                        "1Rnd_HE_Grenade_shell": 4,
                     },
+                    "loadedPrimary": "30Rnd_545x39_Mag_Tracer_Green_F",
+                    "loadedSecondary": "1Rnd_HE_Grenade_shell",
                 },
             },
             "optics": {
