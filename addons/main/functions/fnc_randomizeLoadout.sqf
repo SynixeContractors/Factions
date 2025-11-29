@@ -7,6 +7,10 @@ if (isNull _unit) exitWith {
     false
 };
 
+if !(_unit isKindOf "CAManBase") exitWith {
+    false
+};
+
 if (!local _unit) exitWith {true};
 
 private _cache = [_unit] call FUNC(getConfig);

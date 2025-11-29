@@ -3,7 +3,8 @@
 params ["_name"];
 
 switch (_name) do {
-    case "t2_rifleman_medical": {
+    case "t2_rifleman_medical";
+    case "t3_rifleman_medical": {
         [
             ["ACE_elasticBandage", 6],
             ["ACE_tourniquet", 1],
@@ -11,7 +12,8 @@ switch (_name) do {
             ["ACE_painkillers", 1]
         ];
     };
-    case "t2_standard": {
+    case "t2_standard";
+    case "t3_standard": {
         [
             ["ACE_CableTie", 6],
             ["SmokeShell", 2],
@@ -20,7 +22,8 @@ switch (_name) do {
             ["Chemlight_blue", 1]
         ];
     };
-    case "t2_medic": {
+    case "t2_medic";
+    case "t3_medic": {
         [
             ["ACE_suture", 40],
             ["ACE_elasticBandage", 30],
@@ -33,6 +36,19 @@ switch (_name) do {
             ["ACE_splint", 2],
             ["ACE_tourniquet", 4],
             ["ACE_bodyBag", 1]
+        ]
+    };
+    case "t4_medic": {
+        [
+            ["ACE_suture", 10],
+            ["ACE_elasticBandage", 20],
+            ["ACE_quikclot", 10],
+            ["ACE_salineIV_500", 2],
+            ["ACE_salineIV_250", 1],
+            ["ACE_painkillers", 1],
+            ["ACE_surgicalKit", 1],
+            ["ACE_splint", 1],
+            ["ACE_tourniquet", 2]
         ]
     };
     case "toolkit": {
@@ -61,5 +77,8 @@ switch (_name) do {
         [
             ["APERSMine_Range_Mag", 4]
         ]
+    };
+    default {
+        [];
     };
 };
