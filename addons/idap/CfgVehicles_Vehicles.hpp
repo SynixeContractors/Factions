@@ -89,28 +89,28 @@ class CLASS(Ram): GCLASS(Ram) {
     crew = QCLASS(AidWorker);
     typicalCargo[] = {QCLASS(AidWorker)};
 };
-class GCLASS(RamServices);
-class CLASS(RamServices): GCLASS(RamServices) {
+class GCLASS(RamCovered);
+class CLASS(RamCovered): GCLASS(RamCovered) {
     SCOPE_DLC;
     faction = QCLASS(civilian);
-    displayName = "Ram 1500 (Services)";
+    displayName = "Ram 1500 (Covered)";
     textureList[] = {"IDAP",1};
     hiddenSelectionsTextures[] = {"\lxRF\vehicles_rf\pickup_01\Data\pickup_01_ext_idap_co.paa","\lxRF\vehicles_rf\pickup_01\Data\pickup_01_adds_white_tank_co.paa","\lxrf\vehicles_rf\pickup_01\data\pickup_01_ext2_co.paa","\lxrf\vehicles_rf\pickup_01\data\pickup_01_aat_co.paa","\lxrf\vehicles_rf\pickup_01\data\pickup_01_launcher_co.paa","\lxRF\vehicles_rf\pickup_01\Data\pickup_01_service_port_authority_co.paa"};
     editorPreview = "\lxRF\editorpreviews_rf\Data\CfgVehicles\C_IDAP_Pickup_rf.jpg";
     crew = QCLASS(AidWorker);
     typicalCargo[] = {QCLASS(AidWorker)};
 };
-class GCLASS(RamWater);
-class CLASS(RamWater): GCLASS(RamWater) {
-    SCOPE_DLC;
-    faction = QCLASS(civilian);
-    displayName = "Ram 1500 (Water)";
-    textureList[] = {"IDAP",1};
-    hiddenSelectionsTextures[] = {"\lxRF\vehicles_rf\pickup_01\Data\pickup_01_ext_idap_co.paa","\lxRF\vehicles_rf\pickup_01\Data\pickup_01_adds_water_co.paa","\lxrf\vehicles_rf\pickup_01\data\pickup_01_ext2_co.paa","\lxrf\vehicles_rf\pickup_01\data\pickup_01_aat_co.paa","\lxrf\vehicles_rf\pickup_01\data\pickup_01_launcher_co.paa","\lxRF\vehicles_rf\pickup_01\Data\pickup_01_service_idap_co.paa"};
-    editorPreview = "\lxRF\editorpreviews_rf\Data\CfgVehicles\C_IDAP_Pickup_water_rf.jpg";
-    crew = QCLASS(AidWorker);
-    typicalCargo[] = {QCLASS(AidWorker)};
-};
+// class GCLASS(RamWater);
+// class CLASS(RamWater): GCLASS(RamWater) {
+//     SCOPE_DLC;
+//     faction = QCLASS(civilian);
+//     displayName = "Ram 1500 (Water)";
+//     textureList[] = {"IDAP",1};
+//     hiddenSelectionsTextures[] = {"\lxRF\vehicles_rf\pickup_01\Data\pickup_01_ext_idap_co.paa","\lxRF\vehicles_rf\pickup_01\Data\pickup_01_adds_water_co.paa","\lxrf\vehicles_rf\pickup_01\data\pickup_01_ext2_co.paa","\lxrf\vehicles_rf\pickup_01\data\pickup_01_aat_co.paa","\lxrf\vehicles_rf\pickup_01\data\pickup_01_launcher_co.paa","\lxRF\vehicles_rf\pickup_01\Data\pickup_01_service_idap_co.paa"};
+//     editorPreview = "\lxRF\editorpreviews_rf\Data\CfgVehicles\C_IDAP_Pickup_water_rf.jpg";
+//     crew = QCLASS(AidWorker);
+//     typicalCargo[] = {QCLASS(AidWorker)};
+// };
 class GCLASS(RamFuel);
 class CLASS(RamFuel): GCLASS(RamFuel) {
     SCOPE_DLC;
