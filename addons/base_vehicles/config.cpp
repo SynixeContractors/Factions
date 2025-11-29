@@ -13,6 +13,8 @@ class CfgPatches {
             "A3_Aegis_Armor_F_Aegis_APC_Tracked_03",
             // Badger
             "A3_Aegis_Armor_F_Aegis_APC_Wheeled_01",
+            //T100
+            "A3_armor_F_gamma_MBT_02",
         };
         author = "Synixe Contractors";
         VERSION_CONFIG;
