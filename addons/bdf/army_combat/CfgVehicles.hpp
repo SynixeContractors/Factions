@@ -10,7 +10,7 @@ class CfgVehicles {
                 "Atlas_U_CombatUniformNCU_02_mcam_F": 1,
             },
             "packs": [
-                "t2_rifleman_medical",
+                "t3_rifleman_medical",
             ],
         });
 
@@ -20,7 +20,7 @@ class CfgVehicles {
                 "Atlas_V_OCarrierRig_CQB_khk_F": 1,
             },
             "packs": [
-                "t2_standard",
+                "t3_standard",
             ],
         });
 
@@ -41,10 +41,6 @@ class CfgVehicles {
         });
 
         @Assigned(Military);
-    };
-
-    class CLASS(Rifleman): CLASS(Base) {
-        @Role(Rifleman);
 
         @Primary({
             "weapons": {
@@ -79,12 +75,16 @@ class CfgVehicles {
                 "acc_pointer_IR": 0.4,
             },
         });
+    };
+
+    class CLASS(Rifleman): CLASS(Base) {
+        @Role(Rifleman);
 
         @Launchers({
             "weapons": {
-                "": 0.95,
+                "": 0.9,
                 "launch_RPG7_F": {
-                    "probability": 0.05,
+                    "probability": 0.1,
                     "loadedPrimary": "RPG7_F",
                 },
             },
@@ -100,7 +100,7 @@ class CfgVehicles {
                 "Atlas_V_OCarrierRig_Lite_alt_khk_F": 1,
             },
             "packs": [
-                "t2_standard",
+                "t3_standard",
             ],
             "magazines": {
                 "SmokeShell": 2,
@@ -114,12 +114,6 @@ class CfgVehicles {
                         "17Rnd_9x21_Mag": 3,
                     },
                 },
-            },
-        });
-
-        @Launchers({
-            "weapons": {
-                "": 1,
             },
         });
     };
@@ -215,7 +209,7 @@ class CfgVehicles {
 
     };
 
-    class CLASS(Machinegunner): CLASS(Autorifleman) {
+    class CLASS(Machinegunner): CLASS(Base) {
         @Role(Machinegunner);
 
         @Primary({
@@ -238,14 +232,14 @@ class CfgVehicles {
                 "saber_light_lxWS": 0.6,
                 "acc_pointer_IR": 0.4,
             },
-            "bipod": {
+            "bipods": {
                 "bipod_01_F_blk": 1,
             },
         });
 
     };
 
-    class CLASS(AsstMachinegunner): CLASS(Rifleman) {
+    class CLASS(AsstMachinegunner): CLASS(Base) {
         @Role(AsstMachinegunner);
 
         @Backpacks({
@@ -258,7 +252,7 @@ class CfgVehicles {
         });
     };
 
-    class CLASS(Marksman): CLASS(Rifleman) {
+    class CLASS(Marksman): CLASS(Base) {
         @Role(Marksman);
 
         @Vests({
@@ -267,7 +261,7 @@ class CfgVehicles {
                 "Atlas_V_OCarrierRig_Lite_alt_khk_F": 1,
             },
             "packs": [
-                "t2_standard",
+                "t3_standard",
             ],
             "magazines": {
                 "SmokeShell": 2,
@@ -299,7 +293,7 @@ class CfgVehicles {
 
     };
 
-    class CLASS(Medic): CLASS(Rifleman) {
+    class CLASS(Medic): CLASS(Base) {
         @Role(Medic);
 
         @Backpacks({
@@ -307,12 +301,12 @@ class CfgVehicles {
                 "tacs_Backpack_Kitbag_Medic_MTP": 1,
             },
             "packs": [
-                "t2_medic",
+                "t3_medic",
             ],
         });
     };
 
-    class CLASS(RiflemanMAT): CLASS(Rifleman) {
+    class CLASS(RiflemanMAT): CLASS(Base) {
         @Role(RiflemanMAT);
 
         @Launchers({
@@ -333,7 +327,7 @@ class CfgVehicles {
         });
     };
 
-    class CLASS(RiflemanAA): CLASS(Rifleman) {
+    class CLASS(RiflemanAA): CLASS(Base) {
         @Role(RiflemanAA);
 
         @Launchers({
@@ -353,7 +347,7 @@ class CfgVehicles {
         });
     };
 
-    class CLASS(RiflemanHAT): CLASS(Rifleman) {
+    class CLASS(RiflemanHAT): CLASS(Base) {
         @Role(RiflemanHAT);
 
         @Launchers({
@@ -373,7 +367,7 @@ class CfgVehicles {
         });
     };
 
-    class CLASS(RadioOperator): CLASS(Rifleman) {
+    class CLASS(RadioOperator): CLASS(Base) {
         @Role(RadioOperator);
 
         @Backpacks({
@@ -383,7 +377,7 @@ class CfgVehicles {
         });
     };
 
-    class CLASS(Engineer): CLASS(Rifleman) {
+    class CLASS(Engineer): CLASS(Base) {
         @Role(Engineer);
 
         @Backpacks({
@@ -396,7 +390,7 @@ class CfgVehicles {
         });
     };
 
-    class CLASS(Demolitions): CLASS(Rifleman) {
+    class CLASS(Demolitions): CLASS(Base) {
         @Role(Demolitions);
 
         @Backpacks({
@@ -424,7 +418,7 @@ class CfgVehicles {
                 "Atlas_V_OCarrierRig_Lite_alt_khk_F": 1,
             },
             "packs": [
-                "t2_standard",
+                "t3_standard",
             ],
         });
 
@@ -467,6 +461,5 @@ class CfgVehicles {
             "H_CrewHelmetHeli_O": 1,
         });
     };
-
 };
 

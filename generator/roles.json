@@ -1,0 +1,95 @@
+{
+    "Hidden": {
+        "scope": 0,
+        "scopeCurator": 0
+    },
+    "Rifleman": {
+        "displayName": "Rifleman"
+    },
+    "RiflemanMAT": {
+        "displayName": "Rifleman (MAT)",
+        "icon": "iconManAT",
+        "role": "MissileSpecialist"
+    },
+    "RiflemanAA": {
+        "displayName": "Missile Specialist (AA)",
+        "icon": "iconManAT",
+        "role": "MissileSpecialist"
+    },
+    "RiflemanHAT": {
+        "displayName": "Missile Specialist (AT)",
+        "icon": "iconManAT",
+        "role": "MissileSpecialist"
+    },
+    "RadioOperator": {
+        "displayName": "Radio Operator",
+        "synixe_radioOperator": 1
+    },
+    "SquadLeader": {
+        "displayName": "Squad Leader"
+    },
+    "TeamLeader": {
+        "displayName": "Team Leader"
+    },
+    "Demolitions": {
+        "displayName": "Demolitions",
+        "icon": "iconManEngineer",
+        "role": "Sapper",
+        "engineer": 1,
+        "canDeactivateMines": 1
+    },
+    "Engineer": {
+        "displayName": "Engineer",
+        "icon": "iconManEngineer",
+        "role": "Sapper",
+        "engineer": 1,
+        "canDeactivateMines": 1
+    },
+    "Maintainer": {
+        "displayName": "Maintainer",
+        "icon": "iconManEngineer",
+        "role": "Sapper",
+        "engineer": 1
+    },
+    "Worker": {
+        "displayName": "Worker"
+    },
+    "Crewman": {
+        "displayName": "Crewman"
+    },
+    "HeliPilot": {
+        "displayName": "Helicopter Pilot"
+    },
+    "Autorifleman": {
+        "displayName": "Autorifleman",
+        "icon": "iconManMG",
+        "role": "MachineGunner"
+    },
+    "Machinegunner": {
+        "displayName": "Machinegunner",
+        "icon": "iconManMG",
+        "role": "MachineGunner"
+    },
+    "AsstMachinegunner": {
+        "displayName": "Asst. Machinegunner"
+    },
+    "Marksman": {
+        "displayName": "Marksman",
+        "icon": "iconManRecon",
+        "role": "Marksman"
+    },
+    "Medic": {
+        "displayName": "Medic",
+        "icon": "iconManMedic",
+        "role": "Combat Life Saver",
+        "attendant": 1
+    },
+    "Sniper": {
+        "displayName": "Sniper",
+        "icon": "iconManRecon",
+        "role": "Marksman"
+    },
+    "Spotter": {
+        "displayName": "Spotter"
+    }
+}

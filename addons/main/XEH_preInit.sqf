@@ -5,7 +5,20 @@ ADDON = false;
 GVAR(randomLoadoutUnits) = createHashMap;
 
 {
-    [_x, "InitPost", { call FUNC(addMagazines) }] call CBA_fnc_addClassEventHandler;
+    [_x, "Init", { 
+        if (CBA_missionTime > 1) exitWith {};
+        (_this#0) setVariable [QGVAR(randomLoadoutApplied), true];
+    }] call CBA_fnc_addClassEventHandler;
+} forEach BASE_CLASSES;
+
+{
+    [_x, "InitPost", { 
+        if !(local (_this#0)) exitWith {};
+        if !((_this#0) getVariable [QGVAR(randomLoadoutApplied), false]) then {
+            _this call FUNC(randomizeLoadout);
+        };
+        _this call FUNC(addMagazines);
+    }] call CBA_fnc_addClassEventHandler;
 } forEach BASE_CLASSES;
 
 ADDON = true;

@@ -3,7 +3,24 @@
 class CfgPatches {
     class ADDON {
         name = QUOTE(DOUBLES(COMPONENT,SUBCOMPONENT));
-        units[] = {};
+        units[] = {
+            QCLASS(Rifleman),
+            QCLASS(SquadLeader),
+            QCLASS(TeamLeader),
+            QCLASS(Autorifleman),
+            QCLASS(Machinegunner),
+            QCLASS(AsstMachinegunner),
+            QCLASS(Marksman),
+            QCLASS(Medic),
+            QCLASS(RiflemanMAT),
+            QCLASS(RiflemanHAT),
+            QCLASS(RiflemanAA),
+            QCLASS(RadioOperator),
+            QCLASS(Engineer),
+            QCLASS(Demolitions),
+            QCLASS(Crewman),
+            QCLASS(HeliPilot)
+        };
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {"cba_main"};

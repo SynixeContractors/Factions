@@ -10,7 +10,7 @@ class CfgVehicles {
         - Names
     */
     class CLASS(Base): GCLASS(Base_BLUFOR) {
-        faction = QCLASS(t2_blufor);
+        faction = QCLASS(t3_blufor);
         displayName = "Example Base Unit";
         identityTypes[] = {"LanguageFRE_F", "Head_Euro"};
         genericNames = "NATOMen";
@@ -59,7 +59,7 @@ class CfgVehicles {
             },
             // Packs are preset of common items, found in addons/main/functions/fnc_packItems.sqf
             "packs": [
-                "t2_rifleman_medical",
+                "t3_rifleman_medical",
             ],
         });
 
@@ -176,7 +176,7 @@ class CfgVehicles {
                 "tacs_Backpack_Kitbag_Medic_Green": 1,
             },
             "packs": [
-                "t2_medic",
+                "t3_medic",
             ],
         });
     };

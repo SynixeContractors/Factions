@@ -9,12 +9,12 @@ class CfgVehicles {
 
         @Uniforms({
             "variants": {
-              "tacs_Uniform_combat_LS_ATACS_IX": 0.75,
-              "tacs_Uniform_Combat_RS_ATACS_IX": 0.25,
+                "tacs_Uniform_combat_LS_ATACS_IX": 0.75,
+                "tacs_Uniform_Combat_RS_ATACS_IX": 0.25,
             },
             "packs": [
-                "t2_rifleman_medical",
-                "t2_standard",
+                "t3_rifleman_medical",
+                "t3_standard",
             ],
         });
         @Vests({
@@ -184,7 +184,7 @@ class CfgVehicles {
                 "B_AssaultPack_rgr": 1,
             },
             "packs": [
-                "t2_medic",
+                "t3_medic",
             ],
           });
     };

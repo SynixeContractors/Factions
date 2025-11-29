@@ -1,8 +1,8 @@
 class CfgGroups {
     class EAST {
-        class CLASS(t2_opfor) {
-            name = "[T2] Joson Socialist Republic";
-            @Groups(T2,OPFOR,Army_Combat);
+        class CLASS(t3_opfor) {
+            name = "[T3] Joson Socialist Republic";
+            @Groups(T3,OPFOR,Army_Combat);
         };
     };
 };

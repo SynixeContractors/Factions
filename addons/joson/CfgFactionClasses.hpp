@@ -1,7 +1,7 @@
 class CfgFactionClasses {
-    class CLASS(t2_opfor) {
+    class CLASS(t3_opfor) {
         SCOPE_DLC;
-        displayName = "[T2] Joson Socialist Republic";
+        displayName = "[T3] Joson Socialist Republic";
         priority = 1;
         side = 0;
     };
