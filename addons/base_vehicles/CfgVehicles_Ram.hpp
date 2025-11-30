@@ -163,9 +163,8 @@ class Pickup_01_base_rf: Offroad_01_unarmed_base_F {
 class GCLASS(Ram): Pickup_01_base_rf {
     displayName = "Ram 1500";
     faction = QGCLASS(base_vehicles);
-    side = 3;
-    scope = 2;
-    scopeCurator = 2;
+    SCOPE_DLC_VEHICLE;
+    EMPTY_INVENTORY;
     RESET_RAM_TEXTURES;
 };
 
@@ -178,9 +177,8 @@ class Pickup_covered_base_rf: Pickup_service_base_old_rf {
 class GCLASS(RamCovered): Pickup_covered_base_rf {
     displayName = "Ram 1500 (Covered)";
     faction = QGCLASS(base_vehicles);
-    side = 3;
-    scope = 2;
-    scopeCurator = 2;
+    SCOPE_DLC_VEHICLE;
+    EMPTY_INVENTORY;
     RESET_RAM_TEXTURES;
 };
 
@@ -190,9 +188,8 @@ class Pickup_01_hmg_base_rf: Pickup_01_base_rf {
 class GCLASS(RamHMG): Pickup_01_hmg_base_rf {
     displayName = "Ram 1500 (HMG)";
     faction = QGCLASS(base_vehicles);
-    side = 3;
-    scope = 2;
-    scopeCurator = 2;
+    SCOPE_DLC_VEHICLE;
+    EMPTY_INVENTORY;
     RESET_RAM_TEXTURES;
 };
 
@@ -202,9 +199,8 @@ class Pickup_01_aat_base_rf: Pickup_01_base_rf {
 class GCLASS(RamAA): Pickup_01_aat_base_rf {
     displayName = "Ram 1500 (AA)";
     faction = QGCLASS(base_vehicles);
-    side = 3;
-    scope = 2;
-    scopeCurator = 2;
+    SCOPE_DLC_VEHICLE;
+    EMPTY_INVENTORY;
     RESET_RAM_TEXTURES;
 };
 
@@ -214,9 +210,8 @@ class Pickup_01_Rocket_base_rf: Pickup_01_aat_base_rf {
 class GCLASS(RamRocket): Pickup_01_Rocket_base_rf {
     displayName = "Ram 1500 (Rocket)";
     faction = QGCLASS(base_vehicles);
-    side = 3;
-    scope = 2;
-    scopeCurator = 2;
+    SCOPE_DLC_VEHICLE;
+    EMPTY_INVENTORY;
     RESET_RAM_TEXTURES;
 };
 
@@ -226,9 +221,8 @@ class Pickup_01_rcws_base_rf: Pickup_01_aat_base_rf {
 class GCLASS(RamRCWS): Pickup_01_rcws_base_rf {
     displayName = "Ram 1500 (RCWS)";
     faction = QGCLASS(base_vehicles);
-    side = 3;
-    scope = 2;
-    scopeCurator = 2;
+    SCOPE_DLC_VEHICLE;
+    EMPTY_INVENTORY;
     RESET_RAM_TEXTURES;
 };
 
@@ -238,9 +232,8 @@ class Pickup_01_minigun_base_rf: Pickup_01_base_rf {
 class GCLASS(RamMinigun): Pickup_01_minigun_base_rf {
     displayName = "Ram 1500 (Minigun)";
     faction = QGCLASS(base_vehicles);
-    side = 3;
-    scope = 2;
-    scopeCurator = 2;
+    SCOPE_DLC_VEHICLE;
+    EMPTY_INVENTORY;
     RESET_RAM_TEXTURES;
 };
 
@@ -253,9 +246,8 @@ class Pickup_comms_base_rf: Pickup_service_base_rf {
 class GCLASS(RamComms): Pickup_comms_base_rf {
     displayName = "Ram 1500 (Comms)";
     faction = QGCLASS(base_vehicles);
-    side = 3;
-    scope = 2;
-    scopeCurator = 2;
+    SCOPE_DLC_VEHICLE;
+    EMPTY_INVENTORY;
     RESET_RAM_TEXTURES;
 };
 
@@ -265,9 +257,8 @@ class Pickup_01_mrl_base_rf: Pickup_01_base_rf {
 class GCLASS(RamMRL): Pickup_01_mrl_base_rf {
     displayName = "Ram 1500 (MRL)";
     faction = QGCLASS(base_vehicles);
-    side = 3;
-    scope = 2;
-    scopeCurator = 2;
+    SCOPE_DLC_VEHICLE;
+    EMPTY_INVENTORY;
     RESET_RAM_TEXTURES;
 };
 class Pickup_fuel_base_rf: Pickup_01_base_rf {
@@ -276,9 +267,8 @@ class Pickup_fuel_base_rf: Pickup_01_base_rf {
 class GCLASS(RamFuel): Pickup_fuel_base_rf {
     displayName = "Ram 1500 (Fuel)";
     faction = QGCLASS(base_vehicles);
-    side = 3;
-    scope = 2;
-    scopeCurator = 2;
+    SCOPE_DLC_VEHICLE;
+    EMPTY_INVENTORY;
     RESET_RAM_TEXTURES;
 };
 
@@ -288,9 +278,8 @@ class Pickup_01_mmg_base_rf: Pickup_01_base_rf {
 class GCLASS(RamMMG): Pickup_01_mmg_base_rf {
     displayName = "Ram 1500 (MMG)";
     faction = QGCLASS(base_vehicles);
-    side = 3;
-    scope = 2;
-    scopeCurator = 2;
+    SCOPE_DLC_VEHICLE;
+    EMPTY_INVENTORY;
     RESET_RAM_TEXTURES;
 };
 
@@ -300,9 +289,8 @@ class Aegis_Pickup_01_AT_base_RF: Pickup_01_aat_base_rf {
 class GCLASS(RamAT): Aegis_Pickup_01_AT_base_RF {
     displayName = "Ram 1500 (AT)";
     faction = QGCLASS(base_vehicles);
-    side = 3;
-    scope = 2;
-    scopeCurator = 2;
+    SCOPE_DLC_VEHICLE;
+    EMPTY_INVENTORY;
     RESET_RAM_TEXTURES;
 };
 

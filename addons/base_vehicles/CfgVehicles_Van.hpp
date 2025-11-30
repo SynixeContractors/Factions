@@ -32,9 +32,8 @@ class Van_02_transport_base_F: Van_02_base_F {
 class GCLASS(VanTransport): Van_02_transport_base_F  {
     displayName = "Van (Transport)";
     faction = QGCLASS(base_vehicles);
-    side = 3;
-    scope = 2;
-    scopeCurator = 2;
+    SCOPE_DLC_VEHICLE;
+    EMPTY_INVENTORY;
     class TextureSources: TextureSources {
         RESET_FACTIONS(AAN);
         RESET_FACTIONS(ArganaRoyal);
@@ -79,9 +78,8 @@ class Van_02_medevac_base_F: Van_02_base_F {
 };
 class GCLASS(VanAmbulance): Van_02_medevac_base_F  {
     faction = QGCLASS(base_vehicles);
-    side = 3;
-    scope = 2;
-    scopeCurator = 2;
+    SCOPE_DLC_VEHICLE;
+    EMPTY_INVENTORY;
     class TextureSources: TextureSources {
         RESET_FACTIONS(Argana_Ambulance);
         RESET_FACTIONS(CivAmbulance);
@@ -126,9 +124,8 @@ class Van_02_vehicle_base_F: Van_02_base_F {
 };
 class GCLASS(VanCargo): Van_02_vehicle_base_F  {
     faction = QGCLASS(base_vehicles);
-    side = 3;
-    scope = 2;
-    scopeCurator = 2;
+    SCOPE_DLC_VEHICLE;
+    EMPTY_INVENTORY;
     class TextureSources: TextureSources {
         RESET_FACTIONS(AAN);
         RESET_FACTIONS(ArganaRoyal);

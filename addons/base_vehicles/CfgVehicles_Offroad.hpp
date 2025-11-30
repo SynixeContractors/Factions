@@ -206,9 +206,8 @@ class Offroad_01_military_covered_base_F: Offroad_01_military_base_F {
 class GCLASS(Offroad): Offroad_01_military_covered_base_F {
     displayName = "Offroad";
     faction = QGCLASS(base_vehicles);
-    side = 3;
-    scope = 2;
-    scopeCurator = 2;
+    SCOPE_DLC_VEHICLE;
+    EMPTY_INVENTORY;
     class AnimationSources: AnimationSources {
         class HideAntennas: HideAntennas {
             initPhase = 1;
@@ -224,9 +223,8 @@ class GCLASS(Offroad): Offroad_01_military_covered_base_F {
 };
 class GCLASS(OffroadComms): GCLASS(Offroad) {
     displayName = "Offroad (Comms)";
-    side = 3;
-    scope = 2;
-    scopeCurator = 2;
+    SCOPE_DLC_VEHICLE;
+    EMPTY_INVENTORY;
     class AnimationSources: AnimationSources {
         class HideAntennas: HideAntennas {
             initPhase = 0;
@@ -243,9 +241,8 @@ class C_Offroad_01_repair_F;
 class GCLASS(OffroadServices): C_Offroad_01_repair_F {
     displayName = "Offroad (Services)";
     faction = QGCLASS(base_vehicles);
-    side = 3;
-    scope = 2;
-    scopeCurator = 2;
+    SCOPE_DLC_VEHICLE;
+    EMPTY_INVENTORY;
     class TextureSources {
         class Beige {
             factions[] = {};

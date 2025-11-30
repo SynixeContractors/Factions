@@ -5,6 +5,7 @@ class CfgGroups {
             @Groups(T2,OPFOR,Army_Combat);
             @Groups(T2,OPFOR,Army_Recon);
             @Groups(T2,OPFOR,Army_Garrison);
+            @Groups(T2,OPFOR,Reserves);
         };
     };
 };

@@ -14,9 +14,8 @@ class APC_Tracked_03_base_v2_F: APC_Tracked_03_base_F {
 };
 class GCLASS(Warrior): APC_Tracked_03_base_v2_F {
     faction = QGCLASS(base_vehicles);
-    side = 3;
-    scope = 2;
-    scopeCurator = 2;
+    SCOPE_DLC_VEHICLE;
+    EMPTY_INVENTORY;
     displayName = "FV510 Warrior";
     class TextureSources: TextureSources {
         RESET_FACTIONS(Olive_01);
@@ -42,7 +41,4 @@ class GCLASS(Warrior): APC_Tracked_03_base_v2_F {
             factions[] = {};
         };
     };
-    delete TransportItems;
-    delete TransportMagazines;
-    delete TransportWeapons;
 };

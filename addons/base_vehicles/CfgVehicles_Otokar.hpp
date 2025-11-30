@@ -73,9 +73,8 @@ class APC_Wheeled_02_unarmed_base_lxws: APC_Wheeled_02_base_v2_F {
 class GCLASS(OtokarUnarmed): APC_Wheeled_02_unarmed_base_lxws {
     displayName = "Otokar Cobra II (Unarmed)";
     faction = QGCLASS(base_vehicles);
-    side = 3;
-    scope = 2;
-    scopeCurator = 2;
+    SCOPE_DLC_VEHICLE;
+    EMPTY_INVENTORY;
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
 };
@@ -87,9 +86,8 @@ class APC_Wheeled_02_hmg_base_lxws: APC_Wheeled_02_base_v2_F {
 class GCLASS(OtokarHMG): APC_Wheeled_02_hmg_base_lxws {
     displayName = "Otokar Cobra II (HMG)";
     faction = QGCLASS(base_vehicles);
-    side = 3;
-    scope = 2;
-    scopeCurator = 2;
+    SCOPE_DLC_VEHICLE;
+    EMPTY_INVENTORY;
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
 };
@@ -99,9 +97,8 @@ class O_APC_Wheeled_02_rcws_v2_F;
 class GCLASS(OtokarRCWS): O_APC_Wheeled_02_rcws_v2_F {
     displayName = "Otokar Cobra II (RCWS)";
     faction = QGCLASS(base_vehicles);
-    side = 3;
-    scope = 2;
-    scopeCurator = 2;
+    SCOPE_DLC_VEHICLE;
+    EMPTY_INVENTORY;
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
 };

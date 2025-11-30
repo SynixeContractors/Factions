@@ -1,9 +1,18 @@
 #define RESET_FACTIONS(COLOR) class COLOR: COLOR { factions[] = {}; }
 
+#define EMPTY_INVENTORY class TransportItems {}; \
+    class TransportMagazines {}; \
+    class TransportWeapons {}; \
+    class TransportBackpacks {}
+
+#define SCOPE_DLC_VEHICLE side = 3; \
+    scope = 2; \
+    scopeCurator = 2; \
+    forceInGarage = 1
+
 class CfgVehicles {
     class Car_F;
     class Tank_F;
-    class Truck_F;
     class Wheeled_APC_F;
     class Offroad_01_base_F;
 
