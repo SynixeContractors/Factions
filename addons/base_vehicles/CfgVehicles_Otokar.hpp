@@ -71,7 +71,7 @@ class APC_Wheeled_02_unarmed_base_lxws: APC_Wheeled_02_base_v2_F {
     TEXTURES;
 };
 class GCLASS(OtokarUnarmed): APC_Wheeled_02_unarmed_base_lxws {
-    displayName = "Otokar Cobra II (Unarmed)";
+    displayName = "Otokar ARMA (Unarmed)";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
@@ -84,7 +84,7 @@ class APC_Wheeled_02_hmg_base_lxws: APC_Wheeled_02_base_v2_F {
     TEXTURES;
 };
 class GCLASS(OtokarHMG): APC_Wheeled_02_hmg_base_lxws {
-    displayName = "Otokar Cobra II (HMG)";
+    displayName = "Otokar ARMA (HMG)";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
@@ -95,7 +95,7 @@ class GCLASS(OtokarHMG): APC_Wheeled_02_hmg_base_lxws {
 // RCWS
 class O_APC_Wheeled_02_rcws_v2_F;
 class GCLASS(OtokarRCWS): O_APC_Wheeled_02_rcws_v2_F {
-    displayName = "Otokar Cobra II (RCWS)";
+    displayName = "Otokar ARMA (RCWS)";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
