@@ -5,5 +5,26 @@
             "LanguagePOL_F"
         ],
         "genericNames": "Polish"
+    },
+    "Calvane": {
+        "identityTypes": [
+            "Head_Euro",
+            "LanguageENG_M"
+        ],
+        "genericNames": "American"
+    },
+    "Drovak": {
+        "identityTypes": [
+            "Head_Russian",
+            "LanguageRUS_M"
+        ],
+        "genericNames": "Russian"
+    },
+    "Livonia": {
+        "identityTypes": [
+            "Head_Euro",
+            "LanguagePOL_F"
+        ],
+        "genericNames": "Polish"
     }
 }

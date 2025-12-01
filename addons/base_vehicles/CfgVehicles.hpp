@@ -19,6 +19,7 @@ class CfgVehicles {
     #include "CfgVehicles_Badger.hpp"
     #include "CfgVehicles_Jeep.hpp"
     #include "CfgVehicles_LUT.hpp"
+    #include "CfgVehicles_Motorboat.hpp"
     #include "CfgVehicles_Offroad.hpp"
     #include "CfgVehicles_Otokar.hpp"
     #include "CfgVehicles_Quad.hpp"

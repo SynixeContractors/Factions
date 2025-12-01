@@ -181,3 +181,36 @@ class CLASS(Citizen_Construction)_##NATION: CLASS(Base)_##NATION {
         },
     });
 };
+
+class CLASS(Citizen_Farmer)_##NATION: CLASS(Base)_##NATION {
+    SCOPE_DLC;
+    displayName = "Citizen (Farmer)";
+
+    @Uniforms({
+        "variants": {
+            "U_C_Uniform_Farmer_01_F": 1,
+        },
+    });
+};
+
+class CLASS(Citizen_Fisherman)_##NATION: CLASS(Base)_##NATION {
+    SCOPE_DLC;
+    displayName = "Citizen (Fisherman)";
+
+    @Uniforms({
+        "variants": {
+            "U_C_Mechanic_01_F": 1,
+            "U_I_L_Uniform_01_tshirt_olive_F": 0.5,
+        },
+    });
+
+    @Vests({
+        "variants": {
+            "V_Pocketed_black_F": 1,
+            "V_Pocketed_hunter_F": 0.2,
+            "V_Pocketed_coyote_F": 1,
+            "V_Pocketed_olive_F": 1,
+            "V_Pocketed_wdl_F": 0.2,
+        },
+    });
+};
