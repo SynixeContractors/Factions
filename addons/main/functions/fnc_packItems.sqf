@@ -13,11 +13,22 @@ switch (_name) do {
             ["ACE_painkillers", 1]
         ];
     };
-    case "t2_standard";
+    case "t2_standard": {
+        [
+            ["ACE_CableTie", 6],
+            ["SmokeShell", 2],
+            ["HandGrenade", 2],
+            ["ACE_NVG_Gen4_Black_WP", 1],
+            ["Chemlight_green", 1],
+            ["Chemlight_blue", 1]
+        ];
+    }:
+
     case "t3_standard": {
         [
             ["ACE_CableTie", 6],
             ["SmokeShell", 2],
+            ["HandGrenade", 2],
             ["NVGoggles_OPFOR", 1],
             ["Chemlight_green", 1],
             ["Chemlight_blue", 1]
@@ -28,6 +39,7 @@ switch (_name) do {
         [
             ["ACE_CableTie", 6],
             ["SmokeShell", 2],
+            ["HandGrenade_Guer", 1],
             ["Chemlight_green", 1],
             ["Chemlight_blue", 1]
         ];
