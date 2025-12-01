@@ -185,12 +185,10 @@ class CfgVehicles {
 
     class CLASS(SquadLeader): CLASS(Rifleman) {
         @Role(SquadLeader);
-        
     };
 
     class CLASS(TeamLeader): CLASS(Rifleman) {
         @Role(TeamLeader);
-
     };
 
     class CLASS(Autorifleman): CLASS(Base) {
@@ -249,7 +247,6 @@ class CfgVehicles {
                 "B_FieldPack_oli": 1,
             },
         });
-
     };
 
     class CLASS(Machinegunner): CLASS(Autorifleman) {
@@ -297,7 +294,6 @@ class CfgVehicles {
                 "B_FieldPack_oli": 1,
             },
         });
-        
     };
 
     class CLASS(AsstMachinegunner): CLASS(Base) {
@@ -352,7 +348,6 @@ class CfgVehicles {
                 "bipod_01_F_blk": 1,
             },
         });
-
     };
 
     class CLASS(Medic): CLASS(Base) {
