@@ -1,5 +1,5 @@
 class C_Boat_Civil_01_F;
-class CLASS(Motorboat): C_Boat_Civil_01_F {
+class GCLASS(Motorboat): C_Boat_Civil_01_F {
     displayName = "Motorboat";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
