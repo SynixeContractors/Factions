@@ -13,6 +13,7 @@ switch (_name) do {
             ["ACE_painkillers", 1]
         ];
     };
+    
     case "t2_standard": {
         [
             ["ACE_CableTie", 6],
@@ -22,7 +23,7 @@ switch (_name) do {
             ["Chemlight_green", 1],
             ["Chemlight_blue", 1]
         ];
-    }:
+    };
 
     case "t3_standard": {
         [
