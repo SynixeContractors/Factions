@@ -6,13 +6,14 @@ class CfgPatches {
         units[] = {};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {"cba_main"};
+        requiredAddons[] = {
+            "synixe_factions_main"
+        };
         author = "Synixe Contractors";
         VERSION_CONFIG;
     };
 };
 
 #include "CfgEditorSubcategories.hpp"
-#include "CfgEventHandlers.hpp"
+#include "CfgFactionClasses.hpp"
 #include "CfgVehicles.hpp"
-#include "CfgWorlds.hpp"

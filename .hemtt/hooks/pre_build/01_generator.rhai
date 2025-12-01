@@ -264,6 +264,62 @@ fn groups(args) {
     return ret;
 }
 
+fn names(args) {
+    if args.len() != 1 {
+        fatal("Names macro requires exactly 1 argument");
+    }
+    let nationality = args[0];
+    let names_source = parse_json((global::HEMTT_VFS.join("generator/names/" + to_lower(nationality) + ".json")).open_file().read());
+    let ret = "class " + nationality + "{\nclass FirstNames {\n";
+    let i = 0;
+    for first_name in names_source.first_names {
+        ret += "name" + i + " = \"" + first_name + "\";\n";
+        i += 1;
+    }
+    ret += "};\n";
+    ret += "class LastNames {\n";
+    let i = 0;
+    for last_name in names_source.last_names {
+        ret += "name" + i + " = \"" + last_name + "\";\n";
+        i += 1;
+    }
+    ret += "};};\n";
+    return ret;
+}
+
+fn overlay_properties(base, file, key) {
+    let overlay = parse_json(global::HEMTT_VFS.join(file).open_file().read());
+    if !(key in overlay) {
+        fatal("Role not found in roles.json: " + key);
+    }
+    overlay = overlay[key];
+    for key in overlay.keys() {
+        base[key] = overlay[key];
+    }
+    let ret = "";
+    for key in base.keys() {
+        let value = base[key];
+        switch type_of(value) {
+            "array" => {
+                key = key + "[]";
+                let arr = value;
+                let arr_str = "{";
+                for item in arr {
+                    arr_str += "\"" + item + "\",";
+                }
+                arr_str += "}";
+                value = arr_str;
+            }
+            "string" => {
+                value = "\"" + value + "\"";
+            }
+            _ => {}
+        }
+        ret += key + " = " + value + ";";
+    }
+    return ret;
+}
+
 fn parse_macro(line) {
     if !line.starts_with("@") {
         fatal("Line does not start with @: " + line);
@@ -329,7 +385,6 @@ respawnLinkedItems[] = {};
             if args.len() != 1 {
                 fatal("Role macro requires exactly 1 argument");
             }
-            let role_name = args[0];
             let properties = #{
                 scope: 2,
                 scopeCurator: 2,
@@ -337,19 +392,17 @@ respawnLinkedItems[] = {};
                 displayName: "Unknown",
                 icon: "iconMan",
             };
-            let overlay = parse_json(global::HEMTT_VFS.join("generator/roles.json").open_file().read());
-            if !(role_name in overlay) {
-                fatal("Role not found in roles.json: " + role_name);
+            return overlay_properties(properties, "generator/roles.json", args[0]);
+        }
+        "Identity" => {
+            if args.len() != 1 {
+                fatal("Identity macro requires exactly 1 argument");
             }
-            overlay = overlay[role_name];
-            for key in overlay.keys() {
-                properties[key] = overlay[key];
-            }
-            for key in properties.keys() {
-                ret += key + " = \"" + properties[key] + "\";";
-            }
-            debug("Generated Role config: " + ret);
-            return ret;
+            let properties = #{
+                identityTypes: ["HEAD_NATO","LanguageENG_F"],
+                genericNames: "American",
+            };
+            return overlay_properties(properties, "generator/identities.json", args[0]);
         }
         "Uniforms" => {
             return container("uniform", args);
@@ -383,6 +436,9 @@ respawnLinkedItems[] = {};
         }
         "Groups" => {
             return groups(args);
+        }
+        "Names" => {
+            return names(args);
         }
         _ => {
             fatal("Unknown macro name: " + name);
@@ -437,6 +493,9 @@ for addon in addons {
         if touched {
             debug("Writing modified file: " + file);
             file.create_file().write(replacement);
+            // if addon.file_name() == "civilians" {
+            //     HEMTT_RFS.join("debug").join(file.file_name()).create_file().write(replacement);
+            // }
         }
     }
 }
