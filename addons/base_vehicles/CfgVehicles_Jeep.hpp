@@ -4,7 +4,7 @@ class Offroad_02_base_F: Car_F {
         class Blue;
         class Brown;
         class Green;
-        class IDAP;
+        class IDAP ;
         class Jungle;
         class Olive;
         class Orange;
@@ -14,9 +14,8 @@ class Offroad_02_base_F: Car_F {
 };
 class GCLASS(JeepWrangler): Offroad_02_base_F {
     faction = QGCLASS(base_vehicles);
-    side = 3;
-    scope = 2;
-    scopeCurator = 2;
+    SCOPE_DLC_VEHICLE;
+    EMPTY_INVENTORY;
     class TextureSources: TextureSources {
         RESET_FACTIONS(Black);
         RESET_FACTIONS(Blue);
@@ -46,9 +45,8 @@ class Offroad_02_LMG_base_F: Offroad_02_base_F {
 };
 class GCLASS(JeepWrangler_LMG): Offroad_02_LMG_base_F {
     faction = QGCLASS(base_vehicles);
-    side = 3;
-    scope = 2;
-    scopeCurator = 2;
+    SCOPE_DLC_VEHICLE;
+    EMPTY_INVENTORY;
     class TextureSources: TextureSources {
         RESET_FACTIONS(Black);
         RESET_FACTIONS(Blue);

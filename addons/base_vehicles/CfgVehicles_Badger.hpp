@@ -14,9 +14,7 @@ class APC_Wheeled_01_base_v2_F: APC_Wheeled_01_base_F {
 };
 class GCLASS(Badger): APC_Wheeled_01_base_v2_F {
     faction = QGCLASS(base_vehicles);
-    side = 3;
-    scope = 2;
-    scopeCurator = 2;
+    SCOPE_DLC_VEHICLE;
     displayName = "Badger (L21A1)";
     class TextureSources: TextureSources {
         RESET_FACTIONS(Olive);
@@ -27,18 +25,15 @@ class GCLASS(Badger): APC_Wheeled_01_base_v2_F {
             scope = 1;
         };
         class EAF_01: EAF_01 {
-            displayName = "Geo Woodland";
+            displayName = "LDF (Geo Woodland)";
             factions[] = {};
         };
         class EAF_Arid: EAF_Arid {
-            displayName = "Geo Arid";
+            displayName = "LDF (Arid)";
             factions[] = {};
         };
     };
-    class TransportItems {};
-    class TransportMagazines {};
-    class TransportWeapons {};
-    class TransportBackpacks {};
+    EMPTY_INVENTORY;
 };
 
 class APC_Wheeled_01_command_base_lxWS: APC_Wheeled_01_base_F {
@@ -58,9 +53,7 @@ class APC_Wheeled_01_command_base_lxWS: APC_Wheeled_01_base_F {
 };
 class GCLASS(Badger_Command): APC_Wheeled_01_command_base_lxWS {
     faction = QGCLASS(base_vehicles);
-    side = 3;
-    scope = 2;
-    scopeCurator = 2;
+    SCOPE_DLC_VEHICLE;
     displayName = "Badger (Command)";
     class TextureSources: TextureSources {
         RESET_FACTIONS(Olive);
@@ -74,11 +67,11 @@ class GCLASS(Badger_Command): APC_Wheeled_01_command_base_lxWS {
             scope = 1;
         };
         class EAF_01: EAF_01 {
-            displayName = "Geo Woodland";
+            displayName = "LDF (Geo Woodland)";
             factions[] = {};
         };
         class EAF_Arid: EAF_Arid {
-            displayName = "Geo Arid";
+            displayName = "LDF (Arid)";
             factions[] = {};
         };
         class Sand_Desert: Sand_Desert {
@@ -86,10 +79,7 @@ class GCLASS(Badger_Command): APC_Wheeled_01_command_base_lxWS {
             factions[] = {};
         };
     };
-    class TransportItems {};
-    class TransportMagazines {};
-    class TransportWeapons {};
-    class TransportBackpacks {};
+    EMPTY_INVENTORY;
 };
 
 class APC_Wheeled_01_mortar_base_lxWS: APC_Wheeled_01_base_F {
@@ -109,9 +99,7 @@ class APC_Wheeled_01_mortar_base_lxWS: APC_Wheeled_01_base_F {
 };
 class GCLASS(Badger_Mortar): APC_Wheeled_01_mortar_base_lxWS {
     faction = QGCLASS(base_vehicles);
-    side = 3;
-    scope = 2;
-    scopeCurator = 2;
+    SCOPE_DLC_VEHICLE;
     displayName = "Badger (Mortar)";
     class TextureSources: TextureSources {
         RESET_FACTIONS(Olive);
@@ -125,11 +113,11 @@ class GCLASS(Badger_Mortar): APC_Wheeled_01_mortar_base_lxWS {
             scope = 1;
         };
         class EAF_01: EAF_01 {
-            displayName = "Geo Woodland";
+            displayName = "LDF (Geo Woodland)";
             factions[] = {};
         };
         class EAF_Arid: EAF_Arid {
-            displayName = "Geo Arid";
+            displayName = "LDF (Arid)";
             factions[] = {};
         };
         class Sand_Desert: Sand_Desert {
@@ -137,10 +125,7 @@ class GCLASS(Badger_Mortar): APC_Wheeled_01_mortar_base_lxWS {
             factions[] = {};
         };
     };
-    class TransportItems {};
-    class TransportMagazines {};
-    class TransportWeapons {};
-    class TransportBackpacks {};
+    EMPTY_INVENTORY;
 };
 
 class APC_Wheeled_01_atgm_base_lxWS: APC_Wheeled_01_base_F {
@@ -163,9 +148,7 @@ class APC_Wheeled_01_atgm_base_v2: APC_Wheeled_01_atgm_base_lxWS {
 };
 class GCLASS(Badger_ATGM): APC_Wheeled_01_atgm_base_v2 {
     faction = QGCLASS(base_vehicles);
-    side = 3;
-    scope = 2;
-    scopeCurator = 2;
+    SCOPE_DLC_VEHICLE;
     displayName = "Badger (L21A1, ATGM)";
     class TextureSources: TextureSources {
         RESET_FACTIONS(Olive);
@@ -179,11 +162,11 @@ class GCLASS(Badger_ATGM): APC_Wheeled_01_atgm_base_v2 {
             scope = 1;
         };
         class EAF_01: EAF_01 {
-            displayName = "Geo Woodland";
+            displayName = "LDF (Geo Woodland)";
             factions[] = {};
         };
         class EAF_Arid: EAF_Arid {
-            displayName = "Geo Arid";
+            displayName = "LDF (Arid)";
             factions[] = {};
         };
         class Sand_Desert: Sand_Desert {
@@ -191,10 +174,7 @@ class GCLASS(Badger_ATGM): APC_Wheeled_01_atgm_base_v2 {
             factions[] = {};
         };
     };
-    class TransportItems {};
-    class TransportMagazines {};
-    class TransportWeapons {};
-    class TransportBackpacks {};
+    EMPTY_INVENTORY;
 };
 
 class B_APC_Wheeled_01_base_F: APC_Wheeled_01_base_F {
@@ -213,9 +193,7 @@ class B_APC_Wheeled_01_medical_F: B_APC_Wheeled_01_base_F {
 };
 class GCLASS(Badger_Medical): B_APC_Wheeled_01_medical_F {
     faction = QGCLASS(base_vehicles);
-    side = 3;
-    scope = 2;
-    scopeCurator = 2;
+    SCOPE_DLC_VEHICLE;
     displayName = "Badger (Medical)";
     class TextureSources: TextureSources {
         RESET_FACTIONS(Olive);
@@ -226,16 +204,13 @@ class GCLASS(Badger_Medical): B_APC_Wheeled_01_medical_F {
             scope = 1;
         };
         class EAF_01: EAF_01 {
-            displayName = "Geo Woodland";
+            displayName = "LDF (Geo Woodland)";
             factions[] = {};
         };
         class EAF_Arid: EAF_Arid {
-            displayName = "Geo Arid";
+            displayName = "LDF (Arid)";
             factions[] = {};
         };
     };
-    class TransportItems {};
-    class TransportMagazines {};
-    class TransportWeapons {};
-    class TransportBackpacks {};
+    EMPTY_INVENTORY;
 };
