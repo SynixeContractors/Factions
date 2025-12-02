@@ -1,4 +1,4 @@
-class CLASS(Citizen_Polo_Shorts)_##NATION: CLASS(Base)_##NATION {
+class CLASS2(Citizen_Polo_Shorts,NATION): CLASS2(Base,NATION) {
     SCOPE_DLC;
     displayName = "Citizen (Polo Shorts)";
 
@@ -21,7 +21,7 @@ class CLASS(Citizen_Polo_Shorts)_##NATION: CLASS(Base)_##NATION {
     });
 };
 
-class CLASS(Citizen_Polo_Pants)_##NATION: CLASS(Base)_##NATION {
+class CLASS2(Citizen_Polo_Pants,NATION): CLASS2(Base,NATION) {
     SCOPE_DLC;
     displayName = "Citizen (Polo Pants)";
 
@@ -93,7 +93,7 @@ class CLASS(Citizen_Polo_Pants)_##NATION: CLASS(Base)_##NATION {
     });
 };
 
-class CLASS(Citizen_Summer)_##NATION: CLASS(Base)_##NATION {
+class CLASS2(Citizen_Summer,NATION): CLASS2(Base,NATION) {
     SCOPE_DLC;
     displayName = "Citizen (Summer)";
 
@@ -107,7 +107,7 @@ class CLASS(Citizen_Summer)_##NATION: CLASS(Base)_##NATION {
     });
 };
 
-class CLASS(Citizen_Sport)_##NATION: CLASS(Base)_##NATION {
+class CLASS2(Citizen_Sport,NATION): CLASS2(Base,NATION) {
     SCOPE_DLC;
     displayName = "Citizen (Sport)";
 
@@ -120,7 +120,7 @@ class CLASS(Citizen_Sport)_##NATION: CLASS(Base)_##NATION {
     });
 };
 
-class CLASS(Citizen_Suit_Business)_##NATION: CLASS(Base)_##NATION {
+class CLASS2(Citizen_Suit_Business,NATION): CLASS2(Base,NATION) {
     SCOPE_DLC;
     displayName = "Citizen (Suit, Business)";
 
@@ -133,7 +133,7 @@ class CLASS(Citizen_Suit_Business)_##NATION: CLASS(Base)_##NATION {
     });
 };
 
-class CLASS(Citizen_Suit_Formal)_##NATION: CLASS(Base)_##NATION {
+class CLASS2(Citizen_Suit_Formal,NATION): CLASS2(Base,NATION) {
     SCOPE_DLC;
     displayName = "Citizen (Suit, Formal)";
 
@@ -146,7 +146,7 @@ class CLASS(Citizen_Suit_Formal)_##NATION: CLASS(Base)_##NATION {
     });
 };
 
-class CLASS(Citizen_Djellaba)_##NATION: CLASS(Base)_##NATION {
+class CLASS2(Citizen_Djellaba,NATION): CLASS2(Base,NATION) {
     SCOPE_DLC;
     displayName = "Citizen (Djellaba)";
 
@@ -169,7 +169,7 @@ class CLASS(Citizen_Djellaba)_##NATION: CLASS(Base)_##NATION {
     });
 };
 
-class CLASS(Citizen_Construction)_##NATION: CLASS(Base)_##NATION {
+class CLASS2(Citizen_Construction,NATION): CLASS2(Base,NATION) {
     SCOPE_DLC;
     displayName = "Citizen (Construction)";
 
@@ -180,9 +180,22 @@ class CLASS(Citizen_Construction)_##NATION: CLASS(Base)_##NATION {
             "U_C_ConstructionCoverall_Blue_F": 1,
         },
     });
+
+    @Headgear({
+        "H_Construction_basic_orange_F": 1,
+        "H_Construction_earprot_orange_F": 1,
+        "H_Construction_basic_red_F": 1,
+        "H_Construction_earprot_red_F": 1,
+        "H_Construction_basic_white_F": 1,
+        "H_Construction_earprot_white_F": 1,
+        "H_Construction_basic_yellow_F": 1,
+        "H_Construction_earprot_yellow_F": 1,
+        "H_Construction_basic_black_F": 1,
+        "H_Construction_earprot_black_F": 1,
+    });
 };
 
-class CLASS(Citizen_Farmer)_##NATION: CLASS(Base)_##NATION {
+class CLASS2(Citizen_Farmer,NATION): CLASS2(Base,NATION) {
     SCOPE_DLC;
     displayName = "Citizen (Farmer)";
 
@@ -193,7 +206,7 @@ class CLASS(Citizen_Farmer)_##NATION: CLASS(Base)_##NATION {
     });
 };
 
-class CLASS(Citizen_Fisherman)_##NATION: CLASS(Base)_##NATION {
+class CLASS2(Citizen_Fisherman,NATION): CLASS2(Base,NATION) {
     SCOPE_DLC;
     displayName = "Citizen (Fisherman)";
 

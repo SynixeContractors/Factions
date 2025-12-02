@@ -208,6 +208,7 @@ class GCLASS(Offroad): Offroad_01_military_covered_base_F {
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
+    textureList[] = {"Beige",1,"Black",1,"Blue",1,"Darkred",1,"Green",1,"Olive",1,"Red",1,"White",1};
     class AnimationSources: AnimationSources {
         class HideAntennas: HideAntennas {
             initPhase = 1;

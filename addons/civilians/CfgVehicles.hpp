@@ -7,46 +7,31 @@ class CfgVehicles {
         @Assigned(Civilian);
     };
 
-    class CLASS(Base_Virelia): CLASS(Base) {
-        faction = QCLASS(Virelia);
-        displayName = "Virelia Civilian Base Unit";
-        @Identity(Virelia);
-    };
-    class CLASS(Base_Calvane): CLASS(Base) {
-        faction = QCLASS(Calvane);
-        displayName = "Calvane Civilian Base Unit";
-        @Identity(Calvane);
-    };
-    class CLASS(Base_Drovak): CLASS(Base) {
-        faction = QCLASS(Drovak);
-        displayName = "Drovak Civilian Base Unit";
-        @Identity(Drovak);
-    };
-    class CLASS(Base_Livonia): CLASS(Base) {
-        faction = QCLASS(Livonia);
-        displayName = "Livonia Civilian Base Unit";
-        @Identity(Livonia);
-    };
+    // Cars
+    class GCLASS(FuelTruck);
+    class GCLASS(Hatchback);
+    class GCLASS(HatchbackSport);
+    class GCLASS(Jeep);
+    class GCLASS(Offroad);
+    class GCLASS(SUV);
+    class GCLASS(Tractor);
 
+    // Boats
+    class GCLASS(CabinSkiff);
+    class GCLASS(Dingy);
+    class GCLASS(JetSki);
     class GCLASS(Motorboat);
+    class GCLASS(RHIB);
 
-    #define NATION Virelia
-    #include "CfgVehicles_T_CitizensUnits.hpp"
-    #include "CfgVehicles_T_CitizensVehicles.hpp"
-    #undef NATION
-
-    #define NATION Calvane
-    #include "CfgVehicles_T_CitizensUnits.hpp"
-    #include "CfgVehicles_T_CitizensVehicles.hpp"
-    #undef NATION
-
-    #define NATION Drovak
-    #include "CfgVehicles_T_CitizensUnits.hpp"
-    #include "CfgVehicles_T_CitizensVehicles.hpp"
-    #undef NATION
-
-    #define NATION Livonia
-    #include "CfgVehicles_T_CitizensUnits.hpp"
-    #include "CfgVehicles_T_CitizensVehicles.hpp"
-    #undef NATION
+    @For(["Virelia", "Calvane", "Drovak", "Livonia"])
+        class CLASS(Base_$1): CLASS(Base) {
+            faction = QCLASS($1);
+            displayName = "$1 Civilian Base Unit";
+            @Identity($1);
+        };
+        #define NATION $1
+        #include "CfgVehicles_T_CitizensUnits.hpp"
+        #include "CfgVehicles_T_CitizensVehicles.hpp"
+        #undef NATION
+    @EndFor
 };

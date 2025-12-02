@@ -15,6 +15,7 @@ class APC_Wheeled_01_base_v2_F: APC_Wheeled_01_base_F {
 class GCLASS(Badger): APC_Wheeled_01_base_v2_F {
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
+    EMPTY_INVENTORY;
     displayName = "Badger (L21A1)";
     class TextureSources: TextureSources {
         RESET_FACTIONS(Olive);
@@ -33,7 +34,6 @@ class GCLASS(Badger): APC_Wheeled_01_base_v2_F {
             factions[] = {};
         };
     };
-    EMPTY_INVENTORY;
 };
 
 class APC_Wheeled_01_command_base_lxWS: APC_Wheeled_01_base_F {
@@ -54,7 +54,10 @@ class APC_Wheeled_01_command_base_lxWS: APC_Wheeled_01_base_F {
 class GCLASS(Badger_Command): APC_Wheeled_01_command_base_lxWS {
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
+    EMPTY_INVENTORY;
     displayName = "Badger (Command)";
+    crew = "Civilian";
+    typicalCargo[] = {"Soldier"};
     class TextureSources: TextureSources {
         RESET_FACTIONS(Olive);
         RESET_FACTIONS(Sand);
@@ -79,7 +82,6 @@ class GCLASS(Badger_Command): APC_Wheeled_01_command_base_lxWS {
             factions[] = {};
         };
     };
-    EMPTY_INVENTORY;
 };
 
 class APC_Wheeled_01_mortar_base_lxWS: APC_Wheeled_01_base_F {
@@ -100,6 +102,7 @@ class APC_Wheeled_01_mortar_base_lxWS: APC_Wheeled_01_base_F {
 class GCLASS(Badger_Mortar): APC_Wheeled_01_mortar_base_lxWS {
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
+    EMPTY_INVENTORY;
     displayName = "Badger (Mortar)";
     class TextureSources: TextureSources {
         RESET_FACTIONS(Olive);
@@ -125,7 +128,6 @@ class GCLASS(Badger_Mortar): APC_Wheeled_01_mortar_base_lxWS {
             factions[] = {};
         };
     };
-    EMPTY_INVENTORY;
 };
 
 class APC_Wheeled_01_atgm_base_lxWS: APC_Wheeled_01_base_F {
@@ -149,6 +151,7 @@ class APC_Wheeled_01_atgm_base_v2: APC_Wheeled_01_atgm_base_lxWS {
 class GCLASS(Badger_ATGM): APC_Wheeled_01_atgm_base_v2 {
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
+    EMPTY_INVENTORY;
     displayName = "Badger (L21A1, ATGM)";
     class TextureSources: TextureSources {
         RESET_FACTIONS(Olive);
@@ -174,7 +177,6 @@ class GCLASS(Badger_ATGM): APC_Wheeled_01_atgm_base_v2 {
             factions[] = {};
         };
     };
-    EMPTY_INVENTORY;
 };
 
 class B_APC_Wheeled_01_base_F: APC_Wheeled_01_base_F {
@@ -194,6 +196,7 @@ class B_APC_Wheeled_01_medical_F: B_APC_Wheeled_01_base_F {
 class GCLASS(Badger_Medical): B_APC_Wheeled_01_medical_F {
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
+    EMPTY_INVENTORY;
     displayName = "Badger (Medical)";
     class TextureSources: TextureSources {
         RESET_FACTIONS(Olive);
@@ -212,5 +215,4 @@ class GCLASS(Badger_Medical): B_APC_Wheeled_01_medical_F {
             factions[] = {};
         };
     };
-    EMPTY_INVENTORY;
 };
