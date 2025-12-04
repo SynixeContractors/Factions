@@ -17,6 +17,7 @@ class CfgVehicles {
     class Offroad_01_base_F;
 
     // Cars
+    #include "CfgVehicles_Fennek.hpp"
     #include "CfgVehicles_FuelTruck.hpp"
     #include "CfgVehicles_Hatchback.hpp"
     #include "CfgVehicles_Jeep.hpp"
@@ -31,6 +32,7 @@ class CfgVehicles {
     // APCS
     #include "CfgVehicles_Badger.hpp"
     #include "CfgVehicles_Otokar.hpp"
+    #include "CfgVehicles_Pandur.hpp"
     #include "CfgVehicles_Warrior.hpp"
 
     // Boats

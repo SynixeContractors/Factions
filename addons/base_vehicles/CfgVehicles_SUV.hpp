@@ -1,5 +1,5 @@
 class C_SUV_01_F;
-class CLASS(SUV): C_SUV_01_F {
+class GCLASS(SUV): C_SUV_01_F {
     displayName = "SUV";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
