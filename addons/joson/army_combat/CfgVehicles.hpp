@@ -1,5 +1,8 @@
 class CfgVehicles {
     #include "CfgVehicles_tank.hpp"
+    #include "CfgVehicles_Cars.hpp"
+    #include "CfgVehicles_APC.hpp"
+
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {
         displayName = "JSR Base Army Combat";
