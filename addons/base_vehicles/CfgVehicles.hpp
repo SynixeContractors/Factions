@@ -41,4 +41,7 @@ class CfgVehicles {
     #include "CfgVehicles_JetSki.hpp"
     #include "CfgVehicles_Motorboat.hpp"
     #include "CfgVehicles_RHIB.hpp"
+
+    // Tanks
+    #include "CfgVehicles_T100.hpp"
 };
