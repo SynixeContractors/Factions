@@ -4,6 +4,7 @@ class CfgGroups {
             name = "[T3] Royal Nyrland Defense Force";
             @Groups(T3,OPFOR,Army_Combat);
             @Groups(T3,OPFOR,Army_Garrison);
+            @Groups(T3,OPFOR,Army_Recon);
         };
     };
 };
