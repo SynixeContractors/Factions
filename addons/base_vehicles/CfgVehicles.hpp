@@ -28,6 +28,7 @@ class CfgVehicles {
     #include "CfgVehicles_SUV.hpp"
     #include "CfgVehicles_Tractor.hpp"
     #include "CfgVehicles_Van.hpp"
+    #include "CfgVehicles_Typhoon.hpp"
     
     // APCS
     #include "CfgVehicles_Badger.hpp"
@@ -41,4 +42,7 @@ class CfgVehicles {
     #include "CfgVehicles_JetSki.hpp"
     #include "CfgVehicles_Motorboat.hpp"
     #include "CfgVehicles_RHIB.hpp"
+
+    // Tanks
+    #include "CfgVehicles_T100.hpp"
 };
