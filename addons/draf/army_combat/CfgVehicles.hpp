@@ -6,8 +6,8 @@ class CfgVehicles {
         
         @Uniforms({
             "variants": {
-                "Atlas_U_O_Luchnik_whex_F": 0.5,
-                "Atlas_U_O_Luchnik_RolledUp_whex_F": 0.5,
+                "Atlas_U_O_Luchnik_whex_F": 1,
+                "Atlas_U_O_Luchnik_RolledUp_whex_F": 1,
             },
             "packs": [
                 "t2_rifleman_medical",
@@ -125,7 +125,7 @@ class CfgVehicles {
                     "magazinesVest": {
                         "30Rnd_65x39_caseless_msbs_mag": 6,
                         "1Rnd_HE_Grenade_shell": 4,
-                    }
+                    },
                     "loadedPrimary": "30Rnd_65x39_caseless_msbs_mag",
                     "loadedSecondary": "1Rnd_HE_Grenade_shell",
                 },
