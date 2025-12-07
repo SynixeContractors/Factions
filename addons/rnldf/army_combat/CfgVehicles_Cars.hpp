@@ -25,7 +25,7 @@ class CLASS(RamAA): GCLASS(RamAA) {
     SCOPE_DLC;
     faction = QPCLASS(t3_opfor);
     side = 0;
-    textureList[] = {"Olive",1};
+    textureList[] = {"NATO_P",1};
     hiddenSelectionsTextures[] = {"\lxRF\vehicles_rf\pickup_01\Data\pickup_01_ext_black_co.paa","\lxRF\vehicles_rf\pickup_01\Data\pickup_01_adds_co.paa","\lxrf\vehicles_rf\pickup_01\data\pickup_01_ext2_co.paa","\lxrf\vehicles_rf\pickup_01\data\pickup_01_aat_co.paa","\lxrf\vehicles_rf\pickup_01\data\pickup_01_launcher_co.paa","\lxRF\vehicles_rf\pickup_01\Data\pickup_01_service_black_co.paa"};
     editorPreview = "\A3_Atlas\EditorPreviews_F_Atlas\Data\CfgVehicles\Atlas_I_I_Pickup_aat_F.jpg";
     crew = QCLASS(Rifleman);
@@ -37,7 +37,7 @@ class CLASS(RamRCWS): GCLASS(RamRCWS) {
     SCOPE_DLC;
     faction = QPCLASS(t3_opfor);
     side = 0;
-    textureList[] = {"Olive",1};
+    textureList[] = {"NATO_P",1};
     hiddenSelectionsTextures[] = {"\lxRF\vehicles_rf\pickup_01\Data\pickup_01_ext_black_co.paa","\lxRF\vehicles_rf\pickup_01\Data\pickup_01_adds_co.paa","\lxrf\vehicles_rf\pickup_01\data\pickup_01_ext2_co.paa","lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws_black_co.paa","\lxRF\vehicles_rf\pickup_01\Data\pickup_01_service_black_co.paa"};
     editorPreview = "\lxrf\editorpreviews_rf\Data\CfgVehicles\B_ION_Pickup_rcws_rf.jpg";
     crew = QCLASS(Rifleman);
@@ -49,7 +49,7 @@ class CLASS(RamComms): GCLASS(RamComms) {
     SCOPE_DLC;
     faction = QPCLASS(t3_opfor);
     side = 0;
-    textureList[] = {"Olive",1};
+    textureList[] = {"NATO_P",1};
     hiddenSelectionsTextures[] = {"\lxRF\vehicles_rf\pickup_01\Data\pickup_01_ext_black_co.paa","\lxRF\vehicles_rf\pickup_01\Data\pickup_01_adds_co.paa","\lxrf\vehicles_rf\pickup_01\data\pickup_01_ext2_co.paa","\lxrf\vehicles_rf\pickup_01\data\pickup_01_aat_co.paa","\lxrf\vehicles_rf\pickup_01\data\pickup_01_launcher_co.paa","\lxRF\vehicles_rf\pickup_01\Data\pickup_01_service_black_co.paa"};
     editorPreview = "\lxRF\editorpreviews_rf\Data\CfgVehicles\B_T_Pickup_Comms_rf.jpg";
     crew = QCLASS(Rifleman);
