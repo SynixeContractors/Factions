@@ -8,7 +8,7 @@ class CfgPatches {
             QCLASS(EOD),
             QCLASS(Paramedic),
 
-            QCLASS(JeepWrangler),
+            QCLASS(Jeep),
             QCLASS(VanAmbulance),
             QCLASS(VanTransport),
             QCLASS(VanCargo),

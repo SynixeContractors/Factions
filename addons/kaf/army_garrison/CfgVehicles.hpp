@@ -48,7 +48,7 @@ class CfgVehicles {
                 "arifle_SPAR_02_blk_F": {
                     "probability": 0.5,
                     "magazinesVest": {
-                        "30Rnd_556x45_Stanag_green": 6,
+                        "30Rnd_556x45_Stanag_red": 6,
                     },
                 },
             },
@@ -70,9 +70,11 @@ class CfgVehicles {
                 "arifle_SPAR_01_GL_blk_F": {
                     "probability": 0.5,
                     "magazinesVest": {
-                        "30Rnd_556x45_Stanag_green": 6,
+                        "30Rnd_556x45_Stanag_red": 6,
                         "1Rnd_HE_Grenade_shell": 4,
                     },
+                    "loadedPrimary": "30Rnd_556x45_Stanag_red",
+                    "loadedSecondary": "1Rnd_HE_Grenade_shell",
                 },
             },
             "optics": {

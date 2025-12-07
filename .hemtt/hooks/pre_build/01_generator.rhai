@@ -2,14 +2,8 @@
 const HEMTT_VFS = HEMTT_VFS;
 
 fn is_config(file) {
-    // Replace with future HEMTT
-    // file.file_ext() == "hpp" || file.file_ext() == "cpp"
-    let ext = file.file_name().split(".");
-    if ext.len() < 2 {
-        return false;
-    }
-    let ext = ext[ext.len() - 1];
-    return ext == "hpp" || ext == "cpp";
+    let ext = file.file_ext();
+    ext == "hpp" || ext == "cpp"
 }
 
 fn get_config(folder) {
@@ -50,6 +44,48 @@ fn strip_comments(line) {
     return line;
 }
 
+fn load_json(filename) {
+    return parse_json(global::HEMTT_VFS.join("generator/" + filename + ".json").open_file().read());
+}
+
+fn parse_json_array(json_str) {
+    // Manually parse a JSON array like ["item1", "item2", "item3"]
+    let result = [];
+    let in_string = false;
+    let current = "";
+    let i = 0;
+    
+    // Skip opening [
+    while i < json_str.len() && json_str[i] != '[' {
+        i += 1;
+    }
+    i += 1;
+    
+    while i < json_str.len() {
+        let char = json_str[i];
+        
+        if char == '"' {
+            if in_string {
+                // End of string
+                result.push(current);
+                current = "";
+                in_string = false;
+            } else {
+                // Start of string
+                in_string = true;
+            }
+        } else if in_string {
+            current += char;
+        } else if char == ']' {
+            break;
+        }
+        
+        i += 1;
+    }
+    
+    return result;
+}
+
 fn probability_list(name, value) {
     let ret = "Synixe_" + name + "[] = {";
     for key in value.keys() {
@@ -65,6 +101,15 @@ fn quantity_list(name, value) {
     for key in value.keys() {
         let v = value[key];
         ret += "{\"" + key + "\"," + v + "},";
+    }
+    ret += "};";
+    return ret;
+}
+
+fn string_list(name, value) {
+    let ret = "Synixe_" + name + "[] = {";
+    for item in value {
+        ret += "\"" + item + "\",";
     }
     ret += "};";
     return ret;
@@ -93,11 +138,7 @@ fn container(name, value) {
     }
 
     if "packs" in value {
-        ret += "Synixe_" + name + "Packs[] = {";
-        for pack in value.packs {
-            ret += "\"" + pack + "\",";
-        }
-        ret += "};\n";
+        ret += string_list(name + "Packs", value.packs) + "\n";
     }
 
     return ret;
@@ -142,18 +183,13 @@ fn weapon(name, value) {
     }
     ret += "};\n";
 
-    if "optics" in value {
-        ret += probability_list(name + "Optics", value.optics) + "\n";
+    for attachment in ["Optics", "Muzzles", "Bipods", "Pointers"] {
+        let key = to_lower(attachment);
+        if key in value {
+            ret += probability_list(name + attachment, value[key]) + "\n";
+        }
     }
-    if "muzzles" in value {
-        ret += probability_list(name + "Muzzles", value.muzzles) + "\n";
-    }
-    if "bipods" in value {
-        ret += probability_list(name + "Bipods", value.bipods) + "\n";
-    }
-    if "pointers" in value {
-        ret += probability_list(name + "Pointers", value.pointers) + "\n";
-    }
+    
     return ret;
 }
 
@@ -185,26 +221,11 @@ fn assigned(value) {
             fatal("Unknown assigned preset: " + preset);
         }
     }
-    if "map" in value {
-        items.map = value.map;
-    }
-    if "compass" in value {
-        items.compass = value.compass;
-    }
-    if "watch" in value {
-        items.watch = value.watch;
-    }
-    if "radio" in value {
-        items.radio = value.radio;
-    }
-    if "gps" in value {
-        items.gps = value.gps;
-    }
-    if "nvg" in value {
-        items.nvg = value.nvg;
-    }
     let ret = "Synixe_assignedItems[] = {";
     for key in ["map", "gps", "radio", "compass", "watch", "nvg"] {
+        if key in value {
+            items[key] = value[key];
+        }
         let v = items[key];
         ret += "\"" + v + "\",";
     }
@@ -238,7 +259,7 @@ fn groups(args) {
     } else {
         ret += "name = \"" + type + "\";\n";
     }
-    let group_source = parse_json((global::HEMTT_VFS.join("generator/groups/" + to_lower(tier) + ".json")).open_file().read());
+    let group_source = load_json("groups/" + to_lower(tier));
     for section in group_source.groups {
         if type in section.types {
             for group in section.groups {
@@ -269,7 +290,7 @@ fn names(args) {
         fatal("Names macro requires exactly 1 argument");
     }
     let nationality = args[0];
-    let names_source = parse_json((global::HEMTT_VFS.join("generator/names/" + to_lower(nationality) + ".json")).open_file().read());
+    let names_source = load_json("names/" + to_lower(nationality));
     let ret = "class " + nationality + "{\nclass FirstNames {\n";
     let i = 0;
     for first_name in names_source.first_names {
@@ -288,9 +309,9 @@ fn names(args) {
 }
 
 fn overlay_properties(base, file, key) {
-    let overlay = parse_json(global::HEMTT_VFS.join(file).open_file().read());
+    let overlay = load_json(file);
     if !(key in overlay) {
-        fatal("Role not found in roles.json: " + key);
+        fatal("Key not found in " + file + ": " + key);
     }
     overlay = overlay[key];
     for key in overlay.keys() {
@@ -320,6 +341,21 @@ fn overlay_properties(base, file, key) {
     return ret;
 }
 
+fn replace_placeholder(text, value) {
+    let result = "";
+    let i = 0;
+    while i < text.len() {
+        if text[i] == "$" && i + 1 < text.len() && text[i + 1] == "1" {
+            result += value;
+            i += 2;
+        } else {
+            result += text[i];
+            i += 1;
+        }
+    }
+    return result;
+}
+
 fn parse_macro(line) {
     if !line.starts_with("@") {
         fatal("Line does not start with @: " + line);
@@ -342,6 +378,13 @@ fn parse_macro(line) {
             fatal("Macro does not have closing json brace: " + line);
         }
         let raw_json = line.sub_string(args_start, json_end - args_start + 1);
+        args = parse_json(raw_json);
+    } else if line[args_start] == "[" {
+        let json_end = line.index_of(")");
+        if json_end == -1 {
+            fatal("Macro does not have closing parenthesis: " + line);
+        }
+        let raw_json = line.sub_string(args_start, json_end - args_start);
         args = parse_json(raw_json);
     } else {
         let args_end = line.index_of(')', args_start);
@@ -392,7 +435,7 @@ respawnLinkedItems[] = {};
                 displayName: "Unknown",
                 icon: "iconMan",
             };
-            return overlay_properties(properties, "generator/roles.json", args[0]);
+            return overlay_properties(properties, "roles", args[0]);
         }
         "Identity" => {
             if args.len() != 1 {
@@ -402,7 +445,7 @@ respawnLinkedItems[] = {};
                 identityTypes: ["HEAD_NATO","LanguageENG_F"],
                 genericNames: "American",
             };
-            return overlay_properties(properties, "generator/identities.json", args[0]);
+            return overlay_properties(properties, "identities", args[0]);
         }
         "Uniforms" => {
             return container("uniform", args);
@@ -440,10 +483,135 @@ respawnLinkedItems[] = {};
         "Names" => {
             return names(args);
         }
+        "For" => {
+            // This should not be called directly, handled in process_lines
+            fatal("@For must be paired with @EndFor");
+        }
         _ => {
             fatal("Unknown macro name: " + name);
         }
     }
+}
+
+fn process_lines(lines, start_index) {
+    let replacement = "";
+    let index = start_index;
+    
+    while index < lines.len() {
+        let line = lines[index];
+        line.trim();
+        
+        if line.starts_with("@For") {
+            // Parse the @For arguments
+            let depth = 0;
+            let macro_text = "";
+            let line_index = index;
+            while line_index < lines.len() {
+                let macro_line = lines[line_index];
+                let macro_line = strip_comments(macro_line);
+                macro_line.trim();
+                macro_text += macro_line;
+                for char in macro_line.chars() {
+                    if char == '(' {
+                        depth += 1;
+                    } else if char == ')' {
+                        depth -= 1;
+                    }
+                }
+                if depth == 0 {
+                    break;
+                }
+                line_index += 1;
+            }
+            
+            // Extract array from @For([...])
+            let args_start = macro_text.index_of('(') + 1;
+            let args_end = macro_text.index_of(')');
+            let raw_json = macro_text.sub_string(args_start, args_end - args_start);
+            let items = parse_json_array(raw_json);
+            
+            // Find @EndFor
+            let for_body_start = line_index + 1;
+            let for_body_end = for_body_start;
+            while for_body_end < lines.len() {
+                let check_line = lines[for_body_end];
+                check_line.trim();
+                if check_line.starts_with("@EndFor") {
+                    break;
+                }
+                for_body_end += 1;
+            }
+            
+            if for_body_end >= lines.len() {
+                fatal("@For without matching @EndFor");
+            }
+            
+            // Extract body lines
+            let body_lines = [];
+            for i in for_body_start..for_body_end {
+                body_lines.push(lines[i]);
+            }
+            
+            // Process body for each item
+            for item in items {
+                for body_line in body_lines {
+                    let processed_line = replace_placeholder(body_line, item);
+                    
+                    // Check if line contains a macro
+                    processed_line.trim();
+                    if processed_line.starts_with("@") {
+                        // Parse and expand the macro
+                        let depth = 0;
+                        let macro_text = processed_line;
+                        for char in macro_text.chars() {
+                            if char == '(' {
+                                depth += 1;
+                            } else if char == ')' {
+                                depth -= 1;
+                            }
+                        }
+                        if depth == 0 {
+                            replacement += parse_macro(macro_text) + "\n";
+                        } else {
+                            fatal("Malformed macro in @For body: " + macro_text);
+                        }
+                    } else {
+                        replacement += processed_line + "\n";
+                    }
+                }
+            }
+            
+            index = for_body_end;
+        } else if line.starts_with("@") {
+            let depth = 0;
+            let macro_text = "";
+            let line_index = index;
+            while line_index < lines.len() {
+                let macro_line = lines[line_index];
+                let macro_line = strip_comments(macro_line);
+                macro_line.trim();
+                macro_text += macro_line;
+                for char in macro_line.chars() {
+                    if char == '(' {
+                        depth += 1;
+                    } else if char == ')' {
+                        depth -= 1;
+                    }
+                }
+                if depth == 0 {
+                    break;
+                }
+                line_index += 1;
+            }
+            replacement += parse_macro(macro_text) + "\n";
+            index = line_index;
+        } else {
+            replacement += line + "\n";
+        }
+        index += 1;
+    }
+    
+    return replacement;
 }
 
 let addons = HEMTT_VFS.join("addons").list();
@@ -453,44 +621,21 @@ for addon in addons {
     }
     let files = get_config(addon);
     for file in files {
-        let touched = false;
-        let replacement = "";
         let content = file.open_file().read();
         let lines = content.split("\n");
-        let index = 0;
-        while index < lines.len() {
-            let line = lines[index];
+        
+        // Check if file needs processing
+        let touched = false;
+        for line in lines {
             line.trim();
             if line.starts_with("@") {
-                let depth = 0;
-                let macro_text = "";
-                let line_index = index;
-                while line_index < lines.len() {
-                    let macro_line = lines[line_index];
-                    let macro_line = strip_comments(macro_line);
-                    macro_line.trim();
-                    macro_text += macro_line;
-                    for char in macro_line.chars() {
-                        if char == '(' {
-                            depth += 1;
-                        } else if char == ')' {
-                            depth -= 1;
-                        }
-                    }
-                    if depth == 0 {
-                        break;
-                    }
-                    line_index += 1;
-                }
-                replacement += parse_macro(macro_text) + "\n";
                 touched = true;
-                index = line_index;
-            } else {
-                replacement += line + "\n";
+                break;
             }
-            index += 1;
         }
+        
         if touched {
+            let replacement = process_lines(lines, 0);
             debug("Writing modified file: " + file);
             file.create_file().write(replacement);
             // if addon.file_name() == "civilians" {

@@ -1,4 +1,8 @@
 class CfgVehicles {
+    #include "CfgVehicles_Ram.hpp"
+    #include "CfgVehicles_Quad.hpp"
+    #include "CfgVehicles_Dingy.hpp"
+
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {
         displayName = "KAF Base Army Recon";
@@ -46,7 +50,7 @@ class CfgVehicles {
                 "arifle_SPAR_02_blk_F": {
                     "probability": 1,
                     "magazinesVest": {
-                        "30Rnd_556x45_Stanag_green": 6,
+                        "30Rnd_556x45_Stanag_red": 6,
                     },
                 },
             },
@@ -58,7 +62,7 @@ class CfgVehicles {
                 "acc_pointer_IR": 1,
             },
             "muzzles": {
-                "suppressor_l_lxWS": 1,
+                "muzzle_snds_M": 1,
             },
         });
 
@@ -102,9 +106,11 @@ class CfgVehicles {
                 "arifle_SPAR_01_GL_blk_F": {
                     "probability": 0.5,
                     "magazinesVest": {
-                        "30Rnd_556x45_Stanag_green": 6,
+                        "30Rnd_556x45_Stanag_red": 6,
                         "1Rnd_HE_Grenade_shell": 4,
                     },
+                    "loadedPrimary": "30Rnd_556x45_Stanag_red",
+                    "loadedSecondary": "1Rnd_HE_Grenade_shell",
                 },
             },
             "optics": {
@@ -115,7 +121,7 @@ class CfgVehicles {
                 "acc_pointer_IR": 1,
             },
             "muzzles": {
-                "suppressor_l_lxWS": 1,
+                "muzzle_snds_M": 1,
             },
         });
 
@@ -171,9 +177,9 @@ class CfgVehicles {
 
         @Primary({
             "weapons": {
-                "srifle_DMR_01_black_RF": {
+                "arifle_SPAR_03_blk_F": {
                     "magazinesVest": {
-                        "10Rnd_762x54_Mag": 8,
+                        "20Rnd_762x51_Mag": 8,
                     }
                 }
             },
@@ -183,11 +189,11 @@ class CfgVehicles {
             "pointers": {
                 "acc_pointer_IR": 1,
             },
-            "bipod": {
+            "bipods": {
                 "bipod_01_F_blk": 1,
             },
             "muzzles": {
-                "aegis_muzzle_snds_pbs_762_blk": 1,
+                "muzzle_snds_B": 1,
             },
         });
 
@@ -283,7 +289,7 @@ class CfgVehicles {
                 "arifle_SPAR_02_blk_F": {
                     "probability": 0.5,
                     "magazinesVest": {
-                        "30Rnd_556x45_Stanag_green": 6,
+                        "30Rnd_556x45_Stanag_red": 6,
                     },
                 },
             },
@@ -294,7 +300,7 @@ class CfgVehicles {
                 "acc_pointer_IR": 1,
             },
             "muzzles": {
-                "suppressor_l_lxWS": 1,
+                "muzzle_snds_M": 1,
             },
         });
 

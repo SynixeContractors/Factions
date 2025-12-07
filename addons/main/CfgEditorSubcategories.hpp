@@ -18,4 +18,8 @@ class CfgEditorSubcategories {
     class GCLASS(reserves) {
         displayName = "Men (Reserves)";
     };
+
+    class GCLASS(militia) {
+        displayName = "Men (Militia)";
+    };
 }; 

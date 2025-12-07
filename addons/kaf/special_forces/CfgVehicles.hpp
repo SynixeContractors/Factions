@@ -1,4 +1,6 @@
 class CfgVehicles {
+    #include "CfgVehicles_Ram.hpp"
+    
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {
         displayName = "KAF Base Army SOF";
@@ -41,7 +43,7 @@ class CfgVehicles {
                 "arifle_SPAR_01_blk_F": {
                     "probability": 1,
                     "magazinesVest": {
-                        "30Rnd_556x45_AP_Stanag_green_RF": 6,
+                        "30Rnd_556x45_AP_Stanag_red_RF": 6,
                     },
                 },
             },
@@ -53,7 +55,7 @@ class CfgVehicles {
                 "acc_pointer_IR": 1,
             },
             "muzzles": {
-                "muzzle_snds_M": 1,
+                "suppressor_l_lxWS": 1,
             },
         });
 
@@ -106,9 +108,11 @@ class CfgVehicles {
                 "arifle_SPAR_01_GL_blk_F": {
                     "probability": 1,
                     "magazinesVest": {
-                        "30Rnd_556x45_Stanag_green": 6,
-                        "1Rnd_HE_Grenade_shell": 4,
+                        "30Rnd_556x45_AP_Stanag_red_RF": 8,
+                        "1Rnd_HE_Grenade_shell": 5,
                     },
+                    "loadedPrimary": "30Rnd_556x45_AP_Stanag_red_RF",
+                    "loadedSecondary": "1Rnd_HE_Grenade_shell",
                 },
             },
             "optics": {
@@ -148,16 +152,22 @@ class CfgVehicles {
 
         @Primary({
             "weapons": {
-                "LMG_Zafir_black_F": {
-                    "probability": 0.5,                    
+                "Atlas_LMG_Negev_black_F": {
+                    "probability": 1,                    
                     "magazinesVest": {
-                        "150Rnd_762x54_Box": 4,
+                        "Atlas_150Rnd_762x51_Box_Red": 2,
+                    },
+                    "magazinesBackpack": {
+                        "Atlas_150Rnd_762x51_Box_Red": 3,
                     },
                 },
                 "arifle_SPAR_02_blk_F": {
-                    "probability": 0.5,                    
+                    "probability": 1,                    
                     "magazinesVest": {
-                        "75Rnd_556x45_Stanag_green_lxWS": 8,
+                        "75Rnd_556x45_Stanag_red_lxWS": 5,
+                    },
+                    "magazinesBackpack": {
+                        "75Rnd_556x45_Stanag_red_lxWS": 5,
                     },
                 },
             },
@@ -169,7 +179,7 @@ class CfgVehicles {
             },
             "muzzles": {
                 "aegis_muzzle_snds_pbs_762_blk": 1,
-                "muzzle_snds_M": 1,
+                "suppressor_l_lxWS": 1,
             }
         });
 
@@ -180,6 +190,12 @@ class CfgVehicles {
                         "11Rnd_45ACP_Mag": 3,
                     },
                 },
+            },
+        });
+
+        @Backpacks({
+            "variants": {
+                "B_AssaultPackSpec_rgr": 1,
             },
         });
     };
@@ -210,7 +226,7 @@ class CfgVehicles {
             "pointers": {
                 "acc_pointer_IR": 1,
             },
-            "bipod": {
+            "bipods": {
                 "bipod_01_F_blk": 1,
             },
             "muzzles": {

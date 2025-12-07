@@ -1,5 +1,5 @@
-class GCLASS(JeepWrangler);
-class CLASS(JeepWrangler): GCLASS(JeepWrangler) {
+class GCLASS(Jeep);
+class CLASS(Jeep): GCLASS(Jeep) {
     SCOPE_DLC;
     faction = QCLASS(civilian);
     textureList[] = {"IDAP",1};

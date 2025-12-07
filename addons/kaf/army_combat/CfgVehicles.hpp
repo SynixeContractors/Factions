@@ -1,4 +1,9 @@
 class CfgVehicles {
+    #include "CfgVehicles_LUT.hpp"
+    #include "CfgVehicles_RHIB.hpp"
+    #include "CfgVehicles_Pandur.hpp"
+
+
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {
         displayName = "KAF Base Army Combat";
@@ -51,7 +56,7 @@ class CfgVehicles {
                 "arifle_SPAR_02_blk_F": {
                     "probability": 0.5,
                     "magazinesVest": {
-                        "30Rnd_556x45_Stanag_green": 6,
+                        "30Rnd_556x45_Stanag_red": 6,
                     },
                 },
             },
@@ -61,10 +66,6 @@ class CfgVehicles {
             },
             "pointers": {
                 "acc_pointer_IR": 1,
-            },
-            "muzzles": {
-                "": 0.5,
-                "suppressor_l_lxWS": 0.5,
             },
         });
     };
@@ -105,9 +106,11 @@ class CfgVehicles {
                 "arifle_SPAR_01_GL_blk_F": {
                     "probability": 0.5,
                     "magazinesVest": {
-                        "30Rnd_556x45_Stanag_green": 6,
+                        "30Rnd_556x45_Stanag_red": 6,
                         "1Rnd_HE_Grenade_shell": 4,
                     },
+                    "loadedPrimary": "30Rnd_556x45_Stanag_red",
+                    "loadedSecondary": "1Rnd_HE_Grenade_shell",
                 },
             },
             "optics": {
@@ -116,10 +119,6 @@ class CfgVehicles {
             },
             "pointers": {
                 "acc_pointer_IR": 1,
-            },
-            "muzzles": {
-                "": 0.4,
-                "suppressor_l_lxWS": 0.6,
             },
         });
 
@@ -139,12 +138,12 @@ class CfgVehicles {
 
         @Primary({
             "weapons": {
-                "LMG_Zafir_black_F": {
+                "Atlas_LMG_Negev_black_F": {
                     "magazinesVest": {
-                        "150Rnd_762x54_Box": 2,
+                        "Atlas_150Rnd_762x51_Box_Red": 2,
                     },
                     "magazinesBackpack": {
-                        "150Rnd_762x54_Box": 2,
+                        "Atlas_150Rnd_762x51_Box_Red": 2,
                     },
                 },
             },
@@ -238,9 +237,9 @@ class CfgVehicles {
 
         @Primary({
             "weapons": {
-                "srifle_DMR_01_black_RF": {
+                "arifle_SPAR_03_blk_F": {
                     "magazinesVest": {
-                        "10Rnd_762x54_Mag": 8,
+                        "20Rnd_762x51_Mag": 8,
                     }
                 }
             },
@@ -250,11 +249,8 @@ class CfgVehicles {
             "pointers": {
                 "acc_pointer_IR": 1,
             },
-            "bipod": {
+            "bipods": {
                 "bipod_01_F_blk": 1,
-            },
-            "muzzles": {
-                "aegis_muzzle_snds_pbs_762_blk": 1,
             },
         });
 
@@ -395,7 +391,7 @@ class CfgVehicles {
             "weapons": {
                 "arifle_SPAR_01_blk_F": {
                     "magazinesVest": {
-                        "30Rnd_556x45_Stanag_green": 4,
+                        "30Rnd_556x45_Stanag_red": 4,
                     }
                 },
             },
@@ -403,7 +399,7 @@ class CfgVehicles {
                 "acc_pointer_IR": 1,
             },
             "optics": {
-                "Aegis_optic_ICO": 0.5,
+                "Aegis_optic_ICO": 1,
             },
         });
 
@@ -433,7 +429,7 @@ class CfgVehicles {
             "weapons": {
                 "arifle_SPAR_01_blk_F": {
                     "magazinesVest": {
-                        "30Rnd_556x45_Stanag_green": 4,
+                        "30Rnd_556x45_Stanag_red": 5,
                     }
                 },
             },
@@ -441,7 +437,7 @@ class CfgVehicles {
                 "acc_pointer_IR": 1,
             },
             "optics": {
-                "Aegis_optic_ICO": 0.5,
+                "Aegis_optic_ICO": 1,
             },
         });
 
@@ -467,8 +463,8 @@ class CfgVehicles {
 
         @Uniforms({
             "variants": {
-                "Atlas_U_UniformBDU_01_m81_F": 0.5,
-                "Atlas_U_UniformBDU_02_m81_F": 0.5,
+                "Atlas_U_UniformBDU_01_m81_F": 1,
+                "Atlas_U_UniformBDU_02_m81_F": 1,
             },
             "packs": [
                 "t2_rifleman_medical",
