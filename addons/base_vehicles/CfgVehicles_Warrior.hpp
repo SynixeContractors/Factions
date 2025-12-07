@@ -14,19 +14,18 @@ class APC_Tracked_03_base_v2_F: APC_Tracked_03_base_F {
 };
 class GCLASS(Warrior): APC_Tracked_03_base_v2_F {
     faction = QGCLASS(base_vehicles);
-    side = 3;
-    scope = 2;
-    scopeCurator = 2;
+    SCOPE_DLC_VEHICLE;
+    EMPTY_INVENTORY;
     displayName = "FV510 Warrior";
     class TextureSources: TextureSources {
         RESET_FACTIONS(Olive_01);
         RESET_FACTIONS(Sand_01);
         class EAF_01: EAF_01 {
-            displayName = "Geo Woodland";
+            displayName = "LDF (Geo Woodland)";
             factions[] = {};
         };
         class EAF_Arid: EAF_Arid {
-            displayName = "Geo Arid";
+            displayName = "LDF (Arid)";
             factions[] = {};
         };
         class Indep_01: Indep_01 {
@@ -42,7 +41,4 @@ class GCLASS(Warrior): APC_Tracked_03_base_v2_F {
             factions[] = {};
         };
     };
-    delete TransportItems;
-    delete TransportMagazines;
-    delete TransportWeapons;
 };

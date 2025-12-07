@@ -3,7 +3,8 @@
         {
             "types": [
                 "Army_Combat",
-                "Army_Garrison"
+                "Army_Garrison",
+                "Reserves"
             ],
             "icon": "\\a3\\ui_f\\data\\map\\markers\\nato\\n_inf.paa",
             "groups": [
@@ -49,25 +50,24 @@
                     ]
                 },
                 {
-                    "class": "Squadstub",
-                    "name": "Squad (Stub)",
-                    "units": [
-                        "SquadLeader",
-                        "RadioOperator",
-                        "Rifleman",
-                        "Medic"
-                    ]
-                },
-                {
-                    "class": "FireteamMAT",
-                    "name": "Fireteam (MAT)",
+                    "class": "FireteamMarksman",
+                    "name": "Fireteam (Marksman)",
                     "units": [
                         "TeamLeader",
-                        "RiflemanMAT",
                         "Rifleman",
-                        "Rifleman"
+                        "Marksman",
+                        "Autorifleman"
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "types": [
+                "Army_Combat",
+                "Reserves"
+            ],
+            "icon": "\\a3\\ui_f\\data\\map\\markers\\nato\\n_inf.paa",
+            "groups": [
                 {
                     "class": "FireteamEngineer",
                     "name": "Fireteam (Engineer)",
@@ -86,6 +86,26 @@
                         "Rifleman",
                         "Demolitions",
                         "Demolitions"
+                    ]
+                },
+                {
+                    "class": "Squadstub",
+                    "name": "Squad (Stub)",
+                    "units": [
+                        "SquadLeader",
+                        "RadioOperator",
+                        "Rifleman",
+                        "Medic"
+                    ]
+                },
+                {
+                    "class": "FireteamMAT",
+                    "name": "Fireteam (MAT)",
+                    "units": [
+                        "TeamLeader",
+                        "RiflemanMAT",
+                        "Rifleman",
+                        "Rifleman"
                     ]
                 }
             ]
