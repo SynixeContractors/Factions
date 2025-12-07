@@ -199,8 +199,8 @@ class CfgVehicles {
         @Secondary({
             "weapons": {
                 "": 0.85,
-                "probability": 0.15,
                 "hgun_Rook40_F": {
+                    "probability": 0.15,
                     "magazinesVest": {
                         "17Rnd_9x21_Mag": 3,
                     },

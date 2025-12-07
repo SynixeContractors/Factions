@@ -21,6 +21,7 @@ class CfgVehicles {
         @Vests({
             "variants": {
                 "V_PlateCarrierIA1_grn": 1,
+                "Aegis_V_TacVest_Rig_grn_RF": 1,
             },
             "packs": [
                 "t2_standard",
@@ -51,8 +52,8 @@ class CfgVehicles {
                 },
             },
             "optics": {
-                "optic_LRCO_blk_F": 0.5,
-                "optic_ACO": 0.5,
+                "optic_LRCO_blk_F": 1,
+                "optic_ACO": 1,
             },
             "pointers": {
                 "ACE_DBAL_A3_Red": 1,
@@ -93,10 +94,12 @@ class CfgVehicles {
                         "30Rnd_65x39_caseless_msbs_mag": 6,
                         "1Rnd_HE_Grenade_shell": 4,
                     }
+                    "loadedPrimary": "30Rnd_65x39_caseless_msbs_mag",
+                    "loadedSecondary": "1Rnd_HE_Grenade_shell",
                 },
             },
              "optics": {
-                "optic_Aco": 0.5,
+                "optic_Aco": 1,
             },
             "pointers": {
                 "ACE_DBAL_A3_Red": 1,

@@ -66,7 +66,6 @@ if (_cache isEqualTo []) exitWith {true};
         private _items = _cached select (_forEachIndex + 1);
         if (_items isEqualTo []) then { continue; };
         _slot set [_x, selectRandomWeighted _items];
-        diag_log format ["picking an attachment index %1 from %2", _x, _items];
     } forEach [1,2,3,6];
 } forEach [0,1,2,8];
 

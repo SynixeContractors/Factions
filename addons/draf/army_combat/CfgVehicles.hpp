@@ -32,10 +32,11 @@ class CfgVehicles {
         });
 
         @Facewear({
-            "G_Balaclava_blk": 0.4,
-            "synixe_mgp_f_face_shield_blk": 0.2,
-            "synixe_mgp_f_face_shield_rgr": 0.2,
-            "Aegis_G_Condor_EyePro_F": 0.2,
+            "G_Balaclava_light_G_blk_F": 1,
+            "G_Balaclava_light_blk_F": 1,
+            "synixe_mgp_f_face_shield_blk_tactical": 1,
+            "synixe_mgp_f_face_shield_rgr_tactical": 1,
+            "Aegis_G_Condor_EyePro_F": 1,
         });
 
         @Assigned(Military);
@@ -57,6 +58,16 @@ class CfgVehicles {
             },
             "pointers": {
                 "ACE_DBAL_A3_Red": 1,
+            },
+        });
+
+        @Secondary({
+            "weapons": {
+                "hgun_ACPC2_black_F": {
+                    "magazinesVest": {
+                        "9Rnd_45ACP_Mag": 3,
+                    },
+                },
             },
         });
     };
@@ -115,6 +126,8 @@ class CfgVehicles {
                         "30Rnd_65x39_caseless_msbs_mag": 6,
                         "1Rnd_HE_Grenade_shell": 4,
                     }
+                    "loadedPrimary": "30Rnd_65x39_caseless_msbs_mag",
+                    "loadedSecondary": "1Rnd_HE_Grenade_shell",
                 },
             },
              "optics": {
