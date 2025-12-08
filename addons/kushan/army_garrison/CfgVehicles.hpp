@@ -15,12 +15,12 @@ class CfgVehicles {
         });
 
         @Facewear({
-            "Aegis_G_Condor_EyePro_F": 0.2,
-            "G_Balaclava_snd_lxWS": 0.2,
-            "G_Balaclava_blk_lxWS": 0.3,
-            "G_Bandanna_oli": 0.1,
-            "G_Bandanna_khk": 0.1,
-            "G_Shades_Black": 0.1,
+            "Aegis_G_Condor_EyePro_F": 1,
+            "G_Balaclava_snd_lxWS": 1,
+            "G_Balaclava_blk_lxWS": 1,
+            "G_Bandanna_oli": 1,
+            "G_Bandanna_khk": 1,
+            "G_Shades_Black": 1,
         });
 
         @Assigned(Military);
@@ -31,8 +31,8 @@ class CfgVehicles {
 
         @Vests({
             "variants": {
-                "V_CarrierRigKBT_01_light_Coyote_F": 0.5,
-                "Aegis_V_CarrierRigKBT_01_recon_cbr_F": 0.5,
+                "V_CarrierRigKBT_01_light_Coyote_F": 1,
+                "Aegis_V_CarrierRigKBT_01_recon_cbr_F": 1,
             },
             "magazines": {
                 "SmokeShell": 2,
@@ -40,9 +40,11 @@ class CfgVehicles {
         });
 
         @Headgear({
-            "H_Beret_ocamo": 0.8,
-            "H_Booniehat_oicamo": 0.2,
-            "H_Cap_oicamo": 0.2,
+            "H_Beret_ocamo": 2,
+            "H_Booniehat_oicamo": 1,
+            "H_Cap_oicamo": 1,
+            "Aegis_H_MilCap_nohs_oicamo": 1,
+            "H_MilCap_oicamo": 1,
         });
 
         @Primary({
@@ -55,7 +57,7 @@ class CfgVehicles {
             },
             "optics": {
                 "": 0.7,
-                "optic_Holosight": 0.3,
+                "Aegis_optic_ICO_sand": 0.3,
             },
             "pointers": {
                 "saber_light_lxWS": 1
@@ -73,11 +75,13 @@ class CfgVehicles {
                         "30Rnd_65x39_caseless_black_mag": 6,
                         "1Rnd_HE_Grenade_shell": 4,
                     },
+                    "loadedPrimary": "30Rnd_65x39_caseless_black_mag",
+                    "loadedSecondary": "1Rnd_HE_Grenade_shell",
                 },
             },
             "optics": {
                 "": 0.5,
-                "optic_Holosight": 0.5,
+                "Aegis_optic_ICO_sand": 0.5,
             },
             "pointers": {
                 "saber_light_lxWS": 1,
@@ -101,12 +105,12 @@ class CfgVehicles {
             },
             "optics": {
                 "": 0.5,
-                "optic_Holosight": 0.5
+                "Aegis_optic_ICO_sand": 0.5
             },
             "pointers": {
                 "saber_light_lxWS": 1
             },
-            "bipod": {
+            "bipods": {
                 "bipod_01_F_blk": 1
             },
         });
