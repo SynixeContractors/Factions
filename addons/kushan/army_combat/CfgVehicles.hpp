@@ -6,8 +6,8 @@ class CfgVehicles {
         
         @Uniforms({
             "variants": {
-                "Atlas_U_O_Afghanka_01_dst_F": 0.5,
-                "Atlas_U_O_Afghanka_02_dst_F": 0.5,
+                "Atlas_U_O_Afghanka_01_dst_F": 1,
+                "Atlas_U_O_Afghanka_02_dst_F": 1,
             },
             "packs": [
                 "t2_rifleman_medical",
@@ -16,8 +16,7 @@ class CfgVehicles {
 
         @Vests({
             "variants": {
-                "V_CarrierRigKBT_01_light_Coyote_F": 0.5,
-                "Aegis_V_CarrierRigKBT_01_recon_cbr_F": 0.5,
+                "V_CarrierRigKBT_01_light_Coyote_F": 1,
             },
             "magazines": {
                 "SmokeShell": 1,
@@ -29,18 +28,17 @@ class CfgVehicles {
         });
 
         @Headgear({
-            "Atlas_H_HelmetCCH_Cover_dst_F": 0.6,
-            "H_Booniehat_oicamo": 0.1,
-            "H_Cap_oicamo": 0.1,
-            "lxWS_H_turban_03_sand": 0.1,
-            "lxWS_H_turban_03_black": 0.1,
+            "Atlas_H_HelmetCCH_Cover_dst_F": 1,
+            "Atlas_H_HelmetCCH_HiCut_Cover_dst_F": 1,
         });
 
         @Facewear({
-            "Aegis_G_Condor_EyePro_F": 0.2,
-            "G_Balaclava_snd_lxWS": 0.3,
-            "G_Balaclava_blk_lxWS": 0.3,
-            "G_Combat_lxWS": 0.2,
+            "Aegis_G_Condor_EyePro_F": 1,
+            "G_Balaclava_snd_lxWS": 1,
+            "G_Balaclava_blk_lxWS": 1,
+            "G_Bandanna_oli": 1,
+            "G_Bandanna_khk": 1,
+            "G_Shades_Black": 1,
         });
 
         @Assigned(Military);
@@ -58,17 +56,16 @@ class CfgVehicles {
                 },
             },
             "optics": {
-                "": 0.3,
-                "optic_Arco_blk_F": 0.3,
-                "optic_Holosight": 0.4,
+                "optic_Arco_blk_F": 1,
+                "Aegis_optic_ICO_sand": 1,
             },
             "pointers": {
                 "ACE_DBAL_A3_Green": 1,
             },
             "muzzles": {
-                "": 0.8,
-                "muzzle_snds_H": 0.1,
-                "muzzle_snds_H_snd_F": 0.1,
+                "": 2,
+                "muzzle_snds_H": 1,
+                "muzzle_snds_H_snd_F": 1,
             }
         });
 
@@ -118,9 +115,9 @@ class CfgVehicles {
                 "ACE_DBAL_A3_Green": 1,
             },
             "muzzles": {
-                "": 0.4,
-                "muzzle_snds_H": 0.3,
-                "muzzle_snds_H_snd_F": 0.3,
+                "": 1,
+                "muzzle_snds_H": 1,
+                "muzzle_snds_H_snd_F": 1,
             }
         });
 
@@ -145,20 +142,22 @@ class CfgVehicles {
                         "30Rnd_65x39_caseless_black_mag": 9,
                         "1Rnd_HE_Grenade_shell": 4,
                         "1Rnd_Smoke_Grenade_shell": 2,
-                    }
+                    },
+                    "loadedPrimary": "30Rnd_65x39_caseless_black_mag",
+                    "loadedSecondary": "1Rnd_HE_Grenade_shell",
                 },
             },
             "optics": {
-                "optic_Arco_blk_F": 0.2,
-                "optic_Holosight": 0.8,
+                "optic_Arco_blk_F": 1,
+                "Aegis_optic_ICO_sand": 2,
             },
             "pointers": {
                 "ACE_DBAL_A3_Green": 1,
             },
             "muzzles": {
-                "": 0.8,
-                "muzzle_snds_H": 0.1,
-                "muzzle_snds_H_snd_F": 0.1,
+                "": 1,
+                "muzzle_snds_H": 1,
+                "muzzle_snds_H_snd_F": 1,
             }
         });
     };
@@ -168,8 +167,8 @@ class CfgVehicles {
 
         @Vests({
             "variants": {
-                "V_CarrierRigKBT_01_light_Coyote_F": 0.5,
-                "Aegis_V_CarrierRigKBT_01_recon_cbr_F": 0.5,
+                "V_CarrierRigKBT_01_light_Coyote_F": 1,
+                "Aegis_V_CarrierRigKBT_01_recon_cbr_F": 1,
             },
             "magazines": {
                 "SmokeShell": 1,
@@ -191,10 +190,11 @@ class CfgVehicles {
                 },
             },
             "optics": {
-                "optic_Holosight": 1,
+                "": 1,
+                "optic_Arco_blk_F": 1,
             },
             "pointers": {
-                "Aegis_acc_pointer_DM": 1,
+                "ACE_DBAL_A3_Green": 1,
             },
             "bipod": {
                 "bipod_01_F_blk": 1,
@@ -281,8 +281,8 @@ class CfgVehicles {
 
         @Vests({
             "variants": {
-                "V_CarrierRigKBT_01_light_Coyote_F": 0.5,
-                "Aegis_V_CarrierRigKBT_01_recon_cbr_F": 0.5,
+                "V_CarrierRigKBT_01_light_Coyote_F": 1,
+                "Aegis_V_CarrierRigKBT_01_recon_cbr_F": 1,
             },
             "magazines": {
                 "SmokeShell": 2,
@@ -308,8 +308,8 @@ class CfgVehicles {
                 "ACE_DBAL_A3_Green": 1,
             },
             "muzzles": {
-                "muzzle_snds_H": 0.5,
-                "muzzle_snds_H_snd_F": 0.5,
+                "muzzle_snds_H": 1,
+                "muzzle_snds_H_snd_F": 1,
             }
         });
 
@@ -372,7 +372,7 @@ class CfgVehicles {
             },
             "optics": {
                 "": 0.5,
-                "optic_Holosight": 0.5,
+                "Aegis_optic_ICO_sand": 0.5,
 
             },
             "pointers": {
@@ -410,7 +410,7 @@ class CfgVehicles {
             },
             "optics": {
                 "": 0.5,
-                "optic_Holosight": 0.5,
+                "Aegis_optic_ICO_sand": 0.5,
 
             },
             "pointers": {
