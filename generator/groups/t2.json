@@ -31,8 +31,7 @@
         {
             "types": [
                 "Army_Combat",
-                "Army_Recon",
-                "Special_Forces"
+                "Army_Recon"
             ],
             "icon": "\\a3\\ui_f\\data\\map\\markers\\nato\\n_inf.paa",
             "groups": [
@@ -65,8 +64,7 @@
         {
             "types": [
                 "Army_Combat",
-                "Reserves",
-                "Special_Forces"
+                "Reserves"
             ],
             "icon": "\\a3\\ui_f\\data\\map\\markers\\nato\\n_inf.paa",
             "groups": [
@@ -153,8 +151,7 @@
         },
         {
             "types": [
-                "Army_Recon",
-                "Special_Forces"
+                "Army_Recon"
             ],
             "icon": "\\a3\\ui_f\\data\\map\\markers\\nato\\n_inf.paa",
             "groups": [
