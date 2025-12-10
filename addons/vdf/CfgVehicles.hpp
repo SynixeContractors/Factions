@@ -2,7 +2,7 @@ class CfgVehicles {
     class GCLASS(Base_INDEP);
 
     class CLASS(Base): GCLASS(Base_INDEP) {
-        faction = QCLASS(t2_indep);
+        faction = QCLASS(t3_indep);
         displayName = "VDF Base";
         identityTypes[] = {
             "LanguageRUS_F",

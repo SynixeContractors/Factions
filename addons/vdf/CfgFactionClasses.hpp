@@ -1,5 +1,5 @@
 class CfgFactionClasses {
-    class CLASS(t2_indep) {
+    class CLASS(t3_indep) {
         SCOPE_DLC;
         displayName = "[T3] Viatken Defense Forces";
         priority = 1;
