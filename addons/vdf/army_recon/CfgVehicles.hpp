@@ -156,7 +156,7 @@ class CfgVehicles {
         
     };
 
-    class CLASS(Autorifleman): CLASS(Rifleman) {
+    class CLASS(Autorifleman): CLASS(Base) {
         @Role(Autorifleman);
 
         @Vests({
