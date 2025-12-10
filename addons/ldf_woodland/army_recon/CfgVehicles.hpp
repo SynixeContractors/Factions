@@ -1,4 +1,7 @@
 class CfgVehicles {
+    #include "CfgVehicles_Quad.hpp"
+    #include "CfgVehicles_Ram.hpp"
+
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {
         displayName = "LDF Base Army Recon";

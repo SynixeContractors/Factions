@@ -74,8 +74,10 @@
 
 #ifdef SUBCOMPONENT
 #define CLASS(var1) DOUBLES(PCLASS(SUBCOMPONENT),var1)
+#define CLASS2(var1,var2) TRIPLES(PCLASS(SUBCOMPONENT),var1,var2)
 #else
 #define CLASS(var1) PCLASS(var1)
+#define CLASS2(var1,var2) DOUBLES(PCLASS(var1),var2)
 #endif
 #define QCLASS(var1) QUOTE(CLASS(var1))
 
