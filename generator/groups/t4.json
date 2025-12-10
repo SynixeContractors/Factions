@@ -1,0 +1,103 @@
+{
+    "groups": [
+        {
+            "types": [
+                "Army_Combat",
+                "Army_Garrison"
+            ],
+            "icon": "\\a3\\ui_f\\data\\map\\markers\\nato\\n_inf.paa",
+            "groups": [
+                {
+                    "class": "Patrol",
+                    "name": "Patrol",
+                    "units": [
+                        "Rifleman",
+                        "Rifleman"
+                    ]
+                },
+                {
+                    "class": "Fireteam",
+                    "name": "Fireteam",
+                    "units": [
+                        "TeamLeader",
+                        "Rifleman",
+                        "Rifleman",
+                        "Autorifleman"
+                    ]
+                }
+            ]
+        },
+        {
+            "types": [
+                "Army_Combat"
+            ],
+            "icon": "\\a3\\ui_f\\data\\map\\markers\\nato\\n_inf.paa",
+            "groups": [
+                {
+                    "class": "Squad",
+                    "name": "Squad",
+                    "units": [
+                        "SquadLeader",
+                        "Rifleman",
+                        "Rifleman",
+                        "Medic",
+                        "TeamLeader",
+                        "Marksman",
+                        "Autorifleman",
+                        "Rifleman"
+                    ]
+                },
+                {
+                    "class": "Squadstub",
+                    "name": "Squad (Stub)",
+                    "units": [
+                        "SquadLeader",
+                        "Rifleman",
+                        "Rifleman",
+                        "Medic"
+                    ]
+                },
+                {
+                    "class": "FireteamAT",
+                    "name": "Fireteam (AT)",
+                    "units": [
+                        "TeamLeader",
+                        "RiflemanMAT",
+                        "Rifleman",
+                        "Autorifleman"
+                    ]
+                },
+                {
+                    "class": "FireteamMachinegunner",
+                    "name": "Fireteam (Machinegunner)",
+                    "units": [
+                        "TeamLeader",
+                        "Rifleman",
+                        "Autorifleman",
+                        "Machinegunner"
+                    ]
+                },
+                {
+                    "class": "FireteamEngineer",
+                    "name": "Fireteam (Engineer)",
+                    "units": [
+                        "TeamLeader",
+                        "Rifleman",
+                        "Engineer",
+                        "Engineer"
+                    ]
+                },
+                {
+                    "class": "FireteamDemolitions",
+                    "name": "Fireteam (Demolitions)",
+                    "units": [
+                        "TeamLeader",
+                        "Rifleman",
+                        "Demolitions",
+                        "Demolitions"
+                    ]
+                }
+            ]
+        }
+    ]
+}

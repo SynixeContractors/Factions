@@ -3,7 +3,7 @@ prefix = "synixe_factions"
 mainprefix = "s"
 
 [hemtt.launch.default]
-dlc = ["ws", "rf"]
+dlc = []
 workshop = [
     "3499977893", # ADT
     "factions:@3den_attributes_fast_load",

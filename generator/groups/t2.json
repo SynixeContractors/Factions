@@ -3,7 +3,9 @@
         {
             "types": [
                 "Army_Combat",
-                "Army_Garrison"
+                "Army_Garrison",
+                "Army_Recon",
+                "Reserves"
             ],
             "icon": "\\a3\\ui_f\\data\\map\\markers\\nato\\n_inf.paa",
             "groups": [
@@ -30,7 +32,8 @@
         {
             "types": [
                 "Army_Combat",
-                "Army_Recon"
+                "Army_Recon",
+                "Special_Forces"
             ],
             "icon": "\\a3\\ui_f\\data\\map\\markers\\nato\\n_inf.paa",
             "groups": [
@@ -46,6 +49,46 @@
                         "Marksman",
                         "Autorifleman",
                         "Rifleman"
+                    ]
+                },
+                {
+                    "class": "FireteamMarksman",
+                    "name": "Fireteam (Marksman)",
+                    "units": [
+                        "TeamLeader",
+                        "Rifleman",
+                        "Marksman",
+                        "Autorifleman"
+                    ]
+                }
+            ]
+        },
+        {
+            "types": [
+                "Army_Combat",
+                "Reserves",
+                "Special_Forces"
+            ],
+            "icon": "\\a3\\ui_f\\data\\map\\markers\\nato\\n_inf.paa",
+            "groups": [
+                {
+                    "class": "FireteamEngineer",
+                    "name": "Fireteam (Engineer)",
+                    "units": [
+                        "TeamLeader",
+                        "Rifleman",
+                        "Engineer",
+                        "Engineer"
+                    ]
+                },
+                {
+                    "class": "FireteamDemolitions",
+                    "name": "Fireteam (Demolitions)",
+                    "units": [
+                        "TeamLeader",
+                        "Rifleman",
+                        "Demolitions",
+                        "Demolitions"
                     ]
                 },
                 {
@@ -66,26 +109,6 @@
                         "RiflemanMAT",
                         "Rifleman",
                         "Rifleman"
-                    ]
-                },
-                {
-                    "class": "FireteamEngineer",
-                    "name": "Fireteam (Engineer)",
-                    "units": [
-                        "TeamLeader",
-                        "Rifleman",
-                        "Engineer",
-                        "Engineer"
-                    ]
-                },
-                {
-                    "class": "FireteamDemolitions",
-                    "name": "Fireteam (Demolitions)",
-                    "units": [
-                        "TeamLeader",
-                        "Rifleman",
-                        "Demolitions",
-                        "Demolitions"
                     ]
                 }
             ]
@@ -131,7 +154,8 @@
         },
         {
             "types": [
-                "Army_Recon"
+                "Army_Recon",
+                "Special_Forces"
             ],
             "icon": "\\a3\\ui_f\\data\\map\\markers\\nato\\n_inf.paa",
             "groups": [
