@@ -1,4 +1,4 @@
-#define COMPONENT scd
+#define COMPONENT srb
 #define COMPONENT_BEAUTIFIED Swift Response Battalions
 
 #include "..\main\script_mod.hpp"

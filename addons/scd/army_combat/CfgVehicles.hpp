@@ -325,9 +325,8 @@ class CfgVehicles {
                 "acc_pointer_IR": 0.4,
             },
         });
-    };
 
-    @Secondary({
+        @Secondary({
             "weapons": {
                 "hgun_G17_black_F": {
                     "magazinesVest": {
@@ -377,6 +376,7 @@ class CfgVehicles {
                 "": {},
             },
         });
+    };
 
     class CLASS(Rifleman): CLASS(Base) {
         @Role(Rifleman);
@@ -394,12 +394,10 @@ class CfgVehicles {
 
     class CLASS(SquadLeader): CLASS(Rifleman) {
         @Role(SquadLeader);
-        
     };
 
     class CLASS(TeamLeader): CLASS(Rifleman) {
         @Role(TeamLeader);
-
     };
 
     class CLASS(Autorifleman): CLASS(Base) {
@@ -462,7 +460,6 @@ class CfgVehicles {
                 "B_FieldPack_oli": 1,
             },
         });
-
     };
 
     class CLASS(Machinegunner): CLASS(Autorifleman) {
@@ -523,7 +520,6 @@ class CfgVehicles {
                 "bipod_01_F_blk": 1,
             },
         });
-
     };
 
     class CLASS(Marksman): CLASS(Base) {
@@ -577,7 +573,6 @@ class CfgVehicles {
                 "bipod_01_F_blk": 1,
             },
         });
-
     };
 
     class CLASS(Medic): CLASS(Base) {
