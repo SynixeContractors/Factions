@@ -1,4 +1,8 @@
 class CfgVehicles {
+
+    #include "CfgVehicles_APC.hpp"
+    #include "CfgVehicles_Cars.hpp"
+
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {
         displayName = "RNLDF Base Army Combat";
@@ -432,6 +436,13 @@ class CfgVehicles {
                         "JCA_30Rnd_9x21_MP5_Mag": 5,
                     }
                 },
+            },
+            "optics": {
+                "": 0.8,
+                "optic_Holosight_blk_F": 0.2,
+            },
+            "pointers": {
+                "": 1
             },
         });
 
