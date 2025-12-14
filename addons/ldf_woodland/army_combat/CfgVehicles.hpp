@@ -1,6 +1,6 @@
 class CfgVehicles {
     #include "CfgVehicles_APC.hpp"
-    #include "CfgVehicles_tank.hpp"
+    #include "CfgVehicles_Tank.hpp"
 
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {
