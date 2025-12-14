@@ -1,3 +1,3 @@
-#define SUBCOMPONENT army_reserve
+#define SUBCOMPONENT army_garrison
 
 #include "..\script_component.hpp"

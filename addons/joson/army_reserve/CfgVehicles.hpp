@@ -88,8 +88,9 @@ class CfgVehicles {
     class CLASS(TeamLeader): CLASS(RiflemanCarabine) {
         @Role(TeamLeader);
         @Headgear({
-            "tacs_Helmet_Modular_Ear_FG": 0.5,
-            "tacs_Helmet_Modular_Headset_FG": 0.5,
+            "tacs_Helmet_Modular_Ear_FG": 0.25,
+            "tacs_Helmet_Modular_Headset_FG": 0.25,
+            "lxWS_H_ssh40_green": 0.5,
         });
     };
     class CLASS(SquadLeader): CLASS(TeamLeader) {
