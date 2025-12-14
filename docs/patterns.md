@@ -37,3 +37,8 @@ MG: Negev
 AR: NCAR-15-1  
 DMR: SVD  
 Sniper: Cyrus  
+
+Vehicles: Green  
+T-100  
+Otokar  
+LSV  
