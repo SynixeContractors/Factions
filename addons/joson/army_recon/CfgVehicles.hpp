@@ -3,21 +3,11 @@ class CfgVehicles {
     class CLASS(Rifleman): COMBATCLASS(Rifleman) {
         editorSubcategory = QGCLASS(army_recon);
         @Role(Rifleman);
-        @Uniforms({
-            "variants": {
-                "tacs_Uniform_Combat_LS_ATACS_IX": 0.75,
-                "tacs_Uniform_Combat_RS_ATACS_IX": 0.25,
-            },
-            "packs": [
-                "t3_rifleman_medical",
-                "t3_standard",
-            ],
-        });
         @Headgear({
-            "Aegis_H_Milcap_nohs_grn_F": 0.4,
-            "Aegis_H_MilCap_tachs_grn_F": 0.2,
+            "Aegis_H_Milcap_nohs_grn_F": 0.1,
+            "Aegis_H_MilCap_tachs_grn_F": 0.1,
             "H_MilCap_grn": 0.1,
-            "": 0.1,
+            "": 0.5,
             "tacs_Helmet_modular_FG": 0.05,
             "tacs_Helmet_Modular_Ear_FG": 0.05,
             "tacs_Helmet_Modular_Headset_FG": 0.04,
@@ -177,6 +167,13 @@ class CfgVehicles {
     };
     class CLASS(Marksman): CLASS(Rifleman) {
         @Role(Marksman);
+        @Facewear({
+            "": 0.6,
+            "Aegis_G_scrimNet_under_olive_F": 0.4,
+        });
+        @Headgear({
+            "": 1,
+        });
         @Primary({
             "weapons": {
                 "Aegis_srifle_SVD_blk_f": {
@@ -200,9 +197,16 @@ class CfgVehicles {
         });
     };
     class CLASS(Spotter): CLASS(Marksman) {
-        @Role(Spotter);
+      @Role(Spotter);
+      @Uniforms({
+            "variants": {
+                "tacs_Uniform_Combat_RS_ATACS_IX": 0.5,
+                "U_I_FullGhillie_lsh": 0.5,
+            },
+        });
+
     };
-    class CLASS(Sniper): CLASS(Marksman) {
+    class CLASS(Sniper): CLASS(Spotter) {
         @Role(Sniper);
         @Primary({
             "weapons": {
