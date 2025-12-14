@@ -6,6 +6,7 @@ class GCLASS(Dingy): C_Rubberboat {
     EMPTY_INVENTORY;
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
+    ace_refuel_fuelCapacity = 30;
     class TextureSources {
         class Black {
             displayName = "Black";

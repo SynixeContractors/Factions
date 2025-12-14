@@ -209,6 +209,7 @@ class GCLASS(Offroad): Offroad_01_military_covered_base_F {
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
     textureList[] = {"Beige",1,"Black",1,"Blue",1,"Darkred",1,"Green",1,"Olive",1,"Red",1,"White",1};
+    ace_refuel_fuelCapacity = 80;
     class AnimationSources: AnimationSources {
         class HideAntennas: HideAntennas {
             initPhase = 1;
@@ -226,6 +227,7 @@ class GCLASS(OffroadComms): GCLASS(Offroad) {
     displayName = "Offroad (Comms)";
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
+    ace_refuel_fuelCapacity = 80;
     class AnimationSources: AnimationSources {
         class HideAntennas: HideAntennas {
             initPhase = 0;
@@ -244,6 +246,7 @@ class GCLASS(OffroadServices): C_Offroad_01_repair_F {
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
+    ace_refuel_fuelCapacity = 80;
     class TextureSources {
         class Beige {
             factions[] = {};

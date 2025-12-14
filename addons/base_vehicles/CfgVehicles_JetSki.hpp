@@ -7,6 +7,7 @@ class GCLASS(JetSki): C_Scooter_Transport_01_F {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     textureList[] = {"White",1,"Black",1,"Blue",1,"Grey",1,"Lime",1,"Red",1,"Yellow",1};
+    ace_refuel_fuelCapacity = 40;
     class TextureSources {
         class White {
             displayName = "White";

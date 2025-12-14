@@ -6,6 +6,7 @@ class GCLASS(Fennek): I_MRAP_03_F {
     EMPTY_INVENTORY;
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
+    ace_refuel_fuelCapacity = 190;
     class TextureSources {
         class Blufor {
             displayName = "Sand";
@@ -37,6 +38,7 @@ class GCLASS(FennekHMG): I_MRAP_03_hmg_F {
     EMPTY_INVENTORY;
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
+    ace_refuel_fuelCapacity = 190;
     class TextureSources {
         class Blufor {
             displayName = "Sand";
@@ -68,6 +70,7 @@ class GCLASS(FennekGMG): I_MRAP_03_gmg_F {
     EMPTY_INVENTORY;
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
+    ace_refuel_fuelCapacity = 190;
     class TextureSources {
         class Blufor {
             displayName = "Sand";

@@ -7,6 +7,7 @@ class GCLASS(CabinSkiff): C_Boat_Civil_02_F {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     textureList[] = {"Red",1,"Blue",1};
+    ace_refuel_fuelCapacity = 80;
     class TextureSources {
         class Red {
             displayName = "Red";

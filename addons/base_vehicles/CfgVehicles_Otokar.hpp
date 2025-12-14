@@ -77,6 +77,7 @@ class GCLASS(OtokarUnarmed): APC_Wheeled_02_unarmed_base_lxws {
     EMPTY_INVENTORY;
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
+    ace_refuel_fuelCapacity = 210;
 };
 
 // HMG
@@ -90,6 +91,7 @@ class GCLASS(OtokarHMG): APC_Wheeled_02_hmg_base_lxws {
     EMPTY_INVENTORY;
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
+    ace_refuel_fuelCapacity = 210;
 };
 
 // RCWS
@@ -101,4 +103,5 @@ class GCLASS(OtokarRCWS): O_APC_Wheeled_02_rcws_v2_F {
     EMPTY_INVENTORY;
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
+    ace_refuel_fuelCapacity = 210;
 };

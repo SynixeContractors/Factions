@@ -6,6 +6,7 @@ class GCLASS(SUV): C_SUV_01_F {
     EMPTY_INVENTORY;
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
+    ace_refuel_fuelCapacity = 57;
     textureList[] = {"Red",1,"Black",1,"Grey",1,"Orange",1};
     class TextureSources {
         class Red {

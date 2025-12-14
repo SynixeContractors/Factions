@@ -17,6 +17,9 @@ class GCLASS(Warrior): APC_Tracked_03_base_v2_F {
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
     displayName = "FV510 Warrior";
+    crew = "Civilian";
+    typicalCargo[] = {"Soldier"};
+    ace_refuel_fuelCapacity = 190;
     class TextureSources: TextureSources {
         RESET_FACTIONS(Olive_01);
         RESET_FACTIONS(Sand_01);

@@ -6,6 +6,7 @@ class GCLASS(Pandur): I_APC_Wheeled_03_cannon_F {
     EMPTY_INVENTORY;
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
+    ace_refuel_fuelCapacity = 210;
     class TextureSources {
         class Indep {
             displayName = "DAP (Woodland)";

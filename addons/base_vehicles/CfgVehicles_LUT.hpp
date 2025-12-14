@@ -106,6 +106,7 @@ class GCLASS(LUTTransport): Truck_02_transport_base_F {
     EMPTY_INVENTORY;
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
+    ace_refuel_fuelCapacity = 210;
 };
 
 class GCLASS(LUTTransportCovered): Truck_02_base_F {
@@ -115,6 +116,7 @@ class GCLASS(LUTTransportCovered): Truck_02_base_F {
     EMPTY_INVENTORY;
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
+    ace_refuel_fuelCapacity = 210;
 };
 
 class Truck_02_box_base_F;
@@ -125,6 +127,7 @@ class GCLASS(LUTRepair): Truck_02_box_base_F {
     EMPTY_INVENTORY;
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
+    ace_refuel_fuelCapacity = 210;
     class TextureSources {
         class Indep {
             displayName = "DAP Woodland";
@@ -197,6 +200,7 @@ class GCLASS(LUTMedical): Truck_02_medical_base_F {
     EMPTY_INVENTORY;
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
+    ace_refuel_fuelCapacity = 210;
     class TextureSources {
         class Indep {
             displayName = "DAP Woodland";
@@ -279,6 +283,7 @@ class GCLASS(LUTFuel): Truck_02_fuel_base_F {
     EMPTY_INVENTORY;
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
+    ace_refuel_fuelCapacity = 210;
     class TextureSources {
         class Indep {
             displayName = "DAP Woodland";
@@ -366,6 +371,7 @@ class GCLASS(LUTFlatbed): Truck_02_flatbed_base_lxWS {
     EMPTY_INVENTORY;
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
+    ace_refuel_fuelCapacity = 210;
     class TextureSources {
         class Indep {
             displayName = "DAP Green";
@@ -498,6 +504,7 @@ class GCLASS(LUTAmmo): Truck_02_Ammo_base_F {
     EMPTY_INVENTORY;
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
+    ace_refuel_fuelCapacity = 210;
     class TextureSources {
         class Indep {
             displayName = "DAP Woodland";
@@ -550,6 +557,7 @@ class GCLASS(LUTMRL): Truck_02_MRL_base_F {
     EMPTY_INVENTORY;
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
+    ace_refuel_fuelCapacity = 210;
     class TextureSources {
         class Indep {
             displayName = "DAP Woodland";
@@ -612,6 +620,7 @@ class GCLASS(LUTAA): Truck_02_aa_base_lxWS {
     EMPTY_INVENTORY;
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
+    ace_refuel_fuelCapacity = 210;
     class TextureSources {
         class Indep {
             displayName = "DAP Green";

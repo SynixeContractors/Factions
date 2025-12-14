@@ -166,6 +166,7 @@ class GCLASS(Ram): Pickup_01_base_rf {
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
     RESET_RAM_TEXTURES;
+    ace_refuel_fuelCapacity = 98;
 };
 
 class Pickup_service_base_old_rf: Pickup_01_base_rf {
@@ -180,6 +181,7 @@ class GCLASS(RamCovered): Pickup_covered_base_rf {
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
     RESET_RAM_TEXTURES;
+    ace_refuel_fuelCapacity = 98;
 };
 
 class Pickup_01_hmg_base_rf: Pickup_01_base_rf {
@@ -191,6 +193,7 @@ class GCLASS(RamHMG): Pickup_01_hmg_base_rf {
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
     RESET_RAM_TEXTURES;
+    ace_refuel_fuelCapacity = 98;
 };
 
 class Pickup_01_aat_base_rf: Pickup_01_base_rf {
@@ -202,6 +205,7 @@ class GCLASS(RamAA): Pickup_01_aat_base_rf {
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
     RESET_RAM_TEXTURES;
+    ace_refuel_fuelCapacity = 98;
 };
 
 class Pickup_01_Rocket_base_rf: Pickup_01_aat_base_rf {
@@ -213,6 +217,7 @@ class GCLASS(RamRocket): Pickup_01_Rocket_base_rf {
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
     RESET_RAM_TEXTURES;
+    ace_refuel_fuelCapacity = 98;
 };
 
 class Pickup_01_rcws_base_rf: Pickup_01_aat_base_rf {
@@ -224,6 +229,7 @@ class GCLASS(RamRCWS): Pickup_01_rcws_base_rf {
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
     RESET_RAM_TEXTURES;
+    ace_refuel_fuelCapacity = 98;
 };
 
 class Pickup_01_minigun_base_rf: Pickup_01_base_rf {
@@ -235,6 +241,7 @@ class GCLASS(RamMinigun): Pickup_01_minigun_base_rf {
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
     RESET_RAM_TEXTURES;
+    ace_refuel_fuelCapacity = 98;
 };
 
 class Pickup_service_base_rf: Pickup_service_base_old_rf {
@@ -249,6 +256,7 @@ class GCLASS(RamComms): Pickup_comms_base_rf {
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
     RESET_RAM_TEXTURES;
+    ace_refuel_fuelCapacity = 98;
 };
 
 class Pickup_01_mrl_base_rf: Pickup_01_base_rf {
@@ -260,6 +268,7 @@ class GCLASS(RamMRL): Pickup_01_mrl_base_rf {
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
     RESET_RAM_TEXTURES;
+    ace_refuel_fuelCapacity = 98;
 };
 class Pickup_fuel_base_rf: Pickup_01_base_rf {
     RAM_TEXTURES;
@@ -270,6 +279,7 @@ class GCLASS(RamFuel): Pickup_fuel_base_rf {
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
     RESET_RAM_TEXTURES;
+    ace_refuel_fuelCapacity = 98;
 };
 
 class Pickup_01_mmg_base_rf: Pickup_01_base_rf {
@@ -281,6 +291,7 @@ class GCLASS(RamMMG): Pickup_01_mmg_base_rf {
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
     RESET_RAM_TEXTURES;
+    ace_refuel_fuelCapacity = 98;
 };
 
 class Aegis_Pickup_01_AT_base_RF: Pickup_01_aat_base_rf {
@@ -292,5 +303,6 @@ class GCLASS(RamAT): Aegis_Pickup_01_AT_base_RF {
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
     RESET_RAM_TEXTURES;
+    ace_refuel_fuelCapacity = 98;
 };
 

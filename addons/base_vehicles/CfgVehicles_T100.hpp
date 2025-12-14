@@ -6,6 +6,7 @@ class GCLASS(T100): O_A_MBT_02_cannon_F {
     EMPTY_INVENTORY;
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
+    ace_refuel_fuelCapacity = 1200;
     class TextureSources {
         class Ardistan {
             displayName = "Ardistan";

@@ -34,6 +34,7 @@ class GCLASS(VanTransport): Van_02_transport_base_F  {
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
+    ace_refuel_fuelCapacity = 120;
     class TextureSources: TextureSources {
         RESET_FACTIONS(AAN);
         RESET_FACTIONS(ArganaRoyal);
@@ -80,6 +81,7 @@ class GCLASS(VanAmbulance): Van_02_medevac_base_F  {
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
+    ace_refuel_fuelCapacity = 120;
     class TextureSources: TextureSources {
         RESET_FACTIONS(Argana_Ambulance);
         RESET_FACTIONS(CivAmbulance);
@@ -126,6 +128,7 @@ class GCLASS(VanCargo): Van_02_vehicle_base_F  {
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
+    ace_refuel_fuelCapacity = 120;
     class TextureSources: TextureSources {
         RESET_FACTIONS(AAN);
         RESET_FACTIONS(ArganaRoyal);

@@ -6,6 +6,7 @@ class GCLASS(Hatchback): C_Hatchback_01_F {
     EMPTY_INVENTORY;
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
+    ace_refuel_fuelCapacity = 80;
     class TextureSources {
         class Beige {
             displayName = "Beige";

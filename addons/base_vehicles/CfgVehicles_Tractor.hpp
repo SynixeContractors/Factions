@@ -6,6 +6,7 @@ class GCLASS(Tractor): C_Tractor_01_F {
     EMPTY_INVENTORY;
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
+    ace_refuel_fuelCapacity = 100;
     textureList[] = {"Green",1,"Blue",1,"Red",1};
     class TextureSources {
         class Green {

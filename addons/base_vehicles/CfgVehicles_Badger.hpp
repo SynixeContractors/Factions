@@ -17,6 +17,9 @@ class GCLASS(Badger): APC_Wheeled_01_base_v2_F {
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
     displayName = "Badger (L21A1)";
+    crew = "Civilian";
+    typicalCargo[] = {"Soldier"};
+    ace_refuel_fuelCapacity = 190;
     class TextureSources: TextureSources {
         RESET_FACTIONS(Olive);
         RESET_FACTIONS(Sand);
@@ -58,6 +61,7 @@ class GCLASS(Badger_Command): APC_Wheeled_01_command_base_lxWS {
     displayName = "Badger (Command)";
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
+    ace_refuel_fuelCapacity = 190;
     class TextureSources: TextureSources {
         RESET_FACTIONS(Olive);
         RESET_FACTIONS(Sand);
@@ -104,6 +108,9 @@ class GCLASS(Badger_Mortar): APC_Wheeled_01_mortar_base_lxWS {
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
     displayName = "Badger (Mortar)";
+    crew = "Civilian";
+    typicalCargo[] = {"Soldier"};
+    ace_refuel_fuelCapacity = 190;
     class TextureSources: TextureSources {
         RESET_FACTIONS(Olive);
         RESET_FACTIONS(Sand);
@@ -153,6 +160,9 @@ class GCLASS(Badger_ATGM): APC_Wheeled_01_atgm_base_v2 {
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
     displayName = "Badger (L21A1, ATGM)";
+    crew = "Civilian";
+    typicalCargo[] = {"Soldier"};
+    ace_refuel_fuelCapacity = 190;
     class TextureSources: TextureSources {
         RESET_FACTIONS(Olive);
         RESET_FACTIONS(Sand);
@@ -198,6 +208,9 @@ class GCLASS(Badger_Medical): B_APC_Wheeled_01_medical_F {
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
     displayName = "Badger (Medical)";
+    crew = "Civilian";
+    typicalCargo[] = {"Soldier"};
+    ace_refuel_fuelCapacity = 190;
     class TextureSources: TextureSources {
         RESET_FACTIONS(Olive);
         RESET_FACTIONS(Sand);

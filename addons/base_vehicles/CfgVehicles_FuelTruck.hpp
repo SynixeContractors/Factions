@@ -6,6 +6,7 @@ class GCLASS(FuelTruck): C_Van_01_fuel_F {
     EMPTY_INVENTORY;
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
+    ace_refuel_fuelCapacity = 140;
     class TextureSources {
         class Black {
             displayName = "Black & Black";

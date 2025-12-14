@@ -6,6 +6,7 @@ class GCLASS(Motorboat): C_Boat_Civil_01_F {
     EMPTY_INVENTORY;
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
+    ace_refuel_fuelCapacity = 80;
     class TextureSources {
         class Civilian {
             displayName = "White & Yellow";

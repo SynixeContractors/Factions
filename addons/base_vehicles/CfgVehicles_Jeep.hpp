@@ -16,6 +16,7 @@ class GCLASS(Jeep): Offroad_02_base_F {
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
+    ace_refuel_fuelCapacity = 80;
     class TextureSources: TextureSources {
         RESET_FACTIONS(Black);
         RESET_FACTIONS(Blue);
@@ -47,6 +48,7 @@ class GCLASS(JeepLMG): Offroad_02_LMG_base_F {
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
+    ace_refuel_fuelCapacity = 80;
     class TextureSources: TextureSources {
         RESET_FACTIONS(Black);
         RESET_FACTIONS(Blue);

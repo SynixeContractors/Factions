@@ -36,7 +36,7 @@
       };                                                                       \
       factions[] = {};                                                         \
     };                                                                         \
-  };                                                                           \
+  }
 
 #define TYPHOON_COVERED                                                        \
   class TextureSources {                                                       \
@@ -80,7 +80,7 @@
       };                                                                       \
       factions[] = {};                                                         \
     };                                                                         \
-  };
+  }
 
 
 class O_Truck_03_transport_F;
@@ -89,7 +89,8 @@ class GCLASS(TyphoonBench): O_Truck_03_transport_F {
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
-    TYPHOON_TEXTURES
+    TYPHOON_TEXTURES;
+    ace_refuel_fuelCapacity = 260;
 };
 
 class O_Truck_03_covered_F;
@@ -98,7 +99,8 @@ class GCLASS(TyphoonCovered): O_Truck_03_covered_F {
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
-    TYPHOON_COVERED
+    TYPHOON_COVERED;
+    ace_refuel_fuelCapacity = 260;
 };
 
 class O_Truck_03_cargo_RF;
@@ -107,7 +109,8 @@ class GCLASS(TyphoonFlatbed): O_Truck_03_cargo_RF {
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
-    TYPHOON_TEXTURES
+    TYPHOON_TEXTURES;
+    ace_refuel_fuelCapacity = 260;
 };
 
 class O_Truck_03_fuel_F;
@@ -116,7 +119,8 @@ class GCLASS(TyphoonFuel): O_Truck_03_fuel_F {
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
-    TYPHOON_TEXTURES
+    TYPHOON_TEXTURES;
+    ace_refuel_fuelCapacity = 260;
 };
 
 class O_Truck_03_ammo_F;
@@ -125,6 +129,7 @@ class GCLASS(TyphoonAmmo): O_Truck_03_ammo_F {
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
+    ace_refuel_fuelCapacity = 260;
     class TextureSources {
         class Green {
             displayName = "Green";
@@ -175,7 +180,8 @@ class GCLASS(TyphoonRepair): O_Truck_03_repair_F {
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
-    TYPHOON_TEXTURES
+    TYPHOON_TEXTURES;
+    ace_refuel_fuelCapacity = 260;
 };
 
 class O_Truck_03_medical_F;
@@ -184,7 +190,8 @@ class GCLASS(TyphoonMedical): O_Truck_03_medical_F {
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
-    TYPHOON_COVERED
+    TYPHOON_COVERED;
+    ace_refuel_fuelCapacity = 260;
 };
 
 class O_Truck_03_device_F;
@@ -193,5 +200,6 @@ class GCLASS(TyphoonDevice): O_Truck_03_device_F {
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
-    TYPHOON_TEXTURES
+    TYPHOON_TEXTURES;
+    ace_refuel_fuelCapacity = 260;
 };
