@@ -4,7 +4,7 @@ class GCLASS(Leopard2) : I_MBT_03_cannon_F {
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
-    crew =  "Civilian";
+    crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     class TextureSources {
         delete ADF_01;
