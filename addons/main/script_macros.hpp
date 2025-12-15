@@ -81,9 +81,6 @@
 #endif
 #define QCLASS(var1) QUOTE(CLASS(var1))
 
-// for copypasting from combat into garrison/recon
-#define COMBATCLASS(var1) DOUBLES(PCLASS(army_combat),var1)
-
 // Preivew
 #define PREVIEW(var1) editorPreview = QPATHTOF(previews\DOUBLES(PREFIX,var1).jpg)
 

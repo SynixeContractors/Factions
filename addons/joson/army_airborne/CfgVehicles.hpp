@@ -1,8 +1,42 @@
 class CfgVehicles {
-    class COMBATCLASS(Rifleman);
-    class CLASS(Rifleman): COMBATCLASS(Rifleman) {
+    class PCLASS(Base);
+    class CLASS(Base): PCLASS(Base) {
+        displayName = "JSR Base Army Airborne";
+        editorSubcategory = QGCLASS(army_combat);
+    };
+    class CLASS(Rifleman): CLASS(Base) {
         editorSubcategory = QGCLASS(army_airborne);
         @Role(Rifleman);
+        @Uniforms({
+            "variants": {
+                "tacs_Uniform_Combat_LS_ATACS_IX": 0.75,
+                "tacs_Uniform_Combat_RS_ATACS_IX": 0.25,
+            },
+            "packs": [
+                "t3_rifleman_medical",
+                "t3_standard",
+            ],
+        });
+        @Vests({
+            "variants": {
+                "V_TacVest_grn": 0.5,
+                "V_PlateCarrierIA2_grn": 0.5,
+            },
+            "magazines": {
+                "HandGrenade": 1,
+                "SmokeShell": 1,
+            },
+        });
+        @Headgear({
+            "tacs_Helmet_modular_FG": 0.29,
+            "tacs_Helmet_Modular_Ear_FG": 0.5,
+            "tacs_Helmet_Modular_Headset_FG": 0.1,
+            "tacs_Helmet_Modular_Chops_FG": 0.01,
+        });
+        @Facewear({
+            "": 0.65,
+            "G_Bandanna_oli": 0.35,
+        });
         @Primary({
             "weapons": {
                 "arifle_NCAR15B_F": {
@@ -61,7 +95,7 @@ class CfgVehicles {
         @Role(SquadLeader);
         @Primary({
             "weapons": {
-                "arifle_NCAR15_GL_F": {
+                "Aegis_arifle_CTAR_GL_tan_f": {
                     "magazinesVest": {
                         "30Rnd_580x42_Mag_F": 8,
                         "1Rnd_HEDP_Grenade_shell": 4,

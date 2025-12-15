@@ -1,8 +1,32 @@
 class CfgVehicles {
-    class COMBATCLASS(Rifleman);
-    class CLASS(Rifleman): COMBATCLASS(Rifleman) {
+    class PCLASS(Base);
+    class CLASS(Base): PCLASS(Base) {
+        displayName = "JSR Base Army Recon";
         editorSubcategory = QGCLASS(army_recon);
+    };
+    class CLASS(Rifleman): CLASS(Base) {
         @Role(Rifleman);
+        @Uniforms({
+            "variants": {
+                "tacs_Uniform_Combat_LS_ATACS_IX": 0.75,
+                "tacs_Uniform_Combat_RS_ATACS_IX": 0.25,
+            },
+            "packs": [
+                "t3_rifleman_medical",
+                "t3_standard",
+            ],
+        });
+        @Vests({
+            "variants": {
+                "V_TacVest_grn": 0.95,
+                "V_PlateCarrierIA2_grn": 0.05,
+            },
+            "magazines": {
+                "HandGrenade": 1,
+                "SmokeShell": 1,
+            },
+        });
+
         @Headgear({
             "Aegis_H_Milcap_nohs_grn_F": 0.1,
             "Aegis_H_MilCap_tachs_grn_F": 0.1,
