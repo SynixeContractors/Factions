@@ -31,7 +31,7 @@ workshop = [
     "synixe:@synixe_armoury",
     "synixe:@synixe_contractors",
     "synixe:@synixe_mgp",
-    # "synixe:@synixe_standardization",
+    "synixe:@synixe_standardization",
     "synixe:@theseus_services",
     "synixe:@toh_characters",
     "synixe:@ws",
