@@ -6,7 +6,7 @@
                 CAMONET,\
                 "\A3_Aegis\Armor_F_Aegis\Data\cage_RUkhk_CO.paa"\
             };
-#define IVF1_GREENHEX(CAMONET) \
+#define IFV1_GREENHEX(CAMONET) \
             textures[] = {\
                 "A3\Armor_F_Exp\APC_Tracked_02\Data\APC_Tracked_02_ext_01_ghex_CO.paa",\
                 "A3\Armor_F_Exp\APC_Tracked_02\Data\APC_Tracked_02_ext_02_ghex_CO.paa",\
@@ -14,7 +14,15 @@
                 CAMONET,\
                 "A3\armor_f\data\cage_csat_green_CO.paa"\
             };
-#define IVF1_SAND(CAMONET) \
+#define IFV1_HEX(CAMONET) \
+           textures[] = {\
+               "A3\Armor_F_Beta\APC_Tracked_02\Data\apc_tracked_02_ext_01_hexarid_co.paa",\
+               "A3\Armor_F_Beta\APC_Tracked_02\Data\apc_tracked_02_ext_02_hexarid_co.paa",\
+               "A3\Armor_F_Beta\APC_Tracked_02\Data\rcws30_opfor_co.paa",\
+               CAMONET,\
+               "A3\armor_f\data\cage_csat_co.paa"\
+           };
+#define IFV1_SAND(CAMONET) \
             textures[] = {\
                 "lxws\vehicles_f_lxws\data\APC_Tracked_02\kamysh_sand1_co.paa",\
                 "lxws\vehicles_f_lxws\data\APC_Tracked_02\kamysh_sand2_co.paa",\
@@ -81,37 +89,52 @@ class GCLASS(BM2_IFV1): O_APC_Tracked_02_cannon_F {
         };
         class GreenHex {
             displayName = "Hex Green (Hex Green Net)";
-            IVF1_GREENHEX(NET_GREENHEX)
+            IFV1_GREENHEX(NET_GREENHEX)
             factions[] = {};
         };
         class GreenHex_desert {
             displayName = "Hex Green (Hex Ochre Net)";
-            IVF1_GREENHEX(NET_HEX)
+            IFV1_GREENHEX(NET_HEX)
             factions[] = {};
         };
         class GreenHex_winter {
             displayName = "Hex Green (Winter Net)";
-            IVF1_GREENHEX(NET_WINTER)
+            IFV1_GREENHEX(NET_WINTER)
+            factions[] = {};
+        };
+        class Hex {
+            displayName = "Hex Ochre (Hex Green Net)";
+            IFV1_HEX(NET_GREENHEX)
+            factions[] = {};
+        };
+        class Hex_desert {
+            displayName = "Hex Ochre (Hex Ochre Net)";
+            IFV1_HEX(NET_HEX)
+            factions[] = {};
+        };
+        class Hex_winter {
+            displayName = "Hex Ochre (Winter Net)";
+            IFV1_HEX(NET_WINTER)
             factions[] = {};
         };
         class Sand {
             displayName = "Sand (Desert Net)";
-            IVF1_SAND(NET_DESERT)
+            IFV1_SAND(NET_DESERT)
             factions[] = {};
         };
         class Sand_green {
             displayName = "Sand (Green Net)";
-            IVF1_SAND(NET_GREEN)
+            IFV1_SAND(NET_GREEN)
             factions[] = {};
         };
         class Sand_jungle {
             displayName = "Sand (Jungle Net)";
-            IVF1_SAND(NET_JUNGLE)
+            IFV1_SAND(NET_JUNGLE)
             factions[] = {};
         };
         class Sand_winter {
             displayName = "Sand (Winter Net)";
-            IVF1_SAND(NET_WINTER)
+            IFV1_SAND(NET_WINTER)
             factions[] = {};
         };
         class Sep_01 {
@@ -314,7 +337,7 @@ class GCLASS(BM2_IFV2):  O_APC_Tracked_02_30mm_lxWS {
             factions[] = {};
         };
         class Hex {
-            displayName = "Hex Ochre(Hex Green Net)";
+            displayName = "Hex Ochre (Hex Green Net)";
             IFV2_HEX(NET_GREENHEX)
             factions[] = {};
         };
