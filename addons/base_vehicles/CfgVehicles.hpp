@@ -46,4 +46,5 @@ class CfgVehicles {
     // Tanks
     #include "CfgVehicles_T100.hpp"
     #include "CfgVehicles_Leopard.hpp"
+    #include "CfgVehicles_Wiesel.hpp"
 };
