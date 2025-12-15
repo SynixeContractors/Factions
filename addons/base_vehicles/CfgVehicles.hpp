@@ -35,6 +35,7 @@ class CfgVehicles {
     #include "CfgVehicles_Otokar.hpp"
     #include "CfgVehicles_Pandur.hpp"
     #include "CfgVehicles_Warrior.hpp"
+    #include "CfgVehicles_BM2T.hpp"
 
     // Boats
     #include "CfgVehicles_CabinSkiff.hpp"
