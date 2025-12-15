@@ -32,17 +32,18 @@ class CfgVehicles {
         });
 
         @Headgear({
-            "H_Booniehat_whex_F": 1,
-            "H_Booniehat_whex_hs_F": 1,
-            "H_MilCap_whex_F": 0.5,
-            "H_Watchcap_camo": 1,
+            "H_Booniehat_semiarid": 1,
+            "H_Booniehat_semiarid_hs": 1,
+            "H_Shemag_olive": 1,
+            "H_ShemagOpen_tan": 1,
+            "H_Watchcap_khk": 1,
         });
 
         @Facewear({
             "synixe_mgp_f_face_shield_rgr": 1,
             "synixe_mgp_f_face_shield_rgr_tactical": 1,
-            "synixe_mgp_f_face_shield_blk": 1,
-            "synixe_mgp_f_face_shield_blk_tactical": 1,
+            "synixe_mgp_f_face_shield_khk": 1,
+            "synixe_mgp_f_face_shield_khk_tactical": 1,
         });
 
         @Primary({
@@ -161,7 +162,7 @@ class CfgVehicles {
         
         @Backpacks({
             "variants": {
-                "B_FieldPack_owcamo": 1,
+                "B_AssaultPack_rgr": 1,
             },
         });
     };
@@ -223,7 +224,7 @@ class CfgVehicles {
 
         @Backpacks({
             "variants": {
-                "B_FieldPack_owcamo": 1,
+                "B_AssaultPack_rgr": 1,
             },
         });
     };
@@ -233,7 +234,7 @@ class CfgVehicles {
 
         @Backpacks({
             "variants": {
-                "B_RadioBag_01_whex_F": 1,
+                "B_RadioBag_01_semiarid_F": 1,
             },
         });
     };
@@ -243,7 +244,7 @@ class CfgVehicles {
 
         @Backpacks({
             "variants": {
-                "B_FieldPack_owcamo": 1,
+                "B_AssaultPack_rgr": 1,
             },
             "packs": [
                 "toolkit",
@@ -256,7 +257,7 @@ class CfgVehicles {
 
         @Backpacks({
             "variants": {
-                "B_FieldPack_owcamo": 1,
+                "B_Carryall_green_F": 1,
             },
             "packs": [
                 "eod",
@@ -340,6 +341,45 @@ class CfgVehicles {
             },
             "muzzles": {
                 "muzzle_snds_93mmg": 1,
+            },
+        });
+    };
+
+    class CLASS(HeliPilot): CLASS(Rifleman) {
+        @Role(HeliPilot);
+
+        @Headgear({
+            "H_PilotHelmetHeli_B_visor_up": 1,
+            "H_PilotHelmetHeli_B": 1,
+            "H_CrewHelmetHeli_B": 2,
+        });
+
+        @Uniforms({
+            "variants": {
+                "Atlas_U_O_CombatFatigues_semiarid_F": 1,
+                "Atlas_U_O_CombatFatigues_02_semiarid_F": 1,
+            },
+            "packs": [
+                "t2_rifleman_medical",
+            ],
+        });
+
+        @Vests({
+            "variants": {
+                "V_CarrierRigKBT_01_Olive_F": 1,
+            },
+            "packs": [
+                "t2_standard",
+            ],
+        });
+
+        @Primary({
+            "weapons": {
+                "JCA_smg_UMP_black_F": {
+                    "magazinesVest": {
+                        "JCA_25Rnd_45ACP_UMP_Red_Mag": 5,
+                    }
+                },
             },
         });
     };
