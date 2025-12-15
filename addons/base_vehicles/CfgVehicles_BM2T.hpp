@@ -1,10 +1,3 @@
-#define NET_GREEN "\A3_Aegis\Armor_F_Aegis\Data\camonet_RUS_green_CO.paa"
-#define NET_HEX "A3\Armor_F\Data\camonet_CSAT_HEX_Desert_CO.paa"
-#define NET_GREENHEX "A3\Armor_F\Data\camonet_CSAT_HEX_Green_CO.paa"
-#define NET_WINTER "go_data_winter\skins\data\go_camonet_white_co.paa"
-#define NET_JUNGLE "A3\Armor_F_Enoch\apc_tracked_03\Data\camonet_EAF_green_CO.paa"
-#define NET_DESERT "\A3\Armor_F\Data\camonet_NATO_Desert_CO.paa"
-
 #define IFV1_GREEN(CAMONET) \
             textures[] = {\
                 "\A3_Aegis\Armor_F_Aegis\APC_Tracked_02\Data\APC_Tracked_02_ext_01_RUkhk_CO.paa",\
