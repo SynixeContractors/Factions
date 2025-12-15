@@ -29,7 +29,7 @@ class CfgVehicles {
     #include "CfgVehicles_Tractor.hpp"
     #include "CfgVehicles_Van.hpp"
     #include "CfgVehicles_Typhoon.hpp"
-    
+
     // APCS
     #include "CfgVehicles_Badger.hpp"
     #include "CfgVehicles_Otokar.hpp"
@@ -45,4 +45,5 @@ class CfgVehicles {
 
     // Tanks
     #include "CfgVehicles_T100.hpp"
+    #include "CfgVehicles_Leopard.hpp"
 };
