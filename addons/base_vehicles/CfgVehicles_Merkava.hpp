@@ -16,6 +16,12 @@
           "\A3_Aegis\Armor_F_Aegis\MBT_01\Data\MBT_01_tow_wdl_CO.paa",\
           CAMONET\
         };
+#define MERKAVA_BROWN(CAMONET) \
+        textures[] = {\
+          "\A3_Atlas\Armor_F_Atlas\MBT_01\Data\MBT_01_body_brown_CO.paa", \
+          "\A3_Atlas\Armor_F_Atlas\MBT_01\Data\MBT_01_tow_brown_CO.paa", \
+          CAMONET\
+        };
 
 class B_MBT_01_cannon_F;
 class CLASS(Merkava): B_MBT_01_cannon_F {
@@ -86,6 +92,26 @@ class CLASS(Merkava): B_MBT_01_cannon_F {
         MERKAVA_WOODLAND(NET_WINTER)
         factions[] = {};
       };
+      class Brown {
+        displayName = "Brown (Desert Net)";
+        MERKAVA_BROWN(NET_DESERT)
+        factions[] = {};
+      };
+      class Brown_green {
+        displayName = "Brown (Green Net)";
+        MERKAVA_BROWN(NET_GREEN)
+        factions[] = {};
+      };
+      class Brown_jungle {
+        displayName = "Brown (Jungle Net)";
+        MERKAVA_BROWN(NET_JUNGLE)
+        factions[] = {};
+      };
+      class Brown_winter {
+        displayName = "Brown (Winter Net)";
+        MERKAVA_BROWN(NET_WINTER)
+        factions[] = {};
+      };
     };
 };
 
@@ -108,6 +134,13 @@ class CLASS(Merkava): B_MBT_01_cannon_F {
           "\A3_Aegis\Armor_F_Aegis\MBT_01\Data\MBT_01_body_wdl_CO.paa",\
           "\A3_Aegis\Armor_F_Aegis\MBT_01\Data\MBT_01_tow_wdl_CO.paa",\
           "A3\Armor_F_Exp\MBT_01\data\mbt_addons_olive_CO.paa",\
+          CAMONET\
+        };
+#define MERKAVA_TUSK_BROWN(CAMONET) \
+        textures[] = {\
+          "\A3_Atlas\Armor_F_Atlas\MBT_01\Data\MBT_01_body_brown_CO.paa", \
+          "\A3_Atlas\Armor_F_Atlas\MBT_01\Data\MBT_01_tow_brown_CO.paa", \
+          "a3\armor_f_epc\mbt_01\data\mbt_addons_co.paa",\
           CAMONET\
         };
 
@@ -180,5 +213,26 @@ class CLASS(Merkava_TUSK): B_MBT_01_TUSK_F {
         MERKAVA_TUSK_WOODLAND(NET_WINTER)
         factions[] = {};
       };
+      class Brown {
+        displayName = "Brown (Desert Net)";
+        MERKAVA_TUSK_BROWN(NET_DESERT)
+        factions[] = {};
+      };
+      class Brown_green {
+        displayName = "Brown (Green Net)";
+        MERKAVA_TUSK_BROWN(NET_GREEN)
+        factions[] = {};
+      };
+      class Brown_jungle {
+        displayName = "Brown (Jungle Net)";
+        MERKAVA_TUSK_BROWN(NET_JUNGLE)
+        factions[] = {};
+      };
+      class Brown_winter {
+        displayName = "Brown (Winter Net)";
+        MERKAVA_TUSK_BROWN(NET_WINTER)
+        factions[] = {};
+      };
+
     };
 };
