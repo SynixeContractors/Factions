@@ -32,6 +32,7 @@ class CfgVehicles {
     #include "CfgVehicles_Van.hpp"
     #include "CfgVehicles_Karatel.hpp"
     #include "CfgVehicles_MATV.hpp"
+    #include "CfgVehicles_Polaris.hpp"
 
     // APCS
     #include "CfgVehicles_Badger.hpp"
