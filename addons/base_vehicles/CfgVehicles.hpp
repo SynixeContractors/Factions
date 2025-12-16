@@ -22,6 +22,7 @@ class CfgVehicles {
     #include "CfgVehicles_Jay.hpp"
     #include "CfgVehicles_Jeep.hpp"
     #include "CfgVehicles_LUT.hpp"
+    #include "CfgVehicles_LSV.hpp"
     #include "CfgVehicles_Offroad.hpp"
     #include "CfgVehicles_Quad.hpp"
     #include "CfgVehicles_Ram.hpp"

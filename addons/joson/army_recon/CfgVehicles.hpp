@@ -1,16 +1,11 @@
 class CfgVehicles {
-    #include "CfgVehicles_tank.hpp"
-    #include "CfgVehicles_Cars.hpp"
-    #include "CfgVehicles_APC.hpp"
-
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {
-        displayName = "JSR Base Army Combat";
-        editorSubcategory = QGCLASS(army_combat);
+        displayName = "JSR Base Army Recon";
+        editorSubcategory = QGCLASS(army_recon);
     };
     class CLASS(Rifleman): CLASS(Base) {
         @Role(Rifleman);
-
         @Uniforms({
             "variants": {
                 "tacs_Uniform_Combat_LS_ATACS_IX": 0.75,
@@ -31,10 +26,15 @@ class CfgVehicles {
                 "SmokeShell": 1,
             },
         });
+
         @Headgear({
-            "tacs_Helmet_modular_FG": 0.79,
-            "tacs_Helmet_Modular_Ear_FG": 0.1,
-            "tacs_Helmet_Modular_Headset_FG": 0.1,
+            "Aegis_H_Milcap_nohs_grn_F": 0.1,
+            "Aegis_H_MilCap_tachs_grn_F": 0.1,
+            "H_MilCap_grn": 0.1,
+            "": 0.5,
+            "tacs_Helmet_modular_FG": 0.05,
+            "tacs_Helmet_Modular_Ear_FG": 0.05,
+            "tacs_Helmet_Modular_Headset_FG": 0.04,
             "tacs_Helmet_Modular_Chops_FG": 0.01,
         });
         @Facewear({
@@ -44,72 +44,51 @@ class CfgVehicles {
         @Primary({
             "weapons": {
                 "arifle_NCAR15_F": {
-                    "probability": 0.95,
+                    "probability": 0.7,
                     "magazinesVest": {
-                        "30Rnd_580x42_Mag_F": 8,
+                        "30Rnd_580x42_Mag_F": 5,
                     },
                 },
-                "arifle_NCAR15B_F": {
-                    "probability": 0.05,
+                "Aegis_arifle_CTAR_tan_f": {
+                    "probability": 0.3,
                     "magazinesVest": {
-                      "30Rnd_580x42_Mag_F": 8,
-                    },
-                },
-            },
-            "optics": {
-                "": 0.85,
-                "Aegis_optic_1p87": 0.1,
-                "optic_LRCO_blk_F": 0.05,
-            },
-       });
-    };
-
-    class CLASS(TeamLeader): CLASS(Rifleman) {
-        @Role(TeamLeader);
-        @Primary({
-            "weapons": {
-                "arifle_NCAR15B_F": {
-                    "probability": 0.95,
-                    "magazinesVest": {
-                        "30Rnd_580x42_Mag_F": 8,
-                    },
-                },
-                "arifle_NCAR15_F": {
-                    "probability": 0.05,
-                    "magazinesVest": {
-                        "30Rnd_580x42_Mag_F": 8,
+                        "30Rnd_580x42_Mag_F": 5,
                     },
                 },
             },
             "optics": {
-                "Aegis_optic_1p87": 0.7,
-                "optic_LRCO_blk_F": 0.3,
+                "": 0.4,
+                "Aegis_optic_1p87": 0.4,
+                "optic_LRCO_blk_F": 0.2,
             },
-       });
+        });
     };
     class CLASS(RiflemanCarabine): CLASS(Rifleman) {
         @Role(Hidden);
         @Primary({
             "weapons": {
                 "arifle_NCAR15B_F": {
-                    "probability": 0.95,
+                    "probability": 0.5,
                     "magazinesVest": {
                         "30Rnd_580x42_Mag_F": 5,
                     },
                 },
-                "arifle_NCAR15_F": {
-                    "probability": 0.05,
+                "Aegis_arifle_CTAR_tan_f": {
+                    "probability": 0.5,
                     "magazinesVest": {
                         "30Rnd_580x42_Mag_F": 5,
                     },
                 },
             },
             "optics": {
-                "": 0.6,
-                "Aegis_optic_1p87": 0.3,
-                "optic_LRCO_blk_F": 0.1,
+                "": 0.2,
+                "Aegis_optic_1p87": 0.6,
+                "optic_LRCO_blk_F": 0.2,
             },
-       });
+        });
+    };
+    class CLASS(TeamLeader): CLASS(RiflemanCarabine) {
+        @Role(TeamLeader);
     };
     class CLASS(SquadLeader): CLASS(Rifleman) {
         @Role(SquadLeader);
@@ -145,42 +124,6 @@ class CfgVehicles {
             },
        });
     };
-    class CLASS(Machinegunner): CLASS(Autorifleman) {
-        @Role(Machinegunner);
-        @Primary({
-            "weapons": {
-                "LMG_Zafir_black_F": {
-                    "magazinesVest": {
-                        "150Rnd_762x54_Box": 1,
-                    },
-                },
-            },
-            "optics": {
-                "":0.2,
-                "Aegis_optic_1p87": 0.4,
-                "optic_LRCO_blk_F": 0.4,
-            },
-       });
-       @Backpacks({
-           "variants": {
-                "B_AssaultPack_rgr": 1,
-            },
-            "magazines": {
-                "150Rnd_762x54_Box": 2,
-            },
-       });
-    };
-    class CLASS(AsstMachineGunner): CLASS(RiflemanCarabine) {
-        @Role(AsstMachinegunner);
-        @Backpacks({
-            "variants": {
-                "B_AssaultPack_rgr": 1,
-            },
-            "magazines": {
-                "150Rnd_762x54_Box": 2,
-            },
-       });
-    };
     class CLASS(Medic): CLASS(RiflemanCarabine) {
         @Role(Medic);
         @Backpacks({
@@ -206,30 +149,6 @@ class CfgVehicles {
         @Backpacks({
             "variants": {
                 "B_AssaultPack_rgr": 1,
-            },
-        });
-    };
-    class CLASS(RiflemanAA): CLASS(RiflemanCarabine) {
-        @Role(RiflemanAA);
-        @Launchers({
-            "weapons": {
-                "launch_B_Titan_olive_F": {
-                    "magazinesBackpack": {
-                        "Titan_AA": 1,
-                    },
-                },
-            },
-        });
-    };
-    class CLASS(RiflemanHAT): CLASS(RiflemanCarabine) {
-        @Role(RiflemanHAT);
-        @Launchers({
-            "weapons": {
-                "launch_O_Vorona_green_F": {
-                    "magazinesBackpack": {
-                        "Vorona_HEAT": 1,
-                    },
-                },
             },
         });
     };
@@ -270,23 +189,15 @@ class CfgVehicles {
             },
         });
     };
-    class CLASS(Crewman): CLASS(RiflemanCarabine) {
-        @Role(Crewman);
-        @Headgear({
-            "H_Tank_black_F": 0.75,
-            "tacs_Helmet_Modular_Headset_FG": 0.25,
-        });
-    };
-    class CLASS(HeliPilot): CLASS(Crewman) {
-        @Role(HeliPilot);
-        @Headgear({
-            "H_PilotHelmetHeli_O_visor_up": 0.3,
-            "H_PilotHelmetHeli_O": 0.4,
-            "H_CrewHelmetHeli_O": 0.3,
-        });
-    };
     class CLASS(Marksman): CLASS(Rifleman) {
         @Role(Marksman);
+        @Facewear({
+            "": 0.6,
+            "Aegis_G_scrimNet_under_olive_F": 0.4,
+        });
+        @Headgear({
+            "": 1,
+        });
         @Primary({
             "weapons": {
                 "Aegis_srifle_SVD_blk_f": {
@@ -309,7 +220,17 @@ class CfgVehicles {
             },
         });
     };
-    class CLASS(Sniper): CLASS(Marksman) {
+    class CLASS(Spotter): CLASS(Marksman) {
+      @Role(Spotter);
+      @Uniforms({
+            "variants": {
+                "tacs_Uniform_Combat_RS_ATACS_IX": 0.5,
+                "U_I_FullGhillie_lsh": 0.5,
+            },
+        });
+
+    };
+    class CLASS(Sniper): CLASS(Spotter) {
         @Role(Sniper);
         @Primary({
             "weapons": {

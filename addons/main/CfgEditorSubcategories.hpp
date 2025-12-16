@@ -28,4 +28,8 @@ class CfgEditorSubcategories {
     class GCLASS(militia) {
         displayName = "Men (Militia)";
     };
-}; 
+    class GCLASS(army_airborne) {
+        displayName = "Men (Army - Airborne)";
+    };
+
+};
