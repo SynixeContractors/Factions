@@ -1,8 +1,15 @@
 class CfgVehicles {
+    #include "CfgVehicles_Fennek.hpp"
+    #include "CfgVehicles_Leopard.hpp"
     #include "CfgVehicles_LUT.hpp"
-    #include "CfgVehicles_RHIB.hpp"
+    #include "CfgVehicles_M2.hpp"
+    #include "CfgVehicles_Mk6Mortar.hpp"
+    #include "CfgVehicles_Orca.hpp"
+    #include "CfgVehicles_Otokar.hpp"
     #include "CfgVehicles_Pandur.hpp"
-
+    #include "CfgVehicles_Puma.hpp"
+    #include "CfgVehicles_RHIB.hpp"
+    #include "CfgVehicles_Warrior.hpp"
 
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {
@@ -353,13 +360,13 @@ class CfgVehicles {
         @Launchers({
             "weapons": {
                 "launch_I_Titan_short_F": {
-                    "probability": 0.5,
+                    "probability": 1,
                     "magazinesBackpack": { 
                         "Titan_AT": 2,
                     },
                 },
                 "launch_O_Vorona_green_F": {
-                    "probability": 0.5,
+                    "probability": 1,
                     "magazinesBackpack": { 
                         "Vorona_HEAT": 2,
                     },
