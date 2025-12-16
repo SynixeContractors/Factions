@@ -19,6 +19,13 @@
           "\A3\Data_F_Exp\Vehicles\Turret_olive_CO.paa",\
           CAMONET\
         };
+#define NAMER_BROWN(CAMONET) \
+        textures[] = {\
+          "\A3_Atlas\Armor_F_Atlas\APC_Tracked_01\Data\APC_Tracked_01_body_CRV_brown_CO.paa",\
+          "\A3_Atlas\Armor_F_Atlas\APC_Tracked_01\Data\MBT_01_body_brown_CO.paa",\
+          "\A3_Atlas\Data_F_Atlas\Vehicles\Turret_brown_CO.paa",\
+          CAMONET\
+        };
 
 class MU_NATO_Panther_unarmed;
 class CLASS(Namer): MU_NATO_Panther_unarmed {
@@ -87,6 +94,26 @@ class CLASS(Namer): MU_NATO_Panther_unarmed {
       class Woodland_winter {
         displayName = "Woodland (Winter Net)";
         NAMER_WOODLAND(NET_WINTER)
+        factions[] = {};
+      };
+      class Brown {
+        displayName = "Brown (Desert Net)";
+        NAMER_BROWN(NET_DESERT)
+        factions[] = {};
+      };
+      class Brown_green {
+        displayName = "Brown (Green Net)";
+        NAMER_BROWN(NET_GREEN)
+        factions[] = {};
+      };
+      class Brown_jungle {
+        displayName = "Brown (Jungle Net)";
+        NAMER_BROWN(NET_JUNGLE)
+        factions[] = {};
+      };
+      class Brown_winter {
+        displayName = "Brown (Winter Net)";
+        NAMER_BROWN(NET_WINTER)
         factions[] = {};
       };
     };
@@ -161,6 +188,26 @@ class CLASS(Namer_RCWS): B_APC_Tracked_01_rcws_F {
         NAMER_WOODLAND(NET_WINTER)
         factions[] = {};
       };
+      class Brown {
+        displayName = "Brown (Desert Net)";
+        NAMER_BROWN(NET_DESERT)
+        factions[] = {};
+      };
+      class Brown_green {
+        displayName = "Brown (Green Net)";
+        NAMER_BROWN(NET_GREEN)
+        factions[] = {};
+      };
+      class Brown_jungle {
+        displayName = "Brown (Jungle Net)";
+        NAMER_BROWN(NET_JUNGLE)
+        factions[] = {};
+      };
+      class Brown_winter {
+        displayName = "Brown (Winter Net)";
+        NAMER_BROWN(NET_WINTER)
+        factions[] = {};
+      };
     };
 };
 
@@ -188,7 +235,14 @@ class CLASS(Namer_RCWS): B_APC_Tracked_01_rcws_F {
           "A3\Armor_F_exp\APC_Tracked_01\Data\apc_tracked_01_crv_olive_co.paa",\
           CAMONET\
         };
-
+#define NAMER_CEV_BROWN(CAMONET) \
+        textures[] = {\
+          "\A3_Atlas\Armor_F_Atlas\APC_Tracked_01\Data\APC_Tracked_01_body_CRV_brown_CO.paa",\
+          "\A3_Atlas\Armor_F_Atlas\APC_Tracked_01\Data\MBT_01_body_brown_CO.paa",\
+          "\A3_Atlas\Data_F_Atlas\Vehicles\Turret_brown_CO.paa",\
+          "\A3_Atlas\Armor_F_Atlas\APC_Tracked_01\Data\APC_Tracked_01_CRV_brown_CO.paa",\
+          CAMONET\
+        };
 
 class B_APC_Tracked_01_CRV_F;
 class CLASS(Namer_CEV): B_APC_Tracked_01_CRV_F {
@@ -257,6 +311,26 @@ class CLASS(Namer_CEV): B_APC_Tracked_01_CRV_F {
       class Woodland_winter {
         displayName = "Woodland (Winter Net)";
         NAMER_CEV_WOODLAND(NET_WINTER)
+        factions[] = {};
+      };
+      class Brown {
+        displayName = "Brown (Desert Net)";
+        NAMER_CEV_BROWN(NET_DESERT)
+        factions[] = {};
+      };
+      class Brown_green {
+        displayName = "Brown (Green Net)";
+        NAMER_CEV_BROWN(NET_GREEN)
+        factions[] = {};
+      };
+      class Brown_jungle {
+        displayName = "Brown (Jungle Net)";
+        NAMER_CEV_BROWN(NET_JUNGLE)
+        factions[] = {};
+      };
+      class Brown_winter {
+        displayName = "Brown (Winter Net)";
+        NAMER_CEV_BROWN(NET_WINTER)
         factions[] = {};
       };
     };
