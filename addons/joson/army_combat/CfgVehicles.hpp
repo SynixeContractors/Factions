@@ -13,7 +13,7 @@ class CfgVehicles {
 
         @Uniforms({
             "variants": {
-                "tacs_Uniform_combat_LS_ATACS_IX": 0.75,
+                "tacs_Uniform_Combat_LS_ATACS_IX": 0.75,
                 "tacs_Uniform_Combat_RS_ATACS_IX": 0.25,
             },
             "packs": [
