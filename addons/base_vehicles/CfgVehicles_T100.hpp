@@ -48,6 +48,5 @@ class GCLASS(T100): O_A_MBT_02_cannon_F {
             textures[] = {"\A3_Atlas\Armor_F_Atlas\MBT_02\Data\MBT_02_Body_WHEX_CO.paa","\A3_Atlas\Armor_F_Atlas\MBT_02\Data\MBT_02_Turret_WHEX_CO.paa","\A3_Atlas\Armor_F_Atlas\MBT_02\Data\MBT_02_WHEX_CO.paa","\A3\Armor_F\Data\camonet_CSAT_Hex_Green_CO.paa"};
             factions[] = {};
         };
-
     };
 };

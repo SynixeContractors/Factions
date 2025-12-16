@@ -1,96 +1,11 @@
-#define TYPHOON_TEXTURES                                                       \
-  class TextureSources {                                                       \
-    class Green {                                                              \
-      displayName = "Green";                                                   \
-      textures[] = {                                                           \
-          "\A3_Aegis\Soft_F_Aegis\Truck_03\Data\Truck_03_ext01_RUkhk_CO.paa",  \
-          "\A3_Aegis\Soft_F_Aegis\Truck_03\Data\Truck_03_ext02_RUkhk_CO.paa",  \
-          "\A3_Aegis\Soft_F_Aegis\Truck_03\Data\Truck_03_cargo_RUkhk_CO.paa"   \
-      };                                                                       \
-      factions[] = {};                                                         \
-    };                                                                         \
-    class GreenHex {                                                           \
-      displayName = "Hex Woodland";                                            \
-      textures[] = {                                                           \
-          "\A3\Soft_F_Exp\Truck_03\Data\Truck_03_ext01_ghex_CO.paa",           \
-          "\A3\Soft_F_Exp\Truck_03\Data\Truck_03_ext02_ghex_CO.paa",           \
-          "\A3\Soft_F_Exp\Truck_03\Data\Truck_03_cargo_ghex_CO.paa"            \
-      };                                                                       \
-      factions[] = {};                                                         \
-    };                                                                         \
-    class Hex {                                                                \
-      displayName = "Hex Ochre";                                               \
-      textures[] = {                                                           \
-          "\A3\Soft_F_EPC\Truck_03\Data\Truck_03_ext01_CO.paa",                \
-          "\A3\Soft_F_EPC\Truck_03\Data\Truck_03_ext02_CO.paa",                \
-          "\A3\Soft_F_EPC\Truck_03\Data\Truck_03_cargo_CO.paa"                 \
-      };                                                                       \
-      factions[] = {};                                                         \
-    };                                                                         \
-    class WoodlandHex {                                                        \
-      displayName = "Hex Green";                                               \
-      textures[] = {                                                           \
-          "\A3_Atlas\Soft_F_Atlas\Truck_03\Data\Truck_03_ext01_whex_CO.paa",   \
-          "\A3_Atlas\Soft_F_Atlas\Truck_03\Data\Truck_03_ext02_whex_CO.paa",   \
-          "\A3_Atlas\Soft_F_Atlas\Truck_03\Data\Truck_03_cargo_whex_CO.paa"    \
-      };                                                                       \
-      factions[] = {};                                                         \
-    };                                                                         \
-  }
-
-#define TYPHOON_COVERED                                                        \
-  class TextureSources {                                                       \
-    class Green {                                                              \
-      displayName = "Green";                                                   \
-      textures[] = {                                                           \
-          "\A3_Aegis\Soft_F_Aegis\Truck_03\Data\Truck_03_ext01_RUkhk_CO.paa",  \
-          "\A3_Aegis\Soft_F_Aegis\Truck_03\Data\Truck_03_ext02_RUkhk_CO.paa",  \
-          "\A3_Aegis\Soft_F_Aegis\Truck_03\Data\Truck_03_cargo_RUkhk_CO.paa",  \
-          "\A3_Aegis\Soft_F_Aegis\Truck_03\Data\Truck_03_cover_RUkhk_CO.paa"   \
-      };                                                                       \
-      factions[] = {};                                                         \
-    };                                                                         \
-    class GreenHex {                                                           \
-      displayName = "Hex Woodland";                                            \
-      textures[] = {                                                           \
-          "\A3\Soft_F_Exp\Truck_03\Data\Truck_03_ext01_ghex_CO.paa",           \
-          "\A3\Soft_F_Exp\Truck_03\Data\Truck_03_ext02_ghex_CO.paa",           \
-          "\A3\Soft_F_Exp\Truck_03\Data\Truck_03_cargo_ghex_CO.paa",           \
-          "\A3\Soft_F_Exp\Truck_03\Data\Truck_03_cover_ghex_CO.paa"            \
-      };                                                                       \
-      factions[] = {};                                                         \
-    };                                                                         \
-    class Hex {                                                                \
-      displayName = "Hex Ochre";                                               \
-      textures[] = {                                                           \
-          "\A3\Soft_F_EPC\Truck_03\Data\Truck_03_ext01_CO.paa",                \
-          "\A3\Soft_F_EPC\Truck_03\Data\Truck_03_ext02_CO.paa",                \
-          "\A3\Soft_F_EPC\Truck_03\Data\Truck_03_cargo_CO.paa",                \
-          "\A3\Soft_F_EPC\Truck_03\Data\Truck_03_cover_CO.paa"                 \
-      };                                                                       \
-      factions[] = {};                                                         \
-    };                                                                         \
-    class WoodlandHex {                                                        \
-      displayName = "Hex Green";                                               \
-      textures[] = {                                                           \
-          "\A3_Atlas\Soft_F_Atlas\Truck_03\Data\Truck_03_ext01_whex_CO.paa",   \
-          "\A3_Atlas\Soft_F_Atlas\Truck_03\Data\Truck_03_ext02_whex_CO.paa",   \
-          "\A3_Atlas\Soft_F_Atlas\Truck_03\Data\Truck_03_cargo_whex_CO.paa",   \
-          "\A3_Atlas\Soft_F_Atlas\Truck_03\Data\Truck_03_cover_whex_CO.paa"    \
-      };                                                                       \
-      factions[] = {};                                                         \
-    };                                                                         \
-  }
-
-
 class O_Truck_03_transport_F;
 class GCLASS(TyphoonBench): O_Truck_03_transport_F {
     displayName = "Typhoon (Transport)";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
-    TYPHOON_TEXTURES;
     ace_refuel_fuelCapacity = 260;
+    #include "textures\Typhoon.hpp"
 };
 
 class O_Truck_03_covered_F;
@@ -99,8 +14,8 @@ class GCLASS(TyphoonCovered): O_Truck_03_covered_F {
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
-    TYPHOON_COVERED;
     ace_refuel_fuelCapacity = 260;
+    #include "textures\TyphoonCovered.hpp"
 };
 
 class O_Truck_03_cargo_RF;
@@ -109,8 +24,8 @@ class GCLASS(TyphoonFlatbed): O_Truck_03_cargo_RF {
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
-    TYPHOON_TEXTURES;
     ace_refuel_fuelCapacity = 260;
+    #include "textures\Typhoon.hpp"
 };
 
 class O_Truck_03_fuel_F;
@@ -217,8 +132,8 @@ class GCLASS(TyphoonMedical): O_Truck_03_medical_F {
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
-    TYPHOON_COVERED;
     ace_refuel_fuelCapacity = 260;
+    #include "textures\TyphoonCovered.hpp"
 };
 
 class O_Truck_03_device_F;
@@ -227,8 +142,8 @@ class GCLASS(TyphoonDevice): O_Truck_03_device_F {
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
-    TYPHOON_TEXTURES;
     ace_refuel_fuelCapacity = 260;
+    #include "textures\Typhoon.hpp"
 };
 
 class O_Truck_03_repair_F;

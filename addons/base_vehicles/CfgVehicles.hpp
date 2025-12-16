@@ -38,6 +38,7 @@ class CfgVehicles {
     #include "CfgVehicles_Warrior.hpp"
 
     // Boats
+    #include "CfgVehicles_AssaultBoat.hpp"
     #include "CfgVehicles_CabinSkiff.hpp"
     #include "CfgVehicles_Dingy.hpp"
     #include "CfgVehicles_JetSki.hpp"

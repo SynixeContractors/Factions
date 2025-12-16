@@ -99,30 +99,30 @@ class GCLASS(Wiesel): I_LT_01_cannon_F {
         class Eastern_Europe {
             displayName = "Green (Jungle Net)";
             textures[] = {
-              "\x\tacu\addons\assets\data\wiesel\wiesel_main_ee_co.paa",
-              "\x\tacu\addons\assets\data\wiesel\wiesel_cannon_ee_co.paa",
-              "\A3\Armor_F_Enoch\apc_tracked_03\Data\camonet_EAF_green_CO.paa",
-              "\A3\Armor_F\Data\cage_olive_CO.paa"
+                "\x\tacu\addons\assets\data\wiesel\wiesel_main_ee_co.paa",
+                "\x\tacu\addons\assets\data\wiesel\wiesel_cannon_ee_co.paa",
+                "\A3\Armor_F_Enoch\apc_tracked_03\Data\camonet_EAF_green_CO.paa",
+                "\A3\Armor_F\Data\cage_olive_CO.paa"
             };
             factions[] = {};
         };
         class Eastern_Europe_desert {
             displayName = "Green (Desert Net)";
             textures[] = {
-              "\x\tacu\addons\assets\data\wiesel\wiesel_main_ee_co.paa",
-              "\x\tacu\addons\assets\data\wiesel\wiesel_cannon_ee_co.paa",
-              "\A3\Armor_F\Data\camonet_NATO_Desert_CO.paa",
-              "\A3\Armor_F\Data\cage_olive_CO.paa"
+                "\x\tacu\addons\assets\data\wiesel\wiesel_main_ee_co.paa",
+                "\x\tacu\addons\assets\data\wiesel\wiesel_cannon_ee_co.paa",
+                "\A3\Armor_F\Data\camonet_NATO_Desert_CO.paa",
+                "\A3\Armor_F\Data\cage_olive_CO.paa"
             };
             factions[] = {};
         };
         class Eastern_Europe_woodland {
             displayName = "Green (Woodland Net)";
             textures[] = {
-              "\x\tacu\addons\assets\data\wiesel\wiesel_main_ee_co.paa",
-              "\x\tacu\addons\assets\data\wiesel\wiesel_cannon_ee_co.paa",
-              "\A3\Armor_F\Data\camonet_NATO_Green_CO.paa",
-              "\A3\Armor_F\Data\cage_olive_CO.paa"
+                "\x\tacu\addons\assets\data\wiesel\wiesel_main_ee_co.paa",
+                "\x\tacu\addons\assets\data\wiesel\wiesel_cannon_ee_co.paa",
+                "\A3\Armor_F\Data\camonet_NATO_Green_CO.paa",
+                "\A3\Armor_F\Data\cage_olive_CO.paa"
             };
             factions[] = {};
         };
@@ -137,7 +137,7 @@ class GCLASS(Wiesel_SAM): I_LT_01_AA_F {
     EMPTY_INVENTORY;
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
-        class TextureSources {
+    class TextureSources {
         class Indep_01 {
             displayName = "DAP Green (DAP Green Net)";
             textures[] = {
@@ -230,30 +230,30 @@ class GCLASS(Wiesel_SAM): I_LT_01_AA_F {
         class Eastern_Europe {
             displayName = "Green (Jungle Net)";
             textures[] = {
-              "\x\tacu\addons\assets\data\wiesel\wiesel_main_ee_co.paa",
-              "\x\tacu\addons\assets\data\wiesel\wieseil_at_ee_co.paa",
-              "\A3\Armor_F_Enoch\apc_tracked_03\Data\camonet_EAF_green_CO.paa",
-              "\A3\Armor_F\Data\cage_olive_CO.paa"
+                "\x\tacu\addons\assets\data\wiesel\wiesel_main_ee_co.paa",
+                "\x\tacu\addons\assets\data\wiesel\wieseil_at_ee_co.paa",
+                "\A3\Armor_F_Enoch\apc_tracked_03\Data\camonet_EAF_green_CO.paa",
+                "\A3\Armor_F\Data\cage_olive_CO.paa"
             };
             factions[] = {};
         };
         class Eastern_Europe_desert {
             displayName = "Green (Desert Net)";
             textures[] = {
-              "\x\tacu\addons\assets\data\wiesel\wiesel_main_ee_co.paa",
-              "\x\tacu\addons\assets\data\wiesel\wieseil_at_ee_co.paa",
-              "\A3\Armor_F\Data\camonet_NATO_Desert_CO.paa",
-              "\A3\Armor_F\Data\cage_olive_CO.paa"
+                "\x\tacu\addons\assets\data\wiesel\wiesel_main_ee_co.paa",
+                "\x\tacu\addons\assets\data\wiesel\wieseil_at_ee_co.paa",
+                "\A3\Armor_F\Data\camonet_NATO_Desert_CO.paa",
+                "\A3\Armor_F\Data\cage_olive_CO.paa"
             };
             factions[] = {};
         };
         class Eastern_Europe_woodland {
             displayName = "Green (Woodland Net)";
             textures[] = {
-              "\x\tacu\addons\assets\data\wiesel\wiesel_main_ee_co.paa",
-              "\x\tacu\addons\assets\data\wiesel\wieseil_at_ee_co.paa",
-              "\A3\Armor_F\Data\camonet_NATO_Green_CO.paa",
-              "\A3\Armor_F\Data\cage_olive_CO.paa"
+                "\x\tacu\addons\assets\data\wiesel\wiesel_main_ee_co.paa",
+                "\x\tacu\addons\assets\data\wiesel\wieseil_at_ee_co.paa",
+                "\A3\Armor_F\Data\camonet_NATO_Green_CO.paa",
+                "\A3\Armor_F\Data\cage_olive_CO.paa"
             };
             factions[] = {};
         };
@@ -268,7 +268,7 @@ class GCLASS(Wiesel_ATGM): I_LT_01_AT_F {
     EMPTY_INVENTORY;
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
-        class TextureSources {
+    class TextureSources {
         class Indep_01 {
             displayName = "DAP Green (DAP Green Net)";
             textures[] = {
@@ -361,30 +361,30 @@ class GCLASS(Wiesel_ATGM): I_LT_01_AT_F {
         class Eastern_Europe {
             displayName = "Green (Jungle Net)";
             textures[] = {
-              "\x\tacu\addons\assets\data\wiesel\wiesel_main_ee_co.paa",
-              "\x\tacu\addons\assets\data\wiesel\wieseil_at_ee_co.paa",
-              "\A3\Armor_F_Enoch\apc_tracked_03\Data\camonet_EAF_green_CO.paa",
-              "\A3\Armor_F\Data\cage_olive_CO.paa"
+                "\x\tacu\addons\assets\data\wiesel\wiesel_main_ee_co.paa",
+                "\x\tacu\addons\assets\data\wiesel\wieseil_at_ee_co.paa",
+                "\A3\Armor_F_Enoch\apc_tracked_03\Data\camonet_EAF_green_CO.paa",
+                "\A3\Armor_F\Data\cage_olive_CO.paa"
             };
             factions[] = {};
         };
         class Eastern_Europe_desert {
             displayName = "Green (Desert Net)";
             textures[] = {
-              "\x\tacu\addons\assets\data\wiesel\wiesel_main_ee_co.paa",
-              "\x\tacu\addons\assets\data\wiesel\wieseil_at_ee_co.paa",
-              "\A3\Armor_F\Data\camonet_NATO_Desert_CO.paa",
-              "\A3\Armor_F\Data\cage_olive_CO.paa"
+                "\x\tacu\addons\assets\data\wiesel\wiesel_main_ee_co.paa",
+                "\x\tacu\addons\assets\data\wiesel\wieseil_at_ee_co.paa",
+                "\A3\Armor_F\Data\camonet_NATO_Desert_CO.paa",
+                "\A3\Armor_F\Data\cage_olive_CO.paa"
             };
             factions[] = {};
         };
         class Eastern_Europe_woodland {
             displayName = "Green (Woodland Net)";
             textures[] = {
-              "\x\tacu\addons\assets\data\wiesel\wiesel_main_ee_co.paa",
-              "\x\tacu\addons\assets\data\wiesel\wieseil_at_ee_co.paa",
-              "\A3\Armor_F\Data\camonet_NATO_Green_CO.paa",
-              "\A3\Armor_F\Data\cage_olive_CO.paa"
+                "\x\tacu\addons\assets\data\wiesel\wiesel_main_ee_co.paa",
+                "\x\tacu\addons\assets\data\wiesel\wieseil_at_ee_co.paa",
+                "\A3\Armor_F\Data\camonet_NATO_Green_CO.paa",
+                "\A3\Armor_F\Data\cage_olive_CO.paa"
             };
             factions[] = {};
         };
@@ -398,7 +398,7 @@ class GCLASS(Wiesel_radar): I_LT_01_scout_F {
     EMPTY_INVENTORY;
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
-        class TextureSources {
+    class TextureSources {
         class Indep_01 {
             displayName = "DAP Green (DAP Green Net)";
             textures[] = {
@@ -492,30 +492,30 @@ class GCLASS(Wiesel_radar): I_LT_01_scout_F {
         class Eastern_Europe {
             displayName = "Green (Jungle Net)";
             textures[] = {
-              "\x\tacu\addons\assets\data\wiesel\wiesel_main_ee_co.paa",
-              "\x\tacu\addons\assets\data\wiesel\wieseil_at_ee_co.paa",
-              "\A3\Armor_F_Enoch\apc_tracked_03\Data\camonet_EAF_green_CO.paa",
-              "\A3\Armor_F\Data\cage_olive_CO.paa"
+                "\x\tacu\addons\assets\data\wiesel\wiesel_main_ee_co.paa",
+                "\x\tacu\addons\assets\data\wiesel\wieseil_at_ee_co.paa",
+                "\A3\Armor_F_Enoch\apc_tracked_03\Data\camonet_EAF_green_CO.paa",
+                "\A3\Armor_F\Data\cage_olive_CO.paa"
             };
             factions[] = {};
         };
         class Eastern_Europe_desert {
             displayName = "Green (Desert Net)";
             textures[] = {
-              "\x\tacu\addons\assets\data\wiesel\wiesel_main_ee_co.paa",
-              "\x\tacu\addons\assets\data\wiesel\wieseil_at_ee_co.paa",
-              "\A3\Armor_F\Data\camonet_NATO_Desert_CO.paa",
-              "\A3\Armor_F\Data\cage_olive_CO.paa"
+                "\x\tacu\addons\assets\data\wiesel\wiesel_main_ee_co.paa",
+                "\x\tacu\addons\assets\data\wiesel\wieseil_at_ee_co.paa",
+                "\A3\Armor_F\Data\camonet_NATO_Desert_CO.paa",
+                "\A3\Armor_F\Data\cage_olive_CO.paa"
             };
             factions[] = {};
         };
         class Eastern_Europe_woodland {
             displayName = "Green (Woodland Net)";
             textures[] = {
-              "\x\tacu\addons\assets\data\wiesel\wiesel_main_ee_co.paa",
-              "\x\tacu\addons\assets\data\wiesel\wieseil_at_ee_co.paa",
-              "\A3\Armor_F\Data\camonet_NATO_Green_CO.paa",
-              "\A3\Armor_F\Data\cage_olive_CO.paa"
+                "\x\tacu\addons\assets\data\wiesel\wiesel_main_ee_co.paa",
+                "\x\tacu\addons\assets\data\wiesel\wieseil_at_ee_co.paa",
+                "\A3\Armor_F\Data\camonet_NATO_Green_CO.paa",
+                "\A3\Armor_F\Data\cage_olive_CO.paa"
             };
             factions[] = {};
         };

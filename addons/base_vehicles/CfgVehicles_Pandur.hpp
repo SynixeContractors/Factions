@@ -14,31 +14,28 @@ class GCLASS(Pandur): I_APC_Wheeled_03_cannon_F {
             factions[] = {};
         };
         class Indep_02 {
-            displayName = "DAP (Woodland, Jungle Net)";
+            displayName = "DAP Woodland (Jungle Net)";
             textures[] = {"\A3\Armor_F_Gamma\APC_Wheeled_03\Data\APC_Wheeled_03_Ext_INDP_CO.paa","\A3\Armor_F_Gamma\APC_Wheeled_03\Data\APC_Wheeled_03_Ext2_INDP_CO.paa","\A3\Armor_F_Gamma\APC_Wheeled_03\Data\RCWS30_INDP_CO.paa","\A3\Armor_F_Gamma\APC_Wheeled_03\Data\APC_Wheeled_03_Ext_alpha_INDP_CO.paa","\A3\Armor_F\Data\camonet_AAF_Digi_Jungle_CO.paa","\A3\Armor_F\Data\cage_AAF_CO.paa"};
             factions[] = {};
         };
         class Indep_03 {
-            displayName = "DAP (Woodland, Desert Net)";
+            displayName = "DAP Woodland (Desert Net)";
             textures[] = {"\A3\Armor_F_Gamma\APC_Wheeled_03\Data\APC_Wheeled_03_Ext_INDP_CO.paa","\A3\Armor_F_Gamma\APC_Wheeled_03\Data\APC_Wheeled_03_Ext2_INDP_CO.paa","\A3\Armor_F_Gamma\APC_Wheeled_03\Data\RCWS30_INDP_CO.paa","\A3\Armor_F_Gamma\APC_Wheeled_03\Data\APC_Wheeled_03_Ext_alpha_INDP_CO.paa","\A3\Armor_F\Data\camonet_AAF_Digi_Desert_CO.paa","\A3\Armor_F\Data\cage_AAF_CO.paa"};
             factions[] = {};
         };
         class Guerilla_01 {
             displayName = "Guerilla (Woodland)";
             textures[] = {"A3\Data_F_Tacops\data\APC_Wheeled_03_Ext_IG_01_CO.paa","A3\Data_F_Tacops\data\APC_Wheeled_03_Ext2_IG_01_CO.paa","A3\Data_F_Tacops\data\RCWS30_IG_01_CO.paa","A3\Data_F_Tacops\data\APC_Wheeled_03_Ext_alpha_IG_01_CO.paa","A3\Armor_F\Data\camonet_AAF_FIA_green_CO.paa","A3\armor_f\data\cage_G1_co.paa"};
-            faction[] = {};
             factions[] = {};
         };
         class Guerilla_02 {
             displayName = "Guerilla (Desert)";
             textures[] = {"A3\Data_F_Tacops\data\APC_Wheeled_03_Ext_IG_02_CO.paa","A3\Data_F_Tacops\data\APC_Wheeled_03_Ext2_IG_02_CO.paa","A3\Data_F_Tacops\data\RCWS30_IG_02_CO.paa","A3\Data_F_Tacops\data\APC_Wheeled_03_Ext_alpha_IG_02_CO.paa","A3\Armor_F\Data\camonet_AAF_FIA_desert_CO.paa","A3\armor_f\data\cage_sand_co.paa"};
-            faction[] = {};
             factions[] = {};
         };
         class Guerilla_03 {
             displayName = "Guerilla (Jungle)";
             textures[] = {"\A3\Data_F_Tacops\Data\APC_Wheeled_03_Ext_IG_03_CO.paa","\A3\Data_F_Tacops\Data\APC_Wheeled_03_Ext2_IG_03_CO.paa","\A3\Data_F_Tacops\Data\RCWS30_IG_03_CO.paa","\A3\Data_F_Tacops\Data\APC_Wheeled_03_Ext_alpha_IG_03_CO.paa","\A3_Aegis\Armor_F_Aegis\Data\camonet_AAF_FIA_green_CO.paa","\A3\Armor_F\Data\cage_G3_CO.paa"};
-            faction[] = {};
             factions[] = {};
         };
         class Sand_01 {
@@ -52,7 +49,7 @@ class GCLASS(Pandur): I_APC_Wheeled_03_cannon_F {
             factions[] = {};
         };
         class Karzeg_01 {
-            displayName = "/shrug Kargez";
+            displayName = "Khaybaran";
             textures[] = {"\A3_Atlas\Armor_F_Atlas\APC_Wheeled_03\Data\APC_Wheeled_03_Ext_kzg_CO.paa","\A3_Atlas\Armor_F_Atlas\APC_Wheeled_03\Data\APC_Wheeled_03_Ext2_kzg_CO.paa","\A3_Atlas\Armor_F_Atlas\APC_Wheeled_03\Data\RCWS30_kzg_CO.paa","\A3_Atlas\Armor_F_Atlas\APC_Wheeled_03\Data\APC_Wheeled_03_Ext_alpha_kzg_CO.paa","\A3\Armor_F\Data\camonet_NATO_Desert_CO.paa","\A3\Armor_F\Data\cage_sand_CO.paa"};
             factions[] = {};
         };

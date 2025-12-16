@@ -7,8 +7,6 @@ class GCLASS(Leopard2) : I_MBT_03_cannon_F {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     class TextureSources {
-        delete ADF_01;
-        delete Desert_01;
         class EAF_01 {
             displayName = "LDF (Geo Woodland)";
             factions[] = {};
@@ -189,6 +187,5 @@ class GCLASS(Leopard2) : I_MBT_03_cannon_F {
                 "\A3\Armor_F\Data\camonet_NATO_Desert_CO.paa"
             };
         };
-        delete Woodland_01;
     };
 };
