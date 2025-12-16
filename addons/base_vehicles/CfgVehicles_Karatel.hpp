@@ -6,7 +6,6 @@ class GCLASS(Karatel): O_MRAP_02_F {
     EMPTY_INVENTORY;
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
-    ace_refuel_fuelCapacity = 190;
     #include "textures/Karatel.hpp"
 };
 
@@ -18,7 +17,6 @@ class GCLASS(Karatel_HMG): O_MRAP_02_hmg_F {
     EMPTY_INVENTORY;
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
-    ace_refuel_fuelCapacity = 190;
     #include "textures/Karatel.hpp"
 };
 
@@ -30,6 +28,5 @@ class GCLASS(Karatel_GMG): O_MRAP_02_gmg_F {
     EMPTY_INVENTORY;
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
-    ace_refuel_fuelCapacity = 190;
     #include "textures/Karatel.hpp"
 };

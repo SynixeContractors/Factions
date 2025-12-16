@@ -6,7 +6,6 @@ class GCLASS(Polaris): B_LSV_01_unarmed_F {
     EMPTY_INVENTORY;
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
-    ace_refuel_fuelCapacity = 190;
     #include "textures/Polaris.hpp"
 };
 class B_LSV_01_light_F;
@@ -17,7 +16,6 @@ class GCLASS(Polaris_NoDoor): B_LSV_01_light_F {
     EMPTY_INVENTORY;
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
-    ace_refuel_fuelCapacity = 190;
     #include "textures/Polaris.hpp"
 };
 class B_LSV_01_AT_F;
@@ -28,7 +26,6 @@ class GCLASS(Polaris_Titan): B_LSV_01_AT_F {
     EMPTY_INVENTORY;
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
-    ace_refuel_fuelCapacity = 190;
     #include "textures/Polaris.hpp"
 };
 class B_LSV_01_armed_F;
@@ -39,6 +36,5 @@ class GCLASS(Polaris_HMG): B_LSV_01_armed_F {
     EMPTY_INVENTORY;
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
-    ace_refuel_fuelCapacity = 190;
     #include "textures/Polaris.hpp"
 };

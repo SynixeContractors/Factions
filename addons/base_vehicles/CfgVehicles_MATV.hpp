@@ -6,7 +6,6 @@ class GCLASS(MATV): B_MRAP_01_F {
     EMPTY_INVENTORY;
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
-    ace_refuel_fuelCapacity = 190;
     #include "textures/MATV.hpp"
 };
 
@@ -18,7 +17,6 @@ class GCLASS(MATV_HMG): B_MRAP_01_hmg_F {
     EMPTY_INVENTORY;
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
-    ace_refuel_fuelCapacity = 190;
     #include "textures/MATV.hpp"
 };
 
@@ -30,6 +28,5 @@ class GCLASS(MATV_GMG): B_MRAP_01_gmg_F {
     EMPTY_INVENTORY;
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
-    ace_refuel_fuelCapacity = 190;
     #include "textures/MATV.hpp"
 };
