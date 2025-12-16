@@ -19,6 +19,9 @@ class CfgPatches {
 
             // Aegis Small Boat
             "A3_Aegis_Boat_F_Aegis_Boat_Civil_02",
+
+            // Aegis Mohawk (Executive)
+            "A3_Aegis_Air_F_Aegis_Heli_Transport_02",
         };
         author = "Synixe Contractors";
         VERSION_CONFIG;

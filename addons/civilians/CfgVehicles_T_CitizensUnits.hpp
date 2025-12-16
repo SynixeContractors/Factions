@@ -93,6 +93,36 @@ class CLASS2(Citizen_Polo_Pants,NATION): CLASS2(Base,NATION) {
     });
 };
 
+class CLASS2(Citizen_PilotHelicopter,NATION): CLASS2(Citizen_Polo_Pants,NATION) {
+    SCOPE_DLC;
+    displayName = "Citizen (Pilot, Helicopter)";
+
+    @Headgear({
+        "H_PilotHelmetHeli_Black_RF": 1,
+        "H_PilotHelmetHeli_Blue_RF": 1,
+        "H_PilotHelmetHeli_Green_RF": 1,
+        "H_PilotHelmetHeli_Orange_RF": 1,
+        "H_PilotHelmetHeli_Red_RF": 1,
+        "H_PilotHelmetHeli_White_RF": 1,
+        "H_PilotHelmetHeli_Yellow_RF": 1,
+    });
+};
+
+class CLASS2(Citizen_PilotPlane,NATION): CLASS2(Citizen_Polo_Pants,NATION) {
+    SCOPE_DLC;
+    displayName = "Citizen (Pilot, Plane)";
+
+    @Headgear({
+        "H_HeadSet_black_F": 1,
+        "H_HeadSet_olive_F": 1,
+        "H_HeadSet_orange_F": 1,
+        "H_HeadSet_red_F": 1,
+        "H_HeadSet_sand_F": 1,
+        "H_HeadSet_white_F": 1,
+        "H_HeadSet_yellow_F": 1,
+    });
+};
+
 class CLASS2(Citizen_Summer,NATION): CLASS2(Base,NATION) {
     SCOPE_DLC;
     displayName = "Citizen (Summer)";

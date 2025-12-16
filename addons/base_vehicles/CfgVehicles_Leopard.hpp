@@ -50,7 +50,7 @@ class GCLASS(Leopard2) : I_MBT_03_cannon_F {
             };
         };
         class Indep_01 {
-            displayName = "DAP Green (DAP Green Net)";
+            displayName = "DAP Woodland (DAP Woodland Net)";
             factions[] = {};
             textures[] = {
                 "a3\armor_f_epb\mbt_03\data\mbt_03_ext01_co.paa",
@@ -60,7 +60,7 @@ class GCLASS(Leopard2) : I_MBT_03_cannon_F {
             };
         };
         class Indep_02 {
-            displayName = "DAP Green (DAP Jungle Net)";
+            displayName = "DAP Woodland (DAP Jungle Net)";
             factions[] = {};
             textures[] = {
                 "a3\armor_f_epb\mbt_03\data\mbt_03_ext01_co.paa",
@@ -70,7 +70,7 @@ class GCLASS(Leopard2) : I_MBT_03_cannon_F {
             };
         };
         class Indep_03 {
-            displayName = "DAP Green (DAP Desert Net)";
+            displayName = "DAP Woodland (DAP Desert Net)";
             factions[] = {};
             textures[] = {
                 "a3\armor_f_epb\mbt_03\data\mbt_03_ext01_co.paa",
@@ -80,7 +80,7 @@ class GCLASS(Leopard2) : I_MBT_03_cannon_F {
             };
         };
         class KZG_01 {
-            displayName = "Desert Digital (Desert Net)";
+            displayName = "Khaybaran (Desert Net)";
             factions[] = {};
             textures[] = {
                 "\A3_Atlas\Armor_F_Atlas\MBT_03\Data\MBT_03_ext01_kzg_CO.paa",
@@ -90,7 +90,7 @@ class GCLASS(Leopard2) : I_MBT_03_cannon_F {
             };
         };
         class KZG_01_jungle {
-            displayName = "Desert Digital (Jungle Net)";
+            displayName = "Khaybaran (Jungle Net)";
             factions[] = {};
             textures[] = {
                 "\A3_Atlas\Armor_F_Atlas\MBT_03\Data\MBT_03_ext01_kzg_CO.paa",
@@ -100,7 +100,7 @@ class GCLASS(Leopard2) : I_MBT_03_cannon_F {
             };
         };
         class KZG_01_woodland {
-            displayName = "Desert Digital (Woodland Net)";
+            displayName = "Khaybaran (Woodland Net)";
             factions[] = {};
             textures[] = {
                 "\A3_Atlas\Armor_F_Atlas\MBT_03\Data\MBT_03_ext01_kzg_CO.paa",

@@ -2,7 +2,7 @@ class CfgVehicles {
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {
         displayName = "NGHI Base Special Forces";
-        editorSubcategory = QGCLASS(sof);
+        editorSubcategory = QGCLASS(special_forces);
         
         @Uniforms({
             "variants": {

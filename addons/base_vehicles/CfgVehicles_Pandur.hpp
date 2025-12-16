@@ -9,7 +9,7 @@ class GCLASS(Pandur): I_APC_Wheeled_03_cannon_F {
     ace_refuel_fuelCapacity = 210;
     class TextureSources {
         class Indep {
-            displayName = "DAP (Woodland)";
+            displayName = "DAP Woodland";
             textures[] = {"A3\armor_f_gamma\APC_Wheeled_03\data\APC_Wheeled_03_Ext_INDP_CO.paa","A3\armor_f_gamma\APC_Wheeled_03\data\APC_Wheeled_03_Ext2_INDP_CO.paa","A3\armor_f_gamma\APC_Wheeled_03\data\RCWS30_INDP_CO.paa","A3\armor_f_gamma\APC_Wheeled_03\data\APC_Wheeled_03_Ext_alpha_INDP_CO.paa","A3\Armor_F\Data\camonet_AAF_Digi_Green_CO.paa","A3\armor_f\data\cage_aaf_co.paa"};
             factions[] = {};
         };
