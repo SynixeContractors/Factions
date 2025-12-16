@@ -1,6 +1,6 @@
 class O_LSV_02_unarmed_F;
 class GCLASS(LSV) : O_LSV_02_unarmed_F {
-    displayName = "LSV (Transport)";
+    displayName = "LSV";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;

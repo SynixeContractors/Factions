@@ -67,5 +67,6 @@ class CfgVehicles {
     #include "CfgVehicles_M2.hpp"
     #include "CfgVehicles_Mk6Mortar.hpp"
     #include "CfgVehicles_RSG60.hpp"
+    #include "CfgVehicles_Titan.hpp"
     #include "CfgVehicles_XM.hpp"
 };

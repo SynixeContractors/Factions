@@ -88,7 +88,7 @@ class Truck_02_transport_base_F: Truck_02_base_F {
             textures[] = {"\A3_Atlas\Soft_F_Atlas\Truck_02\Data\Truck_02_kab_tk_CO.paa","\A3_Atlas\Soft_F_Atlas\Truck_02\Data\Truck_02_kuz_tk_CO.paa","\A3\Soft_F_Beta\Truck_02\Data\Truck_02_int_CO.paa","\A3\Soft_F_Beta\Truck_02\Data\Truck_02_chassis_OPFOR_CO.paa"};
         };
         class UNO {
-            displayName = "UNO";
+            displayName = "United Nations";
             factions[] = {};
             textures[] = {"\A3_Atlas\Soft_F_Atlas\Truck_02\Data\Truck_02_kab_UN_CO.paa","\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_kuz_RUkhk_CO.paa","\A3\Soft_F_Beta\Truck_02\Data\Truck_02_int_CO.paa","\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_chassis_RUkhk_CO.paa"};
         };
@@ -248,7 +248,7 @@ class GCLASS(LUTMedical): Truck_02_medical_base_F {
             factions[] = {};
         };
         class UNO {
-            displayName = "UNO";
+            displayName = "United Nations";
             textures[] = {"\A3_Atlas\Soft_F_Atlas\Truck_02\Data\Truck_02_kab_UN_CO.paa","\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_kuz_RUkhk_CO.paa","\A3\Soft_F_Beta\Truck_02\Data\Truck_02_int_CO.paa","\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_chassis_RUkhk_CO.paa","lxws\vehicles_f_lxws\Truck_02\data\addons_black_co.paa"};
             factions[] = {};
         };
@@ -336,7 +336,7 @@ class GCLASS(LUTFuel): Truck_02_fuel_base_F {
             factions[] = {};
         };
         class UNO {
-            displayName = "UNO";
+            displayName = "United Nations";
             textures[] = {"\A3_Atlas\Soft_F_Atlas\Truck_02\Data\Truck_02_kab_UN_CO.paa","\A3_Atlas\Soft_F_Atlas\Truck_02\Data\Truck_02_fuel_UN_CO.paa","\A3\Soft_F_Beta\Truck_02\Data\Truck_02_int_CO.paa","\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_chassis_RUkhk_CO.paa"};
             factions[] = {};
         };
@@ -464,7 +464,7 @@ class GCLASS(LUTFlatbed): Truck_02_flatbed_base_lxWS {
             factions[] = {};
         };
         class UNO {
-            displayName = "UNO";
+            displayName = "United Nations";
             textures[] = {"\A3_Atlas\Soft_F_Atlas\Truck_02\Data\Truck_02_kab_UN_CO.paa","\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_kuz_RUkhk_CO.paa","\A3\Soft_F_Beta\Truck_02\Data\Truck_02_int_CO.paa","\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_chassis_RUkhk_CO.paa","lxws\vehicles_f_lxws\Truck_02\data\addons_black_co.paa"};
             factions[] = {};
         };

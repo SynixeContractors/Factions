@@ -1,7 +1,7 @@
 class I_Boat_Armed_01_hmg;
 class GCLASS(AssaultBoatHMG): I_Boat_Armed_01_hmg {
     displayName = "Assault Boat (HMG)";
-    faction = QGVAR(vehicles_faction);
+    faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
     crew = "Civilian";
@@ -13,7 +13,7 @@ class GCLASS(AssaultBoatHMG): I_Boat_Armed_01_hmg {
 class I_Boat_Armed_01_minigun_F;
 class GCLASS(AssaultBoatMinigun): I_Boat_Armed_01_minigun_F {
     displayName = "Assault Boat (Minigun)";
-    faction = QGVAR(vehicles_faction);
+    faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
     crew = "Civilian";

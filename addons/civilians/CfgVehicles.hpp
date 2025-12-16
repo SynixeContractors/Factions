@@ -15,6 +15,9 @@ class CfgVehicles {
     class GCLASS(JayFuel);
     class GCLASS(Jeep);
     class GCLASS(Offroad);
+    class GCLASS(OffroadCovered);
+    class GCLASS(OffroadComms);
+    class GCLASS(OffroadServices);
     class GCLASS(SUV);
     class GCLASS(Tractor);
 

@@ -60,3 +60,24 @@ class CLASS2(Offroad,NATION): GCLASS(Offroad) {
     crew = QUOTE(CLASS2(Citizen_Polo_Shorts,NATION));
     typicalCargo[] = {QUOTE(CLASS2(Citizen_Polo_Shorts,NATION))};
 };
+
+class CLASS2(OffroadCovered,NATION): GCLASS(OffroadCovered) {
+    SCOPE_DLC;
+    faction = QCLASS(NATION);
+    crew = QUOTE(CLASS2(Citizen_Polo_Shorts,NATION));
+    typicalCargo[] = {QUOTE(CLASS2(Citizen_Polo_Shorts,NATION))};
+};
+
+class CLASS2(OffroadComms,NATION): GCLASS(OffroadComms) {
+    SCOPE_DLC;
+    faction = QCLASS(NATION);
+    crew = QUOTE(CLASS2(Citizen_Polo_Shorts,NATION));
+    typicalCargo[] = {QUOTE(CLASS2(Citizen_Polo_Shorts,NATION))};
+};
+
+class CLASS2(OffroadServices,NATION): GCLASS(OffroadServices) {
+    SCOPE_DLC;
+    faction = QCLASS(NATION);
+    crew = QUOTE(CLASS2(Citizen_Polo_Shorts,NATION));
+    typicalCargo[] = {QUOTE(CLASS2(Citizen_Polo_Shorts,NATION))};
+};
