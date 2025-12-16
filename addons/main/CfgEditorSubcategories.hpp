@@ -1,4 +1,10 @@
 class CfgEditorSubcategories {
+    // Vehicles
+    class GCLASS(mortars) {
+        displayName = "Mortars";
+    };
+
+    // Units
     class GCLASS(army_garrison) {
         displayName = "Men (Army - Garrison)";
     };

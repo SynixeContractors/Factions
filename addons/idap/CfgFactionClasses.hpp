@@ -1,7 +1,7 @@
 class CfgFactionClasses {
     class CLASS(civilian) {
         SCOPE_DLC;
-        displayName = "IDAP";
+        displayName = "[HA] IDAP";
         priority = 1;
         side = 3; // Civilian
     };
