@@ -1,6 +1,6 @@
 class B_Truck_01_mover_F;
 class GCLASS(HEMTT): B_Truck_01_mover_F {
-    displayName = "HEMTT";
+    displayName = "HEMTT (Tractor)";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
