@@ -1,5 +1,5 @@
 class C_Van_01_transport_F;
-class GCLASS(JayFlatbed): C_Van_01_transport_F {
+class GCLASS(Jay_Flatbed): C_Van_01_transport_F {
     displayName = "Jay (Flatbed)";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
@@ -119,7 +119,7 @@ class GCLASS(JayFlatbed): C_Van_01_transport_F {
 };
 
 class C_Van_01_box_F;
-class GCLASS(JayBox): C_Van_01_box_F {
+class GCLASS(Jay_Box): C_Van_01_box_F {
     displayName = "Jay (Box)";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
@@ -160,7 +160,7 @@ class GCLASS(JayBox): C_Van_01_box_F {
 };
 
 class C_Van_01_fuel_F;
-class GCLASS(JayFuel): C_Van_01_fuel_F {
+class GCLASS(Jay_Fuel): C_Van_01_fuel_F {
     displayName = "Jay (Fuel)";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;

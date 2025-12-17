@@ -1,5 +1,5 @@
-class GCLASS(RamHMG);
-class CLASS(RamHMG): GCLASS(RamHMG) {
+class GCLASS(Ram_HMG);
+class CLASS(Ram_HMG): GCLASS(Ram_HMG) {
     SCOPE_DLC;
     faction = QPCLASS(t4_opfor);
     side = 0;
@@ -21,8 +21,8 @@ class CLASS(RamHMG): GCLASS(RamHMG) {
     typicalCargo[] = {QCLASS(Rifleman)};
 };
 
-class GCLASS(RamRocket);
-class CLASS(RamRocket): GCLASS(RamRocket) {
+class GCLASS(Ram_Rocket);
+class CLASS(Ram_Rocket): GCLASS(Ram_Rocket) {
     SCOPE_DLC;
     faction = QPCLASS(t4_opfor);
     side = 0;

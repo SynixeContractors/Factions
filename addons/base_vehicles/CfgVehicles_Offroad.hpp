@@ -44,7 +44,7 @@ class GCLASS(OffroadCovered): C_Offroad_01_covered_F {
     #include "textures/Offroad.hpp"
 };
 
-class GCLASS(OffroadComms): GCLASS(Offroad) {
+class GCLASS(Offroad_Comms): GCLASS(Offroad) {
     displayName = "Offroad (Comms)";
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
@@ -65,7 +65,7 @@ class GCLASS(OffroadComms): GCLASS(Offroad) {
 };
 
 class C_Offroad_01_repair_F;
-class GCLASS(OffroadServices): C_Offroad_01_repair_F {
+class GCLASS(Offroad_Services): C_Offroad_01_repair_F {
     displayName = "Offroad (Services)";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
@@ -77,7 +77,7 @@ class GCLASS(OffroadServices): C_Offroad_01_repair_F {
 };
 
 class I_G_Offroad_01_armed_F;
-class GCLASS(OffroadHMG): I_G_Offroad_01_armed_F {
+class GCLASS(Offroad_HMG): I_G_Offroad_01_armed_F {
     displayName = "Offroad (HMG)";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
@@ -89,7 +89,7 @@ class GCLASS(OffroadHMG): I_G_Offroad_01_armed_F {
 };
 
 class I_G_Offroad_01_AT_F;
-class GCLASS(OffroadAT): I_G_Offroad_01_AT_F {
+class GCLASS(Offroad_AT): I_G_Offroad_01_AT_F {
     displayName = "Offroad (AT)";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
@@ -101,7 +101,7 @@ class GCLASS(OffroadAT): I_G_Offroad_01_AT_F {
 };
 
 class I_G_Offroad_AA_lxWS;
-class GCLASS(OffroadAA): I_G_Offroad_AA_lxWS {
+class GCLASS(Offroad_AA): I_G_Offroad_AA_lxWS {
     displayName = "Offroad (AA)";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
@@ -209,7 +209,7 @@ class GCLASS(OffroadAA): I_G_Offroad_AA_lxWS {
 };
 
 class I_G_Offroad_01_armor_base_lxWS;
-class GCLASS(OffroadArmored): I_G_Offroad_01_armor_base_lxWS {
+class GCLASS(Offroad_Armored): I_G_Offroad_01_armor_base_lxWS {
     displayName = "Offroad (UP)";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
@@ -221,7 +221,7 @@ class GCLASS(OffroadArmored): I_G_Offroad_01_armor_base_lxWS {
 };
 
 class I_G_Offroad_01_armor_AT_lxWS;
-class GCLASS(OffroadArmoredAT): I_G_Offroad_01_armor_AT_lxWS {
+class GCLASS(Offroad_Armored_AT): I_G_Offroad_01_armor_AT_lxWS {
     displayName = "Offroad (UP, AT)";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
@@ -233,7 +233,7 @@ class GCLASS(OffroadArmoredAT): I_G_Offroad_01_armor_AT_lxWS {
 };
 
 class I_G_Offroad_01_armor_armed_lxWS;
-class GCLASS(OffroadArmoredHMG): I_G_Offroad_01_armor_armed_lxWS {
+class GCLASS(Offroad_Armored_HMG): I_G_Offroad_01_armor_armed_lxWS {
     displayName = "Offroad (UP, HMG)";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
@@ -245,7 +245,7 @@ class GCLASS(OffroadArmoredHMG): I_G_Offroad_01_armor_armed_lxWS {
 };
 
 class I_Tura_Offroad_armor_AA_lxWS;
-class GCLASS(OffroadArmoredAA): I_Tura_Offroad_armor_AA_lxWS {
+class GCLASS(Offroad_Armored_AA): I_Tura_Offroad_armor_AA_lxWS {
     displayName = "Offroad (UP, AA)";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;

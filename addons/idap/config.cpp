@@ -9,16 +9,16 @@ class CfgPatches {
             QCLASS(Paramedic),
 
             QCLASS(Jeep),
-            QCLASS(VanAmbulance),
-            QCLASS(VanTransport),
-            QCLASS(VanCargo),
+            QCLASS(Van_Ambulance),
+            QCLASS(Van_Transport),
+            QCLASS(Van_Cargo),
             QCLASS(Offroad),
-            QCLASS(OffroadServices),
-            QCLASS(OffroadComms),
+            QCLASS(Offroad_Services),
+            QCLASS(Offroad_Comms),
             QCLASS(Ram),
-            QCLASS(RamServices),
-            QCLASS(RamWater),
-            QCLASS(RamFuel),
+            QCLASS(Ram_Services),
+            QCLASS(Ram_Water),
+            QCLASS(Ram_Fuel),
         };
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;

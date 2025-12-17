@@ -391,7 +391,7 @@ class GCLASS(Wiesel_ATGM): I_LT_01_AT_F {
     };
 };
 class I_LT_01_scout_F;
-class GCLASS(Wiesel_radar): I_LT_01_scout_F {
+class GCLASS(Wiesel_Radar): I_LT_01_scout_F {
     displayName = "Wiesel (Radar)";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;

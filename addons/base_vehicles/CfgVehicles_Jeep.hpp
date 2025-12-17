@@ -44,7 +44,7 @@ class Offroad_02_LMG_base_F: Offroad_02_base_F {
         class White;
     };
 };
-class GCLASS(JeepLMG): Offroad_02_LMG_base_F {
+class GCLASS(Jeep_LMG): Offroad_02_LMG_base_F {
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;

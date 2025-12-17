@@ -1,5 +1,5 @@
 class B_static_AT_F;
-class GCLASS(TitanAT): B_static_AT_F {
+class GCLASS(Titan_AT): B_static_AT_F {
     displayName = "Titan AT";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
@@ -31,7 +31,7 @@ class GCLASS(TitanAT): B_static_AT_F {
 };
 
 class B_static_AA_F;
-class GCLASS(TitanAA): B_static_AA_F {
+class GCLASS(Titan_AA): B_static_AA_F {
     displayName = "Titan AA";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;

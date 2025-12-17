@@ -3,50 +3,50 @@
     side = 0; \
     textureList[] = {"Green",1};
 
-class GCLASS(TyphoonBench);
-class CLASS(TyphoonBench): GCLASS(TyphoonBench) {
+class GCLASS(Typhoon_Bench);
+class CLASS(Typhoon_Bench): GCLASS(Typhoon_Bench) {
     JOSON_CAR_GREEN
     editorPreview = "\A3_Aegis\EditorPreviews_F_Aegis\Data\CfgVehicles\O_R_Truck_03_transport_F.jpg";
     crew = QCLASS(Rifleman);
 };
 
-class GCLASS(TyphoonCovered);
-class CLASS(TyphoonCovered): GCLASS(TyphoonCovered) {
+class GCLASS(Typhoon_Covered);
+class CLASS(Typhoon_Covered): GCLASS(Typhoon_Covered) {
     JOSON_CAR_GREEN
     editorPreview = "\A3_Aegis\EditorPreviews_F_Aegis\Data\CfgVehicles\O_R_Truck_03_covered_F.jpg";
     crew = QCLASS(Rifleman);
 };
 
-class GCLASS(TyphoonFlatbed);
-class CLASS(TyphoonFlatbed): GCLASS(TyphoonFlatbed) {
+class GCLASS(Typhoon_Flatbed);
+class CLASS(Typhoon_Flatbed): GCLASS(Typhoon_Flatbed) {
     JOSON_CAR_GREEN
     //FIXME: needs green camo editor picture
     crew = QCLASS(Rifleman);
 };
 
-class GCLASS(TyphoonMedical);
-class CLASS(TyphoonMedical): GCLASS(TyphoonMedical) {
+class GCLASS(Typhoon_Medical);
+class CLASS(Typhoon_Medical): GCLASS(Typhoon_Medical) {
     JOSON_CAR_GREEN
     editorPreview = "\A3_Aegis\EditorPreviews_F_Aegis\Data\CfgVehicles\O_R_Truck_03_medical_F.jpg";
     crew = QCLASS(Rifleman);
 };
 
-class GCLASS(TyphoonRepair);
-class CLASS(TyphoonRepair): GCLASS(TyphoonRepair) {
+class GCLASS(Typhoon_Repair);
+class CLASS(Typhoon_Repair): GCLASS(Typhoon_Repair) {
     JOSON_CAR_GREEN
     editorPreview = "\A3_Aegis\EditorPreviews_F_Aegis\Data\CfgVehicles\O_R_Truck_03_medical_F.jpg";
     crew = QCLASS(Engineer);
 };
 
-class GCLASS(TyphoonAmmo);
-class CLASS(TyphoonAmmo): GCLASS(TyphoonAmmo) {
+class GCLASS(Typhoon_Ammo);
+class CLASS(Typhoon_Ammo): GCLASS(Typhoon_Ammo) {
     JOSON_CAR_GREEN
     editorPreview = "\A3_Aegis\EditorPreviews_F_Aegis\Data\CfgVehicles\O_R_Truck_03_ammo_F.jpg";
     crew = QCLASS(Rifleman);
 };
 
-class GCLASS(TyphoonFuel);
-class CLASS(TyphoonFuel): GCLASS(TyphoonFuel) {
+class GCLASS(Typhoon_Fuel);
+class CLASS(Typhoon_Fuel): GCLASS(Typhoon_Fuel) {
     JOSON_CAR_GREEN
     editorPreview = "\A3_Aegis\EditorPreviews_F_Aegis\Data\CfgVehicles\O_R_Truck_03_fuel_F.jpg";
     crew = QCLASS(Rifleman);
@@ -58,15 +58,15 @@ class CLASS(LSV): GCLASS(LSV) {
     //FIXME: needs green camo editor picture
       crew = QCLASS(Rifleman);
 };
-class GCLASS(LSV_minigun);
-class CLASS(LSV_minigun): GCLASS(LSV_minigun) {
+class GCLASS(LSV_Minigun);
+class CLASS(LSV_Minigun): GCLASS(LSV_Minigun) {
     JOSON_CAR_GREEN
     //FIXME: needs green camo editor picture
     crew = QCLASS(Rifleman);
     typicalCargo[] = {QCLASS(Rifleman)};
 };
-class GCLASS(LSV_metis);
-class CLASS(LSV_metis): GCLASS(LSV_metis) {
+class GCLASS(LSV_Metis);
+class CLASS(LSV_Metis): GCLASS(LSV_Metis) {
     JOSON_CAR_GREEN
     //FIXME: needs green camo editor picture
     crew = QCLASS(Rifleman);

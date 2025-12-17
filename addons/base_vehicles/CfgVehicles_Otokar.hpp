@@ -70,7 +70,7 @@ class APC_Wheeled_02_base_v2_F: APC_Wheeled_02_base_F {
 class APC_Wheeled_02_unarmed_base_lxws: APC_Wheeled_02_base_v2_F {
     TEXTURES;
 };
-class GCLASS(OtokarUnarmed): APC_Wheeled_02_unarmed_base_lxws {
+class GCLASS(Otokar): APC_Wheeled_02_unarmed_base_lxws {
     displayName = "Otokar ARMA (Unarmed)";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
@@ -84,7 +84,7 @@ class GCLASS(OtokarUnarmed): APC_Wheeled_02_unarmed_base_lxws {
 class APC_Wheeled_02_hmg_base_lxws: APC_Wheeled_02_base_v2_F {
     TEXTURES;
 };
-class GCLASS(OtokarHMG): APC_Wheeled_02_hmg_base_lxws {
+class GCLASS(Otokar_HMG): APC_Wheeled_02_hmg_base_lxws {
     displayName = "Otokar ARMA (HMG)";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
@@ -96,7 +96,7 @@ class GCLASS(OtokarHMG): APC_Wheeled_02_hmg_base_lxws {
 
 // RCWS
 class O_APC_Wheeled_02_rcws_v2_F;
-class GCLASS(OtokarRCWS): O_APC_Wheeled_02_rcws_v2_F {
+class GCLASS(Otokar_RCWS): O_APC_Wheeled_02_rcws_v2_F {
     displayName = "Otokar ARMA (RCWS)";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;

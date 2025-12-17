@@ -1,5 +1,5 @@
-class GCLASS(TyphoonBench);
-class CLASS(TyphoonBench): GCLASS(TyphoonBench) {
+class GCLASS(Typhoon_Bench);
+class CLASS(Typhoon_Bench): GCLASS(Typhoon_Bench) {
     SCOPE_DLC;
     faction = QPCLASS(t2_opfor);
     side = 0;
@@ -9,8 +9,8 @@ class CLASS(TyphoonBench): GCLASS(TyphoonBench) {
     typicalCargo[] = {QCLASS(Rifleman)};
 };
 
-class GCLASS(TyphoonCovered);
-class CLASS(TyphoonCovered): GCLASS(TyphoonCovered) {
+class GCLASS(Typhoon_Covered);
+class CLASS(Typhoon_Covered): GCLASS(Typhoon_Covered) {
     SCOPE_DLC;
     faction = QPCLASS(t2_opfor);
     side = 0;
@@ -20,8 +20,8 @@ class CLASS(TyphoonCovered): GCLASS(TyphoonCovered) {
     typicalCargo[] = {QCLASS(Rifleman)};
 };
 
-class GCLASS(TyphoonFuel);
-class CLASS(TyphoonFuel): GCLASS(TyphoonFuel) {
+class GCLASS(Typhoon_Fuel);
+class CLASS(Typhoon_Fuel): GCLASS(Typhoon_Fuel) {
     SCOPE_DLC;
     faction = QPCLASS(t2_opfor);
     side = 0;
@@ -32,8 +32,8 @@ class CLASS(TyphoonFuel): GCLASS(TyphoonFuel) {
     typicalCargo[] = {QCLASS(Rifleman)};
 };
 
-class GCLASS(TyphoonAmmo);
-class CLASS(TyphoonAmmo): GCLASS(TyphoonAmmo) {
+class GCLASS(Typhoon_Ammo);
+class CLASS(Typhoon_Ammo): GCLASS(Typhoon_Ammo) {
     SCOPE_DLC;
     faction = QPCLASS(t2_opfor);
     side = 0;
@@ -43,8 +43,8 @@ class CLASS(TyphoonAmmo): GCLASS(TyphoonAmmo) {
     typicalCargo[] = {QCLASS(Rifleman)};
 };
 
-class GCLASS(TyphoonRepair);
-class CLASS(TyphoonRepair): GCLASS(TyphoonRepair) {
+class GCLASS(Typhoon_Repair);
+class CLASS(Typhoon_Repair): GCLASS(Typhoon_Repair) {
     SCOPE_DLC;
     faction = QPCLASS(t2_opfor);
     side = 0;
@@ -55,8 +55,8 @@ class CLASS(TyphoonRepair): GCLASS(TyphoonRepair) {
     typicalCargo[] = {QCLASS(Rifleman)};
 };
 
-class GCLASS(TyphoonMedical);
-class CLASS(TyphoonMedical): GCLASS(TyphoonMedical) {
+class GCLASS(Typhoon_Medical);
+class CLASS(Typhoon_Medical): GCLASS(Typhoon_Medical) {
     SCOPE_DLC;
     faction = QPCLASS(t2_opfor);
     side = 0;
@@ -66,8 +66,8 @@ class CLASS(TyphoonMedical): GCLASS(TyphoonMedical) {
     typicalCargo[] = {QCLASS(Rifleman)};
 };
 
-class GCLASS(TyphoonFlatbed);
-class CLASS(TyphoonFlatbed): GCLASS(TyphoonFlatbed) {
+class GCLASS(Typhoon_Flatbed);
+class CLASS(Typhoon_Flatbed): GCLASS(Typhoon_Flatbed) {
     SCOPE_DLC;
     faction = QPCLASS(t2_opfor);
     side = 0;

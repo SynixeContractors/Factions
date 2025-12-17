@@ -1,5 +1,5 @@
 class I_Boat_Armed_01_hmg;
-class GCLASS(AssaultBoatHMG): I_Boat_Armed_01_hmg {
+class GCLASS(AssaultBoat_HMG): I_Boat_Armed_01_hmg {
     displayName = "Assault Boat (HMG)";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
@@ -11,7 +11,7 @@ class GCLASS(AssaultBoatHMG): I_Boat_Armed_01_hmg {
 };
 
 class I_Boat_Armed_01_minigun_F;
-class GCLASS(AssaultBoatMinigun): I_Boat_Armed_01_minigun_F {
+class GCLASS(AssaultBoat_Minigun): I_Boat_Armed_01_minigun_F {
     displayName = "Assault Boat (Minigun)";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;

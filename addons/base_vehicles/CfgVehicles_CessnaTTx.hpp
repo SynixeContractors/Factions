@@ -9,7 +9,7 @@ class GCLASS(CessnaTTx): C_Plane_Civil_01_F {
 };
 
 class C_Plane_Civil_01_racing_F;
-class GCLASS(CessnaTTxRacing): C_Plane_Civil_01_racing_F {
+class GCLASS(CessnaTTx_Racing): C_Plane_Civil_01_racing_F {
     SCOPE_DLC;
     faction = QGCLASS(base_vehicles);
     displayName = "Cessna TTx Racing";

@@ -144,7 +144,7 @@ class GCLASS(MD500E): B_Heli_Light_01_F {
 };
 
 class B_Heli_Light_01_dynamicLoadout_F;
-class GCLASS(MD500EArmed): B_Heli_Light_01_dynamicLoadout_F {
+class GCLASS(MD500E_Armed): B_Heli_Light_01_dynamicLoadout_F {
     displayName ="MD 500E (Armed)";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;

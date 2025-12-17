@@ -10,8 +10,8 @@ class CLASS(Ram): GCLASS(Ram) {
     typicalCargo[] = {QCLASS(Rifleman)};
 };
 
-class GCLASS(RamCovered);
-class CLASS(RamCovered): GCLASS(RamCovered) {
+class GCLASS(Ram_Covered);
+class CLASS(Ram_Covered): GCLASS(Ram_Covered) {
     SCOPE_DLC;
     faction = QPCLASS(t2_opfor);
     side = 0;
@@ -22,8 +22,8 @@ class CLASS(RamCovered): GCLASS(RamCovered) {
     typicalCargo[] = {QCLASS(Rifleman)};
 };
 
-class GCLASS(RamHMG);
-class CLASS(RamHMG): GCLASS(RamHMG) {
+class GCLASS(Ram_HMG);
+class CLASS(Ram_HMG): GCLASS(Ram_HMG) {
     SCOPE_DLC;
     faction = QPCLASS(t2_opfor);
     side = 0;
@@ -34,8 +34,8 @@ class CLASS(RamHMG): GCLASS(RamHMG) {
     typicalCargo[] = {QCLASS(Rifleman), QCLASS(Rifleman)};
 };
 
-class GCLASS(RamComms);
-class CLASS(RamComms): GCLASS(RamComms) {
+class GCLASS(Ram_Comms);
+class CLASS(Ram_Comms): GCLASS(Ram_Comms) {
     SCOPE_DLC;
     faction = QPCLASS(t2_opfor);
     side = 0;
@@ -46,8 +46,8 @@ class CLASS(RamComms): GCLASS(RamComms) {
     typicalCargo[] = {QCLASS(Rifleman)};
 };
 
-class GCLASS(RamMRL);
-class CLASS(RamMRL): GCLASS(RamMRL) {
+class GCLASS(Ram_MRL);
+class CLASS(Ram_MRL): GCLASS(Ram_MRL) {
     SCOPE_DLC;
     faction = QPCLASS(t2_opfor);
     side = 0;
@@ -58,8 +58,8 @@ class CLASS(RamMRL): GCLASS(RamMRL) {
     typicalCargo[] = {QCLASS(Rifleman), QCLASS(Rifleman)};
 };
 
-class GCLASS(RamFuel);
-class CLASS(RamFuel): GCLASS(RamFuel) {
+class GCLASS(Ram_Fuel);
+class CLASS(Ram_Fuel): GCLASS(Ram_Fuel) {
     SCOPE_DLC;
     faction = QPCLASS(t2_opfor);
     side = 0;
@@ -70,8 +70,8 @@ class CLASS(RamFuel): GCLASS(RamFuel) {
     typicalCargo[] = {QCLASS(Rifleman)};
 };
 
-class GCLASS(RamMinigun);
-class CLASS(RamMinigun): GCLASS(RamMinigun) {
+class GCLASS(Ram_Minigun);
+class CLASS(Ram_Minigun): GCLASS(Ram_Minigun) {
     SCOPE_DLC;
     faction = QPCLASS(t2_opfor);
     side = 0;
@@ -82,8 +82,8 @@ class CLASS(RamMinigun): GCLASS(RamMinigun) {
     typicalCargo[] = {QCLASS(Rifleman), QCLASS(Rifleman)};
 };
 
-class GCLASS(RamAT);
-class CLASS(RamAT): GCLASS(RamAT) {
+class GCLASS(Ram_AT);
+class CLASS(Ram_AT): GCLASS(Ram_AT) {
     SCOPE_DLC;
     faction = QPCLASS(t2_opfor);
     side = 0;
@@ -94,8 +94,8 @@ class CLASS(RamAT): GCLASS(RamAT) {
     typicalCargo[] = {QCLASS(Rifleman), QCLASS(Rifleman)};
 };
 
-class GCLASS(RamAA);
-class CLASS(RamAA): GCLASS(RamAA) {
+class GCLASS(Ram_AA);
+class CLASS(Ram_AA): GCLASS(Ram_AA) {
     SCOPE_DLC;
     faction = QPCLASS(t2_opfor);
     side = 0;

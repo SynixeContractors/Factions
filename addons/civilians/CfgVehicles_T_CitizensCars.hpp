@@ -1,18 +1,18 @@
-class CLASS2(JayBox,NATION): GCLASS(JayBox) {
+class CLASS2(Jay_Box,NATION): GCLASS(Jay_Box) {
     SCOPE_DLC;
     faction = QCLASS(NATION);
     crew = QUOTE(CLASS2(Citizen_Polo_Shorts,NATION));
     typicalCargo[] = {QUOTE(CLASS2(Citizen_Polo_Shorts,NATION))};
 };
 
-class CLASS2(JayFlatbed,NATION): GCLASS(JayFlatbed) {
+class CLASS2(Jay_Flatbed,NATION): GCLASS(Jay_Flatbed) {
     SCOPE_DLC;
     faction = QCLASS(NATION);
     crew = QUOTE(CLASS2(Citizen_Polo_Shorts,NATION));
     typicalCargo[] = {QUOTE(CLASS2(Citizen_Polo_Shorts,NATION))};
 };
 
-class CLASS2(JayFuel,NATION): GCLASS(JayFuel) {
+class CLASS2(Jay_Fuel,NATION): GCLASS(Jay_Fuel) {
     SCOPE_DLC;
     faction = QCLASS(NATION);
     crew = QUOTE(CLASS2(Citizen_Polo_Shorts,NATION));
@@ -68,14 +68,14 @@ class CLASS2(OffroadCovered,NATION): GCLASS(OffroadCovered) {
     typicalCargo[] = {QUOTE(CLASS2(Citizen_Polo_Shorts,NATION))};
 };
 
-class CLASS2(OffroadComms,NATION): GCLASS(OffroadComms) {
+class CLASS2(Offroad_Comms,NATION): GCLASS(Offroad_Comms) {
     SCOPE_DLC;
     faction = QCLASS(NATION);
     crew = QUOTE(CLASS2(Citizen_Polo_Shorts,NATION));
     typicalCargo[] = {QUOTE(CLASS2(Citizen_Polo_Shorts,NATION))};
 };
 
-class CLASS2(OffroadServices,NATION): GCLASS(OffroadServices) {
+class CLASS2(Offroad_Services,NATION): GCLASS(Offroad_Services) {
     SCOPE_DLC;
     faction = QCLASS(NATION);
     crew = QUOTE(CLASS2(Citizen_Polo_Shorts,NATION));

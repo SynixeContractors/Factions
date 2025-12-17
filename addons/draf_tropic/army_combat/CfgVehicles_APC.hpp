@@ -1,5 +1,5 @@
-class GCLASS(OtokarUnarmed);
-class CLASS(OtokarUnarmed): GCLASS(OtokarUnarmed) {
+class GCLASS(Otokar);
+class CLASS(Otokar): GCLASS(Otokar) {
     SCOPE_DLC;
     faction = QPCLASS(t2_opfor);
     side = 0;
@@ -9,8 +9,8 @@ class CLASS(OtokarUnarmed): GCLASS(OtokarUnarmed) {
     typicalCargo[] = {QCLASS(Crewman)};
 };
 
-class GCLASS(OtokarHMG);
-class CLASS(OtokarHMG): GCLASS(OtokarHMG) {
+class GCLASS(Otokar_HMG);
+class CLASS(Otokar_HMG): GCLASS(Otokar_HMG) {
     SCOPE_DLC;
     faction = QPCLASS(t2_opfor);
     side = 0;
@@ -20,8 +20,8 @@ class CLASS(OtokarHMG): GCLASS(OtokarHMG) {
     typicalCargo[] = {QCLASS(Crewman), QCLASS(Crewman)};
 };
 
-class GCLASS(OtokarRCWS);
-class CLASS(OtokarRCWS): GCLASS(OtokarRCWS) {
+class GCLASS(Otokar_RCWS);
+class CLASS(Otokar_RCWS): GCLASS(Otokar_RCWS) {
     SCOPE_DLC;
     faction = QPCLASS(t2_opfor);
     side = 0;

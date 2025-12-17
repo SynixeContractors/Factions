@@ -99,7 +99,7 @@ class Truck_02_transport_base_F: Truck_02_base_F {
         };
     };
 };
-class GCLASS(LUTTransport): Truck_02_transport_base_F {
+class GCLASS(LUT_Transport): Truck_02_transport_base_F {
     displayName = "LUT (Transport)";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
@@ -109,7 +109,7 @@ class GCLASS(LUTTransport): Truck_02_transport_base_F {
     ace_refuel_fuelCapacity = 210;
 };
 
-class GCLASS(LUTTransportCovered): Truck_02_base_F {
+class GCLASS(LUT_TransportCovered): Truck_02_base_F {
     displayName = "LUT (Transport Covered)";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
@@ -120,7 +120,7 @@ class GCLASS(LUTTransportCovered): Truck_02_base_F {
 };
 
 class Truck_02_box_base_F;
-class GCLASS(LUTRepair): Truck_02_box_base_F {
+class GCLASS(LUT_Repair): Truck_02_box_base_F {
     displayName = "LUT (Repair)";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
@@ -193,7 +193,7 @@ class GCLASS(LUTRepair): Truck_02_box_base_F {
 };
 
 class Truck_02_medical_base_F;
-class GCLASS(LUTMedical): Truck_02_medical_base_F {
+class GCLASS(LUT_Medical): Truck_02_medical_base_F {
     displayName = "LUT (Medical)";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
@@ -276,7 +276,7 @@ class GCLASS(LUTMedical): Truck_02_medical_base_F {
 };
 
 class Truck_02_fuel_base_F;
-class GCLASS(LUTFuel): Truck_02_fuel_base_F {
+class GCLASS(LUT_Fuel): Truck_02_fuel_base_F {
     displayName = "LUT (Fuel)";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
@@ -364,7 +364,7 @@ class GCLASS(LUTFuel): Truck_02_fuel_base_F {
 };
 
 class Truck_02_flatbed_base_lxWS;
-class GCLASS(LUTFlatbed): Truck_02_flatbed_base_lxWS {
+class GCLASS(LUT_Flatbed): Truck_02_flatbed_base_lxWS {
     displayName = "LUT (Flatbed)";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
@@ -497,7 +497,7 @@ class GCLASS(LUTFlatbed): Truck_02_flatbed_base_lxWS {
 };
 
 class Truck_02_Ammo_base_F;
-class GCLASS(LUTAmmo): Truck_02_Ammo_base_F {
+class GCLASS(LUT_Ammo): Truck_02_Ammo_base_F {
     displayName = "LUT (Ammo)";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
@@ -550,7 +550,7 @@ class GCLASS(LUTAmmo): Truck_02_Ammo_base_F {
 };
 
 class Truck_02_MRL_base_F;
-class GCLASS(LUTMRL): Truck_02_MRL_base_F {
+class GCLASS(LUT_MRL): Truck_02_MRL_base_F {
     displayName = "LUT (MRL)";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
@@ -613,7 +613,7 @@ class GCLASS(LUTMRL): Truck_02_MRL_base_F {
 };
 
 class Truck_02_aa_base_lxWS;
-class GCLASS(LUTAA): Truck_02_aa_base_lxWS {
+class GCLASS(LUT_AA): Truck_02_aa_base_lxWS {
     displayName = "LUT (AA)";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;

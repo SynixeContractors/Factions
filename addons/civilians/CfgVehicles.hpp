@@ -10,14 +10,14 @@ class CfgVehicles {
     // Cars
     class GCLASS(Hatchback);
     class GCLASS(HatchbackSport);
-    class GCLASS(JayBox);
-    class GCLASS(JayFlatbed);
-    class GCLASS(JayFuel);
+    class GCLASS(Jay_Box);
+    class GCLASS(Jay_Flatbed);
+    class GCLASS(Jay_Fuel);
     class GCLASS(Jeep);
     class GCLASS(Offroad);
     class GCLASS(OffroadCovered);
-    class GCLASS(OffroadComms);
-    class GCLASS(OffroadServices);
+    class GCLASS(Offroad_Comms);
+    class GCLASS(Offroad_Services);
     class GCLASS(SUV);
     class GCLASS(Tractor);
 
@@ -38,7 +38,7 @@ class CfgVehicles {
 
     // Planes
     class GCLASS(CessnaTTx);
-    class GCLASS(CessnaTTxRacing);
+    class GCLASS(CessnaTTx_Racing);
 
     @For(["Virelia", "Calvane", "Drovak", "Livonia"])
         class CLASS(Base_$1): CLASS(Base) {

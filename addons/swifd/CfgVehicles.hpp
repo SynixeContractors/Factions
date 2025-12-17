@@ -1,6 +1,6 @@
 class CfgVehicles {
-    class GCLASS(VanCargo);
-    class CLASS(van): GCLASS(VanCargo) {
+    class GCLASS(Van_Cargo);
+    class CLASS(Van): GCLASS(Van_Cargo) {
         SCOPE_DLC;
         faction = QCLASS(civilian);
         displayName = "Van (Cargo)";

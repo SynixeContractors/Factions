@@ -79,7 +79,7 @@ class GCLASS(Mohawk): I_Heli_Transport_02_F {
 };
 
 class Aegis_C_Heli_Transport_02_VIP_F;
-class GCLASS(MohawkExecutive): Aegis_C_Heli_Transport_02_VIP_F {
+class GCLASS(Mohawk_Executive): Aegis_C_Heli_Transport_02_VIP_F {
     displayName = "CH-49 Mohawk (Executive)";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;

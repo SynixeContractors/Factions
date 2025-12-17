@@ -9,8 +9,8 @@ class CLASS(Jeep): GCLASS(Jeep) {
     typicalCargo[] = {QCLASS(AidWorker)};
 };
 
-class GCLASS(VanAmbulance);
-class CLASS(VanAmbulance): GCLASS(VanAmbulance) {
+class GCLASS(Van_Ambulance);
+class CLASS(Van_Ambulance): GCLASS(Van_Ambulance) {
     SCOPE_DLC;
     faction = QCLASS(civilian);
     textureList[] = {"IdapAmbulance",1};
@@ -19,8 +19,8 @@ class CLASS(VanAmbulance): GCLASS(VanAmbulance) {
     crew = QCLASS(Paramedic);
     typicalCargo[] = {QCLASS(Paramedic)};
 };
-class GCLASS(VanTransport);
-class CLASS(VanTransport): GCLASS(VanTransport) {
+class GCLASS(Van_Transport);
+class CLASS(Van_Transport): GCLASS(Van_Transport) {
     SCOPE_DLC;
     faction = QCLASS(civilian);
     textureList[] = {"IDAP",1};
@@ -29,8 +29,8 @@ class CLASS(VanTransport): GCLASS(VanTransport) {
     crew = QCLASS(AidWorker);
     typicalCargo[] = {QCLASS(AidWorker)};
 };
-class GCLASS(VanCargo);
-class CLASS(VanCargo): GCLASS(VanCargo) {
+class GCLASS(Van_Cargo);
+class CLASS(Van_Cargo): GCLASS(Van_Cargo) {
     SCOPE_DLC;
     faction = QCLASS(civilian);
     textureList[] = {"IDAP",1};
@@ -50,8 +50,8 @@ class CLASS(Offroad): GCLASS(Offroad) {
     typicalCargo[] = {QCLASS(AidWorker)};
     hiddenSelectionsTextures[] = {"\A3\Soft_F_Orange\Offroad_01\Data\Offroad_01_ext_IDAP_CO.paa","\A3\Soft_F_Orange\Offroad_01\Data\Offroad_01_ext_IDAP_CO.paa"};
 };
-class GCLASS(OffroadServices);
-class CLASS(OffroadServices): GCLASS(OffroadServices) {
+class GCLASS(Offroad_Services);
+class CLASS(Offroad_Services): GCLASS(Offroad_Services) {
     SCOPE_DLC;
     faction = QCLASS(civilian);
     textureList[] = {"IDAP",1};
@@ -60,8 +60,8 @@ class CLASS(OffroadServices): GCLASS(OffroadServices) {
     typicalCargo[] = {QCLASS(AidWorker)};
     hiddenSelectionsTextures[] = {"\A3\Soft_F_Orange\Offroad_01\Data\Offroad_01_ext_IDAP_CO.paa","\A3\Soft_F_Orange\Offroad_01\Data\Offroad_01_ext_IDAP_CO.paa"};
 };
-class GCLASS(OffroadComms);
-class CLASS(OffroadComms): GCLASS(OffroadComms) {
+class GCLASS(Offroad_Comms);
+class CLASS(Offroad_Comms): GCLASS(Offroad_Comms) {
     SCOPE_DLC;
     faction = QCLASS(civilian);
     textureList[] = {"IDAP",1};
@@ -81,8 +81,8 @@ class CLASS(Ram): GCLASS(Ram) {
     crew = QCLASS(AidWorker);
     typicalCargo[] = {QCLASS(AidWorker)};
 };
-class GCLASS(RamCovered);
-class CLASS(RamCovered): GCLASS(RamCovered) {
+class GCLASS(Ram_Covered);
+class CLASS(Ram_Covered): GCLASS(Ram_Covered) {
     SCOPE_DLC;
     faction = QCLASS(civilian);
     textureList[] = {"IDAP",1};
@@ -91,8 +91,8 @@ class CLASS(RamCovered): GCLASS(RamCovered) {
     crew = QCLASS(AidWorker);
     typicalCargo[] = {QCLASS(AidWorker)};
 };
-// class GCLASS(RamWater);
-// class CLASS(RamWater): GCLASS(RamWater) {
+// class GCLASS(Ram_Water);
+// class CLASS(Ram_Water): GCLASS(Ram_Water) {
 //     SCOPE_DLC;
 //     faction = QCLASS(civilian);
 //     displayName = "Ram 1500 (Water)";
@@ -102,8 +102,8 @@ class CLASS(RamCovered): GCLASS(RamCovered) {
 //     crew = QCLASS(AidWorker);
 //     typicalCargo[] = {QCLASS(AidWorker)};
 // };
-class GCLASS(RamFuel);
-class CLASS(RamFuel): GCLASS(RamFuel) {
+class GCLASS(Ram_Fuel);
+class CLASS(Ram_Fuel): GCLASS(Ram_Fuel) {
     SCOPE_DLC;
     faction = QCLASS(civilian);
     textureList[] = {"IDAP",1};

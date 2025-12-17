@@ -1,5 +1,5 @@
-class GCLASS(LUTTransport);
-class CLASS(LUTTransport): GCLASS(LUTTransport) {
+class GCLASS(LUT_Transport);
+class CLASS(LUT_Transport): GCLASS(LUT_Transport) {
     SCOPE_DLC;
     faction = QPCLASS(t3_blufor);
     side = 1;
@@ -10,8 +10,8 @@ class CLASS(LUTTransport): GCLASS(LUTTransport) {
     typicalCargo[] = {QCLASS(Rifleman)};
 };
 
-class GCLASS(LUTTransportCovered);
-class CLASS(LUTTransportCovered): GCLASS(LUTTransportCovered) {
+class GCLASS(LUT_TransportCovered);
+class CLASS(LUT_TransportCovered): GCLASS(LUT_TransportCovered) {
     SCOPE_DLC;
     faction = QPCLASS(t3_blufor);
     side = 1;
@@ -22,8 +22,8 @@ class CLASS(LUTTransportCovered): GCLASS(LUTTransportCovered) {
     typicalCargo[] = {QCLASS(Rifleman)};
 };
 
-class GCLASS(LUTRepair);
-class CLASS(LUTRepair): GCLASS(LUTRepair) {
+class GCLASS(LUT_Repair);
+class CLASS(LUT_Repair): GCLASS(LUT_Repair) {
     SCOPE_DLC;
     faction = QPCLASS(t3_blufor);
     side = 1;
@@ -34,8 +34,8 @@ class CLASS(LUTRepair): GCLASS(LUTRepair) {
     typicalCargo[] = {QCLASS(Rifleman)};
 };
 
-class GCLASS(LUTMedical);
-class CLASS(LUTMedical): GCLASS(LUTMedical) {
+class GCLASS(LUT_Medical);
+class CLASS(LUT_Medical): GCLASS(LUT_Medical) {
     SCOPE_DLC;
     faction = QPCLASS(t3_blufor);
     side = 1;
@@ -46,8 +46,8 @@ class CLASS(LUTMedical): GCLASS(LUTMedical) {
     typicalCargo[] = {QCLASS(Rifleman)};
 };
 
-class GCLASS(LUTFuel);
-class CLASS(LUTFuel): GCLASS(LUTFuel) {
+class GCLASS(LUT_Fuel);
+class CLASS(LUT_Fuel): GCLASS(LUT_Fuel) {
     SCOPE_DLC;
     faction = QPCLASS(t3_blufor);
     side = 1;
@@ -58,8 +58,8 @@ class CLASS(LUTFuel): GCLASS(LUTFuel) {
     typicalCargo[] = {QCLASS(Rifleman)};
 };
 
-class GCLASS(LUTAmmo);
-class CLASS(LUTAmmo): GCLASS(LUTAmmo) {
+class GCLASS(LUT_Ammo);
+class CLASS(LUT_Ammo): GCLASS(LUT_Ammo) {
     SCOPE_DLC;
     faction = QPCLASS(t3_blufor);
     side = 1;
@@ -70,8 +70,8 @@ class CLASS(LUTAmmo): GCLASS(LUTAmmo) {
     typicalCargo[] = {QCLASS(Rifleman)};
 };
 
-class GCLASS(LUTMRL);
-class CLASS(LUTMRL): GCLASS(LUTMRL) {
+class GCLASS(LUT_MRL);
+class CLASS(LUT_MRL): GCLASS(LUT_MRL) {
     SCOPE_DLC;
     faction = QPCLASS(t3_blufor);
     side = 1;

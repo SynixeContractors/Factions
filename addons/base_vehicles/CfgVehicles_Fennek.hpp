@@ -27,7 +27,7 @@ class GCLASS(Fennek): I_MRAP_03_F {
 };
 
 class I_MRAP_03_hmg_F;
-class GCLASS(FennekHMG): I_MRAP_03_hmg_F {
+class GCLASS(Fennek_HMG): I_MRAP_03_hmg_F {
     displayName = "Fennek (HMG)";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
@@ -55,7 +55,7 @@ class GCLASS(FennekHMG): I_MRAP_03_hmg_F {
 };
 
 class I_MRAP_03_gmg_F;
-class GCLASS(FennekGMG): I_MRAP_03_gmg_F {
+class GCLASS(Fennek_GMG): I_MRAP_03_gmg_F {
     displayName = "Fennek (GMG)";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;

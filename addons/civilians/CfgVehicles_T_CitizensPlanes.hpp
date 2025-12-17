@@ -6,7 +6,7 @@ class CLASS2(CessnaTTx,NATION): GCLASS(CessnaTTx) {
     typicalCargo[] = {QUOTE(CLASS2(Citizen_PilotPlane,NATION))};
 };
 
-class CLASS2(CessnaTTxRacing,NATION): GCLASS(CessnaTTxRacing) {
+class CLASS2(CessnaTTx_Racing,NATION): GCLASS(CessnaTTx_Racing) {
     SCOPE_DLC;
     faction = QCLASS(NATION);
     textureList[] = {"Racing",1};

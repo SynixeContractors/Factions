@@ -11,7 +11,7 @@ class GCLASS(Puma): C_Heli_EC_01_civ_RF {
 };
 
 class C_Heli_EC_04_rescue_RF;
-class GCLASS(PumaRescue): C_Heli_EC_04_rescue_RF {
+class GCLASS(Puma_Rescue): C_Heli_EC_04_rescue_RF {
     displayName ="H225 Super Puma (Rescue)";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
@@ -23,7 +23,7 @@ class GCLASS(PumaRescue): C_Heli_EC_04_rescue_RF {
 };
 
 class I_Heli_EC_02_RF;
-class GCLASS(PumaPylons): I_Heli_EC_02_RF {
+class GCLASS(Puma_Pylons): I_Heli_EC_02_RF {
     displayName ="H225M Super Couagar";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
