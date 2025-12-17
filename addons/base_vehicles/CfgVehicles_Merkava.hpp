@@ -31,6 +31,7 @@ class GCLASS(Merkava): B_MBT_01_cannon_F {
     EMPTY_INVENTORY;
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
+    ace_refuel_fuelCapacity = 1400;
     class TextureSources {
       class Sand {
         displayName = "Sand (Desert Net)";
@@ -152,6 +153,7 @@ class GCLASS(Merkava_TUSK): B_MBT_01_TUSK_F {
     EMPTY_INVENTORY;
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
+    ace_refuel_fuelCapacity = 1400;
     class TextureSources {
       class Sand {
         displayName = "Sand (Desert Net)";

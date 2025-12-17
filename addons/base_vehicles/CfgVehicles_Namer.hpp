@@ -35,6 +35,7 @@ class GCLASS(Namer): MU_NATO_Panther_unarmed {
     EMPTY_INVENTORY;
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
+    ace_refuel_fuelCapacity = 1400;
     class TextureSources {
       class Sand {
         displayName = "Sand (Desert Net)";
@@ -127,6 +128,7 @@ class GCLASS(Namer_RCWS): B_APC_Tracked_01_rcws_F {
     EMPTY_INVENTORY;
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
+    ace_refuel_fuelCapacity = 1400;
     class TextureSources {
       class Sand {
         displayName = "Sand (Desert Net)";
@@ -252,6 +254,7 @@ class GCLASS(Namer_CEV): B_APC_Tracked_01_CRV_F {
     EMPTY_INVENTORY;
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
+    ace_refuel_fuelCapacity = 1400;
     class TextureSources {
       class Sand {
         displayName = "Sand (Desert Net)";
@@ -373,6 +376,7 @@ class GCLASS(Namer_AA): B_APC_Tracked_01_AA_F {
     EMPTY_INVENTORY;
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
+    ace_refuel_fuelCapacity = 1400;
     class TextureSources {
       class Sand {
         displayName = "Sand (Desert Net)";
