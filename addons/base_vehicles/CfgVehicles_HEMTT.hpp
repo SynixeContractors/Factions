@@ -66,7 +66,7 @@ class GCLASS(HEMTT): B_Truck_01_mover_F {
     };
 };
 class B_Truck_01_cargo_F;
-class GCLASS(HEMTT_flatbed): B_Truck_01_cargo_F {
+class GCLASS(HEMTT_Flatbed): B_Truck_01_cargo_F {
     displayName = "HEMTT (Cargo)";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
@@ -77,7 +77,7 @@ class GCLASS(HEMTT_flatbed): B_Truck_01_cargo_F {
 };
 
 class B_Truck_01_repair_F;
-class GCLASS(HEMTT_repair): B_Truck_01_repair_F {
+class GCLASS(HEMTT_Repair): B_Truck_01_repair_F {
     displayName = "HEMTT (Repair)";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
@@ -87,7 +87,7 @@ class GCLASS(HEMTT_repair): B_Truck_01_repair_F {
     #include "textures/HEMTTContainer.hpp"
 };
 class B_Truck_01_box_F;
-class GCLASS(HEMTT_container): B_Truck_01_box_F {
+class GCLASS(HEMTT_Container): B_Truck_01_box_F {
     displayName = "HEMTT (Container)";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
@@ -98,7 +98,7 @@ class GCLASS(HEMTT_container): B_Truck_01_box_F {
 };
 
 class B_Truck_01_transport_F;
-class GCLASS(HEMTT_bench): B_Truck_01_transport_F {
+class GCLASS(HEMTT_Bench): B_Truck_01_transport_F {
     displayName = "HEMTT (Transport)";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
@@ -108,7 +108,7 @@ class GCLASS(HEMTT_bench): B_Truck_01_transport_F {
     #include "textures/HEMTTTransport.hpp"
 };
 class B_Truck_01_covered_F;
-class GCLASS(HEMTT_covered): B_Truck_01_covered_F {
+class GCLASS(HEMTT_Covered): B_Truck_01_covered_F {
     displayName = "HEMTT (Transport, Covered)";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
@@ -118,7 +118,7 @@ class GCLASS(HEMTT_covered): B_Truck_01_covered_F {
     #include "textures/HEMTTTransport.hpp"
 };
 class B_Truck_01_medical_F;
-class GCLASS(HEMTT_medical): B_Truck_01_medical_F {
+class GCLASS(HEMTT_Medical): B_Truck_01_medical_F {
     displayName = "HEMTT (Medical)";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
