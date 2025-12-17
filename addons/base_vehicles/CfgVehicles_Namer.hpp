@@ -28,7 +28,7 @@
         };
 
 class MU_NATO_Panther_unarmed;
-class CLASS(Namer): MU_NATO_Panther_unarmed {
+class GCLASS(Namer): MU_NATO_Panther_unarmed {
     displayName = "Namer";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
@@ -120,7 +120,7 @@ class CLASS(Namer): MU_NATO_Panther_unarmed {
 };
 
 class B_APC_Tracked_01_rcws_F;
-class CLASS(Namer_RCWS): B_APC_Tracked_01_rcws_F {
+class GCLASS(Namer_RCWS): B_APC_Tracked_01_rcws_F {
     displayName = "Namer (RCWS)";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
@@ -245,7 +245,7 @@ class CLASS(Namer_RCWS): B_APC_Tracked_01_rcws_F {
         };
 
 class B_APC_Tracked_01_CRV_F;
-class CLASS(Namer_CEV): B_APC_Tracked_01_CRV_F {
+class GCLASS(Namer_CEV): B_APC_Tracked_01_CRV_F {
     displayName = "Namer (CEV)";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
@@ -366,7 +366,7 @@ class CLASS(Namer_CEV): B_APC_Tracked_01_CRV_F {
         };
 
 class B_APC_Tracked_01_AA_F;
-class CLASS(Namer_AA): B_APC_Tracked_01_AA_F {
+class GCLASS(Namer_AA): B_APC_Tracked_01_AA_F {
     displayName = "Namer (AA)";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
