@@ -557,6 +557,18 @@ class GCLASS(BM2_AA): O_APC_Tracked_02_AA_F {
         textures[] = {"\A3_Aegis\Armor_F_Aegis\APC_Tracked_02\Data\APC_Tracked_02_ext_01_AA_RUkhk_CO.paa","\A3_Aegis\Armor_F_Aegis\APC_Tracked_02\Data\APC_Tracked_02_ext_02_RUkhk_CO.paa","\A3_Aegis\Armor_F_Aegis\APC_Tracked_02\Data\APC_Tracked_01_AA_Tower_RUkhk_CO.paa","\A3_Aegis\Armor_F_Aegis\Data\camonet_RUS_green_CO.paa","\A3_Aegis\Armor_F_Aegis\Data\cage_RUkhk_CO.paa"};
         factions[] = {};
       };
+      class Sep_01
+      {
+        displayName = "Separatists";
+        textures[] = {
+          "\A3_Opf\Armor_F_Opf\APC_Tracked_02\Data\APC_Tracked_02_ext_01_Opf_CO.paa",
+          "\A3_Aegis\Armor_F_Aegis\APC_Tracked_02\Data\APC_Tracked_02_ext_02_RUkhk_CO.paa",
+          "\A3_Aegis\Armor_F_Aegis\APC_Tracked_02\Data\APC_Tracked_01_AA_Tower_RUkhk_CO.paa",
+          "\A3_Aegis\Armor_F_Aegis\Data\camonet_RUS_green_CO.paa",
+          "\A3_Aegis\Armor_F_Aegis\Data\cage_RUkhk_CO.paa"
+        };
+        factions[] = {};
+      };
       class SFIA
       {
         displayName = "Mudwalker";
