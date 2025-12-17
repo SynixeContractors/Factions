@@ -269,7 +269,24 @@ textures[] = {\
   CAMONET,\
   "\A3_Aegis\Armor_F_Aegis\Data\cage_RUkhk_CO.paa"\
 };
-
+#define IFV2_SAND(CAMONET) \
+textures[] = {\
+    "lxws\vehicles_f_lxws\data\APC_Tracked_02\kamysh_sand1_co.paa",\
+    "lxws\vehicles_f_lxws\data\APC_Tracked_02\kamysh_sand2_co.paa",\
+    "lxws\vehicles_f_lxws\data\APC_Tracked_02\kamysh_sand3_co.paa",\
+    "\A3_Aegis\Armor_F_Aegis\APC_Wheeled_04\Data\APC_Wheeled_04_tow_sand_CO.paa",\
+    CAMONET,\
+    "A3\armor_f\data\cage_csat_co.paa"\
+};
+#define IFV2_TAKISTAN(CAMONET) \
+textures[] = {\
+    "\A3_Atlas\Armor_F_Atlas\APC_Tracked_02\Data\APC_Tracked_02_ext_01_tk_CO.paa",\
+    "\A3_Atlas\Armor_F_Atlas\APC_Tracked_02\Data\APC_Tracked_02_ext_02_tk_CO.paa",\
+    "\A3_Atlas\Armor_F_Atlas\APC_Tracked_02\Data\APC_Tracked_02_ext_02_tk_CO.paa",\
+    "\A3_Atlas\Armor_F_Atlas\APC_Wheeled_04\Data\APC_Wheeled_04_tow_TK_CO.paa",\
+    CAMONET,\
+    "\A3\Armor_F\Data\cage_CSAT_CO.paa"\
+};
 
 class O_APC_Tracked_02_30mm_lxWS;
 class GCLASS(BM2_IFV2):  O_APC_Tracked_02_30mm_lxWS {
@@ -411,6 +428,26 @@ class GCLASS(BM2_IFV2):  O_APC_Tracked_02_30mm_lxWS {
             IFV2_SFIA(NET_WINTER)
             factions[] = {};
         };
+        class Sand {
+            displayName = "Sand (Desert Net)";
+            IFV2_SAND(NET_DESERT)
+            factions[] = {};
+        };
+        class Sand_green {
+            displayName = "Sand (Green Net)";
+            IFV2_SAND(NET_GREEN)
+            factions[] = {};
+        };
+        class Sand_jungle {
+            displayName = "Sand (Jungle Net)";
+            IFV2_SAND(NET_JUNGLE)
+            factions[] = {};
+        };
+        class Sand_winter {
+            displayName = "Sand (Winter Net)";
+            IFV2_SAND(NET_WINTER)
+            factions[] = {};
+        };
         class WoodlandHex {
             displayName = "Hex Woodland (Desert Net)";
             IFV2_WOODLANDHEX(NET_DESERT)
@@ -431,7 +468,26 @@ class GCLASS(BM2_IFV2):  O_APC_Tracked_02_30mm_lxWS {
             IFV2_WOODLANDHEX(NET_WINTER)
             factions[] = {};
         };
-
+        class Takistan {
+            displayName = "Hex Mixed (Desert Net)";
+            IFV2_TAKISTAN(NET_DESERT)
+            factions[] = {};
+        };
+        class Takistan_green {
+            displayName = "Hex Mixed (Green Net)";
+            IFV2_TAKISTAN(NET_GREEN)
+            factions[] = {};
+        };
+        class Takistan_jungle {
+            displayName = "Hex Mixed (Jungle Net)";
+            IFV2_TAKISTAN(NET_JUNGLE)
+            factions[] = {};
+        };
+        class Takistan_winter {
+            displayName = "Hex Mixed (Winter Net)";
+            IFV2_TAKISTAN(NET_WINTER)
+            factions[] = {};
+        };
     };
 };
 
