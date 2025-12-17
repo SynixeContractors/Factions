@@ -121,29 +121,25 @@ class CLASS(Merkava_SPG): B_MBT_01_arty_F {
 #define MERKAVA_MLRS_SAND(CAMONET) \
         textures[] = {\
           "A3\armor_f_gamma\MBT_01\Data\MBT_01_body_CO.paa",\
-          "A3\armor_f_gamma\MBT_01\data\MBT_01_scorcher_co.paa",\
-          "A3\Data_F\Vehicles\Turret_CO.paa",\
+          "A3\armor_f_gamma\MBT_01\data\MBT_01_MLRS_co.paa",\
           CAMONET\
         };
 #define MERKAVA_MLRS_OLIVE(CAMONET) \
         textures[] = {\
           "A3\Armor_F_Exp\MBT_01\data\MBT_01_body_olive_CO.paa",\
-          "A3\Armor_F_Exp\MBT_01\data\MBT_01_scorcher_olive_CO.paa",\
-          "A3\Data_F_Exp\Vehicles\Turret_olive_CO.paa",\
+          "A3\Armor_F_Exp\MBT_01\data\MBT_01_MLRS_olive_co.paa",\
           CAMONET\
         };
 #define MERKAVA_MLRS_WOODLAND(CAMONET) \
         textures[] = {\
           "\A3_Aegis\Armor_F_Aegis\MBT_01\Data\MBT_01_body_wdl_CO.paa",\
-          "\A3_Aegis\Armor_F_Aegis\MBT_01\Data\MBT_01_scorcher_wdl_CO.paa",\
-          "\A3\Data_F_Exp\Vehicles\Turret_olive_CO.paa",\
+          "\A3_Aegis\Armor_F_Aegis\MBT_01\Data\MBT_01_MLRS_wdl_co.paa",\
           CAMONET\
         };
 #define MERKAVA_MLRS_BROWN(CAMONET) \
         textures[] = {\
           "\A3_Atlas\Armor_F_Atlas\MBT_01\Data\MBT_01_body_brown_CO.paa", \
-          "\A3_Atlas\Armor_F_Atlas\MBT_01\Data\MBT_01_scorcher_brown_CO.paa",\
-          "\A3_Atlas\Data_F_Atlas\Vehicles\Turret_brown_CO.paa",\
+          "A3\armor_f_gamma\MBT_01\data\MBT_01_MLRS_co.paa",\
           CAMONET\
         };
 
