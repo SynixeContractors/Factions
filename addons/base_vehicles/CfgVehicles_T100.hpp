@@ -192,32 +192,32 @@ class GCLASS(T100): O_MBT_02_cannon_F {
             factions[] = {};
         };
         class Sep_01 {
-            displayName = "Sep_01 (Desert Net)";
+            displayName = "Separatists (Desert Net)";
             T100_SEP(NET_DESERT)
             factions[] = {};
         };
         class Sep_01_green {
-            displayName = "Sep_01 (Green Net)";
+            displayName = "Separatists (Green Net)";
             T100_SEP(NET_GREEN)
             factions[] = {};
         };
         class Sep_01_jungle {
-            displayName = "Sep_01 (Jungle Net)";
+            displayName = "Separatists (Jungle Net)";
             T100_SEP(NET_JUNGLE)
             factions[] = {};
         };
         class Sep_01_winter {
-            displayName = "Sep_01 (Winter Net)";
+            displayName = "Separatists (Winter Net)";
             T100_SEP(NET_WINTER)
             factions[] = {};
         };
         class Sep_01_bicolor {
-            displayName = "Sep_01 (Bicolor Woodland Net)";
+            displayName = "Separatists (Bicolor Woodland Net)";
             T100_SEP(NET_BICOLOR)
             factions[] = {};
         };
         class Sep_01_woodland {
-            displayName = "Sep_01 (Woodland Net)";
+            displayName = "Separatists (Woodland Net)";
             T100_SEP(NET_WOODLAND)
             factions[] = {};
         };
@@ -294,6 +294,7 @@ class GCLASS(T100_Railgun): O_MBT_02_railgun_F {
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 1200;
     class TextureSources {
+        #ifndef HIDEBROKEN
         class Ardistan {
             displayName = "Ardistan (Desert Net)";
             T100_ARDISTAN(NET_DESERT)
@@ -324,6 +325,7 @@ class GCLASS(T100_Railgun): O_MBT_02_railgun_F {
             T100_ARDISTAN(NET_WOODLAND)
             factions[] = {};
         };
+        #endif
         class Grey {
             displayName = "Grey (Desert Net)";
             T100_GREY(NET_DESERT)
@@ -414,36 +416,38 @@ class GCLASS(T100_Railgun): O_MBT_02_railgun_F {
             T100_HEX(NET_WINTER)
             factions[] = {};
         };
+        #ifndef HIDEBROKEN
         class Sep_01 {
-            displayName = "Sep_01 (Desert Net)";
+            displayName = "Separatists (Desert Net)";
             T100_SEP(NET_DESERT)
             factions[] = {};
         };
         class Sep_01_green {
-            displayName = "Sep_01 (Green Net)";
+            displayName = "Separatists (Green Net)";
             T100_SEP(NET_GREEN)
             factions[] = {};
         };
         class Sep_01_jungle {
-            displayName = "Sep_01 (Jungle Net)";
+            displayName = "Separatists (Jungle Net)";
             T100_SEP(NET_JUNGLE)
             factions[] = {};
         };
         class Sep_01_winter {
-            displayName = "Sep_01 (Winter Net)";
+            displayName = "Separatists (Winter Net)";
             T100_SEP(NET_WINTER)
             factions[] = {};
         };
         class Sep_01_bicolor {
-            displayName = "Sep_01 (Bicolor Woodland Net)";
+            displayName = "Separatists (Bicolor Woodland Net)";
             T100_SEP(NET_BICOLOR)
             factions[] = {};
         };
         class Sep_01_woodland {
-            displayName = "Sep_01 (Woodland Net)";
+            displayName = "Separatists (Woodland Net)";
             T100_SEP(NET_WOODLAND)
             factions[] = {};
         };
+        #endif
         class SFIA {
             displayName = "Mudwalker (Desert Net)";
             T100_SFIA(NET_DESERT)
@@ -489,6 +493,7 @@ class GCLASS(T100_Railgun): O_MBT_02_railgun_F {
             T100_TAKISTAN(NET_WINTER)
             factions[] = {};
         };
+        #ifndef HIDEBROKEN
         class WoodlandHex {
             displayName = "Hex Woodland (Hex Green Net)";
             T100_WOODLANDHEX(NET_GREENHEX)
@@ -504,5 +509,6 @@ class GCLASS(T100_Railgun): O_MBT_02_railgun_F {
             T100_WOODLANDHEX(NET_WINTER)
             factions[] = {};
         };
+        #endif
     };
 };
