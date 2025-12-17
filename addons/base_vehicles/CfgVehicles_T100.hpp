@@ -1,4 +1,4 @@
-#define T100_ARDISTAN(CAMONET) \
+#define T100_ARDISTAN(CAMONET)\
             textures[] = {\
               "\A3_Atlas\Armor_F_Atlas\MBT_02\Data\Atlas_MBT_02_body_ardi_CO.paa",\
               "\A3_Atlas\Armor_F_Atlas\MBT_02\Data\Atlas_MBT_02_turret_ardi_CO.paa",\
@@ -54,8 +54,15 @@
               "\A3_Atlas\Armor_F_Atlas\MBT_02\Data\MBT_02_WHEX_CO.paa",\
               CAMONET\
             };
-class O_A_MBT_02_cannon_F;
-class GCLASS(T100): O_A_MBT_02_cannon_F {
+#define T100_GREY(CAMONET) \
+            textures[] = {\
+              "a3\Armor_F_Decade\MBT_02\Data\MBT_02_body_expo_CO.paa",\
+              "a3\Armor_F_Decade\MBT_02\Data\MBT_02_turret_expo_CO.paa",\
+              "a3\Armor_F_Decade\MBT_02\Data\MBT_02_expo_CO.paa",\
+              CAMONET\
+            };
+class O_MBT_02_cannon_F;
+class GCLASS(T100): O_MBT_02_cannon_F {
     displayName = "T-100";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
@@ -84,6 +91,46 @@ class GCLASS(T100): O_A_MBT_02_cannon_F {
             T100_ARDISTAN(NET_WINTER)
             factions[] = {};
         };
+        class Ardistan_bicolor {
+            displayName = "Ardistan (Bicolor Woodland Net)";
+            T100_ARDISTAN(NET_BICOLOR)
+            factions[] = {};
+        };
+        class Ardistan_woodland {
+            displayName = "Ardistan (Woodland Net)";
+            T100_ARDISTAN(NET_WOODLAND)
+            factions[] = {};
+        };
+        class Grey {
+            displayName = "Grey (Desert Net)";
+            T100_GREY(NET_DESERT)
+            factions[] = {};
+        };
+        class Grey_green {
+            displayName = "Grey (Green Net)";
+            T100_GREY(NET_GREEN)
+            factions[] = {};
+        };
+        class Grey_jungle {
+            displayName = "Grey (Jungle Net)";
+            T100_GREY(NET_JUNGLE)
+            factions[] = {};
+        };
+        class Grey_winter {
+            displayName = "Grey (Winter Net)";
+            T100_GREY(NET_WINTER)
+            factions[] = {};
+        };
+        class Grey_bicolor {
+            displayName = "Grey (Bicolor Woodland Net)";
+            T100_GREY(NET_BICOLOR)
+            factions[] = {};
+        };
+        class Grey_woodland {
+            displayName = "Grey (Woodland Net)";
+            T100_GREY(NET_WOODLAND)
+            factions[] = {};
+        };
         class Green {
             displayName = "Green (Desert Net)";
             T100_GREEN(NET_DESERT)
@@ -102,6 +149,16 @@ class GCLASS(T100): O_A_MBT_02_cannon_F {
         class Green_winter {
             displayName = "Green (Winter Net)";
             T100_GREEN(NET_WINTER)
+            factions[] = {};
+        };
+        class Green_bicolor {
+            displayName = "Green (Bicolor Woodland Net)";
+            T100_GREEN(NET_BICOLOR)
+            factions[] = {};
+        };
+        class Green_woodland {
+            displayName = "Green (Woodland Net)";
+            T100_GREEN(NET_WOODLAND)
             factions[] = {};
         };
         class GreenHex {
@@ -154,24 +211,267 @@ class GCLASS(T100): O_A_MBT_02_cannon_F {
             T100_SEP(NET_WINTER)
             factions[] = {};
         };
+        class Sep_01_bicolor {
+            displayName = "Sep_01 (Bicolor Woodland Net)";
+            T100_SEP(NET_BICOLOR)
+            factions[] = {};
+        };
+        class Sep_01_woodland {
+            displayName = "Sep_01 (Woodland Net)";
+            T100_SEP(NET_WOODLAND)
+            factions[] = {};
+        };
         class SFIA {
-            displayName = "SFIA (Desert Net)";
+            displayName = "Mudwalker (Desert Net)";
             T100_SFIA(NET_DESERT)
             factions[] = {};
         };
         class SFIA_green {
-            displayName = "SFIA (Green Net)";
+            displayName = "Mudwalker (Green Net)";
             T100_SFIA(NET_GREEN)
             factions[] = {};
         };
         class SFIA_jungle {
-            displayName = "SFIA (Jungle Net)";
+            displayName = "Mudwalker (Jungle Net)";
             T100_SFIA(NET_JUNGLE)
             factions[] = {};
         };
         class SFIA_winter {
-            displayName = "SFIA (Winter Net)";
+            displayName = "Mudwalker (Winter Net)";
             T100_SFIA(NET_WINTER)
+            factions[] = {};
+        };
+        class SFIA_bicolor {
+            displayName = "Mudwalker (Bicolor Woodland Net)";
+            T100_SFIA(NET_BICOLOR)
+            factions[] = {};
+        };
+        class SFIA_woodland {
+            displayName = "Mudwalker (Woodland Net)";
+            T100_SFIA(NET_WOODLAND)
+            factions[] = {};
+        };
+        class Takistan {
+            displayName = "Hex Mixed (Hex Green Net)";
+            T100_TAKISTAN(NET_GREENHEX)
+            factions[] = {};
+        };
+        class Takistan_desert {
+            displayName = "Hex Mixed (Hex Ochre Net)";
+            T100_TAKISTAN(NET_HEX)
+            factions[] = {};
+        };
+        class Takistan_winter {
+            displayName = "Hex Mixed (Winter Net)";
+            T100_TAKISTAN(NET_WINTER)
+            factions[] = {};
+        };
+        class WoodlandHex {
+            displayName = "Hex Woodland (Hex Green Net)";
+            T100_WOODLANDHEX(NET_GREENHEX)
+            factions[] = {};
+        };
+        class WoodlandHex_desert {
+            displayName = "Hex Woodland (Hex Ochre Net)";
+            T100_WOODLANDHEX(NET_HEX)
+            factions[] = {};
+        };
+        class WoodlandHex_winter {
+            displayName = "Hex Woodland (Winter Net)";
+            T100_WOODLANDHEX(NET_WINTER)
+            factions[] = {};
+        };
+    };
+};
+
+class O_MBT_02_railgun_F;
+class GCLASS(T100_Railgun): O_MBT_02_railgun_F {
+    displayName = "T-100X (Railgun)";
+    faction = QGCLASS(base_vehicles);
+    SCOPE_DLC_VEHICLE;
+    EMPTY_INVENTORY;
+    crew = "Civilian";
+    typicalCargo[] = {"Soldier"};
+    ace_refuel_fuelCapacity = 1200;
+    class TextureSources {
+        class Ardistan {
+            displayName = "Ardistan (Desert Net)";
+            T100_ARDISTAN(NET_DESERT)
+            factions[] = {};
+        };
+        class Ardistan_green {
+            displayName = "Ardistan (Green Net)";
+            T100_ARDISTAN(NET_GREEN)
+            factions[] = {};
+        };
+        class Ardistan_jungle {
+            displayName = "Ardistan (Jungle Net)";
+            T100_ARDISTAN(NET_JUNGLE)
+            factions[] = {};
+        };
+        class Ardistan_winter {
+            displayName = "Ardistan (Winter Net)";
+            T100_ARDISTAN(NET_WINTER)
+            factions[] = {};
+        };
+        class Ardistan_bicolor {
+            displayName = "Ardistan (Bicolor Woodland Net)";
+            T100_ARDISTAN(NET_BICOLOR)
+            factions[] = {};
+        };
+        class Ardistan_woodland {
+            displayName = "Ardistan (Woodland Net)";
+            T100_ARDISTAN(NET_WOODLAND)
+            factions[] = {};
+        };
+        class Grey {
+            displayName = "Grey (Desert Net)";
+            T100_GREY(NET_DESERT)
+            factions[] = {};
+        };
+        class Grey_green {
+            displayName = "Grey (Green Net)";
+            T100_GREY(NET_GREEN)
+            factions[] = {};
+        };
+        class Grey_jungle {
+            displayName = "Grey (Jungle Net)";
+            T100_GREY(NET_JUNGLE)
+            factions[] = {};
+        };
+        class Grey_winter {
+            displayName = "Grey (Winter Net)";
+            T100_GREY(NET_WINTER)
+            factions[] = {};
+        };
+        class Grey_bicolor {
+            displayName = "Grey (Bicolor Woodland Net)";
+            T100_GREY(NET_BICOLOR)
+            factions[] = {};
+        };
+        class Grey_woodland {
+            displayName = "Grey (Woodland Net)";
+            T100_GREY(NET_WOODLAND)
+            factions[] = {};
+        };
+        class Green {
+            displayName = "Green (Desert Net)";
+            T100_GREEN(NET_DESERT)
+            factions[] = {};
+        };
+        class Green_green {
+            displayName = "Green (Green Net)";
+            T100_GREEN(NET_GREEN)
+            factions[] = {};
+        };
+        class Green_jungle {
+            displayName = "Green (Jungle Net)";
+            T100_GREEN(NET_JUNGLE)
+            factions[] = {};
+        };
+        class Green_winter {
+            displayName = "Green (Winter Net)";
+            T100_GREEN(NET_WINTER)
+            factions[] = {};
+        };
+        class Green_bicolor {
+            displayName = "Green (Bicolor Woodland Net)";
+            T100_GREEN(NET_BICOLOR)
+            factions[] = {};
+        };
+        class Green_woodland {
+            displayName = "Green (Woodland Net)";
+            T100_GREEN(NET_WOODLAND)
+            factions[] = {};
+        };
+        class GreenHex {
+            displayName = "Hex Green (Hex Green Net)";
+            T100_GREENHEX(NET_GREENHEX)
+            factions[] = {};
+        };
+        class GreenHex_desert {
+            displayName = "Hex Green (Hex Ochre Net)";
+            T100_GREENHEX(NET_HEX)
+            factions[] = {};
+        };
+        class GreenHex_winter {
+            displayName = "Hex Green (Winter Net)";
+            T100_GREENHEX(NET_WINTER)
+            factions[] = {};
+        };
+        class Hex {
+            displayName = "Hex Ochre (Hex Green Net)";
+            T100_HEX(NET_GREENHEX)
+            factions[] = {};
+        };
+        class Hex_desert {
+            displayName = "Hex Ochre (Hex Ochre Net)";
+            T100_HEX(NET_HEX)
+            factions[] = {};
+        };
+        class Hex_winter {
+            displayName = "Hex Ochre (Winter Net)";
+            T100_HEX(NET_WINTER)
+            factions[] = {};
+        };
+        class Sep_01 {
+            displayName = "Sep_01 (Desert Net)";
+            T100_SEP(NET_DESERT)
+            factions[] = {};
+        };
+        class Sep_01_green {
+            displayName = "Sep_01 (Green Net)";
+            T100_SEP(NET_GREEN)
+            factions[] = {};
+        };
+        class Sep_01_jungle {
+            displayName = "Sep_01 (Jungle Net)";
+            T100_SEP(NET_JUNGLE)
+            factions[] = {};
+        };
+        class Sep_01_winter {
+            displayName = "Sep_01 (Winter Net)";
+            T100_SEP(NET_WINTER)
+            factions[] = {};
+        };
+        class Sep_01_bicolor {
+            displayName = "Sep_01 (Bicolor Woodland Net)";
+            T100_SEP(NET_BICOLOR)
+            factions[] = {};
+        };
+        class Sep_01_woodland {
+            displayName = "Sep_01 (Woodland Net)";
+            T100_SEP(NET_WOODLAND)
+            factions[] = {};
+        };
+        class SFIA {
+            displayName = "Mudwalker (Desert Net)";
+            T100_SFIA(NET_DESERT)
+            factions[] = {};
+        };
+        class SFIA_green {
+            displayName = "Mudwalker (Green Net)";
+            T100_SFIA(NET_GREEN)
+            factions[] = {};
+        };
+        class SFIA_jungle {
+            displayName = "Mudwalker (Jungle Net)";
+            T100_SFIA(NET_JUNGLE)
+            factions[] = {};
+        };
+        class SFIA_winter {
+            displayName = "Mudwalker (Winter Net)";
+            T100_SFIA(NET_WINTER)
+            factions[] = {};
+        };
+        class SFIA_bicolor {
+            displayName = "Mudwalker (Bicolor Woodland Net)";
+            T100_SFIA(NET_BICOLOR)
+            factions[] = {};
+        };
+        class SFIA_woodland {
+            displayName = "Mudwalker (Woodland Net)";
+            T100_SFIA(NET_WOODLAND)
             factions[] = {};
         };
         class Takistan {
