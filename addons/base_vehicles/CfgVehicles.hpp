@@ -55,6 +55,7 @@ class CfgVehicles {
     // Tanks
     #include "CfgVehicles_T100.hpp"
     #include "CfgVehicles_T100_Artillery.hpp"
+    #include "CfgVehicles_T14.hpp"
     #include "CfgVehicles_Leopard.hpp"
     #include "CfgVehicles_Merkava.hpp"
     #include "CfgVehicles_Merkava_Artillery.hpp"
