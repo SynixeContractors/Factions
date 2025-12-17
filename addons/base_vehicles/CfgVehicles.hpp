@@ -39,6 +39,7 @@ class CfgVehicles {
     #include "CfgVehicles_Otokar.hpp"
     #include "CfgVehicles_Pandur.hpp"
     #include "CfgVehicles_Warrior.hpp"
+    #include "CfgVehicles_BTR.hpp"
     #include "CfgVehicles_BM2T.hpp"
     #include "CfgVehicles_Namer.hpp"
 
