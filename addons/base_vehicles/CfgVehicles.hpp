@@ -15,6 +15,8 @@ class CfgVehicles {
     class Tank_F;
     class Wheeled_APC_F;
     class Offroad_01_base_F;
+    #define HIDEBROKEN
+    //we might be able to fix those textures and its gonna save copypasting
 
     // Cars
     #include "CfgVehicles_Fennek.hpp"
@@ -53,6 +55,8 @@ class CfgVehicles {
 
     // Tanks
     #include "CfgVehicles_T100.hpp"
+    #include "CfgVehicles_T100_Artillery.hpp"
+    #include "CfgVehicles_T14.hpp"
     #include "CfgVehicles_Leopard.hpp"
     #include "CfgVehicles_Merkava.hpp"
     #include "CfgVehicles_Merkava_Artillery.hpp"
