@@ -280,7 +280,7 @@ class GCLASS(BTR_IFV): O_R_APC_Wheeled_04_cannon_F {
         textures[] = {
           "\A3_Aegis\Armor_F_Aegis\APC_Wheeled_04\Data\APC_Wheeled_04_body_export_Tura_CO.paa",
           "\A3_Aegis\Armor_F_Aegis\APC_Wheeled_04\Data\APC_Wheeled_04_body2_Tura_CO.paa",
-          "\A3_Aegis\Armor_F_Aegis\APC_Wheeled_04\data\btr100a_turret_Tura_co.paa"
+          "\A3_Aegis\Armor_F_Aegis\APC_Wheeled_04\Data\APC_Wheeled_04_tow_sand_CO.paa",
         };
         factions[] = {};
       };
