@@ -11,6 +11,18 @@
         };
         factions[] = {};
       };
+      class Red {
+        //There doesnt seem to be red containerbed added it as dark
+        displayName = "Red";
+        textures[] = {
+          "\lxRF\vehicles_rf\Truck_01\data\Truck_01_ext_01_fire_CO.paa",
+          "\lxRF\vehicles_rf\Truck_01\data\Truck_01_ext_02_fire_CO.paa",
+          "\a3\Soft_F_Enoch\Truck_01\Data\truck_01_ammo_co.paa",
+          "lxws\vehicles_f_lxws\data\Truck_01\truck_un_cargo_co.paa"
+        };
+        factions[] = {};
+      };
+
       class White {
         displayName = "White";
         textures[] = {
