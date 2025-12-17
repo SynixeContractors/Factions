@@ -28,7 +28,7 @@
         };
 
 class B_MBT_01_arty_F;
-class CLASS(Merkava_SPG): B_MBT_01_arty_F {
+class GCLASS(Merkava_SPG): B_MBT_01_arty_F {
     displayName = "Merkava Sholef (SPG)";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
@@ -144,7 +144,7 @@ class CLASS(Merkava_SPG): B_MBT_01_arty_F {
         };
 
 class B_MBT_01_mlrs_F;
-class CLASS(Merkava_MLRS): B_MBT_01_mlrs_F {
+class GCLASS(Merkava_MLRS): B_MBT_01_mlrs_F {
     displayName = "Merkava Seara (MRL)";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;

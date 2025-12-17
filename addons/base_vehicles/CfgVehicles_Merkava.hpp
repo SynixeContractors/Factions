@@ -24,7 +24,7 @@
         };
 
 class B_MBT_01_cannon_F;
-class CLASS(Merkava): B_MBT_01_cannon_F {
+class GCLASS(Merkava): B_MBT_01_cannon_F {
     displayName = "Merkava Mk. IV";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
@@ -145,7 +145,7 @@ class CLASS(Merkava): B_MBT_01_cannon_F {
         };
 
 class B_MBT_01_TUSK_F;
-class CLASS(Merkava_TUSK): B_MBT_01_TUSK_F {
+class GCLASS(Merkava_TUSK): B_MBT_01_TUSK_F {
     displayName = "Merkava Mk. IV (TUSK)";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
