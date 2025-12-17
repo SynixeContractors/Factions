@@ -100,7 +100,7 @@ class GCLASS(HEMTT_Flatbed): B_Truck_01_cargo_F {
     EMPTY_INVENTORY;
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
-    #include "textures/HEMTTContainer.hpp"
+    #include "textures/HEMTTCargo.hpp"
 };
 
 class B_Truck_01_repair_F;
