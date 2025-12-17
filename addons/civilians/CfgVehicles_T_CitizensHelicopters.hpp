@@ -14,7 +14,7 @@ class CLASS2(Mohawk,NATION): GCLASS(Mohawk) {
     typicalCargo[] = {QUOTE(CLASS2(Citizen_PilotHelicopter,NATION))};
 };
 
-class CLASS2(MohawkExecutive,NATION): GCLASS(MohawkExecutive) {
+class CLASS2(Mohawk_Executive,NATION): GCLASS(Mohawk_Executive) {
     SCOPE_DLC;
     faction = QCLASS(NATION);
     textureList[] = {"Civilian",1};

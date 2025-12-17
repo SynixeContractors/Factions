@@ -31,7 +31,7 @@ class CfgVehicles {
     // Helicopters
     class GCLASS(MD500);
     class GCLASS(Mohawk);
-    class GCLASS(MohawkExecutive);
+    class GCLASS(Mohawk_Executive);
     class GCLASS(Orca);
     class GCLASS(Puma);
     class GCLASS(PumaA);
