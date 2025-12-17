@@ -40,6 +40,7 @@ class CfgVehicles {
     #include "CfgVehicles_Pandur.hpp"
     #include "CfgVehicles_Warrior.hpp"
     #include "CfgVehicles_BM2T.hpp"
+    #include "CfgVehicles_Namer.hpp"
 
     // Boats
     #include "CfgVehicles_AssaultBoat.hpp"
@@ -52,6 +53,8 @@ class CfgVehicles {
     // Tanks
     #include "CfgVehicles_T100.hpp"
     #include "CfgVehicles_Leopard.hpp"
+    #include "CfgVehicles_Merkava.hpp"
+    #include "CfgVehicles_Merkava_Artillery.hpp"
     #include "CfgVehicles_Wiesel.hpp"
 
     // Helicopters
