@@ -1,3 +1,52 @@
+#define LEOPARD_EAF(CAMONET)\
+            textures[] = {\
+                "\A3_Aegis\Armor_F_Aegis\MBT_03\Data\MBT_03_ext01_EAF_CO.paa",\
+                "\A3_Aegis\Armor_F_Aegis\MBT_03\Data\MBT_03_ext02_EAF_CO.paa",\
+                "\A3_Aegis\Armor_F_Aegis\MBT_03\Data\MBT_03_rcws_EAF_CO.paa",\
+                CAMONET\
+            };
+#define LEOPARD_EAFARID(CAMONET)\
+            textures[] = {\
+                "\A3_Aegis\Armor_F_Aegis\MBT_03\Data\MBT_03_ext01_EAF_arid_CO.paa",\
+                "\A3_Aegis\Armor_F_Aegis\MBT_03\Data\MBT_03_ext02_EAF_arid_CO.paa",\
+                "\A3_Aegis\Armor_F_Aegis\MBT_03\Data\MBT_03_rcws_EAF_arid_CO.paa",\
+                CAMONET\
+            };
+#define LEOPARD_AAF(CAMONET)\
+            textures[] = {\
+                "a3\armor_f_epb\mbt_03\data\mbt_03_ext01_co.paa",\
+                "a3\armor_f_epb\mbt_03\data\mbt_03_ext02_co.paa",\
+                "a3\armor_f_epb\mbt_03\data\mbt_03_rcws_co.paa",\
+                CAMONET\
+            };
+#define LEOPARD_KZG(CAMONET)\
+            textures[] = {\
+                "\A3_Atlas\Armor_F_Atlas\MBT_03\Data\MBT_03_ext01_kzg_CO.paa",\
+                "\A3_Atlas\Armor_F_Atlas\MBT_03\Data\MBT_03_ext02_kzg_CO.paa",\
+                "\A3_Atlas\Armor_F_Atlas\MBT_03\Data\MBT_03_rcws_kzg_CO.paa",\
+                CAMONET\
+            };
+#define LEOPARD_GREEN(CAMONET)\
+            textures[] = {\
+                "\A3_Atlas\Armor_F_Atlas\MBT_03\Data\MBT_03_ext01_olive_CO.paa",\
+                "\A3_Atlas\Armor_F_Atlas\MBT_03\Data\MBT_03_ext02_olive_CO.paa",\
+                "\A3_Atlas\Armor_F_Atlas\MBT_03\Data\MBT_03_rcws_olive_CO.paa",\
+                CAMONET\
+            };
+#define LEOPARD_UNA(CAMONET)\
+            textures[] = {\
+                "lxws\vehicles_f_lxws\data\MBT_03\mbt_white_ext01_co.paa",\
+                "lxws\vehicles_f_lxws\data\MBT_03\mbt_white_ext02_co.paa",\
+                "lxws\vehicles_f_lxws\data\MBT_03\mbt_black_rcws_co.paa",\
+                CAMONET\
+            };
+#define LEOPARD_WINTER(CAMONET)\
+            textures[] = {\
+                "go_data_winter\skins\data\go_mbt_03_ext01_natowinter_co.paa",\
+                "go_data_winter\skins\data\go_mbt_03_ext02_natowinter_co.paa",\
+                "go_data_winter\skins\data\go_mbt_03_rcws_natowinter_co.paa",\
+                CAMONET\
+            };
 class I_MBT_03_cannon_F;
 class GCLASS(Leopard2) : I_MBT_03_cannon_F {
     displayName = "Leopard 2A4M+";
@@ -6,186 +55,203 @@ class GCLASS(Leopard2) : I_MBT_03_cannon_F {
     EMPTY_INVENTORY;
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
+    ace_refuel_fuelCapacity = 1200;
     class TextureSources {
+        delete ADF_01;
         class EAF_01 {
-            displayName = "LDF (Geo Woodland)";
+            displayName = "Khaybaran (Desert Net)";
+            LEOPARD_EAF(NET_DESERT)
             factions[] = {};
-            textures[] = {
-                "\A3_Aegis\Armor_F_Aegis\MBT_03\Data\MBT_03_ext01_EAF_CO.paa",
-                "\A3_Aegis\Armor_F_Aegis\MBT_03\Data\MBT_03_ext02_EAF_CO.paa",
-                "\A3_Aegis\Armor_F_Aegis\MBT_03\Data\MBT_03_rcws_EAF_CO.paa",
-                "A3\Armor_F_Enoch\apc_tracked_03\Data\camonet_EAF_green_CO.paa"
-            };
         };
-        class EAF_01_desert {
-            displayName = "LDF (Geo Woodland, Desert Net)";
+        class EAF_01_green {
+            displayName = "LDF (Geo Woodland, Green Net)";
+            LEOPARD_EAF(NET_GREEN)
             factions[] = {};
-            textures[] = {
-                "\A3_Aegis\Armor_F_Aegis\MBT_03\Data\MBT_03_ext01_EAF_CO.paa",
-                "\A3_Aegis\Armor_F_Aegis\MBT_03\Data\MBT_03_ext02_EAF_CO.paa",
-                "\A3_Aegis\Armor_F_Aegis\MBT_03\Data\MBT_03_rcws_EAF_CO.paa",
-                "\A3\Armor_F\Data\camonet_NATO_Desert_CO.paa"
-            };
+        };
+        class EAF_01_jungle {
+            displayName = "LDF (Geo Woodland, Jungle Net)";
+            LEOPARD_EAF(NET_JUNGLE)
+            factions[] = {};
+        };
+        class EAF_01_winter {
+            displayName = "LDF (Geo Woodland, Winter Net)";
+            LEOPARD_EAF(NET_WINTER)
+            factions[] = {};
+        };
+        class EAF_01_bicolor {
+            displayName = "LDF (Geo Woodland, Bicolor Net)";
+            LEOPARD_EAF(NET_BICOLOR)
+            factions[] = {};
+        };
+        class EAF_01_woodland {
+            displayName = "LDF (Geo Woodland, Woodland Net)";
+            LEOPARD_EAF(NET_WOODLAND)
+            factions[] = {};
         };
         class EAF_Arid {
-            displayName = "LDF (Arid)";
+            displayName = "LDF (Arid, Desert Net)";
+            LEOPARD_EAFARID(NET_DESERT)
             factions[] = {};
-            textures[] = {
-                "\A3_Aegis\Armor_F_Aegis\MBT_03\Data\MBT_03_ext01_EAF_arid_CO.paa",
-                "\A3_Aegis\Armor_F_Aegis\MBT_03\Data\MBT_03_ext02_EAF_arid_CO.paa",
-                "\A3_Aegis\Armor_F_Aegis\MBT_03\Data\MBT_03_rcws_EAF_arid_CO.paa",
-                "\A3\Armor_F\Data\camonet_NATO_Desert_CO.paa"
-            };
+        };
+        class EAF_Arid_green {
+            displayName = "LDF (Arid, Green Net)";
+            LEOPARD_EAFARID(NET_GREEN)
+            factions[] = {};
         };
         class EAF_Arid_jungle {
             displayName = "LDF (Arid, Jungle Net)";
+            LEOPARD_EAFARID(NET_JUNGLE)
             factions[] = {};
-            textures[] = {
-                "\A3_Aegis\Armor_F_Aegis\MBT_03\Data\MBT_03_ext01_EAF_arid_CO.paa",
-                "\A3_Aegis\Armor_F_Aegis\MBT_03\Data\MBT_03_ext02_EAF_arid_CO.paa",
-                "\A3_Aegis\Armor_F_Aegis\MBT_03\Data\MBT_03_rcws_EAF_arid_CO.paa",
-                "A3\Armor_F_Enoch\apc_tracked_03\Data\camonet_EAF_green_CO.paa"
-            };
+        };
+        class EAF_Arid_winter {
+            displayName = "LDF (Arid, Winter Net)";
+            LEOPARD_EAFARID(NET_WINTER)
+            factions[] = {};
+        };
+        class EAF_Arid_bicolor {
+            displayName = "LDF (Arid, Bicolor Net)";
+            LEOPARD_EAFARID(NET_BICOLOR)
+            factions[] = {};
+        };
+        class EAF_Arid_woodland {
+            displayName = "LDF (Arid, Woodland Net)";
+            LEOPARD_EAFARID(NET_WOODLAND)
+            factions[] = {};
         };
         class Indep_01 {
-            displayName = "DAP Woodland (DAP Woodland Net)";
-            factions[] = {};
-            textures[] = {
-                "a3\armor_f_epb\mbt_03\data\mbt_03_ext01_co.paa",
-                "a3\armor_f_epb\mbt_03\data\mbt_03_ext02_co.paa",
-                "a3\armor_f_epb\mbt_03\data\mbt_03_rcws_co.paa",
-                "A3\Armor_F\Data\camonet_AAF_Digi_Green_CO.paa"
-            };
-        };
-        class Indep_02 {
-            displayName = "DAP Woodland (DAP Jungle Net)";
-            factions[] = {};
-            textures[] = {
-                "a3\armor_f_epb\mbt_03\data\mbt_03_ext01_co.paa",
-                "a3\armor_f_epb\mbt_03\data\mbt_03_ext02_co.paa",
-                "a3\armor_f_epb\mbt_03\data\mbt_03_rcws_co.paa",
-                "A3\Armor_F\Data\camonet_AAF_Digi_Jungle_CO.paa"
-            };
-        };
-        class Indep_03 {
             displayName = "DAP Woodland (DAP Desert Net)";
             factions[] = {};
-            textures[] = {
-                "a3\armor_f_epb\mbt_03\data\mbt_03_ext01_co.paa",
-                "a3\armor_f_epb\mbt_03\data\mbt_03_ext02_co.paa",
-                "a3\armor_f_epb\mbt_03\data\mbt_03_rcws_co.paa",
-                "A3\Armor_F\Data\camonet_AAF_Digi_Desert_CO.paa"
-            };
+            LEOPARD_AAF(NET_AAFDESERT)
+        };
+        class Indep_01_green {
+            displayName = "DAP Woodland (DAP Wooland Net)";
+            factions[] = {};
+            LEOPARD_AAF(NET_AAFDESERT)
+        };
+        class Indep_01_jungle {
+            displayName = "DAP Woodland (DAP Jungle Net)";
+            factions[] = {};
+            LEOPARD_AAF(NET_AAFJUNGLE)
         };
         class KZG_01 {
             displayName = "Khaybaran (Desert Net)";
+            LEOPARD_KZG(NET_DESERT)
             factions[] = {};
-            textures[] = {
-                "\A3_Atlas\Armor_F_Atlas\MBT_03\Data\MBT_03_ext01_kzg_CO.paa",
-                "\A3_Atlas\Armor_F_Atlas\MBT_03\Data\MBT_03_ext02_kzg_CO.paa",
-                "\A3_Atlas\Armor_F_Atlas\MBT_03\Data\MBT_03_rcws_kzg_CO.paa",
-                "\A3\Armor_F\Data\camonet_NATO_Desert_CO.paa"
-            };
+        };
+        class KZG_01_green {
+            displayName = "Khaybaran (Green Net)";
+            LEOPARD_KZG(NET_GREEN)
+            factions[] = {};
         };
         class KZG_01_jungle {
             displayName = "Khaybaran (Jungle Net)";
+            LEOPARD_KZG(NET_JUNGLE)
             factions[] = {};
-            textures[] = {
-                "\A3_Atlas\Armor_F_Atlas\MBT_03\Data\MBT_03_ext01_kzg_CO.paa",
-                "\A3_Atlas\Armor_F_Atlas\MBT_03\Data\MBT_03_ext02_kzg_CO.paa",
-                "\A3_Atlas\Armor_F_Atlas\MBT_03\Data\MBT_03_rcws_kzg_CO.paa",
-                "A3\Armor_F_Enoch\apc_tracked_03\Data\camonet_EAF_green_CO.paa"
-            };
+        };
+        class KZG_01_winter {
+            displayName = "Khaybaran (Winter Net)";
+            LEOPARD_KZG(NET_WINTER)
+            factions[] = {};
+        };
+        class KZG_01_bicolor {
+            displayName = "Khaybaran (Bicolor Net)";
+            LEOPARD_KZG(NET_BICOLOR)
+            factions[] = {};
         };
         class KZG_01_woodland {
             displayName = "Khaybaran (Woodland Net)";
+            LEOPARD_KZG(NET_WOODLAND)
             factions[] = {};
-            textures[] = {
-                "\A3_Atlas\Armor_F_Atlas\MBT_03\Data\MBT_03_ext01_kzg_CO.paa",
-                "\A3_Atlas\Armor_F_Atlas\MBT_03\Data\MBT_03_ext02_kzg_CO.paa",
-                "\A3_Atlas\Armor_F_Atlas\MBT_03\Data\MBT_03_rcws_kzg_CO.paa",
-                "\A3\Armor_F\Data\camonet_NATO_Green_CO.paa"
-            };
         };
         class Olive_01 {
-            displayName = "Green (Woodland Net)";
+            displayName = "Green (Desert Net)";
+            LEOPARD_GREEN(NET_DESERT)
             factions[] = {};
-            textures[] = {
-                "\A3_Atlas\Armor_F_Atlas\MBT_03\Data\MBT_03_ext01_olive_CO.paa",
-                "\A3_Atlas\Armor_F_Atlas\MBT_03\Data\MBT_03_ext02_olive_CO.paa",
-                "\A3_Atlas\Armor_F_Atlas\MBT_03\Data\MBT_03_rcws_olive_CO.paa",
-                "\A3\Armor_F\Data\camonet_NATO_Green_CO.paa"
-            };
+        };
+        class Olive_01_green {
+            displayName = "Green (Green Net)";
+            LEOPARD_GREEN(NET_GREEN)
+            factions[] = {};
         };
         class Olive_01_jungle {
             displayName = "Green (Jungle Net)";
+            LEOPARD_GREEN(NET_JUNGLE)
             factions[] = {};
-            textures[] = {
-                "\A3_Atlas\Armor_F_Atlas\MBT_03\Data\MBT_03_ext01_olive_CO.paa",
-                "\A3_Atlas\Armor_F_Atlas\MBT_03\Data\MBT_03_ext02_olive_CO.paa",
-                "\A3_Atlas\Armor_F_Atlas\MBT_03\Data\MBT_03_rcws_olive_CO.paa",
-                "A3\Armor_F_Enoch\apc_tracked_03\Data\camonet_EAF_green_CO.paa"
-            };
         };
-        class Olive_01_desert {
-            displayName = "Green (Desert Net)";
+        class Olive_01_winter {
+            displayName = "Green (Winter Net)";
+            LEOPARD_GREEN(NET_WINTER)
             factions[] = {};
-            textures[] = {
-                "\A3_Atlas\Armor_F_Atlas\MBT_03\Data\MBT_03_ext01_olive_CO.paa",
-                "\A3_Atlas\Armor_F_Atlas\MBT_03\Data\MBT_03_ext02_olive_CO.paa",
-                "\A3_Atlas\Armor_F_Atlas\MBT_03\Data\MBT_03_rcws_olive_CO.paa",
-                "\A3\Armor_F\Data\camonet_NATO_Desert_CO.paa"
-            };
         };
-        class Olive_01_desert_alt {
-            displayName = "Green (Desert Alt Net)";
+        class Olive_01_bicolor {
+            displayName = "Green (Bicolor Net)";
+            LEOPARD_GREEN(NET_BICOLOR)
             factions[] = {};
-            textures[] = {
-                "\A3_Atlas\Armor_F_Atlas\MBT_03\Data\MBT_03_ext01_olive_CO.paa",
-                "\A3_Atlas\Armor_F_Atlas\MBT_03\Data\MBT_03_ext02_olive_CO.paa",
-                "\A3_Atlas\Armor_F_Atlas\MBT_03\Data\MBT_03_rcws_olive_CO.paa",
-                "\A3\Armor_f\Data\camonet_CSAT_Stripe_Desert_CO.paa"
-            };
         };
-        class Sand_01 {
-            displayName = "Sand (Desert Alt Net)";
+        class Olive_01_woodland {
+            displayName = "Green (Woodland Net)";
+            LEOPARD_GREEN(NET_WOODLAND)
             factions[] = {};
-            textures[] = {
-                "\A3_Atlas\Armor_F_Atlas\MBT_03\Data\MBT_03_ext01_CO.paa",
-                "\A3_Atlas\Armor_F_Atlas\MBT_03\Data\MBT_03_ext02_CO.paa",
-                "\A3_Atlas\Armor_F_Atlas\MBT_03\Data\MBT_03_rcws_CO.paa",
-                "\A3\Armor_f\Data\camonet_CSAT_Stripe_Desert_CO.paa"
-            };
         };
-        class Sand_01_jungle {
-            displayName = "Sand (Jungle Net)";
+        class UNA {
+            displayName = "UNA (Desert Net)";
+            LEOPARD_UNA(NET_DESERT)
             factions[] = {};
-            textures[] = {
-                "\A3_Atlas\Armor_F_Atlas\MBT_03\Data\MBT_03_ext01_CO.paa",
-                "\A3_Atlas\Armor_F_Atlas\MBT_03\Data\MBT_03_ext02_CO.paa",
-                "\A3_Atlas\Armor_F_Atlas\MBT_03\Data\MBT_03_rcws_CO.paa",
-                "A3\Armor_F_Enoch\apc_tracked_03\Data\camonet_EAF_green_CO.paa"
-            };
         };
-        class Sand_01_woodland {
-            displayName = "Sand (Woodland Net)";
+        class UNA_green {
+            displayName = "UNA (Green Net)";
+            LEOPARD_UNA(NET_GREEN)
             factions[] = {};
-            textures[] = {
-                "\A3_Atlas\Armor_F_Atlas\MBT_03\Data\MBT_03_ext01_CO.paa",
-                "\A3_Atlas\Armor_F_Atlas\MBT_03\Data\MBT_03_ext02_CO.paa",
-                "\A3_Atlas\Armor_F_Atlas\MBT_03\Data\MBT_03_rcws_CO.paa",
-                "\A3\Armor_F\Data\camonet_NATO_Green_CO.paa"
-            };
         };
-        class Sand_01_desert {
-            displayName = "Sand (Desert Net)";
+        class UNA_jungle {
+            displayName = "UNA (Jungle Net)";
+            LEOPARD_UNA(NET_JUNGLE)
             factions[] = {};
-            textures[] = {
-                "\A3_Atlas\Armor_F_Atlas\MBT_03\Data\MBT_03_ext01_CO.paa",
-                "\A3_Atlas\Armor_F_Atlas\MBT_03\Data\MBT_03_ext02_CO.paa",
-                "\A3_Atlas\Armor_F_Atlas\MBT_03\Data\MBT_03_rcws_CO.paa",
-                "\A3\Armor_F\Data\camonet_NATO_Desert_CO.paa"
-            };
+        };
+        class UNA_winter {
+            displayName = "UNA (Winter Net)";
+            LEOPARD_UNA(NET_WINTER)
+            factions[] = {};
+        };
+        class UNA_bicolor {
+            displayName = "UNA (Bicolor Net)";
+            LEOPARD_UNA(NET_BICOLOR)
+            factions[] = {};
+        };
+        class UNA_woodland {
+            displayName = "UNA (Woodland Net)";
+            LEOPARD_UNA(NET_WOODLAND)
+            factions[] = {};
+        };
+        class Winter {
+            displayName = "Khaybaran (Desert Net)";
+            LEOPARD_WINTER(NET_DESERT)
+            factions[] = {};
+        };
+        class Winter_green {
+            displayName = "Winter (Green Net)";
+            LEOPARD_WINTER(NET_GREEN)
+            factions[] = {};
+        };
+        class Winter_jungle {
+            displayName = "Winter (Jungle Net)";
+            LEOPARD_WINTER(NET_JUNGLE)
+            factions[] = {};
+        };
+        class Winter_winter {
+            displayName = "Winter (Winter Net)";
+            LEOPARD_WINTER(NET_WINTER)
+            factions[] = {};
+        };
+        class Winter_bicolor {
+            displayName = "Winter (Bicolor Net)";
+            LEOPARD_WINTER(NET_BICOLOR)
+            factions[] = {};
+        };
+        class Winter_woodland {
+            displayName = "Winter (Woodland Net)";
+            LEOPARD_WINTER(NET_WOODLAND)
+            factions[] = {};
         };
     };
 };
