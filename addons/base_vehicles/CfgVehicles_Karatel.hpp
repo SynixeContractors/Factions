@@ -1,3 +1,7 @@
+// https://en.topwar.ru/179625-superkamazy-bronja-i-730-loshadinyh-sil.html
+// supposedly 2x450L on the base truck
+#define KARATEL_FUEL 900
+
 class O_MRAP_02_F;
 class GCLASS(Karatel): O_MRAP_02_F {
     displayName = "Karatel";
@@ -7,6 +11,7 @@ class GCLASS(Karatel): O_MRAP_02_F {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     #include "textures/Karatel.hpp"
+    ace_refuel_fuelCapacity = KARATEL_FUEL;
 };
 
 class O_MRAP_02_hmg_F;
@@ -17,6 +22,7 @@ class GCLASS(Karatel_HMG): O_MRAP_02_hmg_F {
     EMPTY_INVENTORY;
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
+    ace_refuel_fuelCapacity = KARATEL_FUEL;
     #include "textures/Karatel.hpp"
 };
 
@@ -28,5 +34,6 @@ class GCLASS(Karatel_GMG): O_MRAP_02_gmg_F {
     EMPTY_INVENTORY;
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
+    ace_refuel_fuelCapacity = KARATEL_FUEL;
     #include "textures/Karatel.hpp"
 };
