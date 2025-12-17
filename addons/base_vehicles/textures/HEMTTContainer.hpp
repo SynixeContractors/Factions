@@ -11,6 +11,26 @@
         };
         factions[] = {};
       };
+      class White {
+        displayName = "White";
+        textures[] = {
+          "\lxRF\vehicles_rf\Truck_01\data\truck_01_ext_01_white_co.paa",
+          "\lxRF\vehicles_rf\Truck_01\data\truck_01_ext_02_white_co.paa",
+          "\a3\Soft_F_Enoch\Truck_01\Data\truck_01_ammo_co.paa",
+          "lxws\vehicles_f_lxws\data\Truck_01\truck_un_cargo_co.paa"
+        };
+        factions[] = {};
+      };
+      class UNA {
+        displayName = "UNA";
+        textures[] = {
+          "lxws\vehicles_f_lxws\data\Truck_01\truck_un_ext_01_co.paa",
+          "lxws\vehicles_f_lxws\data\Truck_01\truck_un_ext_02_co.paa",
+          "\a3\Soft_F_Enoch\Truck_01\Data\truck_01_ammo_co.paa",
+          "lxws\vehicles_f_lxws\data\Truck_01\truck_un_cargo_co.paa"
+        };
+        factions[] = {};
+      };
       class Olive {
         displayName = "Olive";
         textures[] = {
