@@ -217,7 +217,7 @@ class GCLASS(BTR_IFV): O_R_APC_Wheeled_04_cannon_F {
         textures[] = {
           "\A3_Aegis\Armor_F_Aegis\APC_Wheeled_04\data\APC_Wheeled_04_export_body_ghex_CO.paa",
           "\A3_Aegis\Armor_F_Aegis\APC_Wheeled_04\Data\APC_Wheeled_04_body2_ghex_CO.paa",
-          "lxws\vehicles_1_f_lxws\apc_tracked_02\Data\apc_tracked_02_30mm_hex_co.paa",
+          "lxws\vehicles_1_f_lxws\apc_tracked_02\Data\apc_tracked_02_30mm_ghex_co.paa",
         };
         factions[] = {};
       };
@@ -298,7 +298,7 @@ class GCLASS(BTR_IFV): O_R_APC_Wheeled_04_cannon_F {
         textures[] = {
           "\A3_Atlas\Armor_F_Atlas\APC_Wheeled_04\Data\APC_Wheeled_04_body_export_ardi_CO.paa",
           "\A3_Atlas\Armor_F_Atlas\APC_Wheeled_04\Data\APC_Wheeled_04_body2_ardi_CO.paa",
-          "\A3_Atlas\Armor_F_Atlas\APC_Wheeled_04\Data\btr100a_turret_ardi_co.paa"
+          "\A3_Atlas\Armor_F_Atlas\APC_Tracked_02\data\apc_tracked_02_30mm_ard_CO.paa",
         };
         factions[] = {};
       };
@@ -307,7 +307,7 @@ class GCLASS(BTR_IFV): O_R_APC_Wheeled_04_cannon_F {
         textures[] = {
           "\A3_Atlas\Armor_F_Atlas\APC_Wheeled_04\Data\APC_Wheeled_04_body_export_UNO_CO.paa",
           "\A3_Atlas\Armor_F_Atlas\APC_Wheeled_04\Data\APC_Wheeled_04_body2_UNO_CO.paa",
-          "\A3_Atlas\Armor_F_Atlas\APC_Wheeled_04\Data\btr100a_turret_uno_co.paa"
+          "\A3_Atlas\Armor_F_Atlas\APC_Wheeled_04\Data\APC_Wheeled_04_tow_UNO_CO.paa",
         };
         factions[] = {};
       };
@@ -325,7 +325,7 @@ class GCLASS(BTR_IFV): O_R_APC_Wheeled_04_cannon_F {
         textures[] = {
           "\A3_Atlas\Armor_F_Atlas\APC_Wheeled_04\Data\APC_Wheeled_04_body_export_TK_CO.paa",
           "\A3_Atlas\Armor_F_Atlas\APC_Wheeled_04\Data\APC_Wheeled_04_body2_TK_CO.paa",
-          "\A3_Atlas\Armor_F_Atlas\APC_Wheeled_04\Data\btr100a_turret_tk_co.paa"
+          "\A3_Atlas\Armor_F_Atlas\APC_Wheeled_04\Data\APC_Wheeled_04_tow_TK_CO.paa",
         };
         factions[] = {};
       };
