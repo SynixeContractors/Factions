@@ -108,15 +108,6 @@ class GCLASS(BTR): Aegis_O_A_APC_Wheeled_04_export_F {
         };
         factions[] = {};
       };
-      class Guerrilla_05 {
-        displayName = "Guerrilla 05";
-        textures[] = {
-          "\A3_Aegis\Armor_F_Aegis\APC_Wheeled_04\Data\APC_Wheeled_04_body_export_Tura_2_CO.paa",
-          "\A3_Aegis\Armor_F_Aegis\APC_Wheeled_04\Data\APC_Wheeled_04_body2_Tura_2_CO.paa",
-          "\A3_Aegis\Armor_F_Aegis\APC_Wheeled_04\data\btr100a_turret_Tura_2_co.paa"
-        };
-        factions[] = {};
-      };
       class ardistan {
         displayName = "Ardistan";
         textures[] = {
@@ -221,15 +212,6 @@ class GCLASS(BTR_IFV): O_R_APC_Wheeled_04_cannon_F {
         };
         factions[] = {};
       };
-      class Indep {
-        displayName = "DAP Woodland";
-        textures[] = {
-          "\A3_Aegis\Armor_F_Aegis\APC_Wheeled_04\Data\APC_Wheeled_04_body_export_AAF_CO.paa",
-          "\A3_Aegis\Armor_F_Aegis\APC_Wheeled_04\Data\APC_Wheeled_04_body2_AAF_CO.paa",
-          "\A3_Aegis\Armor_F_Aegis\APC_Wheeled_04\data\btr100a_turret_AAF_co.paa"
-        };
-        factions[] = {};
-      };
       class SFIA {
         displayName = "Mudwalker";
         textures[] = {
@@ -248,30 +230,12 @@ class GCLASS(BTR_IFV): O_R_APC_Wheeled_04_cannon_F {
         };
         factions[] = {};
       };
-      class Guerrilla_01 {
-        displayName = "Guerrilla 01";
-        textures[] = {
-          "\A3_Aegis\Armor_F_Aegis\APC_Wheeled_04\Data\APC_Wheeled_04_body_export_FIA_CO.paa",
-          "\A3_Aegis\Armor_F_Aegis\APC_Wheeled_04\Data\APC_Wheeled_04_body2_FIA_CO.paa",
-          "\A3_Aegis\Armor_F_Aegis\APC_Wheeled_04\data\btr100a_turret_FIA_co.paa"
-        };
-        factions[] = {};
-      };
       class Guerrilla_02 {
         displayName = "Guerrilla 02";
         textures[] = {
           "\A3_Aegis\Armor_F_Aegis\APC_Wheeled_04\Data\APC_Wheeled_04_body_export_FIA_2_CO.paa",
           "\A3_Aegis\Armor_F_Aegis\APC_Wheeled_04\Data\APC_Wheeled_04_body2_FIA_2_CO.paa",
           "\A3_Aegis\Armor_F_Aegis\APC_Wheeled_04\data\btr100a_turret_FIA_2_co.paa"
-        };
-        factions[] = {};
-      };
-      class Guerrilla_03 {
-        displayName = "Guerrilla 03";
-        textures[] = {
-          "\A3_Aegis\Armor_F_Aegis\APC_Wheeled_04\Data\APC_Wheeled_04_body_export_FIA_3_CO.paa",
-          "\A3_Aegis\Armor_F_Aegis\APC_Wheeled_04\Data\APC_Wheeled_04_body2_FIA_3_CO.paa",
-          "\A3_Aegis\Armor_F_Aegis\APC_Wheeled_04\data\btr100a_turret_FIA_3_co.paa"
         };
         factions[] = {};
       };
@@ -335,15 +299,6 @@ class GCLASS(BTR_IFV): O_R_APC_Wheeled_04_cannon_F {
           "\A3_Opf\Armor_F_Opf\APC_Wheeled_04\Data\APC_Wheeled_04_export_body_Chdkz_CO.paa",
           "\A3_Opf\Armor_F_Opf\APC_Wheeled_04\Data\APC_Wheeled_04_body2_Chdkz_CO.paa",
           "\A3_Opf\Armor_F_Opf\APC_Tracked_02\Data\APC_Tracked_02_tow_chdkz_co.paa",
-        };
-        factions[] = {};
-      };
-      class Para_01 {
-        displayName = "Paramilitary";
-        textures[] = {
-          "\A3_Opf\Armor_F_Opf\APC_Wheeled_04\Data\APC_Wheeled_04_body_export_paramilitary_co.paa",
-          "\A3_Opf\Armor_F_Opf\APC_Wheeled_04\Data\APC_Wheeled_04_body2_paramilitary_co.paa",
-          "\A3_Opf\Armor_F_Opf\APC_Wheeled_04\Data\APC_Wheeled_04_export_Para_co.paa"
         };
         factions[] = {};
       };
