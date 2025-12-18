@@ -35,6 +35,7 @@ class CfgVehicles {
     #include "CfgVehicles_Tractor.hpp"
     #include "CfgVehicles_Typhoon.hpp"
     #include "CfgVehicles_Van.hpp"
+    #include "CfgVehicles_HEMTT.hpp"
 
     // APCS
     #include "CfgVehicles_Badger.hpp"
