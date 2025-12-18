@@ -34,5 +34,5 @@ class GCLASS(Otokar_RCWS): O_APC_Wheeled_02_rcws_v2_F {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 210;
-    #include "textures/OtokarArmed.hpp"
+    #include "textures/OtokarRCWS.hpp"
 };

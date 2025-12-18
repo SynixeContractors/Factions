@@ -120,7 +120,7 @@
         factions[] = {};
       };
       class MarineHex {
-        displayName = "Marine Hex";
+        displayName = "Hex Urban";
         textures[] = {
           "\A3_Atlas\Armor_F_Atlas\APC_Wheeled_02\Data\APC_Wheeled_02_ext_01_OHEX_CO.paa",
           "\A3_Atlas\Armor_F_Atlas\APC_Wheeled_02\Data\APC_Wheeled_02_ext_02_OHEX_CO.paa",
