@@ -9,3 +9,4 @@
 #define NET_AAF "A3\Armor_F_Enoch\apc_tracked_03\Data\camonet_EAF_green_CO.paa"
 #define NET_AAFDESERT "A3\Armor_F\Data\camonet_AAF_Digi_Desert_CO.paa"
 #define NET_AAFJUNGLE "A3\Armor_F\Data\camonet_AAF_Digi_Jungle_CO.paa"
+#define NET_STRIPEDESERT "a3\armor_f\Data\camonet_AAF_stripe_desert_CO.paa"
