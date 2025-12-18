@@ -304,3 +304,123 @@ class GCLASS(BTR_IFV): O_R_APC_Wheeled_04_cannon_F {
       };
     };
 };
+class O_R_APC_Wheeled_04_cannon_v2_F;
+class GCLASS(BTR_SPG): O_R_APC_Wheeled_04_cannon_v2_F {
+    displayName = "BTR-100SU (Sprut-SD)";
+    faction = QGCLASS(base_vehicles);
+    SCOPE_DLC_VEHICLE;
+    EMPTY_INVENTORY;
+    crew = "Civilian";
+    typicalCargo[] = {"Soldier"};
+    ace_refuel_fuelCapacity = 300;
+    class TextureSources {
+      class Green {
+        displayName = "Green";
+        textures[] = {
+          "\A3_Aegis\Armor_F_Aegis\APC_Wheeled_04\Data\APC_Wheeled_04_sprut_body_RUkhk_CO.paa",
+          "\A3_Aegis\Armor_F_Aegis\APC_Wheeled_04\Data\APC_Wheeled_04_body2_RUkhk_CO.paa",
+          "\A3_Aegis\Armor_F_Aegis\APC_Wheeled_04\Data\apc_wheeled_04_sprut_turret_co.paa",
+          "\A3_Aegis\Armor_F_Aegis\Data\camonet_RUS_Green_CO.paa",
+          "\A3_Aegis\Armor_F_Aegis\Data\cage_RUkhk_CO.paa"
+        };
+        factions[] = {};
+      };
+      class Sep_01 {
+        displayName = "Separatists";
+        textures[] = {
+          "\A3_Opf\Armor_F_Opf\APC_Wheeled_04\Data\APC_Wheeled_04_export_body_Chdkz_CO.paa",
+          "\A3_Aegis\Armor_F_Aegis\APC_Wheeled_04\Data\APC_Wheeled_04_body2_RUkhk_CO.paa",
+          "\A3_Aegis\Armor_F_Aegis\APC_Wheeled_04\Data\apc_wheeled_04_sprut_turret_co.paa",
+          "\A3_Aegis\Armor_F_Aegis\Data\camonet_RUS_Green_CO.paa",
+          "\A3_Aegis\Armor_F_Aegis\Data\cage_RUkhk_CO.paa"
+        };
+        factions[] = {};
+      };
+      class Sand {
+        displayName = "Sand";
+        textures[] = {
+          "\A3_Aegis\Armor_F_Aegis\APC_Wheeled_04\Data\APC_Wheeled_04_body_sand_CO.paa",
+          "\A3_Aegis\Armor_F_Aegis\APC_Wheeled_04\Data\APC_Wheeled_04_body2_sand_CO.paa",
+          "\A3_Aegis\Armor_F_Aegis\APC_Wheeled_04\Data\apc_wheeled_04_sprut_turret_sand_co.paa",
+          "\A3_Aegis\Armor_F_Aegis\Data\camonet_RUS_Green_CO.paa",
+          "\A3_Aegis\Armor_F_Aegis\Data\cage_RUkhk_CO.paa"
+        };
+        factions[] = {};
+      };
+      class Hex {
+        displayName = "Hex Ochre";
+        textures[] = {
+          "\A3_Aegis\Armor_F_Aegis\APC_Wheeled_04\Data\APC_Wheeled_04_body_Hex_CO.paa",
+          "\A3_Aegis\Armor_F_Aegis\APC_Wheeled_04\Data\APC_Wheeled_04_body2_Hex_CO.paa",
+          "\A3_Aegis\Armor_F_Aegis\APC_Wheeled_04\Data\apc_wheeled_04_sprut_turret_hex_co.paa",
+          "\A3_Aegis\Armor_F_Aegis\Data\camonet_RUS_Green_CO.paa",
+          "\A3_Aegis\Armor_F_Aegis\Data\cage_RUkhk_CO.paa"
+        };
+        factions[] = {};
+      };
+      class GreenHex {
+        displayName = "Hex Green";
+        textures[] = {
+          "\A3_Aegis\Armor_F_Aegis\APC_Wheeled_04\Data\APC_Wheeled_04_body_Ghex_CO.paa",
+          "\A3_Aegis\Armor_F_Aegis\APC_Wheeled_04\Data\APC_Wheeled_04_body2_Ghex_CO.paa",
+          "\A3_Aegis\Armor_F_Aegis\APC_Wheeled_04\Data\apc_wheeled_04_sprut_turret_ghex_co.paa",
+          "\A3_Aegis\Armor_F_Aegis\Data\camonet_RUS_Green_CO.paa",
+          "\A3_Aegis\Armor_F_Aegis\Data\cage_RUkhk_CO.paa"
+        };
+        factions[] = {};
+      };
+      class Indep {
+        displayName = "DAP Woodland";
+        textures[] = {
+          "\A3_Aegis\Armor_F_Aegis\APC_Wheeled_04\Data\APC_Wheeled_04_body_AAF_CO.paa",
+          "\A3_Aegis\Armor_F_Aegis\APC_Wheeled_04\Data\APC_Wheeled_04_body2_AAF_CO.paa",
+          "\A3_Aegis\Armor_F_Aegis\APC_Wheeled_04\Data\apc_wheeled_04_sprut_turret_AAF_co.paa"
+        };
+        factions[] = {};
+      };
+      class Loyalist {
+        displayName = "DAP Woodland (Graffiti)";
+        textures[] = {
+          "\A3_Aegis\Armor_F_Aegis\APC_Wheeled_04\Data\APC_Wheeled_04_body_export_loyalist_CO.paa",
+          "\A3_Aegis\Armor_F_Aegis\APC_Wheeled_04\Data\APC_Wheeled_04_body2_AAF_CO.paa",
+          "\A3_Aegis\Armor_F_Aegis\APC_Wheeled_04\Data\apc_wheeled_04_sprut_turret_AAF_co.paa"
+        };
+        factions[] = {};
+      };
+      class SFIA {
+        displayName = "Mudwalker";
+        textures[] = {
+          "\A3_Aegis\Armor_F_Aegis\APC_Wheeled_04\Data\APC_Wheeled_04_body_SFIA_CO.paa",
+          "\A3_Aegis\Armor_F_Aegis\APC_Wheeled_04\Data\APC_Wheeled_04_body2_SFIA_CO.paa",
+          "\A3_Aegis\Armor_F_Aegis\APC_Wheeled_04\Data\apc_wheeled_04_sprut_turret_SFIA_co.paa"
+        };
+        factions[] = {};
+      };
+      class ardistan {
+        displayName = "Ardistan";
+        textures[] = {
+          "\A3_Atlas\Armor_F_Atlas\APC_Wheeled_04\Data\APC_Wheeled_04_body_ardi_CO.paa",
+          "\A3_Atlas\Armor_F_Atlas\APC_Wheeled_04\Data\APC_Wheeled_04_body2_ardi_CO.paa",
+          "\A3_Atlas\Armor_F_Atlas\APC_Wheeled_04\Data\apc_wheeled_04_sprut_turret_ardi_co.paa"
+        };
+      };
+      class WoodlandHex {
+        displayName = "Hex Woodland";
+        textures[] = {
+          "\A3_Atlas\Armor_F_Atlas\APC_Wheeled_04\Data\APC_Wheeled_04_body_WHEX_CO.paa",
+          "\A3_Atlas\Armor_F_Atlas\APC_Wheeled_04\Data\APC_Wheeled_04_body2_WHEX_CO.paa",
+          "\A3_Atlas\Armor_F_Atlas\APC_Wheeled_04\Data\apc_wheeled_04_sprut_turret_WHEX_co.paa"
+        };
+        factions[] = {};
+      };
+      class Takistan {
+        displayName = "Hex Mixed";
+        textures[] = {
+          "\A3_Atlas\Armor_F_Atlas\APC_Wheeled_04\Data\APC_Wheeled_04_body_TK_CO.paa",
+          "\A3_Atlas\Armor_F_Atlas\APC_Wheeled_04\Data\APC_Wheeled_04_body2_TK_CO.paa",
+          "\A3_Atlas\Armor_F_Atlas\APC_Wheeled_04\Data\apc_wheeled_04_sprut_turret_TK_co.paa"
+        };
+        factions[] = {};
+      };
+    };
+};
