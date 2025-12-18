@@ -35,4 +35,13 @@ class TextureSources {
         };
         factions[] = {};
     };
+    class ardistan {
+        displayName = "Ardistan";
+        textures[] = {
+          "\A3_Atlas\Soft_F_Atlas\MRAP_02\Data\MRAP_02_ext_01_ardi_CO.paa",
+          "\A3_Atlas\Soft_F_Atlas\MRAP_02\Data\MRAP_02_ext_02_ardi_CO.paa",
+          "\A3_Aegis\Soft_F_Aegis\UGV_01\Data\Turret_RUkhk_CO.paa"
+        };
+        factions[] = {};
+    };
 };

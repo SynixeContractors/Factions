@@ -491,6 +491,43 @@ class GCLASS(BM2_IFV2):  O_APC_Tracked_02_30mm_lxWS {
     };
 };
 
+class O_R_APC_Tracked_02_medical_F;
+class GCLASS(BM2_unarmed): O_R_APC_Tracked_02_medical_F {
+    displayName = "BM-2P (Medical)";
+    faction = QGCLASS(base_vehicles);
+    SCOPE_DLC_VEHICLE;
+    EMPTY_INVENTORY;
+    crew = "Civilian";
+    typicalCargo[] = {"Soldier"};
+    ace_refuel_fuelCapacity = 1200;
+    class TextureSources {
+        //unarmed doesnt take camo nets
+        class Green {
+            displayName = "Green";
+            textures[] = {
+              "\A3_Aegis\Armor_F_Aegis\APC_Tracked_02\Data\APC_Tracked_02_ext_01_medevac_RUkhk_CO.paa",
+              "\A3_Aegis\Armor_F_Aegis\APC_Tracked_02\Data\APC_Tracked_02_ext_02_RUkhk_CO.paa",
+              "",
+              "",
+              ""
+            };
+            factions[] = {};
+        };
+        class WoodlandHex {
+            displayName = "Hex Woodland";
+            textures[] = {
+              "\A3_Atlas\Armor_F_Atlas\APC_Tracked_02\Data\APC_Tracked_02_ext_01_medical_whex_CO.paa",
+              "\A3_Atlas\Armor_F_Atlas\APC_Tracked_02\Data\APC_Tracked_02_ext_02_whex_CO.paa",
+              "",
+              "",
+              ""
+            };
+            factions[] = {};
+        };
+    };
+};
+
+
 class O_APC_Tracked_02_AA_F;
 class GCLASS(BM2_AA): O_APC_Tracked_02_AA_F {
     displayName = "BM-2PVO (ZSU-35)";
@@ -518,6 +555,18 @@ class GCLASS(BM2_AA): O_APC_Tracked_02_AA_F {
       {
         displayName = "Green";
         textures[] = {"\A3_Aegis\Armor_F_Aegis\APC_Tracked_02\Data\APC_Tracked_02_ext_01_AA_RUkhk_CO.paa","\A3_Aegis\Armor_F_Aegis\APC_Tracked_02\Data\APC_Tracked_02_ext_02_RUkhk_CO.paa","\A3_Aegis\Armor_F_Aegis\APC_Tracked_02\Data\APC_Tracked_01_AA_Tower_RUkhk_CO.paa","\A3_Aegis\Armor_F_Aegis\Data\camonet_RUS_green_CO.paa","\A3_Aegis\Armor_F_Aegis\Data\cage_RUkhk_CO.paa"};
+        factions[] = {};
+      };
+      class Sep_01
+      {
+        displayName = "Separatists";
+        textures[] = {
+          "\A3_Opf\Armor_F_Opf\APC_Tracked_02\Data\APC_Tracked_02_ext_01_Opf_CO.paa",
+          "\A3_Aegis\Armor_F_Aegis\APC_Tracked_02\Data\APC_Tracked_02_ext_02_RUkhk_CO.paa",
+          "\A3_Aegis\Armor_F_Aegis\APC_Tracked_02\Data\APC_Tracked_01_AA_Tower_RUkhk_CO.paa",
+          "\A3_Aegis\Armor_F_Aegis\Data\camonet_RUS_green_CO.paa",
+          "\A3_Aegis\Armor_F_Aegis\Data\cage_RUkhk_CO.paa"
+        };
         factions[] = {};
       };
       class SFIA
