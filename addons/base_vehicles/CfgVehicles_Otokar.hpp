@@ -1,76 +1,5 @@
-#define TEXTURES class TextureSources: TextureSources { \
-        RESET_FACTIONS(Black); \
-        RESET_FACTIONS(Gendarmerie); \
-        class Green { \
-            displayName = "Green"; \
-            factions[] = {}; \
-            textures[] = {"\A3_Aegis\Armor_F_Aegis\APC_Wheeled_02\Data\APC_Wheeled_02_ext_01_RUkhk_CO.paa","\A3_Aegis\Armor_F_Aegis\APC_Wheeled_02\Data\APC_Wheeled_02_ext_02_RUkhk_CO.paa","\A3_Aegis\Soft_F_Aegis\UGV_01\Data\Turret_RUkhk_CO.paa","\A3_Aegis\Armor_F_Aegis\Data\camonet_RUS_green_CO.paa","\A3_Aegis\Armor_F_Aegis\Data\cage_RUkhk_CO.paa"}; \
-        }; \
-        class GreenHex: GreenHex { \
-            displayName = "Hex Woodland"; \
-            factions[] = {}; \
-            textures[] = {"a3\Armor_F_Exp\APC_Wheeled_02\Data\APC_Wheeled_02_ext_01_ghex_CO.paa","a3\Armor_F_Exp\APC_Wheeled_02\Data\APC_Wheeled_02_ext_02_ghex_CO.paa","lxWS\vehicles_1_f_lxws\APC_Wheeled_02\data\APC_Wheeled_02_adds_01_ghex_CO.paa","A3\Armor_F\Data\camonet_CSAT_HEX_Green_CO.paa","A3\armor_f\data\cage_csat_green_CO.paa","lxWS\vehicles_1_f_lxws\APC_Wheeled_02\data\APC_Wheeled_02_adds_02_ghex_CO.paa"}; \
-        }; \
-        class Hex: Hex { \
-            displayName = "Hex Ochre"; \
-            factions[] = {}; \
-            textures[] = {"a3\armor_f_beta\apc_wheeled_02\data\apc_wheeled_02_ext_01_opfor_co.paa","a3\armor_f_beta\apc_wheeled_02\data\apc_wheeled_02_ext_02_opfor_co.paa","lxWS\vehicles_1_f_lxws\APC_Wheeled_02\data\APC_Wheeled_02_adds_01_hex_CO.paa","A3\Armor_F\Data\camonet_CSAT_HEX_Desert_CO.paa","A3\armor_f\data\cage_csat_co.paa","lxWS\vehicles_1_f_lxws\APC_Wheeled_02\data\APC_Wheeled_02_adds_02_hex_CO.paa"}; \
-        }; \
-        RESET_FACTIONS(HIMF); \
-        class MarineHex: MarineHex { \
-            displayName = "Hex Urban"; \
-            factions[] = {}; \
-            textures[] = {"\A3_Atlas\Armor_F_Atlas\APC_Wheeled_02\Data\APC_Wheeled_02_ext_01_OHEX_CO.paa","\A3_Atlas\Armor_F_Atlas\APC_Wheeled_02\Data\APC_Wheeled_02_ext_02_OHEX_CO.paa","\A3_Atlas\Armor_F_Atlas\APC_Wheeled_02\Data\Turret_OHEX_CO.paa","\A3\Armor_F\Data\camonet_CSAT_Hex_Green_CO.paa","\A3_Aegis\Armor_F_Aegis\Data\cage_RUkhk_CO.paa"}; \
-        }; \
-        RESET_FACTIONS(Sand); \
-        class Sand_Desert: Sand_Desert { \
-            displayName = "Sand (Desert Net)"; \
-            factions[] = {}; \
-            textures[] = {"lxWS\vehicles_1_f_lxws\APC_Wheeled_02\data\APC_Wheeled_02_ext_01_nato_CO.paa","lxWS\vehicles_1_f_lxws\APC_Wheeled_02\data\APC_Wheeled_02_ext_02_nato_CO.paa","lxWS\vehicles_1_f_lxws\APC_Wheeled_02\data\APC_Wheeled_02_adds_01_nato_CO.paa","lxws\vehicles_f_lxws\data\camonet_NATO_flat_desert_CO.paa","A3\armor_f\data\cage_sand_CO.paa","lxWS\vehicles_1_f_lxws\APC_Wheeled_02\data\APC_Wheeled_02_adds_02_nato_CO.paa"}; \
-        }; \
-        class SFIA: SFIA { \
-            displayName = "Mudwalker"; \
-            factions[] = {}; \
-            textures[] = {"lxWS\vehicles_1_f_lxws\APC_Wheeled_02\data\APC_Wheeled_02_ext_01_sfia_CO.paa","lxWS\vehicles_1_f_lxws\APC_Wheeled_02\data\APC_Wheeled_02_ext_02_sfia_CO.paa","lxWS\vehicles_1_f_lxws\APC_Wheeled_02\data\APC_Wheeled_02_adds_01_sfia_CO.paa","A3\Armor_F\Data\camonet_CSAT_HEX_Desert_CO.paa","A3\armor_f\data\cage_csat_co.paa","lxWS\vehicles_1_f_lxws\APC_Wheeled_02\data\APC_Wheeled_02_adds_02_sfia_CO.paa"}; \
-        }; \
-        class Takistan: Takistan { \
-            displayName = "Hex Mixed"; \
-            factions[] = {}; \
-            textures[] = {"\A3_Atlas\Armor_F_Atlas\APC_Wheeled_02\Data\APC_Wheeled_02_ext_01_tk_CO.paa","\A3_Atlas\Armor_F_Atlas\APC_Wheeled_02\Data\APC_Wheeled_02_ext_02_tk_CO.paa","\A3_Atlas\Armor_F_Atlas\APC_Wheeled_02\Data\APC_Wheeled_02_adds_01_tk_CO.paa","A3\Armor_F\Data\camonet_CSAT_HEX_Desert_CO.paa","A3\armor_f\data\cage_csat_co.paa","\A3_Atlas\Armor_F_Atlas\APC_Wheeled_02\Data\APC_Wheeled_02_adds_02_tk_CO.paa"}; \
-        }; \
-        RESET_FACTIONS(UN_WHITE); \
-        class WoodlandHex: WoodlandHex { \
-            displayName = "Hex Green"; \
-            factions[] = {}; \
-            textures[] = {"\A3_Atlas\Armor_F_Atlas\APC_Wheeled_02\Data\APC_Wheeled_02_ext_01_WHEX_CO.paa","\A3_Atlas\Armor_F_Atlas\APC_Wheeled_02\Data\APC_Wheeled_02_ext_02_WHEX_CO.paa","\A3_Atlas\Soft_F_Atlas\MRAP_02\Data\Turret_WHEX_CO.paa","\A3\Armor_F\Data\camonet_CSAT_Hex_Green_CO.paa","\A3_Aegis\Armor_F_Aegis\Data\cage_RUkhk_CO.paa"}; \
-        }; \
-    }
-
-class APC_Wheeled_02_base_F: Wheeled_APC_F {
-    class TextureSources;
-};
-class APC_Wheeled_02_base_v2_F: APC_Wheeled_02_base_F {
-    class TextureSources: TextureSources {
-        class Black;
-        class Gendarmerie;
-        class GreenHex;
-        class Hex;
-        class HIMF;
-        class MarineHex;
-        class Sand;
-        class Sand_Desert;
-        class SFIA;
-        class Takistan;
-        class UN_WHITE;
-        class WoodlandHex;
-    };
-};
-
-// Unarmed
-class APC_Wheeled_02_unarmed_base_lxws: APC_Wheeled_02_base_v2_F {
-    TEXTURES;
-};
-class GCLASS(Otokar): APC_Wheeled_02_unarmed_base_lxws {
+class O_APC_Wheeled_02_unarmed_lxWS;
+class GCLASS(Otokar): O_APC_Wheeled_02_unarmed_lxWS {
     displayName = "Otokar ARMA (Unarmed)";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
@@ -78,13 +7,160 @@ class GCLASS(Otokar): APC_Wheeled_02_unarmed_base_lxws {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 210;
+    class TextureSources {
+      class SFIA {
+        displayName = "Mudwalker";
+        textures[] = {
+          "lxWS\vehicles_1_f_lxws\APC_Wheeled_02\data\APC_Wheeled_02_ext_01_sfia_CO.paa",
+          "lxWS\vehicles_1_f_lxws\APC_Wheeled_02\data\APC_Wheeled_02_ext_02_sfia_CO.paa",
+          "lxWS\vehicles_1_f_lxws\APC_Wheeled_02\data\APC_Wheeled_02_adds_01_sfia_CO.paa",
+          "A3\Armor_F\Data\camonet_CSAT_HEX_Desert_CO.paa",
+          "A3\armor_f\data\cage_csat_co.paa",
+          "lxWS\vehicles_1_f_lxws\APC_Wheeled_02\data\APC_Wheeled_02_adds_02_sfia_CO.paa"
+        };
+        factions[] = {};
+      };
+      class Black {
+        displayName = "Black";
+        textures[] = {
+          "lxWS\vehicles_1_f_lxws\APC_Wheeled_02\data\APC_Wheeled_02_ext_01_black_CO.paa",
+          "lxWS\vehicles_1_f_lxws\APC_Wheeled_02\data\APC_Wheeled_02_ext_02_black_CO.paa",
+          "a3\armor_f\Data\camonet_AAF_stripe_desert_CO.paa",
+          "lxws\vehicles_f_lxws\data\APC_Wheeled_01\cage_black_CO.paa",
+          "lxWS\vehicles_1_f_lxws\APC_Wheeled_02\data\APC_Wheeled_02_adds_02_black_CO.paa"
+        };
+        factions[] = {};
+      };
+      class Sand {
+        displayName = "Sand";
+        textures[] = {
+          "lxWS\vehicles_1_f_lxws\APC_Wheeled_02\data\APC_Wheeled_02_ext_01_nato_CO.paa",
+          "lxWS\vehicles_1_f_lxws\APC_Wheeled_02\data\APC_Wheeled_02_ext_02_nato_CO.paa",
+          "a3\Armor_F\Data\camonet_NATO_Desert_CO.paa",
+          "a3\Armor_F\Data\cage_sand_CO.paa",
+          "lxWS\vehicles_1_f_lxws\APC_Wheeled_02\data\APC_Wheeled_02_adds_02_nato_CO.paa"
+        };
+        factions[] = {};
+      };
+      class Sand_Desert {
+        displayName = "Sand (Desert Net)";
+        textures[] = {
+          "lxWS\vehicles_1_f_lxws\APC_Wheeled_02\data\APC_Wheeled_02_ext_01_nato_CO.paa",
+          "lxWS\vehicles_1_f_lxws\APC_Wheeled_02\data\APC_Wheeled_02_ext_02_nato_CO.paa",
+          "lxWS\vehicles_1_f_lxws\APC_Wheeled_02\data\APC_Wheeled_02_adds_01_nato_CO.paa",
+          "lxws\vehicles_f_lxws\data\camonet_NATO_flat_desert_CO.paa",
+          "A3\armor_f\data\cage_sand_CO.paa",
+          "lxWS\vehicles_1_f_lxws\APC_Wheeled_02\data\APC_Wheeled_02_adds_02_nato_CO.paa"
+        };
+        factions[] = {};
+      };
+      class UN_WHITE
+      {
+        displayName = "UNA";
+        textures[] = {
+          "lxWS\vehicles_1_f_lxws\APC_Wheeled_02\data\APC_Wheeled_02_ext_01_UNA_CO.paa",
+          "lxWS\vehicles_1_f_lxws\APC_Wheeled_02\data\APC_Wheeled_02_ext_02_UNA_CO.paa",
+          "A3\Armor_F\Data\camonet_NATO_Desert_CO.paa",
+          "A3\armor_f\data\cage_sand_CO.paa",
+          "lxWS\vehicles_1_f_lxws\APC_Wheeled_02\data\APC_Wheeled_02_adds_02_UNA_CO.paa"
+        };
+        factions[] = {};
+      };
+      class Hex {
+        displayName = "Hex Ochre";
+        textures[] = {
+          "a3\armor_f_beta\apc_wheeled_02\data\apc_wheeled_02_ext_01_opfor_co.paa",
+          "a3\armor_f_beta\apc_wheeled_02\data\apc_wheeled_02_ext_02_opfor_co.paa",
+          "lxWS\vehicles_1_f_lxws\APC_Wheeled_02\data\APC_Wheeled_02_adds_01_hex_CO.paa",
+          "A3\Armor_F\Data\camonet_CSAT_HEX_Desert_CO.paa",
+          "A3\armor_f\data\cage_csat_co.paa",
+          "lxWS\vehicles_1_f_lxws\APC_Wheeled_02\data\APC_Wheeled_02_adds_02_hex_CO.paa"
+        };
+        factions[] = {};
+      };
+      class GreenHex {
+        displayName = "Hex Green";
+        textures[] = {
+          "a3\Armor_F_Exp\APC_Wheeled_02\Data\APC_Wheeled_02_ext_01_ghex_CO.paa",
+          "a3\Armor_F_Exp\APC_Wheeled_02\Data\APC_Wheeled_02_ext_02_ghex_CO.paa",
+          "lxWS\vehicles_1_f_lxws\APC_Wheeled_02\data\APC_Wheeled_02_adds_01_ghex_CO.paa",
+          "A3\Armor_F\Data\camonet_CSAT_HEX_Green_CO.paa",
+          "A3\armor_f\data\cage_csat_green_CO.paa",
+          "lxWS\vehicles_1_f_lxws\APC_Wheeled_02\data\APC_Wheeled_02_adds_02_ghex_CO.paa"
+        };
+        factions[] = {};
+      };
+      class Gendarmerie {
+        displayName = "Gendarmerie";
+        textures[] = {
+          "lxWS\vehicles_1_f_lxws\APC_Wheeled_02\data\marid_ext01_gen_co.paa",
+          "lxWS\vehicles_1_f_lxws\APC_Wheeled_02\data\marid_ext02_gen_co.paa",
+          "A3\Armor_F\Data\camonet_CSAT_Stripe_Green_CO.paa",
+          "lxWS\vehicles_1_f_lxws\APC_Wheeled_02\data\cage_gen_co.paa",
+          "lxWS\vehicles_1_f_lxws\APC_Wheeled_02\data\marid_adds02_gen_co.paa"
+        };
+        factions[] = {};
+      };
+      class Green {
+        displayName = "Green";
+        textures[] = {
+          "\A3_Aegis\Armor_F_Aegis\APC_Wheeled_02\Data\APC_Wheeled_02_ext_01_RUkhk_CO.paa",
+          "\A3_Aegis\Armor_F_Aegis\APC_Wheeled_02\Data\APC_Wheeled_02_ext_02_RUkhk_CO.paa",
+          "\A3_Aegis\Soft_F_Aegis\UGV_01\Data\Turret_RUkhk_CO.paa",
+          "\A3_Aegis\Armor_F_Aegis\Data\camonet_RUS_green_CO.paa",
+          "\A3_Aegis\Armor_F_Aegis\Data\cage_RUkhk_CO.paa"
+        };
+        factions[] = {};
+      };
+      class HIMF {
+        displayName = "Jungle";
+        textures[] = {
+          "\A3_Atlas\Armor_F_Atlas\APC_Wheeled_02\Data\apc_wheeled_02_ext_01_HIMF_CO.paa",
+          "\A3_Atlas\Armor_F_Atlas\APC_Wheeled_02\Data\apc_wheeled_02_ext_02_HIMF_CO.paa",
+          "\A3_Aegis\Armor_F_Aegis\Data\camonet_RUS_green_CO.paa",
+          "\A3_Aegis\Armor_F_Aegis\Data\cage_RUkhk_CO.paa",
+          "\A3_Atlas\Armor_F_Atlas\APC_Wheeled_02\data\apc_wheeled_02_adds_02_HIMF_CO.paa"
+        };
+        factions[] = {};
+      };
+      class MarineHex {
+        displayName = "Marine Hex";
+        textures[] = {
+          "\A3_Atlas\Armor_F_Atlas\APC_Wheeled_02\Data\APC_Wheeled_02_ext_01_OHEX_CO.paa",
+          "\A3_Atlas\Armor_F_Atlas\APC_Wheeled_02\Data\APC_Wheeled_02_ext_02_OHEX_CO.paa",
+          "A3\Armor_F\Data\camonet_CSAT_HEX_Green_CO.paa",
+          "A3\armor_f\data\cage_csat_green_CO.paa",
+          "\A3_Atlas\Armor_F_Atlas\APC_Wheeled_02\data\apc_wheeled_02_adds_02_OHEX_CO.paa"
+        };
+        factions[] = {};
+      };
+      class Takistan {
+        displayName = "Hex Mixed";
+        textures[] = {
+          "\A3_Atlas\Armor_F_Atlas\APC_Wheeled_02\Data\APC_Wheeled_02_ext_01_tk_CO.paa",
+          "\A3_Atlas\Armor_F_Atlas\APC_Wheeled_02\Data\APC_Wheeled_02_ext_02_tk_CO.paa",
+          "A3\Armor_F\Data\camonet_CSAT_HEX_Desert_CO.paa",
+          "A3\armor_f\data\cage_csat_co.paa",
+          "\A3_Atlas\Armor_F_Atlas\APC_Wheeled_02\Data\APC_Wheeled_02_adds_02_tk_CO.paa"
+        };
+        factions[] = {};
+      };
+      class WoodlandHex {
+        displayName = "Hex Woodland";
+        textures[] = {
+          "\A3_Atlas\Armor_F_Atlas\APC_Wheeled_02\Data\APC_Wheeled_02_ext_01_WHEX_CO.paa",
+          "\A3_Atlas\Armor_F_Atlas\APC_Wheeled_02\Data\APC_Wheeled_02_ext_02_WHEX_CO.paa",
+          "A3\Armor_F\Data\camonet_CSAT_HEX_Green_CO.paa",
+          "A3\armor_f\data\cage_csat_green_CO.paa",
+          "\A3_Atlas\Armor_F_Atlas\APC_Wheeled_02\data\apc_wheeled_02_adds_02_WHEX_CO.paa"
+        };
+        factions[] = {};
+      };
+    };
 };
 
-// HMG
-class APC_Wheeled_02_hmg_base_lxws: APC_Wheeled_02_base_v2_F {
-    TEXTURES;
-};
-class GCLASS(Otokar_HMG): APC_Wheeled_02_hmg_base_lxws {
+class O_APC_Wheeled_02_hmg_lxWS;
+class GCLASS(Otokar_HMG): O_APC_Wheeled_02_hmg_lxWS {
     displayName = "Otokar ARMA (HMG)";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
