@@ -14,7 +14,7 @@ class TextureSources
         factions[] = {};
     };
     class ION_BLACK {
-        displayName = "ION Services";
+        displayName = "ION";
         textures[] = {
           "lxws\vehicles_f_lxws\data\APC_Wheeled_01\APC_Wheeled_ion_base_CO.paa",
           "lxws\vehicles_f_lxws\data\APC_Wheeled_01\apc_wheeled_ion_adds_co.paa",
@@ -74,7 +74,7 @@ class TextureSources
         factions[] = {};
     };
     class EAF_01 {
-        displayName = "LDF";
+        displayName = "LDF (Geo Woodland)";
         textures[] = {
           "\A3_Aegis\Armor_f_Aegis\APC_Wheeled_01\Data\APC_Wheeled_01_base_EAF_CO.paa",
           "\A3_Aegis\Armor_f_Aegis\APC_Wheeled_01\Data\APC_Wheeled_01_adds_EAF_CO.paa",

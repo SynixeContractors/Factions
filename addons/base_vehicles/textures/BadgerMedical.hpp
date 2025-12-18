@@ -23,7 +23,7 @@ class TextureSources {
       factions[] = {};
     };
     class EAF_01 {
-      displayName = "LDF";
+      displayName = "LDF (Geo Woodland)";
       textures[] = {
         "\A3_Aegis\Armor_f_Aegis\APC_Wheeled_01\Data\APC_Wheeled_01_base_medevac_EAF_CO.paa",
         "\A3_Aegis\Armor_f_Aegis\APC_Wheeled_01\Data\APC_Wheeled_01_adds_EAF_CO.paa",
