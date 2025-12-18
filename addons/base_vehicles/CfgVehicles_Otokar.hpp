@@ -25,7 +25,6 @@ class GCLASS(Otokar_HMG): O_APC_Wheeled_02_hmg_lxWS {
     #include "textures/OtokarArmed.hpp"
 };
 
-// RCWS
 class O_APC_Wheeled_02_rcws_v2_F;
 class GCLASS(Otokar_RCWS): O_APC_Wheeled_02_rcws_v2_F {
     displayName = "Otokar ARMA (RCWS)";
