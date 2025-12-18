@@ -4,7 +4,7 @@
         textures[] = {
           "lxWS\vehicles_1_f_lxws\APC_Wheeled_02\data\APC_Wheeled_02_ext_01_sfia_CO.paa",
           "lxWS\vehicles_1_f_lxws\APC_Wheeled_02\data\APC_Wheeled_02_ext_02_sfia_CO.paa",
-          "lxWS\vehicles_1_f_lxws\APC_Wheeled_02\data\APC_Wheeled_02_adds_01_sfia_CO.paa",
+          "\A3_Atlas\Soft_F_Atlas\MRAP_01\Data\Turret_Marar_CO.paa",
           CAMONET,
           "A3\armor_f\data\cage_csat_co.paa",
           "lxWS\vehicles_1_f_lxws\APC_Wheeled_02\data\APC_Wheeled_02_adds_02_sfia_CO.paa"

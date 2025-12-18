@@ -124,7 +124,7 @@
         textures[] = {
           "\A3_Atlas\Armor_F_Atlas\APC_Wheeled_02\Data\APC_Wheeled_02_ext_01_OHEX_CO.paa",
           "\A3_Atlas\Armor_F_Atlas\APC_Wheeled_02\Data\APC_Wheeled_02_ext_02_OHEX_CO.paa",
-          TEST,
+          "\A3_Atlas\Armor_F_Atlas\APC_Wheeled_02\data\apc_wheeled_02_adds_01_HIMF_CO.paa",
           CAMONET,
           "A3\armor_f\data\cage_csat_green_CO.paa",
           "\A3_Atlas\Armor_F_Atlas\APC_Wheeled_02\data\apc_wheeled_02_adds_02_OHEX_CO.paa"

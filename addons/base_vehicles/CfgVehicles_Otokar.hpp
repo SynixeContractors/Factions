@@ -1,5 +1,4 @@
 #define CAMONET NET_DESERT
-#define TEST "lxWS\vehicles_1_f_lxws\APC_Wheeled_02\data\APC_Wheeled_02_adds_02_black_CO.paa"
 
 class O_APC_Wheeled_02_unarmed_lxWS;
 class GCLASS(Otokar): O_APC_Wheeled_02_unarmed_lxWS {
