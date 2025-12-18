@@ -4,7 +4,7 @@
         textures[] = {
           "lxWS\vehicles_1_f_lxws\APC_Wheeled_02\data\APC_Wheeled_02_ext_01_sfia_CO.paa",
           "lxWS\vehicles_1_f_lxws\APC_Wheeled_02\data\APC_Wheeled_02_ext_02_sfia_CO.paa",
-          CAMONET,
+          NET_DESERT,
           "A3\armor_f\data\cage_csat_co.paa",
           "lxWS\vehicles_1_f_lxws\APC_Wheeled_02\data\APC_Wheeled_02_adds_02_sfia_CO.paa"
         };
@@ -15,7 +15,7 @@
         textures[] = {
           "lxWS\vehicles_1_f_lxws\APC_Wheeled_02\data\APC_Wheeled_02_ext_01_black_CO.paa",
           "lxWS\vehicles_1_f_lxws\APC_Wheeled_02\data\APC_Wheeled_02_ext_02_black_CO.paa",
-          CAMONET,
+          NET_STRIPEDESERT,
           "lxws\vehicles_f_lxws\data\APC_Wheeled_01\cage_black_CO.paa",
           "lxWS\vehicles_1_f_lxws\APC_Wheeled_02\data\APC_Wheeled_02_adds_02_black_CO.paa"
         };
@@ -26,19 +26,8 @@
         textures[] = {
           "lxWS\vehicles_1_f_lxws\APC_Wheeled_02\data\APC_Wheeled_02_ext_01_nato_CO.paa",
           "lxWS\vehicles_1_f_lxws\APC_Wheeled_02\data\APC_Wheeled_02_ext_02_nato_CO.paa",
-          CAMONET,
+          NET_DESERT,
           "a3\Armor_F\Data\cage_sand_CO.paa",
-          "lxWS\vehicles_1_f_lxws\APC_Wheeled_02\data\APC_Wheeled_02_adds_02_nato_CO.paa"
-        };
-        factions[] = {};
-      };
-      class Sand_Desert {
-        displayName = "Sand (Desert Net)";
-        textures[] = {
-          "lxWS\vehicles_1_f_lxws\APC_Wheeled_02\data\APC_Wheeled_02_ext_01_nato_CO.paa",
-          "lxWS\vehicles_1_f_lxws\APC_Wheeled_02\data\APC_Wheeled_02_ext_02_nato_CO.paa",
-          CAMONET,
-          "A3\armor_f\data\cage_sand_CO.paa",
           "lxWS\vehicles_1_f_lxws\APC_Wheeled_02\data\APC_Wheeled_02_adds_02_nato_CO.paa"
         };
         factions[] = {};
@@ -49,7 +38,7 @@
         textures[] = {
           "lxWS\vehicles_1_f_lxws\APC_Wheeled_02\data\APC_Wheeled_02_ext_01_UNA_CO.paa",
           "lxWS\vehicles_1_f_lxws\APC_Wheeled_02\data\APC_Wheeled_02_ext_02_UNA_CO.paa",
-          CAMONET,
+          NET_DESERT,
           "A3\armor_f\data\cage_sand_CO.paa",
           "lxWS\vehicles_1_f_lxws\APC_Wheeled_02\data\APC_Wheeled_02_adds_02_UNA_CO.paa"
         };
@@ -60,7 +49,7 @@
         textures[] = {
           "a3\armor_f_beta\apc_wheeled_02\data\apc_wheeled_02_ext_01_opfor_co.paa",
           "a3\armor_f_beta\apc_wheeled_02\data\apc_wheeled_02_ext_02_opfor_co.paa",
-          CAMONET,
+          NET_HEX,
           "A3\armor_f\data\cage_csat_co.paa",
           "lxWS\vehicles_1_f_lxws\APC_Wheeled_02\data\APC_Wheeled_02_adds_02_hex_CO.paa"
         };
@@ -71,7 +60,7 @@
         textures[] = {
           "a3\Armor_F_Exp\APC_Wheeled_02\Data\APC_Wheeled_02_ext_01_ghex_CO.paa",
           "a3\Armor_F_Exp\APC_Wheeled_02\Data\APC_Wheeled_02_ext_02_ghex_CO.paa",
-          CAMONET,
+          NET_GREENHEX,
           "A3\armor_f\data\cage_csat_green_CO.paa",
           "lxWS\vehicles_1_f_lxws\APC_Wheeled_02\data\APC_Wheeled_02_adds_02_ghex_CO.paa"
         };
@@ -82,7 +71,7 @@
         textures[] = {
           "lxWS\vehicles_1_f_lxws\APC_Wheeled_02\data\marid_ext01_gen_co.paa",
           "lxWS\vehicles_1_f_lxws\APC_Wheeled_02\data\marid_ext02_gen_co.paa",
-          CAMONET,
+          NET_GREEN,
           "lxWS\vehicles_1_f_lxws\APC_Wheeled_02\data\cage_gen_co.paa",
           "lxWS\vehicles_1_f_lxws\APC_Wheeled_02\data\marid_adds02_gen_co.paa"
         };
@@ -93,7 +82,7 @@
         textures[] = {
           "\A3_Aegis\Armor_F_Aegis\APC_Wheeled_02\Data\APC_Wheeled_02_ext_01_RUkhk_CO.paa",
           "\A3_Aegis\Armor_F_Aegis\APC_Wheeled_02\Data\APC_Wheeled_02_ext_02_RUkhk_CO.paa",
-          CAMONET,
+          NET_GREEN,
           "\A3_Aegis\Armor_F_Aegis\Data\cage_RUkhk_CO.paa"
         };
         factions[] = {};
@@ -103,7 +92,7 @@
         textures[] = {
           "\A3_Atlas\Armor_F_Atlas\APC_Wheeled_02\Data\apc_wheeled_02_ext_01_HIMF_CO.paa",
           "\A3_Atlas\Armor_F_Atlas\APC_Wheeled_02\Data\apc_wheeled_02_ext_02_HIMF_CO.paa",
-          CAMONET,
+          NET_JUNGLE,
           "\A3_Aegis\Armor_F_Aegis\Data\cage_RUkhk_CO.paa",
           "\A3_Atlas\Armor_F_Atlas\APC_Wheeled_02\data\apc_wheeled_02_adds_02_HIMF_CO.paa"
         };
@@ -114,7 +103,7 @@
         textures[] = {
           "\A3_Atlas\Armor_F_Atlas\APC_Wheeled_02\Data\APC_Wheeled_02_ext_01_OHEX_CO.paa",
           "\A3_Atlas\Armor_F_Atlas\APC_Wheeled_02\Data\APC_Wheeled_02_ext_02_OHEX_CO.paa",
-          CAMONET,
+          NET_HEX,
           "A3\armor_f\data\cage_csat_green_CO.paa",
           "\A3_Atlas\Armor_F_Atlas\APC_Wheeled_02\data\apc_wheeled_02_adds_02_OHEX_CO.paa"
         };
@@ -125,7 +114,7 @@
         textures[] = {
           "\A3_Atlas\Armor_F_Atlas\APC_Wheeled_02\Data\APC_Wheeled_02_ext_01_tk_CO.paa",
           "\A3_Atlas\Armor_F_Atlas\APC_Wheeled_02\Data\APC_Wheeled_02_ext_02_tk_CO.paa",
-          CAMONET,
+          NET_DESERT,
           "A3\armor_f\data\cage_csat_co.paa",
           "\A3_Atlas\Armor_F_Atlas\APC_Wheeled_02\Data\APC_Wheeled_02_adds_02_tk_CO.paa"
         };
@@ -136,7 +125,7 @@
         textures[] = {
           "\A3_Atlas\Armor_F_Atlas\APC_Wheeled_02\Data\APC_Wheeled_02_ext_01_WHEX_CO.paa",
           "\A3_Atlas\Armor_F_Atlas\APC_Wheeled_02\Data\APC_Wheeled_02_ext_02_WHEX_CO.paa",
-          CAMONET,
+          NET_GREENHEX,
           "A3\armor_f\data\cage_csat_green_CO.paa",
           "\A3_Atlas\Armor_F_Atlas\APC_Wheeled_02\data\apc_wheeled_02_adds_02_WHEX_CO.paa"
         };

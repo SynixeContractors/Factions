@@ -1,5 +1,3 @@
-#define CAMONET NET_DESERT
-
 class O_APC_Wheeled_02_unarmed_lxWS;
 class GCLASS(Otokar): O_APC_Wheeled_02_unarmed_lxWS {
     displayName = "Otokar ARMA (Unarmed)";
