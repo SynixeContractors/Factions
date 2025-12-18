@@ -13,7 +13,6 @@
 class CfgVehicles {
     class Car_F;
     class Tank_F;
-    class Wheeled_APC_F;
     class Offroad_01_base_F;
     #define HIDEBROKEN
     //we might be able to fix those textures and its gonna save copypasting
