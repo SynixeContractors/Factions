@@ -1,5 +1,4 @@
 class CfgVehicles {
-
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {
         displayName = "JSR Base Army Reserve";
@@ -49,7 +48,7 @@ class CfgVehicles {
                 "arifle_NCAR15B_F": {
                     "probability": 0.05,
                     "magazinesVest": {
-                      "30Rnd_580x42_Mag_F": 4,
+                        "30Rnd_580x42_Mag_F": 4,
                     },
                 },
             },
@@ -58,7 +57,7 @@ class CfgVehicles {
                 "Aegis_optic_1p87": 0.03,
                 "optic_LRCO_blk_F": 0.02,
             },
-       });
+        });
     };
 
     class CLASS(RiflemanCarabine): CLASS(Rifleman) {
@@ -83,7 +82,7 @@ class CfgVehicles {
                 "Aegis_optic_1p87": 0.3,
                 "optic_LRCO_blk_F": 0.1,
             },
-       });
+        });
     };
     class CLASS(TeamLeader): CLASS(RiflemanCarabine) {
         @Role(TeamLeader);
@@ -111,7 +110,7 @@ class CfgVehicles {
                 "Aegis_optic_1p87": 0.1,
                 "optic_LRCO_blk_F": 0.1,
             },
-       });
+        });
     };
     class CLASS(Worker): CLASS(RiflemanCarabine) {
         @Role(Worker);
@@ -121,6 +120,6 @@ class CfgVehicles {
         });
     };
     class CLASS(Maintainer): CLASS(Worker) {
-      @Role(Maintainer)
+        @Role(Maintainer)
     };
 };

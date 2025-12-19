@@ -1,5 +1,5 @@
 class CfgVehicles {
-    #include "CfgVehicles_tank.hpp"
+    #include "CfgVehicles_Tanks.hpp"
     #include "CfgVehicles_Cars.hpp"
     #include "CfgVehicles_APC.hpp"
 
@@ -52,7 +52,7 @@ class CfgVehicles {
                 "arifle_NCAR15B_F": {
                     "probability": 0.05,
                     "magazinesVest": {
-                      "30Rnd_580x42_Mag_F": 8,
+                        "30Rnd_580x42_Mag_F": 8,
                     },
                 },
             },
@@ -61,7 +61,7 @@ class CfgVehicles {
                 "Aegis_optic_1p87": 0.1,
                 "optic_LRCO_blk_F": 0.05,
             },
-       });
+        });
     };
 
     class CLASS(TeamLeader): CLASS(Rifleman) {
@@ -85,7 +85,7 @@ class CfgVehicles {
                 "Aegis_optic_1p87": 0.7,
                 "optic_LRCO_blk_F": 0.3,
             },
-       });
+        });
     };
     class CLASS(RiflemanCarabine): CLASS(Rifleman) {
         @Role(Hidden);
@@ -109,7 +109,7 @@ class CfgVehicles {
                 "Aegis_optic_1p87": 0.3,
                 "optic_LRCO_blk_F": 0.1,
             },
-       });
+        });
     };
     class CLASS(SquadLeader): CLASS(Rifleman) {
         @Role(SquadLeader);
@@ -126,7 +126,7 @@ class CfgVehicles {
                 "Aegis_optic_1p87": 0.7,
                 "optic_LRCO_blk_F": 0.3,
             },
-       });
+        });
     };
     class CLASS(Autorifleman): CLASS(Rifleman) {
         @Role(Autorifleman);
@@ -143,7 +143,7 @@ class CfgVehicles {
                 "Aegis_optic_1p87": 0.2,
                 "optic_LRCO_blk_F": 0.2,
             },
-       });
+        });
     };
     class CLASS(Machinegunner): CLASS(Autorifleman) {
         @Role(Machinegunner);
@@ -160,15 +160,15 @@ class CfgVehicles {
                 "Aegis_optic_1p87": 0.4,
                 "optic_LRCO_blk_F": 0.4,
             },
-       });
-       @Backpacks({
-           "variants": {
+        });
+        @Backpacks({
+            "variants": {
                 "B_AssaultPack_rgr": 1,
             },
             "magazines": {
                 "150Rnd_762x54_Box": 2,
             },
-       });
+        });
     };
     class CLASS(AsstMachineGunner): CLASS(RiflemanCarabine) {
         @Role(AsstMachinegunner);
@@ -179,7 +179,7 @@ class CfgVehicles {
             "magazines": {
                 "150Rnd_762x54_Box": 2,
             },
-       });
+        });
     };
     class CLASS(Medic): CLASS(RiflemanCarabine) {
         @Role(Medic);
@@ -190,7 +190,7 @@ class CfgVehicles {
             "packs": [
                 "t3_medic",
             ],
-          });
+        });
     };
     class CLASS(RiflemanMAT): CLASS(RiflemanCarabine) {
         @Role(RiflemanMAT);

@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 
 class CfgPatches {
-    class ADDON {
+    class DOUBLES(ADDON,SUBCOMPONENT) {
         name = QUOTE(DOUBLES(COMPONENT,SUBCOMPONENT));
         units[] = {
             QCLASS(Rifleman),

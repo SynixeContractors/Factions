@@ -52,8 +52,8 @@ class CfgVehicles {
             "weapons": {
                 "arifle_MSBS65_camo_F": {
                     "magazinesVest": {
-                        "tacgt_30Rnd_65x39_EPR_MSBS": 5,
-                        "tacgt_30Rnd_65x39_Ball_Tracer_MSBS": 2,
+                        "synixe_armoury_30Rnd_65x39_EPR_MSBS": 5,
+                        "synixe_armoury_30Rnd_65x39_Ball_Tracer_MSBS": 2,
                     },
                 },
             },
@@ -114,12 +114,12 @@ class CfgVehicles {
             "weapons": {
                 "arifle_MSBS65_GL_camo_F": {
                     "magazinesVest": {
-                        "tacgt_30Rnd_65x39_EPR_MSBS": 5,
-                        "tacgt_30Rnd_65x39_Ball_Tracer_MSBS": 2,
+                        "synixe_armoury_30Rnd_65x39_EPR_MSBS": 5,
+                        "synixe_armoury_30Rnd_65x39_Ball_Tracer_MSBS": 2,
                         "1Rnd_HE_Grenade_shell": 6,
                         "1Rnd_Smoke_Grenade_shell": 2,
                     },
-                    "loadedPrimary": "tacgt_30Rnd_65x39_EPR_MSBS",
+                    "loadedPrimary": "synixe_armoury_30Rnd_65x39_EPR_MSBS",
                     "loadedSecondary": "1Rnd_HE_Grenade_shell",
                 },
             },
@@ -140,10 +140,10 @@ class CfgVehicles {
             "weapons": {
                 "LMG_Mk200_black_F": {
                     "magazinesVest": {
-                        "tacgt_200Rnd_65x39_EPR_Belt": 4,
+                        "synixe_armoury_200Rnd_65x39_EPR_Belt": 4,
                     },
                     "magazinesBackpack": {
-                        "tacgt_200Rnd_65x39_EPR_Belt": 4,
+                        "synixe_armoury_200Rnd_65x39_EPR_Belt": 4,
                     },
                 },
             },
@@ -170,9 +170,9 @@ class CfgVehicles {
             "weapons": {
                 "arifle_MSBS65_Mark_camo_F": {
                     "magazinesVest": {
-                        "tacgt_20Rnd_65x39_EPR_MSR_MSBS": 5,
-                        "tacgt_30Rnd_65x39_AP_MSBS": 3,
-                        "tacgt_20Rnd_65x39_Ball_Tracer_MSR_MSBS": 2,
+                        "synixe_armoury_20Rnd_65x39_EPR_MSR_MSBS": 5,
+                        "synixe_armoury_30Rnd_65x39_AP_MSBS": 3,
+                        "synixe_armoury_20Rnd_65x39_Ball_Tracer_MSR_MSBS": 2,
                     }
                 }
             },
@@ -287,8 +287,8 @@ class CfgVehicles {
             "weapons": {
                 "arifle_MSBS65_camo_F": {
                     "magazinesVest": {
-                        "tacgt_30Rnd_65x39_EPR_MSBS": 5,
-                        "tacgt_30Rnd_65x39_Ball_Tracer_MSBS": 2,
+                        "synixe_armoury_30Rnd_65x39_EPR_MSBS": 5,
+                        "synixe_armoury_30Rnd_65x39_Ball_Tracer_MSBS": 2,
                     },
                 },
             },

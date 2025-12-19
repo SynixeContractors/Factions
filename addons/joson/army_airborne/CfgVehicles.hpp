@@ -106,7 +106,7 @@ class CfgVehicles {
                 "Aegis_optic_1p87": 0.7,
                 "optic_LRCO_blk_F": 0.3,
             },
-       });
+        });
     };
     class CLASS(Autorifleman): CLASS(Rifleman) {
         @Role(Autorifleman);
@@ -123,7 +123,7 @@ class CfgVehicles {
                 "Aegis_optic_1p87": 0.2,
                 "optic_LRCO_blk_F": 0.2,
             },
-       });
+        });
     };
     class CLASS(RiflemanMAT): CLASS(RiflemanCarabine) {
         @Role(RiflemanMAT);

@@ -105,7 +105,7 @@ class CfgVehicles {
                 "Aegis_optic_1p87": 0.7,
                 "optic_LRCO_blk_F": 0.3,
             },
-       });
+        });
     };
     class CLASS(Autorifleman): CLASS(Rifleman) {
         @Role(Autorifleman);
@@ -122,7 +122,7 @@ class CfgVehicles {
                 "Aegis_optic_1p87": 0.2,
                 "optic_LRCO_blk_F": 0.2,
             },
-       });
+        });
     };
     class CLASS(Medic): CLASS(RiflemanCarabine) {
         @Role(Medic);
@@ -133,7 +133,7 @@ class CfgVehicles {
             "packs": [
                 "t3_medic",
             ],
-          });
+        });
     };
     class CLASS(RiflemanMAT): CLASS(RiflemanCarabine) {
         @Role(RiflemanMAT);
@@ -221,14 +221,13 @@ class CfgVehicles {
         });
     };
     class CLASS(Spotter): CLASS(Marksman) {
-      @Role(Spotter);
-      @Uniforms({
+        @Role(Spotter);
+        @Uniforms({
             "variants": {
                 "tacs_Uniform_Combat_RS_ATACS_IX": 0.5,
                 "U_I_FullGhillie_lsh": 0.5,
             },
         });
-
     };
     class CLASS(Sniper): CLASS(Spotter) {
         @Role(Sniper);
