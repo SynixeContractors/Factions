@@ -1,5 +1,5 @@
-class GCLASS(PumaPylons);
-class CLASS(PumaPylons): GCLASS(PumaPylons) {
+class GCLASS(Cougar_Pylon);
+class CLASS(Cougar_Pylon): GCLASS(Cougar_Pylon) {
     SCOPE_DLC;
     faction = QPCLASS(t3_blufor);
     side = 1;

@@ -1,5 +1,5 @@
-class GCLASS(M2High);
-class CLASS(M2High): GCLASS(M2High) {
+class GCLASS(M2_High);
+class CLASS(M2_High): GCLASS(M2_High) {
     SCOPE_DLC;
     faction = QPCLASS(t3_blufor);
     side = 1;
@@ -7,8 +7,8 @@ class CLASS(M2High): GCLASS(M2High) {
     typicalCargo[] = {QCLASS(Rifleman)};
 };
 
-class GCLASS(M2Low);
-class CLASS(M2Low): GCLASS(M2Low) {
+class GCLASS(M2_Low);
+class CLASS(M2_Low): GCLASS(M2_Low) {
     SCOPE_DLC;
     faction = QPCLASS(t3_blufor);
     side = 1;

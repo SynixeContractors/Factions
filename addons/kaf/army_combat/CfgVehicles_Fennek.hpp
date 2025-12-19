@@ -10,8 +10,8 @@ class CLASS(Fennek): GCLASS(Fennek) {
     typicalCargo[] = {QCLASS(Rifleman), QCLASS(Rifleman)};
 };
 
-class GCLASS(FennekHMG);
-class CLASS(FennekHMG): GCLASS(FennekHMG) {
+class GCLASS(Fennek_HMG);
+class CLASS(Fennek_HMG): GCLASS(Fennek_HMG) {
     SCOPE_DLC;
     faction = QPCLASS(t3_blufor);
     side = 1;
@@ -22,8 +22,8 @@ class CLASS(FennekHMG): GCLASS(FennekHMG) {
     typicalCargo[] = {QCLASS(Rifleman), QCLASS(Rifleman)};
 };
 
-class GCLASS(FennekGMG);
-class CLASS(FennekGMG): GCLASS(FennekGMG) {
+class GCLASS(Fennek_GMG);
+class CLASS(Fennek_GMG): GCLASS(Fennek_GMG) {
     SCOPE_DLC;
     faction = QPCLASS(t3_blufor);
     side = 1;
