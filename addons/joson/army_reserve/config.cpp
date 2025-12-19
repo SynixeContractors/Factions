@@ -3,13 +3,7 @@
 class CfgPatches {
     class DOUBLES(ADDON,SUBCOMPONENT) {
         name = QUOTE(DOUBLES(COMPONENT,SUBCOMPONENT));
-        units[] = {
-            QCLASS(Rifleman),
-            QCLASS(TeamLeader),
-            QCLASS(RiflemanCarabine),
-            QCLASS(SquadLeader),
-            QCLASS(Autorifleman),
-        };
+        units[] = {};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {"cba_main"};
