@@ -4,6 +4,8 @@ class GCLASS(Typhoon_Bench): O_Truck_03_transport_F {
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
+    crew = "Civilian";
+    typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 260;
     #include "textures\Typhoon.hpp"
 };
@@ -14,16 +16,20 @@ class GCLASS(Typhoon_Covered): O_Truck_03_covered_F {
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
+    crew = "Civilian";
+    typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 260;
     #include "textures\TyphoonCovered.hpp"
 };
 
 class O_Truck_03_cargo_RF;
-class GCLASS(Typhoon_Flatbed): O_Truck_03_cargo_RF {
+class GCLASS(Typhoon_Cargo): O_Truck_03_cargo_RF {
     displayName = "Typhoon (Cargo)";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
+    crew = "Civilian";
+    typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 260;
     #include "textures\Typhoon.hpp"
 };
@@ -34,6 +40,8 @@ class GCLASS(Typhoon_Fuel): O_Truck_03_fuel_F {
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
+    crew = "Civilian";
+    typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 260;
     class TextureSources {
         class Green {
@@ -81,6 +89,8 @@ class GCLASS(Typhoon_Ammo): O_Truck_03_ammo_F {
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
+    crew = "Civilian";
+    typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 260;
     class TextureSources {
         class Green {
@@ -132,6 +142,8 @@ class GCLASS(Typhoon_Medical): O_Truck_03_medical_F {
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
+    crew = "Civilian";
+    typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 260;
     #include "textures\TyphoonCovered.hpp"
 };
@@ -142,6 +154,8 @@ class GCLASS(Typhoon_Device): O_Truck_03_device_F {
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
+    crew = "Civilian";
+    typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 260;
     #include "textures\Typhoon.hpp"
 };
@@ -152,6 +166,8 @@ class GCLASS(Typhoon_Repair): O_Truck_03_repair_F {
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
+    crew = "Civilian";
+    typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 260;
     class TextureSources {
         class Green {

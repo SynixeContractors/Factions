@@ -18,6 +18,7 @@ class CfgVehicles {
     //we might be able to fix those textures and its gonna save copypasting
 
     // Cars
+    #include "CfgVehicles_Arcadian.hpp"
     #include "CfgVehicles_Fennek.hpp"
     #include "CfgVehicles_Hatchback.hpp"
     #include "CfgVehicles_Jay.hpp"

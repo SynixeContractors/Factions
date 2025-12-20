@@ -17,8 +17,8 @@ class CLASS(Typhoon_Covered): GCLASS(Typhoon_Covered) {
     crew = QCLASS(Rifleman);
 };
 
-class GCLASS(Typhoon_Flatbed);
-class CLASS(Typhoon_Flatbed): GCLASS(Typhoon_Flatbed) {
+class GCLASS(Typhoon_Cargo);
+class CLASS(Typhoon_Cargo): GCLASS(Typhoon_Cargo) {
     JOSON_CAR_GREEN
     //FIXME: needs green camo editor picture
     crew = QCLASS(Rifleman);
