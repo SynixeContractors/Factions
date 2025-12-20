@@ -1,6 +1,6 @@
 class I_Boat_Armed_01_hmg;
 class GCLASS(AssaultBoat_HMG): I_Boat_Armed_01_hmg {
-    displayName = "Assault Boat (.50 HMG)";
+    displayName = "Assault Boat (HMG)";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
