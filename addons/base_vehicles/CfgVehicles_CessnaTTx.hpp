@@ -5,6 +5,8 @@ class GCLASS(CessnaTTx): C_Plane_Civil_01_F {
     displayName = "Cessna TTx";
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
+    ace_refuel_fuelCapacity = 454;
+    crate_fuel_type = "avgas";
     #include "textures/CessnaTTx.hpp"
 };
 
@@ -15,5 +17,7 @@ class GCLASS(CessnaTTx_Racing): C_Plane_Civil_01_racing_F {
     displayName = "Cessna TTx Racing";
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
+    ace_refuel_fuelCapacity = 454;
+    crate_fuel_type = "avgas";
     #include "textures/CessnaTTx.hpp"
 };
