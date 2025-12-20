@@ -9,8 +9,8 @@ class CLASS(LSV): GCLASS(LSV) {
     typicalCargo[] = {QCLASS(Rifleman)};
 };
 
-class GCLASS(LSV_minigun);
-class CLASS(LSV_minigun): GCLASS(LSV_minigun) {
+class GCLASS(LSV_M134);
+class CLASS(LSV_M134): GCLASS(LSV_M134) {
     SCOPE_DLC;
     faction = QPCLASS(t3_blufor);
     side = 1;

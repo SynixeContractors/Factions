@@ -10,8 +10,8 @@ class GCLASS(LSV) : O_LSV_02_unarmed_F {
 };
 
 class O_LSV_02_armed_F;
-class GCLASS(LSV_Minigun) : O_LSV_02_armed_F {
-    displayName = "LSV (Minigun)";
+class GCLASS(LSV_M134) : O_LSV_02_armed_F {
+    displayName = "LSV (M134)";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;

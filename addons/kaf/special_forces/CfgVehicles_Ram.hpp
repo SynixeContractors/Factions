@@ -1,5 +1,5 @@
-class GCLASS(Ram_Minigun);
-class CLASS(Ram_Minigun): GCLASS(Ram_Minigun) {
+class GCLASS(Ram_M134);
+class CLASS(Ram_M134): GCLASS(Ram_M134) {
     SCOPE_DLC;
     faction = QPCLASS(t3_blufor);
     side = 1;

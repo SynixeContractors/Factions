@@ -58,8 +58,8 @@ class CLASS(LSV): GCLASS(LSV) {
     //FIXME: needs green camo editor picture
       crew = QCLASS(Rifleman);
 };
-class GCLASS(LSV_Minigun);
-class CLASS(LSV_Minigun): GCLASS(LSV_Minigun) {
+class GCLASS(LSV_M134);
+class CLASS(LSV_M134): GCLASS(LSV_M134) {
     JOSON_CAR_GREEN
     //FIXME: needs green camo editor picture
     crew = QCLASS(Rifleman);

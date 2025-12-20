@@ -64,6 +64,10 @@ class CfgVehicles {
     #include "CfgVehicles_Wiesel.hpp"
 
     // Helicopters
+    #include "CfgVehicles_Apache.hpp"
+    #include "CfgVehicles_Chinook.hpp"
+    #include "CfgVehicles_Comanche.hpp"
+    #include "CfgVehicles_Ghosthawk.hpp"
     #include "CfgVehicles_MD500.hpp"
     #include "CfgVehicles_Mohawk.hpp"
     #include "CfgVehicles_Orca.hpp"
@@ -71,6 +75,7 @@ class CfgVehicles {
     #include "CfgVehicles_Wildcat.hpp"
 
     // Planes
+    #include "CfgVehicles_Blackfish.hpp"
     #include "CfgVehicles_CessnaTTx.hpp"
 
     // Submersibles

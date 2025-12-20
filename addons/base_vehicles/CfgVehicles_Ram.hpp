@@ -235,8 +235,8 @@ class GCLASS(Ram_RCWS): Pickup_01_rcws_base_rf {
 class Pickup_01_minigun_base_rf: Pickup_01_base_rf {
     RAM_TEXTURES;
 };
-class GCLASS(Ram_Minigun): Pickup_01_minigun_base_rf {
-    displayName = "Ram 1500 (Minigun)";
+class GCLASS(Ram_M134): Pickup_01_minigun_base_rf {
+    displayName = "Ram 1500 (M134)";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;

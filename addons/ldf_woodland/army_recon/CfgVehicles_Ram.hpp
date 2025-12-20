@@ -70,8 +70,8 @@ class CLASS(Ram_Fuel): GCLASS(Ram_Fuel) {
     typicalCargo[] = {QCLASS(Rifleman)};
 };
 
-class GCLASS(Ram_Minigun);
-class CLASS(Ram_Minigun): GCLASS(Ram_Minigun) {
+class GCLASS(Ram_M134);
+class CLASS(Ram_M134): GCLASS(Ram_M134) {
     SCOPE_DLC;
     faction = QPCLASS(t2_opfor);
     side = 0;
