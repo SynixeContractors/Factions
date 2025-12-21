@@ -69,96 +69,7 @@ class CfgVehicles {
 
         @Assigned(Military);
 
-        @Primary({
-            "weapons": {
-                "arifle_AK12U_545_F": {
-                    "magazinesVest": {
-                        "30Rnd_545x39_Black_Mag_F": 7,
-                    }
-                },
-                "arifle_AK12U_545_tan_F": {
-                    "magazinesVest": {
-                        "30Rnd_545x39_Black_Mag_F": 7,
-                    }
-                },
-                "arifle_AKS_F": {
-                    "magazinesVest": {
-                        "30Rnd_545x39_Black_Mag_F": 7,
-                    }
-                },
-                "Aegis_arifle_AKS74_F": {
-                    "magazinesVest": {
-                        "30Rnd_545x39_Black_Mag_F": 7,
-                    }
-                },
-                "Aegis_arifle_AKS74_oak_F": {
-                    "magazinesVest": {
-                        "30Rnd_545x39_Black_Mag_F": 7,
-                    }
-                },
-                "Aegis_arifle_AK74_F": {
-                    "magazinesVest": {
-                        "30Rnd_545x39_Black_Mag_F": 7,
-                    }
-                },
-                "Aegis_arifle_AK74_oak_F": {
-                    "magazinesVest": {
-                        "30Rnd_545x39_Black_Mag_F": 7,
-                    }
-                },
-                "Aegis_arifle_AKM74_F": {
-                    "magazinesVest": {
-                        "30Rnd_545x39_Black_Mag_F": 7,
-                    }
-                },
-                "arifle_AK12_545_F": {
-                    "magazinesVest": {
-                        "30Rnd_545x39_Black_Mag_F": 7,
-                    }
-                },
-                "arifle_AK12_545_tan_F": {
-                    "magazinesVest": {
-                        "30Rnd_545x39_Black_Mag_F": 7,
-                    }
-                },
-                "arifle_AK12_F": {
-                    "magazinesVest": {
-                        "30Rnd_762x39_Mag_Green_F": 7,
-                    }
-                },
-                "arifle_AK12U_F": {
-                    "magazinesVest": {
-                        "30Rnd_762x39_Mag_Green_F": 7,
-                    }
-                },
-                "Aegis_arifle_AK103_F": {
-                    "magazinesVest": {
-                        "30Rnd_762x39_Mag_Green_F": 7,
-                    }
-                },
-                "arifle_AKM_F": {
-                    "magazinesVest": {
-                        "30Rnd_762x39_Mag_Green_F": 7,
-                    }
-                },
-                "arifle_AKM_FL_F": {
-                    "magazinesVest": {
-                        "30Rnd_762x39_Mag_Green_F": 7,
-                    }
-                },
-            },
-            "optics": {
-                "": 1,
-                "Aegis_optic_1p87": 1,
-                "JCA_optic_MROS_black": 1,
-                "JCA_optic_MROS_black_magnifier": 0.5,
-                "Aegis_optic_ACOG": 0.5,
-            },
-            "pointers": {
-                "saber_light_lxWS": 2,
-                "Aegis_acc_pointer_DM": 1,
-            },
-        });
+        #include "..\weapons\Rifleman.hpp"
     };
 
     class CLASS(Rifleman): CLASS(Base) {
@@ -168,97 +79,28 @@ class CfgVehicles {
     class CLASS(TeamLeader): CLASS(Rifleman) {
         @Role(TeamLeader);
 
-        @Primary({
-            "weapons": {
-                "arifle_AK12_GL_545_F": {
-                    "magazinesVest": {
-                        "30Rnd_545x39_Black_Mag_F": 9,
-                        "1Rnd_HEDP_Grenade_shell": 9,
-                    },
-                    "loadedPrimary": "30Rnd_545x39_Black_Mag_F",
-                    "loadedSecondary": "1Rnd_HEDP_Grenade_shell",
-                },
-                "arifle_AK12_GL_545_tan_F": {
-                    "magazinesVest": {
-                        "30Rnd_545x39_Black_Mag_F": 9,
-                        "1Rnd_HEDP_Grenade_shell": 9,
-                    },
-                    "loadedPrimary": "30Rnd_545x39_Black_Mag_F",
-                    "loadedSecondary": "1Rnd_HEDP_Grenade_shell",
-                },
-                "Aegis_arifle_AKM74_GL_F": {
-                    "magazinesVest": {
-                        "30Rnd_545x39_Black_Mag_F": 9,
-                        "1Rnd_HEDP_Grenade_shell": 9,
-                    },
-                    "loadedPrimary": "30Rnd_545x39_Black_Mag_F",
-                    "loadedSecondary": "1Rnd_HEDP_Grenade_shell",
-                },
-                "Aegis_arifle_AK74_GL_F": {
-                    "magazinesVest": {
-                        "30Rnd_545x39_Black_Mag_F": 9,
-                        "1Rnd_HEDP_Grenade_shell": 9,
-                    },
-                    "loadedPrimary": "30Rnd_545x39_Black_Mag_F",
-                    "loadedSecondary": "1Rnd_HEDP_Grenade_shell",
-                },
-                "Aegis_arifle_AK74_GL_oak_F": {
-                    "magazinesVest": {
-                        "30Rnd_545x39_Black_Mag_F": 9,
-                        "1Rnd_HEDP_Grenade_shell": 9,
-                    },
-                    "loadedPrimary": "30Rnd_545x39_Black_Mag_F",
-                    "loadedSecondary": "1Rnd_HEDP_Grenade_shell",
-                },
-            },
-            "optics": {
-                "": 1,
-                "Aegis_optic_1p87": 1,
-                "JCA_optic_MROS_black": 1,
-                "JCA_optic_MROS_black_magnifier": 0.5,
-                "Aegis_optic_ACOG": 0.5,
-            },
-            "pointers": {
-                "saber_light_lxWS": 2,
-                "Aegis_acc_pointer_DM": 1,
-            },
-        });
+        #include "..\weapons\TeamLeader.hpp"
     };
 
     class CLASS(Autorifleman): CLASS(Rifleman) {
         @Role(Autorifleman);
 
-        @Primary({
-            "weapons": {
-                "arifle_AKM_F": {
-                    "magazinesVest": {
-                        "75Rnd_762x39_Mag_F": 4,
-                    },
-                },
-                "arifle_RPK_F": {
-                    "magazinesVest": {
-                        "75Rnd_762x39_Mag_F": 4,
-                    },
-                },
-                "Aegis_arifle_RPK74M_F": {
-                    "magazinesVest": {
-                        "Aegis_45Rnd_545x39_Mag_F": 6,
-                    },
-                },
-            },
-            "optics": {
-                "": 1,
-                "Aegis_optic_1p87": 1,
-                "JCA_optic_MROS_black": 1,
-                "JCA_optic_MROS_black_magnifier": 0.5,
-                "Aegis_optic_ACOG": 0.5,
-            },
-            "pointers": {
-                "saber_light_lxWS": 2,
-                "Aegis_acc_pointer_DM": 1,
-            },
-            "bipods": {
-                "bipod_01_F_blk": 1,
+        #include "..\weapons\Autorifleman.hpp"
+
+        @Backpacks({
+            "variants": {
+                "B_AssaultPack_blk": 1,
+                "B_AssaultPackSpec_blk": 1,
+                "B_AssaultPack_cbr": 1,
+                "B_AssaultPackSpec_cbr": 1,
+                "B_AssaultPack_rgr": 1,
+                "B_AssaultPackSpec_rgr": 1,
+                "B_FieldPack_blk": 1,
+                "B_FieldPack_ardi": 1,
+                "B_FieldPack_cbr": 1,
+                "B_FieldPack_green_F": 1,
+                "B_FieldPack_khk": 1,
+                "B_FieldPack_oli": 1,
             },
         });
     };
@@ -347,111 +189,6 @@ class CfgVehicles {
             },
         });
 
-        @Primary({
-            "weapons": {
-                "": 5,
-                "arifle_AK12U_545_F": {
-                    "probability": 0.1,
-                    "magazinesVest": {
-                        "30Rnd_545x39_Black_Mag_F": 5,
-                    }
-                },
-                "arifle_AK12U_545_tan_F": {
-                    "probability": 0.1,
-                    "magazinesVest": {
-                        "30Rnd_545x39_Black_Mag_F": 5,
-                    }
-                },
-                "arifle_AKS_F": {
-                    "probability": 0.1,
-                    "magazinesVest": {
-                        "30Rnd_545x39_Black_Mag_F": 5,
-                    }
-                },
-                "Aegis_arifle_AKS74_F": {
-                    "probability": 0.1,
-                    "magazinesVest": {
-                        "30Rnd_545x39_Black_Mag_F": 5,
-                    }
-                },
-                "Aegis_arifle_AKS74_oak_F": {
-                    "probability": 0.1,
-                    "magazinesVest": {
-                        "30Rnd_545x39_Black_Mag_F": 5,
-                    }
-                },
-                "Aegis_arifle_AK74_F": {
-                    "probability": 0.1,
-                    "magazinesVest": {
-                        "30Rnd_545x39_Black_Mag_F": 5,
-                    }
-                },
-                "Aegis_arifle_AK74_oak_F": {
-                    "probability": 0.1,
-                    "magazinesVest": {
-                        "30Rnd_545x39_Black_Mag_F": 5,
-                    }
-                },
-                "Aegis_arifle_AKM74_F": {
-                    "probability": 0.1,
-                    "magazinesVest": {
-                        "30Rnd_545x39_Black_Mag_F": 5,
-                    }
-                },
-                "arifle_AK12_545_F": {
-                    "probability": 0.1,
-                    "magazinesVest": {
-                        "30Rnd_545x39_Black_Mag_F": 5,
-                    }
-                },
-                "arifle_AK12_545_tan_F": {
-                    "probability": 0.1,
-                    "magazinesVest": {
-                        "30Rnd_545x39_Black_Mag_F": 5,
-                    }
-                },
-                "arifle_AK12_F": {
-                    "probability": 0.1,
-                    "magazinesVest": {
-                        "30Rnd_762x39_Mag_Green_F": 5,
-                    }
-                },
-                "arifle_AK12U_F": {
-                    "probability": 0.1,
-                    "magazinesVest": {
-                        "30Rnd_762x39_Mag_Green_F": 5,
-                    }
-                },
-                "Aegis_arifle_AK103_F": {
-                    "probability": 0.1,
-                    "magazinesVest": {
-                        "30Rnd_762x39_Mag_Green_F": 5,
-                    }
-                },
-                "arifle_AKM_F": {
-                    "probability": 0.1,
-                    "magazinesVest": {
-                        "30Rnd_762x39_Mag_Green_F": 5,
-                    }
-                },
-                "arifle_AKM_FL_F": {
-                    "probability": 0.1,
-                    "magazinesVest": {
-                        "30Rnd_762x39_Mag_Green_F": 5,
-                    }
-                },
-            },
-            "optics": {
-                "": 1,
-                "Aegis_optic_1p87": 1,
-                "JCA_optic_MROS_black": 1,
-                "JCA_optic_MROS_black_magnifier": 0.5,
-                "Aegis_optic_ACOG": 0.5,
-            },
-            "pointers": {
-                "saber_light_lxWS": 2,
-                "Aegis_acc_pointer_DM": 1,
-            },
-        });
+        #include "..\weapons\Rifleman.hpp"
     };
 };

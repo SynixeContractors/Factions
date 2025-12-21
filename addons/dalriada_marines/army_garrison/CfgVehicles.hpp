@@ -42,70 +42,19 @@ class CfgVehicles {
             },
         });
 
-        @Primary({
-            "weapons": {
-                "atlas_arifle_famasG4_Grip_F": {
-                    "magazinesVest": {
-                        "30Rnd_65x39_caseless_msbs_mag": 6,
-                    }
-                },
-            },
-            "optics": {
-                "optic_r1_low_lxWS": 0.5,
-                "optic_Aco": 0.5
-            },
-            "pointers": {
-                "saber_light_lxWS": 1,
-            },
-        });
+        #include "..\..\dalriada\weapons\Rifleman.hpp"
     };
 
     class CLASS(TeamLeader): CLASS(Rifleman) {
         @Role(TeamLeader);
 
-        @Primary({
-            "weapons": {
-                "Atlas_Arifle_famasG4_GL_F": {
-                    "magazinesVest": {
-                        "30Rnd_65x39_caseless_msbs_mag": 6,
-                        "1Rnd_HE_Grenade_shell": 4,
-                    },
-                    "loadedPrimary": "30Rnd_65x39_caseless_msbs_mag",
-                    "loadedSecondary": "1Rnd_HE_Grenade_shell",
-                },
-            },
-            "optics": {
-                "": 1,
-                "optic_r1_low_lxWS": 1,
-                "optic_Aco": 1,
-            },
-            "pointers": {
-                "saber_light_lxWS": 1,
-            },
-        });
+        #include "..\..\dalriada\weapons\TeamLeader.hpp"
     };
 
     class CLASS(Autorifleman): CLASS(Rifleman) {
         @Role(Autorifleman);
 
-        @Primary({
-            "weapons": {
-                "LMG_Mk200_black_F": {
-                    "magazinesVest": {
-                        "200Rnd_65x39_cased_Box_Red": 1,
-                    },
-                    "magazinesBackpack": {
-                        "200Rnd_65x39_cased_Box_Red": 2,
-                    },
-                },
-            },
-            "pointers": {
-                "saber_light_lxWS": 1,
-            },
-            "bipods": {
-                "bipod_03_F_blk": 1,
-            },
-        });
+        #include "..\..\dalriada\weapons\Autorifleman.hpp"
 
         @Backpacks({
             "variants": {

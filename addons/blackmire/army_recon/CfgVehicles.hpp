@@ -65,95 +65,8 @@ class CfgVehicles {
             "synixe_mgp_f_tactical": 1,
         });
 
-        @Primary({
-            "weapons": {
-                "arifle_AK12U_545_F": {
-                    "magazinesVest": {
-                        "30Rnd_545x39_Black_Mag_F": 7,
-                    }
-                },
-                "arifle_AK12U_545_tan_F": {
-                    "magazinesVest": {
-                        "30Rnd_545x39_Black_Mag_F": 7,
-                    }
-                },
-                "arifle_AKS_F": {
-                    "magazinesVest": {
-                        "30Rnd_545x39_Black_Mag_F": 7,
-                    }
-                },
-                "Aegis_arifle_AKS74_F": {
-                    "magazinesVest": {
-                        "30Rnd_545x39_Black_Mag_F": 7,
-                    }
-                },
-                "Aegis_arifle_AKS74_oak_F": {
-                    "magazinesVest": {
-                        "30Rnd_545x39_Black_Mag_F": 7,
-                    }
-                },
-                "Aegis_arifle_AK74_F": {
-                    "magazinesVest": {
-                        "30Rnd_545x39_Black_Mag_F": 7,
-                    }
-                },
-                "Aegis_arifle_AK74_oak_F": {
-                    "magazinesVest": {
-                        "30Rnd_545x39_Black_Mag_F": 7,
-                    }
-                },
-                "Aegis_arifle_AKM74_F": {
-                    "magazinesVest": {
-                        "30Rnd_545x39_Black_Mag_F": 7,
-                    }
-                },
-                "arifle_AK12_545_F": {
-                    "magazinesVest": {
-                        "30Rnd_545x39_Black_Mag_F": 7,
-                    }
-                },
-                "arifle_AK12_545_tan_F": {
-                    "magazinesVest": {
-                        "30Rnd_545x39_Black_Mag_F": 7,
-                    }
-                },
-                "arifle_AK12_F": {
-                    "magazinesVest": {
-                        "30Rnd_762x39_Mag_Green_F": 7,
-                    }
-                },
-                "arifle_AK12U_F": {
-                    "magazinesVest": {
-                        "30Rnd_762x39_Mag_Green_F": 7,
-                    }
-                },
-            },
-            "optics": {
-                "Aegis_optic_1p87": 1,
-                "JCA_optic_MROS_black": 1,
-                "JCA_optic_MROS_black_magnifier": 0.5,
-                "Aegis_optic_ACOG": 0.5,
-            },
-            "pointers": {
-                "saber_light_lxWS": 2,
-                "Aegis_acc_pointer_DM": 1,
-            },
-        });
-
-        @Secondary({
-            "weapons": {
-                "hgun_Rook40_F": {
-                    "magazinesVest": {
-                        "17Rnd_9x21_Mag": 3,
-                    },
-                },
-                "hgun_Pistol_01_F": {
-                    "magazinesVest": {
-                        "10Rnd_9x21_Mag": 3,
-                    },
-                },
-            },
-        });
+        #include "..\weapons\Rifleman.hpp"
+        #include "..\weapons\Secondary.hpp"
 
         @Binoculars({
             "weapons": {
@@ -189,108 +102,13 @@ class CfgVehicles {
     class CLASS(TeamLeader): CLASS(SquadLeader) {
         @Role(TeamLeader);
 
-        @Primary({
-            "weapons": {
-                "arifle_AK12_GL_545_F": {
-                    "magazinesVest": {
-                        "30Rnd_545x39_Black_Mag_F": 9,
-                        "1Rnd_HEDP_Grenade_shell": 9,
-                    },
-                    "loadedPrimary": "30Rnd_545x39_Black_Mag_F",
-                    "loadedSecondary": "1Rnd_HEDP_Grenade_shell",
-                },
-                "arifle_AK12_GL_545_tan_F": {
-                    "magazinesVest": {
-                        "30Rnd_545x39_Black_Mag_F": 9,
-                        "1Rnd_HEDP_Grenade_shell": 9,
-                    },
-                    "loadedPrimary": "30Rnd_545x39_Black_Mag_F",
-                    "loadedSecondary": "1Rnd_HEDP_Grenade_shell",
-                },
-                "Aegis_arifle_AKM74_GL_F": {
-                    "magazinesVest": {
-                        "30Rnd_545x39_Black_Mag_F": 9,
-                        "1Rnd_HEDP_Grenade_shell": 9,
-                    },
-                    "loadedPrimary": "30Rnd_545x39_Black_Mag_F",
-                    "loadedSecondary": "1Rnd_HEDP_Grenade_shell",
-                },
-                "Aegis_arifle_AK74_GL_F": {
-                    "magazinesVest": {
-                        "30Rnd_545x39_Black_Mag_F": 9,
-                        "1Rnd_HEDP_Grenade_shell": 9,
-                    },
-                    "loadedPrimary": "30Rnd_545x39_Black_Mag_F",
-                    "loadedSecondary": "1Rnd_HEDP_Grenade_shell",
-                },
-                "Aegis_arifle_AK74_GL_oak_F": {
-                    "magazinesVest": {
-                        "30Rnd_545x39_Black_Mag_F": 9,
-                        "1Rnd_HEDP_Grenade_shell": 9,
-                    },
-                    "loadedPrimary": "30Rnd_545x39_Black_Mag_F",
-                    "loadedSecondary": "1Rnd_HEDP_Grenade_shell",
-                },
-            },
-            "optics": {
-                "": 1,
-                "Aegis_optic_1p87": 1,
-                "JCA_optic_MROS_black": 1,
-                "JCA_optic_MROS_black_magnifier": 0.5,
-                "Aegis_optic_ACOG": 0.5,
-            },
-            "pointers": {
-                "saber_light_lxWS": 2,
-                "Aegis_acc_pointer_DM": 1,
-            },
-        });
+        #include "..\weapons\TeamLeader.hpp"
     };
 
     class CLASS(Autorifleman): CLASS(Base) {
         @Role(Autorifleman);
 
-        @Primary({
-            "weapons": {
-                "arifle_AKM_F": {
-                    "magazinesVest": {
-                        "75Rnd_762x39_Mag_F": 4,
-                    },
-                    "magazinesBackpack": {
-                        "75Rnd_762x39_Mag_F": 4,
-                    },
-                },
-                "arifle_RPK_F": {
-                    "magazinesVest": {
-                        "75Rnd_762x39_Mag_F": 4,
-                    },
-                    "magazinesBackpack": {
-                        "75Rnd_762x39_Mag_F": 4,
-                    },
-                },
-                "Aegis_arifle_RPK74M_F": {
-                    "magazinesVest": {
-                        "Aegis_45Rnd_545x39_Mag_F": 6,
-                    },
-                    "magazinesBackpack": {
-                        "Aegis_45Rnd_545x39_Mag_F": 6,
-                    },
-                },
-            },
-            "optics": {
-                "": 1,
-                "Aegis_optic_1p87": 1,
-                "JCA_optic_MROS_black": 1,
-                "JCA_optic_MROS_black_magnifier": 0.5,
-                "Aegis_optic_ACOG": 0.5,
-            },
-            "pointers": {
-                "saber_light_lxWS": 2,
-                "Aegis_acc_pointer_DM": 1,
-            },
-            "bipods": {
-                "bipod_01_F_blk": 1,
-            },
-        });
+        #include "..\weapons\Autorifleman.hpp"
         
         @Backpacks({
             "variants": {
@@ -313,43 +131,8 @@ class CfgVehicles {
     class CLASS(Marksman): CLASS(Base) {
         @Role(Marksman);
 
-        @Primary({
-            "weapons": {
-                "Aegis_srifle_SVD_blk_f": {
-                    "magazinesVest": {
-                        "10Rnd_762x54_Mag": 9,
-                    }
-                },
-                "Aegis_srifle_SVD_f": {
-                    "magazinesVest": {
-                        "10Rnd_762x54_Mag": 9,
-                    }
-                },
-                "Aegis_srifle_SVD_plum_f": {
-                    "magazinesVest": {
-                        "10Rnd_762x54_Mag": 9,
-                    }
-                },
-            },
-            "optics": {
-                "optic_LRPS": 1,
-            },
-        });
-
-        @Secondary({
-            "weapons": {
-                "hgun_Rook40_F": {
-                    "magazinesVest": {
-                        "17Rnd_9x21_Mag": 3,
-                    },
-                },
-                "hgun_Pistol_01_F": {
-                    "magazinesVest": {
-                        "10Rnd_9x21_Mag": 3,
-                    },
-                },
-            },
-        });
+        #include "..\weapons\Marksman.hpp"
+        #include "..\weapons\Secondary.hpp"
 
         @Binoculars({
             "weapons": {
@@ -482,43 +265,11 @@ class CfgVehicles {
 
     class CLASS(Spotter): CLASS(Base) {
         @Role(Spotter);
-        
+
         @Primary({
-            "weapons": {
-                "arifle_AK12U_545_lush_F": {
-                    "magazinesVest": {
-                        "30Rnd_545x39_Black_Mag_F": 9,
-                    },
-                },
-                "arifle_AK12U_545_tan_F": {
-                    "magazinesVest": {
-                        "30Rnd_545x39_Black_Mag_F": 9,
-                    },
-                },
-                "arifle_AK12U_545_arid_F": {
-                    "magazinesVest": {
-                        "30Rnd_545x39_Black_Mag_F": 9,
-                    },
-                },
-            },
-            "optics": {
-                "": 1,
-                "Aegis_optic_1p87": 1,
-                "JCA_optic_MROS_black": 1,
-                "JCA_optic_MROS_black_magnifier": 0.5,
-                "Aegis_optic_ACOG": 0.5,
-            },
-            "pointers": {
-                "saber_light_lxWS": 2,
-                "Aegis_acc_pointer_DM": 1,
-            },
-            "bipods": {
-                "bipod_01_F_blk": 1,
-            },
             "muzzles": {
-                "aegis_muzzle_snds_pbs_545_blk": 1,
+                "muzzle_snds_58_blk_F": 1,
             },
-            
         });
 
         @Uniforms({
@@ -539,35 +290,12 @@ class CfgVehicles {
             ],
         });
 
-        @Headgear({
-        });
+        @Headgear({});
     };
 
     class CLASS(Sniper): CLASS(Spotter) {
         @Role(Sniper);
 
-        @Primary({
-            "weapons": {
-                "srifle_DMR_04_F": {
-                    "magazinesVest": {
-                        "10Rnd_127x54_Mag": 4,
-                    },
-                },
-                "srifle_DMR_04_Tan_F": {
-                    "magazinesVest": {
-                        "10Rnd_127x54_Mag": 4,
-                    },
-                },
-            },
-            "optics": {
-                "optic_LRPS": 1,
-            },
-            "bipods": {
-                "bipod_01_F_blk": 1,
-            },
-            "muzzles": {
-                "muzzle_snds_338_black": 1,
-            },
-        });
+        #include "..\weapons\Sniper.hpp"
     };
 };

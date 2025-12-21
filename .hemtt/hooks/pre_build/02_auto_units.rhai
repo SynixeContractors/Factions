@@ -77,8 +77,6 @@ for addon in addons {
                 new_content += new_line + "\n";
             }
             config.create_file().write(new_content);
-        } else {
-            print("   No config.cpp found in " + folder.file_name() + ", skipping.");
         }
     }
 }

@@ -47,26 +47,7 @@ class CfgVehicles {
             "G_Shades_Black": 1,
         });
 
-        @Primary({
-            "weapons": {
-                "arifle_SA80_snd_F": {
-                    "magazinesVest": {
-                        "30Rnd_65x39_caseless_black_mag": 6,
-                    }
-                },
-            },
-            "optics": {
-                "optic_Arco_blk_F": 1,
-                "Aegis_optic_ICO_sand": 1,
-            },
-            "pointers": {
-                "ACE_DBAL_A3_Green": 1,
-            },
-            "muzzles": {
-                "muzzle_snds_H": 1,
-                "muzzle_snds_H_snd_F": 1,
-            }
-        });
+        #include "..\weapons\Rifleman.hpp"
 
         @Secondary({
             "weapons": {
@@ -105,57 +86,13 @@ class CfgVehicles {
     class CLASS(TeamLeader): CLASS(SquadLeader) {
         @Role(TeamLeader);
 
-        @Primary({
-            "weapons": {
-                "arifle_SA80_GL_snd_F": {
-                    "magazinesVest": {
-                        "30Rnd_65x39_caseless_black_mag": 9,
-                        "1Rnd_HE_Grenade_shell": 4,
-                        "1Rnd_Smoke_Grenade_shell": 2,
-                    },
-                    "loadedPrimary": "30Rnd_65x39_caseless_black_mag",
-                    "loadedSecondary": "1Rnd_HE_Grenade_shell",
-                },
-            },
-            "optics": {
-                "optic_Arco_blk_F": 1,
-                "Aegis_optic_ICO_sand": 2,
-            },
-            "pointers": {
-                "ACE_DBAL_A3_Green": 1,
-            },
-            "muzzles": {
-                "muzzle_snds_H": 1,
-                "muzzle_snds_H_snd_F": 1,
-            }
-        });
+        #include "..\weapons\TeamLeader.hpp"
     };
 
     class CLASS(Autorifleman): CLASS(Base) {
         @Role(Autorifleman);
 
-        @Primary({
-            "weapons": {
-                "LMG_Mk200_F": {
-                    "magazinesVest": {
-                        "200Rnd_65x39_cased_Box_Tracer_Red": 2,
-                    },
-                    "magazinesBackpack": {
-                        "200Rnd_65x39_cased_Box_Tracer_Red": 2,
-                    },
-                },
-            },
-            "optics": {
-                "": 1,
-                "optic_Arco_blk_F": 1,
-            },
-            "pointers": {
-                "ACE_DBAL_A3_Green": 1,
-            },
-            "bipods": {
-                "bipod_01_F_blk": 1,
-            },
-        });
+        #include "..\weapons\Autorifleman.hpp"
         
         @Backpacks({
             "variants": {
@@ -167,26 +104,7 @@ class CfgVehicles {
     class CLASS(Marksman): CLASS(Base) {
         @Role(Marksman);
 
-        @Primary({
-            "weapons": {
-                "arifle_SA80_snd_F": {
-                    "magazinesVest": {
-                        "30Rnd_65x39_caseless_black_mag": 6,
-                    }
-                },
-            },
-            "optics": {
-                "optic_DMS": 1,
-
-            },
-            "pointers": {
-                "ACE_DBAL_A3_Green": 1,
-            },
-            "muzzles": {
-                "muzzle_snds_H": 1,
-                "muzzle_snds_H_snd_F": 1,
-            }
-        });
+        #include "..\weapons\Marksman.hpp"
 
         @Binoculars({
             "weapons": {
@@ -282,21 +200,8 @@ class CfgVehicles {
         @Role(Spotter);
         
         @Primary({
-            "weapons": {
-                "arifle_SA80_snd_F": {
-                    "magazinesVest": {
-                        "30Rnd_65x39_caseless_black_mag": 5,
-                    },
-                },
-            },
-            "optics": {
-                "optic_Arco_blk_F": 1,
-            },
-            "pointers": {
-                "ACE_DBAL_A3_Green": 1,
-            },
             "muzzles": {
-                "muzzle_snds_H": 1,
+                "muzzle_snds_58_blk_F": 1,
             },
         });
 
@@ -336,25 +241,7 @@ class CfgVehicles {
     class CLASS(Sniper): CLASS(Spotter) {
         @Role(Sniper);
 
-        @Primary({
-            "weapons": {
-                "srifle_DMR_05_hex_F": {
-                    "magazinesVest": {
-                        "10Rnd_93x64_DMR_05_Mag": 6,
-                    },
-                },
-            },
-            "optics": {
-                "optic_LRPS": 1,
-                "optic_tws_sniper": 1,
-            },
-            "bipods": {
-                "bipod_02_F_blk": 1,
-            },
-            "muzzles": {
-                "muzzle_snds_93mmg": 1,
-            },
-        });
+        
 
         @Secondary({
             "weapons": {

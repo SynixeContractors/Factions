@@ -145,43 +145,46 @@ fn container(name, value) {
 }
 
 fn weapon(name, value) {
-    let ret = "Synixe_" + name + "[] = {";
-    for weapon in value.weapons.keys() {
-        let data = value.weapons[weapon];
-        if type_of(data) == "map" {
-            let probability = 1;
-            if "probability" in data {
-                probability = data.probability;
-            }
-            ret += "{\"" + weapon + "\"," + probability + ",{";
-            for container in ["magazinesUniform", "magazinesVest", "magazinesBackpack"] {
-                if container in data {
-                    ret += "{";
-                    let mags = data[container];
-                    for mag in mags.keys() {
-                        let qty = mags[mag];
-                        ret += "{\"" + mag + "\"," + qty + "},";
+    let ret = "";
+    if "weapons" in value {
+        ret = "Synixe_" + name + "[] = {";
+        for weapon in value.weapons.keys() {
+            let data = value.weapons[weapon];
+            if type_of(data) == "map" {
+                let probability = 1;
+                if "probability" in data {
+                    probability = data.probability;
+                }
+                ret += "{\"" + weapon + "\"," + probability + ",{";
+                for container in ["magazinesUniform", "magazinesVest", "magazinesBackpack"] {
+                    if container in data {
+                        ret += "{";
+                        let mags = data[container];
+                        for mag in mags.keys() {
+                            let qty = mags[mag];
+                            ret += "{\"" + mag + "\"," + qty + "},";
+                        }
+                        ret += "},";
+                    } else {
+                        ret += "{},";
                     }
-                    ret += "},";
-                } else {
-                    ret += "{},";
                 }
-            }
-            for magazine in ["loadedPrimary", "loadedSecondary"] {
-                if magazine in data {
-                    let mag = data[magazine];
-                    ret += "\"" + mag + "\",";
-                } else {
-                    ret += "\"\",";
+                for magazine in ["loadedPrimary", "loadedSecondary"] {
+                    if magazine in data {
+                        let mag = data[magazine];
+                        ret += "\"" + mag + "\",";
+                    } else {
+                        ret += "\"\",";
+                    }
                 }
+                ret += "},";
+            } else {
+                ret += "{\"" + weapon + "\"," + data;
             }
             ret += "},";
-        } else {
-            ret += "{\"" + weapon + "\"," + data;
         }
-        ret += "},";
+        ret += "};\n";
     }
-    ret += "};\n";
 
     for attachment in ["Optics", "Muzzles", "Bipods", "Pointers"] {
         let key = to_lower(attachment);
@@ -265,11 +268,15 @@ fn groups(args) {
     };
     let id = tier + "_" + type;
     let ret = "class CLASS(" + id + ") {\n";
-    let parts = type.split("_");
-    if parts.len() == 2 {
-        ret += "name = \"" + parts[0] + " (" + parts[1] + ")\";\n";
+    if type == "special_forces" {
+        ret += "displayName = \"Special Forces\";\n";
     } else {
-        ret += "name = \"" + type + "\";\n";
+        let parts = type.split("_");
+        if parts.len() == 2 {
+            ret += "name = \"" + parts[0] + " (" + parts[1] + ")\";\n";
+        } else {
+            ret += "name = \"" + type + "\";\n";
+        }
     }
     let tier_file = to_lower(tier);
     if tier_file == "t2" || tier_file == "t3" {

@@ -244,7 +244,7 @@ class CfgVehicles {
     class CLASS(RiflemanMAT): CLASS(Base) {
         @Role(RiflemanMAT);
 
-         @Launchers({
+        @Launchers({
             "weapons": {
                 "launch_RPG32_green_F": {
                     "magazinesBackpack": {

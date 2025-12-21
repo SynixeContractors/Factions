@@ -47,73 +47,19 @@ class CfgVehicles {
             "H_MilCap_oicamo": 1,
         });
 
-        @Primary({
-            "weapons": {
-                "arifle_SA80_snd_F": {
-                    "magazinesVest": {
-                        "30Rnd_65x39_caseless_black_mag": 5,
-                    },
-                },
-            },
-            "optics": {
-                "": 0.7,
-                "Aegis_optic_ICO_sand": 0.3,
-            },
-            "pointers": {
-                "saber_light_lxWS": 1
-            },
-        });
+        #include "..\weapons\Rifleman.hpp"
     };
 
     class CLASS(TeamLeader): CLASS(Rifleman) {
         @Role(TeamLeader);
 
-        @Primary({
-            "weapons": {
-                "arifle_SA80_GL_snd_F": {
-                    "magazinesVest": {
-                        "30Rnd_65x39_caseless_black_mag": 6,
-                        "1Rnd_HE_Grenade_shell": 4,
-                    },
-                    "loadedPrimary": "30Rnd_65x39_caseless_black_mag",
-                    "loadedSecondary": "1Rnd_HE_Grenade_shell",
-                },
-            },
-            "optics": {
-                "": 0.5,
-                "Aegis_optic_ICO_sand": 0.5,
-            },
-            "pointers": {
-                "saber_light_lxWS": 1,
-            },
-        });
+        #include "..\weapons\TeamLeader.hpp"
     };
 
     class CLASS(Autorifleman): CLASS(Rifleman) {
         @Role(Autorifleman);
 
-        @Primary({
-            "weapons": {
-                "LMG_Mk200_F": {
-                    "magazinesVest": {
-                        "200Rnd_65x39_cased_Box_Tracer_Red": 1,
-                    },
-                    "magazinesBackpack": {
-                        "200Rnd_65x39_cased_Box_Tracer_Red": 2,
-                    },
-                }
-            },
-            "optics": {
-                "": 0.5,
-                "Aegis_optic_ICO_sand": 0.5
-            },
-            "pointers": {
-                "saber_light_lxWS": 1
-            },
-            "bipods": {
-                "bipod_01_F_blk": 1
-            },
-        });
+        #include "..\weapons\Autorifleman.hpp"
     };
 
     class CLASS(Medic): CLASS(Rifleman) {

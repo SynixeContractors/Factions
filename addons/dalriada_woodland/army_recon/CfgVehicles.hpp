@@ -130,24 +130,7 @@ class CfgVehicles {
             },
         });
 
-        @Primary({
-            "weapons": {
-                "LMG_Mk200_black_F": {
-                    "magazinesVest": {
-                        "200Rnd_65x39_cased_Box_Red": 2,
-                    },
-                    "magazinesBackpack": {
-                        "200Rnd_65x39_cased_Box_Red": 2,
-                    },
-                },
-            },
-            "pointers": {
-                "ACE_DBAL_A3_Red": 1,
-            },
-            "bipods": {
-                "bipod_03_F_blk": 1,
-            },
-        });
+        #include "..\..\dalriada\weapons\Autorifleman.hpp"
 
         @Secondary({
             "weapons": {

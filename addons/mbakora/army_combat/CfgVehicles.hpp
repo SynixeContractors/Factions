@@ -47,27 +47,7 @@ class CfgVehicles {
     class CLASS(Rifleman): CLASS(Base) {
         @Role(Rifleman);
 
-        @Primary({
-            "weapons": {
-                "arifle_SA80_snd_F": {
-                    "magazinesVest": {
-                        "30Rnd_65x39_caseless_black_mag": 6,
-                    }
-                },
-            },
-            "optics": {
-                "optic_Arco_blk_F": 1,
-                "Aegis_optic_ICO_sand": 1,
-            },
-            "pointers": {
-                "ACE_DBAL_A3_Green": 1,
-            },
-            "muzzles": {
-                "": 2,
-                "muzzle_snds_H": 1,
-                "muzzle_snds_H_snd_F": 1,
-            }
-        });
+        #include "..\weapons\Rifleman.hpp"
 
         @Secondary({
             "weapons": {
@@ -99,67 +79,13 @@ class CfgVehicles {
             ],
         });
 
-        @Primary({
-            "weapons": {
-                "arifle_SA80_snd_F": {
-                    "magazinesVest": {
-                        "30Rnd_65x39_caseless_black_mag": 5,
-                        "30Rnd_65x39_caseless_black_mag_Tracer": 3,
-                    }
-                },
-            },
-            "optics": {
-                "optic_Arco_blk_F": 1,
-            },
-            "pointers": {
-                "ACE_DBAL_A3_Green": 1,
-            },
-            "muzzles": {
-                "": 1,
-                "muzzle_snds_H": 1,
-                "muzzle_snds_H_snd_F": 1,
-            }
-        });
-
-        @Secondary({
-            "weapons": {
-                "hgun_ACPC2_black_F": {
-                    "magazinesVest": {
-                        "9Rnd_45ACP_Mag": 3,
-                    },
-                },
-            },
-        });
+        #include "..\weapons\Secondary.hpp"
     };
 
     class CLASS(TeamLeader): CLASS(SquadLeader) {
         @Role(TeamLeader);
 
-        @Primary({
-            "weapons": {
-                "arifle_SA80_GL_snd_F": {
-                    "magazinesVest": {
-                        "30Rnd_65x39_caseless_black_mag": 9,
-                        "1Rnd_HE_Grenade_shell": 4,
-                        "1Rnd_Smoke_Grenade_shell": 2,
-                    },
-                    "loadedPrimary": "30Rnd_65x39_caseless_black_mag",
-                    "loadedSecondary": "1Rnd_HE_Grenade_shell",
-                },
-            },
-            "optics": {
-                "optic_Arco_blk_F": 1,
-                "Aegis_optic_ICO_sand": 2,
-            },
-            "pointers": {
-                "ACE_DBAL_A3_Green": 1,
-            },
-            "muzzles": {
-                "": 1,
-                "muzzle_snds_H": 1,
-                "muzzle_snds_H_snd_F": 1,
-            }
-        });
+        #include "..\weapons\TeamLeader.hpp"
     };
 
     class CLASS(Autorifleman): CLASS(Rifleman) {
@@ -178,38 +104,9 @@ class CfgVehicles {
             ],
         });
 
-        @Primary({
-            "weapons": {
-                "LMG_Mk200_F": {
-                    "magazinesVest": {
-                        "200Rnd_65x39_cased_Box_Tracer_Red": 2,
-                    },
-                    "magazinesBackpack": {
-                        "200Rnd_65x39_cased_Box_Tracer_Red": 2,
-                    },
-                },
-            },
-            "optics": {
-                "": 1,
-                "optic_Arco_blk_F": 1,
-            },
-            "pointers": {
-                "ACE_DBAL_A3_Green": 1,
-            },
-            "bipod": {
-                "bipod_01_F_blk": 1,
-            },
-        });
+        #include "..\weapons\Autorifleman.hpp"
 
-        @Secondary({
-            "weapons": {
-                "hgun_ACPC2_black_F": {
-                    "magazinesVest": {
-                        "9Rnd_45ACP_Mag": 3,
-                    },
-                },
-            },
-        });
+        #include "..\weapons\Secondary.hpp"
         
         @Backpacks({
             "variants": {
@@ -222,38 +119,8 @@ class CfgVehicles {
     class CLASS(Machinegunner): CLASS(Autorifleman) {
         @Role(Machinegunner);
 
-        @Primary({
-            "weapons": {
-                "MMG_01_tan_F": {
-                    "magazinesVest": {
-                        "ACE_150Rnd_93x64_Mag_red": 2,
-                    },
-                    "magazinesBackpack": {
-                        "ACE_150Rnd_93x64_Mag_red": 2,
-                    },
-                },
-            },
-            "optics": {
-                "": 0.6,
-                "optic_Arco_blk_F": 0.4,
-            },
-            "pointers": {
-                "ACE_DBAL_A3_Green": 1,
-            },
-            "bipod": {
-                "bipod_01_F_blk": 1,
-            },
-        });
-
-        @Secondary({
-            "weapons": {
-                "hgun_ACPC2_black_F": {
-                    "magazinesVest": {
-                        "9Rnd_45ACP_Mag": 3,
-                    },
-                },
-            },
-        });
+        #include "..\weapons\Machinegunner.hpp"
+        #include "..\weapons\Secondary.hpp"
 
         @Backpacks({
             "variants": {
@@ -292,36 +159,8 @@ class CfgVehicles {
             ],
         });
 
-        @Primary({
-            "weapons": {
-                "arifle_SA80_snd_F": {
-                    "magazinesVest": {
-                        "30Rnd_65x39_caseless_black_mag": 6,
-                    }
-                },
-            },
-            "optics": {
-                "optic_DMS": 1,
-
-            },
-            "pointers": {
-                "ACE_DBAL_A3_Green": 1,
-            },
-            "muzzles": {
-                "muzzle_snds_H": 1,
-                "muzzle_snds_H_snd_F": 1,
-            }
-        });
-
-        @Secondary({
-            "weapons": {
-                "hgun_ACPC2_black_F": {
-                    "magazinesVest": {
-                        "9Rnd_45ACP_Mag": 3,
-                    },
-                },
-            },
-        });
+        #include "..\weapons\Marksman.hpp"
+        #include "..\weapons\Secondary.hpp"
 
     };
 
@@ -362,24 +201,6 @@ class CfgVehicles {
     class CLASS(RiflemanAA): CLASS(Rifleman) {
         @Role(RiflemanAA);
 
-        @Primary({
-            "weapons": {
-                "arifle_SA80_C_snd_F": {
-                    "magazinesVest": {
-                        "30Rnd_65x39_caseless_black_mag": 4,
-                    }
-                },
-            },
-            "optics": {
-                "": 0.5,
-                "Aegis_optic_ICO_sand": 0.5,
-
-            },
-            "pointers": {
-                "ACE_DBAL_A3_Green": 1,
-            },
-        });
-
         @Launchers({
             "weapons": {
                 "launch_B_Titan_coyote_F": {
@@ -399,24 +220,6 @@ class CfgVehicles {
 
     class CLASS(RiflemanHAT): CLASS(Rifleman) {
         @Role(RiflemanHAT);
-
-        @Primary({
-            "weapons": {
-                "arifle_SA80_C_snd_F": {
-                    "magazinesVest": {
-                        "30Rnd_65x39_caseless_black_mag": 4,
-                    }
-                },
-            },
-            "optics": {
-                "": 0.5,
-                "Aegis_optic_ICO_sand": 0.5,
-
-            },
-            "pointers": {
-                "ACE_DBAL_A3_Green": 1,
-            },
-        });
 
         @Launchers({
             "weapons": {
@@ -493,16 +296,6 @@ class CfgVehicles {
         @Headgear({
             "lxWS_H_HelmetCrew_I": 1,
         });
-
-        @Primary({
-            "weapons": {
-                "arifle_SA80_C_snd_F": {
-                    "magazinesVest": {
-                        "30Rnd_65x39_caseless_black_mag": 4,
-                    }
-                },
-            },
-        });
     };
 
     class CLASS(HeliPilot): CLASS(Crewman) {
@@ -514,6 +307,4 @@ class CfgVehicles {
             "H_CrewHelmetHeli_B": 0.4,
         });
     };
-
 };
-
