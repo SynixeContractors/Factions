@@ -2,10 +2,9 @@ class CfgVehicles {
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {
         displayName = "JSR Base Army Airborne";
-        editorSubcategory = QGCLASS(army_combat);
+        editorSubcategory = QGCLASS(army_airborne);
     };
     class CLASS(Rifleman): CLASS(Base) {
-        editorSubcategory = QGCLASS(army_airborne);
         @Role(Rifleman);
         @Uniforms({
             "variants": {
@@ -100,6 +99,8 @@ class CfgVehicles {
                         "30Rnd_580x42_Mag_F": 8,
                         "1Rnd_HEDP_Grenade_shell": 4,
                     },
+                    "loadedPrimary": "30Rnd_580x42_Mag_F",
+                    "loadedSecondary": "1Rnd_HEDP_Grenade_shell",
                 },
             },
             "optics": {

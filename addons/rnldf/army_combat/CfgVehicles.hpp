@@ -116,7 +116,9 @@ class CfgVehicles {
                     "magazinesVest": {
                         "30Rnd_556x45_AUG_Mag_F": 9,
                         "1Rnd_HEDP_Grenade_shell": 9,
-                    }
+                    },
+                    "loadedPrimary": "30Rnd_556x45_AUG_Mag_F",
+                    "loadedSecondary": "1Rnd_HEDP_Grenade_shell",
                 },
             },
             "optics": {

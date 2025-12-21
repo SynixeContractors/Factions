@@ -130,13 +130,17 @@ class CfgVehicles {
                     "magazinesVest": {
                         "30Rnd_545x39_Black_Mag_Tracer_F": 9,
                         "1Rnd_HEDP_Grenade_shell": 9,
-                    }
+                    },
+                    "loadedPrimary": "30Rnd_545x39_Black_Mag_Tracer_F",
+                    "loadedSecondary": "1Rnd_HEDP_Grenade_shell",
                 },
                 "Aegis_arifle_AK74_GL_F": {
                     "magazinesVest": {
                         "30Rnd_545x39_Black_Mag_Tracer_F": 9,
                         "1Rnd_HEDP_Grenade_shell": 9,
-                    }
+                    },
+                    "loadedPrimary": "30Rnd_545x39_Black_Mag_F",
+                    "loadedSecondary": "1Rnd_HEDP_Grenade_shell",
                 },
             },
             "optics": {

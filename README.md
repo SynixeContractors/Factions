@@ -22,6 +22,10 @@ hemtt photoshoot
 
 Calvane
 ├─ Blackmire - PMC group that operates as an unofficial branch of Calvane.
-├─ Serroise - Large nation with global reach, closely allied with Calvane.
+├─ Dal Riada - Large nation with global reach, closely allied with Calvane.
 ├─ Mbakora - An African federation with a strong military presence.
 
+## Integrated Economies Aliance
+
+Virelia
+├─ Karskoya

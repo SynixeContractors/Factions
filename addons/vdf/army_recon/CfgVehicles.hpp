@@ -143,7 +143,9 @@ class CfgVehicles {
                     "magazinesVest": {
                         "30Rnd_762x39_polymer_Black_Mag_Green_F": 6,
                         "1Rnd_HE_Grenade_shell": 4,
-                    }
+                    },
+                    "loadedPrimary": "30Rnd_762x39_polymer_Black_Mag_Green_F",
+                    "loadedSecondary": "1Rnd_HE_Grenade_shell",
                 },
             },
             "optics": {
@@ -153,7 +155,6 @@ class CfgVehicles {
                 "acc_pointer_IR": 1,
             },
         });
-        
     };
 
     class CLASS(Autorifleman): CLASS(Base) {
@@ -235,7 +236,6 @@ class CfgVehicles {
                 },
             },
         });
-
     };
 
     class CLASS(Medic): CLASS(Base) {
@@ -262,7 +262,6 @@ class CfgVehicles {
                 },
             },
         });
-
     };
 
     class CLASS(RadioOperator): CLASS(Base) {
@@ -384,4 +383,3 @@ class CfgVehicles {
         });
     };
 };
-

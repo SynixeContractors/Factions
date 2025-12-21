@@ -241,6 +241,18 @@ fn groups(args) {
     let tier = args[0];
     let side = args[1];
     let type = args[2];
+    let match_type = type;
+    if type.ends_with("_OPFOR") || type.ends_with("_BLUFOR") || type.ends_with("_INDEP") || type.ends_with("_CIV") {
+        // remove side suffix
+        let parts = type.split("_");
+        match_type = "";
+        for i in 0..parts.len() - 1 {
+            if i > 0 {
+                match_type += "_";
+            }
+            match_type += parts[i];
+        }
+    }
     let faction = to_lower(tier) + "_" + to_lower(side);
     let side = switch side {
         "BLUFOR" => 1,
@@ -265,7 +277,7 @@ fn groups(args) {
     }
     let group_source = load_json("groups/" + tier_file);
     for section in group_source.groups {
-        if type in section.types {
+        if match_type in section.types {
             for group in section.groups {
                 ret += "class CLASS(" + group.class + ")";
                 if "parent" in group {

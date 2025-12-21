@@ -196,37 +196,41 @@ class CfgVehicles {
                     "magazinesVest": {
                         "30Rnd_545x39_Black_Mag_F": 9,
                         "1Rnd_HEDP_Grenade_shell": 9,
-                    }
+                    },
+                    "loadedPrimary": "30Rnd_545x39_Black_Mag_F",
+                    "loadedSecondary": "1Rnd_HEDP_Grenade_shell",
                 },
                 "arifle_AK12_GL_545_tan_F": {
                     "magazinesVest": {
                         "30Rnd_545x39_Black_Mag_F": 9,
                         "1Rnd_HEDP_Grenade_shell": 9,
-                    }
-                },
-                "arifle_AK12_GL_F": {
-                    "magazinesVest": {
-                        "30Rnd_762x39_Mag_Green_F": 9,
-                        "1Rnd_HEDP_Grenade_shell": 9,
-                    }
+                    },
+                    "loadedPrimary": "30Rnd_545x39_Black_Mag_F",
+                    "loadedSecondary": "1Rnd_HEDP_Grenade_shell",
                 },
                 "Aegis_arifle_AKM74_GL_F": {
                     "magazinesVest": {
                         "30Rnd_545x39_Black_Mag_F": 9,
                         "1Rnd_HEDP_Grenade_shell": 9,
-                    }
+                    },
+                    "loadedPrimary": "30Rnd_545x39_Black_Mag_F",
+                    "loadedSecondary": "1Rnd_HEDP_Grenade_shell",
                 },
                 "Aegis_arifle_AK74_GL_F": {
                     "magazinesVest": {
                         "30Rnd_545x39_Black_Mag_F": 9,
                         "1Rnd_HEDP_Grenade_shell": 9,
-                    }
+                    },
+                    "loadedPrimary": "30Rnd_545x39_Black_Mag_F",
+                    "loadedSecondary": "1Rnd_HEDP_Grenade_shell",
                 },
                 "Aegis_arifle_AK74_GL_oak_F": {
                     "magazinesVest": {
                         "30Rnd_545x39_Black_Mag_F": 9,
                         "1Rnd_HEDP_Grenade_shell": 9,
-                    }
+                    },
+                    "loadedPrimary": "30Rnd_545x39_Black_Mag_F",
+                    "loadedSecondary": "1Rnd_HEDP_Grenade_shell",
                 },
             },
             "optics": {

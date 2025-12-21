@@ -69,6 +69,8 @@ class CfgVehicles {
                         "30Rnd_580x42_Mag_F": 6,
                         "1Rnd_HEDP_Grenade_shell": 4,
                     },
+                    "loadedPrimary": "30Rnd_580x42_Mag_F",
+                    "loadedSecondary": "1Rnd_HEDP_Grenade_shell",
                 },
             },
             "optics": {

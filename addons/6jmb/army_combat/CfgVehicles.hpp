@@ -168,31 +168,41 @@ class CfgVehicles {
                     "magazinesVest": {
                         "30Rnd_545x39_Black_Mag_F": 7,
                         "1Rnd_HEDP_Grenade_shell": 7,
-                    }
+                    },
+                    "loadedPrimary": "30Rnd_545x39_Black_Mag_F",
+                    "loadedSecondary": "1Rnd_HEDP_Grenade_shell",
                 },
                 "Aegis_arifle_AK74_GL_F": {
                     "magazinesVest": {
                         "30Rnd_545x39_Black_Mag_F": 7,
                         "1Rnd_HEDP_Grenade_shell": 7,
-                    }
+                    },
+                    "loadedPrimary": "30Rnd_545x39_Black_Mag_F",
+                    "loadedSecondary": "1Rnd_HEDP_Grenade_shell",
                 },
                 "Aegis_arifle_AK74_GL_oak_F": {
                     "magazinesVest": {
                         "30Rnd_545x39_Black_Mag_F": 7,
                         "1Rnd_HEDP_Grenade_shell": 7,
-                    }
+                    },
+                    "loadedPrimary": "30Rnd_545x39_Black_Mag_F",
+                    "loadedSecondary": "1Rnd_HEDP_Grenade_shell",
                 },
                  "Aegis_arifle_M16A4_GL_F": {
                     "magazinesVest": {
                         "30Rnd_556x45_Stanag": 7,
                         "1Rnd_HEDP_Grenade_shell": 7,
-                    }
+                    },
+                    "loadedPrimary": "30Rnd_556x45_Stanag",
+                    "loadedSecondary": "1Rnd_HEDP_Grenade_shell",
                 },
                 "Aegis_arifle_M4A1_GL_F": {
                     "magazinesVest": {
                         "30Rnd_556x45_Stanag": 7,
                         "1Rnd_HEDP_Grenade_shell": 7,
-                    }
+                    },
+                    "loadedPrimary": "30Rnd_556x45_Stanag",
+                    "loadedSecondary": "1Rnd_HEDP_Grenade_shell",
                 },
             },
             "optics": {

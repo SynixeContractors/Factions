@@ -134,7 +134,9 @@ class CfgVehicles {
                     "magazinesVest": {
                         "30Rnd_762x39_polymer_Black_Mag_Green_F": 6,
                         "1Rnd_HE_Grenade_shell": 4,
-                    }
+                    },
+                    "loadedPrimary": "30Rnd_762x39_polymer_Black_Mag_Green_F",
+                    "loadedSecondary": "1Rnd_HE_Grenade_shell",
                 },
             },
             "optics": {
@@ -227,7 +229,6 @@ class CfgVehicles {
                 "B_FieldPack_green_F": 1,
             },
         });
-
     };
 
     class CLASS(AsstMachinegunner): CLASS(Base) {
@@ -274,7 +275,6 @@ class CfgVehicles {
                 },
             },
         });
-
     };
 
     class CLASS(Medic): CLASS(Base) {
@@ -301,7 +301,6 @@ class CfgVehicles {
                 },
             },
         });
-
     };
 
     class CLASS(RiflemanAA): CLASS(Base) {
@@ -423,6 +422,4 @@ class CfgVehicles {
             "H_CrewHelmetHeli_O": 0.3,
         });
     };
-
 };
-
