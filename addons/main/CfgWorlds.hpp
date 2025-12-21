@@ -6,7 +6,9 @@ class CfgWorlds {
         @Names(Chinese);
         @Names(French);
         @Names(Greek);
+        @Names(Lingala);
         @Names(Polish);
         @Names(Russian);
+        @Names(Zulu);
     };
 };

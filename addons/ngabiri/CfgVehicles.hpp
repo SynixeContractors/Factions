@@ -3,7 +3,7 @@ class CfgVehicles {
 
     class CLASS(Base): GCLASS(Base_INDEP) {
         faction = QCLASS(t3_indep);
-        displayName = "AFR Base";
+        displayName = "Ngabiri Base";
         identityTypes[] = {
             "LanguageFRE_F",
             "Head_African",

@@ -40,7 +40,7 @@ class CfgVehicles {
     class GCLASS(CessnaTTx);
     class GCLASS(CessnaTTx_Racing);
 
-    @For(["Virelia", "Calvane", "Serroise", "Drovak", "Livonia"])
+    @For(["Virelia", "Calvane", "Serroise", "Drovak", "Livonia", "Ngabiri"])
         class CLASS(Base_$1): CLASS(Base) {
             faction = QCLASS($1);
             displayName = "$1 Civilian Base Unit";

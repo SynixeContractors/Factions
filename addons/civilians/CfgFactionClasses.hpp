@@ -1,5 +1,5 @@
 class CfgFactionClasses {
-    @For(["Virelia", "Calvane", "Serroise", "Drovak", "Livonia"])
+    @For(["Virelia", "Calvane", "Serroise", "Drovak", "Livonia", "Ngabiri"])
         class CLASS($1) {
             SCOPE_DLC;
             displayName = "[C] $1 (Civilians)";

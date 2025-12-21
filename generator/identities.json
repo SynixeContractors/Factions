@@ -33,5 +33,12 @@
             "LanguagePOL_F"
         ],
         "genericNames": "Polish"
+    },
+    "Ngabiri": {
+        "identityTypes": [
+            "Head_African",
+            "LanguageFRE_M"
+        ],
+        "genericNames": "Lingala"
     }
 }
