@@ -259,7 +259,11 @@ fn groups(args) {
     } else {
         ret += "name = \"" + type + "\";\n";
     }
-    let group_source = load_json("groups/" + to_lower(tier));
+    let tier_file = to_lower(tier);
+    if tier_file == "t2" || tier_file == "t3" {
+        tier_file = "t2t3";
+    }
+    let group_source = load_json("groups/" + tier_file);
     for section in group_source.groups {
         if type in section.types {
             for group in section.groups {
