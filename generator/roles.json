@@ -91,5 +91,9 @@
     },
     "Spotter": {
         "displayName": "Spotter"
+    },
+    "UAV Operator": {
+        "displayName": "UAV Operator",
+        "role": "SpecialOperative"
     }
 }
