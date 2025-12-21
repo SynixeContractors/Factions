@@ -13,6 +13,13 @@
         ],
         "genericNames": "American"
     },
+    "Serroise": {
+        "identityTypes": [
+            "Head_Euro",
+            "LanguageENGGB_M"
+        ],
+        "genericNames": "British"
+    },
     "Drovak": {
         "identityTypes": [
             "Head_Russian",
