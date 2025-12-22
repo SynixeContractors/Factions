@@ -1,10 +1,10 @@
 class CfgVehicles {
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {
-        displayName = "RNLDF Base Army Garrison";
+        displayName = "Nyrland Base Army Garrison";
         editorSubcategory = QGCLASS(army_garrison);
 
-         @Uniforms({
+        @Uniforms({
             "variants": {
                 "Atlas_U_UniformBDU_01_m81_F": 0.5,
                 "Atlas_U_UniformBDU_02_m81_F": 0.5,

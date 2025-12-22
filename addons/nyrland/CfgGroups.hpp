@@ -1,7 +1,7 @@
 class CfgGroups {
-    class INDEP {
+    class EAST {
         class CLASS(t3_indep) {
-            name = "{MSA} [T3] Breznia";
+            name = "{MSA} [T3] Nyrland";
             @Groups(T3,INDEP,Army_Combat);
             @Groups(T3,INDEP,Army_Garrison);
             @Groups(T3,INDEP,Army_Recon);
