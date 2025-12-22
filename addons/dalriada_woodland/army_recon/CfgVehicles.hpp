@@ -197,7 +197,6 @@ class CfgVehicles {
     class CLASS(Spotter): CLASS(Base) {
         @Role(Spotter);
         
-        #include "..\..\dalriada\weapons\Spotter.hpp"
         @Primary({
             "muzzles": {
                 "muzzle_snds_58_blk_F": 1,
