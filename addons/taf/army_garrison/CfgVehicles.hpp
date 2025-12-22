@@ -6,8 +6,8 @@ class CfgVehicles {
 
         @Uniforms({
             "variants": {
-                "Atlas_U_UniformBDU_01_m81_F": 0.5,
-                "Atlas_U_UniformBDU_02_m81_F": 0.5,
+                "synixe_mgp_g3_field_set_rbs_rbs": 1,
+                "synixe_mgp_g3_fleece_rgr_rbs": 1,
             },
             "packs": [
                 "t3_rifleman_medical",
@@ -15,10 +15,10 @@ class CfgVehicles {
         });
 
         @Facewear({
-            "synixe_mgp_f_face_shield_rgr": 0.2,
-            "synixe_mgp_f_face_shield_rgr_tactical": 0.2,
-            "synixe_mgp_f_face_shield_blk": 0.2,
-            "synixe_mgp_f_face_shield_blk_tactical": 0.2,
+            "synixe_mgp_f_face_shield_rgr_shemagh_rgr": 1,
+            "synixe_mgp_f_face_shield_rgr_shemagh_rgr_tactical": 1,
+            "synixe_mgp_f_face_shield_blk_shemagh_rgr": 1,
+            "synixe_mgp_f_face_shield_blk_shemagh_rgr_tactical": 1,
         });
 
         @Assigned(Military);
@@ -29,16 +29,16 @@ class CfgVehicles {
 
         @Vests({
             "variants": {
-                "Atlas_V_OCarrierRig_Lite_oli_F": 0.7,
-                "Atlas_V_OCarrierRig_CQB_oli_F": 0.3,
+                "Atlas_V_OCarrierRig_Lite_oli_F": 1,
+                "Atlas_V_OCarrierRig_CQB_oli_F": 1,
             },
         });
 
         @Headgear({
-            "Aegis_H_Helmet_Virtus_Headset_rgr_F": 0.2,
-            "Aegis_H_Helmet_Virtus_rgr_F": 0.2,
-            "H_Booniehat_oli": 0.3,
-            "H_Cap_oli": 0.3,
+            "Aegis_H_Helmet_Virtus_Headset_rgr_F": 1,
+            "Aegis_H_Helmet_Virtus_rgr_F": 1,
+            "H_Booniehat_oli": 1,
+            "H_Cap_oli": 1,
         });
 
         @Primary({
@@ -50,8 +50,8 @@ class CfgVehicles {
                 },
             },
             "optics": {
-                "optic_VRCO_RF": 0.4,
-                "Aegis_optic_1p87": 0.6,
+                "optic_VRCO_RF": 1,
+                "Aegis_optic_1p87": 1,
             },
             "pointers": {
                 "saber_light_lxWS": 1,
@@ -74,8 +74,8 @@ class CfgVehicles {
                 },
             },
             "optics": {
-                "optic_VRCO_RF": 0.4,
-                "Aegis_optic_1p87": 0.6,
+                "optic_VRCO_RF": 1,
+                "Aegis_optic_1p87": 1,
             },
             "pointers": {
                 "saber_light_lxWS": 1,
@@ -131,9 +131,9 @@ class CfgVehicles {
         @Role(Maintainer);
 
         @Headgear({
-            "H_Headset_Tactical": 0.4,
-            "H_HeadSet_black_F": 0.3,
-            "H_HeadSet_olive_F": 0.3,
+            "H_Headset_Tactical": 1,
+            "H_HeadSet_black_F": 1,
+            "H_HeadSet_olive_F": 1,
         });
 
         @Vests({
@@ -168,17 +168,17 @@ class CfgVehicles {
         @Role(Worker);
 
         @Headgear({
-            "H_EarProtectors_red_F": 0.2,
-            "H_EarProtectors_white_F": 0.2,
-            "H_EarProtectors_orange_F": 0.2,
-            "H_Construction_earprot_white_F": 0.2,
-            "H_Construction_earprot_yellow_F": 0.2,
+            "H_EarProtectors_red_F": 1,
+            "H_EarProtectors_white_F": 1,
+            "H_EarProtectors_orange_F": 1,
+            "H_Construction_earprot_white_F": 1,
+            "H_Construction_earprot_yellow_F": 1,
         });
 
         @Vests({
             "variants": {
-                "V_Safety_blue_F": 0.5,
-                "V_Safety_yellow_F": 0.5,
+                "V_Safety_blue_F": 1,
+                "V_Safety_yellow_F": 1,
             },
         });
     };
