@@ -1,6 +1,6 @@
 class O_APC_Wheeled_02_unarmed_lxWS;
 class GCLASS(Otokar): O_APC_Wheeled_02_unarmed_lxWS {
-    displayName = "Otokar ARMA (Unarmed)";
+    displayName = "Otokar ARMA";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;

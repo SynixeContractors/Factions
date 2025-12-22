@@ -3,7 +3,7 @@ class CfgVehicles {
 
     class CLASS(Base): GCLASS(Base_BLUFOR) {
         faction = QCLASS(t3_BLUFOR);
-        displayName = "KAF Base";
+        displayName = "Karskoya Base";
         identityTypes[] = {
             "LanguageRUS_F",
             "Head_Russian",

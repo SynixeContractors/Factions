@@ -50,7 +50,7 @@ class GCLASS(Badger_Unarmed): B_APC_Wheeled_01_medical_F {
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
-    displayName = "Badger (Unarmed)";
+    displayName = "Badger";
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 190;

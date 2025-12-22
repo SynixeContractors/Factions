@@ -37,3 +37,36 @@ workshop = [
     "synixe:@toh_characters",
     "synixe:@ws",
 ]
+
+[hemtt.launch.maps]
+extends = "default"
+workshop = [
+    "synixe:@al_salman",
+    "synixe:@aliabad_region",
+    "synixe:@anizay",
+    "synixe:@anizay",
+    "synixe:@archipelago",
+    "synixe:@cup_terrains_core",
+    "synixe:@cup_terrains_maps",
+    "synixe:@dariyah",
+    "synixe:@drakovac",
+    "synixe:@drakovac",
+    "synixe:@garmanda",
+    "synixe:@gunkizli",
+    "synixe:@hellanmaa",
+    "synixe:@ihantala",
+    "synixe:@ihantalaw",
+    "synixe:@korsac",
+    "synixe:@kujari",
+    "synixe:@kunduz_river",
+    "synixe:@lybor",
+    "synixe:@north_takistan",
+    "synixe:@pulau",
+    "synixe:@ruha",
+    "synixe:@stubbhult",
+    "synixe:@summa",
+    "synixe:@suonkomarsahav",
+    "synixe:@vinjesvingen",
+    "synixe:@virolahti_valtatie_7",
+    "synixe:@ws",
+]

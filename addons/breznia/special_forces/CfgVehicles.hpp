@@ -1,7 +1,7 @@
 class CfgVehicles {
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {
-        displayName = "BDF Base Army SOF";
+        displayName = "Breznia Base Army SOF";
         editorSubcategory = QGCLASS(special_forces);
         
         @Uniforms({
@@ -65,16 +65,6 @@ class CfgVehicles {
                 "arifle_AK12U_545_tan_F": {
                     "magazinesVest": {
                         "30Rnd_545x39_Black_Mag_Tracer_F": 9,
-                    }
-                },
-                "Aegis_arifle_M4A1_short_F": {
-                    "magazinesVest": {
-                        "30Rnd_556x45_Stanag_green": 9,
-                    }
-                },
-                "arifle_TRG20_black_F": {
-                    "magazinesVest": {
-                        "30Rnd_556x45_Stanag_green": 9,
                     }
                 },
             },
@@ -146,15 +136,6 @@ class CfgVehicles {
                 "arifle_AK12_GL_545_tan_F": {
                     "magazinesVest": {
                         "30Rnd_545x39_Black_Mag_Tracer_F": 9,
-                        "1Rnd_HE_Grenade_shell": 6,
-                        "1Rnd_Smoke_Grenade_shell": 2,
-                    },
-                    "loadedPrimary": "30Rnd_556x45_Stanag",
-                    "loadedSecondary": "1Rnd_HE_Grenade_shell",
-                },
-                "arifle_TRG21_GL_black_F": {
-                    "magazinesVest": {
-                        "30Rnd_556x45_Stanag_green": 9,
                         "1Rnd_HE_Grenade_shell": 6,
                         "1Rnd_Smoke_Grenade_shell": 2,
                     },

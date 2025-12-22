@@ -4,7 +4,7 @@ class CfgPatches {
     class ADDON {
         name = QUOTE(COMPONENT);
         units[] = {
-            @For(["Virelia", "Calvane", "Dal Riada", "Drovak", "Livonia", "Ngabiri"])
+            @For(Identities)
                 #define NATION $1
                 QCLASS2(Motorboat,NATION),
                 QCLASS2(RHIB,NATION),

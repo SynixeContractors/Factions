@@ -268,8 +268,8 @@ fn groups(args) {
     };
     let id = tier + "_" + type;
     let ret = "class CLASS(" + id + ") {\n";
-    if type == "special_forces" {
-        ret += "displayName = \"Special Forces\";\n";
+    if to_lower(match_type) == "special_forces" {
+        ret += "name = \"Special Forces\";\n";
     } else {
         let parts = type.split("_");
         if parts.len() == 2 {
@@ -551,7 +551,12 @@ fn process_lines(lines, start_index) {
             let args_start = macro_text.index_of('(') + 1;
             let args_end = macro_text.index_of(')');
             let raw_json = macro_text.sub_string(args_start, args_end - args_start);
-            let items = parse_json_array(raw_json);
+            let items = [];
+            if raw_json == "Identities" {
+                items = load_json("identities").keys();
+            } else {
+                items = parse_json_array(raw_json);
+            }
             
             // Find @EndFor
             let for_body_start = line_index + 1;

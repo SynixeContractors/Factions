@@ -5,7 +5,7 @@ class CfgGroups {
             @Groups(T3,INDEP,Army_Combat);
             @Groups(T3,INDEP,Army_Garrison);
             @Groups(T3,INDEP,Army_Recon);
-            @Groups(T3,INDEP,special_forces);
+            @Groups(T3,INDEP,Special_Forces);
         };
     };
 };
