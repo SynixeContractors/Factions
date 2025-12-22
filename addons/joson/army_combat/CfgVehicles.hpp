@@ -1,4 +1,8 @@
 class CfgVehicles {
+    #define TEMPLATE_FACTION QPCLASS(t3_opfor)
+    #define TEMPLATE_SIDE 0
+    #include "..\..\..\templates\statics\M2.hpp"
+
     #include "CfgVehicles_Tanks.hpp"
     #include "CfgVehicles_Cars.hpp"
     #include "CfgVehicles_APC.hpp"

@@ -29,8 +29,8 @@ class GCLASS(XM_HMG_Auto): B_HMG_01_A_F {
 };
 
 class B_GMG_01_F;
-class GCLASS(XM_GMG): B_GMG_01_F {
-    displayName = "XM307 GMG";
+class GCLASS(XM_GMG_Low): B_GMG_01_F {
+    displayName = "XM307 GMG (Low)";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;

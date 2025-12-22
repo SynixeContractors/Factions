@@ -3,6 +3,12 @@
 
 class PCLASS2(SIDE,Base);
 class CLASS2(SIDE,Base): PCLASS2(SIDE,Base) {
+    #define TEMPLATE_FACTION QPCLASS(SIDE_FACTION)
+    #define TEMPLATE_SIDE SIDE_NUMBER
+    #include "..\..\..\templates\statics\M2.hpp"
+    #undef TEMPLATE_FACTION
+    #undef TEMPLATE_SIDE
+
     displayName = "Ikhwan as-Sayf Militia";
     editorSubcategory = QGCLASS(militia);
     

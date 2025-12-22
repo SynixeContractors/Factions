@@ -1,4 +1,9 @@
 class CfgVehicles {
+    #define TEMPLATE_FACTION QPCLASS(t2_opfor)
+    #define TEMPLATE_SIDE 0
+    #include "..\..\..\templates\statics\M2.hpp"
+    #include "..\..\..\templates\statics\XM3XX.hpp"
+
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {
         displayName = "Livonia Base Army Garrison";

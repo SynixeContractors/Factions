@@ -2,7 +2,6 @@ class CfgVehicles {
     #include "CfgVehicles_Fennek.hpp"
     #include "CfgVehicles_Leopard.hpp"
     #include "CfgVehicles_LUT.hpp"
-    #include "CfgVehicles_M2.hpp"
     #include "CfgVehicles_Mk6Mortar.hpp"
     #include "CfgVehicles_Orca.hpp"
     #include "CfgVehicles_Otokar.hpp"
@@ -177,7 +176,6 @@ class CfgVehicles {
                 "B_AssaultPack_wdl_F": 1,
             },
         });
-
     };
 
     class CLASS(Machinegunner): CLASS(Autorifleman) {
@@ -223,7 +221,6 @@ class CfgVehicles {
                 "B_AssaultPack_wdl_F": 1,
             },
         });
-
     };
 
     class CLASS(AsstMachinegunner): CLASS(Rifleman) {
@@ -270,7 +267,6 @@ class CfgVehicles {
                 },
             },
         });
-
     };
 
     class CLASS(Medic): CLASS(Rifleman) {
@@ -515,6 +511,4 @@ class CfgVehicles {
             "H_PilotHelmetHeli_B_visor_up": 0.2,
         });
     };
-
 };
-
