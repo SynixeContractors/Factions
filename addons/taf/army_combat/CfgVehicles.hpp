@@ -6,8 +6,8 @@ class CfgVehicles {
         
         @Uniforms({
             "variants": {
-                "Atlas_U_UniformBDU_01_m81_F": 0.5,
-                "Atlas_U_UniformBDU_02_m81_F": 0.5,
+                "synixe_mgp_g3_field_set_rbs_rbs": 1,
+                "synixe_mgp_g3_fleece_rgr_rbs": 1,
             },
             "packs": [
                 "t3_rifleman_medical",
@@ -16,8 +16,8 @@ class CfgVehicles {
 
         @Vests({
             "variants": {
-                "Atlas_V_OCarrierRig_Lite_oli_F": 0.5,
-                "Atlas_V_OCarrierRig_CQB_oli_F": 0.5,
+                "Atlas_V_OCarrierRig_Lite_oli_F": 1,
+                "Atlas_V_OCarrierRig_CQB_oli_F": 1,
             },
             "packs": [
                 "t3_standard",
@@ -28,17 +28,17 @@ class CfgVehicles {
         });
 
         @Headgear({
-            "Aegis_H_Helmet_Virtus_Scrim_wdl_F": 0.4,
-            "Aegis_H_Helmet_Virtus_Headset_rgr_F": 0.3,
-            "Aegis_H_Helmet_Virtus_rgr_F": 0.3,
+            "Aegis_H_Helmet_Virtus_Headset_rgr_F": 1,
+            "Aegis_H_Helmet_Virtus_rgr_F": 1,
         });
 
         @Facewear({
-            "G_Balaclava_light_blk_F": 0.2,
-            "synixe_mgp_f_face_shield_rgr": 0.2,
-            "synixe_mgp_f_face_shield_rgr_tactical": 0.2,
-            "synixe_mgp_f_face_shield_blk": 0.2,
-            "synixe_mgp_f_face_shield_blk_tactical": 0.2,
+            "synixe_mgp_f_face_shield_rgr_shemagh_rgr": 1,
+            "synixe_mgp_f_face_shield_rgr_shemagh_rgr_tactical": 1,
+            "synixe_mgp_f_face_shield_rgr_shemagh_rgr_ess": 1,
+            "synixe_mgp_f_face_shield_blk_shemagh_rgr": 1,
+            "synixe_mgp_f_face_shield_blk_shemagh_rgr_tactical": 1,
+            "synixe_mgp_f_face_shield_blk_shemagh_rgr_ess": 1,
         });
 
         @Assigned(Military);
@@ -51,13 +51,13 @@ class CfgVehicles {
             "weapons": {
                 "arifle_CTAR_blk_F": {
                     "magazinesVest": {
-                        "30Rnd_580x42_Mag_F": 6,
+                        "30Rnd_580x42_Mag_F": 8,
                     },
                 },
             },
             "optics": {
-                "optic_VRCO_RF": 0.4,
-                "Aegis_optic_1p87": 0.6,
+                "optic_VRCO_RF": 1,
+                "Aegis_optic_1p87": 1,
             },
             "pointers": {
                 "Aegis_acc_pointer_DM": 1,
@@ -78,8 +78,8 @@ class CfgVehicles {
 
         @Vests({
             "variants": {
-                "Atlas_V_OCarrierRig_Lite_oli_F": 0.5,
-                "Atlas_V_OCarrierRig_CQB_oli_F": 0.5,
+                "Atlas_V_OCarrierRig_Lite_oli_F": 1,
+                "Atlas_V_OCarrierRig_CQB_oli_F": 1,
             },
             "packs": [
                 "t3_standard",
@@ -107,16 +107,16 @@ class CfgVehicles {
             "weapons": {
                 "arifle_CTAR_GL_blk_F": {
                     "magazinesVest": {
-                        "30Rnd_580x42_Mag_F": 6,
-                        "1Rnd_HEDP_Grenade_shell": 4,
+                        "30Rnd_580x42_Mag_F": 8,
+                        "1Rnd_HEDP_Grenade_shell": 5,
                     },
                     "loadedPrimary": "30Rnd_580x42_Mag_F",
                     "loadedSecondary": "1Rnd_HEDP_Grenade_shell",
                 },
             },
             "optics": {
-                "optic_VRCO_RF": 0.4,
-                "Aegis_optic_1p87": 0.6,
+                "optic_VRCO_RF": 1,
+                "Aegis_optic_1p87": 1,
             },
             "pointers": {
                 "Aegis_acc_pointer_DM": 1,
@@ -139,8 +139,8 @@ class CfgVehicles {
                 },
             },
             "optics": {
-                "optic_VRCO_RF": 0.4,
-                "Aegis_optic_1p87": 0.6,
+                "optic_VRCO_RF": 1,
+                "Aegis_optic_1p87": 1,
             },
             "pointers": {
                 "Aegis_acc_pointer_DM": 1,
@@ -170,8 +170,8 @@ class CfgVehicles {
 
         @Vests({
             "variants": {
-                "Atlas_V_OCarrierRig_Lite_oli_F": 0.5,
-                "Atlas_V_OCarrierRig_CQB_oli_F": 0.5,
+                "Atlas_V_OCarrierRig_Lite_oli_F": 1,
+                "Atlas_V_OCarrierRig_CQB_oli_F": 1,
             },
         });
 
@@ -187,8 +187,9 @@ class CfgVehicles {
                 },
             },
             "optics": {
-                "optic_VRCO_RF": 0.4,
-                "Aegis_optic_1p87": 0.6,
+                "": 1,
+                "optic_VRCO_RF": 1,
+                "Aegis_optic_1p87": 1,
             },
             "pointers": {
                 "Aegis_acc_pointer_DM": 1,
@@ -231,8 +232,8 @@ class CfgVehicles {
 
         @Vests({
             "variants": {
-                "Atlas_V_OCarrierRig_Lite_oli_F": 0.5,
-                "Atlas_V_OCarrierRig_CQB_oli_F": 0.5,
+                "Atlas_V_OCarrierRig_Lite_oli_F": 1,
+                "Atlas_V_OCarrierRig_CQB_oli_F": 1,
             },
             "magazines": {
                 "MiniGrenade": 1,
@@ -418,9 +419,9 @@ class CfgVehicles {
         @Role(HeliPilot);
 
         @Headgear({
-            "H_PilotHelmetHeli_B_visor_up": 0.3,
-            "H_PilotHelmetHeli_B": 0.3,
-            "H_CrewHelmetHeli_B": 0.4,
+            "H_PilotHelmetHeli_B_visor_up": 1,
+            "H_PilotHelmetHeli_B": 1,
+            "H_CrewHelmetHeli_B": 1,
         });
     };
 };
