@@ -54,6 +54,9 @@ class CfgVehicles {
     #include "CfgVehicles_Motorboat.hpp"
     #include "CfgVehicles_RHIB.hpp"
 
+    // Drones
+    #include "CfgVehicles_UGV.hpp"
+
     // Tanks
     #include "CfgVehicles_T100.hpp"
     #include "CfgVehicles_T100_Artillery.hpp"
