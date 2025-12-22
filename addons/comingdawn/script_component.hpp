@@ -1,4 +1,4 @@
-#define COMPONENT scd
+#define COMPONENT comingdawn
 #define COMPONENT_BEAUTIFIED Sons of the Coming Dawn
 
 #include "..\main\script_mod.hpp"

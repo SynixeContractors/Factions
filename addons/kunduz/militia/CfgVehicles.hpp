@@ -1,7 +1,7 @@
 class CfgVehicles {
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {
-        displayName = "6JMB Militia";
+        displayName = "Kunduz Militia";
         editorSubcategory = QGCLASS(militia);
         
         @Uniforms({
@@ -66,8 +66,6 @@ class CfgVehicles {
                 "Opf_U_B_P_FieldJacket_03_F": 1,
                 "Opf_U_B_P_Uniform_01_F": 1,
                 "Opf_U_B_P_Uniform_01_Shortsleeve_F": 1,
-                "Atlas_U_UniformBDU_01_m81_F": 1,
-                "Atlas_U_UniformBDU_02_m81_F": 1,
                 "Atlas_U_I_Afghanka_01_ardi_full_F": 1,
                 "Atlas_U_I_Afghanka_02_ardi_full_F": 1,
                 "Atlas_U_I_Afghanka_01_ardi_half_F": 1,

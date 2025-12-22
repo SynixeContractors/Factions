@@ -3,7 +3,7 @@ class CfgVehicles {
 
     class CLASS(Base): GCLASS(Base_OPFOR) {
         faction = QCLASS(t4_opfor);
-        displayName = "SCD Base";
+        displayName = "Coming Dawn Base";
         identityTypes[] = {
             "LanguagePOL_F",
             "Head_Euro",

@@ -46,31 +46,7 @@ class CfgVehicles {
             "synixe_mgp_f_face_shield_khk_tactical": 1,
         });
 
-        @Primary({
-            "weapons": {
-                "atlas_arifle_famasG4_Grip_F": {
-                    "magazinesVest": {
-                        "30Rnd_65x39_caseless_msbs_mag": 6,
-                        "30Rnd_65x39_caseless_msbs_mag_Tracer": 2,
-                        "1Rnd_40mm_HE_lxWS": 3,
-                        "1Rnd_50mm_Smoke_lxWS": 2,
-                        "1Rnd_58mm_AT_lxWS": 2,
-                    },
-                    "loadedPrimary": "30Rnd_65x39_caseless_msbs_mag",
-                    "loadedSecondary": "1Rnd_40mm_HE_lxWS",
-                },
-            },
-            "optics": {
-                "optic_LRCO_blk_F": 1,
-                "optic_ACO": 1,
-            },
-            "pointers": {
-                "ACE_DBAL_A3_Red": 1,
-            },
-            "muzzles": {
-                "muzzle_snds_H": 1,
-            },
-        });
+        #include "..\..\dalriada\weapons\Rifleman.hpp"
 
         @Binoculars({
             "weapons": {
@@ -96,27 +72,7 @@ class CfgVehicles {
     class CLASS(TeamLeader): CLASS(SquadLeader) {
         @Role(TeamLeader);
 
-        @Primary({
-            "weapons": {
-                "Atlas_Arifle_famasG4_GL_F": {
-                    "magazinesVest": {
-                        "30Rnd_65x39_caseless_msbs_mag": 6,
-                        "1Rnd_HE_Grenade_shell": 4,
-                    },
-                    "loadedPrimary": "30Rnd_65x39_caseless_msbs_mag",
-                    "loadedSecondary": "1Rnd_HE_Grenade_shell",
-                },
-            },
-            "optics": {
-                "optic_Aco": 1,
-            },
-            "pointers": {
-                "ACE_DBAL_A3_Red": 1,
-            },
-            "muzzles": {
-                "muzzle_snds_H": 1,
-            },
-        });
+        #include "..\..\dalriada\weapons\TeamLeader.hpp"
     };
 
     class CLASS(Autorifleman): CLASS(Base) {
@@ -153,23 +109,7 @@ class CfgVehicles {
     class CLASS(Marksman): CLASS(Base) {
         @Role(Marksman);
 
-        @Primary({
-            "weapons": {
-                "atlas_arifle_famasG4_Grip_F": {
-                    "magazinesVest": {
-                        "30Rnd_65x39_caseless_msbs_mag": 5,
-                        "30Rnd_65x39_caseless_msbs_mag_Tracer": 2,
-                    }
-                },
-            },
-            "optics": {
-                "optic_LRCO_blk_F": 1,
-            },
-            "pointers": {
-                "ACE_DBAL_A3_Red": 1,
-            },
-            
-        });
+        #include "..\..\dalriada\weapons\Marksman.hpp"
 
         @Binoculars({
             "weapons": {
@@ -194,7 +134,7 @@ class CfgVehicles {
     class CLASS(RiflemanMAT): CLASS(Base) {
         @Role(RiflemanMAT);
 
-         @Launchers({
+        @Launchers({
             "weapons": {
                 "launch_RPG32_green_F": {
                     "magazinesBackpack": {
@@ -259,22 +199,8 @@ class CfgVehicles {
         @Role(Spotter);
         
         @Primary({
-            "weapons": {
-                "atlas_arifle_famasG4_Grip_F": {
-                    "magazinesVest": {
-                        "30Rnd_65x39_caseless_msbs_mag": 6,
-                    }
-                },
-            },
-            "optics": {
-                "optic_LRCO_blk_F": 0.5,
-                "optic_ACO": 0.5,
-            },
-            "pointers": {
-                "ACE_DBAL_A3_Red": 1,
-            },
             "muzzles": {
-                "muzzle_snds_H": 1,
+                "muzzle_snds_58_blk_F": 1,
             },
         });
 
@@ -308,24 +234,7 @@ class CfgVehicles {
     class CLASS(Sniper): CLASS(Spotter) {
         @Role(Sniper);
 
-        @Primary({
-            "weapons": {
-                "srifle_DMR_05_blk_F": {
-                    "magazinesVest": {
-                        "10Rnd_93x64_DMR_05_Mag": 6,
-                    },
-                },
-            },
-           "optics": {
-                "optic_LRPS": 1,
-            },
-            "bipods": {
-                "bipod_03_F_blk": 1,
-            },
-            "muzzles": {
-                "muzzle_snds_93mmg": 1,
-            },
-        });
+        #include "..\..\dalriada\weapons\Sniper.hpp"
     };
 
     class CLASS(HeliPilot): CLASS(Rifleman) {

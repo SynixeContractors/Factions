@@ -40,5 +40,12 @@
             "LanguageFRE_F"
         ],
         "genericNames": "Lingala"
+    },
+    "Kunduz": {
+        "identityTypes": [
+            "Head_TK",
+            "LanguagePER_F"
+        ],
+        "genericNames": "Arab"
     }
 }

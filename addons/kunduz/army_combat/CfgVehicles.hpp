@@ -1,13 +1,11 @@
 class CfgVehicles {
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {
-        displayName = "6JMB Base Army Combat";
+        displayName = "Kunduz Base Army Combat";
         editorSubcategory = QGCLASS(army_combat);
         
         @Uniforms({
             "variants": {
-                "Atlas_U_UniformBDU_01_m81_F": 1,
-                "Atlas_U_UniformBDU_02_m81_F": 1,
                 "Atlas_U_I_Afghanka_01_ardi_full_F": 1,
                 "Atlas_U_I_Afghanka_02_ardi_full_F": 1,
                 "Atlas_U_I_Afghanka_01_ardi_half_F": 1,
@@ -29,9 +27,6 @@ class CfgVehicles {
         });
 
         @Headgear({
-            "synixe_mgp_h_cap_m81": 1,
-            "synixe_mgp_h_cap_m81_backwards": 1,
-            "synixe_mgp_h_cap_m81_earphones": 1,
             "synixe_mgp_h_cap_khk": 1,
             "synixe_mgp_h_cap_khk_backwards": 1,
             "synixe_mgp_h_cap_khk_earphones": 1,
