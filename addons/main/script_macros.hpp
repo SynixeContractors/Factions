@@ -8,6 +8,11 @@
     #define PREP(fncName) [QPATHTOF(functions\DOUBLES(fnc,fncName).sqf), QFUNC(fncName)] call CBA_fnc_compileFunction
 #endif
 
+// Standard counts
+#define RIFLE_MAG_COUNT 7
+#define RIFLE_GL_FRAG_COUNT 3
+#define RIFLE_GL_SMOKE_COUNT 2
+
 // Macro
 #define MACRO_SENSITIVITY sensitivity = 6
 #define BASE_CLASSES [QGCLASS(Base_BLUFOR), QGCLASS(Base_OPFOR), QGCLASS(Base_INDEP), QGCLASS(Base_CIV)]

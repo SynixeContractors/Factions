@@ -11,7 +11,6 @@
     forceInGarage = 1
 
 class CfgVehicles {
-    class Car_F;
     class Tank_F;
     class Offroad_01_base_F;
     #define HIDEBROKEN

@@ -2,7 +2,6 @@ class CfgVehicles {
     #include "CfgVehicles_Fennek.hpp"
     #include "CfgVehicles_Leopard.hpp"
     #include "CfgVehicles_LUT.hpp"
-    #include "CfgVehicles_Mk6Mortar.hpp"
     #include "CfgVehicles_Orca.hpp"
     #include "CfgVehicles_Otokar.hpp"
     #include "CfgVehicles_Pandur.hpp"

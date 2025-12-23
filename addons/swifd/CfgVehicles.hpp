@@ -1,10 +1,16 @@
 class CfgVehicles {
-    class GCLASS(Van_Cargo);
+    class Van_02_vehicle_base_F;
+    class GCLASS(Van_Cargo): Van_02_vehicle_base_F {
+        class TextureSources {
+            class SwifD {
+                displayName = "SwifD";
+            };
+        };
+    };
     class CLASS(Van): GCLASS(Van_Cargo) {
         SCOPE_DLC;
         faction = QCLASS(civilian);
         displayName = "Van (Cargo)";
-        hiddenSelectionsTextures[] = {"\a3\soft_f_orange\van_02\data\van_body_Armazon_CO.paa","\a3\soft_f_orange\van_02\data\van_wheel_co.paa","\a3\soft_f_orange\van_02\data\van_glass_utility_ca.paa","\a3\soft_f_orange\van_02\data\van_body_CO.paa"};
         textureList[] = {};
         crew = QCLASS(man_casual);
         typicalCargo[] = {QCLASS(man_casual)};

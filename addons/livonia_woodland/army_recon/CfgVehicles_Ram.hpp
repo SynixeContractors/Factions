@@ -4,7 +4,6 @@ class CLASS(Ram): GCLASS(Ram) {
     faction = QPCLASS(t2_opfor);
     side = 0;
     textureList[] = {"EAF",1};
-    hiddenSelectionsTextures[] = {"\lxRF\vehicles_rf\pickup_01\Data\pickup_01_ext_ldf_co.paa","\lxRF\vehicles_rf\pickup_01\Data\pickup_01_adds_co.paa","\lxrf\vehicles_rf\pickup_01\data\pickup_01_ext2_co.paa","\lxrf\vehicles_rf\pickup_01\data\pickup_01_AAT_olive_co.paa","\lxrf\vehicles_rf\pickup_01\data\pickup_01_launcher_co.paa","\lxRF\vehicles_rf\pickup_01\Data\pickup_01_service_ldf_co.paa"};
     editorPreview = "\lxRF\editorpreviews_rf\Data\CfgVehicles\I_E_Pickup_rf.jpg";
     crew = QCLASS(Rifleman);
     typicalCargo[] = {QCLASS(Rifleman)};
@@ -16,7 +15,6 @@ class CLASS(Ram_Covered): GCLASS(Ram_Covered) {
     faction = QPCLASS(t2_opfor);
     side = 0;
     textureList[] = {"EAF",1};
-    hiddenSelectionsTextures[] = {"\lxRF\vehicles_rf\pickup_01\Data\pickup_01_ext_black_co.paa","\lxRF\vehicles_rf\pickup_01\Data\pickup_01_adds_co.paa","\lxrf\vehicles_rf\pickup_01\data\pickup_01_ext2_co.paa","\lxrf\vehicles_rf\pickup_01\data\pickup_01_aat_co.paa","\lxrf\vehicles_rf\pickup_01\data\pickup_01_launcher_co.paa","\lxRF\vehicles_rf\pickup_01\Data\pickup_01_service_black_co.paa"};
     editorPreview = "\lxRF\editorpreviews_rf\Data\CfgVehicles\I_E_Pickup_Covered_rf.jpg";
     crew = QCLASS(Rifleman);
     typicalCargo[] = {QCLASS(Rifleman)};
@@ -28,7 +26,6 @@ class CLASS(Ram_HMG): GCLASS(Ram_HMG) {
     faction = QPCLASS(t2_opfor);
     side = 0;
     textureList[] = {"EAF",1};
-    hiddenSelectionsTextures[] = {"\lxRF\vehicles_rf\pickup_01\Data\pickup_01_ext_black_co.paa","\lxRF\vehicles_rf\pickup_01\Data\pickup_01_adds_co.paa","\lxrf\vehicles_rf\pickup_01\data\pickup_01_ext2_co.paa","\lxrf\vehicles_rf\pickup_01\data\pickup_01_aat_co.paa","\lxrf\vehicles_rf\pickup_01\data\pickup_01_launcher_co.paa","\lxRF\vehicles_rf\pickup_01\Data\pickup_01_service_black_co.paa"};
     editorPreview = "\A3_Aegis\Editorpreviews_F_Aegis\Data\CfgVehicles\Aegis_I_E_Pickup_HMG_rf.jpg";
     crew = QCLASS(Rifleman);
     typicalCargo[] = {QCLASS(Rifleman), QCLASS(Rifleman)};
@@ -40,7 +37,6 @@ class CLASS(Ram_Comms): GCLASS(Ram_Comms) {
     faction = QPCLASS(t2_opfor);
     side = 0;
     textureList[] = {"EAF",1};
-    hiddenSelectionsTextures[] = {"\lxRF\vehicles_rf\pickup_01\Data\pickup_01_ext_ldf_co.paa","\lxRF\vehicles_rf\pickup_01\Data\pickup_01_adds_co.paa","\lxrf\vehicles_rf\pickup_01\data\pickup_01_ext2_co.paa","\lxrf\vehicles_rf\pickup_01\data\pickup_01_AAT_olive_co.paa","\lxrf\vehicles_rf\pickup_01\data\pickup_01_launcher_co.paa","\lxRF\vehicles_rf\pickup_01\Data\pickup_01_service_ldf_co.paa"};
     editorPreview = "\lxRF\editorpreviews_rf\Data\CfgVehicles\I_E_Pickup_Comms_rf.jpg";
     crew = QCLASS(Rifleman);
     typicalCargo[] = {QCLASS(Rifleman)};
@@ -52,7 +48,6 @@ class CLASS(Ram_MRL): GCLASS(Ram_MRL) {
     faction = QPCLASS(t2_opfor);
     side = 0;
     textureList[] = {"EAF",1};
-    hiddenSelectionsTextures[] = {"\lxRF\vehicles_rf\pickup_01\Data\pickup_01_ext_ldf_co.paa","\lxRF\vehicles_rf\pickup_01\Data\pickup_01_adds_co.paa","\lxrf\vehicles_rf\pickup_01\data\pickup_01_ext2_co.paa","\lxrf\vehicles_rf\pickup_01\data\pickup_01_AAT_olive_co.paa","\lxrf\vehicles_rf\pickup_01\data\pickup_01_launcher_co.paa","\lxRF\vehicles_rf\pickup_01\Data\pickup_01_service_ldf_co.paa"};
     // editorPreview = "\lxRF\editorpreviews_rf\Data\CfgVehicles\I_E_Pickup_MRL_rf.jpg";
     crew = QCLASS(Rifleman);
     typicalCargo[] = {QCLASS(Rifleman), QCLASS(Rifleman)};
@@ -64,7 +59,6 @@ class CLASS(Ram_Fuel): GCLASS(Ram_Fuel) {
     faction = QPCLASS(t2_opfor);
     side = 0;
     textureList[] = {"EAF",1};
-    hiddenSelectionsTextures[] = {"\lxRF\vehicles_rf\pickup_01\Data\pickup_01_ext_ldf_co.paa","\lxRF\vehicles_rf\pickup_01\Data\pickup_01_adds_co.paa","\lxrf\vehicles_rf\pickup_01\data\pickup_01_ext2_co.paa","\lxrf\vehicles_rf\pickup_01\data\pickup_01_AAT_olive_co.paa","\lxrf\vehicles_rf\pickup_01\data\pickup_01_launcher_co.paa","\lxRF\vehicles_rf\pickup_01\Data\pickup_01_service_ldf_co.paa"};
     // editorPreview = "\lxRF\editorpreviews_rf\Data\CfgVehicles\I_E_Pickup_Fuel_rf.jpg";
     crew = QCLASS(Rifleman);
     typicalCargo[] = {QCLASS(Rifleman)};
@@ -76,7 +70,6 @@ class CLASS(Ram_M134): GCLASS(Ram_M134) {
     faction = QPCLASS(t2_opfor);
     side = 0;
     textureList[] = {"EAF",1};
-    hiddenSelectionsTextures[] = {"\lxRF\vehicles_rf\pickup_01\Data\pickup_01_ext_ldf_co.paa","\lxRF\vehicles_rf\pickup_01\Data\pickup_01_adds_co.paa","\lxrf\vehicles_rf\pickup_01\data\pickup_01_ext2_co.paa","\lxrf\vehicles_rf\pickup_01\data\pickup_01_AAT_olive_co.paa","\lxrf\vehicles_rf\pickup_01\data\pickup_01_launcher_co.paa","\lxRF\vehicles_rf\pickup_01\Data\pickup_01_service_ldf_co.paa"};
     // editorPreview = "\lxRF\editorpreviews_rf\Data\CfgVehicles\I_E_Pickup_Minigun_rf.jpg";
     crew = QCLASS(Rifleman);
     typicalCargo[] = {QCLASS(Rifleman), QCLASS(Rifleman)};
@@ -88,7 +81,6 @@ class CLASS(Ram_AT): GCLASS(Ram_AT) {
     faction = QPCLASS(t2_opfor);
     side = 0;
     textureList[] = {"EAF",1};
-    hiddenSelectionsTextures[] = {"\lxRF\vehicles_rf\pickup_01\Data\pickup_01_ext_ldf_co.paa","\lxRF\vehicles_rf\pickup_01\Data\pickup_01_adds_co.paa","\lxrf\vehicles_rf\pickup_01\data\pickup_01_ext2_co.paa","\lxrf\vehicles_rf\pickup_01\data\pickup_01_AAT_olive_co.paa","\lxrf\vehicles_rf\pickup_01\data\pickup_01_launcher_co.paa","\lxRF\vehicles_rf\pickup_01\Data\pickup_01_service_ldf_co.paa"};
     editorPreview = "\A3_Aegis\Editorpreviews_F_Aegis\Data\CfgVehicles\Aegis_I_E_Pickup_AT_RF.jpg";
     crew = QCLASS(Rifleman);
     typicalCargo[] = {QCLASS(Rifleman), QCLASS(Rifleman)};
@@ -100,7 +92,6 @@ class CLASS(Ram_AA): GCLASS(Ram_AA) {
     faction = QPCLASS(t2_opfor);
     side = 0;
     textureList[] = {"EAF",1};
-    hiddenSelectionsTextures[] = {"\lxRF\vehicles_rf\pickup_01\Data\pickup_01_ext_ldf_co.paa","\lxRF\vehicles_rf\pickup_01\Data\pickup_01_adds_co.paa","\lxrf\vehicles_rf\pickup_01\data\pickup_01_ext2_co.paa","\lxrf\vehicles_rf\pickup_01\data\pickup_01_AAT_olive_co.paa","\lxrf\vehicles_rf\pickup_01\data\pickup_01_launcher_co.paa","\lxRF\vehicles_rf\pickup_01\Data\pickup_01_service_ldf_co.paa"};
     editorPreview = "\A3_Aegis\Editorpreviews_F_Aegis\Data\CfgVehicles\Aegis_I_E_Pickup_AT_RF.jpg";
     crew = QCLASS(Rifleman);
     typicalCargo[] = {QCLASS(Rifleman), QCLASS(Rifleman)};

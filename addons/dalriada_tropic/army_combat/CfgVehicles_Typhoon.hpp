@@ -26,7 +26,6 @@ class CLASS(Typhoon_Fuel): GCLASS(Typhoon_Fuel) {
     faction = QPCLASS(t2_opfor);
     side = 0;
     textureList[] = {"GreenHex",1};
-    hiddenSelectionsTextures[] = {"\A3\Soft_F_Exp\Truck_03\Data\Truck_03_ext01_ghex_CO.paa","\A3\Soft_F_Exp\Truck_03\Data\Truck_03_ext02_ghex_CO.paa","\A3\Soft_F_Exp\Truck_03\Data\Truck_03_fuel_ghex_CO.paa"};
     editorPreview = "\A3\EditorPreviews_F_Exp\Data\CfgVehicles\O_T_Truck_03_fuel_ghex_F.jpg";
     crew = QCLASS(Rifleman);
     typicalCargo[] = {QCLASS(Rifleman)};
@@ -49,7 +48,6 @@ class CLASS(Typhoon_Repair): GCLASS(Typhoon_Repair) {
     faction = QPCLASS(t2_opfor);
     side = 0;
     textureList[] = {"GreenHex",1};
-    hiddenSelectionsTextures[] = {"\A3\Soft_F_Exp\Truck_03\Data\Truck_03_ext01_ghex_CO.paa","\A3\Soft_F_Exp\Truck_03\Data\Truck_03_ext02_ghex_CO.paa","\A3\Soft_F_Exp\Truck_03\Data\Truck_03_ammo_ghex_CO.paa"};
     editorPreview = "\A3\EditorPreviews_F_Exp\Data\CfgVehicles\O_T_Truck_03_repair_ghex_F.jpg";
     crew = QCLASS(Rifleman);
     typicalCargo[] = {QCLASS(Rifleman)};

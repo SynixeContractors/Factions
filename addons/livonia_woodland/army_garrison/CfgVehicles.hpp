@@ -49,93 +49,21 @@ class CfgVehicles {
             "Atlas_H_FieldCap_hs_ldf": 0.1,
         });
 
-        @Primary({
-            "weapons": {
-                "arifle_MSBS65_camo_F": {
-                    "magazinesVest": {
-                        "synixe_armoury_30Rnd_65x39_EPR_MSBS": 7,
-                        "synixe_armoury_30Rnd_65x39_Ball_Tracer_MSBS": 2,
-                    },
-                },
-            },
-            "optics": {
-                "optic_ico_01_camo_f": 1,
-            },
-            "pointers": {
-                "saber_light_lxWS": 0.6,
-                "Aegis_acc_pointer_DM": 0.4,
-            },
-        });
-
-        @Secondary({
-            "weapons": {
-                "hgun_G17_black_F": {
-                    "magazinesVest": {
-                        "17Rnd_9x21_Mag": 3,
-                    },
-                },
-            },
-        });
+        #include "..\weapons\Rifleman.hpp"
+        #include "..\weapons\Pistol.hpp"
     };
 
     class CLASS(TeamLeader): CLASS(Rifleman) {
         @Role(TeamLeader);
 
-        @Primary({
-            "weapons": {
-                "arifle_MSBS65_GL_camo_F": {
-                    "magazinesVest": {
-                        "synixe_armoury_30Rnd_65x39_EPR_MSBS": 5,
-                        "synixe_armoury_30Rnd_65x39_Ball_Tracer_MSBS": 2,
-                        "1Rnd_HE_Grenade_shell": 6,
-                        "1Rnd_Smoke_Grenade_shell": 2,
-                    },
-                    "loadedPrimary": "synixe_armoury_30Rnd_65x39_EPR_MSBS",
-                    "loadedSecondary": "1Rnd_HE_Grenade_shell",
-                },
-            },
-            "optics": {
-                "optic_ico_01_camo_f": 1,
-            },
-            "pointers": {
-                "saber_light_lxWS": 0.6,
-                "Aegis_acc_pointer_DM": 0.4,
-            },
-        });
+        #include "..\weapons\TeamLeader.hpp"
     };
 
     class CLASS(Autorifleman): CLASS(Rifleman) {
         @Role(Autorifleman);
 
-        @Primary({
-            "weapons": {
-                "LMG_Mk200_black_F": {
-                    "magazinesVest": {
-                        "synixe_armoury_200Rnd_65x39_EPR_Belt": 4,
-                    },
-                    "magazinesBackpack": {
-                        "synixe_armoury_200Rnd_65x39_EPR_Belt": 4,
-                    },
-                },
-            },
-            "optics": {
-                "JCA_optic_MROS_black": 1,
-            },
-            "pointers": {
-                "saber_light_lxWS": 0.6,
-                "Aegis_acc_pointer_DM": 0.4,
-            },
-        });
-
-        @Secondary({
-            "weapons": {
-                "hgun_G17_black_F": {
-                    "magazinesVest": {
-                        "17Rnd_9x21_Mag": 3,
-                    },
-                },
-            },
-        });
+        #include "..\weapons\Autorifleman.hpp"
+        #include "..\weapons\Pistol.hpp"
 
     };
 
@@ -174,17 +102,7 @@ class CfgVehicles {
             },
         });
 
-        @Secondary({
-            "weapons": {
-                "": 0.85,
-                "hgun_G17_black_F": {
-                    "probability": 0.15,
-                    "magazinesVest": {
-                        "17Rnd_9x21_Mag": 3,
-                    },
-                },
-            },
-        });
+        #include "..\weapons\PistolChance.hpp"
 
         @Backpacks({
             "variants": {
@@ -215,36 +133,7 @@ class CfgVehicles {
             },
         });
 
-        @Primary({
-            "weapons": {
-                "": 0.85,
-                "arifle_MSBS65_camo_F": {
-                    "probability": 0.15,
-                    "magazinesVest": {
-                        "synixe_armoury_30Rnd_65x39_EPR_MSBS": 7,
-                        "synixe_armoury_30Rnd_65x39_Ball_Tracer_MSBS": 2,
-                    },
-                },
-            },
-            "optics": {
-                "optic_ico_01_camo_f": 1,
-            },
-            "pointers": {
-                "saber_light_lxWS": 0.6,
-                "Aegis_acc_pointer_DM": 0.4,
-            },
-        });
-
-        @Secondary({
-            "weapons": {
-                "": 0.85,
-                "hgun_G17_black_F": {
-                    "probability": 0.15,
-                    "magazinesVest": {
-                        "17Rnd_9x21_Mag": 3,
-                    },
-                },
-            },
-        });
+        #include "..\weapons\Rifleman.hpp"
+        #include "..\weapons\PistolChance.hpp"
     };
 };
