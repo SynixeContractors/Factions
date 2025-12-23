@@ -5,7 +5,7 @@ class TextureSources {
         factions[] = {};
     };
     class Indep {
-        displayName = "DAP Woodland";
+        displayName = "DAP Green";
         textures[] = {"\A3\Air_F_EPB\Heli_Light_03\Data\Heli_Light_03_base_INDP_CO.paa","\A3\Weapons_F\Ammoboxes\Data\AmmoBox_HAF_CO.paa","\A3\Weapons_F\Ammoboxes\Data\AmmoBox_signs_HAF_CA.paa"};
         factions[] = {};
     };

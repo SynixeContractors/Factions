@@ -1,6 +1,6 @@
 class TextureSources {
     class Indep {
-        displayName = "DAP Woodland";
+        displayName = "DAP Green";
         textures[] = {"\A3\Soft_F_Beta\Truck_02\Data\Truck_02_kab_INDP_CO.paa","\A3\Soft_F_Beta\Truck_02\Data\Truck_02_int_CO.paa","\A3\Soft_F_Gamma\Truck_02\Data\Truck_02_MRL_CO.paa","\A3\Soft_F_Beta\Truck_02\Data\Truck_02_chassis_INDP_CO.paa"};
         factions[] = {};
     };

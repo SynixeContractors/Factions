@@ -9,17 +9,17 @@ class GCLASS(Pandur): I_APC_Wheeled_03_cannon_F {
     ace_refuel_fuelCapacity = 210;
     class TextureSources {
         class Indep {
-            displayName = "DAP Woodland";
+            displayName = "DAP Green";
             textures[] = {"A3\armor_f_gamma\APC_Wheeled_03\data\APC_Wheeled_03_Ext_INDP_CO.paa","A3\armor_f_gamma\APC_Wheeled_03\data\APC_Wheeled_03_Ext2_INDP_CO.paa","A3\armor_f_gamma\APC_Wheeled_03\data\RCWS30_INDP_CO.paa","A3\armor_f_gamma\APC_Wheeled_03\data\APC_Wheeled_03_Ext_alpha_INDP_CO.paa","A3\Armor_F\Data\camonet_AAF_Digi_Green_CO.paa","A3\armor_f\data\cage_aaf_co.paa"};
             factions[] = {};
         };
         class Indep_02 {
-            displayName = "DAP Woodland (Jungle Net)";
+            displayName = "DAP Green (Jungle Net)";
             textures[] = {"\A3\Armor_F_Gamma\APC_Wheeled_03\Data\APC_Wheeled_03_Ext_INDP_CO.paa","\A3\Armor_F_Gamma\APC_Wheeled_03\Data\APC_Wheeled_03_Ext2_INDP_CO.paa","\A3\Armor_F_Gamma\APC_Wheeled_03\Data\RCWS30_INDP_CO.paa","\A3\Armor_F_Gamma\APC_Wheeled_03\Data\APC_Wheeled_03_Ext_alpha_INDP_CO.paa","\A3\Armor_F\Data\camonet_AAF_Digi_Jungle_CO.paa","\A3\Armor_F\Data\cage_AAF_CO.paa"};
             factions[] = {};
         };
         class Indep_03 {
-            displayName = "DAP Woodland (Desert Net)";
+            displayName = "DAP Green (Desert Net)";
             textures[] = {"\A3\Armor_F_Gamma\APC_Wheeled_03\Data\APC_Wheeled_03_Ext_INDP_CO.paa","\A3\Armor_F_Gamma\APC_Wheeled_03\Data\APC_Wheeled_03_Ext2_INDP_CO.paa","\A3\Armor_F_Gamma\APC_Wheeled_03\Data\RCWS30_INDP_CO.paa","\A3\Armor_F_Gamma\APC_Wheeled_03\Data\APC_Wheeled_03_Ext_alpha_INDP_CO.paa","\A3\Armor_F\Data\camonet_AAF_Digi_Desert_CO.paa","\A3\Armor_F\Data\cage_AAF_CO.paa"};
             factions[] = {};
         };

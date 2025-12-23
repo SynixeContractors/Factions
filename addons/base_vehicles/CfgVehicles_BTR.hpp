@@ -45,7 +45,7 @@ class GCLASS(BTR): Aegis_O_A_APC_Wheeled_04_export_F {
             factions[] = {};
         };
         class Indep {
-            displayName = "DAP Woodland";
+            displayName = "DAP Green";
             textures[] = {
             "\A3_Aegis\Armor_F_Aegis\APC_Wheeled_04\Data\APC_Wheeled_04_body_export_AAF_CO.paa",
             "\A3_Aegis\Armor_F_Aegis\APC_Wheeled_04\Data\APC_Wheeled_04_body2_AAF_CO.paa",
@@ -63,7 +63,7 @@ class GCLASS(BTR): Aegis_O_A_APC_Wheeled_04_export_F {
             factions[] = {};
         };
         class Loyalist {
-            displayName = "DAP Woodland (Graffiti)";
+            displayName = "DAP Green (Graffiti)";
             textures[] = {
             "\A3_Aegis\Armor_F_Aegis\APC_Wheeled_04\Data\APC_Wheeled_04_body_export_loyalist_CO.paa",
             "\A3_Aegis\Armor_F_Aegis\APC_Wheeled_04\Data\APC_Wheeled_04_body2_AAF_CO.paa",
@@ -220,7 +220,7 @@ class GCLASS(BTR_IFV): O_R_APC_Wheeled_04_cannon_F {
             factions[] = {};
         };
         class Loyalist {
-            displayName = "DAP Woodland (Graffiti)";
+            displayName = "DAP Green (Graffiti)";
             textures[] = {
             "\A3_Aegis\Armor_F_Aegis\APC_Wheeled_04\Data\APC_Wheeled_04_body_export_loyalist_CO.paa",
             "\A3_Aegis\Armor_F_Aegis\APC_Wheeled_04\Data\APC_Wheeled_04_body2_AAF_CO.paa",
@@ -368,7 +368,7 @@ class GCLASS(BTR_SPG): O_R_APC_Wheeled_04_cannon_v2_F {
             factions[] = {};
         };
         class Indep {
-            displayName = "DAP Woodland";
+            displayName = "DAP Green";
             textures[] = {
             "\A3_Aegis\Armor_F_Aegis\APC_Wheeled_04\Data\APC_Wheeled_04_body_AAF_CO.paa",
             "\A3_Aegis\Armor_F_Aegis\APC_Wheeled_04\Data\APC_Wheeled_04_body2_AAF_CO.paa",
@@ -377,7 +377,7 @@ class GCLASS(BTR_SPG): O_R_APC_Wheeled_04_cannon_v2_F {
             factions[] = {};
         };
         class Loyalist {
-            displayName = "DAP Woodland (Graffiti)";
+            displayName = "DAP Green (Graffiti)";
             textures[] = {
             "\A3_Aegis\Armor_F_Aegis\APC_Wheeled_04\Data\APC_Wheeled_04_body_export_loyalist_CO.paa",
             "\A3_Aegis\Armor_F_Aegis\APC_Wheeled_04\Data\APC_Wheeled_04_body2_AAF_CO.paa",

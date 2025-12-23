@@ -9,17 +9,17 @@ class GCLASS(Warrior): I_APC_tracked_03_cannon_v2_F {
     ace_refuel_fuelCapacity = 190;
     class TextureSources {
         class Indep_01 {
-            displayName = "DAP Woodland";
+            displayName = "DAP Green";
             textures[] = {"A3\armor_f_epb\apc_tracked_03\data\apc_tracked_03_ext_indp_co.paa","A3\armor_f_epb\apc_tracked_03\data\apc_tracked_03_ext2_indp_co.paa","A3\Armor_F\Data\camonet_AAF_Digi_Green_CO.paa","A3\armor_f\data\cage_aaf_co.paa"};
             factions[] = {};
         };
         class Indep_02 {
-            displayName = "DAP Woodland (Jungle Camo Net)";
+            displayName = "DAP Green (Jungle Camo Net)";
             textures[] = {"\A3\Armor_F_EPB\APC_Tracked_03\Data\APC_Tracked_03_Ext_INDP_CO.paa","\A3\Armor_F_EPB\APC_Tracked_03\Data\APC_Tracked_03_Ext2_INDP_CO.paa","\A3\Armor_F\Data\camonet_AAF_Digi_Jungle_CO.paa","\A3\Armor_F\Data\cage_AAF_CO.paa"};
             factions[] = {};
         };
         class Indep_03 {
-            displayName = "DAP Woodland (Desert Camo Net)";
+            displayName = "DAP Green (Desert Camo Net)";
             textures[] = {"\A3\Armor_F_EPB\APC_Tracked_03\Data\APC_Tracked_03_Ext_INDP_CO.paa","\A3\Armor_F_EPB\APC_Tracked_03\Data\APC_Tracked_03_Ext2_INDP_CO.paa","\A3\Armor_F\Data\camonet_AAF_Digi_Desert_CO.paa","\A3\Armor_F\Data\cage_AAF_CO.paa"};
             factions[] = {};
         };

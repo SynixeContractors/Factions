@@ -121,7 +121,7 @@ class GCLASS(MD500E): B_Heli_Light_01_F {
             factions[] = {};
         };
         class Indep {
-            displayName = "DAP Woodland";
+            displayName = "DAP Green";
             textures[] = {"\A3\Air_F\Heli_Light_01\Data\Heli_Light_01_ext_INDP_CO.paa"};
             factions[] = {};
         };
@@ -169,7 +169,7 @@ class GCLASS(MD500E_Armed): B_Heli_Light_01_dynamicLoadout_F {
             factions[] = {};
         };
         class Indep {
-            displayName = "DAP Woodland";
+            displayName = "DAP Green";
             textures[] = {"\A3\Air_F\Heli_Light_01\Data\Heli_Light_01_ext_INDP_CO.paa","\A3\Air_F\Heli_Light_01\Data\Heli_Light_01_dot_CA.paa"};
             factions[] = {};
         };

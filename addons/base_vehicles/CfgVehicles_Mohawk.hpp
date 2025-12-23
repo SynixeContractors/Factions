@@ -16,7 +16,7 @@ class GCLASS(Mohawk): I_Heli_Transport_02_F {
     textureList[] = {"ION",1,"IONBlue",1,"Dahoman",1,"President",1,"Vrana",1,"Wave",1};
     class TextureSources {
         class AAF {
-            displayName = "DAP Woodland";
+            displayName = "DAP Green";
             textures[] = {"A3\Air_F_Beta\Heli_Transport_02\Data\Heli_Transport_02_1_INDP_CO.paa","A3\Air_F_Beta\Heli_Transport_02\Data\Heli_Transport_02_2_INDP_CO.paa","A3\Air_F_Beta\Heli_Transport_02\Data\Heli_Transport_02_3_INDP_CO.paa","A3\Air_F_Beta\Heli_Transport_02\Data\Heli_Transport_02_int_02_CO.paa"};
             factions[] = {};
         };

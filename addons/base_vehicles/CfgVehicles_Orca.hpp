@@ -29,7 +29,7 @@ class GCLASS(Orca): O_Heli_Light_02_unarmed_F {
             faction[] = {};
         };
         class Indep {
-            displayName = "DAP Woodland";
+            displayName = "DAP Green";
             textures[] = {"\A3\Air_F\Heli_Light_02\Data\Heli_Light_02_ext_INDP_CO.paa"};
             factions[] = {};
         };
@@ -119,7 +119,7 @@ class GCLASS(OrcaArmed): O_Heli_Light_02_dynamicLoadout_F {
             faction[] = {};
         };
         class Indep {
-            displayName = "DAP Woodland";
+            displayName = "DAP Green";
             textures[] = {"\A3\Air_F\Heli_Light_02\Data\Heli_Light_02_ext_INDP_CO.paa"};
             factions[] = {};
         };
@@ -259,7 +259,7 @@ class GCLASS(OrcaR): B_ION_Heli_Light_02_unarmed_lxWS {
             faction[] = {};
         };
         class Indep {
-            displayName = "DAP Woodland";
+            displayName = "DAP Green";
             textures[] = {"\A3\Air_F\Heli_Light_02\Data\Heli_Light_02_ext_INDP_CO.paa","\a3\air_f\data\rockets_co.paa","\lxWS\air_f_lxWS\heli_light_02\data\lxws_heli_light_02_adds_ion_co.paa"};
             factions[] = {};
         };
@@ -353,7 +353,7 @@ class GCLASS(OrcaAR): B_ION_Heli_Light_02_dynamicLoadout_lxWS {
             faction[] = {};
         };
         class Indep {
-            displayName = "DAP Woodland";
+            displayName = "DAP Green";
             textures[] = {"\A3\Air_F\Heli_Light_02\Data\Heli_Light_02_ext_INDP_CO.paa","\a3\air_f\data\rockets_co.paa","\lxWS\air_f_lxWS\heli_light_02\data\lxws_heli_light_02_adds_ion_co.paa"};
             factions[] = {};
         };

@@ -16,7 +16,7 @@ class TextureSources
     };
     class Indep
     {
-        displayName = "DAP Woodland";
+        displayName = "DAP Green";
         textures[] = {"\A3_Aegis\Soft_F_Aegis\MRAP_01\Data\MRAP_01_base_INDP_CO.paa","\A3_Aegis\Soft_F_Aegis\MRAP_01\Data\MRAP_01_adds_INDP_CO.paa","\A3\Data_F\Vehicles\Turret_INDP_CO.paa"};
         factions[] = {};
     };

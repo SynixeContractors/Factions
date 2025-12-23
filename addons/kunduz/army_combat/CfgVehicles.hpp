@@ -48,7 +48,7 @@ class CfgVehicles {
 
         @Assigned(Military);
 
-         @Primary({
+        @Primary({
             "weapons": {
                 "arifle_AKM_F": {
                     "magazinesVest": {

@@ -19,7 +19,7 @@ class GCLASS(Apache): Aegis_B_Heli_Attack_03_F {
             factions[] = {};
         };
         class Indep {
-            displayName = "DAP Woodland";
+            displayName = "DAP Green";
             textures[] = {"\A3_Aegis\Air_F_Aegis\Heli_Attack_03\Data\Heli_Attack_03_body_INDP_CO.paa","\A3_Aegis\Air_F_Aegis\Heli_Attack_03\Data\Heli_Attack_03_details_INDP_CO.paa","\A3_Aegis\Air_F_Aegis\Heli_Attack_03\Data\Heli_Attack_03_adds_INDP_CO.paa"};
             factions[] = {};
         };

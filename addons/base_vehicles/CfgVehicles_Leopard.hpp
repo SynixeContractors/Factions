@@ -119,17 +119,17 @@ class GCLASS(Leopard2) : I_MBT_03_cannon_F {
             factions[] = {};
         };
         class Indep_01 {
-            displayName = "DAP Woodland (DAP Desert Net)";
+            displayName = "DAP Green (DAP Desert Net)";
             factions[] = {};
             LEOPARD_AAF(NET_AAFDESERT);
         };
         class Indep_01_green {
-            displayName = "DAP Woodland (DAP Wooland Net)";
+            displayName = "DAP Green (DAP Wooland Net)";
             factions[] = {};
             LEOPARD_AAF(NET_AAFDESERT);
         };
         class Indep_01_jungle {
-            displayName = "DAP Woodland (DAP Jungle Net)";
+            displayName = "DAP Green (DAP Jungle Net)";
             factions[] = {};
             LEOPARD_AAF(NET_AAFJUNGLE);
         };

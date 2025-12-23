@@ -1,6 +1,6 @@
 class TextureSources {
     class AAF {
-        displayName = "DAP Woodland";
+        displayName = "DAP Green";
         textures[] = {"\lxRF\air_rf\heli_medium_ec\data\as332_exterior_02_aaf_co.paa","\lxRF\air_rf\heli_medium_ec\data\as332_int_cargo_co.paa","#(rgb,1024,1024,1)ui('lxRF_MFDMinimap','lxRF_MFDMinimap')","\lxRF\air_rf\heli_medium_ec\data\as332_adds_02_aaf_co.paa","\lxRF\air_rf\heli_medium_ec\data\as332_exterior_02_aaf_co.paa","\lxRF\air_rf\heli_medium_ec\data\as332_int_cargo_co.paa"};
         materials[] = {"\lxrf\air_rf\heli_medium_ec\data\as332_exterior_01.rvmat","\lxrf\air_rf\heli_medium_ec\data\as332_int_cargo.rvmat"};
         factions[] = {};

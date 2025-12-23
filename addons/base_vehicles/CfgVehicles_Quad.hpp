@@ -51,7 +51,7 @@ class GCLASS(QuadBike): Quadbike_01_base_F {
             textures[] = {"\A3\Soft_F_Bootcamp\Quadbike_01\Data\Quadbike_01_INDP_Hunter_CO.paa","\A3\soft_f_gamma\Quadbike_01\Data\Quadbike_01_wheel_INDP_Hunter_CO.paa"};
         };
         class Indep {
-            displayName = "DAP Woodland";
+            displayName = "DAP Green";
             factions[] = {};
             textures[] = {"\A3\Soft_F_Beta\Quadbike_01\Data\Quadbike_01_INDP_CO.paa","\A3\Soft_F_Beta\Quadbike_01\Data\Quadbike_01_wheel_INDP_CO.paa"};
         };

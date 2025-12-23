@@ -218,7 +218,7 @@ class GCLASS(Ram_Rocket): Pickup_01_Rocket_base_rf {
             factions[] = {};
         };
         class AAF {
-            displayName = "DAP Woodland";
+            displayName = "DAP Green";
             textures[] = {"\lxRF\vehicles_rf\pickup_01\Data\pickup_01_ext_aaf_co.paa","\lxRF\vehicles_rf\pickup_01\Data\pickup_01_adds_aaf_co.paa","\lxrf\vehicles_rf\pickup_01\data\pickup_01_ext2_co.paa","lxrf\weapons_rf\dynamicloadout\data\missile_Tratnyr_olive_co.paa","\lxRF\vehicles_rf\pickup_01\Data\pickup_01_service_aaf_co.paa"};
             materials[] = {"lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext_military.rvmat","lxrf\vehicles_rf\pickup_01\Data\pickup_01_adds.rvmat","lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext2.rvmat","lxrf\weapons_rf\dynamicloadout\data\missile_tratnyr_mat.rvmat","lxrf\vehicles_rf\pickup_01\Data\pickup_01_service_military.rvmat"};
             factions[] = {};
@@ -236,7 +236,7 @@ class GCLASS(Ram_Rocket): Pickup_01_Rocket_base_rf {
             factions[] = {};
         };
         class Urban {
-            displayName = "DAP Urban";
+            displayName = "DAP Grey";
             textures[] = {"\lxRF\vehicles_rf\pickup_01\Data\pickup_01_ext_urban_co.paa","\lxRF\vehicles_rf\pickup_01\Data\pickup_01_adds_black_co.paa","\lxrf\vehicles_rf\pickup_01\data\pickup_01_ext2_co.paa","lxrf\weapons_rf\dynamicloadout\data\missile_Tratnyr_black_co.paa","\lxRF\vehicles_rf\pickup_01\Data\pickup_01_service_urban_co.paa"};
             materials[] = {"lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext_military.rvmat","lxrf\vehicles_rf\pickup_01\Data\pickup_01_adds.rvmat","lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext2.rvmat","lxrf\weapons_rf\dynamicloadout\data\missile_tratnyr_mat.rvmat","lxrf\vehicles_rf\pickup_01\Data\pickup_01_service_military.rvmat"};
             factions[] = {};
