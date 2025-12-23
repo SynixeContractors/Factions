@@ -1,16 +1,9 @@
 #include "script_component.hpp"
 
 class CfgPatches {
-    class ADDON {
+    class DOUBLES(ADDON,SUBCOMPONENT) {
         name = QUOTE(DOUBLES(COMPONENT,SUBCOMPONENT));
-        units[] = {
-            QCLASS(Rifleman),
-            QCLASS(TeamLeader),
-            QCLASS(Autorifleman),
-            QCLASS(Medic),
-            QCLASS(Maintainer),
-            QCLASS(Worker),
-        };
+        units[] = {};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {"cba_main"};
@@ -19,4 +12,21 @@ class CfgPatches {
     };
 };
 
-#include "CfgVehicles.hpp"
+class CfgVehicles {
+
+    #define SIDE OPFOR
+    #define SIDE_NUMBER 0
+    #define SIDE_FACTION t2_opfor
+    #include "CfgVehicles.hpp"
+    #undef SIDE
+    #undef SIDE_NUMBER
+    #undef SIDE_FACTION
+
+    #define SIDE INDEP
+    #define SIDE_NUMBER 2
+    #define SIDE_FACTION t2_indep
+    #include "CfgVehicles.hpp"
+    #undef SIDE
+    #undef SIDE_NUMBER
+    #undef SIDE_FACTION
+};
