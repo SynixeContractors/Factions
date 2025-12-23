@@ -144,6 +144,22 @@ class CLASS2(SIDE,LUT_Flatbed): GCLASS(LUT_Flatbed) {
     typicalCargo[] = {QCLASS2(SIDE,Rifleman)};
 };
 
+class CLASS2(SIDE,LUT_Cargo): GCLASS(LUT_Cargo) {
+    SCOPE_DLC;
+    faction = QPCLASS(SIDE_FACTION);
+    side = SIDE_NUMBER;
+    textureList[] = {
+        "Ardistan",1,
+        "Mudwalker",1,
+        "Jungle",1,
+        "Black",1,
+        "Blue",1
+    };
+    editorPreview = "\lxws\editorpreviews_f_lxws\Data\CfgVehicles\O_Truck_02_cargo_lxWS.jpg";
+    crew = QCLASS2(SIDE,Rifleman);
+    typicalCargo[] = {QCLASS2(SIDE,Rifleman)};
+};
+
 // Offroad
 
 class CLASS2(SIDE,Offroad): GCLASS(Offroad) {
@@ -170,7 +186,7 @@ class CLASS2(SIDE,Offroad): GCLASS(Offroad) {
     typicalCargo[] = {QCLASS2(SIDE,Rifleman)};
 };
 
-class CLASS2(SIDE,OffroadCovered): GCLASS(OffroadCovered) {
+class CLASS2(SIDE,Offroad_Covered): GCLASS(Offroad_Covered) {
     SCOPE_DLC;
     faction = QPCLASS(SIDE_FACTION);
     side = SIDE_NUMBER;

@@ -1,7 +1,6 @@
 class CLASS2(Motorboat,NATION): GCLASS(Motorboat) {
     SCOPE_DLC;
     faction = QCLASS(NATION);
-    textureList[] = {"Civilian",1};
     crew = QUOTE(CLASS2(Citizen_Polo_Shorts,NATION));
     typicalCargo[] = {QUOTE(CLASS2(Citizen_Polo_Shorts,NATION))};
 };
@@ -9,7 +8,6 @@ class CLASS2(Motorboat,NATION): GCLASS(Motorboat) {
 class CLASS2(RHIB,NATION): GCLASS(RHIB) {
     SCOPE_DLC;
     faction = QCLASS(NATION);
-    textureList[] = {"Civilian",1};
     crew = QUOTE(CLASS2(Citizen_Polo_Shorts,NATION));
     typicalCargo[] = {QUOTE(CLASS2(Citizen_Polo_Shorts,NATION))};
 };

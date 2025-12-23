@@ -21,4 +21,19 @@ GVAR(randomLoadoutUnits) = createHashMap;
     }] call CBA_fnc_addClassEventHandler;
 } forEach BASE_CLASSES;
 
+// {
+//     [_x, "Init", {
+//         if !(local (_this#0)) exitWith {};
+//         _this call FUNC(texture);
+//     }] call CBA_fnc_addClassEventHandler;
+// } forEach [
+//     QGCLASS(Mohawk),
+//     QGCLASS(Mohawk_Executive),
+//     QGCLASS(Orca),
+//     QGCLASS(Orca),
+//     QGCLASS(OrcaArmed),
+//     QGCLASS(OrcaR),
+//     QGCLASS(OrcaAR)
+// ];
+
 ADDON = true;

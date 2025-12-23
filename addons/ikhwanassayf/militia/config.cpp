@@ -18,11 +18,12 @@ class CfgVehicles {
     class GCLASS(Ram_MRL);
     class GCLASS(LUT_MRL);
     class GCLASS(LUT_AA);
+    class GCLASS(LUT_Cargo);
+    class GCLASS(LUT_Flatbed);
     class GCLASS(LUT_Transport);
     class GCLASS(LUT_TransportCovered);
-    class GCLASS(LUT_Flatbed);
     class GCLASS(Offroad);
-    class GCLASS(OffroadCovered);
+    class GCLASS(Offroad_Covered);
     class GCLASS(Offroad_HMG);
     class GCLASS(Offroad_AA);
     class GCLASS(Offroad_AT);

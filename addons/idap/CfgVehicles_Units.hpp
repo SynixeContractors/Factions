@@ -9,6 +9,7 @@ class CLASS(Base): GCLASS(Base_CIV) {
 class CLASS(AidWorker): CLASS(Base) {
     SCOPE_DLC;
     displayName = "Aid Worker";
+    editorPreview = "\A3\EditorPreviews_F_Orange\Data\CfgVehicles\C_IDAP_Man_AidWorker_04_F.jpg";
 
     @Uniforms({
         "variants": {
@@ -34,6 +35,7 @@ class CLASS(AidWorker): CLASS(Base) {
 class CLASS(EOD): CLASS(Base) {
     SCOPE_DLC;
     displayName = "EOD Specialist";
+    editorPreview = "\A3\EditorPreviews_F_Orange\Data\CfgVehicles\C_IDAP_Man_EOD_01_F.jpg";
     canDeactivateMines = 1;
 
     @Uniforms({
@@ -77,6 +79,7 @@ class CLASS(EOD): CLASS(Base) {
 class CLASS(Paramedic): CLASS(Base) {
     SCOPE_DLC;
     displayName = "Paramedic";
+    editorPreview = "\A3\EditorPreviews_F_Orange\Data\CfgVehicles\C_IDAP_Man_Paramedic_01_F.jpg";
     attendant = 1;
 
     @Uniforms({
@@ -98,5 +101,23 @@ class CLASS(Paramedic): CLASS(Base) {
         "packs": [
             "t4_medic"
         ],
+    });
+};
+
+class CLASS(Pilot): CLASS(Base) {
+    SCOPE_DLC;
+    displayName = "Pilot";
+    editorPreview = "\A3\EditorPreviews_F_Orange\Data\CfgVehicles\C_IDAP_Pilot_01_F.jpg";
+
+    @Uniforms({
+        "variants": {
+            "U_C_IDAP_Man_cargo_F": 1,
+            "U_C_IDAP_Man_Tee_F": 0.5,
+        },
+    });
+
+    @Headgear({
+        "H_HeadSet_orange_F": 1,
+        "H_HeadSet_white_F": 0.5,
     });
 };

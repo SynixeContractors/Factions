@@ -83,24 +83,98 @@ class CLASS(Ram_Covered): GCLASS(Ram_Covered) {
     typicalCargo[] = {QCLASS(AidWorker)};
 };
 
-// class GCLASS(Ram_Water);
-// class CLASS(Ram_Water): GCLASS(Ram_Water) {
-//     SCOPE_DLC;
-//     faction = QCLASS(civilian);
-//     displayName = "Ram 1500 (Water)";
-//     textureList[] = {"IDAP",1};
-//     hiddenSelectionsTextures[] = {"\lxRF\vehicles_rf\pickup_01\Data\pickup_01_ext_idap_co.paa","\lxRF\vehicles_rf\pickup_01\Data\pickup_01_adds_water_co.paa","\lxrf\vehicles_rf\pickup_01\data\pickup_01_ext2_co.paa","\lxrf\vehicles_rf\pickup_01\data\pickup_01_aat_co.paa","\lxrf\vehicles_rf\pickup_01\data\pickup_01_launcher_co.paa","\lxRF\vehicles_rf\pickup_01\Data\pickup_01_service_idap_co.paa"};
-//     editorPreview = "\lxRF\editorpreviews_rf\Data\CfgVehicles\C_IDAP_Pickup_water_rf.jpg";
-//     crew = QCLASS(AidWorker);
-//     typicalCargo[] = {QCLASS(AidWorker)};
-// };
-
 class GCLASS(Ram_Fuel);
 class CLASS(Ram_Fuel): GCLASS(Ram_Fuel) {
     SCOPE_DLC;
     faction = QCLASS(civilian);
     textureList[] = {"IDAP",1};
     editorPreview = "\lxRF\editorpreviews_rf\Data\CfgVehicles\C_IDAP_Pickup_fuel_rf.jpg";
+    crew = QCLASS(AidWorker);
+    typicalCargo[] = {QCLASS(AidWorker)};
+};
+
+class GCLASS(Mohawk);
+class CLASS(Mohawk): GCLASS(Mohawk) {
+    SCOPE_DLC;
+    faction = QCLASS(civilian);
+    textureList[] = {"IDAP",1};
+    editorPreview = "\A3\EditorPreviews_F_Orange\Data\CfgVehicles\C_IDAP_Heli_Transport_02_F.jpg";
+    crew = QCLASS(Pilot);
+    typicalCargo[] = {QCLASS(AidWorker)};
+};
+
+class GCLASS(Puma);
+class CLASS(Puma): GCLASS(Puma) {
+    SCOPE_DLC;
+    faction = QCLASS(civilian);
+    textureList[] = {"IDAP",1};
+    editorPreview = "\lxRF\editorpreviews_rf\Data\CfgVehicles\C_IDAP_Heli_EC_01A_civ_RF.jpg";
+    crew = QCLASS(Pilot);
+    typicalCargo[] = {QCLASS(AidWorker)};
+};
+
+class GCLASS(LUT_Transport);
+class CLASS(LUT_Transport): GCLASS(LUT_Transport) {
+    SCOPE_DLC;
+    faction = QCLASS(civilian);
+    side = 3;
+    textureList[] = {"IDAP",1};
+    editorPreview = "\A3\EditorPreviews_F_Orange\Data\CfgVehicles\C_IDAP_Truck_02_transport_F.jpg";
+    crew = QCLASS(AidWorker);
+    typicalCargo[] = {QCLASS(AidWorker)};
+};
+
+class GCLASS(LUT_TransportCovered);
+class CLASS(LUT_TransportCovered): GCLASS(LUT_TransportCovered) {
+    SCOPE_DLC;
+    faction = QCLASS(civilian);
+    side = 3;
+    textureList[] = {"IDAP",1};
+    editorPreview = "\A3\EditorPreviews_F_Orange\Data\CfgVehicles\C_IDAP_Truck_02_F.jpg";
+    crew = QCLASS(AidWorker);
+    typicalCargo[] = {QCLASS(AidWorker)};
+};
+
+class GCLASS(LUT_Repair);
+class CLASS(LUT_Repair): GCLASS(LUT_Repair) {
+    SCOPE_DLC;
+    faction = QCLASS(civilian);
+    side = 3;
+    textureList[] = {"IDAP",1};
+    editorPreview = "\lxws\editorpreviews_f_lxws\Data\CfgVehicles\C_IDAP_Truck_02_box_lxWS.jpg";
+    crew = QCLASS(AidWorker);
+    typicalCargo[] = {QCLASS(AidWorker)};
+};
+
+class GCLASS(LUT_Flatbed);
+class CLASS(LUT_Flatbed): GCLASS(LUT_Flatbed) {
+    SCOPE_DLC;
+    faction = QCLASS(civilian);
+    side = 3;
+    textureList[] = {"IDAP",1};
+    editorPreview = "\lxws\editorpreviews_f_lxws\Data\CfgVehicles\C_IDAP_Truck_02_flatbed_lxWS.jpg";
+    crew = QCLASS(AidWorker);
+    typicalCargo[] = {QCLASS(AidWorker)};
+};
+
+class GCLASS(LUT_Cargo);
+class CLASS(LUT_Cargo): GCLASS(LUT_Cargo) {
+    SCOPE_DLC;
+    faction = QCLASS(civilian);
+    side = 3;
+    textureList[] = {"IDAP",1};
+    editorPreview = "\lxws\editorpreviews_f_lxws\Data\CfgVehicles\C_IDAP_Truck_02_cargo_lxWS.jpg";
+    crew = QCLASS(AidWorker);
+    typicalCargo[] = {QCLASS(AidWorker)};
+};
+
+class GCLASS(LUT_Fuel);
+class CLASS(LUT_Fuel): GCLASS(LUT_Fuel) {
+    SCOPE_DLC;
+    faction = QCLASS(civilian);
+    side = 3;
+    textureList[] = {"IDAP",1};
+    editorPreview = "";
     crew = QCLASS(AidWorker);
     typicalCargo[] = {QCLASS(AidWorker)};
 };

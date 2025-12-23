@@ -9,17 +9,21 @@ class CfgVehicles {
 
     // Cars
     class GCLASS(Hatchback);
-    class GCLASS(HatchbackSport);
+    class GCLASS(Hatchback_Sport);
     class GCLASS(Jay_Box);
     class GCLASS(Jay_Flatbed);
     class GCLASS(Jay_Fuel);
     class GCLASS(Jeep);
     class GCLASS(Offroad);
-    class GCLASS(OffroadCovered);
     class GCLASS(Offroad_Comms);
     class GCLASS(Offroad_Services);
+    class GCLASS(Offroad_Covered);
     class GCLASS(SUV);
     class GCLASS(Tractor);
+    class GCLASS(Van_Ambulance);
+    class GCLASS(Van_Cargo);
+    class GCLASS(Van_Service);
+    class GCLASS(Van_Transport);
 
     // Boats
     class GCLASS(CabinSkiff);

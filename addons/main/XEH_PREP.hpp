@@ -3,3 +3,4 @@ PREP(debug3DEN);
 PREP(getConfig);
 PREP(packItems);
 PREP(randomizeLoadout);
+PREP(texture);

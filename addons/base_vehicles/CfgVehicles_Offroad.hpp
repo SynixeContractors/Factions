@@ -33,7 +33,7 @@ class GCLASS(Offroad): Offroad_01_military_covered_base_F {
 };
 
 class C_Offroad_01_covered_F;
-class GCLASS(OffroadCovered): C_Offroad_01_covered_F {
+class GCLASS(Offroad_Covered): C_Offroad_01_covered_F {
     displayName = "Offroad (Covered)";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;

@@ -1,4 +1,6 @@
 class CfgVehicles {
+    #include "CfgVehicles_Cars.hpp"
+
     #define TEMPLATE_FACTION QPCLASS(t4_indep)
     #define TEMPLATE_SIDE 2
     #include "..\..\..\templates\statics\M2.hpp"

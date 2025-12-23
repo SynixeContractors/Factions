@@ -157,7 +157,7 @@ class TextureSources {
     };
     class IDAP {
         displayName = "IDAP";
-        textures[] = {"\lxRF\vehicles_rf\pickup_01\Data\pickup_01_ext_idap_co.paa","\lxRF\vehicles_rf\pickup_01\Data\pickup_01_adds_water_co.paa","\lxrf\vehicles_rf\pickup_01\data\pickup_01_ext2_co.paa","\lxrf\vehicles_rf\pickup_01\data\pickup_01_aat_co.paa","\lxrf\vehicles_rf\pickup_01\data\pickup_01_launcher_co.paa","\lxRF\vehicles_rf\pickup_01\Data\pickup_01_service_idap_co.paa"};
+        textures[] = {"\lxRF\vehicles_rf\pickup_01\Data\pickup_01_ext_idap_co.paa","\lxRF\vehicles_rf\pickup_01\Data\pickup_01_adds_fuel_black_co.paa","\lxrf\vehicles_rf\pickup_01\data\pickup_01_ext2_co.paa","\lxrf\vehicles_rf\pickup_01\data\pickup_01_aat_co.paa","\lxrf\vehicles_rf\pickup_01\data\pickup_01_launcher_co.paa","\lxRF\vehicles_rf\pickup_01\Data\pickup_01_service_idap_co.paa"};
         materials[] = {"lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext.rvmat","lxrf\vehicles_rf\pickup_01\Data\pickup_01_adds.rvmat","lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext2.rvmat","lxrf\vehicles_rf\pickup_01\Data\pickup_01_aat.rvmat","lxrf\vehicles_rf\pickup_01\Data\pickup_01_launcher.rvmat","lxrf\vehicles_rf\pickup_01\Data\pickup_01_service.rvmat"};
         factions[] = {};
     };

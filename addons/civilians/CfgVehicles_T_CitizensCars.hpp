@@ -26,7 +26,7 @@ class CLASS2(Hatchback,NATION): GCLASS(Hatchback) {
     typicalCargo[] = {QUOTE(CLASS2(Citizen_Polo_Shorts,NATION))};
 };
 
-class CLASS2(HatchbackSport,NATION): GCLASS(HatchbackSport) {
+class CLASS2(Hatchback_Sport,NATION): GCLASS(Hatchback_Sport) {
     SCOPE_DLC;
     faction = QCLASS(NATION);
     crew = QUOTE(CLASS2(Citizen_Polo_Shorts,NATION));
@@ -61,7 +61,7 @@ class CLASS2(Offroad,NATION): GCLASS(Offroad) {
     typicalCargo[] = {QUOTE(CLASS2(Citizen_Polo_Shorts,NATION))};
 };
 
-class CLASS2(OffroadCovered,NATION): GCLASS(OffroadCovered) {
+class CLASS2(Offroad_Covered,NATION): GCLASS(Offroad_Covered) {
     SCOPE_DLC;
     faction = QCLASS(NATION);
     crew = QUOTE(CLASS2(Citizen_Polo_Shorts,NATION));
@@ -76,6 +76,34 @@ class CLASS2(Offroad_Comms,NATION): GCLASS(Offroad_Comms) {
 };
 
 class CLASS2(Offroad_Services,NATION): GCLASS(Offroad_Services) {
+    SCOPE_DLC;
+    faction = QCLASS(NATION);
+    crew = QUOTE(CLASS2(Citizen_Polo_Shorts,NATION));
+    typicalCargo[] = {QUOTE(CLASS2(Citizen_Polo_Shorts,NATION))};
+};
+
+class CLASS2(Van_Transport,NATION): GCLASS(Van_Transport) {
+    SCOPE_DLC;
+    faction = QCLASS(NATION);
+    crew = QUOTE(CLASS2(Citizen_Polo_Shorts,NATION));
+    typicalCargo[] = {QUOTE(CLASS2(Citizen_Polo_Shorts,NATION))};
+};
+
+class CLASS2(Van_Ambulance,NATION): GCLASS(Van_Ambulance) {
+    SCOPE_DLC;
+    faction = QCLASS(NATION);
+    crew = QUOTE(CLASS2(Citizen_Polo_Shorts,NATION));
+    typicalCargo[] = {QUOTE(CLASS2(Citizen_Polo_Shorts,NATION))};
+};
+
+class CLASS2(Van_Cargo,NATION): GCLASS(Van_Cargo) {
+    SCOPE_DLC;
+    faction = QCLASS(NATION);
+    crew = QUOTE(CLASS2(Citizen_Polo_Shorts,NATION));
+    typicalCargo[] = {QUOTE(CLASS2(Citizen_Polo_Shorts,NATION))};
+};
+
+class CLASS2(Van_Service,NATION): GCLASS(Van_Service) {
     SCOPE_DLC;
     faction = QCLASS(NATION);
     crew = QUOTE(CLASS2(Citizen_Polo_Shorts,NATION));

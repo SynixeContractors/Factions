@@ -1,10 +1,16 @@
-class O_Heli_Light_02_unarmed_F;
+class Heli_Light_02_unarmed_base_F;
+class O_Heli_Light_02_unarmed_F: Heli_Light_02_unarmed_base_F {
+    class EventHandlers;
+};
 class GCLASS(Orca): O_Heli_Light_02_unarmed_F {
     displayName = "PO-30 Orca";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
     ace_refuel_fuelCapacity = 1800;
+    class EventHandlers: EventHandlers {
+        postinit = "if (local (_this select 0)) then {[(_this select 0), """", [], true] call bis_fnc_initVehicle;}";
+    };
     textureList[] = {"Black",1,"Blackcustom",1,"Green",1,"CIV",1};
     class TextureSources {
         class Opfor {
@@ -82,13 +88,19 @@ class GCLASS(Orca): O_Heli_Light_02_unarmed_F {
     };
 };
 
-class O_Heli_Light_02_dynamicLoadout_F;
+class Heli_Light_02_dynamicLoadout_base_F;
+class O_Heli_Light_02_dynamicLoadout_F: Heli_Light_02_dynamicLoadout_base_F {
+    class EventHandlers;
+};
 class GCLASS(OrcaArmed): O_Heli_Light_02_dynamicLoadout_F {
     displayName = "PO-30A Orca";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
     ace_refuel_fuelCapacity = 1800;
+    class EventHandlers: EventHandlers {
+        postinit = "if (local (_this select 0)) then {[(_this select 0), """", [], true] call bis_fnc_initVehicle;}";
+    };
     textureList[] = {"Black",1,"Blackcustom",1,"Green",1,"CIV",1};
     class TextureSources {
         class Opfor {
@@ -166,13 +178,18 @@ class GCLASS(OrcaArmed): O_Heli_Light_02_dynamicLoadout_F {
     };
 };
 
-class B_ION_Heli_Light_02_unarmed_lxWS;
+class B_ION_Heli_Light_02_unarmed_lxWS: O_Heli_Light_02_unarmed_F {
+    class EventHandlers;
+};
 class GCLASS(OrcaR): B_ION_Heli_Light_02_unarmed_lxWS {
     displayName = "PO-30R Orca";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
     ace_refuel_fuelCapacity = 1800;
+    class EventHandlers: EventHandlers {
+        postinit = "if (local (_this select 0)) then {[(_this select 0), """", [], true] call bis_fnc_initVehicle;}";
+    };
     textureList[] = {"Black",1,"Blackcustom",1,"Green",1,"CIV",1};
     class TextureSources {
         class Opfor
@@ -255,13 +272,18 @@ class GCLASS(OrcaR): B_ION_Heli_Light_02_unarmed_lxWS {
     };
 };
 
-class B_ION_Heli_Light_02_dynamicLoadout_lxWS;
+class B_ION_Heli_Light_02_dynamicLoadout_lxWS: O_Heli_Light_02_dynamicLoadout_F {
+    class EventHandlers;
+};
 class GCLASS(OrcaAR): B_ION_Heli_Light_02_dynamicLoadout_lxWS {
     displayName = "PO-30AR Orca";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
     ace_refuel_fuelCapacity = 1800;
+    class EventHandlers: EventHandlers {
+        postinit = "if (local (_this select 0)) then {[(_this select 0), """", [], true] call bis_fnc_initVehicle;}";
+    };
     textureList[] = {"Black",1,"Blackcustom",1,"Green",1,"CIV",1};
     class TextureSources {
         class Opfor

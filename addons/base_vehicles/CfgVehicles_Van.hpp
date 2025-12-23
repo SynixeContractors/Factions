@@ -1,160 +1,36 @@
-class Van_02_base_F;
-class Van_02_transport_base_F: Van_02_base_F {
-    class TextureSources {
-        class AAN;
-        class ArganaRoyal;
-        class BattleBus;
-        class Black;
-        class Blue;
-        class BluePeral;
-        class CivService;
-        class Daltgreen;
-        class FIA1;
-        class FIA2;
-        class FIA2U;
-        class FIA3;
-        class Fuel;
-        class Gendarmerie;
-        class Green;
-        class IDAP;
-        class LDF;
-        class LDF_Arid;
-        class LDF_MP;
-        class Malden_Bus;
-        class Masled;
-        class Orange;
-        class Red;
-        class Syndikat;
-        class Vrana;
-        class White;
-    };
-};
-class GCLASS(Van_Transport): Van_02_transport_base_F  {
+class C_Van_02_transport_F;
+class GCLASS(Van_Transport): C_Van_02_transport_F  {
     displayName = "Van (Transport)";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
     ace_refuel_fuelCapacity = 120;
-    class TextureSources: TextureSources {
-        RESET_FACTIONS(AAN);
-        RESET_FACTIONS(ArganaRoyal);
-        RESET_FACTIONS(BattleBus);
-        RESET_FACTIONS(Black);
-        RESET_FACTIONS(Blue);
-        RESET_FACTIONS(BluePeral);
-        RESET_FACTIONS(CivService);
-        RESET_FACTIONS(Daltgreen);
-        RESET_FACTIONS(FIA1);
-        RESET_FACTIONS(FIA2);
-        RESET_FACTIONS(FIA2U);
-        RESET_FACTIONS(FIA3);
-        RESET_FACTIONS(Fuel);
-        RESET_FACTIONS(Gendarmerie);
-        RESET_FACTIONS(Green);
-        RESET_FACTIONS(IDAP);
-        RESET_FACTIONS(LDF);
-        RESET_FACTIONS(LDF_Arid);
-        RESET_FACTIONS(LDF_MP);
-        RESET_FACTIONS(Malden_Bus);
-        RESET_FACTIONS(Masled);
-        RESET_FACTIONS(Orange);
-        RESET_FACTIONS(Red);
-        RESET_FACTIONS(Syndikat);
-        RESET_FACTIONS(Vrana);
-        RESET_FACTIONS(White);
-    };
+    #include "textures\VanTransport.hpp"
 };
 
-class Van_02_medevac_base_F: Van_02_base_F {
-    class TextureSources {
-        class Argana_Ambulance;
-        class CivAmbulance;
-        class IdapAmbulance;
-        class LDF_Ambulance_Arid;
-        class LDFAmbulance;
-        class Livonia_Ambulance;
-        class Malden_Ambulance;
-        class Tanoa_Ambulance;
-    };
-};
-class GCLASS(Van_Ambulance): Van_02_medevac_base_F  {
+class C_Van_02_medevac_F;
+class GCLASS(Van_Ambulance): C_Van_02_medevac_F  {
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
     ace_refuel_fuelCapacity = 120;
-    class TextureSources: TextureSources {
-        RESET_FACTIONS(Argana_Ambulance);
-        RESET_FACTIONS(CivAmbulance);
-        RESET_FACTIONS(IdapAmbulance);
-        RESET_FACTIONS(LDF_Ambulance_Arid);
-        RESET_FACTIONS(LDFAmbulance);
-        RESET_FACTIONS(Livonia_Ambulance);
-        RESET_FACTIONS(Malden_Ambulance);
-        RESET_FACTIONS(Tanoa_Ambulance);
-    };
+    #include "textures\VanAmbulance.hpp"
 };
 
-class Van_02_vehicle_base_F: Van_02_base_F {
-    class TextureSources {
-        class AAN;
-        class ArganaRoyal;
-        class BattleBus;
-        class Black;
-        class Blue;
-        class BluePeral;
-        class CivService;
-        class Daltgreen;
-        class FIA1;
-        class FIA2;
-        class FIA2U;
-        class FIA3;
-        class Fuel;
-        class Gendarmerie;
-        class Green;
-        class IDAP;
-        class LDF;
-        class LDF_Arid;
-        class LDF_MP;
-        class Malden_Bus;
-        class Masled;
-        class Orange;
-        class Red;
-        class Syndikat;
-        class Vrana;
-        class White;
-    };
-};
-class GCLASS(Van_Cargo): Van_02_vehicle_base_F  {
+class C_Van_02_vehicle_F;
+class GCLASS(Van_Cargo): C_Van_02_vehicle_F  {
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
     ace_refuel_fuelCapacity = 120;
-    class TextureSources: TextureSources {
-        RESET_FACTIONS(AAN);
-        RESET_FACTIONS(ArganaRoyal);
-        RESET_FACTIONS(BattleBus);
-        RESET_FACTIONS(Black);
-        RESET_FACTIONS(Blue);
-        RESET_FACTIONS(BluePeral);
-        RESET_FACTIONS(CivService);
-        RESET_FACTIONS(Daltgreen);
-        RESET_FACTIONS(FIA1);
-        RESET_FACTIONS(FIA2);
-        RESET_FACTIONS(FIA2U);
-        RESET_FACTIONS(FIA3);
-        RESET_FACTIONS(Fuel);
-        RESET_FACTIONS(Gendarmerie);
-        RESET_FACTIONS(Green);
-        RESET_FACTIONS(IDAP);
-        RESET_FACTIONS(LDF);
-        RESET_FACTIONS(LDF_Arid);
-        RESET_FACTIONS(LDF_MP);
-        RESET_FACTIONS(Malden_Bus);
-        RESET_FACTIONS(Masled);
-        RESET_FACTIONS(Orange);
-        RESET_FACTIONS(Red);
-        RESET_FACTIONS(Syndikat);
-        RESET_FACTIONS(Vrana);
-        RESET_FACTIONS(White);
-    };
+    #include "textures\VanCargo.hpp"
+};
+
+class C_Van_02_service_F;
+class GCLASS(Van_Service): C_Van_02_service_F  {
+    faction = QGCLASS(base_vehicles);
+    SCOPE_DLC_VEHICLE;
+    EMPTY_INVENTORY;
+    ace_refuel_fuelCapacity = 120;
+    #include "textures\VanService.hpp"
 };

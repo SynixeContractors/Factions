@@ -1,5 +1,3 @@
-#define RESET_FACTIONS(COLOR) class COLOR: COLOR { factions[] = {}; }
-
 #define EMPTY_INVENTORY class TransportItems {}; \
     class TransportMagazines {}; \
     class TransportWeapons {}; \
@@ -11,7 +9,6 @@
     forceInGarage = 1
 
 class CfgVehicles {
-    class Tank_F;
     class Offroad_01_base_F;
     #define HIDEBROKEN
     //we might be able to fix those textures and its gonna save copypasting

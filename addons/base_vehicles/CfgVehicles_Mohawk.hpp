@@ -1,4 +1,7 @@
-class I_Heli_Transport_02_F;
+class Heli_Transport_02_base_F;
+class I_Heli_Transport_02_F: Heli_Transport_02_base_F {
+    class EventHandlers;
+};
 class GCLASS(Mohawk): I_Heli_Transport_02_F {
     displayName = "CH-49 Mohawk";
     faction = QGCLASS(base_vehicles);
@@ -7,6 +10,9 @@ class GCLASS(Mohawk): I_Heli_Transport_02_F {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 2500;
+    class EventHandlers: EventHandlers {
+        postinit = "if (local (_this select 0)) then {[(_this select 0), """", [], true] call bis_fnc_initVehicle;}";
+    };
     textureList[] = {"ION",1,"IONBlue",1,"Dahoman",1,"President",1,"Vrana",1,"Wave",1};
     class TextureSources {
         class AAF {
@@ -78,7 +84,10 @@ class GCLASS(Mohawk): I_Heli_Transport_02_F {
     };
 };
 
-class Aegis_C_Heli_Transport_02_VIP_F;
+class Aegis_Heli_Transport_02_VIP_base_F;
+class Aegis_C_Heli_Transport_02_VIP_F: Aegis_Heli_Transport_02_VIP_base_F {
+    class EventHandlers;
+};
 class GCLASS(Mohawk_Executive): Aegis_C_Heli_Transport_02_VIP_F {
     displayName = "CH-49 Mohawk (Executive)";
     faction = QGCLASS(base_vehicles);
@@ -87,6 +96,9 @@ class GCLASS(Mohawk_Executive): Aegis_C_Heli_Transport_02_VIP_F {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 2500;
+    class EventHandlers: EventHandlers {
+        postinit = "if (local (_this select 0)) then {[(_this select 0), """", [], true] call bis_fnc_initVehicle;}";
+    };
     textureList[] = {"ION",1,"GenGrey",1,"White",1,"Black",1,"Vrana",1};
     class TextureSources {
         class ION {

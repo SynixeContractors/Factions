@@ -7,6 +7,7 @@ class GCLASS(RHIB): C_Boat_Transport_02_F {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 227;
+    textureList[] = {"Civilian",1};
     class TextureSources {
         class Black {
             displayName = "Black";
