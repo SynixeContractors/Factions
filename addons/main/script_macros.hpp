@@ -23,11 +23,6 @@
     scope = 2; \
     scopeCurator = 2
 
-#define BACKPACK_DEFAULTS \
-    dlc = QUOTE(PREFIX); \
-    scope = 1; \
-    scopeCurator = 1
-
 // Class
 #define GCLASS(var1) DOUBLES(PREFIX,var1)
 #define QGCLASS(var1) QUOTE(DOUBLES(PREFIX,var1))

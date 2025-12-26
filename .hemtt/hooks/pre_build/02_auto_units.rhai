@@ -39,7 +39,7 @@ for addon in addons {
             let lines = content.split("\n");
             for line in lines {
                 line.trim();
-                if line.starts_with("class CLASS(")  || (line.starts_with("class GCLASS(") && addon.file_name() == "base_vehicles") {
+                if line.starts_with("class CLASS") || (line.starts_with("class GCLASS(") && addon.file_name() == "base_vehicles") {
                     let parts = line.split("(");
                     if parts.len() >= 2 {
                         let class_part = parts[1];
@@ -50,6 +50,10 @@ for addon in addons {
                     }
                 }
             }
+        }
+        if classes.len() == 0 {
+            print("No vehicle classes found in " + folder + ", skipping...");
+            continue;
         }
         let config = folder.join("config.cpp");
         if config.exists() {
@@ -64,7 +68,19 @@ for addon in addons {
                         if addon.file_name() == "base_vehicles" {
                             new_lines.push("        QGCLASS(" + class_name + "),");
                         } else {
-                            new_lines.push("        QCLASS(" + class_name + "),");
+                            if class_name.contains(",") {
+                                if class_name.starts_with("SIDE,") {
+                                    for side in ["WEST","EAST","INDEP"] {
+                                        let actual_class = class_name;
+                                        actual_class.replace("SIDE,", side + ",");
+                                        new_lines.push("        QCLASS2(" + actual_class + "),");
+                                    }
+                                } else {
+                                    new_lines.push("        QCLASS2(" + class_name + "),");
+                                }
+                            } else {
+                                new_lines.push("        QCLASS(" + class_name + "),");
+                            }
                         }
                     }
                     new_lines.push("    };");
@@ -77,6 +93,9 @@ for addon in addons {
                 new_content += new_line + "\n";
             }
             config.create_file().write(new_content);
+            if addon.file_name() == "ikhwanassayf" && folder.file_name() == "militia" {
+                HEMTT_RFS.join("iaf.cpp").create_file().write(new_content);
+            }
         }
     }
 }

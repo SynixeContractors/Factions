@@ -1,5 +1,5 @@
 class CfgGroups {
-    class EAST {
+    class INDEP {
         class CLASS(t3_indep) {
             name = "{MSA} [T3] Nyrland";
             @Groups(T3,INDEP,Army_Combat);

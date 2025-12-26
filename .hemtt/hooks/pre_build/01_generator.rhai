@@ -271,11 +271,11 @@ fn groups(args) {
     if to_lower(match_type) == "special_forces" {
         ret += "name = \"Special Forces\";\n";
     } else {
-        let parts = type.split("_");
+        let parts = match_type.split("_");
         if parts.len() == 2 {
             ret += "name = \"" + parts[0] + " (" + parts[1] + ")\";\n";
         } else {
-            ret += "name = \"" + type + "\";\n";
+            ret += "name = \"" + match_type + "\";\n";
         }
     }
     let tier_file = to_lower(tier);
@@ -291,6 +291,7 @@ fn groups(args) {
                     ret += ": CLASS(" + group.parent + ")";
                 }
                 ret += " {\n";
+                ret += "scope = 2;\n";
                 ret += "scopeCurator = 2;\n";
                 ret += "side = " + side + ";\n";
                 ret += "faction = \"" + faction + "\";\n";
