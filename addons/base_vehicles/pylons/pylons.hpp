@@ -23,6 +23,8 @@
 #define HEAVY_INT_PYLON \
   "B_SDB_QUAD_RAIL", \
   "O_KH25_INT", \
+  "B_AGM_154", \
+  "B_GBU12", \
   "O_KH58_INT", \
   "O_KAB250_BOMB"
 #define LIGHT_ROCKET_PYLON \

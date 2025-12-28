@@ -1,33 +1,33 @@
-class B_Plane_Fighter_01_F;
-class GCLASS(FA181): B_Plane_Fighter_01_F {
-    displayName = "F/A-181 (External Stores)";
+class B_Plane_Fighter_05_F;
+class GCLASS(F35): B_Plane_Fighter_05_F {
+    displayName = "F-35F (External Stores)";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 2000;
-    #include "textures/FA181.hpp"
+    #include "textures/F35.hpp"
     class Components {
       class TransportPylonsComponent {
-        #include "pylons/FA181.hpp"
+        #include "pylons/F35.hpp"
       };
     };
 };
-class B_Plane_Fighter_01_Stealth_F;
-class GCLASS(FA181_Stealth): B_Plane_Fighter_01_Stealth_F {
-    displayName = "F/A-181";
+class B_Plane_Fighter_05_Stealth_F;
+class GCLASS(F35_Stealth): B_Plane_Fighter_05_Stealth_F {
+    displayName = "F-35F";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 2000;
-    #include "textures/FA181.hpp"
+    #include "textures/F35.hpp"
     class Components {
       class TransportPylonsComponent {
         //FIXME
-        #include "pylons/FA181.hpp"
+        #include "pylons/F35.hpp"
       };
     };
 };
