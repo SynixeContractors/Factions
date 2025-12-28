@@ -27,6 +27,7 @@ class CfgVehicles {
     #include "CfgVehicles_Polaris.hpp"
     #include "CfgVehicles_Quad.hpp"
     #include "CfgVehicles_Ram.hpp"
+    #include "CfgVehicles_Rooikat.hpp"
     #include "CfgVehicles_SUV.hpp"
     #include "CfgVehicles_Tractor.hpp"
     #include "CfgVehicles_Typhoon.hpp"
