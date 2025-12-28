@@ -1,13 +1,12 @@
 class CfgVehicles {
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {
-        displayName = "Ngabiri Base Army Combat";
+        displayName = "Grinch Base Army Combat";
         editorSubcategory = QGCLASS(army_combat);
         
         @Uniforms({
             "variants": {
-                "U_lxWS_SFIA_soldier_2_O": 0.3,
-                "U_lxWS_SFIA_soldier_1_O": 0.7,
+                "Christmas_Sweater_Hostile_Item": 1,
             },
             "packs": [
                 "t3_rifleman_medical",
@@ -16,7 +15,8 @@ class CfgVehicles {
 
         @Vests({
             "variants": {
-                "Aegis_V_PlateCarrier2_alt_cbr": 1,
+                "synixe_mgp_vest_jpc_assaulter_aor2": 1,
+                "synixe_mgp_vest_jpc_light_aor2": 1,
             },
             "packs": [
                 "t3_standard",
@@ -24,36 +24,35 @@ class CfgVehicles {
         });
 
         @Headgear({
-            "H_HelmetLuchnik_cover_sfia_F": 0.5,
-            "H_HelmetLuchnik_headset_brn_F": 0.3,
-        });
-
-        @Facewear({
-            "G_Balaclava_snd_lxWS": 0.1,
-            "synixe_mgp_f_face_shield_khk_shemagh_rgr": 0.2,
-            "synixe_mgp_f_face_shield_blk_shemagh_khk": 0.2,
-            "synixe_mgp_f_face_shield_blk_shemagh_khk_ess": 0.2,
-            "synixe_mgp_f_face_shield_khk_shemagh_rgr_ess": 0.2,
-            "synixe_mgp_f_shemagh_khk": 0.1,
+            "Snowman_Enemy_Wearable_M": 1,
+            "Snowman_Enemy_Wearable": 0.1,
         });
 
         @Assigned(Military);
     };
 
-    class CLASS(Rifleman): CLASS(Base) {
-        @Role(Rifleman);
-
-        @Vests({
+    class CLASS(Grinch): PCLASS(Base) {
+        displayName = "The Grinch";
+        editorSubcategory = QGCLASS(army_combat);
+        scope = 2;
+        scopeCurator = 2;
+        
+        @Uniforms({
             "variants": {
-                "Aegis_V_PlateCarrier2_alt_cbr": 1,
+                "Christmas_Greenman_Item": 1,
             },
             "packs": [
-                "t3_standard",
+                "t3_rifleman_medical",
             ],
-            "magazines": {
-                "MiniGrenade": 1,
-            },
         });
+
+        @Headgear({
+            "GreenHead_GE": 1,
+        });
+    };
+
+    class CLASS(Rifleman): CLASS(Base) {
+        @Role(Rifleman);
 
         @Primary({
             "weapons": {
@@ -85,7 +84,7 @@ class CfgVehicles {
 
         @Vests({
             "variants": {
-                "Aegis_V_PlateCarrier2_alt_cbr": 1,
+                "synixe_mgp_vest_jpc_teamleader_aor2": 1,
             },
             "packs": [
                 "t3_standard",
@@ -155,6 +154,15 @@ class CfgVehicles {
                 "acc_pointer_IR": 1,
             },
         });
+
+        @Vests({
+            "variants": {
+                "synixe_mgp_vest_jpc_grenadier_aor2": 1,
+            },
+            "packs": [
+                "t3_standard",
+            ],
+        });
     };
 
     class CLASS(Autorifleman): CLASS(Base) {
@@ -162,7 +170,7 @@ class CfgVehicles {
 
         @Vests({
             "variants": {
-                "Aegis_V_PlateCarrier2_alt_cbr": 1,
+                "synixe_mgp_vest_jpc_hgunner_aor2": 1,
             },
             "packs": [
                 "t3_standard",
@@ -200,7 +208,7 @@ class CfgVehicles {
         
         @Backpacks({
             "variants": {
-                "B_AssaultPack_cbr": 1,
+                "B_AssaultPack_sgg": 1,
             },
         });
 
@@ -243,7 +251,7 @@ class CfgVehicles {
 
         @Backpacks({
             "variants": {
-                "B_FieldPack_cbr": 1,
+                "B_FieldPack_oli": 1,
             },
         });
 
@@ -254,7 +262,7 @@ class CfgVehicles {
 
         @Backpacks({
             "variants": {
-                "B_FieldPack_cbr": 1,
+                "B_FieldPack_oli": 1,
             },
             "magazines": {
                 "150Rnd_93x64_Mag": 3,
@@ -294,6 +302,15 @@ class CfgVehicles {
             },
         });
 
+        @Vests({
+            "variants": {
+                "synixe_mgp_vest_jpc_marksman_aor2": 1,
+            },
+            "packs": [
+                "t3_standard",
+            ],
+        });
+
     };
 
     class CLASS(Medic): CLASS(Rifleman) {
@@ -307,13 +324,22 @@ class CfgVehicles {
                 "t3_medic",
             ],
         });
+
+        @Vests({
+            "variants": {
+                "synixe_mgp_vest_jpc_medic_aor2": 1,
+            },
+            "packs": [
+                "t3_standard",
+            ],
+        });
     };
 
     class CLASS(RiflemanMAT): CLASS(Rifleman) {
         @Role(RiflemanMAT);
 
         @Launchers({
-           "weapons": {
+            "weapons": {
                 "launch_NLAW_F": {
                     "loadedPrimary": "NLAW_F",
                 },
@@ -336,7 +362,7 @@ class CfgVehicles {
 
         @Backpacks({
             "variants": {
-                "B_FieldPack_cbr": 1,
+                "B_FieldPack_oli": 1,
             },
         });
     };
@@ -356,7 +382,7 @@ class CfgVehicles {
 
         @Backpacks({
             "variants": {
-                "B_FieldPack_cbr": 1,
+                "B_FieldPack_oli": 1,
             },
         });
     };
@@ -366,7 +392,7 @@ class CfgVehicles {
 
         @Backpacks({
             "variants": {
-                "B_RadioBag_01_coyote_F": 1,
+                "B_RadioBag_01_sage_F": 1,
             },
         });
     };
@@ -376,7 +402,7 @@ class CfgVehicles {
 
         @Backpacks({
             "variants": {
-                "B_AssaultPack_cbr": 1,
+                "B_AssaultPack_sgg": 1,
             },
             "packs": [
                 "toolkit",
@@ -389,7 +415,7 @@ class CfgVehicles {
 
         @Backpacks({
             "variants": {
-                "B_AssaultPack_cbr": 1,
+                "B_AssaultPack_sgg": 1,
             },
             "packs": [
                 "eod",
@@ -417,7 +443,7 @@ class CfgVehicles {
         });
 
         @Headgear({
-            "H_HelmetCrew_I_I": 1,
+            "Snowman_Enemy_Wearable_M": 1,
         });
 
         @Primary({
@@ -443,12 +469,6 @@ class CfgVehicles {
 
     class CLASS(HeliPilot): CLASS(Crewman) {
         @Role(HeliPilot);
-
-        @Headgear({
-            "H_PilotHelmetHeli_O_visor_up": 0.3,
-            "H_PilotHelmetHeli_O": 0.3,
-            "H_CrewHelmetHeli_O": 0.4,
-        });
     };
 };
 
