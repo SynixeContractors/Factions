@@ -78,6 +78,7 @@ class CfgVehicles {
     // Planes
     #include "CfgVehicles_Blackfish.hpp"
     #include "CfgVehicles_CessnaTTx.hpp"
+    #include "CfgVehicles_L159.hpp"
     #include "CfgVehicles_SU75.hpp"
     #include "CfgVehicles_Yak130.hpp"
 

@@ -22,12 +22,12 @@
 
 #define LIGHT_PYLON \
   "B_GBU12", \
-  "B_SDB_QUAD_RAIL", \
   "O_KAB250_BOMB", \
   "B_AGM65_RAIL"
 
 #define MEDIUM_PYLON \
   LIGHT_PYLON, \
+  "B_SDB_QUAD_RAIL", \
   "B_AGM65_DUAL_RAIL", \
   "B_AGM_154", \
   "UNI_SCALPEL", \
