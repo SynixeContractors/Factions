@@ -53,7 +53,9 @@
 #define HEAVY_PYLON \
   MEDIUM_PYLON, \
   "B_BOMB_PYLON", \
+  "O_BOMB_PYLON", \
   "B_MISSLE_PYLON", \
+  "O_MISSLE_PYLON", \
   "O_KH58", \
   "B_HARM_RAIL", \
   "B_GBU12_DUAL_RAIL", \
