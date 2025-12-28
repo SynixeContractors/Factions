@@ -93,9 +93,6 @@ for addon in addons {
                 new_content += new_line + "\n";
             }
             config.create_file().write(new_content);
-            if addon.file_name() == "ikhwanassayf" && folder.file_name() == "militia" {
-                HEMTT_RFS.join("iaf.cpp").create_file().write(new_content);
-            }
         }
     }
 }
