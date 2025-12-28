@@ -6,7 +6,7 @@ class GCLASS(Yak130): O_Plane_CAS_02_dynamicLoadout_F {
     EMPTY_INVENTORY;
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
-    ace_refuel_fuelCapacity = 2000;
+    ace_refuel_fuelCapacity = 2050;
     #include "textures/Yak130.hpp"
     class Components {
       class TransportPylonsComponent {
