@@ -284,6 +284,16 @@ class GCLASS(Roooikat_ERA): B_AFV_Wheeled_01_up_cannon_F {
         ROOIKAT_UP_SAND(NET_GREEN)
         factions[] = {};
       };
+      class Sand_bicolor {
+        displayName = "Sand (Bicolor Woodland Net)";
+        ROOIKAT_UP_SAND(NET_BICOLOR)
+        factions[] = {};
+      };
+      class Sand_woodland {
+        displayName = "Sand (Woodland Net)";
+        ROOIKAT_UP_SAND(NET_WOODLAND)
+        factions[] = {};
+      };
       class Green {
         displayName = "Green (Desert Net)";
         ROOIKAT_UP_GREEN(NET_DESERT)
@@ -302,6 +312,16 @@ class GCLASS(Roooikat_ERA): B_AFV_Wheeled_01_up_cannon_F {
       class Green_green {
         displayName = "Green (Green Net)";
         ROOIKAT_UP_GREEN(NET_GREEN)
+        factions[] = {};
+      };
+      class Green_bicolor {
+        displayName = "Green (Bicolor Woodland Net)";
+        ROOIKAT_UP_GREEN(NET_BICOLOR)
+        factions[] = {};
+      };
+      class Green_woodland {
+        displayName = "Green (Woodland Net)";
+        ROOIKAT_UP_GREEN(NET_WOODLAND)
         factions[] = {};
       };
       class SFIA {
@@ -324,6 +344,16 @@ class GCLASS(Roooikat_ERA): B_AFV_Wheeled_01_up_cannon_F {
         ROOIKAT_UP_SFIA(NET_GREEN)
         factions[] = {};
       };
+      class SFIA_bicolor {
+        displayName = "Mudwalker (Bicolor Woodland Net)";
+        ROOIKAT_UP_SFIA(NET_BICOLOR)
+        factions[] = {};
+      };
+      class SFIA_woodland {
+        displayName = "Mudwalker (Woodland Net)";
+        ROOIKAT_UP_SFIA(NET_WOODLAND)
+        factions[] = {};
+      };
       class WDL_01 {
         displayName = "Woodland (Desert Net)";
         ROOIKAT_UP_WOODLAND(NET_DESERT)
@@ -344,6 +374,16 @@ class GCLASS(Roooikat_ERA): B_AFV_Wheeled_01_up_cannon_F {
         ROOIKAT_UP_WOODLAND(NET_GREEN)
         factions[] = {};
       };
+      class WDL_01_bicolor {
+        displayName = "Woodland (Bicolor Woodland Net)";
+        ROOIKAT_UP_WOODLAND(NET_BICOLOR)
+        factions[] = {};
+      };
+      class WDL_01_woodland {
+        displayName = "Woodland (Woodland Net)";
+        ROOIKAT_UP_WOODLAND(NET_WOODLAND)
+        factions[] = {};
+      };
       class France {
         displayName = "Savanna (Desert Net)";
         ROOIKAT_UP_FRANCE(NET_DESERT)
@@ -362,6 +402,16 @@ class GCLASS(Roooikat_ERA): B_AFV_Wheeled_01_up_cannon_F {
       class France_green {
         displayName = "Savanna (Green Net)";
         ROOIKAT_UP_FRANCE(NET_GREEN)
+        factions[] = {};
+      };
+      class France_bicolor {
+        displayName = "Savanna (Bicolor Woodland Net)";
+        ROOIKAT_UP_FRANCE(NET_BICOLOR)
+        factions[] = {};
+      };
+      class France_woodland {
+        displayName = "Savanna (Woodland Net)";
+        ROOIKAT_UP_FRANCE(NET_WOODLAND)
         factions[] = {};
       };
     };
