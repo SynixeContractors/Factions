@@ -1,8 +1,10 @@
+uiPicture = "\A3\Air_F_Gamma\Plane_Fighter_03\Data\UI\Plane_A143_3DEN_CA.paa";
 class Pylons {
     class Pylons1 {
         hardpoints[] = {
           SRAAM_INT_PYLON,
-          LIGHT_PYLON
+          LIGHT_PYLON,
+          ROCKET_PYLON
         };
         attachment = "PylonRack_1Rnd_LG_scalpel";
         priority = 5;
