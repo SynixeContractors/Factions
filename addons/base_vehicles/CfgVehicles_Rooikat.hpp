@@ -47,7 +47,7 @@ class GCLASS(Roooikat): B_AFV_Wheeled_01_cannon_F {
     EMPTY_INVENTORY;
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
-
+    ace_refuel_fuelCapacity = 540;
     class TextureSources {
       class Sand {
         displayName = "Sand (Desert Net)";
@@ -67,6 +67,16 @@ class GCLASS(Roooikat): B_AFV_Wheeled_01_cannon_F {
       class Sand_green {
         displayName = "Sand (Green Net)";
         ROOIKAT_SAND(NET_GREEN)
+        factions[] = {};
+      };
+      class Sand_bicolor {
+        displayName = "Sand (Bicolor Woodland Net)";
+        ROOIKAT_SAND(NET_BICOLOR)
+        factions[] = {};
+      };
+      class Sand_woodland {
+        displayName = "Sand (Woodland Net)";
+        ROOIKAT_SAND(NET_WOODLAND)
         factions[] = {};
       };
       class Green {
@@ -89,6 +99,16 @@ class GCLASS(Roooikat): B_AFV_Wheeled_01_cannon_F {
         ROOIKAT_GREEN(NET_GREEN)
         factions[] = {};
       };
+      class Green_bicolor {
+        displayName = "Green (Bicolor Woodland Net)";
+        ROOIKAT_GREEN(NET_BICOLOR)
+        factions[] = {};
+      };
+      class Green_woodland {
+        displayName = "Green (Woodland Net)";
+        ROOIKAT_GREEN(NET_WOODLAND)
+        factions[] = {};
+      };
       class SFIA {
         displayName = "Mudwalker (Desert Net)";
         ROOIKAT_SFIA(NET_DESERT)
@@ -107,6 +127,16 @@ class GCLASS(Roooikat): B_AFV_Wheeled_01_cannon_F {
       class SFIA_green {
         displayName = "Mudwalker (Green Net)";
         ROOIKAT_SFIA(NET_GREEN)
+        factions[] = {};
+      };
+      class SFIA_bicolor {
+        displayName = "Mudwalker (Bicolor Woodland Net)";
+        ROOIKAT_SFIA(NET_BICOLOR)
+        factions[] = {};
+      };
+      class SFIA_woodland {
+        displayName = "Mudwalker (Woodland Net)";
+        ROOIKAT_SFIA(NET_WOODLAND)
         factions[] = {};
       };
       class WDL_01 {
@@ -129,6 +159,16 @@ class GCLASS(Roooikat): B_AFV_Wheeled_01_cannon_F {
         ROOIKAT_WOODLAND(NET_GREEN)
         factions[] = {};
       };
+      class WDL_01_bicolor {
+        displayName = "Woodland (Bicolor Woodland Net)";
+        ROOIKAT_WOODLAND(NET_BICOLOR)
+        factions[] = {};
+      };
+      class WDL_01_woodland {
+        displayName = "Woodland (Woodland Net)";
+        ROOIKAT_WOODLAND(NET_WOODLAND)
+        factions[] = {};
+      };
       class France {
         displayName = "Savanna (Desert Net)";
         ROOIKAT_FRANCE(NET_DESERT)
@@ -147,6 +187,16 @@ class GCLASS(Roooikat): B_AFV_Wheeled_01_cannon_F {
       class France_green {
         displayName = "Savanna (Green Net)";
         ROOIKAT_FRANCE(NET_GREEN)
+        factions[] = {};
+      };
+      class France_bicolor {
+        displayName = "Savanna (Bicolor Woodland Net)";
+        ROOIKAT_FRANCE(NET_BICOLOR)
+        factions[] = {};
+      };
+      class France_woodland {
+        displayName = "Savanna (Woodland Net)";
+        ROOIKAT_FRANCE(NET_WOODLAND)
         factions[] = {};
       };
     };
@@ -212,7 +262,7 @@ class GCLASS(Roooikat_ERA): B_AFV_Wheeled_01_up_cannon_F {
     EMPTY_INVENTORY;
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
-
+    ace_refuel_fuelCapacity = 540;
     class TextureSources {
       class Sand {
         displayName = "Sand (Desert Net)";
