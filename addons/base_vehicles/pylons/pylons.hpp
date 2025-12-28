@@ -3,17 +3,17 @@
   "B_AMRAAM_D_INT", \
   "O_R77_INT"
 #define SRAAM_PYLON \
-  "B_BIM9X_RAIL", \
   "B_BIM9X_DUAL_RAIL", \
-  "O_R73"
+  SRAAM_INT_PYLON
 #define SRAAM_INT_PYLON \
   "B_BIM9X_RAIL", \
-  "O_R73"
-#define MRAAM_PYLON  \
+  "O_R73", \
+  "B_ASRAAM", \
+  "O_SAHR3"
+#define MRAAM_PYLON \
   "B_AMRAAM_D_RAIL", \
   "B_AMRAAM_D_DUAL_RAIL", \
   "O_R77"
-
 #define HEAVY_INT_PYLON \
   "B_SDB_QUAD_RAIL", \
   "O_KH25_INT", \
@@ -29,7 +29,7 @@
 #define MEDIUM_PYLON \
   LIGHT_PYLON, \
   "B_AGM65_DUAL_RAIL", \
-  "B_MISSILE_PYLON", \
+  "B_AGM_154", \
   "UNI_SCALPEL", \
   "O_KH25"
 
@@ -37,4 +37,6 @@
   MEDIUM_PYLON, \
   "B_BOMB_PYLON", \
   "O_KH58", \
-  "B_HARM_RAIL"
+  "B_HARM_RAIL", \
+  "B_GBU12_DUAL_RAIL", \
+  "O_VIKHR"

@@ -1,7 +1,8 @@
+UIPicture = "\A3\Air_F_Jets\Plane_Fighter_02\Data\UI\Fighter_02_3DEN_ca.paa";
 class pylons {
     class pylons1 {
         hardpoints[] = {
-          SRAAM_INT_PYLON
+          SRAAM_PYLON
         };
         attachment = "PylonMissile_Missile_AA_R73_x1";
         priority = 13;
@@ -15,15 +16,7 @@ class pylons {
     class pylons3 {
         hardpoints[] = {
           AAM_PYLON,
-          "B_AGM65_DUAL_RAIL",
-          "B_AGM65_RAIL",
-          "B_GBU12",
-          "B_HARM_RAIL",
-          "B_MISSILE_PYLON",
-          "B_SDB_QUAD_RAIL",
-          "O_KAB250_BOMB",
-          "O_KH25",
-          "O_MISSILE_PYLON",
+          MEDIUM_PYLON,
         };
         attachment = "PylonMissile_Missile_AA_R77_x1";
         priority = 11;
@@ -37,24 +30,8 @@ class pylons {
     class pylons5 {
         //this is the main pylon with big missiles so it gets the generic pylon type for all ordinance
         hardpoints[] = {
-          "B_AGM65_DUAL_RAIL",
-          "B_AGM65_RAIL",
-          "B_AMRAAM_D_DUAL_RAIL",
-          "B_AMRAAM_D_RAIL",
-          "B_BIM9X_DUAL_RAIL",
-          "B_BIM9X_RAIL",
-          "B_BOMB_PYLON",
-          "B_GBU12",
-          "B_HARM_RAIL",
-          "B_MISSILE_PYLON",
-          "B_SDB_QUAD_RAIL",
-          "O_KAB250_BOMB",
-          "O_KH25",
-          "O_KH58",
-          "O_MISSILE_PYLON",
-          "O_R73",
-          "O_R77",
-          "UNI_SCALPEL",
+          AAM_PYLON,
+          HEAVY_PYLON,
         };
         attachment = "PylonMissile_Bomb_KAB250_x1";
         priority = 9;
@@ -67,7 +44,7 @@ class pylons {
     };
     class pylonBayRight1 {
         hardpoints[] = {
-          SRAAM_PYLON
+          SRAAM_INT_PYLON
         };
         priority = 7;
         attachment = "PylonMissile_Missile_AA_R73_x1";
@@ -83,7 +60,7 @@ class pylons {
     };
     class pylonBayRight2 {
         hardpoints[] = {
-          MRAAM_PYLON
+          MRAAM_INT_PYLON
         };
         priority = 5;
         attachment = "PylonMissile_Missile_AA_R77_x1";
@@ -113,14 +90,8 @@ class pylons {
     };
     class pylonBayCenter3 {
         hardpoints[] = {
-          "B_AMRAAM_D_INT",
-          "B_GBU12",
-          "B_HARM_RAIL",
-          "B_SDB_QUAD_RAIL",
-          "O_KAB250_BOMB",
-          "O_KH25_INT",
-          "O_KH58_INT",
-          "O_R77_INT",
+          MRAAM_INT_PYLON,
+          HEAVY_INT_PYLON
         };
         priority = 1;
         attachment = "PylonMissile_Bomb_KAB250_x1";
