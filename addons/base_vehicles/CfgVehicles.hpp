@@ -58,6 +58,7 @@ class CfgVehicles {
     #include "CfgVehicles_UGV.hpp"
     #include "CfgVehicles_UAV02.hpp"
     #include "CfgVehicles_UAV04.hpp"
+    #include "CfgVehicles_UAV05.hpp"
 
     // Tanks
     #include "CfgVehicles_T100.hpp"
