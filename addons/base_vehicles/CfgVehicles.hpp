@@ -73,9 +73,12 @@ class CfgVehicles {
     #include "CfgVehicles_Puma.hpp"
     #include "CfgVehicles_Wildcat.hpp"
 
+    // Pylons
+    #include "pylons/pylons.hpp"
     // Planes
     #include "CfgVehicles_Blackfish.hpp"
     #include "CfgVehicles_CessnaTTx.hpp"
+    #include "CfgVehicles_SU75.hpp"
 
     // Submersibles
     #include "CfgVehicles_SDV.hpp"
