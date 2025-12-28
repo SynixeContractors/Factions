@@ -76,6 +76,7 @@ class CfgVehicles {
     // Pylons
     #include "pylons/pylons.hpp"
     // Planes
+    #include "CfgVehicles_A10.hpp"
     #include "CfgVehicles_Blackfish.hpp"
     #include "CfgVehicles_CessnaTTx.hpp"
     #include "CfgVehicles_F35.hpp"
