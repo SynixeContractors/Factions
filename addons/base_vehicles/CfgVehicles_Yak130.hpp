@@ -8,9 +8,9 @@ class GCLASS(Yak130): O_Plane_CAS_02_dynamicLoadout_F {
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 2050;
     #include "textures/Yak130.hpp"
-    class Components {
-      class TransportPylonsComponent {
-        #include "pylons/Yak130.hpp"
-      };
-    };
+    // class Components {
+    //   class TransportPylonsComponent {
+    //     #include "pylons/Yak130.hpp"
+    //   };
+    // };
 };
