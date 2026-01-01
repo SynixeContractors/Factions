@@ -4,7 +4,7 @@ class CLASS(HEMTT): GCLASS(HEMTT) {
     faction = TEMPLATE_FACTION;
     side = TEMPLATE_SIDE;
     crew = QCLASS(Rifleman);
-    textureList[] = {QUOTE(TEMPLATE_CAMO)};
+    textureList[] = {QUOTE(TEMPLATE_CAMO),1};
 };
 class GCLASS(HEMTT_Cargo);
 class CLASS(HEMTT_Cargo): GCLASS(HEMTT_Cargo) {
@@ -12,7 +12,7 @@ class CLASS(HEMTT_Cargo): GCLASS(HEMTT_Cargo) {
     faction = TEMPLATE_FACTION;
     side = TEMPLATE_SIDE;
     crew = QCLASS(Rifleman);
-    textureList[] = {QUOTE(TEMPLATE_CAMO)};
+    textureList[] = {QUOTE(TEMPLATE_CAMO),1};
 };
 class GCLASS(HEMTT_Flatbed);
 class CLASS(HEMTT_Flatbed): GCLASS(HEMTT_Flatbed) {
@@ -20,7 +20,7 @@ class CLASS(HEMTT_Flatbed): GCLASS(HEMTT_Flatbed) {
     faction = TEMPLATE_FACTION;
     side = TEMPLATE_SIDE;
     crew = QCLASS(Rifleman);
-    textureList[] = {QUOTE(TEMPLATE_CAMO)};
+    textureList[] = {QUOTE(TEMPLATE_CAMO),1};
 };
 class GCLASS(HEMTT_Repair);
 class CLASS(HEMTT_Repair): GCLASS(HEMTT_Repair) {
@@ -28,7 +28,7 @@ class CLASS(HEMTT_Repair): GCLASS(HEMTT_Repair) {
     faction = TEMPLATE_FACTION;
     side = TEMPLATE_SIDE;
     crew = QCLASS(Rifleman);
-    textureList[] = {QUOTE(TEMPLATE_CAMO)};
+    textureList[] = {QUOTE(TEMPLATE_CAMO),1};
 };
 class GCLASS(HEMTT_Container);
 class CLASS(HEMTT_Container): GCLASS(HEMTT_Container) {
@@ -36,7 +36,7 @@ class CLASS(HEMTT_Container): GCLASS(HEMTT_Container) {
     faction = TEMPLATE_FACTION;
     side = TEMPLATE_SIDE;
     crew = QCLASS(Rifleman);
-    textureList[] = {QUOTE(TEMPLATE_CAMO)};
+    textureList[] = {QUOTE(TEMPLATE_CAMO),1};
 };
 class GCLASS(HEMTT_Bench);
 class CLASS(HEMTT_Bench): GCLASS(HEMTT_Bench) {
@@ -44,7 +44,7 @@ class CLASS(HEMTT_Bench): GCLASS(HEMTT_Bench) {
     faction = TEMPLATE_FACTION;
     side = TEMPLATE_SIDE;
     crew = QCLASS(Rifleman);
-    textureList[] = {QUOTE(TEMPLATE_CAMO)};
+    textureList[] = {QUOTE(TEMPLATE_CAMO),1};
 };
 class GCLASS(HEMTT_Covered);
 class CLASS(HEMTT_Covered): GCLASS(HEMTT_Covered) {
@@ -52,7 +52,7 @@ class CLASS(HEMTT_Covered): GCLASS(HEMTT_Covered) {
     faction = TEMPLATE_FACTION;
     side = TEMPLATE_SIDE;
     crew = QCLASS(Rifleman);
-    textureList[] = {QUOTE(TEMPLATE_CAMO)};
+    textureList[] = {QUOTE(TEMPLATE_CAMO),1};
 };
 class GCLASS(HEMTT_Medical);
 class CLASS(HEMTT_Medical): GCLASS(HEMTT_Medical) {
@@ -60,7 +60,7 @@ class CLASS(HEMTT_Medical): GCLASS(HEMTT_Medical) {
     faction = TEMPLATE_FACTION;
     side = TEMPLATE_SIDE;
     crew = QCLASS(Rifleman);
-    textureList[] = {QUOTE(TEMPLATE_CAMO)};
+    textureList[] = {QUOTE(TEMPLATE_CAMO),1};
 };
 class GCLASS(HEMTT_Fuel);
 class CLASS(HEMTT_Fuel): GCLASS(HEMTT_Fuel) {
@@ -68,7 +68,7 @@ class CLASS(HEMTT_Fuel): GCLASS(HEMTT_Fuel) {
     faction = TEMPLATE_FACTION;
     side = TEMPLATE_SIDE;
     crew = QCLASS(Rifleman);
-    textureList[] = {QUOTE(TEMPLATE_CAMO)};
+    textureList[] = {QUOTE(TEMPLATE_CAMO),1};
 };
 class GCLASS(HEMTT_Ammo);
 class CLASS(HEMTT_Ammo): GCLASS(HEMTT_Ammo) {
@@ -76,7 +76,7 @@ class CLASS(HEMTT_Ammo): GCLASS(HEMTT_Ammo) {
     faction = TEMPLATE_FACTION;
     side = TEMPLATE_SIDE;
     crew = QCLASS(Rifleman);
-    textureList[] = {QUOTE(TEMPLATE_CAMO)};
+    textureList[] = {QUOTE(TEMPLATE_CAMO),1};
 };
 class GCLASS(HEMTT_FireTruck);
 class CLASS(HEMTT_FireTruck): GCLASS(HEMTT_FireTruck) {
@@ -84,5 +84,5 @@ class CLASS(HEMTT_FireTruck): GCLASS(HEMTT_FireTruck) {
     faction = TEMPLATE_FACTION;
     side = TEMPLATE_SIDE;
     crew = QCLASS(Rifleman);
-    textureList[] = {QUOTE(TEMPLATE_CAMO)};
+    textureList[] = {QUOTE(TEMPLATE_CAMO),1};
 };
