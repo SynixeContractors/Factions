@@ -29,7 +29,7 @@ class GCLASS(Dingy): C_Rubberboat {
             factions[] = {};
         };
         class Digital {
-            displayName = "DAP Woodland";
+            displayName = "DAP Green";
             textures[] = {"\A3\boat_F\Boat_Transport_01\data\Boat_Transport_01_INDP_CO.paa"};
             factions[] = {};
         };

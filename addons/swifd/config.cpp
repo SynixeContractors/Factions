@@ -3,10 +3,7 @@
 class CfgPatches {
     class ADDON {
         name = QUOTE(COMPONENT);
-        units[] = {
-            QCLASS(van),
-            QCLASS(unit_casual),
-        };
+        units[] = {};
         weapons[] = {
             QCLASS(casual),
         };

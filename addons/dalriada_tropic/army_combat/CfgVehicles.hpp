@@ -1,0 +1,330 @@
+class CfgVehicles {
+    #include "CfgVehicles_APC.hpp"
+    #include "CfgVehicles_Typhoon.hpp"
+    #include "CfgVehicles_T100.hpp"
+
+    class PCLASS(Base);
+    class CLASS(Base): PCLASS(Base) {
+        displayName = "Dal Riada Base Army Combat";
+        editorSubcategory = QGCLASS(army_combat);
+        
+        @Uniforms({
+            "variants": {
+                "Aegis_U_O_CombatFatigues_ghex_F": 1,
+                "Aegis_U_O_CombatFatigues_02_ghex_F": 1,
+                "Aegis_U_O_CombatUniform_tshirt_ghex_F": 1,
+            },
+            "packs": [
+                "t2_rifleman_medical",
+            ],
+        });
+
+        @Vests({
+            "variants": {
+                "V_PlateCarrierIA1_grn": 1,
+            },
+            "magazines": {
+                "SmokeShell": 1,
+                "HandGrenade": 1,
+            },
+            "packs": [
+                "t2_standard",
+            ],
+        });
+
+        @Headgear({
+            "Atlas_H_HelmetCCH_Cover_ghex_F": 1,
+            "Atlas_H_HelmetCCH_HiCut_Cover_ghex_F": 1,
+        });
+
+        @Facewear({
+            "synixe_mgp_f_face_shield_blk_tactical": 1,
+            "synixe_mgp_f_face_shield_rgr_tactical": 1,
+            "Aegis_G_Condor_EyePro_F": 1,
+        });
+
+        @Assigned(Military);
+    };
+
+    class CLASS(Rifleman): CLASS(Base) {
+        @Role(Rifleman);
+
+        #include "..\..\dalriada\weapons\Rifleman.hpp"
+
+        @Secondary({
+            "weapons": {
+                "hgun_ACPC2_black_F": {
+                    "magazinesVest": {
+                        "9Rnd_45ACP_Mag": 3,
+                    },
+                },
+            },
+        });
+    };
+
+    class CLASS(SquadLeader): CLASS(Rifleman) {
+        @Role(SquadLeader);
+
+        @Vests({
+            "variants": {
+                "V_PlateCarrierIA1_grn": 1,
+            },
+            "packs": [
+                "t2_standard",
+            ],
+            "magazines": {
+                "SmokeShell": 2,
+                "HandGrenade": 1,
+            },
+        });
+
+        @Secondary({
+            "weapons": {
+                "hgun_ACPC2_black_F": {
+                    "magazinesVest": {
+                        "9Rnd_45ACP_Mag": 3,
+                    },
+                },
+            },
+        });
+    };
+
+    class CLASS(TeamLeader): CLASS(SquadLeader) {
+        @Role(TeamLeader);
+
+        #include "..\..\dalriada\weapons\TeamLeader.hpp"
+    };
+
+    class CLASS(Autorifleman): CLASS(Base) {
+        @Role(Autorifleman);
+
+        @Vests({
+            "variants": {
+                "V_PlateCarrierIA1_grn": 1,
+            },
+            "magazines": {
+                "SmokeShell": 2,
+            },
+        });
+
+        #include "..\..\dalriada\weapons\Autorifleman.hpp"
+
+        @Secondary({
+            "weapons": {
+                "hgun_ACPC2_black_F": {
+                    "magazinesVest": {
+                        "9Rnd_45ACP_Mag": 3,
+                    },
+                },
+            },
+        });
+        
+        @Backpacks({
+            "variants": {
+                "B_FieldPack_ghex_F": 1,
+            },
+        });
+
+    };
+
+    class CLASS(Machinegunner): CLASS(Autorifleman) {
+        @Role(Machinegunner);
+
+        #include "..\..\dalriada\weapons\Machinegunner.hpp"
+
+        @Secondary({
+            "weapons": {
+                "hgun_ACPC2_black_F": {
+                    "magazinesVest": {
+                        "9Rnd_45ACP_Mag": 3,
+                    },
+                },
+            },
+        });
+    };
+
+    class CLASS(AsstMachinegunner): CLASS(Rifleman) {
+        @Role(AsstMachinegunner);
+
+        @Backpacks({
+            "variants": {
+                "B_FieldPack_ghex_F": 1,
+            },
+            "magazines": {
+                "ACE_150Rnd_93x64_Mag_red": 3,
+            },
+        });
+    };
+
+    class CLASS(Marksman): CLASS(Rifleman) {
+        @Role(Marksman);
+
+        #include "..\..\dalriada\weapons\Marksman.hpp"
+    };
+
+    class CLASS(Medic): CLASS(Rifleman) {
+        @Role(Medic);
+
+        @Backpacks({
+            "variants": {
+                "tacs_Backpack_Kitbag_Medic_Green": 1,
+            },
+            "packs": [
+                "t2_medic",
+            ],
+        });
+    };
+
+    class CLASS(RiflemanMAT): CLASS(Rifleman) {
+        @Role(RiflemanMAT);
+
+        @Launchers({
+            "weapons": {
+                "launch_RPG32_ghex_F": {
+                    "magazinesBackpack": {
+                        "RPG32_F": 2,
+                        "RPG32_HE_F": 1,
+                    },
+                },
+            },
+        });
+
+        @Backpacks({
+            "variants": {
+                "B_AssaultPack_ghex_F": 1,
+            },
+        });
+    };
+
+    class CLASS(RiflemanAA): CLASS(Rifleman) {
+        @Role(RiflemanAA);
+
+        @Launchers({
+            "weapons": {
+                "launch_B_Titan_olive_F": {
+                    "magazinesBackpack": {
+                        "Titan_AA": 2,
+                    },
+                },
+            },
+        });
+
+        @Backpacks({
+            "variants": {
+                "B_Carryall_owcamo": 1,
+            },
+        });
+    };
+
+    class CLASS(RiflemanHAT): CLASS(Rifleman) {
+        @Role(RiflemanHAT);
+
+        @Launchers({
+            "weapons": {
+                "launch_I_Titan_short_F": {
+                    "magazinesBackpack": { 
+                        "Titan_AT": 2,
+                    },
+                },
+            },
+        });
+
+        @Backpacks({
+            "variants": {
+                "B_Carryall_owcamo": 1,
+            },
+        });
+    };
+
+    class CLASS(RadioOperator): CLASS(Rifleman) {
+        @Role(RadioOperator);
+
+        @Backpacks({
+            "variants": {
+                "B_RadioBag_01_ghex_F": 1,
+            },
+        });
+    };
+
+    class CLASS(Engineer): CLASS(Rifleman) {
+        @Role(Engineer);
+
+        @Backpacks({
+            "variants": {
+                "B_AssaultPack_ghex_F": 1,
+            },
+            "packs": [
+                "toolkit",
+            ],
+        });
+    };
+
+    class CLASS(Demolitions): CLASS(Rifleman) {
+        @Role(Demolitions);
+
+        @Backpacks({
+            "variants": {
+                "B_Carryall_ghex_F": 1
+            },
+            "packs": [
+                "eod",
+                "demo",
+            ],
+        });
+
+        @Secondary({
+            "weapons": {
+                "ACE_VMH3": {},
+            },
+        });
+    };
+
+    class CLASS(Crewman): CLASS(Base) {
+        @Role(Crewman);
+
+        @Uniforms({
+            "variants": {
+                "Atlas_U_O_Afghanka_01_ghex_F": 1,
+                "Atlas_U_O_Afghanka_02_ghex_F": 1,
+            },
+            "packs": [
+                "t2_rifleman_medical",
+            ],
+        });
+
+        @Vests({
+            "variants": {
+                "V_TacVest_grn": 1,
+            },
+            "packs": [
+                "t2_standard",
+            ],
+        });
+
+        @Headgear({
+            "H_Tank_black_F": 1,
+        });
+
+        @Primary({
+            "weapons": {
+                "JCA_smg_UMP_black_F": {
+                    "magazinesVest": {
+                        "JCA_25Rnd_45ACP_UMP_Red_Mag": 5,
+                    }
+                },
+            },
+        });
+    };
+
+    class CLASS(HeliPilot): CLASS(Crewman) {
+        @Role(HeliPilot);
+
+        @Headgear({
+            "H_PilotHelmetHeli_B_visor_up": 1,
+            "H_PilotHelmetHeli_B": 1,
+            "H_CrewHelmetHeli_B": 2,
+        });
+    };
+
+};
+

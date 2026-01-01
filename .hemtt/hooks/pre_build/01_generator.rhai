@@ -145,43 +145,46 @@ fn container(name, value) {
 }
 
 fn weapon(name, value) {
-    let ret = "Synixe_" + name + "[] = {";
-    for weapon in value.weapons.keys() {
-        let data = value.weapons[weapon];
-        if type_of(data) == "map" {
-            let probability = 1;
-            if "probability" in data {
-                probability = data.probability;
-            }
-            ret += "{\"" + weapon + "\"," + probability + ",{";
-            for container in ["magazinesUniform", "magazinesVest", "magazinesBackpack"] {
-                if container in data {
-                    ret += "{";
-                    let mags = data[container];
-                    for mag in mags.keys() {
-                        let qty = mags[mag];
-                        ret += "{\"" + mag + "\"," + qty + "},";
+    let ret = "";
+    if "weapons" in value {
+        ret = "Synixe_" + name + "[] = {";
+        for weapon in value.weapons.keys() {
+            let data = value.weapons[weapon];
+            if type_of(data) == "map" {
+                let probability = 1;
+                if "probability" in data {
+                    probability = data.probability;
+                }
+                ret += "{\"" + weapon + "\"," + probability + ",{";
+                for container in ["magazinesUniform", "magazinesVest", "magazinesBackpack"] {
+                    if container in data {
+                        ret += "{";
+                        let mags = data[container];
+                        for mag in mags.keys() {
+                            let qty = mags[mag];
+                            ret += "{\"" + mag + "\"," + qty + "},";
+                        }
+                        ret += "},";
+                    } else {
+                        ret += "{},";
                     }
-                    ret += "},";
-                } else {
-                    ret += "{},";
                 }
-            }
-            for magazine in ["loadedPrimary", "loadedSecondary"] {
-                if magazine in data {
-                    let mag = data[magazine];
-                    ret += "\"" + mag + "\",";
-                } else {
-                    ret += "\"\",";
+                for magazine in ["loadedPrimary", "loadedSecondary"] {
+                    if magazine in data {
+                        let mag = data[magazine];
+                        ret += "\"" + mag + "\",";
+                    } else {
+                        ret += "\"\",";
+                    }
                 }
+                ret += "},";
+            } else {
+                ret += "{\"" + weapon + "\"," + data;
             }
             ret += "},";
-        } else {
-            ret += "{\"" + weapon + "\"," + data;
         }
-        ret += "},";
+        ret += "};\n";
     }
-    ret += "};\n";
 
     for attachment in ["Optics", "Muzzles", "Bipods", "Pointers"] {
         let key = to_lower(attachment);
@@ -241,6 +244,18 @@ fn groups(args) {
     let tier = args[0];
     let side = args[1];
     let type = args[2];
+    let match_type = type;
+    if type.ends_with("_OPFOR") || type.ends_with("_BLUFOR") || type.ends_with("_INDEP") || type.ends_with("_CIV") {
+        // remove side suffix
+        let parts = type.split("_");
+        match_type = "";
+        for i in 0..parts.len() - 1 {
+            if i > 0 {
+                match_type += "_";
+            }
+            match_type += parts[i];
+        }
+    }
     let faction = to_lower(tier) + "_" + to_lower(side);
     let side = switch side {
         "BLUFOR" => 1,
@@ -253,21 +268,30 @@ fn groups(args) {
     };
     let id = tier + "_" + type;
     let ret = "class CLASS(" + id + ") {\n";
-    let parts = type.split("_");
-    if parts.len() == 2 {
-        ret += "name = \"" + parts[0] + " (" + parts[1] + ")\";\n";
+    if to_lower(match_type) == "special_forces" {
+        ret += "name = \"Special Forces\";\n";
     } else {
-        ret += "name = \"" + type + "\";\n";
+        let parts = match_type.split("_");
+        if parts.len() == 2 {
+            ret += "name = \"" + parts[0] + " (" + parts[1] + ")\";\n";
+        } else {
+            ret += "name = \"" + match_type + "\";\n";
+        }
     }
-    let group_source = load_json("groups/" + to_lower(tier));
+    let tier_file = to_lower(tier);
+    if tier_file == "t2" || tier_file == "t3" {
+        tier_file = "t2t3";
+    }
+    let group_source = load_json("groups/" + tier_file);
     for section in group_source.groups {
-        if type in section.types {
+        if match_type in section.types {
             for group in section.groups {
                 ret += "class CLASS(" + group.class + ")";
                 if "parent" in group {
                     ret += ": CLASS(" + group.parent + ")";
                 }
                 ret += " {\n";
+                ret += "scope = 2;\n";
                 ret += "scopeCurator = 2;\n";
                 ret += "side = " + side + ";\n";
                 ret += "faction = \"" + faction + "\";\n";
@@ -528,7 +552,12 @@ fn process_lines(lines, start_index) {
             let args_start = macro_text.index_of('(') + 1;
             let args_end = macro_text.index_of(')');
             let raw_json = macro_text.sub_string(args_start, args_end - args_start);
-            let items = parse_json_array(raw_json);
+            let items = [];
+            if raw_json == "Identities" {
+                items = load_json("identities").keys();
+            } else {
+                items = parse_json_array(raw_json);
+            }
             
             // Find @EndFor
             let for_body_start = line_index + 1;

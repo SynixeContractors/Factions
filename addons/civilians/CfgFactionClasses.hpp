@@ -1,26 +1,14 @@
 class CfgFactionClasses {
-    class CLASS(Virelia) {
-        SCOPE_DLC;
-        displayName = "Civilians (Virelia)";
-        priority = 1;
-        side = 3; // Civilian
-    };
-    class CLASS(Calvane) {
-        SCOPE_DLC;
-        displayName = "Civilians (Calvane)";
-        priority = 1;
-        side = 3; // Civilian
-    };
-    class CLASS(Drovak) {
-        SCOPE_DLC;
-        displayName = "Civilians (Drovak)";
-        priority = 1;
-        side = 3; // Civilian
-    };
-    class CLASS(Livonia) {
-        SCOPE_DLC;
-        displayName = "Civilians (Livonia)";
-        priority = 1;
-        side = 3; // Civilian
-    };
+    @For(Identities)
+        class CLASS($1) {
+            SCOPE_DLC;
+            #if "$1" == "DalRiada"
+            displayName = "[C] Dal Riada (Civilians)";
+            #else
+            displayName = "[C] $1 (Civilians)";
+            #endif
+            priority = 1;
+            side = 3; // Civilian
+        };
+    @EndFor
 };

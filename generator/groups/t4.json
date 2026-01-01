@@ -3,7 +3,7 @@
         {
             "types": [
                 "Army_Combat",
-                "Army_Garrison"
+                "Militia"
             ],
             "icon": "\\a3\\ui_f\\data\\map\\markers\\nato\\n_inf.paa",
             "groups": [
@@ -29,7 +29,8 @@
         },
         {
             "types": [
-                "Army_Combat"
+                "Army_Combat",
+                "Militia"
             ],
             "icon": "\\a3\\ui_f\\data\\map\\markers\\nato\\n_inf.paa",
             "groups": [

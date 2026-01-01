@@ -1,4 +1,10 @@
 class CfgEditorSubcategories {
+    // Vehicles
+    class GCLASS(mortars) {
+        displayName = "Mortars";
+    };
+
+    // Units
     class GCLASS(army_garrison) {
         displayName = "Men (Army - Garrison)";
     };
@@ -22,4 +28,8 @@ class CfgEditorSubcategories {
     class GCLASS(militia) {
         displayName = "Men (Militia)";
     };
-}; 
+    class GCLASS(army_airborne) {
+        displayName = "Men (Army - Airborne)";
+    };
+
+};

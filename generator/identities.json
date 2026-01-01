@@ -9,14 +9,21 @@
     "Calvane": {
         "identityTypes": [
             "Head_Euro",
-            "LanguageENG_M"
+            "LanguageENG_F"
         ],
         "genericNames": "American"
+    },
+    "DalRiada": {
+        "identityTypes": [
+            "Head_Euro",
+            "LanguageENGGB_F"
+        ],
+        "genericNames": "British"
     },
     "Drovak": {
         "identityTypes": [
             "Head_Russian",
-            "LanguageRUS_M"
+            "LanguageRUS_F"
         ],
         "genericNames": "Russian"
     },
@@ -105,5 +112,18 @@
             "LanguageCHI_F"
         ],
         "genericNames": "ChineseMen"
+    "Ngabiri": {
+        "identityTypes": [
+            "Head_African",
+            "LanguageFRE_F"
+        ],
+        "genericNames": "Lingala"
+    },
+    "Kunduz": {
+        "identityTypes": [
+            "Head_TK",
+            "LanguagePER_F"
+        ],
+        "genericNames": "Arab"
     }
 }

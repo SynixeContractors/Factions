@@ -57,7 +57,7 @@ class GCLASS(Hatchback): C_Hatchback_01_F {
 };
 
 class C_Hatchback_01_sport_F;
-class GCLASS(HatchbackSport): C_Hatchback_01_sport_F {
+class GCLASS(Hatchback_Sport): C_Hatchback_01_sport_F {
     displayName = "Hatchback (Sport)";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
