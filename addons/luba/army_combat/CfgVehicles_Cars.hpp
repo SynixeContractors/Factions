@@ -29,5 +29,10 @@ class CLASS(QuadBike): GCLASS(QuadBike) {
     faction = QPCLASS(t3_indep);
     side = 2;
     textureList[] = {"Blufor",1};
-    typicalCargo[] = {QCLASS(Rifleman)};
+    crew = QCLASS(Rifleman);
 };
+#define LUBA_HEMTT_SAND SCOPE_DLC; \
+    faction = QPCLASS(t3_indep); \
+    side = 2; \
+    textureList[] = {"Desert",1}; \
+    crew = QCLASS(Rifleman);
