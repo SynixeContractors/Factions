@@ -8,9 +8,9 @@ class GCLASS(UAV03): B_UAV_03_dynamicLoadout_F {
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 450;
     #include "textures/UAV03.hpp"
-    class Components {
-      class TransportPylonsComponent {
-        #include "pylons/UAV03.hpp"
-      };
-    };
+    // class Components {
+    //   class TransportPylonsComponent {
+    //     #include "pylons/UAV03.hpp"
+    //   };
+    // };
 };

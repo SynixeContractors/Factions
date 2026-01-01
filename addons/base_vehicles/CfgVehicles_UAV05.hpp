@@ -8,9 +8,9 @@ class GCLASS(UAV05): B_UAV_05_F {
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 450;
     #include "textures/UAV05.hpp"
-    class Components {
-      class TransportPylonsComponent {
-        #include "pylons/UAV05.hpp"
-      };
-    };
+    // class Components {
+    //   class TransportPylonsComponent {
+    //     #include "pylons/UAV05.hpp"
+    //   };
+    // };
 };
