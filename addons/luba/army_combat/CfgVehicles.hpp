@@ -1,8 +1,11 @@
 class CfgVehicles {
     #define TEMPLATE_FACTION QPCLASS(t3_indep)
     #define TEMPLATE_SIDE 2
-    #define TEMPLATE_CAMO Blufor
     #include "..\..\..\templates\statics\M2.hpp"
+    #define TEMPLATE_CAMO Desert
+    #include "..\..\..\templates\cars\LSV.hpp"
+    #undef  TEMPLATE_CAMO
+    #define TEMPLATE_CAMO Blufor
     #include "..\..\..\templates\cars\HEMTT.hpp"
     #include "CfgVehicles_Cars.hpp"
     #include "CfgVehicles_APC.hpp"
