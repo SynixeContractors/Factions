@@ -85,6 +85,7 @@ class CfgVehicles {
     // Planes
     #include "CfgVehicles_A10.hpp"
     #include "CfgVehicles_Blackfish.hpp"
+    #include "CfgVehicles_C130.hpp"
     #include "CfgVehicles_CessnaTTx.hpp"
     #include "CfgVehicles_F35.hpp"
     #include "CfgVehicles_FA181.hpp"
