@@ -1,8 +1,10 @@
 class CfgVehicles {
     #define TEMPLATE_FACTION QPCLASS(t3_indep)
-    #define TEMPLATE_SIDE 0
+    #define TEMPLATE_SIDE 2
     #include "..\..\..\templates\statics\M2.hpp"
     #include "CfgVehicles_Cars.hpp"
+    #include "CfgVehicles_APC.hpp"
+
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {
         displayName = "Luban Base Army Combat";

@@ -1,6 +1,6 @@
 #define LUBA_CAR_SAND SCOPE_DLC; \
     faction = QPCLASS(t3_indep); \
-    side = 0; \
+    side = 2; \
     textureList[] = {"Desert",1};
 
 class GCLASS(LSV);
@@ -26,6 +26,8 @@ class CLASS(LSV_Metis): GCLASS(LSV_Metis) {
 
 class GCLASS(QuadBike);
 class CLASS(QuadBike): GCLASS(QuadBike) {
-    LUBA_CAR_SAND
+    faction = QPCLASS(t3_indep);
+    side = 2;
+    textureList[] = {"Blufor",1};
     typicalCargo[] = {QCLASS(Rifleman)};
 };
