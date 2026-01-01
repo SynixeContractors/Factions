@@ -92,6 +92,7 @@ class CfgVehicles {
     #include "CfgVehicles_JAS39.hpp"
     #include "CfgVehicles_L159.hpp"
     #include "CfgVehicles_SU75.hpp"
+    #include "CfgVehicles_Xian.hpp"
     #include "CfgVehicles_Yak130.hpp"
 
     // Submersibles
