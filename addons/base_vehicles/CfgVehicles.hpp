@@ -8,6 +8,10 @@
     scopeCurator = 2; \
     forceInGarage = 1
 
+// Pylon macros
+#include "pylons/pylons.hpp"
+
+
 class CfgVehicles {
     class Offroad_01_base_F;
     #define HIDEBROKEN
@@ -53,6 +57,11 @@ class CfgVehicles {
 
     // Drones
     #include "CfgVehicles_UGV.hpp"
+    #include "CfgVehicles_UAV02.hpp"
+    #include "CfgVehicles_UAV03.hpp"
+    #include "CfgVehicles_UAV04.hpp"
+    #include "CfgVehicles_UAV05.hpp"
+    #include "CfgVehicles_UAV07.hpp"
 
     // Tanks
     #include "CfgVehicles_T100.hpp"
@@ -75,8 +84,17 @@ class CfgVehicles {
     #include "CfgVehicles_Wildcat.hpp"
 
     // Planes
+    #include "CfgVehicles_A10.hpp"
     #include "CfgVehicles_Blackfish.hpp"
+    #include "CfgVehicles_C130.hpp"
     #include "CfgVehicles_CessnaTTx.hpp"
+    #include "CfgVehicles_F35.hpp"
+    #include "CfgVehicles_FA181.hpp"
+    #include "CfgVehicles_JAS39.hpp"
+    #include "CfgVehicles_L159.hpp"
+    #include "CfgVehicles_SU75.hpp"
+    #include "CfgVehicles_Xian.hpp"
+    #include "CfgVehicles_Yak130.hpp"
 
     // Submersibles
     #include "CfgVehicles_SDV.hpp"
