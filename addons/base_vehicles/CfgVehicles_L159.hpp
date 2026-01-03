@@ -1,6 +1,6 @@
 class I_Plane_Fighter_03_dynamicLoadout_F;
 class GCLASS(L159): I_Plane_Fighter_03_dynamicLoadout_F {
-    displayName = "L-159M";
+    displayName = "L-159M Super Albatros";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;

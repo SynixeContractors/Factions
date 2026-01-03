@@ -1,6 +1,6 @@
 class O_Plane_CAS_02_dynamicLoadout_F;
 class GCLASS(Yak130): O_Plane_CAS_02_dynamicLoadout_F {
-    displayName = "Yak-130";
+    displayName = "Yak-130M Mitten";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;

@@ -1,6 +1,6 @@
 class B_Plane_CAS_01_dynamicLoadout_F;
 class GCLASS(A10): B_Plane_CAS_01_dynamicLoadout_F {
-    displayName = "A-10D";
+    displayName = "A-10D Warthog";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
