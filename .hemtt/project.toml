@@ -3,7 +3,7 @@ prefix = "synixe_factions"
 mainprefix = "s"
 
 [lints.config.cfgpatches_scope]
-enabled = false
+options.check_cfgpatches = false
 
 [hemtt.launch.default]
 dlc = []

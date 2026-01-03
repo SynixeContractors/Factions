@@ -5,7 +5,7 @@ class CfgPatches {
         name = QUOTE(COMPONENT);
         units[] = {};
         weapons[] = {
-            QCLASS(casual),
+            QCLASS(uniform_casual),
         };
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {

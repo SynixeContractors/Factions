@@ -49,10 +49,37 @@ for addon in addons {
                         }
                     }
                 }
+                if line.starts_with("#include ") {
+                    let path = line;
+                    path.replace("#include ","");
+                    path.replace("\"","");
+                    path.replace("\\", "/");
+                    let include_file = config.parent().join(path);
+                    if include_file.exists() {
+                        let include_content = include_file.open_file().read();
+                        let include_lines = include_content.split("\n");
+                        for include_line in include_lines {
+                            include_line.trim();
+                            if include_line.starts_with("class CLASS") {
+                                let parts = include_line.split("(");
+                                if parts.len() >= 2 {
+                                    let class_part = parts[1];
+                                    let class_name = class_part.split(")").get(0);
+                                    if class_name != "Base" {
+                                        classes.push(class_name);
+                                        debug("Found class " + class_name + " in include " + path);
+                                    }
+                                }
+                            }
+                        }
+                    } else {
+                        fatal("Included file " + path + " not found, skipping...");
+                    }
+                }
             }
         }
         if classes.len() == 0 {
-            print("No vehicle classes found in " + folder + ", skipping...");
+            debug("No vehicle classes found in " + folder + ", skipping...");
             continue;
         }
         let config = folder.join("config.cpp");
@@ -70,7 +97,7 @@ for addon in addons {
                         } else {
                             if class_name.contains(",") {
                                 if class_name.starts_with("SIDE,") {
-                                    for side in ["WEST","EAST","INDEP"] {
+                                    for side in ["BLUFOR","OPFOR","INDEP"] {
                                         let actual_class = class_name;
                                         actual_class.replace("SIDE,", side + ",");
                                         new_lines.push("        QCLASS2(" + actual_class + "),");

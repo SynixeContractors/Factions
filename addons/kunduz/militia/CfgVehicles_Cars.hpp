@@ -1,5 +1,6 @@
 
-class GCLASS(Offroad);class CLASS(Offroad): GCLASS(Offroad) {
+class GCLASS(Offroad);
+class CLASS(Offroad): GCLASS(Offroad) {
     SCOPE_DLC;
     faction = QPCLASS(t4_indep);
     side = 2;
