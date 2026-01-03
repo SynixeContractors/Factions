@@ -249,7 +249,7 @@ class CfgVehicles {
                 },
             },
             "optics": {
-                "tacgt_optic_DMS": 1,
+                "optic_MRCO": 1,
             },
             "pointers": {
                 "Aegis_acc_pointer_DM": 1,

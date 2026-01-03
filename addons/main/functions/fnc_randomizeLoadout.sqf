@@ -93,6 +93,8 @@ if (_assignedCache isNotEqualTo []) then {
 if (is3DEN) then {
     _unit spawn {
         sleep 0.1;
-        save3DENInventory [get3DENEntityID _this];
+        ignore3DENHistory {
+            save3DENInventory [get3DENEntityID _this];
+        };
     };
 };

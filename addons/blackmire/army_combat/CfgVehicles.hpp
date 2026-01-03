@@ -338,7 +338,6 @@ class CfgVehicles {
 
         @Vests({
             "variants": {
-                "V_lxWS_TacVestIR_oli": 1,
                 "V_HarnessOSpec_brn": 1,
                 "V_HarnessOSpec_oicamo": 1,
                 "V_HarnessOSpec_whex_F": 1,
