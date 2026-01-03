@@ -136,9 +136,18 @@ class CfgVehicles {
     };
     class CLASS(Machinegunner): CLASS(Rifleman) {
         @Role(Machinegunner);
+        #include "..\weapons\mg.hpp"
     };
     class CLASS(AsstMachinegunner): CLASS(RiflemanBackpack) {
         @Role(AsstMachinegunner);
+        @Backpacks({
+            "variants": {
+                "B_FieldPack_cbr": 1,
+            },
+            "magazines": {
+                "100Rnd_762x51_S77_Red_lxWS": 4,
+            },
+        });
     };
     class CLASS(Medic): CLASS(RiflemanBackpack) {
         @Role(Medic);
