@@ -1,6 +1,6 @@
 class O_Plane_Fighter_02_F;
 class GCLASS(SU75): O_Plane_Fighter_02_F {
-    displayName = "SU-75 (External Stores)";
+    displayName = "SU-75 Checkmate";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
@@ -16,7 +16,7 @@ class GCLASS(SU75): O_Plane_Fighter_02_F {
 };
 class O_Plane_Fighter_02_Stealth_F;
 class GCLASS(SU75_Stealth): O_Plane_Fighter_02_Stealth_F {
-    displayName = "SU-75";
+    displayName = "SU-75 Checkmate (Stealth)";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;

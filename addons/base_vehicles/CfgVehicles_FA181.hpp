@@ -1,6 +1,6 @@
 class B_Plane_Fighter_01_F;
 class GCLASS(FA181): B_Plane_Fighter_01_F {
-    displayName = "F/A-181 (External Stores)";
+    displayName = "F/A-181 Black Wasp II";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
@@ -16,7 +16,7 @@ class GCLASS(FA181): B_Plane_Fighter_01_F {
 };
 class B_Plane_Fighter_01_Stealth_F;
 class GCLASS(FA181_Stealth): B_Plane_Fighter_01_Stealth_F {
-    displayName = "F/A-181";
+    displayName = "F/A-181 Black Wasp II (Stealth)";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;

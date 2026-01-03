@@ -1,6 +1,6 @@
 class B_Plane_Fighter_05_F;
 class GCLASS(F35): B_Plane_Fighter_05_F {
-    displayName = "F-35F (External Stores)";
+    displayName = "F-35F Lightning II";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
@@ -16,7 +16,7 @@ class GCLASS(F35): B_Plane_Fighter_05_F {
 };
 class B_Plane_Fighter_05_Stealth_F;
 class GCLASS(F35_Stealth): B_Plane_Fighter_05_Stealth_F {
-    displayName = "F-35F";
+    displayName = "F-35F Lightning II (Stealth)";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
