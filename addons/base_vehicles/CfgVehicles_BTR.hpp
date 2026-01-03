@@ -1,4 +1,7 @@
-class Aegis_O_A_APC_Wheeled_04_export_F;
+class APC_Wheeled_04_base_F;
+class Aegis_O_A_APC_Wheeled_04_export_F: APC_Wheeled_04_base_F {
+    class EventHandlers;
+};
 class GCLASS(BTR): Aegis_O_A_APC_Wheeled_04_export_F {
     displayName = "BTR-100A";
     faction = QGCLASS(base_vehicles);
@@ -7,6 +10,9 @@ class GCLASS(BTR): Aegis_O_A_APC_Wheeled_04_export_F {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 300;
+    class EventHandlers: EventHandlers {
+        postinit = "if (local (_this select 0)) then {[(_this select 0), """", [], true] call bis_fnc_initVehicle;}";
+    };
     class TextureSources {
         class Green {
             displayName = "Green";
@@ -164,7 +170,9 @@ class GCLASS(BTR): Aegis_O_A_APC_Wheeled_04_export_F {
         };
 };
 
-class O_R_APC_Wheeled_04_cannon_F;
+class O_R_APC_Wheeled_04_cannon_F: APC_Wheeled_04_base_F {
+    class EventHandlers;
+};
 class GCLASS(BTR_IFV): O_R_APC_Wheeled_04_cannon_F {
     displayName = "BTR-100K (Bumergang-BM)";
     faction = QGCLASS(base_vehicles);
@@ -173,6 +181,9 @@ class GCLASS(BTR_IFV): O_R_APC_Wheeled_04_cannon_F {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 300;
+    class EventHandlers: EventHandlers {
+        postinit = "if (local (_this select 0)) then {[(_this select 0), """", [], true] call bis_fnc_initVehicle;}";
+    };
     class TextureSources {
         class Green {
             displayName = "Green";
@@ -302,7 +313,9 @@ class GCLASS(BTR_IFV): O_R_APC_Wheeled_04_cannon_F {
         };
     };
 };
-class O_R_APC_Wheeled_04_cannon_v2_F;
+class O_R_APC_Wheeled_04_cannon_v2_F: APC_Wheeled_04_base_F {
+    class EventHandlers;
+};
 class GCLASS(BTR_SPG): O_R_APC_Wheeled_04_cannon_v2_F {
     displayName = "BTR-100SU (Sprut-SD)";
     faction = QGCLASS(base_vehicles);
@@ -311,6 +324,9 @@ class GCLASS(BTR_SPG): O_R_APC_Wheeled_04_cannon_v2_F {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 300;
+    class EventHandlers: EventHandlers {
+        postinit = "if (local (_this select 0)) then {[(_this select 0), """", [], true] call bis_fnc_initVehicle;}";
+    };
     class TextureSources {
         class Green {
             displayName = "Green";
