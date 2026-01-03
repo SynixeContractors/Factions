@@ -24,7 +24,7 @@ class CfgVehicles {
                 "V_HarnessOSpec_brn": 0.5,
             },
             "packs": [
-                "t3_standard",
+                "t2_standard",
             ],
         });
 
@@ -65,8 +65,9 @@ class CfgVehicles {
     };
     class CLASS(TeamLeader): CLASS(RiflemanCarabine) {
         @Role(TeamLeader);
+        #include "..\weapons\pistol.hpp"
     };
-    class CLASS(SquadLeader): CLASS(RiflemanCarabine) {
+    class CLASS(SquadLeader): CLASS(TeamLeader) {
         @Role(SquadLeader);
         @Primary({
             "weapons": {
@@ -100,6 +101,7 @@ class CfgVehicles {
                 "optic_VRCO_tan_RF": 0.6,
             },
         });
+        #include "..\weapons\pistol.hpp"
     };
     class CLASS(Machinegunner): CLASS(Rifleman) {
         @Role(Machinegunner);
@@ -202,6 +204,7 @@ class CfgVehicles {
     class CLASS(Marksman): CLASS(Rifleman) {
         @Role(Marksman);
         #include "..\weapons\marksman.hpp"
+        #include "..\weapons\pistol.hpp"
     };
     class CLASS(Sniper): CLASS(Marksman) {
         @Role(Sniper);
