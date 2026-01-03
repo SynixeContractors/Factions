@@ -1,11 +1,15 @@
 class CfgVehicles {
     #define TEMPLATE_FACTION QPCLASS(t2_blufor)
-    #define TEMPLATE_SIDE 2
+    #define TEMPLATE_SIDE 1
     #include "..\..\..\templates\statics\M2.hpp"
     #define TEMPLATE_CAMO Blufor
     #include "..\..\..\templates\cars\HEMTT.hpp"
-    #include "CfgVehicles_Cars.hpp"
-    #include "CfgVehicles_APC.hpp"
+    #undef TEMPLATE_CAMO
+    #define TEMPLATE_CAMO KZG_01
+    #include "..\..\..\templates\tanks\leopard.hpp"
+    #undef TEMPLATE_CAMO
+    #define TEMPLATE_CAMO Blufor
+    #include "..\..\..\templates\cars\MATV.hpp"
 
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {
@@ -36,33 +40,7 @@ class CfgVehicles {
     };
     class CLASS(Rifleman): CLASS(Base) {
         @Role(Rifleman);
-        @Primary({
-            "weapons": {
-                "Aegis_arifle_M4A1_sand_F": {
-                    "probability": 0.6,
-                    "magazinesVest": {
-                        "30Rnd_556x45_Stanag_Sand": 8,
-                    },
-                },
-                "Aegis_arifle_M4A1_grip_sand_F": {
-                    "probability": 0.3,
-                    "magazinesVest": {
-                        "30Rnd_556x45_Stanag_Sand": 8,
-                    },
-                },
-                "Aegis_arifle_M4A1_short_sand_F": {
-                    "probability": 0.1,
-                    "magazinesVest": {
-                        "30Rnd_556x45_Stanag_Sand": 8,
-                    },
-                },
-            },
-            "optics": {
-                "": 0.6,
-                "Aegis_optic_1p87_snd": 0.3,
-                "optic_VRCO_tan_RF": 0.1,
-            },
-        });
+        #include "..\weapons\rifle.hpp"
         @Launchers({
             "weapons": {
                 "": 0.9,
