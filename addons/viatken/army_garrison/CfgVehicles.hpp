@@ -1,7 +1,7 @@
 class CfgVehicles {
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {
-        displayName = "VDF Base Army Garrison";
+        displayName = "Viatken Base Army Garrison";
         editorSubcategory = QGCLASS(army_garrison);
 
         @Uniforms({

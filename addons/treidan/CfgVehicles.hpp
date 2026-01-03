@@ -3,7 +3,7 @@ class CfgVehicles {
 
     class CLASS(Base): GCLASS(Base_INDEP) {
         faction = QCLASS(t3_indep);
-        displayName = "TAF Base";
+        displayName = "Treidan Base";
         identityTypes[] = {
             "LanguagePOL_F",
             "Head_Euro",
