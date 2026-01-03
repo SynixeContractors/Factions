@@ -2,6 +2,9 @@ name = "Synixe Factions"
 prefix = "synixe_factions"
 mainprefix = "s"
 
+[lints.config.cfgpatches_scope]
+enabled = false
+
 [hemtt.launch.default]
 dlc = []
 workshop = [
