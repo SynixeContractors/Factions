@@ -1,6 +1,6 @@
 class Atlas_B_L_UAV_07_F;
-class GCLASS(UAV07): Atlas_B_L_UAV_07_F {
-    displayName = "MQ-9X";
+class GCLASS(MQ9): Atlas_B_L_UAV_07_F {
+    displayName = "MQ-9X Reaper";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;

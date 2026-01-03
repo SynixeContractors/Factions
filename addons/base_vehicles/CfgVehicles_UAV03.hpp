@@ -1,6 +1,6 @@
 class B_UAV_03_dynamicLoadout_F;
-class GCLASS(UAV03): B_UAV_03_dynamicLoadout_F {
-    displayName = "MQ-12";
+class GCLASS(MQ12): B_UAV_03_dynamicLoadout_F {
+    displayName = "MQ-12 Falcon";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;

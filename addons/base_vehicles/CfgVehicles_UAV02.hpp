@@ -1,5 +1,5 @@
 class O_UAV_02_dynamicLoadout_F;
-class GCLASS(UAV02): O_UAV_02_dynamicLoadout_F {
+class GCLASS(Shahpar): O_UAV_02_dynamicLoadout_F {
     displayName = "Shahpar IV";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;

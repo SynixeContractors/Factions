@@ -1,6 +1,6 @@
 class B_UAV_05_F;
-class GCLASS(UAV05): B_UAV_05_F {
-    displayName = "MQ-47C";
+class GCLASS(MQ47): B_UAV_05_F {
+    displayName = "MQ-47C Sentinel";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
