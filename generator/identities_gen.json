@@ -1,0 +1,79 @@
+
+{
+    "gen_northAfrican": {
+        "identityTypes": [
+            "Head_TK",
+            "Head_African",
+            "lxWS_Head_African",
+            "Head_Tanoan",
+            "LanguagePER_F",
+            "LanguageFRE_F",
+            "LanguageENGFRE_F"
+        ],
+        "genericNames": [
+            "TakistaniMen",
+            "lxWS_WSaharaMen"
+        ]
+    },
+    "gen_middleEastern": {
+        "identityTypes": [
+            "Head_TK",
+            "lxWS_Head_African",
+            "LanguagePER_F"
+        ],
+        "genericNames": [
+            "TakistaniMen",
+            "lxWS_WSaharaMen"
+        ]
+    },
+    "gen_westEuro_FR": {
+        "identityTypes": [
+            "Head_NATO",
+            "Head_Enoch",
+            "Head_TK",
+            "Head_Tanoan",
+            "lxWS_Head_African",
+            "LanguageFRE_F"
+        ],
+        "genericNames": [
+            "FrenchMen",
+            "TanoanMen"
+        ]
+    },
+    "gen_westEuro_EN": {
+        "identityTypes": [
+            "Head_NATO",
+            "Head_Enoch",
+            "Head_TK",
+            "Head_Tanoan",
+            "lxWS_Head_African",
+            "LanguageENGB_F"
+        ],
+        "genericNames": "NATOMen"
+    },
+    "gen_eastEuro_POL": {
+        "identityTypes": [
+            "Head_Enoch",
+            "Head_Russian",
+            "Head_Asian",
+            "LanguagePOL_F"
+        ],
+        "genericNames": "EnochMen"
+    },
+    "gen_eastEuro_RUS": {
+        "identityTypes": [
+            "Head_Enoch",
+            "Head_Russian",
+            "Head_Asian",
+            "LanguageRUS_F"
+        ],
+        "genericNames": "RussianMen"
+    },
+    "gen_eastAsia": {
+        "identityTypes": [
+            "Head_Asian",
+            "LanguageCHI_F"
+        ],
+        "genericNames": "ChineseMen"
+    }
+}
