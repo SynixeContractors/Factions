@@ -1,4 +1,4 @@
-class I_APC_Wheeled_03_cannon_F;
+ADD_CAMO_EVENT_HANDLER(I_APC_Wheeled_03_cannon_F,I_APC_Wheeled_03_base_F);
 class GCLASS(Pandur): I_APC_Wheeled_03_cannon_F {
     displayName = "Pandur II";
     faction = QGCLASS(base_vehicles);
@@ -7,6 +7,7 @@ class GCLASS(Pandur): I_APC_Wheeled_03_cannon_F {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 210;
+    #include "eventhandler_camo.hpp"
     class TextureSources {
         class Indep {
             displayName = "DAP Green";
