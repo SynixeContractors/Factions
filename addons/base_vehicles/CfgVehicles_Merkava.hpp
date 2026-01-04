@@ -23,7 +23,7 @@
           CAMONET\
         };
 
-class B_MBT_01_cannon_F;
+ADD_CAMO_EVENT_HANDLER(B_MBT_01_cannon_F,B_MBT_01_base_F);
 class GCLASS(Merkava): B_MBT_01_cannon_F {
     displayName = "Merkava Mk. IV";
     faction = QGCLASS(base_vehicles);
@@ -32,6 +32,7 @@ class GCLASS(Merkava): B_MBT_01_cannon_F {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 1400;
+    #include "eventhandler_camo.hpp"
     class TextureSources {
       class Sand {
         displayName = "Sand (Desert Net)";
@@ -154,6 +155,7 @@ class GCLASS(Merkava_TUSK): B_MBT_01_TUSK_F {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 1400;
+    #include "eventhandler_camo.hpp"
     class TextureSources {
       class Sand {
         displayName = "Sand (Desert Net)";
