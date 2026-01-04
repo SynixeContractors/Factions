@@ -17,3 +17,7 @@ class CLASS_BASE; \
 class CLASS_VEHICLE: CLASS_BASE { \
     class EventHandlers; \
 }
+#define ADD_CAMO_EVENT_HANDLER_NOBASE(CLASS_VEHICLE, CLASS_BASE) \
+class CLASS_VEHICLE: CLASS_BASE { \
+    class EventHandlers; \
+}

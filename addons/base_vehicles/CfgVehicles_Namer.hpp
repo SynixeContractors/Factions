@@ -27,7 +27,8 @@
           CAMONET\
         };
 
-class MU_NATO_Panther_unarmed;
+ADD_CAMO_EVENT_HANDLER(B_APC_Tracked_01_rcws_F,B_APC_Tracked_01_base_F);
+ADD_CAMO_EVENT_HANDLER_NOBASE(MU_NATO_Panther_unarmed,B_APC_Tracked_01_rcws_F);
 class GCLASS(Namer): MU_NATO_Panther_unarmed {
     displayName = "Namer";
     faction = QGCLASS(base_vehicles);
@@ -36,6 +37,7 @@ class GCLASS(Namer): MU_NATO_Panther_unarmed {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 1400;
+    #include "eventhandler_camo.hpp"
     class TextureSources {
       class Sand {
         displayName = "Sand (Desert Net)";
@@ -120,7 +122,7 @@ class GCLASS(Namer): MU_NATO_Panther_unarmed {
     };
 };
 
-class B_APC_Tracked_01_rcws_F;
+
 class GCLASS(Namer_RCWS): B_APC_Tracked_01_rcws_F {
     displayName = "Namer (RCWS)";
     faction = QGCLASS(base_vehicles);
@@ -129,6 +131,7 @@ class GCLASS(Namer_RCWS): B_APC_Tracked_01_rcws_F {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 1400;
+    #include "eventhandler_camo.hpp"
     class TextureSources {
       class Sand {
         displayName = "Sand (Desert Net)";
@@ -246,7 +249,7 @@ class GCLASS(Namer_RCWS): B_APC_Tracked_01_rcws_F {
           CAMONET\
         };
 
-class B_APC_Tracked_01_CRV_F;
+ADD_CAMO_EVENT_HANDLER(B_APC_Tracked_01_CRV_F,APC_Tracked_01_CRV_F);
 class GCLASS(Namer_CEV): B_APC_Tracked_01_CRV_F {
     displayName = "Namer (CEV)";
     faction = QGCLASS(base_vehicles);
@@ -255,6 +258,7 @@ class GCLASS(Namer_CEV): B_APC_Tracked_01_CRV_F {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 1400;
+    #include "eventhandler_camo.hpp"
     class TextureSources {
       class Sand {
         displayName = "Sand (Desert Net)";
@@ -368,7 +372,7 @@ class GCLASS(Namer_CEV): B_APC_Tracked_01_CRV_F {
           CAMONET\
         };
 
-class B_APC_Tracked_01_AA_F;
+ADD_CAMO_EVENT_HANDLER_NOBASE(B_APC_Tracked_01_AA_F,B_APC_Tracked_01_base_F);
 class GCLASS(Namer_AA): B_APC_Tracked_01_AA_F {
     displayName = "Namer (AA)";
     faction = QGCLASS(base_vehicles);
@@ -377,6 +381,7 @@ class GCLASS(Namer_AA): B_APC_Tracked_01_AA_F {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 1400;
+    #include "eventhandler_camo.hpp"
     class TextureSources {
       class Sand {
         displayName = "Sand (Desert Net)";
