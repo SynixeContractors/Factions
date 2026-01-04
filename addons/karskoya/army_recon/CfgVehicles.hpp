@@ -11,7 +11,7 @@ class CfgVehicles {
         @Uniforms({
             "variants": {
                 "Atlas_U_UniformBDU_01_m81_F": 1,
-                "Atlas_U_UniformBDU_02_m81_F": 0.5,
+                "Atlas_U_UniformBDU_02_m81_F": 1,
             },
             "packs": [
                 "rifleman_medical",
@@ -29,10 +29,10 @@ class CfgVehicles {
         });
 
         @Headgear({
-            "H_Booniehat_mgrn": 0.5,
+            "H_Booniehat_mgrn": 1,
             "H_Booniehat_mgrn_hs": 1,
-            "Aegis_H_Milcap_nohs_grn_F": 0.5,
-            "Aegis_H_MilCap_tachs_grn_F": 2,
+            "Aegis_H_Milcap_nohs_grn_F": 1,
+            "Aegis_H_MilCap_tachs_grn_F": 1,
             "H_Watchcap_camo": 1,
             "H_Watchcap_camo_hs": 1,
         });
@@ -41,21 +41,20 @@ class CfgVehicles {
             "synixe_mgp_f_tactical": 1,
             "synixe_mgp_f_face_shield_rgr_tactical": 1,
             "synixe_mgp_f_face_shield_rgr": 1,
-            "synixe_mgp_f_face_shield_blk": 0.5,
-            "synixe_mgp_f_face_shield_blk_tactical": 0.5,
+            "synixe_mgp_f_face_shield_blk": 1,
+            "synixe_mgp_f_face_shield_blk_tactical": 1,
         });
 
         @Primary({
             "weapons": {
                 "arifle_SPAR_02_blk_F": {
-                    "probability": 1,
                     "magazinesVest": {
-                        "30Rnd_556x45_Stanag_red": 6,
+                        "30Rnd_556x45_Stanag_red": 7,
                     },
                 },
             },
             "optics": {
-                "Aegis_optic_ICO": 0.5,
+                "Aegis_optic_ICO": 1,
                 "optic_VRCO_RF": 1,
             },
             "pointers": {
@@ -70,7 +69,7 @@ class CfgVehicles {
             "weapons": {
                 "hgun_ACPC2_black_F": {
                     "magazinesVest": {
-                        "9Rnd_45ACP_Mag": 3,
+                        "9Rnd_45ACP_Mag": 2,
                     },
                 },
             },
@@ -104,9 +103,8 @@ class CfgVehicles {
         @Primary({
             "weapons": {
                 "arifle_SPAR_01_GL_blk_F": {
-                    "probability": 0.5,
                     "magazinesVest": {
-                        "30Rnd_556x45_Stanag_red": 6,
+                        "30Rnd_556x45_Stanag_red": 7,
                         "1Rnd_HE_Grenade_shell": 4,
                     },
                     "loadedPrimary": "30Rnd_556x45_Stanag_red",
@@ -114,8 +112,8 @@ class CfgVehicles {
                 },
             },
             "optics": {
-                "Aegis_optic_ICO": 0.6,
-                "optic_VRCO_RF": 0.4,
+                "Aegis_optic_ICO": 1,
+                "optic_VRCO_RF": 1,
             },
             "pointers": {
                 "acc_pointer_IR": 1,
@@ -129,7 +127,7 @@ class CfgVehicles {
             "weapons": {
                 "hgun_ACPC2_black_F": {
                     "magazinesVest": {
-                        "9Rnd_45ACP_Mag": 3,
+                        "9Rnd_45ACP_Mag": 2,
                     },
                 },
             },
@@ -146,7 +144,7 @@ class CfgVehicles {
                         "150Rnd_762x54_Box": 2,
                     },
                     "magazinesBackpack": {
-                        "150Rnd_762x54_Box": 2,
+                        "150Rnd_762x54_Box": 3,
                     },
                 },
             },
@@ -159,7 +157,7 @@ class CfgVehicles {
             "weapons": {
                 "hgun_ACPC2_black_F": {
                     "magazinesVest": {
-                        "9Rnd_45ACP_Mag": 3,
+                        "9Rnd_45ACP_Mag": 2,
                     },
                 },
             },
@@ -287,9 +285,8 @@ class CfgVehicles {
         @Primary({
             "weapons": {
                 "arifle_SPAR_02_blk_F": {
-                    "probability": 0.5,
                     "magazinesVest": {
-                        "30Rnd_556x45_Stanag_red": 6,
+                        "30Rnd_556x45_Stanag_red": 7,
                     },
                 },
             },
@@ -332,7 +329,7 @@ class CfgVehicles {
             "weapons": {
                 "srifle_DMR_05_blk_F": {
                     "magazinesVest": {
-                        "10Rnd_93x64_DMR_05_Mag": 4,
+                        "10Rnd_93x64_DMR_05_Mag": 5,
                     },
                 },
             },
