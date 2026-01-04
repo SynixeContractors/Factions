@@ -1,4 +1,7 @@
-class B_APC_Wheeled_01_cannon_v2_F;
+class APC_Wheeled_01_base_v2_F;
+class B_APC_Wheeled_01_cannon_v2_F: APC_Wheeled_01_base_v2_F {
+    class EventHandlers;
+};
 class GCLASS(Badger): B_APC_Wheeled_01_cannon_v2_F {
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
@@ -7,10 +10,13 @@ class GCLASS(Badger): B_APC_Wheeled_01_cannon_v2_F {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 190;
+    #include "eventhandler_camo.hpp"
     #include "textures/BadgerIFV.hpp"
 };
-
-class B_APC_Wheeled_01_command_lxWS;
+class APC_Wheeled_01_command_base_lxWS;
+class B_APC_Wheeled_01_command_lxWS: APC_Wheeled_01_command_base_lxWS {
+    class EventHandlers;
+};
 class GCLASS(Badger_Command): B_APC_Wheeled_01_command_lxWS {
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
@@ -19,10 +25,13 @@ class GCLASS(Badger_Command): B_APC_Wheeled_01_command_lxWS {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 190;
+    #include "eventhandler_camo.hpp"
     #include "textures/BadgerIFV.hpp"
 };
-
-class B_APC_Wheeled_01_mortar_lxWS;
+class APC_Wheeled_01_mortar_base_lxWS;
+class B_APC_Wheeled_01_mortar_lxWS: APC_Wheeled_01_mortar_base_lxWS {
+    class EventHandlers;
+};
 class GCLASS(Badger_Mortar): B_APC_Wheeled_01_mortar_lxWS {
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
@@ -31,10 +40,13 @@ class GCLASS(Badger_Mortar): B_APC_Wheeled_01_mortar_lxWS {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 190;
+    #include "eventhandler_camo.hpp"
     #include "textures/BadgerIFV.hpp"
 };
-
-class B_APC_Wheeled_01_atgm_lxWS_v2;
+class APC_Wheeled_01_atgm_base_v2;
+class B_APC_Wheeled_01_atgm_lxWS_v2: APC_Wheeled_01_atgm_base_v2 {
+    class EventHandlers;
+};
 class GCLASS(Badger_ATGM): B_APC_Wheeled_01_atgm_lxWS_v2 {
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
@@ -43,9 +55,13 @@ class GCLASS(Badger_ATGM): B_APC_Wheeled_01_atgm_lxWS_v2 {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 190;
+    #include "eventhandler_camo.hpp"
     #include "textures/BadgerIFV.hpp"
 };
-class B_APC_Wheeled_01_medical_F;
+class B_APC_Wheeled_01_base_F;
+class B_APC_Wheeled_01_medical_F: B_APC_Wheeled_01_base_F {
+    class EventHandlers;
+};
 class GCLASS(Badger_Unarmed): B_APC_Wheeled_01_medical_F {
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
@@ -54,6 +70,7 @@ class GCLASS(Badger_Unarmed): B_APC_Wheeled_01_medical_F {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 190;
+    #include "eventhandler_camo.hpp"
     #include "textures/BadgerIFV.hpp"
 };
 class GCLASS(Badger_Medical): B_APC_Wheeled_01_medical_F {
@@ -64,5 +81,6 @@ class GCLASS(Badger_Medical): B_APC_Wheeled_01_medical_F {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 190;
+    #include "eventhandler_camo.hpp"
     #include "textures/BadgerMedical.hpp"
 };

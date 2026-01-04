@@ -4,12 +4,13 @@ class CfgVehicles {
     #include "..\..\..\templates\statics\M2.hpp"
     #define TEMPLATE_CAMO Blufor
     #include "..\..\..\templates\cars\HEMTT.hpp"
+    #include "..\..\..\templates\cars\fennek.hpp"
+    #undef TEMPLATE_CAMO
+    #define TEMPLATE_CAMO Olive
+    #include "..\..\..\templates\apc\badger.hpp"
     #undef TEMPLATE_CAMO
     #define TEMPLATE_CAMO KZG_01
     #include "..\..\..\templates\tanks\leopard.hpp"
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO Blufor
-    #include "..\..\..\templates\cars\MATV.hpp"
 
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {
