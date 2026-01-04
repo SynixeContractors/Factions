@@ -10,3 +10,10 @@
 #define NET_AAFDESERT "A3\Armor_F\Data\camonet_AAF_Digi_Desert_CO.paa"
 #define NET_AAFJUNGLE "A3\Armor_F\Data\camonet_AAF_Digi_Jungle_CO.paa"
 #define NET_STRIPEDESERT "a3\armor_f\Data\camonet_AAF_stripe_desert_CO.paa"
+
+
+#define ADD_CAMO_EVENT_HANDLER(CLASS_VEHICLE, CLASS_BASE) \
+class CLASS_BASE; \
+class CLASS_VEHICLE: CLASS_BASE { \
+    class EventHandlers; \
+}

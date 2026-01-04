@@ -1,7 +1,4 @@
-class APC_Wheeled_01_base_v2_F;
-class B_APC_Wheeled_01_cannon_v2_F: APC_Wheeled_01_base_v2_F {
-    class EventHandlers;
-};
+ADD_CAMO_EVENT_HANDLER(B_APC_Wheeled_01_cannon_v2_F,APC_Wheeled_01_base_v2_F);
 class GCLASS(Badger): B_APC_Wheeled_01_cannon_v2_F {
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
@@ -13,10 +10,8 @@ class GCLASS(Badger): B_APC_Wheeled_01_cannon_v2_F {
     #include "eventhandler_camo.hpp"
     #include "textures/BadgerIFV.hpp"
 };
-class APC_Wheeled_01_command_base_lxWS;
-class B_APC_Wheeled_01_command_lxWS: APC_Wheeled_01_command_base_lxWS {
-    class EventHandlers;
-};
+
+ADD_CAMO_EVENT_HANDLER(B_APC_Wheeled_01_command_lxWS,APC_Wheeled_01_command_base_lxWS);
 class GCLASS(Badger_Command): B_APC_Wheeled_01_command_lxWS {
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
@@ -28,10 +23,8 @@ class GCLASS(Badger_Command): B_APC_Wheeled_01_command_lxWS {
     #include "eventhandler_camo.hpp"
     #include "textures/BadgerIFV.hpp"
 };
-class APC_Wheeled_01_mortar_base_lxWS;
-class B_APC_Wheeled_01_mortar_lxWS: APC_Wheeled_01_mortar_base_lxWS {
-    class EventHandlers;
-};
+
+ADD_CAMO_EVENT_HANDLER(B_APC_Wheeled_01_mortar_lxWS,APC_Wheeled_01_mortar_base_lxWS);
 class GCLASS(Badger_Mortar): B_APC_Wheeled_01_mortar_lxWS {
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
@@ -43,10 +36,8 @@ class GCLASS(Badger_Mortar): B_APC_Wheeled_01_mortar_lxWS {
     #include "eventhandler_camo.hpp"
     #include "textures/BadgerIFV.hpp"
 };
-class APC_Wheeled_01_atgm_base_v2;
-class B_APC_Wheeled_01_atgm_lxWS_v2: APC_Wheeled_01_atgm_base_v2 {
-    class EventHandlers;
-};
+
+ADD_CAMO_EVENT_HANDLER(B_APC_Wheeled_01_atgm_lxWS_v2,APC_Wheeled_01_atgm_base_v2);
 class GCLASS(Badger_ATGM): B_APC_Wheeled_01_atgm_lxWS_v2 {
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
@@ -58,10 +49,8 @@ class GCLASS(Badger_ATGM): B_APC_Wheeled_01_atgm_lxWS_v2 {
     #include "eventhandler_camo.hpp"
     #include "textures/BadgerIFV.hpp"
 };
-class B_APC_Wheeled_01_base_F;
-class B_APC_Wheeled_01_medical_F: B_APC_Wheeled_01_base_F {
-    class EventHandlers;
-};
+
+ADD_CAMO_EVENT_HANDLER(B_APC_Wheeled_01_medical_F,B_APC_Wheeled_01_base_F);
 class GCLASS(Badger_Unarmed): B_APC_Wheeled_01_medical_F {
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
