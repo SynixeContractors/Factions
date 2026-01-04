@@ -11,8 +11,8 @@ class CfgVehicles {
 
         @Uniforms({
             "variants": {
-                "Atlas_U_UniformBDU_01_m81_F": 0.5,
-                "Atlas_U_UniformBDU_02_m81_F": 0.5,
+                "Atlas_U_UniformBDU_01_m81_F": 1,
+                "Atlas_U_UniformBDU_02_m81_F": 1,
             },
             "packs": [
                 "rifleman_medical",
@@ -23,23 +23,20 @@ class CfgVehicles {
             "variants": {
                 "WSLV_Platecarrier_WDL_NF": 1,
             },
-            "packs": [
-                "t3_standard",
-            ],
         });
 
         @Headgear({
-            "H_HelmetB_plain_wdl": 0.3,
-            "H_Watchcap_camo": 0.3,
-            "synixe_mgp_h_cap_m81": 0.3,
+            "H_HelmetB_plain_wdl": 1,
+            "H_Watchcap_camo": 1,
+            "synixe_mgp_h_cap_m81": 1,
         });
 
         @Facewear({
-            "synixe_mgp_f_tactical": 0.2,
-            "synixe_mgp_f_face_shield_rgr_tactical": 0.2,
-            "synixe_mgp_f_face_shield_rgr": 0.2,
-            "synixe_mgp_f_face_shield_blk": 0.2,
-            "synixe_mgp_f_face_shield_blk_tactical": 0.2,
+            "synixe_mgp_f_tactical": 1,
+            "synixe_mgp_f_face_shield_rgr_tactical": 1,
+            "synixe_mgp_f_face_shield_rgr": 1,
+            "synixe_mgp_f_face_shield_blk": 1,
+            "synixe_mgp_f_face_shield_blk_tactical": 1,
         });
 
         @Assigned(Military);
@@ -51,15 +48,15 @@ class CfgVehicles {
         @Primary({
             "weapons": {
                 "arifle_SPAR_02_blk_F": {
-                    "probability": 0.5,
+                    "probability": 1,
                     "magazinesVest": {
-                        "30Rnd_556x45_Stanag_red": 6,
+                        "30Rnd_556x45_Stanag_red": 7,
                     },
                 },
             },
             "optics": {
-                "Aegis_optic_ICO": 0.6,
-                "optic_VRCO_RF": 0.4,
+                "Aegis_optic_ICO": 1,
+                "optic_VRCO_RF": 1,
             },
             "pointers": {
                 "saber_light_lxWS": 1,
@@ -73,9 +70,9 @@ class CfgVehicles {
         @Primary({
             "weapons": {
                 "arifle_SPAR_01_GL_blk_F": {
-                    "probability": 0.5,
+                    "probability": 1,
                     "magazinesVest": {
-                        "30Rnd_556x45_Stanag_red": 6,
+                        "30Rnd_556x45_Stanag_red": 7,
                         "1Rnd_HE_Grenade_shell": 4,
                     },
                     "loadedPrimary": "30Rnd_556x45_Stanag_red",
@@ -83,11 +80,11 @@ class CfgVehicles {
                 },
             },
             "optics": {
-                "Aegis_optic_ICO": 0.6,
-                "optic_VRCO_RF": 0.4,
+                "Aegis_optic_ICO": 1,
+                "optic_VRCO_RF": 1,
             },
             "pointers": {
-                "saber_light_lxWS": 0.4,
+                "saber_light_lxWS": 1,
             },
         });
     };
@@ -130,9 +127,9 @@ class CfgVehicles {
         @Role(Maintainer);
 
         @Headgear({
-            "H_Headset_Tactical": 0.4,
-            "H_Watchcap_camo": 0.3,
-            "synixe_mgp_h_cap_m81": 0.3,
+            "H_Headset_Tactical": 1,
+            "H_Watchcap_camo": 1,
+            "synixe_mgp_h_cap_m81": 1,
         });
 
         @Vests({
@@ -167,17 +164,17 @@ class CfgVehicles {
         @Role(Worker);
 
         @Headgear({
-            "H_EarProtectors_black_F": 0.2,
-            "H_EarProtectors_yellow_F": 0.2,
-            "H_EarProtectors_white_F": 0.2,
-            "H_Construction_earprot_white_F": 0.2,
-            "H_Construction_earprot_yellow_F": 0.2,           
+            "H_EarProtectors_black_F": 1,
+            "H_EarProtectors_yellow_F": 1,
+            "H_EarProtectors_white_F": 1,
+            "H_Construction_earprot_white_F": 1,
+            "H_Construction_earprot_yellow_F": 1,           
         });
 
         @Vests({
             "variants": {
-                "V_Safety_blue_F": 0.5,
-                "V_Safety_yellow_F": 0.5,
+                "V_Safety_blue_F": 1,
+                "V_Safety_yellow_F": 1,
             },
         });
     };
