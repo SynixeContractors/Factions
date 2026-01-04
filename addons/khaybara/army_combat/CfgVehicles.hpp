@@ -36,6 +36,9 @@ class CfgVehicles {
     #undef TEMPLATE_CAMO
     #define TEMPLATE_CAMO KZG_01
     #include "..\..\..\templates\tanks\Leopard.hpp"
+    #undef TEMPLATE_CAMO
+    #define TEMPLATE_CAMO Indep_Olive
+    #include "..\..\..\templates\tanks\Wiesel.hpp"
 
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {
