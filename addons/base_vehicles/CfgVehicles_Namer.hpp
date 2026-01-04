@@ -249,7 +249,7 @@ class GCLASS(Namer_RCWS): B_APC_Tracked_01_rcws_F {
           CAMONET\
         };
 
-ADD_CAMO_EVENT_HANDLER(B_APC_Tracked_01_CRV_F,APC_Tracked_01_CRV_F);
+ADD_CAMO_EVENT_HANDLER_NOBASE(B_APC_Tracked_01_CRV_F,B_APC_Tracked_01_base_F);
 class GCLASS(Namer_CEV): B_APC_Tracked_01_CRV_F {
     displayName = "Namer (CEV)";
     faction = QGCLASS(base_vehicles);
