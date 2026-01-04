@@ -29,7 +29,7 @@
           CAMONET\
         };
 
-class O_MBT_04_cannon_F;
+ADD_CAMO_EVENT_HANDLER(O_MBT_04_cannon_F,MBT_04_cannon_base_F);
 class GCLASS(T14): O_MBT_04_cannon_F {
     displayName = "T-14";
     faction = QGCLASS(base_vehicles);
@@ -38,6 +38,7 @@ class GCLASS(T14): O_MBT_04_cannon_F {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 1200;
+    #include "eventhandler_camo.hpp"
     class TextureSources {
       class Hex {
         displayName = "Hex Ochre (Hex Green Net)";
@@ -198,7 +199,7 @@ class GCLASS(T14): O_MBT_04_cannon_F {
           CAMONET\
         };
 
-class O_MBT_04_command_F;
+ADD_CAMO_EVENT_HANDLER(O_MBT_04_command_F,MBT_04_command_base_F);
 class GCLASS(T14_RCWS): O_MBT_04_command_F {
     displayName = "T-14K (RCWS-30)";
     faction = QGCLASS(base_vehicles);
@@ -207,6 +208,7 @@ class GCLASS(T14_RCWS): O_MBT_04_command_F {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 1200;
+    #include "eventhandler_camo.hpp"
     class TextureSources {
       class Hex {
         displayName = "Hex Ochre (Hex Green Net)";
