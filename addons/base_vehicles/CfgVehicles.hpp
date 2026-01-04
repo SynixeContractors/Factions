@@ -13,6 +13,7 @@
 
 class CfgVehicles {
     class Offroad_01_base_F;
+    class EventHandlers;
     #define HIDEBROKEN
     //we might be able to fix those textures and its gonna save copypasting
 
