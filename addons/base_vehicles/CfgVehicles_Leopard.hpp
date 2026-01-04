@@ -47,10 +47,8 @@
                 "go_data_winter\skins\data\go_mbt_03_rcws_natowinter_co.paa",\
                 CAMONET\
             }
-class MBT_03_base_F;
-class I_MBT_03_cannon_F: MBT_03_base_F {
-    class EventHandlers;
-};
+
+ADD_CAMO_EVENT_HANDLER(I_MBT_03_cannon_F,MBT_03_base_F);
 class GCLASS(Leopard2): I_MBT_03_cannon_F {
     displayName = "Leopard 2A4M+";
     faction = QGCLASS(base_vehicles);
@@ -59,9 +57,7 @@ class GCLASS(Leopard2): I_MBT_03_cannon_F {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 1200;
-    class EventHandlers: EventHandlers {
-        postinit = "if (local (_this select 0)) then {[(_this select 0), """", [], true] call bis_fnc_initVehicle;}";
-    };
+    #include "eventhandler_camo.hpp"
     class TextureSources {
         class EAF_01 {
             displayName = "Khaybaran (Desert Net)";
