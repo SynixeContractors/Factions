@@ -1,16 +1,41 @@
 class CfgVehicles {
     #define TEMPLATE_FACTION QPCLASS(t2_blufor)
     #define TEMPLATE_SIDE 1
+    //FIXME: this is nonsense for now
     #include "..\..\..\templates\statics\M2.hpp"
     #define TEMPLATE_CAMO Blufor
     #include "..\..\..\templates\cars\HEMTT.hpp"
-    #include "..\..\..\templates\cars\fennek.hpp"
+    #include "..\..\..\templates\cars\Fennek.hpp"
+    #undef TEMPLATE_CAMO
+    #define TEMPLATE_CAMO wdl
+    #include "..\..\..\templates\cars\MATV.hpp"
+    #undef TEMPLATE_CAMO
+    #define TEMPLATE_CAMO GreenHex
+    #include "..\..\..\templates\cars\Typhoon.hpp"
+    #include "..\..\..\templates\tanks\T100.hpp"
+    #include "..\..\..\templates\tanks\T100_SPG.hpp"
+    #include "..\..\..\templates\tanks\T100_Railgun.hpp"
+    #include "..\..\..\templates\tanks\T14.hpp"
+    #undef TEMPLATE_CAMO
+    #define TEMPLATE_CAMO Sand
+    #include "..\..\..\templates\apc\Badger.hpp"
+    #include "..\..\..\templates\apc\Otokar.hpp"
+    #include "..\..\..\templates\apc\BTR.hpp"
+    #include "..\..\..\templates\apc\BTR_IFV.hpp"
+    #include "..\..\..\templates\apc\BTR_SPG.hpp"
+    #undef TEMPLATE_CAMO
+    #define TEMPLATE_CAMO Sand_01
+    #include "..\..\..\templates\apc\Warrior.hpp"
+    #include "..\..\..\templates\apc\Pandur.hpp"
     #undef TEMPLATE_CAMO
     #define TEMPLATE_CAMO Olive
-    #include "..\..\..\templates\apc\badger.hpp"
+    #include "..\..\..\templates\cars\Polaris.hpp"
+    #include "..\..\..\templates\tanks\Merkava.hpp"
+    #include "..\..\..\templates\tanks\Merkava_SPG.hpp"
+    #include "..\..\..\templates\apc\Namer.hpp"
     #undef TEMPLATE_CAMO
     #define TEMPLATE_CAMO KZG_01
-    #include "..\..\..\templates\tanks\leopard.hpp"
+    #include "..\..\..\templates\tanks\Leopard.hpp"
 
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {
@@ -42,15 +67,7 @@ class CfgVehicles {
     class CLASS(Rifleman): CLASS(Base) {
         @Role(Rifleman);
         #include "..\weapons\rifle.hpp"
-        @Launchers({
-            "weapons": {
-                "": 0.9,
-                "Atlas_Launch_Pzf3_F": {
-                    "probability": 0.1,
-                    "loadedPrimary": "Atlas_DM12_HEAT_F",
-                },
-            },
-        });
+        #include "..\weapons\launcher.hpp"
     };
     class CLASS(RiflemanCarabine): CLASS(Base) {
         @Role(Hidden);
@@ -74,15 +91,17 @@ class CfgVehicles {
     };
     class CLASS(Autorifleman): CLASS(RiflemanBackpack) {
         @Role(Autorifleman);
-        #include "..\weapons\mg.hpp"
+        #include "..\weapons\lmg.hpp"
         #include "..\weapons\pistol.hpp"
     };
     class CLASS(Machinegunner): CLASS(Rifleman) {
         @Role(Machinegunner);
         #include "..\weapons\mg.hpp"
+        #include "..\weapons\pistol.hpp"
     };
     class CLASS(AsstMachinegunner): CLASS(RiflemanBackpack) {
         @Role(AsstMachinegunner);
+        #include "..\weapons\backpack_mg.hpp"
     };
     class CLASS(Medic): CLASS(RiflemanBackpack) {
         @Role(Medic);
@@ -97,39 +116,15 @@ class CfgVehicles {
     };
     class CLASS(RiflemanMAT): CLASS(RiflemanBackpack) {
         @Role(RiflemanMAT);
-        @Launchers({
-            "weapons": {
-                "Atlas_Launch_Pzf3_F": {
-                    "magazinesBackpack": {
-                        "Atlas_DM12_HEAT_F": 2,
-                    },
-                },
-            },
-        });
+        #include "..\weapons\mat.hpp"
     };
     class CLASS(RiflemanAA): CLASS(RiflemanBackpack) {
         @Role(RiflemanAA);
-        @Launchers({
-            "weapons": {
-                "launch_B_Titan_olive_F": {
-                    "magazinesBackpack": {
-                        "Titan_AA": 1,
-                    },
-                },
-            },
-        });
+        #include "..\weapons\aa.hpp"
     };
     class CLASS(RiflemanHAT): CLASS(RiflemanBackpack) {
         @Role(RiflemanHAT);
-        @Launchers({
-            "weapons": {
-                "launch_O_Vorona_brown_F": {
-                    "magazinesBackpack": {
-                        "Vorona_HEAT": 1,
-                    },
-                },
-            },
-        });
+        #include "..\weapons\mat.hpp"
     };
     class CLASS(Engineer): CLASS(RiflemanBackpack) {
         @Role(Engineer);
@@ -169,11 +164,12 @@ class CfgVehicles {
     };
     class CLASS(Crewman): CLASS(RiflemanCarabine) {
         @Role(Crewman);
+        #include "..\weapons\pdw.hpp"
     };
     class CLASS(HeliPilot): CLASS(Crewman) {
         @Role(HeliPilot);
         @Headgear({
-            "H_PilotHelmetHeli_B_visor_up": 1,
+            "tacs_Helmet_PilotHeli_Tan": 1,
         });
     };
     class CLASS(Marksman): CLASS(Rifleman) {

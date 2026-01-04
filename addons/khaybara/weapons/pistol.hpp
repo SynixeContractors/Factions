@@ -1,9 +1,9 @@
-        @Secondary({
-            "weapons": {
-                "hgun_Pistol_heavy_01_black_F": {
-                    "magazinesVest": {
-                        "11Rnd_45ACP_Mag": 3,
-                    },
-                },
+@Secondary({
+    "weapons": {
+        "Aegis_hgun_Pistol_R57_sand_F": {
+            "magazinesVest": {
+                "Aegis_20rnd_570x28_RP57_Mag": 3,
             },
-        });
+        },
+    },
+});
