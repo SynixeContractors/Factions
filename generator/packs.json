@@ -1,0 +1,98 @@
+{
+    "rifleman_medical": {
+        "items": [
+            ["ACE_elasticBandage", 4],
+            ["ACE_packingBandage", 4],
+            ["ACE_tourniquet", 1],
+            ["ACE_split", 2]
+        ],
+        "magazines": [
+            
+            ["ACE_painkillers", 1]
+        ]
+    },
+    "military_standard": {
+        "items": [
+            ["ACE_CableTie", 6]
+        ],
+        "magazines": [
+            ["SmokeShell", 2],
+            ["HandGrenade", 2],
+            ["Chemlight_green", 1],
+            ["Chemlight_blue", 1]
+        ]
+    },
+    "t2_standard": {
+        "items": [
+            ["ACE_NVG_Gen4_Black_WP", 1]
+        ]
+    },
+    "t3_standard": {
+        "items": [
+            ["NVGoggles_OPFOR", 1]
+        ]
+    },
+    "t4_standard": {},
+
+    "t2_t3_medic": {
+        "items": [
+            ["ACE_suture", 40],
+            ["ACE_elasticBandage", 30],
+            ["ACE_quikclot", 20],
+            ["ACE_salineIV", 2],
+            ["ACE_salineIV_500", 2],
+            ["ACE_salineIV_250", 2],
+            ["ACE_surgicalKit", 1],
+            ["ACE_splint", 2],
+            ["ACE_tourniquet", 4],
+            ["ACE_bodyBag", 1]
+        ],
+        "magazines": [
+            ["ACE_painkillers", 2]
+        ]
+    },
+    "t4_medic": {
+        "items": [
+            ["ACE_suture", 10],
+            ["ACE_elasticBandage", 20],
+            ["ACE_quikclot", 10],
+            ["ACE_salineIV_500", 2],
+            ["ACE_salineIV_250", 1],
+            ["ACE_surgicalKit", 1],
+            ["ACE_splint", 1],
+            ["ACE_tourniquet", 2]
+        ],
+        "magazines": [
+            ["ACE_painkillers", 1]
+        ]
+    },
+    "engineer": {
+        "items": [
+            ["engineer", 1]
+        ]
+    },
+    "eod": {
+        "items": [
+            ["ACE_DefusalKit", 1]
+        ]
+    },
+    "demo": {
+        "items": [
+            ["ACE_M26_Clacker", 1]
+        ],
+        "magazines": [
+            ["SatchelCharge_Remote_Mag", 1],
+            ["DemoCharge_Remote_Mag", 2]
+        ]
+    },
+    "at_mine": {
+        "magazines": [
+            ["ATMine_Range_Mag", 2]
+        ]
+    },
+    "ap_mine": {
+        "magazines": [
+            ["APERSMine_Range_Mag", 4]
+        ]
+    }
+}
