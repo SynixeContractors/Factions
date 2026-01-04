@@ -313,9 +313,8 @@ class GCLASS(BTR_IFV): O_R_APC_Wheeled_04_cannon_F {
         };
     };
 };
-class O_R_APC_Wheeled_04_cannon_v2_F: APC_Wheeled_04_base_F {
-    class EventHandlers;
-};
+
+ADD_CAMO_EVENT_HANDLER(O_R_APC_Wheeled_04_cannon_v2_F,APC_Wheeled_04_base_v2_F);
 class GCLASS(BTR_SPG): O_R_APC_Wheeled_04_cannon_v2_F {
     displayName = "BTR-100SU (Sprut-SD)";
     faction = QGCLASS(base_vehicles);
@@ -324,9 +323,7 @@ class GCLASS(BTR_SPG): O_R_APC_Wheeled_04_cannon_v2_F {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 300;
-    class EventHandlers: EventHandlers {
-        postinit = "if (local (_this select 0)) then {[(_this select 0), """", [], true] call bis_fnc_initVehicle;}";
-    };
+    #include "eventhandler_camo.hpp"
     class TextureSources {
         class Green {
             displayName = "Green";
