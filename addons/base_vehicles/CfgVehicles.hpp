@@ -11,7 +11,6 @@
 // Pylon macros
 #include "pylons/pylons.hpp"
 
-
 class CfgVehicles {
     class Offroad_01_base_F;
     #define HIDEBROKEN

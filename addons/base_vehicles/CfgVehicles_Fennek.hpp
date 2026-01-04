@@ -1,4 +1,7 @@
-class I_MRAP_03_F;
+class MRAP_03_base_F;
+class I_MRAP_03_F: MRAP_03_base_F {
+    class EventHandlers;
+};
 class GCLASS(Fennek): I_MRAP_03_F {
     displayName = "Fennek";
     faction = QGCLASS(base_vehicles);
@@ -7,6 +10,7 @@ class GCLASS(Fennek): I_MRAP_03_F {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 190;
+    #include "eventhandler_camo.hpp"
     class TextureSources {
         class Blufor {
             displayName = "Sand";
@@ -26,7 +30,10 @@ class GCLASS(Fennek): I_MRAP_03_F {
     };
 };
 
-class I_MRAP_03_hmg_F;
+class MRAP_03_hmg_base_F;
+class I_MRAP_03_hmg_F: MRAP_03_hmg_base_F {
+    class EventHandlers;
+};
 class GCLASS(Fennek_HMG): I_MRAP_03_hmg_F {
     displayName = "Fennek (HMG)";
     faction = QGCLASS(base_vehicles);
@@ -35,6 +42,7 @@ class GCLASS(Fennek_HMG): I_MRAP_03_hmg_F {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 190;
+    #include "eventhandler_camo.hpp"
     class TextureSources {
         class Blufor {
             displayName = "Sand";
@@ -54,7 +62,10 @@ class GCLASS(Fennek_HMG): I_MRAP_03_hmg_F {
     };
 };
 
-class I_MRAP_03_gmg_F;
+class MRAP_03_gmg_base_F;
+class I_MRAP_03_gmg_F: MRAP_03_gmg_base_F {
+    class EventHandlers;
+};
 class GCLASS(Fennek_GMG): I_MRAP_03_gmg_F {
     displayName = "Fennek (GMG)";
     faction = QGCLASS(base_vehicles);
@@ -63,6 +74,7 @@ class GCLASS(Fennek_GMG): I_MRAP_03_gmg_F {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 190;
+    #include "eventhandler_camo.hpp"
     class TextureSources {
         class Blufor {
             displayName = "Sand";
