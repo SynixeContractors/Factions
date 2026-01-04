@@ -138,6 +138,11 @@ fn container(name, value) {
     }
 
     if "packs" in value {
+        for pack in value.packs {
+            if !(pack in global::PACKS) {
+                fatal("Unknown pack: " + pack);
+            }
+        }
         ret += string_list(name + "Packs", value.packs) + "\n";
     }
 
@@ -642,6 +647,8 @@ fn process_lines(lines, start_index) {
     
     return replacement;
 }
+
+const PACKS = load_json("packs");
 
 let addons = HEMTT_VFS.join("addons").list();
 for addon in addons {

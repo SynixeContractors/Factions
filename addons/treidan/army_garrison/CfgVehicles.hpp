@@ -10,7 +10,7 @@ class CfgVehicles {
                 "synixe_mgp_g3_fleece_rgr_rbs": 1,
             },
             "packs": [
-                "t3_rifleman_medical",
+                "rifleman_medical",
             ],
         });
 
@@ -122,7 +122,7 @@ class CfgVehicles {
                 "tacs_Backpack_Kitbag_Medic_Sage": 1,
             },
             "packs": [
-                "t3_medic",
+                "t2_t3_medic",
             ],
         });
     };
@@ -159,7 +159,7 @@ class CfgVehicles {
                 "B_LegStrapBag_olive_F": 1,
             },
             "packs": [
-                "toolkit",
+                "engineer",
             ],
         });
     };

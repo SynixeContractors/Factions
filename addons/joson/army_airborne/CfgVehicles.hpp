@@ -12,7 +12,7 @@ class CfgVehicles {
                 "tacs_Uniform_Combat_RS_ATACS_IX": 0.25,
             },
             "packs": [
-                "t3_rifleman_medical",
+                "rifleman_medical",
                 "t3_standard",
             ],
         });

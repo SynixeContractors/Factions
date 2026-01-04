@@ -47,7 +47,7 @@ class CLASS2(SIDE,Base): PCLASS2(SIDE,Base) {
             "casual_solid_red_black_uniform": 1,
         },
         "packs": [
-            "t3_rifleman_medical",
+            "rifleman_medical",
         ],
     });
 
@@ -446,7 +446,7 @@ class CLASS2(SIDE,Medic): CLASS2(SIDE,Base) {
             "tacs_Backpack_Kitbag_Medic_Green": 1,
         },
         "packs": [
-            "t2_medic",
+            "t2_t3_medic",
         ],
     });
 };
@@ -626,7 +626,7 @@ class CLASS2(SIDE,Engineer): CLASS2(SIDE,Base) {
             "B_AssaultPack_rgr": 1,
         },
         "packs": [
-            "toolkit",
+            "engineer",
         ],
     });
 };

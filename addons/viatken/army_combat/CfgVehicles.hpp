@@ -12,7 +12,7 @@ class CfgVehicles {
                 "Atlas_U_I_Afghanka_02_ardi_half_F": 1,
             },
             "packs": [
-                "t2_rifleman_medical",
+                "rifleman_medical",
             ],
         });
 
@@ -35,9 +35,6 @@ class CfgVehicles {
             "packs": [
                 "t3_standard",
             ],
-            "magazines": {
-                "HandGrenade": 1,
-            },
         });
 
         @Headgear({
@@ -285,7 +282,7 @@ class CfgVehicles {
                 "tacs_Backpack_Kitbag_Medic_Green": 1,
             },
             "packs": [
-                "t2_medic",
+                "t2_t3_medic",
             ],
         });
     };
@@ -361,7 +358,7 @@ class CfgVehicles {
                 "B_LegStrapBag_olive_F": 1,
             },
             "packs": [
-                "toolkit",
+                "engineer",
             ],
         });
     };

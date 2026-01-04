@@ -21,7 +21,7 @@ class CfgVehicles {
                 "tacs_Uniform_Combat_RS_ATACS_IX": 0.25,
             },
             "packs": [
-                "t3_rifleman_medical",
+                "rifleman_medical",
                 "t3_standard",
             ],
         });
@@ -194,7 +194,7 @@ class CfgVehicles {
                 "B_AssaultPack_rgr": 1,
             },
             "packs": [
-                "t3_medic",
+                "t2_t3_medic",
             ],
         });
     };
@@ -246,7 +246,7 @@ class CfgVehicles {
                 "B_AssaultPack_wdl_F": 1,
             },
             "packs": [
-                "toolkit",
+                "engineer",
             ],
         });
     };

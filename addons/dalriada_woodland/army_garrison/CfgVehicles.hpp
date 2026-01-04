@@ -10,7 +10,7 @@ class CfgVehicles {
                 "Atlas_U_O_Luchnik_RolledUp_whex_F": 1,
             },
             "packs": [
-                "t2_rifleman_medical",
+                "rifleman_medical",
             ],
         });
 
@@ -73,7 +73,7 @@ class CfgVehicles {
                 "tacs_Backpack_Kitbag_Medic_Green": 1,
             },
             "packs": [
-                "t2_medic",
+                "t2_t3_medic",
             ],
         });
     };
@@ -110,7 +110,7 @@ class CfgVehicles {
                 "B_LegStrapBag_coyote_F": 1,
             },
             "packs": [
-                "toolkit",
+                "engineer",
             ],
         });
     };

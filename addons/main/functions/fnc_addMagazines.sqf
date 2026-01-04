@@ -60,6 +60,14 @@ if (_cache isEqualTo []) exitWith {true};
     {
         _containerItems pushBack [_x select 0, _x select 1, 1];
     } forEach _magazines;
+
+    private _packs = _cached select 1;
+    {
+        private _adding = [_x, false] call FUNC(packItems);
+        {
+            _containerItems pushBack [_x select 0, _x select 1, 1];
+        } forEach _adding;
+    } forEach _packs;
 } forEach [3,4,5];
 
 // Facewear

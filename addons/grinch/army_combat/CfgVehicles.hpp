@@ -9,7 +9,7 @@ class CfgVehicles {
                 "Christmas_Sweater_Hostile_Item": 1,
             },
             "packs": [
-                "t3_rifleman_medical",
+                "rifleman_medical",
             ],
         });
 
@@ -42,7 +42,7 @@ class CfgVehicles {
                 "Christmas_Greenman_Item": 1,
             },
             "packs": [
-                "t3_rifleman_medical",
+                "rifleman_medical",
             ],
         });
 
@@ -321,7 +321,7 @@ class CfgVehicles {
                 "tacs_Backpack_Kitbag_Medic_Coyote": 1,
             },
             "packs": [
-                "t3_medic",
+                "t2_t3_medic",
             ],
         });
 
@@ -405,7 +405,7 @@ class CfgVehicles {
                 "B_AssaultPack_sgg": 1,
             },
             "packs": [
-                "toolkit",
+                "engineer",
             ],
         });
     };

@@ -34,7 +34,7 @@ if (_cache isEqualTo []) exitWith {true};
     private _packs = _cached select 1;
     private _items = +(_cached select 2);
     {
-        _items append ([_x] call FUNC(packItems));
+        _items append ([_x, true] call FUNC(packItems));
     } forEach _packs;
     private _itemsSlot = _slot select 1;
     {

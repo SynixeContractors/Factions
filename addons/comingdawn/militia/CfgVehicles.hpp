@@ -52,7 +52,7 @@ class CfgVehicles {
                 "U_MU_B_GuerillaGarment5_yellow": 1,
             },
             "packs": [
-                "t4_rifleman_medical",
+                "rifleman_medical",
             ],
         });
 
@@ -651,7 +651,7 @@ class CfgVehicles {
                 "B_FieldPack_oli": 1,
             },
             "packs": [
-                "toolkit",
+                "engineer",
             ],
         });
     };

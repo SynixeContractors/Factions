@@ -126,7 +126,7 @@ class CfgVehicles {
                 "U_C_Poor_2": 1,
             },
             "packs": [
-                "t4_rifleman_medical",
+                "rifleman_medical",
             ],
         });
 
@@ -557,7 +557,7 @@ class CfgVehicles {
                 "B_FieldPack_oli": 1,
             },
             "packs": [
-                "toolkit",
+                "engineer",
             ],
         });
     };

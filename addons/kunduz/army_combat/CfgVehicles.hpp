@@ -18,7 +18,7 @@ class CfgVehicles {
                 "Atlas_U_I_Afghanka_02_ardi_half_F": 1,
             },
             "packs": [
-                "t4_rifleman_medical",
+                "rifleman_medical",
             ],
         });
 
@@ -431,7 +431,7 @@ class CfgVehicles {
                 "B_FieldPack_khk": 1,
             },
             "packs": [
-                "toolkit",
+                "engineer",
             ],
         });
     };

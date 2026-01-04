@@ -21,7 +21,7 @@ class CfgVehicles {
                 "U_lxWS_UN_Camo3": 0.7,
             },
             "packs": [
-                "t3_rifleman_medical",
+                "rifleman_medical",
             ],
         });
 
@@ -143,7 +143,7 @@ class CfgVehicles {
                 "B_FieldPack_cbr": 1,
             },
             "packs": [
-                "t3_medic",
+                "t2_t3_medic",
             ],
         });
     };
@@ -190,7 +190,7 @@ class CfgVehicles {
                 "B_FieldPack_cbr": 1,
             },
             "packs": [
-                "toolkit",
+                "engineer",
             ],
         });
     };

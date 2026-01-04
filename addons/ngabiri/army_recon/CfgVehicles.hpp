@@ -10,7 +10,7 @@ class CfgVehicles {
                 "U_lxWS_SFIA_soldier_1_O": 1,
             },
             "packs": [
-                "t3_rifleman_medical",
+                "rifleman_medical",
             ],
         });
 
@@ -205,7 +205,7 @@ class CfgVehicles {
                 "tacs_Backpack_Kitbag_Medic_Coyote": 1,
             },
             "packs": [
-                "t3_medic",
+                "t2_t3_medic",
             ],
         });
     };
@@ -240,7 +240,7 @@ class CfgVehicles {
                 "B_AssaultPack_cbr": 1,
             },
             "packs": [
-                "toolkit",
+                "engineer",
             ],
         });
     };
@@ -297,7 +297,7 @@ class CfgVehicles {
                 "U_lxWS_SFIA_Tanker_O": 1,
             },
             "packs": [
-                "t3_rifleman_medical",
+                "rifleman_medical",
             ],
         });
 

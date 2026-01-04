@@ -15,7 +15,7 @@ class CfgVehicles {
                 "Atlas_U_UniformBDU_02_m81_F": 0.5,
             },
             "packs": [
-                "t2_rifleman_medical",
+                "rifleman_medical",
             ],
         });
 
@@ -24,7 +24,7 @@ class CfgVehicles {
                 "WSLV_Platecarrier_WDL_NF": 1,
             },
             "packs": [
-                "t2_standard",
+                "t3_standard",
             ],
         });
 
@@ -121,7 +121,7 @@ class CfgVehicles {
                 "tacs_Backpack_Kitbag_Medic_Green": 1,
             },
             "packs": [
-                "t2_medic",
+                "t2_t3_medic",
             ],
         });
     };
@@ -158,7 +158,7 @@ class CfgVehicles {
                 "B_LegStrapBag_black_F": 1,
             },
             "packs": [
-                "toolkit",
+                "engineer",
             ],
         });
     };

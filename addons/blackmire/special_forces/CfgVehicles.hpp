@@ -12,7 +12,7 @@ class CfgVehicles {
                 "Aegis_U_O_CombatFatigues_02_oli_F": 1,
             },
             "packs": [
-                "t3_rifleman_medical",
+                "rifleman_medical",
             ],
         });
 
@@ -147,7 +147,7 @@ class CfgVehicles {
                 "tacs_Backpack_Kitbag_Medic_Coyote": 1,
             },
             "packs": [
-                "t3_medic",
+                "t2_t3_medic",
             ],
         });
     };
@@ -232,7 +232,7 @@ class CfgVehicles {
                 "B_FieldPack_oli": 1,
             },
             "packs": [
-                "toolkit",
+                "engineer",
             ],
         });
     };
@@ -271,7 +271,7 @@ class CfgVehicles {
                 "U_B_W_FullGhillie_wdl_F": 1,
             },
             "packs": [
-                "t2_rifleman_medical",
+                "rifleman_medical",
             ],
         });
 

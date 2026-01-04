@@ -16,7 +16,7 @@ class CfgVehicles {
                 "HandGrenade": 1,
             },
             "packs": [
-                "t2_rifleman_medical",
+                "rifleman_medical",
             ],
         });
 
@@ -122,7 +122,7 @@ class CfgVehicles {
                 "tacs_Backpack_Kitbag_Medic_Coyote": 1,
             },
             "packs": [
-                "t2_medic",
+                "t2_t3_medic",
             ],
         });
     };
@@ -166,7 +166,7 @@ class CfgVehicles {
                 "B_AssaultPack_rgr": 1,
             },
             "packs": [
-                "toolkit",
+                "engineer",
             ],
         });
     };

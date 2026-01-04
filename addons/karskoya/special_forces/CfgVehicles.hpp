@@ -13,7 +13,7 @@ class CfgVehicles {
                 "synixe_mgp_g3_field_set_m81_m81": 1,
             },
             "packs": [
-                "t2_rifleman_medical",
+                "rifleman_medical",
             ],
         });
 
@@ -40,7 +40,7 @@ class CfgVehicles {
         });
 
         @Primary({
-           "weapons": {
+            "weapons": {
                 "arifle_SPAR_01_blk_F": {
                     "probability": 1,
                     "magazinesVest": {
@@ -253,7 +253,7 @@ class CfgVehicles {
                 "tacs_Backpack_Kitbag_Medic_Green": 1,
             },
             "packs": [
-                "t2_medic",
+                "t2_t3_medic",
             ],
         });
     };
@@ -297,7 +297,7 @@ class CfgVehicles {
                 "synixe_mgp_bp_molle_pointman_rgr": 1,
             },
             "packs": [
-                "toolkit",
+                "engineer",
             ],
         });
     };

@@ -13,7 +13,7 @@ class CLASS2(SIDE,Base): PCLASS2(SIDE,Base) {
             "synixe_mgp_g3_field_set_aor2_rgr": 1,
         },
         "packs": [
-            "t2_rifleman_medical",
+            "rifleman_medical",
         ],
     });
 
@@ -281,7 +281,7 @@ class CLASS2(SIDE,Medic): CLASS2(SIDE,Base) {
             "tacs_Backpack_Kitbag_Medic_Green": 1,
         },
         "packs": [
-            "t2_medic",
+            "t2_t3_medic",
         ],
     });
 };
@@ -346,7 +346,7 @@ class CLASS2(SIDE,Engineer): CLASS2(SIDE,Base) {
             "synixe_mgp_bp_molle_tomahawk_rgr": 1,
         },
         "packs": [
-            "toolkit",
+            "engineer",
         ],
     });
 };

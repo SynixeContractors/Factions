@@ -17,7 +17,7 @@ class CfgVehicles {
                 "U_I_L_Uniform_01_camo_F": 0.1,
             },
             "packs": [
-                "t2_rifleman_medical",
+                "rifleman_medical",
             ],
         });
 
@@ -75,7 +75,7 @@ class CfgVehicles {
                 "tacs_Backpack_Kitbag_Medic_Sage": 1,
             },
             "packs": [
-                "t2_medic",
+                "t2_t3_medic",
             ],
         });
     };
@@ -109,7 +109,7 @@ class CfgVehicles {
                 "B_Messenger_Olive_F": 1,
             },
             "packs": [
-                "toolkit",
+                "engineer",
             ],
         });
     };

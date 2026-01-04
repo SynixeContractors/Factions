@@ -10,7 +10,7 @@ class CfgVehicles {
                 "Atlas_U_O_Afghanka_02_dst_F": 0.5,
             },
             "packs": [
-                "t3_rifleman_medical",
+                "rifleman_medical",
             ],
         });
 
@@ -70,7 +70,7 @@ class CfgVehicles {
                 "tacs_Backpack_Kitbag_Medic_Coyote": 1,
             },
             "packs": [
-                "t3_medic",
+                "t2_t3_medic",
             ],
         });
     };
@@ -106,7 +106,7 @@ class CfgVehicles {
                 "B_LegStrapBag_black_F": 1,
             },
             "packs": [
-                "toolkit",
+                "engineer",
             ],
         });
     };

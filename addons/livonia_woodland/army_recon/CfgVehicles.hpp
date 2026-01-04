@@ -13,7 +13,7 @@ class CfgVehicles {
                 "Atlas_U_E_SF_CombatUniformNCU_02_F": 0.5,
             },
             "packs": [
-                "t2_rifleman_medical",
+                "rifleman_medical",
             ],
         });
 
@@ -122,7 +122,7 @@ class CfgVehicles {
                 "tacs_Backpack_Kitbag_Medic_Sage": 1,
             },
             "packs": [
-                "t2_medic",
+                "t2_t3_medic",
             ],
         });
     };
@@ -157,7 +157,7 @@ class CfgVehicles {
                 "B_AssaultPack_eaf_F": 1,
             },
             "packs": [
-                "toolkit",
+                "engineer",
             ],
         });
     };
@@ -203,7 +203,7 @@ class CfgVehicles {
                 "U_I_E_FullGhillie_wdl_F": 1,
             },
             "packs": [
-                "t2_rifleman_medical",
+                "rifleman_medical",
             ],
         });
 
