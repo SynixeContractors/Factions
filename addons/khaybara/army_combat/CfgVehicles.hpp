@@ -74,6 +74,9 @@ class CfgVehicles {
     #undef TEMPLATE_CAMO
     #define TEMPLATE_CAMO ardistan
     #include "..\..\..\templates\cars\Karatel.hpp"
+    #undef TEMPLATE_CAMO
+    #define TEMPLATE_CAMO Tan
+    #include "..\..\..\templates\cars\Arcadian.hpp"
 
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {
