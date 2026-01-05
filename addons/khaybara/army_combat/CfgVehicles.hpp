@@ -65,6 +65,12 @@ class CfgVehicles {
     #define TEMPLATE_CAMO GreenHex
     #include "..\..\..\templates\cars\LUT_Fuel.hpp"
     #include "..\..\..\templates\cars\LUT_Transport.hpp"
+    #undef TEMPLATE_CAMO
+    #define TEMPLATE_CAMO Sep_01
+    #include "..\..\..\templates\apc\BM2T.hpp"
+    #include "..\..\..\templates\apc\BM2K.hpp"
+    #include "..\..\..\templates\apc\BM2_Unarmed.hpp"
+    #include "..\..\..\templates\apc\BM2_AA.hpp"
 
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {
