@@ -53,6 +53,18 @@ class CfgVehicles {
     #include "..\..\..\templates\cars\Ram_Armed.hpp"
     #include "..\..\..\templates\cars\Ram_Advanced.hpp"
     #include "..\..\..\templates\cars\Ram_Rocket.hpp"
+    #undef TEMPLATE_CAMO
+    #define TEMPLATE_CAMO SFIA
+    #include "..\..\..\templates\cars\LUT_AA.hpp"
+    #include "..\..\..\templates\cars\LUT_Ammo.hpp"
+    #include "..\..\..\templates\cars\LUT_Cargo.hpp"
+    #include "..\..\..\templates\cars\LUT_MRL.hpp"
+    #include "..\..\..\templates\cars\LUT_Medical.hpp"
+    #include "..\..\..\templates\cars\LUT_Repair.hpp"
+    #undef TEMPLATE_CAMO
+    #define TEMPLATE_CAMO GreenHex
+    #include "..\..\..\templates\cars\LUT_Fuel.hpp"
+    #include "..\..\..\templates\cars\LUT_Transport.hpp"
 
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {
