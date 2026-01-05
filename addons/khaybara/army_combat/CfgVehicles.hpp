@@ -71,6 +71,9 @@ class CfgVehicles {
     #include "..\..\..\templates\apc\BM2K.hpp"
     #include "..\..\..\templates\apc\BM2_Unarmed.hpp"
     #include "..\..\..\templates\apc\BM2_AA.hpp"
+    #undef TEMPLATE_CAMO
+    #define TEMPLATE_CAMO ardistan
+    #include "..\..\..\templates\cars\Karatel.hpp"
 
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {
