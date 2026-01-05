@@ -1,82 +1,25 @@
 class CfgVehicles {
     #define TEMPLATE_FACTION QPCLASS(t2_blufor)
     #define TEMPLATE_SIDE 1
-    //FIXME: this is nonsense for now
     #include "..\..\..\templates\statics\M2.hpp"
     #define TEMPLATE_CAMO Blufor
     #include "..\..\..\templates\cars\HEMTT.hpp"
     #include "..\..\..\templates\cars\Fennek.hpp"
     #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO wdl
-    #include "..\..\..\templates\cars\MATV.hpp"
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO GreenHex
-    #include "..\..\..\templates\cars\Typhoon.hpp"
-    #include "..\..\..\templates\tanks\T100.hpp"
-    #include "..\..\..\templates\tanks\T100_SPG.hpp"
-    #include "..\..\..\templates\tanks\T100_Railgun.hpp"
-    #include "..\..\..\templates\tanks\T14.hpp"
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO Sand
-    #include "..\..\..\templates\apc\Badger.hpp"
-    #include "..\..\..\templates\apc\Otokar.hpp"
-    #include "..\..\..\templates\apc\BTR.hpp"
-    #include "..\..\..\templates\apc\BTR_IFV.hpp"
-    #include "..\..\..\templates\apc\BTR_SPG.hpp"
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO Sand_01
-    #include "..\..\..\templates\apc\Warrior.hpp"
+    #define TEMPLATE_CAMO Karzeg_01
     #include "..\..\..\templates\apc\Pandur.hpp"
     #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO Olive
+    #define TEMPLATE_CAMO Sand
     #include "..\..\..\templates\cars\Polaris.hpp"
-    #include "..\..\..\templates\tanks\Merkava.hpp"
-    #include "..\..\..\templates\tanks\Merkava_SPG.hpp"
-    #include "..\..\..\templates\apc\Namer.hpp"
     #undef TEMPLATE_CAMO
     #define TEMPLATE_CAMO KZG_01
     #include "..\..\..\templates\tanks\Leopard.hpp"
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO Indep_Olive
-    #include "..\..\..\templates\tanks\Wiesel.hpp"
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO Blue
-    #include "..\..\..\templates\cars\Offroad_Civilian.hpp"
-    #include "..\..\..\templates\cars\Offroad_Armed.hpp"
-    #include "..\..\..\templates\cars\Offroad_Armor.hpp"
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO Green
-    #include "..\..\..\templates\cars\Offroad_AA.hpp"
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO Blue
     #include "..\..\..\templates\cars\Ram_Civilian.hpp"
     #include "..\..\..\templates\cars\Ram_Armed.hpp"
     #include "..\..\..\templates\cars\Ram_Advanced.hpp"
-    #include "..\..\..\templates\cars\Ram_Rocket.hpp"
     #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO SFIA
-    #include "..\..\..\templates\cars\LUT_AA.hpp"
-    #include "..\..\..\templates\cars\LUT_Ammo.hpp"
-    #include "..\..\..\templates\cars\LUT_Cargo.hpp"
-    #include "..\..\..\templates\cars\LUT_MRL.hpp"
-    #include "..\..\..\templates\cars\LUT_Medical.hpp"
-    #include "..\..\..\templates\cars\LUT_Repair.hpp"
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO GreenHex
-    #include "..\..\..\templates\cars\LUT_Fuel.hpp"
-    #include "..\..\..\templates\cars\LUT_Transport.hpp"
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO Sep_01
-    #include "..\..\..\templates\apc\BM2T.hpp"
-    #include "..\..\..\templates\apc\BM2K.hpp"
-    #include "..\..\..\templates\apc\BM2_Unarmed.hpp"
-    #include "..\..\..\templates\apc\BM2_AA.hpp"
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO ardistan
-    #include "..\..\..\templates\cars\Karatel.hpp"
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO Tan
-    #include "..\..\..\templates\cars\Arcadian.hpp"
+    #define TEMPLATE_CAMO KZG
+    #include "..\..\..\templates\cars\Offroad_Civilian.hpp"
 
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {
