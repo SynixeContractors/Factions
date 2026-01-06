@@ -4,6 +4,7 @@ class CfgVehicles {
     #include "../../../templates/statics/M2.hpp"
     #define TEMPLATE_CAMO EAF_01
     #include "../../../templates/apc/Badger.hpp"
+    #include "../../../templates/apc/Warrior.hpp"
     #undef TEMPLATE_CAMO
     #define TEMPLATE_CAMO EAF_01_woodland
     #include "../../../templates/tanks/Leopard.hpp"

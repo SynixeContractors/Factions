@@ -49,4 +49,19 @@ class TextureSources {
         };
         factions[] = {};
     };
+    class EAF {
+        displayName = "LDF (Geo Woodland)";
+        textures[] = {
+          "\A3\soft_f_Enoch\Truck_02\Data\Truck_02_kab_EAF_co.paa",
+          "\A3\soft_f_Enoch\Truck_02\Data\Truck_02_kuz_EAF_co.paa",
+          "\A3\soft_f_Enoch\Truck_02\Data\Truck_02_int_EAF_co.paa",
+          "\A3\soft_f_Enoch\Truck_02\Data\truck_02_chassis_EAF_CO.paa",
+          "lxws\vehicles_f_lxws\zu23\data\zu23_base_green_co.paa",
+          "lxws\vehicles_f_lxws\zu23\data\zu23_green_co.paa",
+          "lxws\vehicles_f_lxws\zu23\data\zu23_addon_1_green_co.paa",
+          "lxws\vehicles_f_lxws\zu23\data\zu23_addon_2_green_co.paa",
+          "lxws\vehicles_f_lxws\Truck_02\data\addons_black_co.paa"
+        };
+        factions[] = {};
+    };
 };
