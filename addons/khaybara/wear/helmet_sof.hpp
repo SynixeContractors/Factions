@@ -1,0 +1,15 @@
+@Headgear({
+  "H_MK7_sand_F": 1,
+  "Aegis_H_Helmet_FASTMT_tan_F": 2,
+  "Aegis_H_Helmet_FASTMT_Headset_tan_F": 2,
+  "Aegis_H_Helmet_FASTMT_Cover_tan_F": 2,
+  "H_Bandanna_sand": 1,
+  "H_Bandanna_sand_headset": 1,
+  "H_HelmetB_sand": 1,
+  "H_HelmetSpecB_sand": 1,
+  "H_HelmetB_light_sand": 1,
+  "H_HelmetSpecB_light_sand": 1,
+  "H_HeadSet_sand_F": 1,
+  "H_Booniehat_tan": 1,
+  "H_Booniehat_tan_hs": 1,
+});

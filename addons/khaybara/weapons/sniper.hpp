@@ -7,6 +7,10 @@
         },
     },
     "optics": {
-        "optic_AMS_snd": 1,
+        "optic_AMS": 1,
+    },
+    "bipods": {
+        "bipod_01_F_snd": 0.95,
+        "": 0.05,
     },
 });
