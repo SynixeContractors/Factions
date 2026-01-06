@@ -31,4 +31,12 @@ class TextureSources {
     };
     factions[] = {};
   };
+  class Jagged {
+    displayName = "Savanna";
+    textures[] = {
+      "\A3_Atlas\Soft_F_Atlas\MRAP_03\Data\MRAP_03_ext_jagged_CO.paa",
+      "\A3_Atlas\Soft_F_Atlas\MRAP_03\Data\Turret_jagged_CO.paa"
+    };
+    factions[] = {};
+  };
 };
