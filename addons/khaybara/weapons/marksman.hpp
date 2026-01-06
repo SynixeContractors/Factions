@@ -8,7 +8,6 @@
         },
     },
     "optics": {
-        "SMA_ELCAN_SPECTER_TAN": 0.2,
-        "optic_DMS": 0.8,
+        "optic_DMS": 1,
     },
 });

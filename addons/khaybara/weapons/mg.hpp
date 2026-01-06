@@ -8,7 +8,7 @@
         },
     },
     "optics": {
-        "SMA_ELCAN_SPECTER_TAN": 0.2,
-        "sma_spitfire_01_sc_black": 0.8,
+        "optic_VRCO_tan_RF": 0.2,
+        "optic_LRCO_snd_F": 0.8,
     },
 });

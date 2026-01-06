@@ -5,6 +5,6 @@
   },
   "optics": {
     "": 0.2,
-    "sma_spitfire_01_black": 0.8,
+    "optic_VRCO_tan_RF": 0.8,
   },
 });
