@@ -60,7 +60,7 @@ class GCLASS(Leopard2): I_MBT_03_cannon_F {
     #include "eventhandler_camo.hpp"
     class TextureSources {
         class EAF_01 {
-            displayName = "Khaybaran (Desert Net)";
+            displayName = "LDF (Geo Woodland, Desert Net)";
             LEOPARD_EAF(NET_DESERT);
             factions[] = {};
         };
@@ -225,7 +225,7 @@ class GCLASS(Leopard2): I_MBT_03_cannon_F {
             factions[] = {};
         };
         class Winter {
-            displayName = "Khaybaran (Desert Net)";
+            displayName = "Winter (Desert Net)";
             LEOPARD_WINTER(NET_DESERT);
             factions[] = {};
         };
