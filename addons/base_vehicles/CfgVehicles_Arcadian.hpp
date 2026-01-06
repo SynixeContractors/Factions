@@ -41,25 +41,25 @@ class GCLASS(Arcadian_M134): tacs_Arcadian_Armed_Base {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 109;
-    textureList[] = {"Armed_Black",1,"Armed_Tan",1,"Armed_Green",1,"Armed_Grey",1};
+    textureList[] = {"Black",1,"Tan",1,"Green",1,"Grey",1};
     class TextureSources {
-        class Armed_Black {
-            displayName = "Black (M134)";
+        class Black {
+            displayName = "Black";
             textures[] = {"\x\tacs\addons\arcadian\data\arcadian_body_armed_black_co.paa","\x\tacs\addons\arcadian\data\arcadian_interior_armed_co.paa"};
             factions[] = {};
         };
-        class Armed_Tan {
-            displayName = "Tan (M134)";
+        class Tan {
+            displayName = "Tan";
             textures[] = {"\x\tacs\addons\arcadian\data\arcadian_body_armed_tan_co.paa","\x\tacs\addons\arcadian\data\arcadian_interior_armed_co.paa"};
             factions[] = {};
         };
-        class Armed_Green {
-            displayName = "Green (M134)";
+        class Green {
+            displayName = "Green";
             textures[] = {"\x\tacs\addons\arcadian\data\arcadian_body_armed_green_co.paa","\x\tacs\addons\arcadian\data\arcadian_interior_armed_co.paa"};
             factions[] = {};
         };
-        class Armed_Grey {
-            displayName = "Grey (M134)";
+        class Grey {
+            displayName = "Grey";
             textures[] = {"\x\tacs\addons\arcadian\data\arcadian_body_armed_grey_co.paa","\x\tacs\addons\arcadian\data\arcadian_interior_armed_co.paa"};
             factions[] = {};
         };

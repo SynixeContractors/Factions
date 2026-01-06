@@ -10,7 +10,7 @@
 
 // Pylon macros
 #include "pylons/pylons.hpp"
-
+class EventHandlers;
 
 class CfgVehicles {
     class Offroad_01_base_F;

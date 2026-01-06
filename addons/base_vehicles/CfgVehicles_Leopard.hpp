@@ -48,8 +48,8 @@
                 CAMONET\
             }
 
-class I_MBT_03_cannon_F;
-class GCLASS(Leopard2) : I_MBT_03_cannon_F {
+ADD_CAMO_EVENT_HANDLER(I_MBT_03_cannon_F,MBT_03_base_F);
+class GCLASS(Leopard2): I_MBT_03_cannon_F {
     displayName = "Leopard 2A4M+";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
@@ -57,6 +57,7 @@ class GCLASS(Leopard2) : I_MBT_03_cannon_F {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 1200;
+    #include "eventhandler_camo.hpp"
     class TextureSources {
         class EAF_01 {
             displayName = "Khaybaran (Desert Net)";
