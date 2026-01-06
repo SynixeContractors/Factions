@@ -35,7 +35,6 @@ for addon in addons {
         let configs = get_vehicle_configs(folder);
         let classes = [];
         for config in configs {
-            print("Processing vehicle config: " + folder + "/" + config.file_name());
             let content = config.open_file().read();
             let lines = content.split("\n");
             for line in lines {
