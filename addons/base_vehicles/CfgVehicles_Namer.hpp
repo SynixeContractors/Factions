@@ -127,6 +127,21 @@ class GCLASS(Namer): MU_NATO_Panther_unarmed {
         factions[] = {};
       };
       class KZG_01 {
+        displayName = "Khaybaran (Desert Net)";
+        NAMER_KZG(NET_DESERT)
+        factions[] = {};
+      };
+      class KZG_01_green {
+        displayName = "Khaybaran (Green Net)";
+        NAMER_KZG(NET_GREEN)
+        factions[] = {};
+      };
+      class KZG_01_jungle {
+        displayName = "Khaybaran (Jungle Net)";
+        NAMER_KZG(NET_JUNGLE)
+        factions[] = {};
+      };
+      class KZG_01_winter {
         displayName = "Khaybaran (Winter Net)";
         NAMER_KZG(NET_WINTER)
         factions[] = {};
@@ -226,6 +241,21 @@ class GCLASS(Namer_RCWS): B_APC_Tracked_01_rcws_F {
         factions[] = {};
       };
       class KZG_01 {
+        displayName = "Khaybaran (Desert Net)";
+        NAMER_KZG(NET_DESERT)
+        factions[] = {};
+      };
+      class KZG_01_green {
+        displayName = "Khaybaran (Green Net)";
+        NAMER_KZG(NET_GREEN)
+        factions[] = {};
+      };
+      class KZG_01_jungle {
+        displayName = "Khaybaran (Jungle Net)";
+        NAMER_KZG(NET_JUNGLE)
+        factions[] = {};
+      };
+      class KZG_01_winter {
         displayName = "Khaybaran (Winter Net)";
         NAMER_KZG(NET_WINTER)
         factions[] = {};
@@ -366,6 +396,21 @@ class GCLASS(Namer_CEV): B_APC_Tracked_01_CRV_F {
         factions[] = {};
       };
       class KZG_01 {
+        displayName = "Khaybaran (Desert Net)";
+        NAMER_CEV_KZG(NET_DESERT)
+        factions[] = {};
+      };
+      class KZG_01_green {
+        displayName = "Khaybaran (Green Net)";
+        NAMER_CEV_KZG(NET_GREEN)
+        factions[] = {};
+      };
+      class KZG_01_jungle {
+        displayName = "Khaybaran (Jungle Net)";
+        NAMER_CEV_KZG(NET_JUNGLE)
+        factions[] = {};
+      };
+      class KZG_01_winter {
         displayName = "Khaybaran (Winter Net)";
         NAMER_CEV_KZG(NET_WINTER)
         factions[] = {};
@@ -501,6 +546,21 @@ class GCLASS(Namer_AA): B_APC_Tracked_01_AA_F {
         factions[] = {};
       };
       class KZG_01 {
+        displayName = "Khaybaran (Desert Net)";
+        NAMER_AA_KZG(NET_DESERT)
+        factions[] = {};
+      };
+      class KZG_01_green {
+        displayName = "Khaybaran (Green Net)";
+        NAMER_AA_KZG(NET_GREEN)
+        factions[] = {};
+      };
+      class KZG_01_jungle {
+        displayName = "Khaybaran (Jungle Net)";
+        NAMER_AA_KZG(NET_JUNGLE)
+        factions[] = {};
+      };
+      class KZG_01_winter {
         displayName = "Khaybaran (Winter Net)";
         NAMER_AA_KZG(NET_WINTER)
         factions[] = {};
