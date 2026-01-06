@@ -9,23 +9,6 @@ class GCLASS(Fennek): I_MRAP_03_F {
     ace_refuel_fuelCapacity = 190;
     #include "textures/Fennek.hpp"
     #include "eventhandler_camo.hpp"
-    class TextureSources {
-        class Blufor {
-            displayName = "Sand";
-            textures[] = {"\a3\soft_f_beta\MRAP_03\Data\mrap_03_ext_co.paa","\a3\data_f\vehicles\turret_co.paa"};
-            factions[] = {};
-        };
-        class Indep {
-            displayName = "DAP Green";
-            textures[] = {"\a3\soft_f_beta\mrap_03\data\mrap_03_ext_indp_co.paa","\a3\data_f\vehicles\turret_indp_co.paa"};
-            factions[] = {};
-        };
-        class Olive {
-            displayName = "Olive";
-            textures[] = {"\A3_Aegis\Soft_F_Aegis\MRAP_03\Data\MRAP_03_ext_olive_CO.paa","\A3\Data_F_Exp\Vehicles\Turret_olive_CO.paa"};
-            factions[] = {};
-        };
-    };
 };
 
 ADD_CAMO_EVENT_HANDLER(I_MRAP_03_hmg_F,MRAP_03_hmg_base_F);
@@ -39,23 +22,6 @@ class GCLASS(Fennek_HMG): I_MRAP_03_hmg_F {
     ace_refuel_fuelCapacity = 190;
     #include "textures/Fennek.hpp"
     #include "eventhandler_camo.hpp"
-    class TextureSources {
-        class Blufor {
-            displayName = "Sand";
-            textures[] = {"\a3\soft_f_beta\MRAP_03\Data\mrap_03_ext_co.paa","\a3\data_f\vehicles\turret_co.paa"};
-            factions[] = {};
-        };
-        class Indep {
-            displayName = "DAP Green";
-            textures[] = {"\a3\soft_f_beta\mrap_03\data\mrap_03_ext_indp_co.paa","\a3\data_f\vehicles\turret_indp_co.paa"};
-            factions[] = {};
-        };
-        class Olive {
-            displayName = "Olive";
-            textures[] = {"\A3_Aegis\Soft_F_Aegis\MRAP_03\Data\MRAP_03_ext_olive_CO.paa","\A3\Data_F_Exp\Vehicles\Turret_olive_CO.paa"};
-            factions[] = {};
-        };
-    };
 };
 
 ADD_CAMO_EVENT_HANDLER(I_MRAP_03_gmg_F,MRAP_03_gmg_base_F);
@@ -69,21 +35,4 @@ class GCLASS(Fennek_GMG): I_MRAP_03_gmg_F {
     ace_refuel_fuelCapacity = 190;
     #include "textures/Fennek.hpp"
     #include "eventhandler_camo.hpp"
-    class TextureSources {
-        class Blufor {
-            displayName = "Sand";
-            textures[] = {"\a3\soft_f_beta\MRAP_03\Data\mrap_03_ext_co.paa","\a3\data_f\vehicles\turret_co.paa"};
-            factions[] = {};
-        };
-        class Indep {
-            displayName = "DAP Green";
-            textures[] = {"\a3\soft_f_beta\mrap_03\data\mrap_03_ext_indp_co.paa","\a3\data_f\vehicles\turret_indp_co.paa"};
-            factions[] = {};
-        };
-        class Olive {
-            displayName = "Olive";
-            textures[] = {"\A3_Aegis\Soft_F_Aegis\MRAP_03\Data\MRAP_03_ext_olive_CO.paa","\A3\Data_F_Exp\Vehicles\Turret_olive_CO.paa"};
-            factions[] = {};
-        };
-    };
 };
