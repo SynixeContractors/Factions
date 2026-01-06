@@ -27,7 +27,7 @@ class CfgVehicles {
         displayName = "Khaybara Base Army Combat";
         editorSubcategory = QGCLASS(army_combat);
 
-        #include "..\uniform.hpp"
+        #include "..\wear\uniform.hpp"
 
         @Vests({
             "variants": {
