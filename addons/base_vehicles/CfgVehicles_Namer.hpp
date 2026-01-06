@@ -273,7 +273,6 @@ class GCLASS(Namer_RCWS): B_APC_Tracked_01_rcws_F {
           "\s\synixe_factions\addons\textures\data\namer\Namer_CEV_KZG_CO.paa",\
           CAMONET\
         };
-class B_APC_Tracked_01_CRV_F;
 
 ADD_CAMO_EVENT_HANDLER_NOBASE(B_APC_Tracked_01_CRV_F,B_APC_Tracked_01_base_F);
 class GCLASS(Namer_CEV): B_APC_Tracked_01_CRV_F {
