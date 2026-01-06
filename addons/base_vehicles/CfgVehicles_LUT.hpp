@@ -94,7 +94,7 @@ class GCLASS(LUT_Ammo): Truck_02_Ammo_base_F {
     #include "textures\LUTAmmo.hpp"
 };
 
-class Truck_02_MRL_base_F;
+ADD_CAMO_EVENT_HANDLER_NOBASE(Truck_02_MRL_base_F,Truck_02_base_F);
 class GCLASS(LUT_MRL): Truck_02_MRL_base_F {
     displayName = "LUT (MRL)";
     faction = QGCLASS(base_vehicles);
@@ -103,6 +103,7 @@ class GCLASS(LUT_MRL): Truck_02_MRL_base_F {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 210;
+    #include "eventhandler_camo.hpp"
     #include "textures\LUTMRL.hpp"
 };
 
