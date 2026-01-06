@@ -35,6 +35,7 @@ for addon in addons {
         let configs = get_vehicle_configs(folder);
         let classes = [];
         for config in configs {
+            print("Processing vehicle config: " + folder + "/" + config.file_name());
             let content = config.open_file().read();
             let lines = content.split("\n");
             for line in lines {
@@ -67,7 +68,6 @@ for addon in addons {
                                     let class_name = class_part.split(")").get(0);
                                     if class_name != "Base" {
                                         classes.push(class_name);
-                                        debug("Found class " + class_name + " in include " + path);
                                     }
                                 }
                             }
