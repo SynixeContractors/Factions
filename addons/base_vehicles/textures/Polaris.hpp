@@ -72,4 +72,18 @@ class TextureSources
         textures[] = {"\x\tacs\addons\vehicles\data\polaris_green_ext01_co.paa","\x\tacs\addons\vehicles\data\polaris_green_ext02_co.paa","\x\tacs\addons\vehicles\data\polaris_green_ext03_co.paa","\x\tacs\addons\vehicles\data\polaris_green_adds_co.paa","\a3\weapons_f_beta\launchers\titan\data\launcher_indp_co.paa","\a3\weapons_f_beta\launchers\titan\data\tubem_indp_co.paa"};
         factions[] = {};
     };
+    class KZG_01
+    {
+        displayName= "Khaybaran";
+        textures[] = {
+          "\s\synixe_factions\addons\textures\data\polaris\Polaris_01_KZG_CO.paa", \
+          "\A3\Soft_F_Exp\LSV_01\Data\NATO_LSV_02_sand_CO.paa",
+          "\A3\Soft_F_Exp\LSV_01\Data\NATO_LSV_03_sand_CO.paa",
+          "\A3\Soft_F_Exp\LSV_01\Data\NATO_LSV_Adds_sand_CO.paa",
+          "\A3\weapons_f_beta\launchers\titan\data\launcher_co.paa",
+          "\A3\weapons_f_beta\launchers\titan\data\tubem_co.paa"
+        };
+        factions[] = {};
+    };
+
 };

@@ -22,6 +22,12 @@
           "\A3_Atlas\Armor_F_Atlas\MBT_01\Data\MBT_01_tow_brown_CO.paa", \
           CAMONET\
         };
+#define MERKAVA_KZG(CAMONET) \
+        textures[] = {\
+          "\s\synixe_factions\addons\textures\data\Merkava\Merkava_body_KZG_CO.paa",\
+          "\s\synixe_factions\addons\textures\data\Merkava\Merkava_turret_KZG_CO.paa",\
+          CAMONET\
+        };
 
 ADD_CAMO_EVENT_HANDLER(B_MBT_01_cannon_F,B_MBT_01_base_F);
 class GCLASS(Merkava): B_MBT_01_cannon_F {
@@ -114,6 +120,26 @@ class GCLASS(Merkava): B_MBT_01_cannon_F {
         MERKAVA_BROWN(NET_WINTER)
         factions[] = {};
       };
+      class KZG_01 {
+        displayName = "Khaybaran (Desert Net)";
+        MERKAVA_KZG(NET_DESERT)
+        factions[] = {};
+      };
+      class KZG_01_green {
+        displayName = "Khaybaran (Green Net)";
+        MERKAVA_KZG(NET_GREEN)
+        factions[] = {};
+      };
+      class KZG_01_jungle {
+        displayName = "Khaybaran (Jungle Net)";
+        MERKAVA_KZG(NET_JUNGLE)
+        factions[] = {};
+      };
+      class KZG_01_winter {
+        displayName = "Khaybaran (Winter Net)";
+        MERKAVA_KZG(NET_WINTER)
+        factions[] = {};
+      };
     };
 };
 
@@ -142,6 +168,13 @@ class GCLASS(Merkava): B_MBT_01_cannon_F {
         textures[] = {\
           "\A3_Atlas\Armor_F_Atlas\MBT_01\Data\MBT_01_body_brown_CO.paa", \
           "\A3_Atlas\Armor_F_Atlas\MBT_01\Data\MBT_01_tow_brown_CO.paa", \
+          "a3\armor_f_epc\mbt_01\data\mbt_addons_co.paa",\
+          CAMONET\
+        };
+#define MERKAVA_TUSK_KZG(CAMONET) \
+        textures[] = {\
+          "\s\synixe_factions\addons\textures\data\Merkava\Merkava_body_KZG_CO.paa", \
+          "\s\synixe_factions\addons\textures\data\Merkava\Merkava_turret_KZG_CO.paa",\
           "a3\armor_f_epc\mbt_01\data\mbt_addons_co.paa",\
           CAMONET\
         };
@@ -235,6 +268,26 @@ class GCLASS(Merkava_TUSK): B_MBT_01_TUSK_F {
       class Brown_winter {
         displayName = "Brown (Winter Net)";
         MERKAVA_TUSK_BROWN(NET_WINTER)
+        factions[] = {};
+      };
+      class KZG_01 {
+        displayName = "Khaybaran (Desert Net)";
+        MERKAVA_TUSK_KZG(NET_DESERT)
+        factions[] = {};
+      };
+      class KZG_01_green {
+        displayName = "Khaybaran (Green Net)";
+        MERKAVA_TUSK_KZG(NET_GREEN)
+        factions[] = {};
+      };
+      class KZG_01_jungle {
+        displayName = "Khaybaran (Jungle Net)";
+        MERKAVA_TUSK_KZG(NET_JUNGLE)
+        factions[] = {};
+      };
+      class KZG_01_winter {
+        displayName = "Khaybaran (Winter Net)";
+        MERKAVA_TUSK_KZG(NET_WINTER)
         factions[] = {};
       };
 
