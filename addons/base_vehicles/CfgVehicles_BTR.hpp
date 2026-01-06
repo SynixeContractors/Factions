@@ -1,7 +1,5 @@
-class APC_Wheeled_04_base_F;
-class Aegis_O_A_APC_Wheeled_04_export_F: APC_Wheeled_04_base_F {
-    class EventHandlers;
-};
+ADD_CAMO_EVENT_HANDLER(Aegis_O_A_APC_Wheeled_04_export_F,APC_Wheeled_04_export_base_F);
+
 class GCLASS(BTR): Aegis_O_A_APC_Wheeled_04_export_F {
     displayName = "BTR-100A";
     faction = QGCLASS(base_vehicles);
@@ -170,9 +168,7 @@ class GCLASS(BTR): Aegis_O_A_APC_Wheeled_04_export_F {
         };
 };
 
-class O_R_APC_Wheeled_04_cannon_F: APC_Wheeled_04_base_F {
-    class EventHandlers;
-};
+ADD_CAMO_EVENT_HANDLER(O_R_APC_Wheeled_04_cannon_F,APC_Wheeled_04_base_F);
 class GCLASS(BTR_IFV): O_R_APC_Wheeled_04_cannon_F {
     displayName = "BTR-100K (Bumergang-BM)";
     faction = QGCLASS(base_vehicles);
