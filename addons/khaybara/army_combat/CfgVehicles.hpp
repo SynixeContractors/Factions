@@ -4,16 +4,17 @@ class CfgVehicles {
     #include "..\..\..\templates\statics\M2.hpp"
     #define TEMPLATE_CAMO Blufor
     #include "..\..\..\templates\cars\HEMTT.hpp"
-    #include "..\..\..\templates\cars\Fennek.hpp"
     #undef TEMPLATE_CAMO
     #define TEMPLATE_CAMO Karzeg_01
     #include "..\..\..\templates\apc\Pandur.hpp"
     #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO Sand
-    #include "..\..\..\templates\cars\Polaris.hpp"
-    #undef TEMPLATE_CAMO
     #define TEMPLATE_CAMO KZG_01
     #include "..\..\..\templates\tanks\Leopard.hpp"
+    #include "..\..\..\templates\tanks\Merkava.hpp"
+    #include "..\..\..\templates\tanks\Merkava_SPG.hpp"
+    #include "..\..\..\templates\apc\Namer.hpp"
+    #include "..\..\..\templates\cars\Fennek.hpp"
+    #include "..\..\..\templates\cars\Polaris.hpp"
     #include "..\..\..\templates\cars\Ram_Civilian.hpp"
     #include "..\..\..\templates\cars\Ram_Armed.hpp"
     #include "..\..\..\templates\cars\Ram_Advanced.hpp"
