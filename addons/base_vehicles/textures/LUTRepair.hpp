@@ -59,4 +59,14 @@ class TextureSources {
         textures[] = {"\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_kab_LDF_arid_CO.paa","\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_repair_LDF_arid_CO.paa","\A3\soft_f_Enoch\Truck_02\Data\Truck_02_int_EAF_co.paa","\A3\Soft_F_Beta\Truck_02\Data\Truck_02_chassis_CO.paa"};
         factions[] = {};
     };
+    class Jungle {
+        displayName = "Jungle";
+        textures[] = {
+          "\A3_Atlas\Soft_F_Atlas\Truck_02\Data\Truck_02_kab_Jungle_CO.paa",
+          "\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_repair_RUkhk_CO.paa",
+          "\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_int_RUKHK_CO.paa",
+          "\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_chassis_RUkhk_CO.paa",
+        };
+        factions[] = {};
+    };
 };

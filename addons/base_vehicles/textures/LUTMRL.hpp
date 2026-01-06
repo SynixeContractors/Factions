@@ -49,4 +49,15 @@ class TextureSources {
         textures[] = {"\A3_Atlas\Soft_F_Atlas\Truck_02\Data\Truck_02_kab_tk_CO.paa","\A3_Atlas\Soft_F_Atlas\Truck_02\Data\Truck_02_MLR_tk_CO.paa","\A3\Soft_F_Beta\Truck_02\Data\Truck_02_int_CO.paa","\A3\Soft_F_Beta\Truck_02\Data\Truck_02_chassis_OPFOR_CO.paa"};
         factions[] = {};
     };
+    class Jungle {
+        displayName = "Jungle";
+        textures[] = {
+          "\A3_Atlas\Soft_F_Atlas\Truck_02\Data\Truck_02_kab_Jungle_CO.paa",
+          "\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_int_RUKHK_CO.paa",
+          //TODO: add bespoke MRL texture
+          "\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_MRL_RUkhk_CO.paa",
+          "\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_chassis_RUkhk_CO.paa",
+        };
+        factions[] = {};
+    };
 };
