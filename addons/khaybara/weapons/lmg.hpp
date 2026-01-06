@@ -2,7 +2,7 @@
     "weapons": {
         "LMG_03_snd_F": {
             "probability": 1,
-            "magazinesVest": {
+            "magazinesBackpack": {
                 "200Rnd_556x45_Box_Tracer_Red_F": 4,
             },
         },

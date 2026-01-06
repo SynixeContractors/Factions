@@ -26,26 +26,9 @@ class CfgVehicles {
         editorSubcategory = QGCLASS(army_combat);
 
         #include "..\wear\uniform.hpp"
-
-        @Vests({
-            "variants": {
-                "Aegis_V_CarrierRigKBT_01_cqb_khk_F": 0.2,
-                "Aegis_V_CarrierRigKBT_01_tac_khk_F": 0.5,
-                "Aegis_V_CarrierRigKBT_01_recon_khk_F": 0.3,
-            },
-            "packs": [
-                "t2_standard",
-            ],
-        });
-
-        @Headgear({
-            "H_MK7_sand_F": 1,
-        });
-
-        @Facewear({
-            "": 1,
-        });
-
+        #include "..\wear\vest_army.hpp"
+        #include "..\wear\helmet.hpp"
+        #include "..\wear\facewear_army.hpp"
         @Assigned(Military);
     };
     class CLASS(Rifleman): CLASS(Base) {
@@ -59,11 +42,7 @@ class CfgVehicles {
     };
     class CLASS(RiflemanBackpack): CLASS(RiflemanCarabine) {
         @Role(Hidden);
-        @Backpacks({
-            "variants": {
-                "B_FieldPack_cbr": 1,
-            },
-        });
+        #include "..\wear\backpack.hpp"
     };
     class CLASS(TeamLeader): CLASS(RiflemanCarabine) {
         @Role(TeamLeader);
@@ -85,18 +64,11 @@ class CfgVehicles {
     };
     class CLASS(AsstMachinegunner): CLASS(RiflemanBackpack) {
         @Role(AsstMachinegunner);
-        #include "..\weapons\backpack_mg.hpp"
+        #include "..\wear\backpack_mg.hpp"
     };
     class CLASS(Medic): CLASS(RiflemanBackpack) {
         @Role(Medic);
-        @Backpacks({
-            "variants": {
-                "B_FieldPack_cbr": 1,
-            },
-            "packs": [
-                "t2_t3_medic",
-            ],
-        });
+        #include "..\wear\backpack_medic.hpp"
     };
     class CLASS(RiflemanMAT): CLASS(RiflemanBackpack) {
         @Role(RiflemanMAT);
@@ -112,39 +84,15 @@ class CfgVehicles {
     };
     class CLASS(Engineer): CLASS(RiflemanBackpack) {
         @Role(Engineer);
-        @Backpacks({
-            "variants": {
-                "B_FieldPack_cbr": 1,
-            },
-            "packs": [
-                "engineer",
-            ],
-        });
+        #include "..\wear\engineer.hpp"
     };
     class CLASS(RadioOperator): CLASS(RiflemanCarabine) {
         @Role(RadioOperator);
-        @Backpacks({
-            "variants": {
-                "B_RadioBag_01_coyote_F": 1,
-            },
-        });
+        #include "..\wear\backpack_radio.hpp"
     };
     class CLASS(Demolitions): CLASS(RiflemanBackpack) {
         @Role(Demolitions);
-        @Backpacks({
-            "variants": {
-                "B_FieldPack_cbr": 1,
-            },
-            "packs": [
-                "eod",
-                "demo",
-            ],
-        });
-        @Secondary({
-            "weapons": {
-                "ACE_VMH3": {},
-            },
-        });
+        #include "..\wear\demo.hpp"
     };
     class CLASS(Crewman): CLASS(RiflemanCarabine) {
         @Role(Crewman);
@@ -152,9 +100,7 @@ class CfgVehicles {
     };
     class CLASS(HeliPilot): CLASS(Crewman) {
         @Role(HeliPilot);
-        @Headgear({
-            "tacs_Helmet_PilotHeli_Tan": 1,
-        });
+        #include "..\wear\pilot.hpp"
     };
     class CLASS(Marksman): CLASS(Rifleman) {
         @Role(Marksman);

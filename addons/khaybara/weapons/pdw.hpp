@@ -3,7 +3,7 @@
         "SMG_03C_black": {
             "probability": 1,
             "magazinesVest": {
-                "SMG_03C_TR_black": 4,
+                "50Rnd_570x28_SMG_03": 3,
             },
         },    },
     "optics": {
