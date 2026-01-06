@@ -6,18 +6,20 @@ class CfgVehicles {
 
         #include "../wear/uniform_sof.hpp"
         #include "../wear/vest_sof.hpp"
-        #include "../wear/helmet_recon.hpp"
+        #include "../wear/helmet_sof.hpp"
         #include "../wear/facewear_recon.hpp"
         @Assigned(Military);
     };
     class CLASS(Rifleman): CLASS(Base) {
         @Role(Rifleman);
         #include "../weapons/rifle.hpp"
+        #include "../weapons/attachments_sof.hpp"
         #include "../weapons/launcher.hpp"
     };
     class CLASS(RiflemanCarabine): CLASS(Base) {
         @Role(Hidden);
         #include "../weapons/carabine.hpp"
+        #include "../weapons/attachments_sof.hpp"
     };
     class CLASS(RiflemanBackpack): CLASS(RiflemanCarabine) {
         @Role(Hidden);

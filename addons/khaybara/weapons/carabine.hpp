@@ -13,8 +13,4 @@
             },
         },
     },
-    "optics": {
-        "": 0.2,
-        "sma_spitfire_01_sc_black": 0.8,
-    },
 });
