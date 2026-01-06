@@ -17,8 +17,10 @@ class CfgVehicles {
     #include "../../../templates/cars/Ram_Civilian.hpp"
     #include "../../../templates/cars/Ram_Armed.hpp"
     #include "../../../templates/cars/Ram_Advanced.hpp"
+    #include "../../../templates/tanks/T14.hpp"
     #undef TEMPLATE_CAMO
     #define TEMPLATE_CAMO Green
+    //TODO: should probably have its own texture
     #include "../../../templates/cars/Offroad_Civilian.hpp"
     #include "../../../templates/cars/Offroad_AA.hpp"
     #include "../../../templates/cars/Offroad_Armed.hpp"
