@@ -7,7 +7,6 @@
             ["ACE_split", 2]
         ],
         "magazines": [
-            
             ["ACE_painkillers", 1]
         ]
     },
@@ -66,9 +65,14 @@
             ["ACE_painkillers", 1]
         ]
     },
+    "binoculars": {
+        "items": [
+            ["Binocular", 1]
+        ]
+    },
     "engineer": {
         "items": [
-            ["engineer", 1]
+            ["toolkit", 1]
         ]
     },
     "eod": {
@@ -83,6 +87,14 @@
         "magazines": [
             ["SatchelCharge_Remote_Mag", 1],
             ["DemoCharge_Remote_Mag", 2]
+        ]
+    },
+    "jtac": {
+        "items": [
+            ["Laserdesignator_04", 1],
+        ],
+        "magazines": [
+            ["Laserbatteries", 1],
         ]
     },
     "at_mine": {

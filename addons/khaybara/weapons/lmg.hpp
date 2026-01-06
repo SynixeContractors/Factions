@@ -2,9 +2,13 @@
     "weapons": {
         "LMG_03_snd_F": {
             "probability": 1,
-            "magazinesBackpack": {
-                "200Rnd_556x45_Box_Tracer_Red_F": 4,
+            "magazinesVest": {
+                "200Rnd_556x45_Box_Tracer_Red_F": 1,
             },
+            "magazinesBackpack": {
+                "200Rnd_556x45_Box_Tracer_Red_F": 3,
+            },
+
         },
     },
     "optics": {

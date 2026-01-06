@@ -3,7 +3,7 @@
         "Aegis_MMG_FNMAG_F": {
             "probability": 1,
             "magazinesVest": {
-                "Aegis_200Rnd_762x51_MAG_Red_F": 4,
+                "Aegis_200Rnd_762x51_MAG_Red_F": 2,
             },
         },
     },
