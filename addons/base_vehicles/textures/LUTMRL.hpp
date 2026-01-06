@@ -17,7 +17,7 @@ class TextureSources {
     class EAF {
         displayName = "LDF (Geo Woodland)";
         textures[] = {"\A3\soft_f_Enoch\Truck_02\Data\Truck_02_kab_EAF_co.paa","\A3\soft_f_Enoch\Truck_02\Data\Truck_02_int_EAF_co.paa","\A3\soft_f_Enoch\Truck_02\Data\Truck_02_mrl_EAF_co.paa","\A3\soft_f_Enoch\Truck_02\Data\truck_02_chassis_EAF_CO.paa"};
-        factions[] = {"IND_E_F"};
+        factions[] = {};
     };
     class Green {
         displayName = "Green";

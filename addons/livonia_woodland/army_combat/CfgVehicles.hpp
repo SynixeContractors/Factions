@@ -1,6 +1,30 @@
 class CfgVehicles {
-    #include "CfgVehicles_APC.hpp"
-    #include "CfgVehicles_Tank.hpp"
+    #define TEMPLATE_FACTION QPCLASS(t2_opfor)
+    #define TEMPLATE_SIDE 0
+    #include "../../../templates/statics/M2.hpp"
+    #define TEMPLATE_CAMO EAF_01
+    #include "../../../templates/apc/Badger.hpp"
+    #undef TEMPLATE_CAMO
+    #define TEMPLATE_CAMO EAF_01_woodland
+    #include "../../../templates/tanks/Leopard.hpp"
+    #undef TEMPLATE_CAMO
+    #define TEMPLATE_CAMO EAF
+    #include "../../../templates/cars/LUT_AA.hpp"
+    #include "../../../templates/cars/LUT_Ammo.hpp"
+    #include "../../../templates/cars/LUT_Cargo.hpp"
+    #include "../../../templates/cars/LUT_Fuel.hpp"
+    #include "../../../templates/cars/LUT_MRL.hpp"
+    #include "../../../templates/cars/LUT_Medical.hpp"
+    #include "../../../templates/cars/LUT_Repair.hpp"
+    #include "../../../templates/cars/LUT_Transport.hpp"
+
+    #include "../../../templates/cars/Offroad_Civilian.hpp"
+    #include "../../../templates/cars/Offroad_Armed.hpp"
+
+    #include "../../../templates/cars/Ram_Civilian.hpp"
+    #include "../../../templates/cars/Ram_Armed.hpp"
+    #include "../../../templates/cars/Ram_Advanced.hpp"
+
 
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {
