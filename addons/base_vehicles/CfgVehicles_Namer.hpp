@@ -30,7 +30,7 @@
         textures[] = {\
           "\s\synixe_factions\addons\textures\data\namer\Namer_body_KZG_CO.paa",\
           "\s\synixe_factions\addons\textures\data\merkava\Merkava_body_KZG_CO.paa",\
-          "\s\synixe_factions\addons\textures\data\namer\Turret_rcws.paa",\
+          "\s\synixe_factions\addons\textures\data\common\Turret_rcws_KZG_CO.paa",\
           CAMONET\
         };
 
@@ -266,7 +266,7 @@ class GCLASS(Namer_RCWS): B_APC_Tracked_01_rcws_F {
         textures[] = {\
           "\s\synixe_factions\addons\textures\data\namer\Namer_body_KZG_CO.paa",\
           "\s\synixe_factions\addons\textures\data\merkava\Merkava_body_KZG_CO.paa",\
-          "\s\synixe_factions\addons\textures\data\namer\Turret_rcws.paa",\
+          "\s\synixe_factions\addons\textures\data\common\Turret_rcws_KZG_CO.paa",\
           "\s\synixe_factions\addons\textures\data\namer\Namer_CEV_KZG_CO.paa",\
           CAMONET\
         };
