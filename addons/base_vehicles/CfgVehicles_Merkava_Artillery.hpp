@@ -30,7 +30,7 @@
         textures[] = {\
           "\s\synixe_factions\addons\textures\data\Merkava\Merkava_body_KZG_CO.paa", \
           "\s\synixe_factions\addons\textures\data\Merkava\Merkava_SPG_KZG_CO.paa",\
-          "A3\Data_F\Vehicles\Turret_CO.paa",\
+          "\s\synixe_factions\addons\textures\data\common\Turret_rcws_KZG_CO.paa",\
           CAMONET\
         };
 
