@@ -26,6 +26,13 @@
           "\A3_Atlas\Data_F_Atlas\Vehicles\Turret_brown_CO.paa",\
           CAMONET\
         };
+#define NAMER_KZG(CAMONET) \
+        textures[] = {\
+          "\s\synixe_factions\addons\textures\data\namer\Namer_body_KZG_CO.paa",\
+          "\s\synixe_factions\addons\textures\data\merkava\Merkava_body_KZG_CO.paa",\
+          "\s\synixe_factions\addons\textures\data\namer\Turret_rcws.paa",\
+          CAMONET\
+        };
 
 class MU_NATO_Panther_unarmed;
 class GCLASS(Namer): MU_NATO_Panther_unarmed {
@@ -115,6 +122,11 @@ class GCLASS(Namer): MU_NATO_Panther_unarmed {
       class Brown_winter {
         displayName = "Brown (Winter Net)";
         NAMER_BROWN(NET_WINTER)
+        factions[] = {};
+      };
+      class KZG_01 {
+        displayName = "Khaybaran (Winter Net)";
+        NAMER_KZG(NET_WINTER)
         factions[] = {};
       };
     };
@@ -210,6 +222,11 @@ class GCLASS(Namer_RCWS): B_APC_Tracked_01_rcws_F {
         NAMER_BROWN(NET_WINTER)
         factions[] = {};
       };
+      class KZG_01 {
+        displayName = "Khaybaran (Winter Net)";
+        NAMER_KZG(NET_WINTER)
+        factions[] = {};
+      };
     };
 };
 
@@ -245,7 +262,14 @@ class GCLASS(Namer_RCWS): B_APC_Tracked_01_rcws_F {
           "\A3_Atlas\Armor_F_Atlas\APC_Tracked_01\Data\APC_Tracked_01_CRV_brown_CO.paa",\
           CAMONET\
         };
-
+#define NAMER_CEV_KZG(CAMONET) \
+        textures[] = {\
+          "\s\synixe_factions\addons\textures\data\namer\Namer_body_KZG_CO.paa",\
+          "\s\synixe_factions\addons\textures\data\merkava\Merkava_body_KZG_CO.paa",\
+          "\s\synixe_factions\addons\textures\data\namer\Turret_rcws.paa",\
+          "\s\synixe_factions\addons\textures\data\namer\Namer_CEV_KZG_CO.paa",\
+          CAMONET\
+        };
 class B_APC_Tracked_01_CRV_F;
 class GCLASS(Namer_CEV): B_APC_Tracked_01_CRV_F {
     displayName = "Namer (CEV)";
@@ -336,6 +360,11 @@ class GCLASS(Namer_CEV): B_APC_Tracked_01_CRV_F {
         NAMER_CEV_BROWN(NET_WINTER)
         factions[] = {};
       };
+      class KZG_01 {
+        displayName = "Khaybaran (Winter Net)";
+        NAMER_CEV_KZG(NET_WINTER)
+        factions[] = {};
+      };
     };
 };
 
@@ -365,6 +394,13 @@ class GCLASS(Namer_CEV): B_APC_Tracked_01_CRV_F {
           "\A3_Atlas\Armor_F_Atlas\APC_Tracked_01\Data\APC_Tracked_01_body_CRV_brown_CO.paa",\
           "\A3_Atlas\Armor_F_Atlas\APC_Tracked_01\Data\MBT_01_body_brown_CO.paa",\
           "\A3_Atlas\Armor_F_Atlas\APC_Tracked_01\Data\APC_Tracked_01_AA_tower_brown_CO.paa",\
+          CAMONET\
+        };
+#define NAMER_AA_KZG(CAMONET) \
+        textures[] = {\
+          "\s\synixe_factions\addons\textures\data\namer\Namer_body_KZG_CO.paa",\
+          "\s\synixe_factions\addons\textures\data\merkava\Merkava_body_KZG_CO.paa",\
+          "\s\synixe_factions\addons\textures\data\namer\Namer_AA_KZG_CO.paa",\
           CAMONET\
         };
 
@@ -456,6 +492,11 @@ class GCLASS(Namer_AA): B_APC_Tracked_01_AA_F {
       class Brown_winter {
         displayName = "Brown (Winter Net)";
         NAMER_AA_BROWN(NET_WINTER)
+        factions[] = {};
+      };
+      class KZG_01 {
+        displayName = "Khaybaran (Winter Net)";
+        NAMER_AA_KZG(NET_WINTER)
         factions[] = {};
       };
     };
