@@ -1,9 +1,34 @@
 class CfgVehicles {
+    #define TEMPLATE_FACTION QPCLASS(t3_indep)
+    #define TEMPLATE_SIDE 2
+    #define TEMPLATE_CAMO HIMF
+    #include "../../../templates/apc/Otokar.hpp"
+    #include "../../../templates/planes/C130.hpp"
+    #include "../../../templates/planes/Cessna.hpp"
+    #undef TEMPLATE_CAMO
+    #define TEMPLATE_CAMO Jungle
+    #include "../../../templates/cars/LUT_AA.hpp"
+    #include "../../../templates/cars/LUT_Cargo.hpp"
+    #include "../../../templates/cars/LUT_Fuel.hpp"
+    #include "../../../templates/cars/LUT_Medical.hpp"
+    #include "../../../templates/cars/LUT_MRL.hpp"
+    #include "../../../templates/cars/LUT_Repair.hpp"
+    #include "../../../templates/cars/LUT_Transport.hpp"
+    #include "../../../templates/cars/Ram_Civilian.hpp"
+    #include "../../../templates/cars/Ram_Armed.hpp"
+    #include "../../../templates/cars/Ram_Advanced.hpp"
+    #undef TEMPLATE_CAMO
+    #define TEMPLATE_CAMO Green
+    //TODO: should probably have its own texture
+    #include "../../../templates/cars/Offroad_Civilian.hpp"
+    #include "../../../templates/cars/Offroad_AA.hpp"
+    #include "../../../templates/cars/Offroad_Armed.hpp"
+
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {
         displayName = "NGHI Base Army Combat";
         editorSubcategory = QGCLASS(army_combat);
-        
+
         @Uniforms({
             "variants": {
                 "Atlas_U_UniformBDU_02_HI_F": 1,
@@ -228,7 +253,7 @@ class CfgVehicles {
                 },
             },
         });
-        
+
         @Backpacks({
             "variants": {
                 "B_FieldPack_oli": 1,
@@ -358,7 +383,7 @@ class CfgVehicles {
         @Launchers({
             "weapons": {
                 "launch_O_Vorona_green_F": {
-                    "magazinesBackpack": { 
+                    "magazinesBackpack": {
                         "Vorona_HEAT": 2,
                     },
                 },
@@ -462,4 +487,3 @@ class CfgVehicles {
         });
     };
 };
-
