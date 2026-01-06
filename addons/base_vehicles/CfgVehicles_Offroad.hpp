@@ -51,6 +51,7 @@ class GCLASS(Offroad_Comms): GCLASS(Offroad) {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 80;
+    #include "racks\carcomms.hpp"
     class AnimationSources: AnimationSources {
         class HideAntennas: HideAntennas {
             initPhase = 0;

@@ -35,6 +35,7 @@ class GCLASS(Ram_AA): Pickup_01_aat_base_rf {
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
     ace_refuel_fuelCapacity = 98;
+    #include "racks\singlerack.hpp"
     #include "textures\Ram.hpp"
 };
 
@@ -45,6 +46,7 @@ class GCLASS(Ram_RCWS): Pickup_01_rcws_base_rf {
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
     ace_refuel_fuelCapacity = 98;
+    #include "racks\singlerack.hpp"
     #include "textures\Ram.hpp"
 };
 
@@ -65,6 +67,7 @@ class GCLASS(Ram_Comms): Pickup_comms_base_rf {
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
     ace_refuel_fuelCapacity = 98;
+    #include "racks\carcomms.hpp"
     #include "textures\Ram.hpp"
 };
 
@@ -75,6 +78,7 @@ class GCLASS(Ram_MRL): Pickup_01_mrl_base_rf {
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
     ace_refuel_fuelCapacity = 98;
+    #include "racks\singlerack.hpp"
     #include "textures\Ram.hpp"
 };
 
@@ -105,6 +109,7 @@ class GCLASS(Ram_AT): Aegis_Pickup_01_AT_base_RF {
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
     ace_refuel_fuelCapacity = 98;
+    #include "racks\singlerack.hpp"
     #include "textures\Ram.hpp"
 };
 
