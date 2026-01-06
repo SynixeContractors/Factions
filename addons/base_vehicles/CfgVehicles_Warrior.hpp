@@ -1,4 +1,4 @@
-class I_APC_tracked_03_cannon_v2_F;
+ADD_CAMO_EVENT_HANDLER(I_APC_tracked_03_cannon_v2_F,APC_Tracked_03_base_v2_F);
 class GCLASS(Warrior): I_APC_tracked_03_cannon_v2_F {
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
@@ -7,6 +7,7 @@ class GCLASS(Warrior): I_APC_tracked_03_cannon_v2_F {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 190;
+    #include "eventhandler_camo.hpp"
     class TextureSources {
         class Indep_01 {
             displayName = "DAP Green";

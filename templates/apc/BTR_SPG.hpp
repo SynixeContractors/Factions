@@ -1,0 +1,9 @@
+class GCLASS(BTR_SPG);
+class CLASS(BTR_SPG): GCLASS(BTR_SPG) {
+    SCOPE_DLC;
+    faction = TEMPLATE_FACTION;
+    side = TEMPLATE_SIDE;
+    crew = QCLASS(Crewman);
+    typicalCargo[] = {QCLASS(Crewman)};
+    textureList[] = {QUOTE(TEMPLATE_CAMO),1};
+};
