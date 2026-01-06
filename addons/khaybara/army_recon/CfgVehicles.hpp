@@ -13,7 +13,7 @@ class CfgVehicles {
     class CLASS(Rifleman): CLASS(Base) {
         @Role(Rifleman);
         #include "../weapons/rifle.hpp"
-        #include "../weapons/launcher.hpp"
+        #include "../weapons/launcher_light.hpp"
         #include "../weapons/attachments_army.hpp"
     };
     class CLASS(RiflemanCarabine): CLASS(Base) {

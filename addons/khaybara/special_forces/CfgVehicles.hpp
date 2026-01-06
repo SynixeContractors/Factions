@@ -14,7 +14,7 @@ class CfgVehicles {
         @Role(Rifleman);
         #include "../weapons/rifle.hpp"
         #include "../weapons/attachments_sof.hpp"
-        #include "../weapons/launcher.hpp"
+        #include "../weapons/launcher_light.hpp"
     };
     class CLASS(RiflemanCarabine): CLASS(Base) {
         @Role(Hidden);
