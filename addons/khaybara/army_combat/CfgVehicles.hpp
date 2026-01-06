@@ -2,9 +2,6 @@ class CfgVehicles {
     #define TEMPLATE_FACTION QPCLASS(t2_blufor)
     #define TEMPLATE_SIDE 1
     #include "..\..\..\templates\statics\M2.hpp"
-    #define TEMPLATE_CAMO Blufor
-    #include "..\..\..\templates\cars\HEMTT.hpp"
-    #undef TEMPLATE_CAMO
     #define TEMPLATE_CAMO Karzeg_01
     #include "..\..\..\templates\apc\Pandur.hpp"
     #undef TEMPLATE_CAMO
@@ -21,6 +18,7 @@ class CfgVehicles {
     #undef TEMPLATE_CAMO
     #define TEMPLATE_CAMO KZG
     #include "..\..\..\templates\cars\Offroad_Civilian.hpp"
+    #include "..\..\..\templates\cars\HEMTT.hpp"
 
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {
