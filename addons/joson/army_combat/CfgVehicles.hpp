@@ -6,6 +6,8 @@ class CfgVehicles {
     #include "../../../templates/cars/Fennek.hpp"
     #include "../../../templates/cars/Typhoon.hpp"
     #include "../../../templates/cars/LSV.hpp"
+    #include "../../../templates/planes/C130.hpp"
+    #include "../../../templates/apc/Otokar.hpp"
     #undef TEMPLATE_CAMO
     #define TEMPLATE_CAMO Maze_jungle
     #include "../../../templates/tanks/T100.hpp"

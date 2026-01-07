@@ -143,4 +143,15 @@
         };
         factions[] = {};
       };
+      class Maze {
+        displayName = "Maze";
+        textures[] = {
+          "\s\synixe_factions\addons\textures\data\otokar\otokar_01_JSN_CO.paa",
+          "\A3_Aegis\Armor_F_Aegis\APC_Wheeled_02\Data\APC_Wheeled_02_ext_02_RUkhk_CO.paa",
+          "\A3_Atlas\Armor_F_Atlas\APC_Wheeled_02\data\apc_wheeled_02_adds_01_HIMF_CO.paa",
+          NET_GREEN,
+          "\A3_Aegis\Armor_F_Aegis\Data\cage_RUkhk_CO.paa"
+        };
+        factions[] = {};
+      };
     };
