@@ -97,7 +97,7 @@ class GCLASS(MD500): C_Heli_Light_01_civil_F {
 
 class B_Heli_Light_01_F;
 class GCLASS(MD500E): B_Heli_Light_01_F {
-    displayName ="MD 500E";
+    displayName ="MD 500E (MH-6) Little Bird";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
@@ -145,7 +145,7 @@ class GCLASS(MD500E): B_Heli_Light_01_F {
 
 class B_Heli_Light_01_dynamicLoadout_F;
 class GCLASS(MD500E_Armed): B_Heli_Light_01_dynamicLoadout_F {
-    displayName ="MD 500E (Armed)";
+    displayName ="MD 500E (AH-6) Little Bird";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;

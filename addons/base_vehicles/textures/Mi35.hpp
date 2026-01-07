@@ -9,7 +9,7 @@ class TextureSources {
     factions[] = {};
   };
   class SFIA {
-    displayName = "SFIA";
+    displayName = "Mudwalker";
     textures[] = {
       "\A3_Aegis\air_f_Aegis\Heli_Attack_04\Data\Skins\Heli_Attack_04_ext_01_SFIA_CO.paa",
       "\A3_Aegis\air_f_Aegis\Heli_Attack_04\Data\Skins\Heli_Attack_04_ext_02_SFIA_CO.paa",
@@ -18,7 +18,7 @@ class TextureSources {
     factions[] = {};
   };
   class ION_lxWS {
-    displayName = "ION (Black)";
+    displayName = "Black (ION)";
     textures[] = {
       "\A3_Aegis\air_f_Aegis\Heli_Attack_04\Data\Skins\Heli_Attack_04_ext_01_ION_CO.paa",
       "\A3_Aegis\air_f_Aegis\Heli_Attack_04\Data\Heli_Attack_04_ext_02_black_CO.paa",
@@ -45,7 +45,7 @@ class TextureSources {
     factions[] = {};
   };
   class GreenHex {
-    displayName = "Green Hex";
+    displayName = "Hex Green";
     textures[] = {
       "\A3_Aegis\air_f_Aegis\Heli_Attack_04\Data\Skins\Heli_Attack_04_ext_01_GHEX_CO.paa",
       "\A3_Aegis\air_f_Aegis\Heli_Attack_04\Data\Skins\Heli_Attack_04_ext_02_GHEX_CO.paa",
@@ -54,7 +54,7 @@ class TextureSources {
     factions[] = {};
   };
   class Hex {
-    displayName = "Hex";
+    displayName = "Hex Ochre";
     textures[] = {
       "\A3_Aegis\air_f_Aegis\Heli_Attack_04\Data\Skins\Heli_Attack_04_ext_01_HEX_CO.paa",
       "\A3_Aegis\air_f_Aegis\Heli_Attack_04\Data\Skins\Heli_Attack_04_ext_02_HEX_CO.paa",
@@ -63,7 +63,7 @@ class TextureSources {
     factions[] = {};
   };
   class Russian {
-    displayName = "Black (Star)";
+    displayName = "Black (Star Roundel)";
     textures[] = {
       "\A3_Aegis\air_f_Aegis\Heli_Attack_04\Data\Skins\Heli_Attack_04_ext_01_RUS_CO.paa",
       "\A3_Aegis\air_f_Aegis\Heli_Attack_04\Data\Heli_Attack_04_ext_02_Black_CO.paa",
@@ -71,17 +71,17 @@ class TextureSources {
     };
     factions[] = {};
   };
-  class Russian2 {
-    displayName = "Black (Star,Flag)";
-    textures[] = {
-      "\A3_Aegis\air_f_Aegis\Heli_Attack_04\Data\Skins\Heli_Attack_04_ext_01_RUS_CO.paa",
-      "\A3_Aegis\air_f_Aegis\Heli_Attack_04\Data\Skins\Heli_Attack_04_ext_02_RUS_CO.paa",
-      "\A3_Aegis\air_f_Aegis\Heli_Attack_04\Data\Skins\Heli_Attack_04_ext_03_RUS_CO.paa"
-    };
-    factions[] = {};
-  };
+  // class Russian2 {
+  //   displayName = "Black (Star,Flag)";
+  //   textures[] = {
+  //     "\A3_Aegis\air_f_Aegis\Heli_Attack_04\Data\Skins\Heli_Attack_04_ext_01_RUS_CO.paa",
+  //     "\A3_Aegis\air_f_Aegis\Heli_Attack_04\Data\Skins\Heli_Attack_04_ext_02_RUS_CO.paa",
+  //     "\A3_Aegis\air_f_Aegis\Heli_Attack_04\Data\Skins\Heli_Attack_04_ext_03_RUS_CO.paa"
+  //   };
+  //   factions[] = {};
+  // };
   class RussianGreen {
-    displayName = "Green (Star)";
+    displayName = "Green (Star Roundel)";
     textures[] = {
       "\A3_Aegis\air_f_Aegis\Heli_Attack_04\Data\Skins\Heli_Attack_04_ext_01_RUS_grn_CO.paa",
       "\A3_Aegis\air_f_Aegis\Heli_Attack_04\Data\Skins\Heli_Attack_04_ext_02_grn_CO.paa",
@@ -90,7 +90,7 @@ class TextureSources {
     factions[] = {};
   };
   class EAF {
-    displayName = "LDF";
+    displayName = "LDF (Geo Woodland)";
     author = "Bran Flakes";
     textures[] = {
       "\A3_Aegis\air_f_Aegis\Heli_Attack_04\Data\Skins\Heli_Attack_04_ext_01_LDF_CO.paa",
@@ -110,7 +110,7 @@ class TextureSources {
     factions[] = {};
   };
   class UNO {
-    displayName = "UNO";
+    displayName = "United Nations";
     textures[] = {
       "\A3_Atlas\Air_F_Atlas\Heli_Attack_04\Data\Heli_Attack_04_ext_01_UN_CO.paa",
       "\A3_Atlas\Air_F_Atlas\Heli_Attack_04\Data\Heli_Attack_04_ext_02_UN_CO.paa",
@@ -119,7 +119,7 @@ class TextureSources {
     faction[] = {};
   };
   class WoodlandHex {
-    displayName = "Woodland Hex";
+    displayName = "Hex Woodland";
     textures[] = {
       "\A3_Atlas\Air_F_Atlas\Heli_Attack_04\Data\Heli_Attack_04_ext_01_WHEX_CO.paa",
       "\A3_Atlas\Air_F_Atlas\Heli_Attack_04\Data\Heli_Attack_04_ext_02_WHEX_CO.paa",
@@ -128,7 +128,7 @@ class TextureSources {
     faction[] = {};
   };
   class Takistan {
-    displayName = "Semi-Arid Hex";
+    displayName = "Hex Mixed";
     textures[] = {
       "\A3_Atlas\Air_F_Atlas\Heli_Attack_04\Data\Heli_Attack_04_ext_01_TK_CO.paa",
       "\A3_Atlas\Air_F_Atlas\Heli_Attack_04\Data\Heli_Attack_04_ext_02_TK_CO.paa",
@@ -146,7 +146,7 @@ class TextureSources {
     faction[] = {};
   };
   class Sep_01 {
-    displayName = "Separatist 01";
+    displayName = "Separatist";
     textures[] = {
       "\A3_Opf\air_f_Opf\Heli_Attack_04\Data\Heli_Attack_04_ext_01_CHKDZ_CO.paa",
       "\A3_Opf\air_f_Opf\Heli_Attack_04\Data\Heli_Attack_04_ext_02_CHKDZ_CO.paa",
