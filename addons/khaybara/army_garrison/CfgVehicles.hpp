@@ -28,7 +28,7 @@ class CfgVehicles {
     class CLASS(TeamLeader): CLASS(RiflemanCarabine) {
         @Role(TeamLeader);
     };
-    class CLASS(Autorifleman): CLASS(Rifleman) {
+    class CLASS(Autorifleman): CLASS(RiflemanBackpack) {
         @Role(Autorifleman);
         #include "../weapons/lmg.hpp"
     };
