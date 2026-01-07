@@ -10,37 +10,6 @@ class CfgVehicles {
     #include "CfgVehicles_Cars.hpp"
     #include "CfgVehicles_APC.hpp"
 
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO Digital
-    #include "../../../templates/helicopters/MD500_Civilian.hpp"
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO Desert
-    #include "../../../templates/helicopters/MD500_Military.hpp"
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO Black
-    #include "../../../templates/helicopters/Mohawk_Civilian.hpp"
-    #include "../../../templates/helicopters/Mohawk_Military.hpp"
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO Ardistan
-    #include "../../../templates/helicopters/Orca_Civilian.hpp"
-    #include "../../../templates/helicopters/Orca_Military.hpp"
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO EAF_arid
-    #include "../../../templates/helicopters/Puma_Military.hpp"
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO GreenHex
-    #include "../../../templates/helicopters/Mi35.hpp"
-    #include "../../../templates/helicopters/Ka54.hpp"
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO Black
-    #include "../../../templates/helicopters/Chinook.hpp"
-    #include "../../../templates/helicopters/Ghosthawk.hpp"
-    #include "../../../templates/helicopters/Apache.hpp"
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO KZG
-    #include "../../../templates/helicopters/Wildcat.hpp"
-
-
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {
         displayName = "Luban Base Army Combat";
