@@ -22,7 +22,7 @@ class TextureSources {
     factions[] = {};
   };
   class GreenHex {
-    displayName = "Hex Woodland";
+    displayName = "Hex Green";
     textures[] = {
       "\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_kab_ghex_CO.paa",
       "\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_cargo_ghex_CO.paa",
@@ -209,7 +209,7 @@ class TextureSources {
     factions[] = {};
   };
   class WoodlandHex {
-    displayName = "Hex Green";
+    displayName = "Hex Woodland";
     textures[] = {
       "\A3_Atlas\Soft_F_Atlas\Truck_02\Data\Truck_02_kab_WHex_CO.paa",
       "\A3_Atlas\Soft_F_Atlas\Truck_02\Data\Truck_02_kuz_Whex_CO.paa",

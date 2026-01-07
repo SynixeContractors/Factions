@@ -140,7 +140,7 @@ class TextureSources {
     };
   };
   class Sep_01 {
-    displayName = "Sepia 01";
+    displayName = "Separatist";
     factions[] = {};
     textures[] = {
       "\A3_Opf\Soft_F_Opf\Truck_02\Data\Truck_02_kab_Sep_CO.paa",
