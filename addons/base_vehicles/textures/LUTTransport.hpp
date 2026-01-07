@@ -79,7 +79,7 @@ class TextureSources {
       "\A3\Soft_F_Beta\Truck_02\Data\Truck_02_chassis_CO.paa"
     };
   };
-  class AAF {
+  class Indep {
     displayName = "DAP Green";
     factions[] = {};
     textures[] = {
@@ -109,7 +109,7 @@ class TextureSources {
       "\A3\Soft_F_Beta\Truck_02\Data\Truck_02_chassis_INDP_CO.paa"
     };
   };
-  class Hex {
+  class Opfor {
     displayName = "Hex Ochre";
     factions[] = {};
     textures[] = {
@@ -149,7 +149,7 @@ class TextureSources {
       "\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_chassis_RUkhk_CO.paa"
     };
   };
-  class Mudwalker {
+  class SFIA {
     displayName = "Mudwalker";
     factions[] = {};
     textures[] = {
@@ -159,7 +159,7 @@ class TextureSources {
       "\A3\Soft_F_Beta\Truck_02\Data\Truck_02_chassis_OPFOR_CO.paa"
     };
   };
-  class HexMixed {
+  class Takistan {
     displayName = "Hex Mixed";
     factions[] = {};
     textures[] = {
