@@ -89,6 +89,15 @@ class GCLASS(Typhoon_Fuel): O_Truck_03_fuel_F {
             };
             factions[] = {};
         };
+        class Maze {
+            displayName = "Maze";
+            textures[] = {
+                "\s\synixe_factions\addons\textures\data\typhoon\typhoon_01_JSN_CO.paa",
+                "\s\synixe_factions\addons\textures\data\typhoon\typhoon_02_JSN_CO.paa",
+                "\s\synixe_factions\addons\textures\data\typhoon\typhoon_cargo_JSN_CO.paa",
+            };
+            factions[] = {};
+        };
     };
 };
 
@@ -149,6 +158,16 @@ class GCLASS(Typhoon_Ammo): O_Truck_03_ammo_F {
                 "\A3_Atlas\Soft_F_Atlas\Truck_03\Data\Truck_03_ext02_whex_CO.paa",
                 "\A3_Atlas\Soft_F_Atlas\Truck_03\Data\Truck_03_cargo_whex_CO.paa",
                 "\A3_Aegis\Soft_F_Aegis\Truck_03\Data\Containers_02_set_ghex_CO.paa"
+            };
+            factions[] = {};
+        };
+        class Maze {
+            displayName = "Maze";
+            textures[] = {
+                "\s\synixe_factions\addons\textures\data\typhoon\typhoon_01_JSN_CO.paa",
+                "\s\synixe_factions\addons\textures\data\typhoon\typhoon_02_JSN_CO.paa",
+                "\s\synixe_factions\addons\textures\data\typhoon\typhoon_cargo_JSN_CO.paa",
+                "\A3_Aegis\Soft_F_Aegis\Truck_03\Data\Containers_02_set_RUkhk_CO.paa"
             };
             factions[] = {};
         };
@@ -234,5 +253,15 @@ class GCLASS(Typhoon_Repair): O_Truck_03_repair_F {
             };
             factions[] = {};
         };
+        class Maze {
+            displayName = "Maze";
+            textures[] = {
+                "\s\synixe_factions\addons\textures\data\typhoon\typhoon_01_JSN_CO.paa",
+                "\s\synixe_factions\addons\textures\data\typhoon\typhoon_02_JSN_CO.paa",
+                "\s\synixe_factions\addons\textures\data\typhoon\typhoon_ammo_JSN_CO.paa",
+            };
+            factions[] = {};
+        };
+
     };
 };
