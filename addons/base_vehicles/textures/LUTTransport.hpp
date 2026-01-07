@@ -80,7 +80,7 @@ class TextureSources {
     };
   };
   class AAF {
-    displayName = "AAF";
+    displayName = "DAP Green";
     factions[] = {};
     textures[] = {
       "\A3\Soft_F_Beta\Truck_02\Data\Truck_02_kab_INDP_CO.paa",
@@ -187,6 +187,16 @@ class TextureSources {
       "\A3_Atlas\Soft_F_Atlas\Truck_02\Data\Truck_02_kuz_Whex_CO.paa",
       "\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_int_RUKHK_CO.paa",
       "\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_chassis_RUkhk_CO.paa"
+    };
+  };
+  class Brown {
+    displayName = "Brown";
+    factions[] = {};
+    textures[] = {
+      "lxws\vehicles_f_lxws\data\Truck_02\Truck_02_kab_brown_CO.paa",
+      "\lxws\vehicles_f_lxws\data\Truck_02\truck_02_kuz_africa_brown_CO.paa",
+      "\a3\soft_f_beta\truck_02\data\truck_02_int_co.paa",
+      "\A3\Soft_F_Beta\Truck_02\Data\Truck_02_chassis_CO.paa",
     };
   };
 };
