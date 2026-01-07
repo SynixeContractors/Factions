@@ -1,9 +1,14 @@
 class CfgVehicles {
-    #define TEMPLATE_FACTION QPCLASS(t3_indep)
-    #define TEMPLATE_SIDE 2
+    #define TEMPLATE_FACTION QPCLASS(t4_opfor)
+    #define TEMPLATE_SIDE 0
     #include "../../../templates/statics/M2.hpp"
-    #define TEMPLATE_CAMO Insurgent_06
+    #define TEMPLATE_CAMO Guerilla_12
     #include "../../../templates/cars/Offroad_Civilian.hpp"
+    #include "../../../templates/cars/Offroad_Armed.hpp"
+    #include "../../../templates/cars/Offroad_Armor.hpp"
+    #include "../../../templates/cars/Offroad_AA.hpp"
+    #include "../../../templates/cars/Offroad_Armor_AA.hpp"
+
 
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {
@@ -11,65 +16,63 @@ class CfgVehicles {
         editorSubcategory = QGCLASS(army_combat);
 
         #include "../wear/uniform.hpp"
-        #include "../wear/vest_reserve.hpp"
+        #include "../../luba/wear/vest_reserve.hpp"
         #include "../wear/helmet.hpp"
         #include "../wear/facewear_army.hpp"
         @Assigned(Military);
     };
     class CLASS(Rifleman): CLASS(Base) {
         @Role(Rifleman);
-        #include "../weapons/rifle.hpp"
-        #include "../weapons/launcher_reserve.hpp"
-        #include "../weapons/attachments_reserve.hpp"
+        #include "../../luba/weapons/rifle.hpp"
+        #include "../../luba/weapons/launcher_reserve.hpp"
     };
     class CLASS(RiflemanCarabine): CLASS(Base) {
         @Role(Hidden);
-        #include "../weapons/carabine.hpp"
-        #include "../weapons/attachments_reserve.hpp"
+        #include "../../luba/weapons/carabine.hpp"
+        #include "../../luba/weapons/attachments_reserve.hpp"
     };
     class CLASS(RiflemanBackpack): CLASS(RiflemanCarabine) {
         @Role(Hidden);
-        #include "../wear/backpack.hpp"
+        #include "../../luba/wear/backpack.hpp"
     };
     class CLASS(TeamLeader): CLASS(RiflemanCarabine) {
         @Role(TeamLeader);
-        #include "../weapons/pistol.hpp"
     };
     class CLASS(SquadLeader): CLASS(TeamLeader) {
         @Role(SquadLeader);
-        #include "../weapons/gl.hpp"
+        #include "../../luba/weapons/gl.hpp"
     };
     class CLASS(Autorifleman): CLASS(RiflemanBackpack) {
         @Role(Autorifleman);
-        #include "../weapons/lmg.hpp"
+        #include "../../luba/weapons/lmg.hpp"
     };
     class CLASS(Medic): CLASS(RiflemanBackpack) {
         @Role(Medic);
-        #include "../wear/backpack_medic.hpp"
+        #include "../../luba/wear/backpack_medic.hpp"
     };
     class CLASS(RiflemanMAT): CLASS(RiflemanBackpack) {
         @Role(RiflemanMAT);
-        #include "../weapons/mat.hpp"
+        #include "../../luba/weapons/mat.hpp"
     };
     class CLASS(Engineer): CLASS(RiflemanBackpack) {
         @Role(Engineer);
-        #include "../wear/engineer.hpp"
+        #include "../../luba/wear/engineer.hpp"
     };
     class CLASS(RadioOperator): CLASS(RiflemanCarabine) {
         @Role(RadioOperator);
-        #include "../wear/backpack_radio.hpp"
+        #include "../../luba/wear/backpack_radio.hpp"
     };
     class CLASS(Demolitions): CLASS(RiflemanBackpack) {
         @Role(Demolitions);
-        #include "../wear/demo.hpp"
+        #include "../../luba/wear/demo.hpp"
     };
     class CLASS(Crewman): CLASS(RiflemanCarabine) {
         @Role(Crewman);
-        #include "../weapons/pdw.hpp"
+        #include "../../luba/weapons/pdw.hpp"
     };
     class CLASS(Marksman): CLASS(Rifleman) {
         @Role(Marksman);
-        #include "../weapons/marksman.hpp"
-        #include "../weapons/pistol.hpp"
+        #include "../../luba/weapons/marksman.hpp"
+        #include "../../luba/weapons/pistol.hpp"
     };
 };
