@@ -98,8 +98,8 @@ class TextureSources {
     };
     factions[] = {};
   };
-  class Green {
-    displayName = "Green";
+  class Lime {
+    displayName = "Lime";
     textures[] = {
       "\lxws\vehicles_f_lxws\data\Truck_02\Truck_02_kab_lime_CO.paa",
       "\lxws\vehicles_f_lxws\Truck_02\data\truck_02_cargo_olive_CO.paa",
@@ -164,8 +164,8 @@ class TextureSources {
     };
     factions[] = {};
   };
-  class RUS {
-    displayName = "Olive";
+  class Green {
+    displayName = "Green";
     textures[] = {
       "\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_kab_RUkhk_CO.paa",
       "\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_cargo_RUkhk_CO.paa",
