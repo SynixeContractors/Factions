@@ -11,11 +11,13 @@ class CfgVehicles {
     #include "CfgVehicles_APC.hpp"
 
     #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO Desert
+    #define TEMPLATE_CAMO Digital
     #include "../../../templates/helicopters/MD500_Civilian.hpp"
+    #undef TEMPLATE_CAMO
+    #define TEMPLATE_CAMO Desert
     #include "../../../templates/helicopters/MD500_Military.hpp"
     #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO ION
+    #define TEMPLATE_CAMO Black
     #include "../../../templates/helicopters/Mohawk_Civilian.hpp"
     #include "../../../templates/helicopters/Mohawk_Military.hpp"
     #undef TEMPLATE_CAMO
@@ -30,7 +32,7 @@ class CfgVehicles {
     #include "../../../templates/helicopters/Mi35.hpp"
     #include "../../../templates/helicopters/Ka54.hpp"
     #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO Sand
+    #define TEMPLATE_CAMO Black
     #include "../../../templates/helicopters/Chinook.hpp"
     #include "../../../templates/helicopters/Ghosthawk.hpp"
     #include "../../../templates/helicopters/Apache.hpp"

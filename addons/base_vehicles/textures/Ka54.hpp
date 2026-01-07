@@ -16,7 +16,7 @@ class TextureSources
     };
     factions[] = {};
   };
-  class GreenHex{
+  class GreenHex {
     displayName = "Hex Green";
     textures[] = {
       "\A3_Aegis\Air_F_Aegis\Heli_Attack_02\Data\Heli_Attack_02_body1_ghex_CO.paa",
