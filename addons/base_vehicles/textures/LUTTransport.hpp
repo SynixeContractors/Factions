@@ -219,7 +219,7 @@ class TextureSources {
       "\A3\Soft_F_Beta\Truck_02\Data\Truck_02_chassis_CO.paa",
     };
   };
-    class Lime {
+  class Lime {
     displayName = "Lime";
     factions[] = {};
     textures[] = {
