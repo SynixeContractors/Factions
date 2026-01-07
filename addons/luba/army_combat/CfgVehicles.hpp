@@ -1,12 +1,16 @@
 class CfgVehicles {
     #define TEMPLATE_FACTION QPCLASS(t3_indep)
     #define TEMPLATE_SIDE 2
-    #include "..\..\..\templates\statics\M2.hpp"
+    #include "../../../templates/statics/M2.hpp"
     #define TEMPLATE_CAMO Desert
-    #include "..\..\..\templates\cars\LSV.hpp"
+    #include "../../../templates/cars/LSV.hpp"
     #undef  TEMPLATE_CAMO
     #define TEMPLATE_CAMO Blufor
-    #include "..\..\..\templates\cars\HEMTT.hpp"
+    #include "../../../templates/cars/HEMTT.hpp"
+    #undef  TEMPLATE_CAMO
+    #define TEMPLATE_CAMO Guerrilla_04
+    #include "../../../templates/apc/BTR.hpp"
+    #include "../../../templates/apc/BTR_IFV.hpp"
 
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {
