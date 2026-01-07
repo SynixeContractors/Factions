@@ -1,120 +1,132 @@
 class TextureSources {
-    class Indep {
-        displayName = "DAP Green";
-        textures[] = {"\A3\Soft_F_Beta\Truck_02\Data\Truck_02_kab_INDP_CO.paa",
-"\A3\Soft_F_Beta\Truck_02\Data\Truck_02_repair_INDP_CO.paa",
-"\A3\Soft_F_Beta\Truck_02\Data\Truck_02_int_CO.paa",
-"\A3\Soft_F_Beta\Truck_02\Data\Truck_02_chassis_INDP_CO.paa"
-};
-        factions[] = {};
+  class Indep {
+    displayName = "DAP Green";
+    textures[] = {
+      "\A3\Soft_F_Beta\Truck_02\Data\Truck_02_kab_INDP_CO.paa",
+      "\A3\Soft_F_Beta\Truck_02\Data\Truck_02_repair_INDP_CO.paa",
+      "\A3\Soft_F_Beta\Truck_02\Data\Truck_02_int_CO.paa",
+      "\A3\Soft_F_Beta\Truck_02\Data\Truck_02_chassis_INDP_CO.paa"
     };
-    class Opfor {
-        displayName = "Hex Ochre";
-        textures[] = {"\A3\Soft_F_Beta\Truck_02\Data\Truck_02_kab_OPFOR_CO.paa",
-"\A3\Soft_F_Beta\Truck_02\Data\Truck_02_repair_OPFOR_CO.paa",
-"\A3\Soft_F_Beta\Truck_02\Data\Truck_02_int_CO.paa",
-"\A3\Soft_F_Beta\Truck_02\Data\Truck_02_chassis_OPFOR_CO.paa"
-};
-        factions[] = {};
+    factions[] = {};
+  };
+  class Opfor {
+    displayName = "Hex Ochre";
+    textures[] = {
+      "\A3\Soft_F_Beta\Truck_02\Data\Truck_02_kab_OPFOR_CO.paa",
+      "\A3\Soft_F_Beta\Truck_02\Data\Truck_02_repair_OPFOR_CO.paa",
+      "\A3\Soft_F_Beta\Truck_02\Data\Truck_02_int_CO.paa",
+      "\A3\Soft_F_Beta\Truck_02\Data\Truck_02_chassis_OPFOR_CO.paa"
     };
-    class OrangeOrange {
-        displayName = "Orange";
-        textures[] = {"\A3\Soft_F_Beta\Truck_02\Data\Truck_02_kab_CO.paa",
-"\A3\Soft_F_Beta\Truck_02\Data\Truck_02_repair_CO.paa",
-"\A3\Soft_F_Beta\Truck_02\Data\Truck_02_int_CO.paa",
-"\A3\Soft_F_Beta\Truck_02\Data\Truck_02_chassis_CO.paa"
-};
-        factions[] = {};
+    factions[] = {};
+  };
+  class OrangeOrange {
+    displayName = "Orange";
+    textures[] = {
+      "\A3\Soft_F_Beta\Truck_02\Data\Truck_02_kab_CO.paa",
+      "\A3\Soft_F_Beta\Truck_02\Data\Truck_02_repair_CO.paa",
+      "\A3\Soft_F_Beta\Truck_02\Data\Truck_02_int_CO.paa",
+      "\A3\Soft_F_Beta\Truck_02\Data\Truck_02_chassis_CO.paa"
     };
-    class OrangeGreen {
-        displayName = "Orange Green";
-        textures[] = {"\A3\Soft_F_Beta\Truck_02\Data\Truck_02_kab_CO.paa",
-"\A3\Soft_F_Beta\Truck_02\Data\Truck_02_repair_green_CO.paa",
-"\A3\Soft_F_Beta\Truck_02\Data\Truck_02_int_CO.paa",
-"\A3\Soft_F_Beta\Truck_02\Data\Truck_02_chassis_CO.paa"
-};
-        factions[] = {};
+    factions[] = {};
+  };
+  class OrangeGreen {
+    displayName = "Orange Green";
+    textures[] = {
+      "\A3\Soft_F_Beta\Truck_02\Data\Truck_02_kab_CO.paa",
+      "\A3\Soft_F_Beta\Truck_02\Data\Truck_02_repair_green_CO.paa",
+      "\A3\Soft_F_Beta\Truck_02\Data\Truck_02_int_CO.paa",
+      "\A3\Soft_F_Beta\Truck_02\Data\Truck_02_chassis_CO.paa"
     };
-    class BlueOrange {
-        displayName = "Blue Orange";
-        textures[] = {"\A3\Soft_F_Beta\Truck_02\Data\Truck_02_kab_blue_CO.paa",
-"\A3\Soft_F_Beta\Truck_02\Data\Truck_02_repair_CO.paa",
-"\A3\Soft_F_Beta\Truck_02\Data\Truck_02_int_CO.paa",
-"\A3\Soft_F_Beta\Truck_02\Data\Truck_02_chassis_CO.paa"
-};
-        factions[] = {};
+    factions[] = {};
+  };
+  class BlueOrange {
+    displayName = "Blue Orange";
+    textures[] = {
+      "\A3\Soft_F_Beta\Truck_02\Data\Truck_02_kab_blue_CO.paa",
+      "\A3\Soft_F_Beta\Truck_02\Data\Truck_02_repair_CO.paa",
+      "\A3\Soft_F_Beta\Truck_02\Data\Truck_02_int_CO.paa",
+      "\A3\Soft_F_Beta\Truck_02\Data\Truck_02_chassis_CO.paa"
     };
-    class BlueGreen {
-        displayName = "Blue Green";
-        textures[] = {"\A3\Soft_F_Beta\Truck_02\Data\Truck_02_kab_blue_CO.paa",
-"\A3\Soft_F_Beta\Truck_02\Data\Truck_02_repair_green_CO.paa",
-"\A3\Soft_F_Beta\Truck_02\Data\Truck_02_int_CO.paa",
-"\A3\Soft_F_Beta\Truck_02\Data\Truck_02_chassis_CO.paa"
-};
-        factions[] = {};
+    factions[] = {};
+  };
+  class BlueGreen {
+    displayName = "Blue Green";
+    textures[] = {
+      "\A3\Soft_F_Beta\Truck_02\Data\Truck_02_kab_blue_CO.paa",
+      "\A3\Soft_F_Beta\Truck_02\Data\Truck_02_repair_green_CO.paa",
+      "\A3\Soft_F_Beta\Truck_02\Data\Truck_02_int_CO.paa",
+      "\A3\Soft_F_Beta\Truck_02\Data\Truck_02_chassis_CO.paa"
     };
-    class GreenHex {
-        displayName = "Hex Woodland";
-        textures[] = {"\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_kab_ghex_CO.paa",
-"\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_repair_ghex_CO.paa",
-"\A3\Soft_F_Beta\Truck_02\Data\Truck_02_int_CO.paa",
-"\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_chassis_ghex_CO.paa"
-};
-        factions[] = {};
+    factions[] = {};
+  };
+  class GreenHex {
+    displayName = "Hex Woodland";
+    textures[] = {
+      "\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_kab_ghex_CO.paa",
+      "\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_repair_ghex_CO.paa",
+      "\A3\Soft_F_Beta\Truck_02\Data\Truck_02_int_CO.paa",
+      "\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_chassis_ghex_CO.paa"
     };
-    class EAF {
-        displayName = "LDF (Geo Woodland)";
-        textures[] = {"\A3\soft_f_Enoch\Truck_02\Data\Truck_02_kab_EAF_co.paa",
-"\A3\soft_f_Enoch\Truck_02\Data\Truck_02_repair_EAF_co.paa",
-"\A3\soft_f_Enoch\Truck_02\Data\Truck_02_int_EAF_co.paa",
-"\A3\soft_f_Enoch\Truck_02\Data\truck_02_chassis_EAF_CO.paa"
-};
-        factions[] = {};
+    factions[] = {};
+  };
+  class EAF {
+    displayName = "LDF (Geo Woodland)";
+    textures[] = {
+      "\A3\soft_f_Enoch\Truck_02\Data\Truck_02_kab_EAF_co.paa",
+      "\A3\soft_f_Enoch\Truck_02\Data\Truck_02_repair_EAF_co.paa",
+      "\A3\soft_f_Enoch\Truck_02\Data\Truck_02_int_EAF_co.paa",
+      "\A3\soft_f_Enoch\Truck_02\Data\truck_02_chassis_EAF_CO.paa"
     };
-    class Green {
-        displayName = "Green";
-        textures[] = {"\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_kab_RUkhk_CO.paa",
-"\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_repair_RUkhk_CO.paa",
-"\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_int_RUkhk_CO.paa",
-"\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_chassis_RUkhk_CO.paa"
-};
-        factions[] = {};
+    factions[] = {};
+  };
+  class Green {
+    displayName = "Green";
+    textures[] = {
+      "\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_kab_RUkhk_CO.paa",
+      "\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_repair_RUkhk_CO.paa",
+      "\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_int_RUkhk_CO.paa",
+      "\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_chassis_RUkhk_CO.paa"
     };
-    class SFIA {
-        displayName = "Mudwalker";
-        textures[] = {"\lxws\vehicles_f_lxws\data\Truck_02\Truck_02_kab_sfia_CO.paa",
-"\lxws\vehicles_f_lxws\data\Truck_02\zamak_repair_africa_co.paa",
-"\a3\soft_f_beta\truck_02\data\truck_02_int_co.paa",
-"\A3\Soft_F_Beta\Truck_02\Data\Truck_02_chassis_OPFOR_CO.paa"
-};
-        factions[] = {};
+    factions[] = {};
+  };
+  class SFIA {
+    displayName = "Mudwalker";
+    textures[] = {
+      "\lxws\vehicles_f_lxws\data\Truck_02\Truck_02_kab_sfia_CO.paa",
+      "\lxws\vehicles_f_lxws\data\Truck_02\zamak_repair_africa_co.paa",
+      "\a3\soft_f_beta\truck_02\data\truck_02_int_co.paa",
+      "\A3\Soft_F_Beta\Truck_02\Data\Truck_02_chassis_OPFOR_CO.paa"
     };
-    class Sand {
-        displayName = "Sand";
-        textures[] = {"\lxws\vehicles_f_lxws\data\Truck_02\Truck_02_kab_sand_CO.paa",
-"\lxws\vehicles_f_lxws\data\Truck_02\zamak_repair_africa_co.paa",
-"\a3\soft_f_beta\truck_02\data\truck_02_int_co.paa",
-"\A3\Soft_F_Beta\Truck_02\Data\Truck_02_chassis_CO.paa"
-};
-        factions[] = {};
+    factions[] = {};
+  };
+  class Sand {
+    displayName = "Sand";
+    textures[] = {
+      "\lxws\vehicles_f_lxws\data\Truck_02\Truck_02_kab_sand_CO.paa",
+      "\lxws\vehicles_f_lxws\data\Truck_02\zamak_repair_africa_co.paa",
+      "\a3\soft_f_beta\truck_02\data\truck_02_int_co.paa",
+      "\A3\Soft_F_Beta\Truck_02\Data\Truck_02_chassis_CO.paa"
     };
-    class EAF_Arid {
-        displayName = "LDF (Arid)";
-        textures[] = {"\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_kab_LDF_arid_CO.paa",
-"\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_repair_LDF_arid_CO.paa",
-"\A3\soft_f_Enoch\Truck_02\Data\Truck_02_int_EAF_co.paa",
-"\A3\Soft_F_Beta\Truck_02\Data\Truck_02_chassis_CO.paa"
-};
-        factions[] = {};
+    factions[] = {};
+  };
+  class EAF_Arid {
+    displayName = "LDF (Arid)";
+    textures[] = {
+      "\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_kab_LDF_arid_CO.paa",
+      "\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_repair_LDF_arid_CO.paa",
+      "\A3\soft_f_Enoch\Truck_02\Data\Truck_02_int_EAF_co.paa",
+      "\A3\Soft_F_Beta\Truck_02\Data\Truck_02_chassis_CO.paa"
     };
-    class Jungle {
-        displayName = "Jungle";
-        textures[] = {
-          "\A3_Atlas\Soft_F_Atlas\Truck_02\Data\Truck_02_kab_Jungle_CO.paa",
-          "\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_repair_RUkhk_CO.paa",
-          "\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_int_RUKHK_CO.paa",
-          "\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_chassis_RUkhk_CO.paa",
-        };
-        factions[] = {};
+    factions[] = {};
+  };
+  class Jungle {
+    displayName = "Jungle";
+    textures[] = {
+      "\A3_Atlas\Soft_F_Atlas\Truck_02\Data\Truck_02_kab_Jungle_CO.paa",
+      "\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_repair_RUkhk_CO.paa",
+      "\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_int_RUKHK_CO.paa",
+      "\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_chassis_RUkhk_CO.paa",
     };
+    factions[] = {};
+  };
 };
