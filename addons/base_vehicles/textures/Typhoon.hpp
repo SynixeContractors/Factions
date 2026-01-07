@@ -8,6 +8,15 @@ class TextureSources {
         };
         factions[] = {};
     };
+    class Ru {
+        displayName = "Summer";
+        textures[] = {
+            "\A3_Aegis\Soft_F_Aegis\Truck_03\Data\Truck_03_ext01_RUCamo_CO.paa",
+            "\A3_Aegis\Soft_F_Aegis\Truck_03\Data\Truck_03_ext02_RUCamo_CO.paa",
+            "\A3_Aegis\Soft_F_Aegis\Truck_03\Data\Truck_03_cargo_RUCamo_CO.paa"
+        };
+        factions[] = {};
+    };
     class GreenHex {
         displayName = "Hex Woodland";
         textures[] = {

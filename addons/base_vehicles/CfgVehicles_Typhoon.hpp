@@ -53,6 +53,15 @@ class GCLASS(Typhoon_Fuel): O_Truck_03_fuel_F {
             };
             factions[] = {};
         };
+        class Ru {
+            displayName = "Summer";
+            textures[] = {
+                "\A3_Aegis\Soft_F_Aegis\Truck_03\Data\Truck_03_ext01_RUCamo_CO.paa",
+                "\A3_Aegis\Soft_F_Aegis\Truck_03\Data\Truck_03_ext02_RUCamo_CO.paa",
+                "\A3_Aegis\Soft_F_Aegis\Truck_03\Data\Truck_03_fuel_RUCamo_CO.paa"
+            };
+            factions[] = {};
+        };
         class GreenHex {
             displayName = "Hex Woodland";
             textures[] = {
@@ -99,6 +108,16 @@ class GCLASS(Typhoon_Ammo): O_Truck_03_ammo_F {
                 "\A3_Aegis\Soft_F_Aegis\Truck_03\Data\Truck_03_ext01_RUkhk_CO.paa",
                 "\A3_Aegis\Soft_F_Aegis\Truck_03\Data\Truck_03_ext02_RUkhk_CO.paa",
                 "\A3_Aegis\Soft_F_Aegis\Truck_03\Data\Truck_03_cargo_RUkhk_CO.paa",
+                "\A3_Aegis\Soft_F_Aegis\Truck_03\Data\Containers_02_set_RUkhk_CO.paa"
+            };
+            factions[] = {};
+        };
+        class Ru {
+            displayName = "Summer";
+            textures[] = {
+                "\A3_Aegis\Soft_F_Aegis\Truck_03\Data\Truck_03_ext01_RUCamo_CO.paa",
+                "\A3_Aegis\Soft_F_Aegis\Truck_03\Data\Truck_03_ext02_RUCamo_CO.paa",
+                "\A3_Aegis\Soft_F_Aegis\Truck_03\Data\Truck_03_ammo_RUCamo_CO.paa",
                 "\A3_Aegis\Soft_F_Aegis\Truck_03\Data\Containers_02_set_RUkhk_CO.paa"
             };
             factions[] = {};
@@ -176,6 +195,15 @@ class GCLASS(Typhoon_Repair): O_Truck_03_repair_F {
                 "\A3_Aegis\Soft_F_Aegis\Truck_03\Data\Truck_03_ext01_RUkhk_CO.paa",
                 "\A3_Aegis\Soft_F_Aegis\Truck_03\Data\Truck_03_ext02_RUkhk_CO.paa",
                 "\A3_Aegis\Soft_F_Aegis\Truck_03\Data\Truck_03_ammo_RUkhk_CO.paa"
+            };
+            factions[] = {};
+        };
+        class Ru {
+            displayName = "Summer";
+            textures[] = {
+                "\A3_Aegis\Soft_F_Aegis\Truck_03\Data\Truck_03_ext01_RUCamo_CO.paa",
+                "\A3_Aegis\Soft_F_Aegis\Truck_03\Data\Truck_03_ext02_RUCamo_CO.paa",
+                "\A3_Aegis\Soft_F_Aegis\Truck_03\Data\Truck_03_ammo_RUCamo_CO.paa"
             };
             factions[] = {};
         };
