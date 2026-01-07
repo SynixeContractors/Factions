@@ -5,7 +5,11 @@ class CLASS(Badger): GCLASS(Badger) {
     side = TEMPLATE_SIDE;
     crew = QCLASS(Crewman);
     typicalCargo[] = {QCLASS(Crewman)};
+    #ifdef TEMPLATE_CAMO_LIST
+    textureList[] = TEMPLATE_CAMO_LIST;
+    #else
     textureList[] = {QUOTE(TEMPLATE_CAMO),1};
+    #endif
 };
 class GCLASS(Badger_Command);
 class CLASS(Badger_Command): GCLASS(Badger_Command) {
@@ -14,7 +18,11 @@ class CLASS(Badger_Command): GCLASS(Badger_Command) {
     side = TEMPLATE_SIDE;
     crew = QCLASS(Crewman);
     typicalCargo[] = {QCLASS(Crewman)};
+    #ifdef TEMPLATE_CAMO_LIST
+    textureList[] = TEMPLATE_CAMO_LIST;
+    #else
     textureList[] = {QUOTE(TEMPLATE_CAMO),1};
+    #endif
 };
 class GCLASS(Badger_Mortar);
 class CLASS(Badger_Mortar): GCLASS(Badger_Mortar) {
@@ -23,7 +31,11 @@ class CLASS(Badger_Mortar): GCLASS(Badger_Mortar) {
     side = TEMPLATE_SIDE;
     crew = QCLASS(Crewman);
     typicalCargo[] = {QCLASS(Crewman)};
+    #ifdef TEMPLATE_CAMO_LIST
+    textureList[] = TEMPLATE_CAMO_LIST;
+    #else
     textureList[] = {QUOTE(TEMPLATE_CAMO),1};
+    #endif
 };
 class GCLASS(Badger_ATGM);
 class CLASS(Badger_ATGM): GCLASS(Badger_ATGM) {
@@ -32,7 +44,11 @@ class CLASS(Badger_ATGM): GCLASS(Badger_ATGM) {
     side = TEMPLATE_SIDE;
     crew = QCLASS(Crewman);
     typicalCargo[] = {QCLASS(Crewman)};
+    #ifdef TEMPLATE_CAMO_LIST
+    textureList[] = TEMPLATE_CAMO_LIST;
+    #else
     textureList[] = {QUOTE(TEMPLATE_CAMO),1};
+    #endif
 };
 class GCLASS(Badger_Unarmed);
 class CLASS(Badger_Unarmed): GCLASS(Badger_Unarmed) {
@@ -41,6 +57,10 @@ class CLASS(Badger_Unarmed): GCLASS(Badger_Unarmed) {
     side = TEMPLATE_SIDE;
     crew = QCLASS(Crewman);
     typicalCargo[] = {QCLASS(Crewman)};
+    #ifdef TEMPLATE_CAMO_LIST
+    textureList[] = TEMPLATE_CAMO_LIST;
+    #else
     textureList[] = {QUOTE(TEMPLATE_CAMO),1};
+    #endif
 };
 //medical not included because it doesn't have all the camo variants

@@ -4,6 +4,10 @@ class CLASS(LUT_MRL): GCLASS(LUT_MRL) {
     faction = TEMPLATE_FACTION;
     side = TEMPLATE_SIDE;
     crew = QCLASS(Rifleman);
-    typicalMRL[] = {QCLASS(Rifleman)};
+    typicalCargo[] = {QCLASS(Rifleman)};
+    #ifdef TEMPLATE_CAMO_LIST
+    textureList[] = TEMPLATE_CAMO_LIST;
+    #else
     textureList[] = {QUOTE(TEMPLATE_CAMO),1};
+    #endif
 };

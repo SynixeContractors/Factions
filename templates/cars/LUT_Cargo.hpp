@@ -5,7 +5,11 @@ class CLASS(LUT_Cargo): GCLASS(LUT_Cargo) {
     side = TEMPLATE_SIDE;
     crew = QCLASS(Rifleman);
     typicalCargo[] = {QCLASS(Rifleman)};
+    #ifdef TEMPLATE_CAMO_LIST
+    textureList[] = TEMPLATE_CAMO_LIST;
+    #else
     textureList[] = {QUOTE(TEMPLATE_CAMO),1};
+    #endif
 };
 class GCLASS(LUT_Flatbed);
 class CLASS(LUT_Flatbed): GCLASS(LUT_Flatbed) {
@@ -13,6 +17,10 @@ class CLASS(LUT_Flatbed): GCLASS(LUT_Flatbed) {
     faction = TEMPLATE_FACTION;
     side = TEMPLATE_SIDE;
     crew = QCLASS(Rifleman);
-    typicalFlatbed[] = {QCLASS(Rifleman)};
+    typicalCargo[] = {QCLASS(Rifleman)};
+    #ifdef TEMPLATE_CAMO_LIST
+    textureList[] = TEMPLATE_CAMO_LIST;
+    #else
     textureList[] = {QUOTE(TEMPLATE_CAMO),1};
+    #endif
 };

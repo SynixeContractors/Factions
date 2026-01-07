@@ -5,7 +5,11 @@ class CLASS(Merkava_SPG): GCLASS(Merkava_SPG) {
     side = TEMPLATE_SIDE;
     crew = QCLASS(Crewman);
     typicalCargo[] = {QCLASS(Crewman)};
+    #ifdef TEMPLATE_CAMO_LIST
+    textureList[] = TEMPLATE_CAMO_LIST;
+    #else
     textureList[] = {QUOTE(TEMPLATE_CAMO),1};
+    #endif
 };
 class GCLASS(Merkava_MLRS);
 class CLASS(Merkava_MLRS): GCLASS(Merkava_MLRS) {
@@ -14,5 +18,9 @@ class CLASS(Merkava_MLRS): GCLASS(Merkava_MLRS) {
     side = TEMPLATE_SIDE;
     crew = QCLASS(Crewman);
     typicalCargo[] = {QCLASS(Crewman)};
+    #ifdef TEMPLATE_CAMO_LIST
+    textureList[] = TEMPLATE_CAMO_LIST;
+    #else
     textureList[] = {QUOTE(TEMPLATE_CAMO),1};
+    #endif
 };
