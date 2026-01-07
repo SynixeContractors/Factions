@@ -43,7 +43,7 @@ class GCLASS(LUT_Medical): Truck_02_medical_base_F {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 210;
-    #include "textures\LUTMedical.hpp"
+    #include "textures\LUTTransport.hpp"
 };
 
 class Truck_02_fuel_base_F;
