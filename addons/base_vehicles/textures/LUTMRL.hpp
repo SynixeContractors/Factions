@@ -93,8 +93,8 @@ class TextureSources {
     displayName = "Hex Mixed";
     textures[] = {
       "\A3_Atlas\Soft_F_Atlas\Truck_02\Data\Truck_02_kab_tk_CO.paa",
-      "\A3_Atlas\Soft_F_Atlas\Truck_02\Data\Truck_02_MLR_tk_CO.paa",
       "\A3\Soft_F_Beta\Truck_02\Data\Truck_02_int_CO.paa",
+      "\A3_Atlas\Soft_F_Atlas\Truck_02\Data\Truck_02_MLR_tk_CO.paa",
       "\A3\Soft_F_Beta\Truck_02\Data\Truck_02_chassis_OPFOR_CO.paa"
     };
     factions[] = {};
@@ -107,6 +107,66 @@ class TextureSources {
       //TODO: add bespoke MRL texture
       "\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_MRL_RUkhk_CO.paa",
       "\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_chassis_RUkhk_CO.paa",
+    };
+    factions[] = {};
+  };
+  class Sep_01 {
+    displayName = "Separatist";
+    textures[] = {
+      "\A3_Opf\Soft_F_Opf\Truck_02\Data\Truck_02_kab_Sep_CO.paa",
+      "\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_int_RUkhk_CO.paa",
+      "\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_MRL_RUkhk_CO.paa",
+      "\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_chassis_RUkhk_CO.paa"
+    };
+    factions[] = {};
+  };
+  class Sand {
+    displayName = "Sand";
+    textures[] = {
+      "\lxws\vehicles_f_lxws\data\Truck_02\Truck_02_kab_sand_CO.paa",
+      "\a3\soft_f_beta\truck_02\data\truck_02_int_co.paa",
+      "lxws\vehicles_f_lxws\data\Truck_02\zamak_mrl_brown_co.paa",
+      "\A3\Soft_F_Beta\Truck_02\Data\Truck_02_chassis_CO.paa",
+    };
+    factions[] = {};
+  };
+  class Marar {
+    displayName = "Marar";
+    textures[] = {
+      "\A3_Atlas\Soft_F_Atlas\Truck_02\Data\Truck_02_kab_Marar_CO.paa",
+      "\A3\Soft_F_Beta\Truck_02\Data\Truck_02_int_CO.paa",
+      "\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_MRL_RUkhk_CO.paa",
+      "\A3\Soft_F_Beta\Truck_02\Data\Truck_02_chassis_INDP_CO.paa"
+    };
+    factions[] = {};
+  };
+  class Brown {
+    displayName = "Brown";
+    textures[] = {
+      "lxws\vehicles_f_lxws\data\Truck_02\Truck_02_kab_brown_CO.paa",
+      "\a3\soft_f_beta\truck_02\data\truck_02_int_co.paa",
+      "\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_MRL_RUkhk_CO.paa",
+      "\A3\Soft_F_Beta\Truck_02\Data\Truck_02_chassis_CO.paa",
+    };
+    factions[] = {};
+  };
+  class UNO {
+    displayName = "United Nations";
+    textures[] = {
+      "\A3_Atlas\Soft_F_Atlas\Truck_02\Data\Truck_02_kab_UN_CO.paa",
+      "\A3\Soft_F_Beta\Truck_02\Data\Truck_02_int_CO.paa",
+      "\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_MRL_RUkhk_CO.paa",
+      "\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_chassis_RUkhk_CO.paa",
+    };
+    factions[] = {};
+  };
+  class Black {
+    displayName = "Black";
+    textures[] = {
+      "\lxws\vehicles_f_lxws\data\Truck_02\Truck_02_kab_black_CO.paa",
+      "\a3\soft_f_beta\truck_02\data\truck_02_int_co.paa",
+      "\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_MRL_RUkhk_CO.paa",
+      "\A3\Soft_F_Beta\Truck_02\Data\Truck_02_chassis_CO.paa",
     };
     factions[] = {};
   };
