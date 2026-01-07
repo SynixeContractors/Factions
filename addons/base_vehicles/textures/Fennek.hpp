@@ -40,7 +40,7 @@ class TextureSources {
     factions[] = {};
   };
   class Maze {
-    displayName = "Maze Tropic";
+    displayName = "Maze";
     textures[] = {
       "\s\synixe_factions\addons\textures\data\fennek\Fennek_JSN_CO.paa",
       "\s\synixe_factions\addons\textures\data\common\Turret_rcws_JSN_CO.paa",
