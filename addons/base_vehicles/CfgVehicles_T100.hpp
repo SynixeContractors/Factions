@@ -61,6 +61,13 @@
               "a3\Armor_F_Decade\MBT_02\Data\MBT_02_expo_CO.paa",\
               CAMONET\
             };
+#define T100_MAZE(CAMONET) \
+            textures[] = {\
+              "\s\synixe_factions\addons\textures\data\t100\t100_body_JSN_CO.paa",\
+              "\s\synixe_factions\addons\textures\data\t100\t100_turret_JSN_CO.paa",\
+              "\s\synixe_factions\addons\textures\data\t100\t100_addons_JSN_CO.paa", \
+              CAMONET\
+            };
 class O_MBT_02_cannon_F;
 class GCLASS(T100): O_MBT_02_cannon_F {
     displayName = "T-100";
@@ -279,6 +286,36 @@ class GCLASS(T100): O_MBT_02_cannon_F {
         class WoodlandHex_winter {
             displayName = "Hex Woodland (Winter Net)";
             T100_WOODLANDHEX(NET_WINTER)
+            factions[] = {};
+        };
+        class Maze {
+            displayName = "Maze (Desert Net)";
+            T100_MAZE(NET_DESERT)
+            factions[] = {};
+        };
+        class Maze_green {
+            displayName = "Maze (Green Net)";
+            T100_MAZE(NET_GREEN)
+            factions[] = {};
+        };
+        class Maze_jungle {
+            displayName = "Maze (Jungle Net)";
+            T100_MAZE(NET_JUNGLE)
+            factions[] = {};
+        };
+        class Maze_winter {
+            displayName = "Maze (Winter Net)";
+            T100_MAZE(NET_WINTER)
+            factions[] = {};
+        };
+        class Maze_bicolor {
+            displayName = "Maze (Bicolor Woodland Net)";
+            T100_MAZE(NET_BICOLOR)
+            factions[] = {};
+        };
+        class Maze_woodland {
+            displayName = "Maze (Woodland Net)";
+            T100_MAZE(NET_WOODLAND)
             factions[] = {};
         };
     };
@@ -510,5 +547,35 @@ class GCLASS(T100_Railgun): O_MBT_02_railgun_F {
             factions[] = {};
         };
         #endif
+        class Maze {
+            displayName = "Maze (Desert Net)";
+            T100_MAZE(NET_DESERT)
+            factions[] = {};
+        };
+        class Maze_green {
+            displayName = "Maze (Green Net)";
+            T100_MAZE(NET_GREEN)
+            factions[] = {};
+        };
+        class Maze_jungle {
+            displayName = "Maze (Jungle Net)";
+            T100_MAZE(NET_JUNGLE)
+            factions[] = {};
+        };
+        class Maze_winter {
+            displayName = "Maze (Winter Net)";
+            T100_MAZE(NET_WINTER)
+            factions[] = {};
+        };
+        class Maze_bicolor {
+            displayName = "Maze (Bicolor Woodland Net)";
+            T100_MAZE(NET_BICOLOR)
+            factions[] = {};
+        };
+        class Maze_woodland {
+            displayName = "Maze (Woodland Net)";
+            T100_MAZE(NET_WOODLAND)
+            factions[] = {};
+        };
     };
 };

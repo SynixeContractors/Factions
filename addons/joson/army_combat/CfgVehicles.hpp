@@ -2,10 +2,14 @@ class CfgVehicles {
     #define TEMPLATE_FACTION QPCLASS(t3_opfor)
     #define TEMPLATE_SIDE 0
     #include "..\..\..\templates\statics\M2.hpp"
+    #define TEMPLATE_CAMO Maze
+    #include "../../../templates/cars/Fennek.hpp"
+    #undef TEMPLATE_CAMO
+    #define TEMPLATE_CAMO Maze_jungle
+    #include "../../../templates/tanks/T100.hpp"
+    #include "../../../templates/tanks/T100_Railgun.hpp"
+    #include "../../../templates/tanks/T100_SPG.hpp"
 
-    #include "CfgVehicles_Tanks.hpp"
-    #include "CfgVehicles_Cars.hpp"
-    #include "CfgVehicles_APC.hpp"
 
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {
