@@ -62,6 +62,14 @@
               "\A3_Aegis\Soft_F_Aegis\UGV_01\Data\Turret_RUkhk_CO.paa",\
               CAMONET\
             };
+#define T100_SPG_MAZE(CAMONET) \
+            textures[] = {\
+              "\s\synixe_factions\addons\textures\data\t100\t100_body_JSN_CO.paa",\
+              "\s\synixe_factions\addons\textures\data\t100\t100_spg_JSN_CO.paa",\
+              "\s\synixe_factions\addons\textures\data\t100\t100_addons_JSN_CO.paa",\
+              "\s\synixe_factions\addons\textures\data\common\Turret_rcws_JSN_CO.paa",\
+              CAMONET\
+            };
 class O_MBT_02_arty_F;
 class GCLASS(T100_SPG): O_MBT_02_arty_F {
     displayName = "T-100SU Sohor-S (SPG)";
@@ -246,5 +254,35 @@ class GCLASS(T100_SPG): O_MBT_02_arty_F {
             factions[] = {};
         };
         #endif
+        class Maze {
+            displayName = "Maze (Desert Net)";
+            T100_SPG_MAZE(NET_DESERT)
+            factions[] = {};
+        };
+        class Maze_green {
+            displayName = "Maze (Green Net)";
+            T100_SPG_MAZE(NET_GREEN)
+            factions[] = {};
+        };
+        class Maze_jungle {
+            displayName = "Maze (Jungle Net)";
+            T100_SPG_MAZE(NET_JUNGLE)
+            factions[] = {};
+        };
+        class Maze_winter {
+            displayName = "Maze (Winter Net)";
+            T100_SPG_MAZE(NET_WINTER)
+            factions[] = {};
+        };
+        class Maze_bicolor {
+            displayName = "Maze (Bicolor Woodland Net)";
+            T100_SPG_MAZE(NET_BICOLOR)
+            factions[] = {};
+        };
+        class Maze_woodland {
+            displayName = "Maze (Woodland Net)";
+            T100_SPG_MAZE(NET_WOODLAND)
+            factions[] = {};
+        };
     };
 };
