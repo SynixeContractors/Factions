@@ -3,8 +3,8 @@ class CfgVehicles {
 
     class CLASS(Base): GCLASS(Base_INDEP) {
         faction = QCLASS(t4_indep);
-        displayName = "Kunduz Base";
-        @Identity(Kunduz);
+        displayName = "Takistan Base";
+        @Identity(Takistan);
         @Templated();
     };
 };
