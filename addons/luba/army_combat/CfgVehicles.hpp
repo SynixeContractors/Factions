@@ -7,233 +7,98 @@ class CfgVehicles {
     #undef  TEMPLATE_CAMO
     #define TEMPLATE_CAMO Blufor
     #include "..\..\..\templates\cars\HEMTT.hpp"
-    #include "CfgVehicles_Cars.hpp"
-    #include "CfgVehicles_APC.hpp"
 
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {
         displayName = "Luban Base Army Combat";
         editorSubcategory = QGCLASS(army_combat);
 
-        @Uniforms({
-            "variants": {
-                "U_lxWS_UN_Camo2": 0.3,
-                "U_lxWS_UN_Camo3": 0.7,
-            },
-            "packs": [
-                "rifleman_medical",
-            ],
-        });
-
-        @Vests({
-            "variants": {
-                "V_HarnessO_brn": 0.5,
-                "V_HarnessOSpec_brn": 0.5,
-            },
-            "packs": [
-                "t3_standard",
-            ],
-        });
-
-        @Headgear({
-            "H_MK7_sand_F": 1,
-        });
-
-        @Facewear({
-            "": 1,
-        });
-
+        #include "../wear/uniform.hpp"
+        #include "../wear/vest_army.hpp"
+        #include "../wear/helmet.hpp"
+        #include "../wear/facewear_army.hpp"
         @Assigned(Military);
     };
     class CLASS(Rifleman): CLASS(Base) {
         @Role(Rifleman);
-        @Primary({
-            "weapons": {
-                "Aegis_arifle_M4A1_sand_F": {
-                    "probability": 0.6,
-                    "magazinesVest": {
-                        "30Rnd_556x45_Stanag_Sand": 8,
-                    },
-                },
-                "Aegis_arifle_M4A1_grip_sand_F": {
-                    "probability": 0.3,
-                    "magazinesVest": {
-                        "30Rnd_556x45_Stanag_Sand": 8,
-                    },
-                },
-                "Aegis_arifle_M4A1_short_sand_F": {
-                    "probability": 0.1,
-                    "magazinesVest": {
-                        "30Rnd_556x45_Stanag_Sand": 8,
-                    },
-                },
-            },
-            "optics": {
-                "": 0.6,
-                "Aegis_optic_1p87_snd": 0.3,
-                "optic_VRCO_tan_RF": 0.1,
-            },
-        });
-        @Launchers({
-            "weapons": {
-                "": 0.9,
-                "Atlas_Launch_Pzf3_F": {
-                    "probability": 0.1,
-                    "loadedPrimary": "Atlas_DM12_HEAT_F",
-                },
-            },
-        });
+        #include "../weapons/rifle.hpp"
+        #include "../weapons/launcher.hpp"
+        #include "../weapons/attachments_army.hpp"
     };
     class CLASS(RiflemanCarabine): CLASS(Base) {
         @Role(Hidden);
-        #include "..\weapons\carabine.hpp"
+        #include "../weapons/carabine.hpp"
+        #include "../weapons/attachments_army.hpp"
     };
     class CLASS(RiflemanBackpack): CLASS(RiflemanCarabine) {
         @Role(Hidden);
-        @Backpacks({
-            "variants": {
-                "B_FieldPack_cbr": 1,
-            },
-        });
+        #include "../wear/backpack.hpp"
     };
     class CLASS(TeamLeader): CLASS(RiflemanCarabine) {
         @Role(TeamLeader);
+        #include "../weapons/pistol.hpp"
     };
-    class CLASS(SquadLeader): CLASS(RiflemanCarabine) {
+    class CLASS(SquadLeader): CLASS(TeamLeader) {
         @Role(SquadLeader);
-        @Primary({
-            "weapons": {
-                "Aegis_arifle_M4A1_GL_sand_F": {
-                    "probability": 1,
-                    "magazinesVest": {
-                        "30Rnd_556x45_Stanag_Sand": 8,
-                        "1Rnd_HE_Grenade_shell": 4,
-                    },
-                },
-            },
-            "optics": {
-                "Aegis_optic_1p87_snd": 0.4,
-                "optic_VRCO_tan_RF": 0.6,
-            },
-        });
+        #include "../weapons/gl.hpp"
     };
     class CLASS(Autorifleman): CLASS(RiflemanBackpack) {
         @Role(Autorifleman);
-        #include "..\weapons\lmg.hpp"
+        #include "../weapons/lmg.hpp"
+        #include "../weapons/pistol.hpp"
     };
-    class CLASS(Machinegunner): CLASS(Rifleman) {
+    class CLASS(Machinegunner): CLASS(RiflemanCarabine) {
         @Role(Machinegunner);
-        #include "..\weapons\mg.hpp"
+        #include "../weapons/mg.hpp"
+        #include "../weapons/pistol.hpp"
     };
     class CLASS(AsstMachinegunner): CLASS(RiflemanBackpack) {
         @Role(AsstMachinegunner);
-        @Backpacks({
-            "variants": {
-                "B_FieldPack_cbr": 1,
-            },
-            "magazines": {
-                "100Rnd_762x51_S77_Red_lxWS": 4,
-            },
-        });
+        #include "../wear/backpack_mg.hpp"
     };
     class CLASS(Medic): CLASS(RiflemanBackpack) {
         @Role(Medic);
-        @Backpacks({
-            "variants": {
-                "B_FieldPack_cbr": 1,
-            },
-            "packs": [
-                "t2_t3_medic",
-            ],
-        });
+        #include "../wear/backpack_medic.hpp"
     };
     class CLASS(RiflemanMAT): CLASS(RiflemanBackpack) {
         @Role(RiflemanMAT);
-        @Launchers({
-            "weapons": {
-                "Atlas_Launch_Pzf3_F": {
-                    "magazinesBackpack": {
-                        "Atlas_DM12_HEAT_F": 2,
-                    },
-                },
-            },
-        });
+        #include "../weapons/mat.hpp"
     };
     class CLASS(RiflemanAA): CLASS(RiflemanBackpack) {
         @Role(RiflemanAA);
-        @Launchers({
-            "weapons": {
-                "launch_B_Titan_olive_F": {
-                    "magazinesBackpack": {
-                        "Titan_AA": 1,
-                    },
-                },
-            },
-        });
+        #include "../weapons/aa.hpp"
     };
     class CLASS(RiflemanHAT): CLASS(RiflemanBackpack) {
         @Role(RiflemanHAT);
-        @Launchers({
-            "weapons": {
-                "launch_O_Vorona_brown_F": {
-                    "magazinesBackpack": {
-                        "Vorona_HEAT": 1,
-                    },
-                },
-            },
-        });
+        #include "../weapons/mat.hpp"
     };
     class CLASS(Engineer): CLASS(RiflemanBackpack) {
         @Role(Engineer);
-        @Backpacks({
-            "variants": {
-                "B_FieldPack_cbr": 1,
-            },
-            "packs": [
-                "engineer",
-            ],
-        });
+        #include "../wear/engineer.hpp"
     };
     class CLASS(RadioOperator): CLASS(RiflemanCarabine) {
         @Role(RadioOperator);
-        @Backpacks({
-            "variants": {
-                "B_RadioBag_01_coyote_F": 1,
-            },
-        });
+        #include "../wear/backpack_radio.hpp"
     };
     class CLASS(Demolitions): CLASS(RiflemanBackpack) {
         @Role(Demolitions);
-        @Backpacks({
-            "variants": {
-                "B_FieldPack_cbr": 1,
-            },
-            "packs": [
-                "eod",
-                "demo",
-            ],
-        });
-        @Secondary({
-            "weapons": {
-                "ACE_VMH3": {},
-            },
-        });
+        #include "../wear/demo.hpp"
     };
     class CLASS(Crewman): CLASS(RiflemanCarabine) {
         @Role(Crewman);
+        #include "../weapons/pdw.hpp"
     };
     class CLASS(HeliPilot): CLASS(Crewman) {
         @Role(HeliPilot);
-        @Headgear({
-            "H_PilotHelmetHeli_B_visor_up": 1,
-        });
+        #include "../wear/pilot.hpp"
     };
     class CLASS(Marksman): CLASS(Rifleman) {
         @Role(Marksman);
-        #include "..\weapons\marksman.hpp"
+        #include "../weapons/marksman.hpp"
+        #include "../weapons/pistol.hpp"
     };
     class CLASS(Sniper): CLASS(Marksman) {
         @Role(Sniper);
-        #include "..\weapons\sniper.hpp"
+        #include "../weapons/sniper.hpp"
     };
 };
