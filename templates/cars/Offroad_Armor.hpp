@@ -5,7 +5,11 @@ class CLASS(Offroad_Armored_HMG): GCLASS(Offroad_Armored_HMG) {
     side = TEMPLATE_SIDE;
     crew = QCLASS(Rifleman);
     typicalCargo[] = {QCLASS(Rifleman)};
+    #ifdef TEMPLATE_CAMO_LIST
+    textureList[] = TEMPLATE_CAMO_LIST;
+    #else
     textureList[] = {QUOTE(TEMPLATE_CAMO),1};
+    #endif
 };
 class GCLASS(Offroad_Armored_AT);
 class CLASS(Offroad_Armored_AT): GCLASS(Offroad_Armored_AT) {
@@ -14,5 +18,9 @@ class CLASS(Offroad_Armored_AT): GCLASS(Offroad_Armored_AT) {
     side = TEMPLATE_SIDE;
     crew = QCLASS(Rifleman);
     typicalCargo[] = {QCLASS(Rifleman)};
+    #ifdef TEMPLATE_CAMO_LIST
+    textureList[] = TEMPLATE_CAMO_LIST;
+    #else
     textureList[] = {QUOTE(TEMPLATE_CAMO),1};
+    #endif
 };

@@ -1,4 +1,17 @@
 class CfgVehicles {
+    #define TEMPLATE_FACTION QPCLASS(t4_opfor)
+    #define TEMPLATE_SIDE 0
+    #define TEMPLATE_CAMO_LIST {"Beige", 1, "Black", 1}
+    // #include "../../../templates/cars/Offroad_Civilian.hpp"
+    // #include "../../../templates/cars/Offroad_Armed.hpp"
+    // #include "../../../templates/cars/Offroad_Armor.hpp"
+    #include "../../../templates/cars/Offroad_AA.hpp"
+    // #include "../../../templates/cars/Offroad_Armor_AA.hpp"
+
+    #undef TEMPLATE_CAMO_LIST
+    #define TEMPLATE_CAMO Guerrilla_03
+    #include "../../../templates/apc/BTR.hpp"
+
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {
         displayName = "Coming Dawn Militia";
@@ -678,5 +691,8 @@ class CfgVehicles {
                 "ACE_VMH3": {},
             },
         });
+    };
+    class CLASS(Crewman): CLASS(Rifleman) {
+      @Role(Crewman);
     };
 };

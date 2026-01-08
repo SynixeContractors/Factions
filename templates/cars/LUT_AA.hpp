@@ -5,5 +5,9 @@ class CLASS(LUT_AA): GCLASS(LUT_AA) {
     side = TEMPLATE_SIDE;
     crew = QCLASS(Rifleman);
     typicalCargo[] = {QCLASS(Rifleman)};
+    #ifdef TEMPLATE_CAMO_LIST
+    textureList[] = TEMPLATE_CAMO_LIST;
+    #else
     textureList[] = {QUOTE(TEMPLATE_CAMO),1};
+    #endif
 };

@@ -5,7 +5,11 @@ class CLASS(Ram_AA): GCLASS(Ram_AA) {
     side = TEMPLATE_SIDE;
     crew = QCLASS(Rifleman);
     typicalCargo[] = {QCLASS(Rifleman)};
+    #ifdef TEMPLATE_CAMO_LIST
+    textureList[] = TEMPLATE_CAMO_LIST;
+    #else
     textureList[] = {QUOTE(TEMPLATE_CAMO),1};
+    #endif
 };
 class GCLASS(Ram_RCWS);
 class CLASS(Ram_RCWS): GCLASS(Ram_RCWS) {
@@ -14,7 +18,11 @@ class CLASS(Ram_RCWS): GCLASS(Ram_RCWS) {
     side = TEMPLATE_SIDE;
     crew = QCLASS(Rifleman);
     typicalCargo[] = {QCLASS(Rifleman)};
+    #ifdef TEMPLATE_CAMO_LIST
+    textureList[] = TEMPLATE_CAMO_LIST;
+    #else
     textureList[] = {QUOTE(TEMPLATE_CAMO),1};
+    #endif
 };
 class GCLASS(Ram_M134);
 class CLASS(Ram_M134): GCLASS(Ram_M134) {
@@ -23,7 +31,11 @@ class CLASS(Ram_M134): GCLASS(Ram_M134) {
     side = TEMPLATE_SIDE;
     crew = QCLASS(Rifleman);
     typicalCargo[] = {QCLASS(Rifleman)};
+    #ifdef TEMPLATE_CAMO_LIST
+    textureList[] = TEMPLATE_CAMO_LIST;
+    #else
     textureList[] = {QUOTE(TEMPLATE_CAMO),1};
+    #endif
 };
 class GCLASS(Ram_MRL);
 class CLASS(Ram_MRL): GCLASS(Ram_MRL) {
@@ -32,7 +44,11 @@ class CLASS(Ram_MRL): GCLASS(Ram_MRL) {
     side = TEMPLATE_SIDE;
     crew = QCLASS(Rifleman);
     typicalCargo[] = {QCLASS(Rifleman)};
+    #ifdef TEMPLATE_CAMO_LIST
+    textureList[] = TEMPLATE_CAMO_LIST;
+    #else
     textureList[] = {QUOTE(TEMPLATE_CAMO),1};
+    #endif
 };
 class GCLASS(Ram_AT);
 class CLASS(Ram_AT): GCLASS(Ram_AT) {
@@ -41,5 +57,9 @@ class CLASS(Ram_AT): GCLASS(Ram_AT) {
     side = TEMPLATE_SIDE;
     crew = QCLASS(Rifleman);
     typicalCargo[] = {QCLASS(Rifleman)};
+    #ifdef TEMPLATE_CAMO_LIST
+    textureList[] = TEMPLATE_CAMO_LIST;
+    #else
     textureList[] = {QUOTE(TEMPLATE_CAMO),1};
+    #endif
 };

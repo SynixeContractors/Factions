@@ -5,7 +5,11 @@ class CLASS(Polaris): GCLASS(Polaris) {
     side = TEMPLATE_SIDE;
     crew = QCLASS(Rifleman);
     typicalCargo[] = {QCLASS(Rifleman)};
+    #ifdef TEMPLATE_CAMO_LIST
+    textureList[] = TEMPLATE_CAMO_LIST;
+    #else
     textureList[] = {QUOTE(TEMPLATE_CAMO),1};
+    #endif
 };
 class GCLASS(Polaris_NoDoor);
 class CLASS(Polaris_NoDoor): GCLASS(Polaris_NoDoor) {
@@ -14,7 +18,11 @@ class CLASS(Polaris_NoDoor): GCLASS(Polaris_NoDoor) {
     side = TEMPLATE_SIDE;
     crew = QCLASS(Rifleman);
     typicalCargo[] = {QCLASS(Rifleman)};
+    #ifdef TEMPLATE_CAMO_LIST
+    textureList[] = TEMPLATE_CAMO_LIST;
+    #else
     textureList[] = {QUOTE(TEMPLATE_CAMO),1};
+    #endif
 };
 class GCLASS(Polaris_Titan);
 class CLASS(Polaris_Titan): GCLASS(Polaris_Titan) {
@@ -23,7 +31,11 @@ class CLASS(Polaris_Titan): GCLASS(Polaris_Titan) {
     side = TEMPLATE_SIDE;
     crew = QCLASS(Rifleman);
     typicalCargo[] = {QCLASS(Rifleman)};
+    #ifdef TEMPLATE_CAMO_LIST
+    textureList[] = TEMPLATE_CAMO_LIST;
+    #else
     textureList[] = {QUOTE(TEMPLATE_CAMO),1};
+    #endif
 };
 class GCLASS(Polaris_HMG);
 class CLASS(Polaris_HMG): GCLASS(Polaris_HMG) {
@@ -32,5 +44,9 @@ class CLASS(Polaris_HMG): GCLASS(Polaris_HMG) {
     side = TEMPLATE_SIDE;
     crew = QCLASS(Rifleman);
     typicalCargo[] = {QCLASS(Rifleman)};
+    #ifdef TEMPLATE_CAMO_LIST
+    textureList[] = TEMPLATE_CAMO_LIST;
+    #else
     textureList[] = {QUOTE(TEMPLATE_CAMO),1};
+    #endif
 };

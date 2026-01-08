@@ -5,5 +5,9 @@ class CLASS(BM2_IFV1): GCLASS(BM2_IFV1) {
     side = TEMPLATE_SIDE;
     crew = QCLASS(Crewman);
     typicalCargo[] = {QCLASS(Crewman)};
+    #ifdef TEMPLATE_CAMO_LIST
+    textureList[] = TEMPLATE_CAMO_LIST;
+    #else
     textureList[] = {QUOTE(TEMPLATE_CAMO),1};
+    #endif
 };

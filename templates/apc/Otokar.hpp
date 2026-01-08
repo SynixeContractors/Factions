@@ -5,7 +5,11 @@ class CLASS(Otokar): GCLASS(Otokar) {
     side = TEMPLATE_SIDE;
     crew = QCLASS(Crewman);
     typicalCargo[] = {QCLASS(Crewman)};
+    #ifdef TEMPLATE_CAMO_LIST
+    textureList[] = TEMPLATE_CAMO_LIST;
+    #else
     textureList[] = {QUOTE(TEMPLATE_CAMO),1};
+    #endif
 };
 class GCLASS(Otokar_HMG);
 class CLASS(Otokar_HMG): GCLASS(Otokar_HMG) {
@@ -14,7 +18,11 @@ class CLASS(Otokar_HMG): GCLASS(Otokar_HMG) {
     side = TEMPLATE_SIDE;
     crew = QCLASS(Crewman);
     typicalCargo[] = {QCLASS(Crewman)};
+    #ifdef TEMPLATE_CAMO_LIST
+    textureList[] = TEMPLATE_CAMO_LIST;
+    #else
     textureList[] = {QUOTE(TEMPLATE_CAMO),1};
+    #endif
 };
 class GCLASS(Otokar_RCWS);
 class CLASS(Otokar_RCWS): GCLASS(Otokar_RCWS) {
@@ -23,5 +31,9 @@ class CLASS(Otokar_RCWS): GCLASS(Otokar_RCWS) {
     side = TEMPLATE_SIDE;
     crew = QCLASS(Crewman);
     typicalCargo[] = {QCLASS(Crewman)};
+    #ifdef TEMPLATE_CAMO_LIST
+    textureList[] = TEMPLATE_CAMO_LIST;
+    #else
     textureList[] = {QUOTE(TEMPLATE_CAMO),1};
+    #endif
 };
