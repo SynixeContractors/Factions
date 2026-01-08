@@ -201,22 +201,22 @@ class GCLASS(BM2_IFV1): O_APC_Tracked_02_cannon_F {
             factions[] = {};
         };
         class cdf {
-            displayName = "Cdf (Desert Net)";
+            displayName = "CDF (Desert Net)";
             IFV1_CDF(NET_DESERT)
             factions[] = {};
         };
         class cdf_green {
-            displayName = "Cdf (Green Net)";
+            displayName = "CDF (Green Net)";
             IFV1_CDF(NET_GREEN)
             factions[] = {};
         };
         class cdf_jungle {
-            displayName = "Cdf (Jungle Net)";
+            displayName = "CDF (Jungle Net)";
             IFV1_CDF(NET_JUNGLE)
             factions[] = {};
         };
         class cdf_winter {
-            displayName = "Cdf (Winter Net)";
+            displayName = "CDF (Winter Net)";
             IFV1_CDF(NET_WINTER)
             factions[] = {};
         };
@@ -601,9 +601,15 @@ class GCLASS(BM2_AA): O_APC_Tracked_02_AA_F {
             textures[] = {"lxws\vehicles_f_lxws\data\APC_Tracked_02\kamysh_aa_sand1_co.paa","lxws\vehicles_f_lxws\data\APC_Tracked_02\kamysh_sand2_co.paa","lxws\vehicles_f_lxws\data\APC_Tracked_02\kamysh_aa_sand3.paa","A3\Armor_F\Data\camonet_CSAT_HEX_Desert_CO.paa","A3\armor_f\data\cage_csat_co.paa"};
             factions[] = {};
         };
-        class WoodlandHex {
-            displayName = "Hex Woodland";
-            textures[] = {"\A3_Atlas\Armor_F_Atlas\APC_Tracked_02\Data\APC_Tracked_02_ext_01_AA_whex_CO.paa","\A3_Atlas\Armor_F_Atlas\APC_Tracked_02\Data\APC_Tracked_02_ext_02_whex_CO.paa","\A3_Atlas\Armor_F_Atlas\APC_Tracked_02\Data\APC_Tracked_02_AA_Tower_whex_CO.paa","\A3\Armor_F\Data\camonet_CSAT_Hex_Green_CO.paa","\A3_Aegis\Armor_F_Aegis\Data\cage_RUkhk_CO.paa"};
+        class cdf {
+            displayName = "CDF";
+            textures[] = {
+                "\A3_Atlas\Armor_F_Atlas\APC_Tracked_02\Data\APC_Tracked_02_ext_01_CDF_CO.paa",
+                "\A3_Atlas\Armor_F_Atlas\APC_Tracked_02\Data\APC_Tracked_02_ext_02_CDF_CO.paa",
+                "\A3_Aegis\Armor_F_Aegis\APC_Tracked_02\Data\APC_Tracked_01_AA_Tower_CDF_CO",
+                NET_GREEN,
+                "\A3_Atlas\Armor_F_Atlas\Data\cage_CDF_CO.paa"
+            };
             factions[] = {};
         };
     };
