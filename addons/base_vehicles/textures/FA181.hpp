@@ -40,7 +40,7 @@ class TextureSources {
     };
     class Khaybaran {
         displayName = "Khaybaran";
-            textures[] = {
+        textures[] = {
             "\A3_Atlas\Air_F_Atlas\Plane_Fighter_01\Data\Fighter_01_fuselage_01_kzg_CO.paa",
             "\A3_Atlas\Air_F_Atlas\Plane_Fighter_01\Data\Fighter_01_fuselage_02_kzg_CO.paa",
             "\A3\Air_F_Jets\Plane_Fighter_01\Data\Fighter_01_glass_01_CA.paa",
@@ -48,7 +48,7 @@ class TextureSources {
             "\A3\Air_F_Jets\Plane_Fighter_01\Data\Fighter_01_cockpit_02_CO.paa",
             "\A3\Air_F_Jets\Plane_Fighter_01\Data\Fighter_01_cockpit_03_CO.paa",
             "\A3\Air_F_Jets\Plane_Fighter_01\Data\Fighter_01_cockpit_05_CO.paa",
-            };
-            factions[] = {};
+        };
+        factions[] = {};
     };
 };
