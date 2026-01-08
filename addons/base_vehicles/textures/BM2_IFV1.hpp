@@ -1,3 +1,70 @@
+#define IFV1_GREEN(CAMONET) \
+textures[] = {\
+    "\A3_Aegis\Armor_F_Aegis\APC_Tracked_02\Data\APC_Tracked_02_ext_01_RUkhk_CO.paa",\
+    "\A3_Aegis\Armor_F_Aegis\APC_Tracked_02\Data\APC_Tracked_02_ext_02_RUkhk_CO.paa",\
+    "\A3_Aegis\Armor_F_Aegis\APC_Tracked_02\Data\RCWS30_RUkhk_CO.paa",\
+    CAMONET,\
+    "\A3_Aegis\Armor_F_Aegis\Data\cage_RUkhk_CO.paa"\
+};
+#define IFV1_GREENHEX(CAMONET) \
+textures[] = {\
+    "A3\Armor_F_Exp\APC_Tracked_02\Data\APC_Tracked_02_ext_01_ghex_CO.paa",\
+    "A3\Armor_F_Exp\APC_Tracked_02\Data\APC_Tracked_02_ext_02_ghex_CO.paa",\
+    "A3\Armor_F_Exp\APC_Tracked_02\Data\RCWS30_ghex_CO.paa",\
+    CAMONET,\
+    "A3\armor_f\data\cage_csat_green_CO.paa"\
+};
+#define IFV1_HEX(CAMONET) \
+           textures[] = {\
+   "A3\Armor_F_Beta\APC_Tracked_02\Data\apc_tracked_02_ext_01_hexarid_co.paa",\
+   "A3\Armor_F_Beta\APC_Tracked_02\Data\apc_tracked_02_ext_02_hexarid_co.paa",\
+   "A3\Armor_F_Beta\APC_Tracked_02\Data\rcws30_opfor_co.paa",\
+   CAMONET,\
+   "A3\armor_f\data\cage_csat_co.paa"\
+           };
+#define IFV1_SAND(CAMONET) \
+textures[] = {\
+    "lxws\vehicles_f_lxws\data\APC_Tracked_02\kamysh_sand1_co.paa",\
+    "lxws\vehicles_f_lxws\data\APC_Tracked_02\kamysh_sand2_co.paa",\
+    "lxws\vehicles_f_lxws\data\APC_Tracked_02\kamysh_sand3_co.paa",\
+    CAMONET,\
+    "A3\armor_f\data\cage_csat_co.paa"\
+};
+
+#define IFV1_SFIA(CAMONET) \
+textures[] = {\
+    "lxws\vehicles_f_lxws\data\APC_Tracked_02\kamysh_africa1_co.paa",\
+    "lxws\vehicles_f_lxws\data\APC_Tracked_02\kamysh_africa2_co.paa",\
+    "lxws\vehicles_f_lxws\data\APC_Tracked_02\kamysh_africa3_co.paa",\
+    CAMONET,\
+    "A3\armor_f\data\cage_csat_co.paa"\
+};
+
+#define IFV1_TAKISTAN(CAMONET) \
+textures[] = {\
+    "\A3_Atlas\Armor_F_Atlas\APC_Tracked_02\Data\APC_Tracked_02_ext_01_tk_CO.paa",\
+    "\A3_Atlas\Armor_F_Atlas\APC_Tracked_02\Data\APC_Tracked_02_ext_02_tk_CO.paa",\
+    "\A3_Atlas\Armor_F_Atlas\APC_Tracked_02\Data\RCWS30_tk_CO.paa",\
+    CAMONET,\
+    "\A3\Armor_F\Data\cage_CSAT_CO.paa"\
+};
+#define IFV1_SEP(CAMONET) \
+textures[] = {\
+    "\A3_Opf\Armor_F_Opf\APC_Tracked_02\Data\APC_Tracked_02_ext_01_Opf_CO.paa",\
+    "\A3_Aegis\Armor_F_Aegis\APC_Tracked_02\Data\APC_Tracked_02_ext_02_RUkhk_CO.paa",\
+    "\A3_Aegis\Armor_F_Aegis\APC_Tracked_02\Data\RCWS30_RUkhk_CO.paa",\
+    CAMONET,\
+    "\A3_Aegis\Armor_F_Aegis\Data\cage_RUkhk_CO.paa"\
+};
+#define IFV1_CDF(CAMONET) \
+textures[] = {\
+    "\A3_Atlas\Armor_F_Atlas\APC_Tracked_02\Data\APC_Tracked_02_ext_01_CDF_CO.paa",\
+    "\A3_Atlas\Armor_F_Atlas\APC_Tracked_02\Data\APC_Tracked_02_ext_02_CDF_CO.paa",\
+    "\A3_Atlas\Armor_F_Atlas\APC_Tracked_02\Data\RCWS30_CDF_CO.paa",\
+    CAMONET,\
+    "\A3_Atlas\Armor_F_Atlas\Data\cage_CDF_CO.paa",\
+};
+
 class TextureSources {
     class Green {
         displayName = "Green (Green Net)";
