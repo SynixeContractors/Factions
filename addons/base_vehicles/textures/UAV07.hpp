@@ -15,7 +15,6 @@ class TextureSources {
         textures[] = {"A3_Aegis\Air_f_Aegis\UAV_07\data\UAV_07_ext_01_INDEP_CO.paa"};
         factions[] = {};
     };
-    delete Luftwaffe;
     // class Luftwaffe {
     //     displayName = "Luftwaffe";
     //     textures[] = {"A3_Atlas\Air_f_Atlas\UAV_07\data\UAV_07_ext_01_variant_GER_CO.paa"};

@@ -10,7 +10,6 @@ class CLASS(Karatel): GCLASS(Karatel) {
     #else
     textureList[] = {QUOTE(TEMPLATE_CAMO),1};
     #endif
-
 };
 class GCLASS(Karatel_HMG);
 class CLASS(Karatel_HMG): GCLASS(Karatel_HMG) {
