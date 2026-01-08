@@ -56,6 +56,14 @@
                 CAMONET,\
                 "\A3_Aegis\Armor_F_Aegis\Data\cage_RUkhk_CO.paa"\
             };
+#define IFV1_CDF(CAMONET) \
+            textures[] = {\
+                "\A3_Atlas\Armor_F_Atlas\APC_Tracked_02\Data\APC_Tracked_02_ext_01_CDF_CO.paa",\
+                "\A3_Atlas\Armor_F_Atlas\APC_Tracked_02\Data\APC_Tracked_02_ext_02_CDF_CO.paa",\
+                "\A3_Atlas\Armor_F_Atlas\APC_Tracked_02\Data\RCWS30_CDF_CO.paa",\
+                CAMONET,\
+                "\A3_Atlas\Armor_F_Atlas\Data\cage_CDF_CO.paa",\
+            };
 
 class O_APC_Tracked_02_cannon_F;
 class GCLASS(BM2_IFV1): O_APC_Tracked_02_cannon_F {
@@ -192,7 +200,26 @@ class GCLASS(BM2_IFV1): O_APC_Tracked_02_cannon_F {
             IFV1_TAKISTAN(NET_WINTER)
             factions[] = {};
         };
-
+        class cdf {
+            displayName = "Cdf (Desert Net)";
+            IFV1_CDF(NET_DESERT)
+            factions[] = {};
+        };
+        class cdf_green {
+            displayName = "Cdf (Green Net)";
+            IFV1_CDF(NET_GREEN)
+            factions[] = {};
+        };
+        class cdf_jungle {
+            displayName = "Cdf (Jungle Net)";
+            IFV1_CDF(NET_JUNGLE)
+            factions[] = {};
+        };
+        class cdf_winter {
+            displayName = "Cdf (Winter Net)";
+            IFV1_CDF(NET_WINTER)
+            factions[] = {};
+        };
     };
 };
 
