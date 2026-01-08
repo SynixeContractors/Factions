@@ -5,7 +5,7 @@ class CfgVehicles {
     #define TEMPLATE_CAMO Desert
     #include "../../../templates/cars/LSV.hpp"
     #undef  TEMPLATE_CAMO
-    #define TEMPLATE_CAMO Blufor
+    #define TEMPLATE_CAMO Luba
     #include "../../../templates/cars/HEMTT.hpp"
     #undef  TEMPLATE_CAMO
     #define TEMPLATE_CAMO Guerrilla_04

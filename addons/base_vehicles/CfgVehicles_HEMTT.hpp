@@ -88,6 +88,15 @@ class GCLASS(HEMTT): B_Truck_01_mover_F {
             };
             factions[] = {};
         };
+        class Luba {
+            displayName = "Blotches (Sand)";
+            textures[] = {
+                "\s\synixe_factions\addons\textures\data\hemtt\hemtt_01_LUB_CO.paa",
+                "\s\synixe_factions\addons\textures\data\hemtt\hemtt_02_LUB_CO.paa",
+                "\A3\Soft_F_Gamma\Truck_01\Data\truck_01_mprimer_CO.paa"
+            };
+            factions[] = {};
+        };
     };
 };
 
@@ -259,6 +268,15 @@ class GCLASS(HEMTT_Fuel): B_Truck_01_fuel_F {
             };
             factions[] = {};
         };
+        class Luba {
+            displayName = "Blotches (Desert)";
+            textures[] = {
+                 "\s\synixe_factions\addons\textures\data\hemtt\hemtt_01_LUB_CO.paa",\
+                 "\s\synixe_factions\addons\textures\data\hemtt\hemtt_02_LUB_CO.paa",\
+                "\a3\soft_f_gamma\truck_01\data\truck_01_fuel_co.paa"
+            };
+            factions[] = {};
+        };
     };
 };
 
@@ -343,6 +361,16 @@ class GCLASS(HEMTT_Ammo): B_Truck_01_ammo_F {
             };
             factions[] = {};
         };
+        class Luba {
+            displayName = "Blotches (Desert)";
+            textures[] = {
+                "\s\synixe_factions\addons\textures\data\hemtt\hemtt_01_LUB_CO.paa",\
+                "\s\synixe_factions\addons\textures\data\hemtt\hemtt_02_LUB_CO.paa",\
+                "\a3\soft_f_gamma\truck_01\data\truck_01_ammo_co.paa"
+            };
+            factions[] = {};
+        };
+
     };
 };
 
@@ -442,6 +470,16 @@ class GCLASS(HEMTT_FireTruck): B_Truck_01_FFT_rf {
                 "\x\tacs\addons\vehicles\data\truck_01_ext_02_theseus_co.paa",
                 "\lxRF\vehicles_rf\Truck_01\data\Truck_01_fire_CO.paa",
                 "\lxRF\vehicles_rf\Truck_01\data\truck_01_adds_fire_co.paa"
+            };
+            factions[] = {};
+        };
+        class Luba {
+            displayName = "Blotches (Desert)";
+            textures[] = {
+                "\s\synixe_factions\addons\textures\data\hemtt\hemtt_01_LUB_CO.paa",\
+                "\s\synixe_factions\addons\textures\data\hemtt\hemtt_02_LUB_CO.paa",\
+                "\lxRF\vehicles_rf\Truck_01\data\Truck_01_water_nato_CO.paa",
+                "\lxRF\vehicles_rf\Truck_01\data\truck_01_adds_nato_co.paa"
             };
             factions[] = {};
         };
