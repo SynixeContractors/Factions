@@ -2,6 +2,25 @@ class CfgVehicles {
     #define TEMPLATE_FACTION QPCLASS(t2_indep)
     #define TEMPLATE_SIDE 2
     #include "../../../templates/statics/M2.hpp"
+    #define TEMPLATE_CAMO Green
+    #include "../../../templates/apc/BM2_AA.hpp"
+    #include "../../../templates/apc/BM2K.hpp"
+    #undef TEMPLATE_CAMO
+    #define TEMPLATE_CAMO Green
+    #include "../../../templates/cars/Karatel.hpp"
+    #include "../../../templates/cars/LUT_AA.hpp"
+    #include "../../../templates/cars/LUT_Ammo.hpp"
+    #include "../../../templates/cars/LUT_Cargo.hpp"
+    #include "../../../templates/cars/LUT_Fuel.hpp"
+    #include "../../../templates/cars/LUT_MRL.hpp"
+    #include "../../../templates/cars/LUT_Medical.hpp"
+    #include "../../../templates/cars/LUT_Repair.hpp"
+    #include "../../../templates/cars/LUT_Transport.hpp"
+    #include "../../../templates/cars/Offroad_Civilian.hpp"
+    #include "../../../templates/cars/Offroad_Armed.hpp"
+    #undef TEMPLATE_CAMO
+    #define TEMPLATE_CAMO Green_green
+    #include "../../../templates/tanks/T100.hpp"
 
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {
@@ -65,7 +84,7 @@ class CfgVehicles {
     };
     class CLASS(RiflemanHAT): CLASS(RiflemanBackpack) {
         @Role(RiflemanHAT);
-        #include "../weapons/mat.hpp"
+        #include "../weapons/hat.hpp"
     };
     class CLASS(Engineer): CLASS(RiflemanBackpack) {
         @Role(Engineer);

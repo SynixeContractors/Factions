@@ -1,8 +1,8 @@
 @Launchers({
     "weapons": {
-        "launch_B_Titan_short_F": {
+        "launch_O_Vorona_green_F": {
             "magazinesBackpack": {
-                "Titan_AT": 1,
+                "launch_O_Vorona_green_F": 1,
             },
         },
     },
