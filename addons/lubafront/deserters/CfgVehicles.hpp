@@ -32,12 +32,12 @@ class CfgVehicles {
     };
     class CLASS(Rifleman): CLASS(Base) {
         @Role(Rifleman);
-        #include "../../luba/weapons/rifle.hpp"
+        #include "../../luba/weapons/rifle_reserve.hpp"
         #include "../../luba/weapons/launcher_reserve.hpp"
     };
     class CLASS(RiflemanCarabine): CLASS(Base) {
         @Role(Hidden);
-        #include "../../luba/weapons/carabine.hpp"
+        #include "../../luba/weapons/rifle_reserve.hpp"
         #include "../../luba/weapons/attachments_reserve.hpp"
     };
     class CLASS(RiflemanBackpack): CLASS(RiflemanCarabine) {
@@ -79,7 +79,7 @@ class CfgVehicles {
         @Role(Crewman);
         #include "../../luba/weapons/pdw.hpp"
     };
-    class CLASS(Marksman): CLASS(Rifleman) {
+    class CLASS(Marksman): CLASS(RiflemanCarabine) {
         @Role(Marksman);
         #include "../../luba/weapons/marksman.hpp"
         #include "../../luba/weapons/pistol.hpp"

@@ -1,9 +1,14 @@
 @Launchers({
     "weapons": {
         "": 0.95,
-        "Atlas_Launch_Pzf3_F": {
-            "probability": 0.05,
-            "loadedPrimary": "Atlas_DM12_HEAT_F",
+        "launch_RPG7_F": {
+            "probability": 0.03,
+            "loadedPrimary": "launch_RPG7_F",
         },
+        "Aegis_launch_RPG7M_F": {
+            "probability": 0.02,
+            "loadedPrimary": "PSRL1_AT_RF",
+        },
+
     },
 });
