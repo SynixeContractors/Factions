@@ -23,7 +23,7 @@ class TextureSources {
     class White {
         displayName = "White";
         textures[] = {
-          "\lxRF\vehicles_rf\Truck_01\data\truck_01_ext_01_white_co.paa",
+            "\lxRF\vehicles_rf\Truck_01\data\truck_01_ext_01_white_co.paa",
             "\lxRF\vehicles_rf\Truck_01\data\truck_01_ext_02_white_co.paa",
             "lxws\vehicles_f_lxws\data\Truck_01\truck_un_cargo_co.paa",
             "lxws\vehicles_f_lxws\data\Truck_01\truck_un_cover_co.paa"
@@ -33,7 +33,7 @@ class TextureSources {
     class UNA {
         displayName = "UNA";
         textures[] = {
-          "lxws\vehicles_f_lxws\data\Truck_01\truck_un_ext_01_co.paa",
+            "lxws\vehicles_f_lxws\data\Truck_01\truck_un_ext_01_co.paa",
             "lxws\vehicles_f_lxws\data\Truck_01\truck_un_ext_02_co.paa",
             "lxws\vehicles_f_lxws\data\Truck_01\truck_un_cargo_co.paa",
             "lxws\vehicles_f_lxws\data\Truck_01\truck_un_cover_co.paa"
@@ -73,7 +73,7 @@ class TextureSources {
     class KZG {
         displayName = "Khaybaran";
         textures[] = {
-          "\A3_Atlas\Soft_F_Atlas\Truck_01\Data\Truck_01_ext_01_kzg_CO.paa",
+            "\A3_Atlas\Soft_F_Atlas\Truck_01\Data\Truck_01_ext_01_kzg_CO.paa",
             "\A3_Atlas\Soft_F_Atlas\Truck_01\Data\Truck_01_ext_02_kzg_CO.paa",
             "\A3_Atlas\Soft_F_Atlas\Truck_01\Data\Truck_01_cargo_kzg_co.paa",
             "\A3_Atlas\Soft_F_Atlas\Truck_01\Data\Truck_01_cover_kzg_co.paa"

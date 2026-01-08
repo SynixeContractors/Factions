@@ -10,7 +10,6 @@ class CLASS(Fennek): GCLASS(Fennek) {
     #else
     textureList[] = {QUOTE(TEMPLATE_CAMO),1};
     #endif
-
 };
 class GCLASS(Fennek_HMG);
 class CLASS(Fennek_HMG): GCLASS(Fennek_HMG) {
@@ -24,7 +23,6 @@ class CLASS(Fennek_HMG): GCLASS(Fennek_HMG) {
     #else
     textureList[] = {QUOTE(TEMPLATE_CAMO),1};
     #endif
-
 };
 class GCLASS(Fennek_GMG);
 class CLASS(Fennek_GMG): GCLASS(Fennek_GMG) {

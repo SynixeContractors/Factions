@@ -16,17 +16,17 @@ class GCLASS(Orca): O_Heli_Light_02_unarmed_F {
         class Opfor {
             displayName = "Hex Ochre";
             textures[] = {"\A3_Aegis\Air_F_Aegis\Heli_Light_02\Data\Heli_Light_02_ext_OPFOR_CO.paa"};
-            faction[] = {};
+            factions[] = {};
         };
         class Black {
             displayName = "Black";
             textures[] = {"\A3\Air_F\Heli_Light_02\Data\Heli_Light_02_ext_CO.paa"};
-            faction[] = {};
+            factions[] = {};
         };
         class Blackcustom {
             displayName = "Orca";
             textures[] = {"\A3\Air_F_Heli\Heli_Light_02\Data\Heli_Light_02_ext_OPFOR_V2_CO.paa"};
-            faction[] = {};
+            factions[] = {};
         };
         class Indep {
             displayName = "DAP Green";
@@ -36,12 +36,12 @@ class GCLASS(Orca): O_Heli_Light_02_unarmed_F {
         class GreenHex {
             displayName = "Hex Woodland";
             textures[] = {"\A3_Aegis\Air_F_Aegis\Heli_Light_02\Data\Heli_Light_02_ext_ghex_CO.paa"};
-            faction[] = {};
+            factions[] = {};
         };
         class Green {
             displayName = "Olive";
             textures[] = {"\A3_Aegis\Air_F_Aegis\Heli_Light_02\Data\Heli_Light_02_ext_raven_CO.paa"};
-            faction[] = {};
+            factions[] = {};
         };
         class CIV {
             displayName = "White & Blue";
@@ -51,39 +51,39 @@ class GCLASS(Orca): O_Heli_Light_02_unarmed_F {
         class Marar {
             displayName = "Marar";
             textures[] = {"\A3_Atlas\Air_F_Atlas\Heli_Light_02\Data\Heli_Light_02_ext_Marar_CO.paa"};
-            faction[] = {};
+            factions[] = {};
         };
         class UNO {
             displayName = "United Nations";
             textures[] = {"\A3_Atlas\Air_F_Atlas\Heli_Light_02\Data\Heli_Light_02_ext_UN_CO.paa"};
-            faction[] = {};
+            factions[] = {};
         };
         class WoodlandHex {
             displayName = "Hex Green";
             textures[] = {"\A3_Atlas\Air_F_Atlas\Heli_Light_02\Data\Heli_Light_02_ext_whex_CO.paa"};
-            faction[] = {};
+            factions[] = {};
         };
         class Takistan {
             displayName = "Hex Mixed";
             textures[] = {"\A3_Atlas\Air_F_Atlas\Heli_Light_02\Data\Heli_Light_02_ext_tk_CO.paa"};
-            faction[] = {};
+            factions[] = {};
         };
         class Ardistan {
             displayName = "Ardistan";
             textures[] = {"\A3_Atlas\Air_F_Atlas\Heli_Light_02\Data\Heli_Light_02_ext_ardi_CO.paa"};
-            faction[] = {};
+            factions[] = {};
         };
         class ION_BLACK
         {
             displayName = "ION Services";
             textures[] = {"\lxWS\air_f_lxWS\Heli_Light_02\data\Heli_Light_02_ext_ion_CO.paa"};
-            faction[] = {};
+            factions[] = {};
         };
         class BlackStar
         {
             displayName = "Black (Star)";
             textures[] = {"\A3_Aegis\Air_F_Aegis\Heli_Light_02\Data\Heli_Light_02_ext_RUS_CO.paa"};
-            faction[] = {};
+            factions[] = {};
         };
     };
 };
@@ -106,17 +106,17 @@ class GCLASS(OrcaArmed): O_Heli_Light_02_dynamicLoadout_F {
         class Opfor {
             displayName = "Hex Ochre";
             textures[] = {"\A3_Aegis\Air_F_Aegis\Heli_Light_02\Data\Heli_Light_02_ext_OPFOR_CO.paa"};
-            faction[] = {};
+            factions[] = {};
         };
         class Black {
             displayName = "Black";
             textures[] = {"\A3\Air_F\Heli_Light_02\Data\Heli_Light_02_ext_CO.paa"};
-            faction[] = {};
+            factions[] = {};
         };
         class Blackcustom {
             displayName = "Orca";
             textures[] = {"\A3\Air_F_Heli\Heli_Light_02\Data\Heli_Light_02_ext_OPFOR_V2_CO.paa"};
-            faction[] = {};
+            factions[] = {};
         };
         class Indep {
             displayName = "DAP Green";
@@ -126,12 +126,12 @@ class GCLASS(OrcaArmed): O_Heli_Light_02_dynamicLoadout_F {
         class GreenHex {
             displayName = "Hex Woodland";
             textures[] = {"\A3_Aegis\Air_F_Aegis\Heli_Light_02\Data\Heli_Light_02_ext_ghex_CO.paa"};
-            faction[] = {};
+            factions[] = {};
         };
         class Green {
             displayName = "Olive";
             textures[] = {"\A3_Aegis\Air_F_Aegis\Heli_Light_02\Data\Heli_Light_02_ext_raven_CO.paa"};
-            faction[] = {};
+            factions[] = {};
         };
         class CIV {
             displayName = "White & Blue";
@@ -141,39 +141,39 @@ class GCLASS(OrcaArmed): O_Heli_Light_02_dynamicLoadout_F {
         class Marar {
             displayName = "Marar";
             textures[] = {"\A3_Atlas\Air_F_Atlas\Heli_Light_02\Data\Heli_Light_02_ext_Marar_CO.paa"};
-            faction[] = {};
+            factions[] = {};
         };
         class UNO {
             displayName = "United Nations";
             textures[] = {"\A3_Atlas\Air_F_Atlas\Heli_Light_02\Data\Heli_Light_02_ext_UN_CO.paa"};
-            faction[] = {};
+            factions[] = {};
         };
         class WoodlandHex {
             displayName = "Hex Green";
             textures[] = {"\A3_Atlas\Air_F_Atlas\Heli_Light_02\Data\Heli_Light_02_ext_whex_CO.paa"};
-            faction[] = {};
+            factions[] = {};
         };
         class Takistan {
             displayName = "Hex Mixed";
             textures[] = {"\A3_Atlas\Air_F_Atlas\Heli_Light_02\Data\Heli_Light_02_ext_tk_CO.paa"};
-            faction[] = {};
+            factions[] = {};
         };
         class Ardistan {
             displayName = "Ardistan";
             textures[] = {"\A3_Atlas\Air_F_Atlas\Heli_Light_02\Data\Heli_Light_02_ext_ardi_CO.paa"};
-            faction[] = {};
+            factions[] = {};
         };
         class ION_BLACK
         {
             displayName = "ION Services";
             textures[] = {"\lxWS\air_f_lxWS\Heli_Light_02\data\Heli_Light_02_ext_ion_CO.paa"};
-            faction[] = {};
+            factions[] = {};
         };
         class BlackStar
         {
             displayName = "Black (Star)";
             textures[] = {"\A3_Aegis\Air_F_Aegis\Heli_Light_02\Data\Heli_Light_02_ext_RUS_CO.paa"};
-            faction[] = {};
+            factions[] = {};
         };
     };
 };
@@ -196,7 +196,7 @@ class GCLASS(OrcaR): B_ION_Heli_Light_02_unarmed_lxWS {
         {
             displayName = "Hex Ochre";
             textures[] = {"\A3\Air_F\Heli_Light_02\Data\Heli_Light_02_ext_OPFOR_CO.paa","\a3\air_f\data\rockets_co.paa","\lxWS\air_f_lxWS\heli_light_02\data\lxws_heli_light_02_adds_bhex_co.paa"};
-            faction[] = {};
+            factions[] = {};
         };
         class GreenHex
         {
@@ -208,19 +208,19 @@ class GCLASS(OrcaR): B_ION_Heli_Light_02_unarmed_lxWS {
         {
             displayName = "ION Services";
             textures[] = {"\lxWS\air_f_lxWS\Heli_Light_02\data\Heli_Light_02_ext_ion_CO.paa","\a3\air_f\data\rockets_co.paa","\lxWS\air_f_lxWS\heli_light_02\data\lxws_heli_light_02_adds_ion_co.paa"};
-            faction[] = {};
+            factions[] = {};
         };
         class Black
         {
             displayName = "Black";
             textures[] = {"\A3\Air_F\Heli_Light_02\Data\Heli_Light_02_ext_CO.paa","\a3\air_f\data\rockets_co.paa","\lxWS\air_f_lxWS\heli_light_02\data\lxws_heli_light_02_adds_ion_co.paa"};
-            faction[] = {};
+            factions[] = {};
         };
         class Blackcustom
         {
             displayName = "Orca";
             textures[] = {"\A3\Air_F_Heli\Heli_Light_02\Data\Heli_Light_02_ext_OPFOR_V2_CO.paa","\a3\air_f\data\rockets_co.paa","\lxWS\air_f_lxWS\heli_light_02\data\lxws_heli_light_02_adds_ion_co.paa"};
-            faction[] = {};
+            factions[] = {};
         };
         class Blue
         {
@@ -231,32 +231,32 @@ class GCLASS(OrcaR): B_ION_Heli_Light_02_unarmed_lxWS {
         class Ardistan {
             displayName = "Ardistan";
             textures[] = {"\A3_Atlas\Air_F_Atlas\Heli_Light_02\Data\Heli_Light_02_ext_ardi_CO.paa","\a3\air_f\data\rockets_co.paa","\lxWS\air_f_lxWS\heli_light_02\data\lxws_heli_light_02_adds_ghex_co.paa"};
-            faction[] = {};
+            factions[] = {};
         };
         class WoodlandHex {
             displayName = "Hex Green";
             textures[] = {"\A3_Atlas\Air_F_Atlas\Heli_Light_02\Data\Heli_Light_02_ext_whex_CO.paa","\a3\air_f\data\rockets_co.paa","\lxWS\air_f_lxWS\heli_light_02\data\lxws_heli_light_02_adds_ghex_co.paa"};
-            faction[] = {};
+            factions[] = {};
         };
         class Takistan {
             displayName = "Hex Mixed";
             textures[] = {"\A3_Atlas\Air_F_Atlas\Heli_Light_02\Data\Heli_Light_02_ext_tk_CO.paa","\a3\air_f\data\rockets_co.paa","\lxWS\air_f_lxWS\heli_light_02\data\lxws_heli_light_02_adds_bhex_co.paa"};
-            faction[] = {};
+            factions[] = {};
         };
         class Marar {
             displayName = "Marar";
             textures[] = {"\A3_Atlas\Air_F_Atlas\Heli_Light_02\Data\Heli_Light_02_ext_Marar_CO.paa","\a3\air_f\data\rockets_co.paa","\lxWS\air_f_lxWS\heli_light_02\data\lxws_heli_light_02_adds_ion_co.paa"};
-            faction[] = {};
+            factions[] = {};
         };
         class UNO {
             displayName = "United Nations";
             textures[] = {"\A3_Atlas\Air_F_Atlas\Heli_Light_02\Data\Heli_Light_02_ext_UN_CO.paa","\a3\air_f\data\rockets_co.paa","\lxWS\air_f_lxWS\heli_light_02\data\lxws_heli_light_02_adds_ion_co.paa"};
-            faction[] = {};
+            factions[] = {};
         };
         class Green {
             displayName = "Olive";
             textures[] = {"\A3_Aegis\Air_F_Aegis\Heli_Light_02\Data\Heli_Light_02_ext_raven_CO.paa","\a3\air_f\data\rockets_co.paa","\lxWS\air_f_lxWS\heli_light_02\data\lxws_heli_light_02_adds_ghex_co.paa"};
-            faction[] = {};
+            factions[] = {};
         };
         class Indep {
             displayName = "DAP Green";
@@ -267,7 +267,7 @@ class GCLASS(OrcaR): B_ION_Heli_Light_02_unarmed_lxWS {
         {
             displayName = "Black (Star)";
             textures[] = {"\A3_Aegis\Air_F_Aegis\Heli_Light_02\Data\Heli_Light_02_ext_RUS_CO.paa","\a3\air_f\data\rockets_co.paa","\lxWS\air_f_lxWS\heli_light_02\data\lxws_heli_light_02_adds_ion_co.paa"};
-            faction[] = {};
+            factions[] = {};
         };
     };
 };
@@ -290,7 +290,7 @@ class GCLASS(OrcaAR): B_ION_Heli_Light_02_dynamicLoadout_lxWS {
         {
             displayName = "Hex Ochre";
             textures[] = {"\A3\Air_F\Heli_Light_02\Data\Heli_Light_02_ext_OPFOR_CO.paa","\a3\air_f\data\rockets_co.paa","\lxWS\air_f_lxWS\heli_light_02\data\lxws_heli_light_02_adds_bhex_co.paa"};
-            faction[] = {};
+            factions[] = {};
         };
         class GreenHex
         {
@@ -302,19 +302,19 @@ class GCLASS(OrcaAR): B_ION_Heli_Light_02_dynamicLoadout_lxWS {
         {
             displayName = "ION Services";
             textures[] = {"\lxWS\air_f_lxWS\Heli_Light_02\data\Heli_Light_02_ext_ion_CO.paa","\a3\air_f\data\rockets_co.paa","\lxWS\air_f_lxWS\heli_light_02\data\lxws_heli_light_02_adds_ion_co.paa"};
-            faction[] = {};
+            factions[] = {};
         };
         class Black
         {
             displayName = "Black";
             textures[] = {"\A3\Air_F\Heli_Light_02\Data\Heli_Light_02_ext_CO.paa","\a3\air_f\data\rockets_co.paa","\lxWS\air_f_lxWS\heli_light_02\data\lxws_heli_light_02_adds_ion_co.paa"};
-            faction[] = {};
+            factions[] = {};
         };
         class Blackcustom
         {
             displayName = "Orca";
             textures[] = {"\A3\Air_F_Heli\Heli_Light_02\Data\Heli_Light_02_ext_OPFOR_V2_CO.paa","\a3\air_f\data\rockets_co.paa","\lxWS\air_f_lxWS\heli_light_02\data\lxws_heli_light_02_adds_ion_co.paa"};
-            faction[] = {};
+            factions[] = {};
         };
         class Blue
         {
@@ -325,32 +325,32 @@ class GCLASS(OrcaAR): B_ION_Heli_Light_02_dynamicLoadout_lxWS {
         class Ardistan {
             displayName = "Ardistan";
             textures[] = {"\A3_Atlas\Air_F_Atlas\Heli_Light_02\Data\Heli_Light_02_ext_ardi_CO.paa","\a3\air_f\data\rockets_co.paa","\lxWS\air_f_lxWS\heli_light_02\data\lxws_heli_light_02_adds_ghex_co.paa"};
-            faction[] = {};
+            factions[] = {};
         };
         class WoodlandHex {
             displayName = "Hex Green";
             textures[] = {"\A3_Atlas\Air_F_Atlas\Heli_Light_02\Data\Heli_Light_02_ext_whex_CO.paa","\a3\air_f\data\rockets_co.paa","\lxWS\air_f_lxWS\heli_light_02\data\lxws_heli_light_02_adds_ghex_co.paa"};
-            faction[] = {};
+            factions[] = {};
         };
         class Takistan {
             displayName = "Hex Mixed";
             textures[] = {"\A3_Atlas\Air_F_Atlas\Heli_Light_02\Data\Heli_Light_02_ext_tk_CO.paa","\a3\air_f\data\rockets_co.paa","\lxWS\air_f_lxWS\heli_light_02\data\lxws_heli_light_02_adds_bhex_co.paa"};
-            faction[] = {};
+            factions[] = {};
         };
         class Marar {
             displayName = "Marar";
             textures[] = {"\A3_Atlas\Air_F_Atlas\Heli_Light_02\Data\Heli_Light_02_ext_Marar_CO.paa","\a3\air_f\data\rockets_co.paa","\lxWS\air_f_lxWS\heli_light_02\data\lxws_heli_light_02_adds_ion_co.paa"};
-            faction[] = {};
+            factions[] = {};
         };
         class UNO {
             displayName = "United Nations";
             textures[] = {"\A3_Atlas\Air_F_Atlas\Heli_Light_02\Data\Heli_Light_02_ext_UN_CO.paa","\a3\air_f\data\rockets_co.paa","\lxWS\air_f_lxWS\heli_light_02\data\lxws_heli_light_02_adds_ion_co.paa"};
-            faction[] = {};
+            factions[] = {};
         };
         class Green {
             displayName = "Olive";
             textures[] = {"\A3_Aegis\Air_F_Aegis\Heli_Light_02\Data\Heli_Light_02_ext_raven_CO.paa","\a3\air_f\data\rockets_co.paa","\lxWS\air_f_lxWS\heli_light_02\data\lxws_heli_light_02_adds_ghex_co.paa"};
-            faction[] = {};
+            factions[] = {};
         };
         class Indep {
             displayName = "DAP Green";
@@ -361,7 +361,7 @@ class GCLASS(OrcaAR): B_ION_Heli_Light_02_dynamicLoadout_lxWS {
         {
             displayName = "Black (Star)";
             textures[] = {"\A3_Aegis\Air_F_Aegis\Heli_Light_02\Data\Heli_Light_02_ext_RUS_CO.paa","\a3\air_f\data\rockets_co.paa","\lxWS\air_f_lxWS\heli_light_02\data\lxws_heli_light_02_adds_ion_co.paa"};
-            faction[] = {};
+            factions[] = {};
         };
     };
 };
