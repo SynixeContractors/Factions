@@ -27,7 +27,7 @@ class CfgVehicles {
 
     // Boats
     class GCLASS(CabinSkiff);
-    class GCLASS(Dingy);
+    class GCLASS(Dinghy);
     class GCLASS(JetSki);
     class GCLASS(Motorboat);
     class GCLASS(RHIB);

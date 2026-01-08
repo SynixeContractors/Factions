@@ -1,7 +1,7 @@
 class CfgVehicles {
     #include "CfgVehicles_Ram.hpp"
     #include "CfgVehicles_Quad.hpp"
-    #include "CfgVehicles_Dingy.hpp"
+    #include "CfgVehicles_Dinghy.hpp"
 
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {

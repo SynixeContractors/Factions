@@ -1,6 +1,6 @@
 class C_Rubberboat;
-class GCLASS(Dingy): C_Rubberboat {
-    displayName = "Dingy";
+class GCLASS(Dinghy): C_Rubberboat {
+    displayName = "Dinghy";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;

@@ -13,7 +13,7 @@ class CfgPatches {
 };
 
 class CfgVehicles {
-    class GCLASS(Dingy);
+    class GCLASS(Dinghy);
     class GCLASS(Ram_MMG);
     class GCLASS(Ram_MRL);
     class GCLASS(Ram_AA);

@@ -1,4 +1,4 @@
-#include "CfgVehicles_Dingy.hpp"
+#include "CfgVehicles_Dinghy.hpp"
 #include "CfgVehicles_Fennek.hpp"
 #include "CfgVehicles_LUT.hpp"
 #include "CfgVehicles_Mk6Mortar.hpp"

@@ -50,7 +50,7 @@ class CfgVehicles {
     // Boats
     #include "CfgVehicles_AssaultBoat.hpp"
     #include "CfgVehicles_CabinSkiff.hpp"
-    #include "CfgVehicles_Dingy.hpp"
+    #include "CfgVehicles_Dinghy.hpp"
     #include "CfgVehicles_JetSki.hpp"
     #include "CfgVehicles_Motorboat.hpp"
     #include "CfgVehicles_RHIB.hpp"

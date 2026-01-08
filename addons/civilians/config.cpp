@@ -10,7 +10,7 @@ class CfgPatches {
                 QCLASS2(RHIB,NATION),
                 QCLASS2(CabinSkiff,NATION),
                 QCLASS2(JetSki,NATION),
-                QCLASS2(Dingy,NATION),
+                QCLASS2(Dinghy,NATION),
                 QCLASS2(Jay_Box,NATION),
                 QCLASS2(Jay_Flatbed,NATION),
                 QCLASS2(Jay_Fuel,NATION),

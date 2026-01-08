@@ -26,7 +26,7 @@ class CLASS2(JetSki,NATION): GCLASS(JetSki) {
     typicalCargo[] = {QUOTE(CLASS2(Citizen_Sport,NATION))};
 };
 
-class CLASS2(Dingy,NATION): GCLASS(Dingy) {
+class CLASS2(Dinghy,NATION): GCLASS(Dinghy) {
     SCOPE_DLC;
     faction = QCLASS(NATION);
     crew = QUOTE(CLASS2(Citizen_Polo_Shorts,NATION));

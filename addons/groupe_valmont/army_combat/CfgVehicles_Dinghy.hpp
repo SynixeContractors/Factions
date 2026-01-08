@@ -1,4 +1,4 @@
-class CLASS2(SIDE,Dingy): GCLASS(Dingy) {
+class CLASS2(SIDE,Dinghy): GCLASS(Dinghy) {
     SCOPE_DLC;
     faction = QPCLASS(SIDE_FACTION);
     side = SIDE_NUMBER;
