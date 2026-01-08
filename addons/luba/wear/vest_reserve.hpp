@@ -7,4 +7,7 @@
   "packs": [
     "t3_standard",
   ],
+  "magazines": {
+    "HandGrenade": 1,
+  },
 });
