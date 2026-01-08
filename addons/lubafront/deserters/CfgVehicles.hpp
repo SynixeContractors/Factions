@@ -55,6 +55,10 @@ class CfgVehicles {
         @Role(Autorifleman);
         #include "../../luba/weapons/lmg_reserve.hpp"
     };
+    class CLASS(Machinegunner): CLASS(RiflemanBackpack) {
+        @Role(Machinegunner);
+        #include "../../luba/weapons/lmg_reserve.hpp"
+    };
     class CLASS(Medic): CLASS(RiflemanBackpack) {
         @Role(Medic);
         #include "../../luba/wear/backpack_medic.hpp"

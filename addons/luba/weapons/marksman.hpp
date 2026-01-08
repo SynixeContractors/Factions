@@ -3,7 +3,7 @@
         "Aegis_arifle_M16A4_F": {
             "probability": 1,
             "magazinesVest": {
-                "30Rnd_556x45_Stanag_Sand": 8,
+                "30Rnd_556x45_Stanag_red": 8,
             },
         },
     },
