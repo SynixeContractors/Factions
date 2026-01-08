@@ -1,4 +1,12 @@
 {
+    "Synixe": {
+        "identityTypes": [
+            "Head_NATO",
+            "LanguageENG_F",
+            "LanguageENGGB_F"
+        ],
+        "genericNames": "Synixe"
+    },
     "Virelia": {
         "identityTypes": [
             "Head_NATO",

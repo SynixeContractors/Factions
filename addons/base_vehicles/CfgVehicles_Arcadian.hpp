@@ -8,6 +8,14 @@ class GCLASS(Arcadian): tacs_Arcadian_Unarmed_Base {
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 109;
     textureList[] = {"Black",1,"Tan",1,"Green",1,"Grey",1};
+    class PlateInfos {
+        name = "spz";
+        color[] = {0, 0, 0, 0.75};
+        plateFont = "RobotoCondensedBold";
+        // Will show as SYN-01 in game.
+        plateFormat = "  ###-##"; // Additional spaces are for centering
+        plateLetters = "ABCDEFHIKLMOPRSTVXYZ";
+    };
     class TextureSources {
         class Black {
             displayName = "Black";
@@ -42,6 +50,14 @@ class GCLASS(Arcadian_M134): tacs_Arcadian_Armed_Base {
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 109;
     textureList[] = {"Black",1,"Tan",1,"Green",1,"Grey",1};
+    class PlateInfos {
+        name = "spz";
+        color[] = {0, 0, 0, 0.75};
+        plateFont = "RobotoCondensedBold";
+        // Will show as SYN-01 in game.
+        plateFormat = "  ###-##"; // Additional spaces are for centering
+        plateLetters = "ABCDEFHIKLMOPRSTVXYZ";
+    };
     class TextureSources {
         class Black {
             displayName = "Black";

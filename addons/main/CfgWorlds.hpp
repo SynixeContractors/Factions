@@ -9,6 +9,7 @@ class CfgWorlds {
         @Names(Lingala);
         @Names(Polish);
         @Names(Russian);
+        @Names(Synixe);
         @Names(Zulu);
     };
 };
