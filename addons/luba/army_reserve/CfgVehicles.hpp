@@ -4,11 +4,12 @@ class CfgVehicles {
     #include "../../../templates/statics/M2.hpp"
     #define TEMPLATE_CAMO Insurgent_06
     #include "../../../templates/cars/Offroad_Civilian.hpp"
+    #include "../../../templates/cars/Offroad_Armed.hpp"
 
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {
         displayName = "Luban Base Army Reserve";
-        editorSubcategory = QGCLASS(army_combat);
+        editorSubcategory = QGCLASS(reserves);
 
         #include "../wear/uniform.hpp"
         #include "../wear/vest_reserve.hpp"

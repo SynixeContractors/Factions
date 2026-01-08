@@ -12,8 +12,8 @@ class CfgVehicles {
 
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {
-        displayName = "Luban Base Army Reserve";
-        editorSubcategory = QGCLASS(army_combat);
+        displayName = "Luban Liberation Front Militia";
+        editorSubcategory = QGCLASS(militia);
 
         #include "../wear/uniform.hpp"
         #include "../../luba/wear/vest_reserve.hpp"
