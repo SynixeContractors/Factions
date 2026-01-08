@@ -89,6 +89,15 @@ textures[] = {\
     CAMONET,\
     "\A3\Armor_F\Data\cage_CSAT_CO.paa"\
 };
+#define IFV2_CDF(CAMONET) \
+textures[] = {\
+    "\A3_Atlas\Armor_F_Atlas\APC_Tracked_02\Data\APC_Tracked_02_ext_01_CDF_CO.paa",\
+    "\A3_Atlas\Armor_F_Atlas\APC_Tracked_02\Data\APC_Tracked_02_ext_02_CDF_CO.paa",\
+    "\A3_Aegis\Armor_F_Aegis\APC_Tracked_02\Data\apc_tracked_02_ext_03_RUkhk_co.paa",\
+    "\A3_Aegis\Armor_F_Aegis\APC_Tracked_02\Data\APC_Tracked_02_30mm_RUkhk_CO.paa",\
+    CAMONET,\
+    "\A3_Atlas\Armor_F_Atlas\Data\cage_CDF_CO.paa",\
+};
 
 class TextureSources {
     class ardistan {
@@ -279,6 +288,27 @@ class TextureSources {
     class Takistan_winter {
         displayName = "Hex Mixed (Winter Net)";
         IFV2_TAKISTAN(NET_WINTER)
+        factions[] = {};
+    };
+    //fixme CDF turret texture
+    class cdf {
+        displayName = "CDF (Green Net)";
+        IFV2_CDF(NET_GREEN)
+        factions[] = {};
+    };
+    class cdf_desert {
+        displayName = "CDF (Desert Net)";
+        IFV2_CDF(NET_DESERT)
+        factions[] = {};
+    };
+    class cdf_jungle {
+        displayName = "CDF (Jungle Net)";
+        IFV2_CDF(NET_JUNGLE)
+        factions[] = {};
+    };
+    class cdf_winter {
+        displayName = "CDF (Winter Net)";
+        IFV2_CDF(NET_WINTER)
         factions[] = {};
     };
 };

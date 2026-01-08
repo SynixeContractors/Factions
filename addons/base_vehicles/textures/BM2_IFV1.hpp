@@ -15,13 +15,13 @@ textures[] = {\
     "A3\armor_f\data\cage_csat_green_CO.paa"\
 };
 #define IFV1_HEX(CAMONET) \
-           textures[] = {\
+textures[] = {\
    "A3\Armor_F_Beta\APC_Tracked_02\Data\apc_tracked_02_ext_01_hexarid_co.paa",\
    "A3\Armor_F_Beta\APC_Tracked_02\Data\apc_tracked_02_ext_02_hexarid_co.paa",\
    "A3\Armor_F_Beta\APC_Tracked_02\Data\rcws30_opfor_co.paa",\
    CAMONET,\
    "A3\armor_f\data\cage_csat_co.paa"\
-           };
+};
 #define IFV1_SAND(CAMONET) \
 textures[] = {\
     "lxws\vehicles_f_lxws\data\APC_Tracked_02\kamysh_sand1_co.paa",\
@@ -39,7 +39,15 @@ textures[] = {\
     CAMONET,\
     "A3\armor_f\data\cage_csat_co.paa"\
 };
-
+//fixme turret texture
+#define IFV1_WOODLANDHEX(CAMONET) \
+textures[] = {\
+    "\A3_Atlas\Armor_F_Atlas\APC_Tracked_02\Data\APC_Tracked_02_ext_01_whex_CO.paa",\
+    "\A3_Atlas\Armor_F_Atlas\APC_Tracked_02\Data\APC_Tracked_02_ext_02_whex_CO.paa",\
+    "\A3_Atlas\Armor_F_Atlas\APC_Tracked_02\data\apc_tracked_02_30mm_WHEX_CO.paa",\
+    CAMONET,\
+    "\A3_Aegis\Armor_F_Aegis\Data\cage_RUkhk_CO.paa"\
+};
 #define IFV1_TAKISTAN(CAMONET) \
 textures[] = {\
     "\A3_Atlas\Armor_F_Atlas\APC_Tracked_02\Data\APC_Tracked_02_ext_01_tk_CO.paa",\
@@ -60,7 +68,7 @@ textures[] = {\
 textures[] = {\
     "\A3_Atlas\Armor_F_Atlas\APC_Tracked_02\Data\APC_Tracked_02_ext_01_CDF_CO.paa",\
     "\A3_Atlas\Armor_F_Atlas\APC_Tracked_02\Data\APC_Tracked_02_ext_02_CDF_CO.paa",\
-    "\A3_Atlas\Armor_F_Atlas\APC_Tracked_02\Data\RCWS30_CDF_CO.paa",\
+    "\A3_Aegis\Armor_F_Aegis\APC_Tracked_02\Data\RCWS30_RUkhk_CO.paa",\
     CAMONET,\
     "\A3_Atlas\Armor_F_Atlas\Data\cage_CDF_CO.paa",\
 };
@@ -116,6 +124,22 @@ class TextureSources {
         IFV1_HEX(NET_WINTER)
         factions[] = {};
     };
+    //FIXME: needs turret texture
+    // class WoodlandHex {
+    //     displayName = "Hex Ochre (Hex Green Net)";
+    //     IFV1_WOODLANDHEX(NET_GREENHEX)
+    //     factions[] = {};
+    // };
+    // class WoodlandHex_desert {
+    //     displayName = "Hex Ochre (Hex Ochre Net)";
+    //     IFV1_WOODLANDHEX(NET_HEX)
+    //     factions[] = {};
+    // };
+    // class WoodlandHex_winter {
+    //     displayName = "Hex Ochre (Winter Net)";
+    //     IFV1_WOODLANDHEX(NET_WINTER)
+    //     factions[] = {};
+    // };
     class Sand {
         displayName = "Sand (Desert Net)";
         IFV1_SAND(NET_DESERT)
