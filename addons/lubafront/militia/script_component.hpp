@@ -1,3 +1,3 @@
-#define SUBCOMPONENT militia
+#define SUBCOMPONENT reserves
 
 #include "..\script_component.hpp"

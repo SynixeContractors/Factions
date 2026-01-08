@@ -2,18 +2,27 @@ class CfgVehicles {
     #define TEMPLATE_FACTION QPCLASS(t4_opfor)
     #define TEMPLATE_SIDE 0
     #include "../../../templates/statics/M2.hpp"
-    #define TEMPLATE_CAMO Guerilla_12
+    #define TEMPLATE_CAMO_LIST {\
+         QUOTE(Guerilla_03),1,\
+         QUOTE(Guerilla_06),1,\
+         QUOTE(Guerilla_07),1,\
+         QUOTE(Guerilla_08),1,\
+         QUOTE(Guerilla_09),1,\
+         QUOTE(Guerilla_10),1,\
+         QUOTE(Guerilla_11),1,\
+         QUOTE(Guerilla_12),1,\
+    }
     #include "../../../templates/cars/Offroad_Civilian.hpp"
     #include "../../../templates/cars/Offroad_Armed.hpp"
     #include "../../../templates/cars/Offroad_Armor.hpp"
     #include "../../../templates/cars/Offroad_AA.hpp"
     #include "../../../templates/cars/Offroad_Armor_AA.hpp"
-
+    #undef TEMPLATE_CAMO_LIST
 
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {
         displayName = "Luban Liberation Front Militia";
-        editorSubcategory = QGCLASS(militia);
+        editorSubcategory = QGCLASS(reserves);
 
         #include "../wear/uniform.hpp"
         #include "../../luba/wear/vest_reserve.hpp"
