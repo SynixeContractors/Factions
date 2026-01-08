@@ -1,3 +1,3 @@
 @Headgear({
-  "H_MK7_sand_F" : 1,
+  "V_TacChestrig_oli_F" : 1,
 });

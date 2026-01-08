@@ -1,12 +1,9 @@
 @Uniforms({
-  "variants" : {
-    "synixe_mgp_g3_field_set_khk_khk" : 1,
-    "synixe_mgp_g3_fleece_khk_khk" : 1,
-    "synixe_mgp_g3_tshirt_tan_khk" : 1,
-    "synixe_mgp_g3_tshirt_cb_khk" : 1,
-    "synixe_mgp_g3_tshirt_blk_khk" : 1,
-  },
-  "packs" : [
-    "rifleman_medical",
-  ],
+    "variants": {
+        "Atlas_U_I_UW_CombatUniform_UNO": 0.8,
+        "Atlas_U_I_UW_CombatUniform_shortsleeve_UNO": 0.2,
+    },
+    "packs": [
+        "rifleman_medical",
+    ],
 });

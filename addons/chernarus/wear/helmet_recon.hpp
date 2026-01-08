@@ -1,15 +1,4 @@
 @Headgear({
-  "H_Bandanna_cbr" : 1,
-  "H_Bandanna_cbr_headset" : 1,
-  "H_Booniehat_khk" : 3,
-  "H_Booniehat_khk_hs" : 2,
-  "H_Headset_Tactical_khk" : 1,
-  "H_MK7_sand_F" : 5,
-  "H_Shemag_khk" : 1,
-  "H_Shemag_khk_hs" : 1,
-  "synixe_mgp_h_cap_cb" : 1,
-  "synixe_mgp_h_cap_cb_earphones" : 1,
-  "synixe_mgp_h_cap_khk" : 1,
-  "synixe_mgp_h_cap_khk_earphones" : 1,
+  "H_HelmetSpecter_cover_CDF_F" : 1,
   "" : 1,
 });

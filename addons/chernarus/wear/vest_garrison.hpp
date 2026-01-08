@@ -1,7 +1,6 @@
 @Vests({
   "variants" : {
-    "V_TacVest_khk" : 0.8,
-    "V_ChestrigF_khk" : 0.2,
+    "V_TacChestrig_oli_F" : 1,
   },
   "packs" : [
     "t2_standard",

@@ -1,8 +1,9 @@
 @Vests({
   "variants" : {
-    "Aegis_V_CarrierRigKBT_01_cqb_khk_F" : 0.2,
-    "Aegis_V_CarrierRigKBT_01_tac_khk_F" : 0.5,
-    "Aegis_V_CarrierRigKBT_01_recon_khk_F" : 0.3,
+    "V_CarrierRigKBT_01_heavy_CDF_F" : 0.1,
+    "Atlas_V_CarrierRigKBT_01_CQB_CDF_F" : 0.1,
+    "V_CarrierRigKBT_01_light_CDF_F" : 0.2,
+    "V_CarrierRigKBT_01_CDF_F" : 0.6,
   },
   "packs" : [
     "t2_standard",

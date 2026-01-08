@@ -1,8 +1,9 @@
 @Vests({
   "variants" : {
-    "synixe_mgp_vest_mmac_assaulter_cb" : 0.33,
-    "synixe_mgp_vest_mmac_light_cb" : 0.33,
-    "synixe_mgp_vest_mmac_teamleader_cb" : 0.33,
+    "V_CarrierRigKBT_01_heavy_CDF_F" : 0.1,
+    "Atlas_V_CarrierRigKBT_01_CQB_CDF_F" : 0.1,
+    "V_CarrierRigKBT_01_light_CDF_F" : 0.2,
+    "V_CarrierRigKBT_01_CDF_F" : 0.6,
   },
   "packs" : [
     "t2_standard",
