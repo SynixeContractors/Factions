@@ -1,14 +1,14 @@
 @Primary({
     "weapons": {
-        "Aegis_MMG_FNMAG_F": {
+        "LMG_Zafir_black_F": {
             "probability": 1,
             "magazinesVest": {
-                "Aegis_200Rnd_762x51_MAG_Red_F": 2,
+                "150Rnd_762x54_Box": 3,
             },
         },
     },
     "optics": {
-        "optic_VRCO_tan_RF": 0.2,
-        "optic_LRCO_snd_F": 0.8,
+        "optic_LRCO_blk_F": 0.2,
+        "Aegis_optic_1p87": 0.8,
     },
 });

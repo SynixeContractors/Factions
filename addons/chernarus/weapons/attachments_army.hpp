@@ -1,10 +1,11 @@
 @Primary({
   "pointers" : {
-    "saber_light_sand_lxWS" : 5,
-    "" : 2,
+    "saber_light_khaki_lxWS": 5,
+    "acc_flashlight_pistol": 2,
+    "": 1,
   },
   "optics": {
     "": 0.2,
-    "optic_VRCO_tan_RF": 0.8,
+    "Aegis_optic_1p87": 0.8,
   },
 });

@@ -1,8 +1,8 @@
 @Launchers({
     "weapons": {
-        "launch_B_Titan_coyote_F": {
+        "synixe_armoury_launch_NSAM_F": {
             "magazinesBackpack": {
-                "Titan_AA": 1,
+                "NSAM_LOBL": 1,
             },
         },
     },

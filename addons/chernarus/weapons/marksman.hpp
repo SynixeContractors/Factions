@@ -1,9 +1,9 @@
 @Primary({
     "weapons": {
-        "arifle_AUG_F": {
+        "Aegis_srifle_SVD_f": {
             "probability": 1,
             "magazinesVest": {
-                "30Rnd_556x45_AUG_Mag_F": 8,
+                "10Rnd_762x54_Mag": 8,
             },
         },
     },
