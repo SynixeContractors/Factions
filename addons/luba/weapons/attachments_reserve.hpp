@@ -5,7 +5,7 @@
   },
   "optics": {
     "": 0.85,
-    "Aegis_optic_1p87_snd": 0.1,
-    "optic_VRCO_tan_RF": 0.05,
+    "Aegis_optic_ICO_sand": 0.1,
+    "Aegis_optic_ACOG_sand": 0.05,
   }
 });

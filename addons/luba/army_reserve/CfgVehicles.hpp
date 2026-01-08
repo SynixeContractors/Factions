@@ -13,13 +13,13 @@ class CfgVehicles {
 
         #include "../wear/uniform.hpp"
         #include "../wear/vest_reserve.hpp"
-        #include "../wear/helmet.hpp"
+        #include "../wear/helmet_reserve.hpp"
         #include "../wear/facewear_army.hpp"
         @Assigned(Military);
     };
     class CLASS(Rifleman): CLASS(Base) {
         @Role(Rifleman);
-        #include "../weapons/rifle.hpp"
+        #include "../weapons/rifle_reserve.hpp"
         #include "../weapons/launcher_reserve.hpp"
         #include "../weapons/attachments_reserve.hpp"
     };

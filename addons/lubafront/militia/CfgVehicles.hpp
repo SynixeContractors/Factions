@@ -21,13 +21,13 @@ class CfgVehicles {
 
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {
-        displayName = "Luban Liberation Front Militia";
+        displayName = "Luban Liberation Front Reserve (Deserters)";
         editorSubcategory = QGCLASS(reserves);
 
         #include "../wear/uniform.hpp"
         #include "../../luba/wear/vest_reserve.hpp"
         #include "../wear/helmet.hpp"
-        #include "../wear/facewear_army.hpp"
+        #include "../wear/facewear_deserters.hpp"
         @Assigned(Military);
     };
     class CLASS(Rifleman): CLASS(Base) {
