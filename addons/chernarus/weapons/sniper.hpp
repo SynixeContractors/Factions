@@ -1,16 +1,16 @@
 @Primary({
     "weapons": {
-        "srifle_EBR_cbr_F": {
+        "srifle_DMR_01_black_RF": {
             "magazinesVest": {
-                "20Rnd_762x51_Mag": 6,
+                "10Rnd_762x54_Mag": 6,
             },
         },
     },
     "optics": {
-        "optic_AMS": 1,
+        "optic_SOS_khk_F": 1,
     },
     "bipods": {
-        "bipod_01_F_snd": 0.95,
+        "bipod_03_F_oli": 0.95,
         "": 0.05,
     },
 });
