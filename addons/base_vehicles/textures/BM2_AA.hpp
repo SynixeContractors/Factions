@@ -21,6 +21,17 @@ class TextureSources {
         };
         factions[] = {};
     };
+    class WoodlandHex {
+        displayName = "Hex Woodland";
+        textures[] = {
+            "\A3_Atlas\Armor_F_Atlas\APC_Tracked_02\Data\APC_Tracked_02_ext_01_whex_CO.paa",
+            "\A3_Atlas\Armor_F_Atlas\APC_Tracked_02\Data\APC_Tracked_02_ext_02_whex_CO.paa",
+            "\A3_Atlas\Armor_F_Atlas\APC_Tracked_02\Data\APC_Tracked_02_AA_Tower_whex_CO.paa",
+            "A3\Armor_F\Data\camonet_CSAT_HEX_Green_CO.paa",
+            "A3\armor_f\data\cage_csat_green_CO.paa"
+        };
+        factions[] = {};
+    };
     class Green {
         displayName = "Green";
         textures[] = {
@@ -70,7 +81,7 @@ class TextureSources {
         textures[] = {
             "\A3_Atlas\Armor_F_Atlas\APC_Tracked_02\Data\APC_Tracked_02_ext_01_CDF_CO.paa",
             "\A3_Atlas\Armor_F_Atlas\APC_Tracked_02\Data\APC_Tracked_02_ext_02_CDF_CO.paa",
-            "\A3_Aegis\Armor_F_Aegis\APC_Tracked_02\Data\APC_Tracked_01_AA_Tower_CDF_CO",
+            "\A3_Atlas\Armor_F_Atlas\APC_Tracked_02\Data\APC_Tracked_01_AA_Tower_CDF_CO.paa",
             NET_GREEN,
             "\A3_Atlas\Armor_F_Atlas\Data\cage_CDF_CO.paa"
         };
