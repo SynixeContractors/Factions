@@ -43,7 +43,7 @@ class GCLASS(LUT_Medical): Truck_02_medical_base_F {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 210;
-    #include "textures\LUTMedical.hpp"
+    #include "textures\LUTTransport.hpp"
 };
 
 class Truck_02_fuel_base_F;
@@ -91,7 +91,7 @@ class GCLASS(LUT_Ammo): Truck_02_Ammo_base_F {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 210;
-    #include "textures\LUTAmmo.hpp"
+    #include "textures\LUTRepair.hpp"
 };
 
 ADD_CAMO_EVENT_HANDLER_NOBASE(Truck_02_MRL_base_F,Truck_02_base_F);
