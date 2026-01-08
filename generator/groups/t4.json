@@ -3,6 +3,7 @@
         {
             "types": [
                 "Army_Combat",
+                "Deserters",
                 "Militia"
             ],
             "icon": "\\a3\\ui_f\\data\\map\\markers\\nato\\n_inf.paa",
@@ -30,6 +31,7 @@
         {
             "types": [
                 "Army_Combat",
+                "Deserters",
                 "Militia"
             ],
             "icon": "\\a3\\ui_f\\data\\map\\markers\\nato\\n_inf.paa",

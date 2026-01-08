@@ -1,3 +1,3 @@
-#define SUBCOMPONENT reserves
+#define SUBCOMPONENT deserters
 
 #include "..\script_component.hpp"

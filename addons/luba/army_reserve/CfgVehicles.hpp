@@ -25,7 +25,7 @@ class CfgVehicles {
     };
     class CLASS(RiflemanCarabine): CLASS(Base) {
         @Role(Hidden);
-        #include "../weapons/carabine.hpp"
+        #include "../weapons/rifle_reserve.hpp"
         #include "../weapons/attachments_reserve.hpp"
     };
     class CLASS(RiflemanBackpack): CLASS(RiflemanCarabine) {
