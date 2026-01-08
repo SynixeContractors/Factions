@@ -1,4 +1,4 @@
-class Aegis_B_Heli_Attack_03_F;
+ADD_CAMO_EVENT_HANDLER(Aegis_B_Heli_Attack_03_F,Heli_Attack_03_base_F);
 class GCLASS(Apache): Aegis_B_Heli_Attack_03_F {
     displayName = "AH-64E Apache";
     faction = QGCLASS(base_vehicles);
@@ -7,6 +7,7 @@ class GCLASS(Apache): Aegis_B_Heli_Attack_03_F {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 1600;
+    #include "eventhandler_camo.hpp"
     class TextureSources {
         class BAF {
             displayName = "BAF";

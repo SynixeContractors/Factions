@@ -26,6 +26,9 @@ class CfgVehicles {
     #include "../../../templates/cars/Ram_Armed.hpp"
     #include "../../../templates/cars/Ram_Advanced.hpp"
 
+    #include "../../../templates/helicopters/Wildcat.hpp"
+    #include "../../../templates/helicopters/Mi35.hpp"
+    #include "../../../templates/helicopters/Puma_Military.hpp"
 
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {
@@ -166,4 +169,9 @@ class CfgVehicles {
       //FIXME: get actual crewman or move to combat and create it there
       @Role(Crewman)
     };
+    class CLASS(HeliPilot): CLASS(Rifleman) {
+      //FIXME: get actual crewman or move to combat and create it there
+      @Role(HeliPilot)
+    };
+
 };

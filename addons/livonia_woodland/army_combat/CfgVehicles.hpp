@@ -26,6 +26,10 @@ class CfgVehicles {
     #include "../../../templates/cars/Ram_Armed.hpp"
     #include "../../../templates/cars/Ram_Advanced.hpp"
 
+    #include "../../../templates/helicopters/Wildcat.hpp"
+    #include "../../../templates/helicopters/Mi35.hpp"
+    #include "../../../templates/helicopters/Puma_Military.hpp"
+
 
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {

@@ -4,6 +4,7 @@ class CfgVehicles {
     #include "../../../templates/statics/M2.hpp"
     #define TEMPLATE_CAMO Karzeg_01
     #include "../../../templates/apc/Pandur.hpp"
+    #include "../../../templates/helicopters/Puma_Military.hpp"
     #undef TEMPLATE_CAMO
     #define TEMPLATE_CAMO KZG_01
     #include "../../../templates/tanks/Leopard.hpp"
@@ -19,6 +20,7 @@ class CfgVehicles {
     #define TEMPLATE_CAMO KZG
     #include "../../../templates/cars/Offroad_Civilian.hpp"
     #include "../../../templates/cars/HEMTT.hpp"
+    #include "../../../templates/helicopters/Wildcat.hpp"
 
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {

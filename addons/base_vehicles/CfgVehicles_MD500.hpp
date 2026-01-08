@@ -1,4 +1,4 @@
-class C_Heli_Light_01_civil_F;
+ADD_CAMO_EVENT_HANDLER(C_Heli_Light_01_civil_F,Heli_Light_01_civil_base_F);
 class GCLASS(MD500): C_Heli_Light_01_civil_F {
     displayName = "MD 500";
     faction = QGCLASS(base_vehicles);
@@ -6,6 +6,7 @@ class GCLASS(MD500): C_Heli_Light_01_civil_F {
     EMPTY_INVENTORY;
     ace_refuel_fuelCapacity = 233;
     textureList[] = {"Blue",1,"Red",1,"Ion",1,"BlueLine",1,"Digital",1,"Elliptical",1,"Furious",1,"Graywatcher",1,"Jeans",1,"Light",1,"Shadow",1,"Sheriff",1,"Speedy",1,"Sunset",1,"Vrana",1,"Wasp",1,"Wave",1};
+    #include "eventhandler_camo.hpp"
     class TextureSources {
         class Blue {
             displayName = "White Two-Tone (Blue)";
@@ -94,16 +95,16 @@ class GCLASS(MD500): C_Heli_Light_01_civil_F {
         };
     };
 };
-
-class B_Heli_Light_01_F;
+ADD_CAMO_EVENT_HANDLER(B_Heli_Light_01_F,Heli_Light_01_unarmed_base_F);
 class GCLASS(MD500E): B_Heli_Light_01_F {
-    displayName ="MD 500E";
+    displayName ="MD 500E (MH-6) Little Bird";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 233;
+    #include "eventhandler_camo.hpp"
     class TextureSources {
         class Green {
             displayName = "Green";
@@ -143,15 +144,16 @@ class GCLASS(MD500E): B_Heli_Light_01_F {
     };
 };
 
-class B_Heli_Light_01_dynamicLoadout_F;
+ADD_CAMO_EVENT_HANDLER(B_Heli_Light_01_dynamicLoadout_F,Heli_Light_01_dynamicLoadout_base_F);
 class GCLASS(MD500E_Armed): B_Heli_Light_01_dynamicLoadout_F {
-    displayName ="MD 500E (Armed)";
+    displayName ="MD 500E (AH-6) Little Bird";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 233;
+    #include "eventhandler_camo.hpp"
     class TextureSources {
         class Green {
             displayName = "Green";
