@@ -56,5 +56,4 @@ class CfgVehicles {
     };
 
     #include "CfgVehicles_GroundItems.hpp"
-    #include "CfgVehicles_PublicUnits.hpp"
 };
