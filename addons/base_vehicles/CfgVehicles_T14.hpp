@@ -28,6 +28,12 @@
           "\A3_Aegis\Armor_F_Aegis\MBT_04\Data\MBT_04_exterior_RUkhk_2_CO.paa",\
           CAMONET\
         };
+#define T14_RU(CAMONET)\
+        textures[] = {\
+          "\A3_Aegis\Armor_F_Aegis\MBT_04\Data\MBT_04_exterior_RUcamo_1_CO.paa",\
+          "\A3_Aegis\Armor_F_Aegis\MBT_04\Data\MBT_04_exterior_RUcamo_2_CO.paa",\
+          CAMONET\
+        };
 
 ADD_CAMO_EVENT_HANDLER(O_MBT_04_cannon_F,MBT_04_cannon_base_F);
 class GCLASS(T14): O_MBT_04_cannon_F {
@@ -160,6 +166,36 @@ class GCLASS(T14): O_MBT_04_cannon_F {
         T14_GREEN(NET_WOODLAND)
         factions[] = {};
       };
+      class Ru {
+        displayName = "Summer (Desert Net)";
+        T14_RU(NET_DESERT)
+        factions[] = {};
+      };
+      class Ru_ru {
+        displayName = "Summer (Ru Net)";
+        T14_RU(NET_GREEN)
+        factions[] = {};
+      };
+      class Ru_jungle {
+        displayName = "Summer (Ru Net)";
+        T14_RU(NET_JUNGLE)
+        factions[] = {};
+      };
+      class Ru_winter {
+        displayName = "Summer (Winter Net)";
+        T14_RU(NET_WINTER)
+        factions[] = {};
+      };
+      class Ru_bicolor {
+        displayName = "Summer (Bicolor Woodland Net)";
+        T14_RU(NET_BICOLOR)
+        factions[] = {};
+      };
+      class Ru_Woodland {
+        displayName = "Summer (Woodland Net)";
+        T14_RU(NET_WOODLAND)
+        factions[] = {};
+      };
     };
 };
 
@@ -195,6 +231,13 @@ class GCLASS(T14): O_MBT_04_cannon_F {
         textures[] = {\
           "\A3_Aegis\Armor_F_Aegis\MBT_04\Data\MBT_04_exterior_RUkhk_1_CO.paa",\
           "\A3_Aegis\Armor_F_Aegis\MBT_04\Data\MBT_04_exterior_RUkhk_2_CO.paa",\
+          "\A3\Armor_F_Tank\MBT_04\Data\MBT_04_command_CO.paa",\
+          CAMONET\
+        };
+#define T14K_RU(CAMONET)\
+        textures[] = {\
+          "\A3_Aegis\Armor_F_Aegis\MBT_04\Data\MBT_04_exterior_RUcamo_1_CO.paa",\
+          "\A3_Aegis\Armor_F_Aegis\MBT_04\Data\MBT_04_exterior_RUcamo_2_CO.paa",\
           "\A3\Armor_F_Tank\MBT_04\Data\MBT_04_command_CO.paa",\
           CAMONET\
         };
@@ -328,6 +371,36 @@ class GCLASS(T14_RCWS): O_MBT_04_command_F {
       class Green_Woodland {
         displayName = "Green (Woodland Net)";
         T14K_GREEN(NET_WOODLAND)
+        factions[] = {};
+      };
+      class Ru {
+        displayName = "Summer (Desert Net)";
+        T14K_RU(NET_DESERT)
+        factions[] = {};
+      };
+      class Ru_ru {
+        displayName = "Summer (Ru Net)";
+        T14K_RU(NET_GREEN)
+        factions[] = {};
+      };
+      class Ru_jungle {
+        displayName = "Summer (Ru Net)";
+        T14K_RU(NET_JUNGLE)
+        factions[] = {};
+      };
+      class Ru_winter {
+        displayName = "Summer (Winter Net)";
+        T14K_RU(NET_WINTER)
+        factions[] = {};
+      };
+      class Ru_bicolor {
+        displayName = "Summer (Bicolor Woodland Net)";
+        T14K_RU(NET_BICOLOR)
+        factions[] = {};
+      };
+      class Ru_Woodland {
+        displayName = "Summer (Woodland Net)";
+        T14K_RU(NET_WOODLAND)
         factions[] = {};
       };
     };
