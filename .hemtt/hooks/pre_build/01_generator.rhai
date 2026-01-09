@@ -299,7 +299,7 @@ fn groups(args) {
                 ret += "scope = 2;\n";
                 ret += "scopeCurator = 2;\n";
                 ret += "side = " + side + ";\n";
-                ret += "faction = \"" + faction + "\";\n";
+                ret += "faction = QPCLASS(" + faction + ");\n";
                 ret += "icon = \"" + section.icon + "\";\n";
                 ret += "name = \"" + group.name + "\";\n";
                 ret += "__COUNTER_RESET__\n";
