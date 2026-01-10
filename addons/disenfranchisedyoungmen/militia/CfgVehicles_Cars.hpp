@@ -8,7 +8,7 @@ class CLASS2(SIDE,LUT_Transport): GCLASS(LUT_Transport) {
         "Black",1,
         "Brown",1,
         "Blue",1,
-        "Olive",1,
+        "Green",1,
     };
     editorPreview = "\A3_Atlas\EditorPreviews_F_Atlas\Data\CfgVehicles\Atlas_O_W_Truck_02_transport_F.jpg";
     crew = QCLASS2(SIDE,Rifleman);

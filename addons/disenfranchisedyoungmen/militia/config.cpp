@@ -40,4 +40,12 @@ class CfgVehicles {
     #undef SIDE
     #undef SIDE_NUMBER
     #undef SIDE_FACTION
+
+    #define SIDE BLUFOR
+    #define SIDE_NUMBER 1
+    #define SIDE_FACTION t4_blufor
+    #include "CfgVehicles.hpp"
+    #undef SIDE
+    #undef SIDE_NUMBER
+    #undef SIDE_FACTION
 };
