@@ -183,10 +183,7 @@ class CLASS2(SIDE,Autorifleman): CLASS2(SIDE,Base) {
     @Backpacks({
         "variants": {
             "B_FieldPack_blk": 1,
-            "B_FieldPack_ardi": 1,
-            "B_FieldPack_cbr": 1,
             "B_FieldPack_green_F": 1,
-            "B_FieldPack_khk": 1,
             "B_FieldPack_oli": 1,
         },
     });
@@ -214,10 +211,7 @@ class CLASS2(SIDE,Machinegunner): CLASS2(SIDE,Autorifleman) {
     @Backpacks({
         "variants": {
             "B_FieldPack_blk": 1,
-            "B_FieldPack_ardi": 1,
-            "B_FieldPack_cbr": 1,
             "B_FieldPack_green_F": 1,
-            "B_FieldPack_khk": 1,
             "B_FieldPack_oli": 1,
         },
     });
@@ -229,10 +223,7 @@ class CLASS2(SIDE,AsstMachinegunner): CLASS2(SIDE,Base) {
     @Backpacks({
         "variants": {
             "B_FieldPack_blk": 1,
-            "B_FieldPack_ardi": 1,
-            "B_FieldPack_cbr": 1,
             "B_FieldPack_green_F": 1,
-            "B_FieldPack_khk": 1,
             "B_FieldPack_oli": 1,
         },
         "magazines": {
@@ -287,12 +278,9 @@ class CLASS2(SIDE,Medic): CLASS2(SIDE,Base) {
     @Backpacks({
         "variants": {
             "tacs_Backpack_Kitbag_Medic_Black": 1,
-            "tacs_Backpack_Kitbag_Medic_Coyote": 1,
             "tacs_Backpack_Kitbag_Medic_Green": 1,
             "tacs_Backpack_Kitbag_Medic_Grey": 1,
-            "tacs_Backpack_Kitbag_Medic_RGR": 1,
             "tacs_Backpack_Kitbag_Medic_Sage": 1,
-            "tacs_Backpack_Kitbag_Medic_Tan": 1,
         },
         "packs": [
             "t4_medic",
