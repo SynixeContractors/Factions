@@ -91,5 +91,8 @@
     },
     "Spotter": {
         "displayName": "Spotter"
-    }
+    },
+    "FighterPilot": {
+        "displayName": "Fighter Pilot"
+    },
 }

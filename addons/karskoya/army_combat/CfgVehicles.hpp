@@ -8,6 +8,8 @@ class CfgVehicles {
     #include "CfgVehicles_Puma.hpp"
     #include "CfgVehicles_RHIB.hpp"
     #include "CfgVehicles_Warrior.hpp"
+    #include "CfgVehicles_JAS39.hpp"
+    #include "CfgVehicles_MD500.hpp"
 
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {
@@ -503,6 +505,33 @@ class CfgVehicles {
             "H_PilotHelmetHeli_B": 1,
             "H_CrewHelmetHeli_B": 1,
             "H_PilotHelmetHeli_B_visor_up": 1,
+        });
+    };
+
+    class CLASS(FighterPilot): CLASS(Crewman) {
+        @Role(FighterPilot);
+
+        @Headgear({
+            "H_PilotHelmetFighter_O": 1,
+        });
+
+        @Uniforms({
+            "variants": {
+                "U_I_pilotCoveralls": 1,
+            },
+            "packs": [
+                "rifleman_medical",
+            ],
+        });
+
+        @Vests({
+            "variants": {
+                "": 1,
+            },
+        });
+
+        @Facewear({
+            "": 1,
         });
     };
 };
