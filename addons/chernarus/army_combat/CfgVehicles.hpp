@@ -2,11 +2,9 @@ class CfgVehicles {
     #define TEMPLATE_FACTION QPCLASS(t2_indep)
     #define TEMPLATE_SIDE 2
     #include "../../../templates/statics/M2.hpp"
-    #define TEMPLATE_CAMO Green
+    #define TEMPLATE_CAMO Cdf
     #include "../../../templates/apc/BM2_AA.hpp"
     #include "../../../templates/apc/BM2K.hpp"
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO Green
     #include "../../../templates/cars/Karatel.hpp"
     #include "../../../templates/cars/LUT_AA.hpp"
     #include "../../../templates/cars/LUT_Ammo.hpp"
@@ -16,10 +14,12 @@ class CfgVehicles {
     #include "../../../templates/cars/LUT_Medical.hpp"
     #include "../../../templates/cars/LUT_Repair.hpp"
     #include "../../../templates/cars/LUT_Transport.hpp"
+    #undef TEMPLATE_CAMO
+    #define TEMPLATE_CAMO green
     #include "../../../templates/cars/Offroad_Civilian.hpp"
     #include "../../../templates/cars/Offroad_Armed.hpp"
     #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO Green_green
+    #define TEMPLATE_CAMO cdf_green
     #include "../../../templates/tanks/T100.hpp"
 
     class PCLASS(Base);

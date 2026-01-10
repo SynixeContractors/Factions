@@ -263,4 +263,15 @@ class TextureSources {
         };
         factions[] = {};
     };
+    class Cdf {
+        displayName = "CDF";
+        textures[] = {
+            "\s\synixe_factions\addons\textures\data\lut\lut_cab_CDF_CO.paa",
+            "\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_cargo_RUkhk_CO.paa",
+            "\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_int_RUkhk_CO.paa",
+            "\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_chassis_RUkhk_CO.paa",
+            "lxws\vehicles_f_lxws\Truck_02\data\addons_black_co.paa"
+        };
+        factions[] = {};
+    };
 };

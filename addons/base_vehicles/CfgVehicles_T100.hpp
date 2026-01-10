@@ -68,6 +68,13 @@
               "\s\synixe_factions\addons\textures\data\t100\t100_addons_JSN_CO.paa", \
               CAMONET\
             };
+#define T100_CDF(CAMONET) \
+            textures[] = {\
+              "\s\synixe_factions\addons\textures\data\t100\t100_body_CDF_CO.paa",\
+              "\s\synixe_factions\addons\textures\data\t100\t100_turret_CDF_CO.paa",\
+              "\s\synixe_factions\addons\textures\data\t100\t100_addons_CDF_CO.paa",\
+              CAMONET\
+            };
 class O_MBT_02_cannon_F;
 class GCLASS(T100): O_MBT_02_cannon_F {
     displayName = "T-100";
@@ -316,6 +323,36 @@ class GCLASS(T100): O_MBT_02_cannon_F {
         class Maze_woodland {
             displayName = "Maze (Woodland Net)";
             T100_MAZE(NET_WOODLAND)
+            factions[] = {};
+        };
+        class Cdf {
+            displayName = "CDF (Desert Net)";
+            T100_CDF(NET_DESERT)
+            factions[] = {};
+        };
+        class Cdf_green {
+            displayName = "CDF (Green Net)";
+            T100_CDF(NET_GREEN)
+            factions[] = {};
+        };
+        class Cdf_jungle {
+            displayName = "CDF (Jungle Net)";
+            T100_CDF(NET_JUNGLE)
+            factions[] = {};
+        };
+        class Cdf_winter {
+            displayName = "CDF (Winter Net)";
+            T100_CDF(NET_WINTER)
+            factions[] = {};
+        };
+        class Cdf_bicolor {
+            displayName = "CDF (Bicolor Woodland Net)";
+            T100_CDF(NET_BICOLOR)
+            factions[] = {};
+        };
+        class Cdf_woodland {
+            displayName = "CDF (Woodland Net)";
+            T100_CDF(NET_WOODLAND)
             factions[] = {};
         };
     };
@@ -577,5 +614,6 @@ class GCLASS(T100_Railgun): O_MBT_02_railgun_F {
             T100_MAZE(NET_WOODLAND)
             factions[] = {};
         };
+
     };
 };
