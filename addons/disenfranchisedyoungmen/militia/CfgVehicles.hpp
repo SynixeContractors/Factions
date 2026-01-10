@@ -59,12 +59,9 @@ class CLASS2(SIDE,Base): PCLASS2(SIDE,Base) {
         "H_Watchcap_sgg": 1,
         "H_Bandanna_gry": 1,
         "H_Bandanna_blu": 1,
-        "H_Bandanna_cbr": 1,
-        "H_Bandanna_khk": 1,
         "H_Bandanna_sgg": 1,
         "H_Booniehat_khk": 1,
         "H_Booniehat_oli": 1,
-        "H_Booniehat_blk": 1,
     });
 
     @Facewear({
@@ -81,13 +78,6 @@ class CLASS2(SIDE,Base): PCLASS2(SIDE,Base) {
         "G_Bandanna_shades": 1,
         "G_Bandanna_tan": 1,
         "G_Shades_Black": 1,
-        "G_Shades_Blue": 1,
-        "G_Shades_Green": 1,
-        "G_Shades_Red": 1,
-        "synixe_mgp_f_face_shield_blk": 1,
-        "synixe_mgp_f_face_shield_cb": 1,
-        "synixe_mgp_f_face_shield_khk": 1,
-        "synixe_mgp_f_face_shield_rgr": 1,
     });
 
     @Assigned(Military);
