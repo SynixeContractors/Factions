@@ -25,6 +25,8 @@ class CfgVehicles {
             },
             "packs": [
                 "t3_standard",
+                "military_standard",
+                "rifleman_medical",
             ],
         });
 
@@ -316,6 +318,8 @@ class CfgVehicles {
             },
             "packs": [
                 "t3_standard",
+                "military_standard",
+                "rifleman_medical",
             ],
         });
 

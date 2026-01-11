@@ -1,14 +1,13 @@
 class CfgVehicles {
     #include "CfgVehicles_Fennek.hpp"
-    #include "CfgVehicles_Leopard.hpp"
+    #include "CfgVehicles_Tank.hpp"
     #include "CfgVehicles_LUT.hpp"
     #include "CfgVehicles_Orca.hpp"
     #include "CfgVehicles_Otokar.hpp"
-    #include "CfgVehicles_Pandur.hpp"
+    #include "CfgVehicles_APC.hpp"
     #include "CfgVehicles_Puma.hpp"
     #include "CfgVehicles_RHIB.hpp"
-    #include "CfgVehicles_Warrior.hpp"
-    #include "CfgVehicles_JAS39.hpp"
+    #include "CfgVehicles_Planes.hpp"
     #include "CfgVehicles_MD500.hpp"
 
     class PCLASS(Base);
@@ -32,6 +31,8 @@ class CfgVehicles {
             },
             "packs": [
                 "t3_standard",
+                "military_standard",
+                "rifleman_medical",
             ],
         });
 
@@ -82,9 +83,10 @@ class CfgVehicles {
             },
             "packs": [
                 "t3_standard",
+                "military_standard",
+                "rifleman_medical",
             ],
             "magazines": {
-                "HandGrenade": 1,
                 "SmokeShellRed": 1,
                 "SmokeShellPurple": 1,
             },
@@ -183,6 +185,8 @@ class CfgVehicles {
             },
             "packs": [
                 "t3_standard",
+                "military_standard",
+                "rifleman_medical",
             ],
         });
 
@@ -287,6 +291,8 @@ class CfgVehicles {
             },
             "packs": [
                 "t3_standard",
+                "military_standard",
+                "rifleman_medical",
             ],
         });
 
@@ -317,6 +323,8 @@ class CfgVehicles {
             },
             "packs": [
                 "t3_standard",
+                "military_standard",
+                "rifleman_medical",
             ],
         });
 
@@ -346,6 +354,8 @@ class CfgVehicles {
             },
             "packs": [
                 "t3_standard",
+                "military_standard",
+                "rifleman_medical",
             ],
         });
 
@@ -408,6 +418,8 @@ class CfgVehicles {
             },
             "packs": [
                 "t3_standard",
+                "military_standard",
+                "rifleman_medical",
             ],
         });
 
@@ -476,6 +488,7 @@ class CfgVehicles {
             },
             "packs": [
                 "t3_standard",
+                "rifleman_medical",
             ],
         });
 
@@ -533,5 +546,9 @@ class CfgVehicles {
         @Facewear({
             "": 1,
         });
+    };
+
+    class CLASS(Hidden): CLASS(Base) {
+        @Role(Hidden);
     };
 };
