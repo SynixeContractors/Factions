@@ -37,13 +37,13 @@ class CfgVehicles {
     #define TEMPLATE_CAMO Sand
     #include "../../../templates/planes/Blackfish.hpp"
     #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO Sand
+    #define TEMPLATE_CAMO Desert
     #include "../../../templates/planes/F35.hpp"
     #undef TEMPLATE_CAMO
     #define TEMPLATE_CAMO Takistan
     #include "../../../templates/planes/L159.hpp"
     #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO Sand
+    #define TEMPLATE_CAMO Khaybaran
     #include "../../../templates/planes/FA181.hpp"
     #undef TEMPLATE_CAMO
     #define TEMPLATE_CAMO CamoGreenHex

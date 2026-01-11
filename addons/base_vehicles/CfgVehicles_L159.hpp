@@ -1,4 +1,4 @@
-class I_Plane_Fighter_03_dynamicLoadout_F;
+ADD_CAMO_EVENT_HANDLER(I_Plane_Fighter_03_dynamicLoadout_F,Plane_Fighter_03_dynamicLoadout_base_F);
 class GCLASS(L159): I_Plane_Fighter_03_dynamicLoadout_F {
     displayName = "L-159M Super Albatros";
     faction = QGCLASS(base_vehicles);
@@ -7,6 +7,7 @@ class GCLASS(L159): I_Plane_Fighter_03_dynamicLoadout_F {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 2000;
+    #include "eventhandler_camo.hpp"
     #include "textures/L159.hpp"
     // class Components {
     //   class TransportPylonsComponent {

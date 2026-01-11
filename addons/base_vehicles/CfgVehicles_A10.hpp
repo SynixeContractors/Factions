@@ -7,6 +7,7 @@ class GCLASS(A10): B_Plane_CAS_01_dynamicLoadout_F {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 5800;
+    #include "eventhandler_camo.hpp"
     #include "textures/A10.hpp"
     // class Components {
     //   class TransportPylonsComponent {
