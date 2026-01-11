@@ -31,32 +31,8 @@ class CfgVehicles {
     #include "../../../templates/helicopters/Puma_Military.hpp"
 
     #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO Wdl
-    #include "../../../templates/planes/A10.hpp"
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO Sand
-    #include "../../../templates/planes/Blackfish.hpp"
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO Desert
-    #include "../../../templates/planes/F35.hpp"
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO Takistan
-    #include "../../../templates/planes/L159.hpp"
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO Khaybaran
-    #include "../../../templates/planes/FA181.hpp"
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO CamoGreenHex
-    #include "../../../templates/planes/SU75.hpp"
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO CamoGreenHex
-    #include "../../../templates/planes/Yak130.hpp"
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO Marar
+    #define TEMPLATE_CAMO LDF
     #include "../../../templates/planes/JAS39.hpp"
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO GreenHex
-    #include "../../../templates/planes/Xian.hpp"
 
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {

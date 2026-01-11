@@ -3,6 +3,15 @@ class CfgVehicles {
     #include "CfgVehicles_Typhoon.hpp"
     #include "CfgVehicles_T100.hpp"
 
+    #define TEMPLATE_FACTION QPCLASS(t2_opfor)
+    #define TEMPLATE_SIDE 0
+    #define TEMPLATE_CAMO CamoGreenHex
+    #include "../../../templates/planes/SU75.hpp"
+    #undef TEMPLATE_CAMO
+    #define TEMPLATE_CAMO GreenHex
+    #include "../../../templates/planes/Yak130.hpp"
+    #include "../../../templates/planes/Xian.hpp"
+
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {
         displayName = "Dal Riada Base Army Combat";
