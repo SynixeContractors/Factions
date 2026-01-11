@@ -4,7 +4,6 @@ class CfgVehicles {
     #include "../../../templates/statics/M2.hpp"
     #define TEMPLATE_CAMO Cdf
     #include "../../../templates/apc/BM2_AA.hpp"
-    #include "../../../templates/apc/BM2K.hpp"
     #include "../../../templates/cars/Karatel.hpp"
     #include "../../../templates/cars/LUT_AA.hpp"
     #include "../../../templates/cars/LUT_Ammo.hpp"
@@ -21,6 +20,9 @@ class CfgVehicles {
     #undef TEMPLATE_CAMO
     #define TEMPLATE_CAMO cdf_green
     #include "../../../templates/tanks/T100.hpp"
+    #include "../../../templates/tanks/T100_Railgun.hpp"
+    #include "../../../templates/apc/BM2K.hpp"
+    #include "../../../templates/apc/BM2T.hpp"
 
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {

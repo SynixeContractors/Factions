@@ -614,6 +614,35 @@ class GCLASS(T100_Railgun): O_MBT_02_railgun_F {
             T100_MAZE(NET_WOODLAND)
             factions[] = {};
         };
-
+        class Cdf {
+            displayName = "CDF (Desert Net)";
+            T100_CDF(NET_DESERT)
+            factions[] = {};
+        };
+        class Cdf_green {
+            displayName = "CDF (Green Net)";
+            T100_CDF(NET_GREEN)
+            factions[] = {};
+        };
+        class Cdf_jungle {
+            displayName = "CDF (Jungle Net)";
+            T100_CDF(NET_JUNGLE)
+            factions[] = {};
+        };
+        class Cdf_winter {
+            displayName = "CDF (Winter Net)";
+            T100_CDF(NET_WINTER)
+            factions[] = {};
+        };
+        class Cdf_bicolor {
+            displayName = "CDF (Bicolor Woodland Net)";
+            T100_CDF(NET_BICOLOR)
+            factions[] = {};
+        };
+        class Cdf_woodland {
+            displayName = "CDF (Woodland Net)";
+            T100_CDF(NET_WOODLAND)
+            factions[] = {};
+        };
     };
 };

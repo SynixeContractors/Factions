@@ -68,7 +68,7 @@ textures[] = {\
 textures[] = {\
     "\A3_Atlas\Armor_F_Atlas\APC_Tracked_02\Data\APC_Tracked_02_ext_01_CDF_CO.paa",\
     "\A3_Atlas\Armor_F_Atlas\APC_Tracked_02\Data\APC_Tracked_02_ext_02_CDF_CO.paa",\
-    "\s\synixe_factions\addons\textures\data\common\rcws30_CDF_CO.paa",\
+    "\A3_Atlas\Armor_F_Atlas\APC_Tracked_02\Data\RCWS30_CDF_CO.paa",\
     CAMONET,\
     "\A3_Atlas\Armor_F_Atlas\Data\cage_CDF_CO.paa",\
 };
