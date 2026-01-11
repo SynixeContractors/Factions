@@ -31,7 +31,7 @@ class TextureSources {
         };
         factions[] = {};
     };
-    class Russian2{
+    class Russian2 {
         displayName = "Black (Star,Flag)";
         author = "lilithsspawn";
         textures[] = {
