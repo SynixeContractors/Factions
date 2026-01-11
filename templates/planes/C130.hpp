@@ -3,7 +3,7 @@ class CLASS(C130): GCLASS(C130) {
     SCOPE_DLC;
     faction = TEMPLATE_FACTION;
     side = TEMPLATE_SIDE;
-    crew = QCLASS(Rifleman);
+    crew = QCLASS(HeliPilot);
     typicalCargo[] = {QCLASS(HeliPilot)};
     #ifdef TEMPLATE_CAMO_LIST
     textureList[] = TEMPLATE_CAMO_LIST;

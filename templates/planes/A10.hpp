@@ -1,5 +1,5 @@
-class GCLASS(CessnaTTx);
-class CLASS(CessnaTTx): GCLASS(CessnaTTx) {
+class GCLASS(A10);
+class CLASS(A10): GCLASS(A10) {
     SCOPE_DLC;
     faction = TEMPLATE_FACTION;
     side = TEMPLATE_SIDE;
