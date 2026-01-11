@@ -1,8 +1,15 @@
 @Launchers({
     "weapons": {
-        "Atlas_Launch_Pzf3_F": {
+        "launch_PSRL1_olive_RF": {
+            "probability": 0.5,
             "magazinesBackpack": {
-                "Atlas_DM12_HEAT_F": 2,
+                "PSRL1_HEAT_RF": 2,
+            },
+        },
+        "launch_PSRL1_PWS_olive_RF": {
+            "probability": 0.5,
+            "magazinesBackpack": {
+                "PSRL1_HEAT_RF": 2,
             },
         },
     },
