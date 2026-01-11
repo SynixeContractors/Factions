@@ -22,6 +22,6 @@
     },
     "optics": {
         "optic_LRCO_blk_F": 0.2,
-        "optic_LRCO_snd_F": 0.8,
+        "Aegis_optic_1p87": 0.8,
     },
 });
