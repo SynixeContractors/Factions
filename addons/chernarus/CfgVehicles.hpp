@@ -4,7 +4,7 @@ class CfgVehicles {
     class CLASS(Base): GCLASS(Base_INDEP) {
         faction = QCLASS(t2_indep);
         displayName = "Chernarus Base";
-        @Identity(Ngabiri);//fixme
+        @Identity(Chernarus);
         @Templated();
     };
 };
