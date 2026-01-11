@@ -30,6 +30,9 @@ class CfgVehicles {
     #include "../../../templates/helicopters/Mi35.hpp"
     #include "../../../templates/helicopters/Puma_Military.hpp"
 
+    #undef TEMPLATE_CAMO
+    #define TEMPLATE_CAMO LDF
+    #include "../../../templates/planes/JAS39.hpp"
 
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {

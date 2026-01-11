@@ -1,4 +1,4 @@
-class O_Plane_CAS_02_dynamicLoadout_F;
+ADD_CAMO_EVENT_HANDLER(O_Plane_CAS_02_dynamicLoadout_F,Plane_CAS_02_dynamicLoadout_base_F);
 class GCLASS(Yak130): O_Plane_CAS_02_dynamicLoadout_F {
     displayName = "Yak-130M Mitten";
     faction = QGCLASS(base_vehicles);
@@ -7,6 +7,7 @@ class GCLASS(Yak130): O_Plane_CAS_02_dynamicLoadout_F {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 2050;
+    #include "eventhandler_camo.hpp"
     #include "textures/Yak130.hpp"
     // class Components {
     //   class TransportPylonsComponent {

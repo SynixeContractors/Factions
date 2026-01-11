@@ -21,6 +21,9 @@ class CfgVehicles {
     #include "../../../templates/cars/Offroad_Civilian.hpp"
     #include "../../../templates/cars/HEMTT.hpp"
     #include "../../../templates/helicopters/Wildcat.hpp"
+    #undef TEMPLATE_CAMO
+    #define TEMPLATE_CAMO Khaybaran
+    #include "../../../templates/planes/FA181.hpp"
 
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {

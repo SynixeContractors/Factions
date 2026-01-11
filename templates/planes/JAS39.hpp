@@ -1,5 +1,5 @@
-class GCLASS(CessnaTTx);
-class CLASS(CessnaTTx): GCLASS(CessnaTTx) {
+class GCLASS(JAS39);
+class CLASS(JAS39): GCLASS(JAS39) {
     SCOPE_DLC;
     faction = TEMPLATE_FACTION;
     side = TEMPLATE_SIDE;

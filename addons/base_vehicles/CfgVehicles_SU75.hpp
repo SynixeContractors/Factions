@@ -1,4 +1,4 @@
-class O_Plane_Fighter_02_F;
+ADD_CAMO_EVENT_HANDLER(O_Plane_Fighter_02_F,Plane_Fighter_02_Base_F);
 class GCLASS(SU75): O_Plane_Fighter_02_F {
     displayName = "SU-75 Checkmate";
     faction = QGCLASS(base_vehicles);
@@ -7,6 +7,7 @@ class GCLASS(SU75): O_Plane_Fighter_02_F {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 10300;
+    #include "eventhandler_camo.hpp"
     #include "textures/SU75.hpp"
     // class Components {
     //   class TransportPylonsComponent {
@@ -14,7 +15,8 @@ class GCLASS(SU75): O_Plane_Fighter_02_F {
     //   };
     // };
 };
-class O_Plane_Fighter_02_Stealth_F;
+
+ADD_CAMO_EVENT_HANDLER_NOBASE(O_Plane_Fighter_02_Stealth_F,Plane_Fighter_02_Base_F);
 class GCLASS(SU75_Stealth): O_Plane_Fighter_02_Stealth_F {
     displayName = "SU-75 Checkmate (Stealth)";
     faction = QGCLASS(base_vehicles);
@@ -23,6 +25,7 @@ class GCLASS(SU75_Stealth): O_Plane_Fighter_02_Stealth_F {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 10300;
+    #include "eventhandler_camo.hpp"
     #include "textures/SU75.hpp"
     // class Components {
     //   class TransportPylonsComponent {

@@ -1,4 +1,4 @@
-class I_Plane_Fighter_04_F;
+ADD_CAMO_EVENT_HANDLER(I_Plane_Fighter_04_F,Plane_Fighter_04_Base_F);
 class GCLASS(JAS39): I_Plane_Fighter_04_F {
     displayName = "JAS-39NG Gripen";
     faction = QGCLASS(base_vehicles);
@@ -7,6 +7,7 @@ class GCLASS(JAS39): I_Plane_Fighter_04_F {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 3000;
+    #include "eventhandler_camo.hpp"
     #include "textures/JAS39.hpp"
     // class Components {
     //   class TransportPylonsComponent {
