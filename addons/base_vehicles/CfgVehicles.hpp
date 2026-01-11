@@ -84,6 +84,7 @@ class CfgVehicles {
     #include "CfgVehicles_Orca.hpp"
     #include "CfgVehicles_Puma.hpp"
     #include "CfgVehicles_Wildcat.hpp"
+    #include "CfgVehicles_Taru.hpp"
 
     // Planes
     #include "CfgVehicles_A10.hpp"
