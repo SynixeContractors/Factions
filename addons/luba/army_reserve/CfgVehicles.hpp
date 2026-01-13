@@ -14,7 +14,6 @@ class CfgVehicles {
         #include "../wear/uniform.hpp"
         #include "../wear/vest_reserve.hpp"
         #include "../wear/helmet_reserve.hpp"
-        #include "../wear/facewear_army.hpp"
         @Assigned(Military);
     };
     class CLASS(Rifleman): CLASS(Base) {
