@@ -65,7 +65,7 @@ class CfgVehicles {
     };
     class CLASS(Crewman): CLASS(RiflemanCarabine) {
         @Role(Crewman);
-        #include "../weapons/pdw.hpp"
+        #include "../weapons/carabine.hpp"
     };
     class CLASS(Marksman): CLASS(Rifleman) {
         @Role(Marksman);
