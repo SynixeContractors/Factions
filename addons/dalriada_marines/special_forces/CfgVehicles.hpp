@@ -1,7 +1,9 @@
 class CfgVehicles {
-    #include "CfgVehicles_Ram.hpp"
-    #include "CfgVehicles_Quad.hpp"
-    #include "CfgVehicles_Dinghy.hpp"
+    #define TEMPLATE_FACTION QPCLASS(t2_opfor)
+    #define TEMPLATE_SIDE 0
+    #define TEMPLATE_CAMO Black
+    #include "../../../templates/cars/LSV.hpp"
+    #include "../../../templates/cars/Ram_Advanced.hpp"
 
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {

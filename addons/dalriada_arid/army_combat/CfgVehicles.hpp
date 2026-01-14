@@ -2,7 +2,7 @@ class CfgVehicles {
     #define TEMPLATE_FACTION QPCLASS(t2_opfor)
     #define TEMPLATE_SIDE 0
     #include "../../../templates/statics/XM3XX.hpp"
-    #define TEMPLATE_CAMO GreenHex
+    #define TEMPLATE_CAMO Hex
     #include "../../../templates/tanks/T14.hpp"
     #include "../../../templates/tanks/T100.hpp"
     #include "../../../templates/tanks/T100_SPG.hpp"
@@ -13,12 +13,14 @@ class CfgVehicles {
     #include "../../../templates/cars/Karatel.hpp"
     #include "../../../templates/cars/Typhoon.hpp"
     #include "../../../templates/helicopters/Ka54.hpp"
-    #include "../../../templates/helicopters/Orca_Civilian.hpp"
-    #include "../../../templates/helicopters/Orca_Military.hpp"
     #include "../../../templates/helicopters/Taru.hpp"
     #include "../../../templates/planes/Yak130.hpp"
     #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO CamoGreenHex
+    #define TEMPLATE_CAMO Opfor
+    #include "../../../templates/helicopters/Orca_Civilian.hpp"
+    #include "../../../templates/helicopters/Orca_Military.hpp"
+    #undef TEMPLATE_CAMO
+    #define TEMPLATE_CAMO CamoHex
     #include "../../../templates/planes/SU75.hpp"
 
     class PCLASS(Base);
@@ -28,8 +30,9 @@ class CfgVehicles {
         
         @Uniforms({
             "variants": {
-                "Atlas_U_O_Luchnik_whex_F": 1,
-                "Atlas_U_O_Luchnik_RolledUp_whex_F": 1,
+                "Atlas_U_O_CombatFatigues_semiarid_F": 1,
+                "Atlas_U_O_CombatFatigues_02_semiarid_F": 1,
+                "Atlas_U_O_CombatUniform_tshirt_semiarid_F": 1,
             },
             "packs": [
                 "rifleman_medical",
@@ -38,26 +41,22 @@ class CfgVehicles {
 
         @Vests({
             "variants": {
-                "V_PlateCarrierIA2_grn": 1,
-            },
-            "magazines": {
-                "SmokeShell": 1,
-                "HandGrenade": 1,
+                "V_PlateCarrierIA1_grn": 1,
             },
             "packs": [
                 "t2_standard",
+                "military_standard"
             ],
         });
 
         @Headgear({
-            "Atlas_H_HelmetCCH_Cover_whex_F": 1,
+            "Atlas_H_HelmetCCH_Cover_semiarid_F": 1,
+            "Atlas_H_HelmetCCH_HiCut_Cover_semiarid_F": 1,
         });
 
         @Facewear({
-            "G_Balaclava_light_G_blk_F": 1,
-            "G_Balaclava_light_blk_F": 1,
             "synixe_mgp_f_face_shield_blk_tactical": 1,
-            "synixe_mgp_f_face_shield_rgr_tactical": 1,
+            "synixe_mgp_f_face_shield_khk_tactical": 1,
             "Aegis_G_Condor_EyePro_F": 1,
         });
 
@@ -83,19 +82,6 @@ class CfgVehicles {
     class CLASS(SquadLeader): CLASS(Rifleman) {
         @Role(SquadLeader);
 
-        @Vests({
-            "variants": {
-                "V_PlateCarrierIA2_grn": 1,
-            },
-            "packs": [
-                "t2_standard",
-            ],
-            "magazines": {
-                "SmokeShell": 2,
-                "HandGrenade": 1,
-            },
-        });
-
         @Secondary({
             "weapons": {
                 "hgun_ACPC2_black_F": {
@@ -116,15 +102,6 @@ class CfgVehicles {
     class CLASS(Autorifleman): CLASS(Base) {
         @Role(Autorifleman);
 
-        @Vests({
-            "variants": {
-                "V_PlateCarrierIA2_grn": 1,
-            },
-            "magazines": {
-                "SmokeShell": 2,
-            },
-        });
-
         #include "..\..\dalriada\weapons\Autorifleman.hpp"
 
         @Secondary({
@@ -139,7 +116,7 @@ class CfgVehicles {
         
         @Backpacks({
             "variants": {
-                "B_FieldPack_owcamo": 1,
+                "B_FieldPack_semiarid": 1,
             },
         });
 
@@ -159,6 +136,12 @@ class CfgVehicles {
                 },
             },
         });
+
+        @Backpacks({
+            "variants": {
+                "B_FieldPack_semiarid": 1,
+            },
+        });
     };
 
     class CLASS(AsstMachinegunner): CLASS(Rifleman) {
@@ -166,7 +149,7 @@ class CfgVehicles {
 
         @Backpacks({
             "variants": {
-                "B_FieldPack_owcamo": 1,
+                "B_FieldPack_semiarid": 1,
             },
             "magazines": {
                 "ACE_150Rnd_93x64_Mag_red": 3,
@@ -198,7 +181,7 @@ class CfgVehicles {
 
         @Launchers({
             "weapons": {
-                "launch_RPG32_green_F": {
+                "launch_RPG32_tan_lxWS": {
                     "magazinesBackpack": {
                         "RPG32_F": 2,
                         "RPG32_HE_F": 1,
@@ -209,7 +192,7 @@ class CfgVehicles {
 
         @Backpacks({
             "variants": {
-                "B_FieldPack_owcamo": 1,
+                "B_AssaultPack_rgr": 1,
             },
         });
     };
@@ -219,7 +202,7 @@ class CfgVehicles {
 
         @Launchers({
             "weapons": {
-                "launch_B_Titan_olive_F": {
+                "launch_B_Titan_coyote_F": {
                     "magazinesBackpack": {
                         "Titan_AA": 2,
                     },
@@ -229,7 +212,7 @@ class CfgVehicles {
 
         @Backpacks({
             "variants": {
-                "B_Carryall_owcamo": 1,
+                "B_Carryall_semiarid": 1,
             },
         });
     };
@@ -239,7 +222,7 @@ class CfgVehicles {
 
         @Launchers({
             "weapons": {
-                "launch_I_Titan_short_F": {
+                "launch_O_Titan_short_F": {
                     "magazinesBackpack": { 
                         "Titan_AT": 2,
                     },
@@ -249,7 +232,7 @@ class CfgVehicles {
 
         @Backpacks({
             "variants": {
-                "B_Carryall_owcamo": 1,
+                "B_Carryall_semiarid": 1,
             },
         });
     };
@@ -259,7 +242,7 @@ class CfgVehicles {
 
         @Backpacks({
             "variants": {
-                "B_RadioBag_01_whex_F": 1,
+                "B_RadioBag_01_semiarid_F": 1,
             },
         });
     };
@@ -269,7 +252,7 @@ class CfgVehicles {
 
         @Backpacks({
             "variants": {
-                "B_FieldPack_owcamo": 1,
+                "B_AssaultPack_rgr": 1,
             },
             "packs": [
                 "engineer",
@@ -282,7 +265,7 @@ class CfgVehicles {
 
         @Backpacks({
             "variants": {
-                "B_FieldPack_owcamo": 1
+                "B_Carryall_semiarid": 1
             },
             "packs": [
                 "eod",
@@ -302,8 +285,8 @@ class CfgVehicles {
 
         @Uniforms({
             "variants": {
-                "Atlas_U_O_Afghanka_01_whex_F": 1,
-                "Atlas_U_O_Afghanka_02_whex_F": 1,
+                "Atlas_U_O_Afghanka_01_semiarid_F": 1,
+                "Atlas_U_O_Afghanka_02_semiarid_F": 1,
             },
             "packs": [
                 "rifleman_medical",
@@ -320,7 +303,7 @@ class CfgVehicles {
         });
 
         @Headgear({
-            "H_HelmetCrew_I": 1,
+            "H_HelmetCrew_I_I": 1,
         });
 
         @Primary({

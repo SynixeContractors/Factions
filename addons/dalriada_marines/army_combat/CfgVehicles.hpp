@@ -1,9 +1,22 @@
 class CfgVehicles {
-    #include "CfgVehicles_APC.hpp"
-    #include "CfgVehicles_Typhoon.hpp"
-    #include "CfgVehicles_Ram.hpp"
-    #include "CfgVehicles_RHIB.hpp"
-
+    #define TEMPLATE_FACTION QPCLASS(t2_opfor)
+    #define TEMPLATE_SIDE 0
+    #include "../../../templates/statics/XM3XX.hpp"
+    #define TEMPLATE_CAMO Grey
+    #include "../../../templates/tanks/T14.hpp"
+    #include "../../../templates/tanks/T100.hpp"
+    #include "../../../templates/apc/BM2K.hpp"
+    #include "../../../templates/planes/Xian.hpp"
+    #undef TEMPLATE_CAMO
+    #define TEMPLATE_CAMO MarineHex
+    #include "../../../templates/apc/Otokar.hpp"
+    #undef TEMPLATE_CAMO
+    #define TEMPLATE_CAMO Black
+    #include "../../../templates/helicopters/Ka54.hpp"
+    #include "../../../templates/helicopters/Orca_Civilian.hpp"
+    #include "../../../templates/helicopters/Orca_Military.hpp"
+    #include "../../../templates/helicopters/Taru.hpp"
+    #include "../../../templates/cars/Ram_Civilian.hpp"
 
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {

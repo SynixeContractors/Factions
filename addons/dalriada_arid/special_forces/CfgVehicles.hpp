@@ -1,5 +1,11 @@
 class CfgVehicles {
-    #include "CfgVehicles_Ram.hpp"
+    #define TEMPLATE_FACTION QPCLASS(t2_opfor)
+    #define TEMPLATE_SIDE 0
+    #define TEMPLATE_CAMO Hex
+    #include "../../../templates/cars/LSV.hpp"
+    #undef TEMPLATE_CAMO
+    #define TEMPLATE_CAMO CSAT
+    #include "../../../templates/cars/Ram_Advanced.hpp"
 
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {
