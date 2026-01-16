@@ -15,10 +15,10 @@ class CfgVehicles {
         });
 
         @Facewear({
-            "synixe_mgp_f_face_shield_rgr_shemagh_rgr": 1,
-            "synixe_mgp_f_face_shield_rgr_shemagh_rgr_tactical": 1,
-            "synixe_mgp_f_face_shield_blk_shemagh_rgr": 1,
-            "synixe_mgp_f_face_shield_blk_shemagh_rgr_tactical": 1,
+            "synixe_mgp_f_face_shield_rgr": 1,
+            "synixe_mgp_f_face_shield_rgr_tactical": 1,
+            "synixe_mgp_f_face_shield_blk": 1,
+            "synixe_mgp_f_face_shield_blk_tactical": 1,
         });
 
         @Assigned(Military);
@@ -29,13 +29,11 @@ class CfgVehicles {
 
         @Vests({
             "variants": {
-                "Atlas_V_OCarrierRig_Lite_oli_F": 1,
-                "Atlas_V_OCarrierRig_CQB_oli_F": 1,
+                "V_PlateCarrier1_rgr_noflag_F": 1,
             },
         });
 
         @Headgear({
-            "Aegis_H_Helmet_Virtus_Headset_rgr_F": 1,
             "Aegis_H_Helmet_Virtus_rgr_F": 1,
             "H_Booniehat_oli": 1,
             "H_Cap_oli": 1,
@@ -43,14 +41,13 @@ class CfgVehicles {
 
         @Primary({
             "weapons": {
-                "arifle_CTAR_blk_F": {
+                "arifle_SA80_blk_F": {
                     "magazinesVest": {
-                        "30Rnd_580x42_Mag_F": 6,
+                        "30Rnd_65x39_caseless_black_mag": 7,
                     },
                 },
             },
             "optics": {
-                "optic_VRCO_RF": 1,
                 "Aegis_optic_1p87": 1,
             },
             "pointers": {
@@ -64,13 +61,13 @@ class CfgVehicles {
 
         @Primary({
             "weapons": {
-                "arifle_CTAR_GL_blk_F": {
+                "arifle_SA80_GL_blk_F": {
                     "magazinesVest": {
-                        "30Rnd_580x42_Mag_F": 6,
-                        "1Rnd_HEDP_Grenade_shell": 4,
+                        "30Rnd_65x39_caseless_black_mag": 6,
+                        "1Rnd_HE_Grenade_shell": 4,
                     },
-                    "loadedPrimary": "30Rnd_580x42_Mag_F",
-                    "loadedSecondary": "1Rnd_HEDP_Grenade_shell",
+                    "loadedPrimary": "30Rnd_65x39_caseless_black_mag",
+                    "loadedSecondary": "1Rnd_HE_Grenade_shell",
                 },
             },
             "optics": {
@@ -88,9 +85,12 @@ class CfgVehicles {
 
         @Primary({
             "weapons": {
-                "arifle_CTARS_blk_F": {
+                "LMG_Mk200_black_F": {
                     "magazinesVest": {
-                        "100Rnd_580x42_Mag_F": 5,
+                        "200Rnd_65x39_cased_Box_Red": 2,
+                    },
+                    "magazinesBackpack": {
+                        "200Rnd_65x39_cased_Box_Red": 2,
                     },
                 },
             },
@@ -102,16 +102,21 @@ class CfgVehicles {
             },
         });
 
+        @Backpacks({
+            "variants": {
+                "B_AssaultPack_rgr": 1,
+            },
+        });
+
         @Secondary({
             "weapons": {
-                "hgun_P07_blk_F": {
+                "Aegis_hgun_P320_black_F": {
                     "magazinesVest": {
-                        "16Rnd_9x21_Mag_v2": 3,
+                        "17Rnd_9x21_Mag": 2,
                     },
                 },
             },
         });
-
     };
 
     class CLASS(Medic): CLASS(Rifleman) {
@@ -119,7 +124,7 @@ class CfgVehicles {
 
         @Backpacks({
             "variants": {
-                "tacs_Backpack_Kitbag_Medic_Sage": 1,
+                "tacs_Backpack_Kitbag_Medic_Green": 1,
             },
             "packs": [
                 "t2_t3_medic",
@@ -145,10 +150,10 @@ class CfgVehicles {
         @Secondary({
             "weapons": {
                 "": 0.85,
-                "hgun_P07_blk_F": {
+                "Aegis_hgun_P320_black_F": {
                     "probability": 0.15,
                     "magazinesVest": {
-                        "16Rnd_9x21_Mag_v2": 3,
+                        "17Rnd_9x21_Mag": 3,
                     },
                 },
             },
@@ -168,6 +173,7 @@ class CfgVehicles {
         @Role(Worker);
 
         @Headgear({
+            "": 1,
             "H_EarProtectors_red_F": 1,
             "H_EarProtectors_white_F": 1,
             "H_EarProtectors_orange_F": 1,
@@ -175,8 +181,21 @@ class CfgVehicles {
             "H_Construction_earprot_yellow_F": 1,
         });
 
+        @Primary({
+            "weapons": {
+                "": 0.85,
+                "arifle_SA80_blk_F": {
+                    "probability": 0.15,
+                    "magazinesVest": {
+                        "30Rnd_65x39_caseless_black_mag": 3,
+                    },
+                },
+            },
+        });
+
         @Vests({
             "variants": {
+                "": 1,
                 "V_Safety_blue_F": 1,
                 "V_Safety_yellow_F": 1,
             },

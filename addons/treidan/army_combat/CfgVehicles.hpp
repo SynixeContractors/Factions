@@ -1,4 +1,27 @@
 class CfgVehicles {
+    #define TEMPLATE_FACTION QPCLASS(t3_indep)
+    #define TEMPLATE_SIDE 2
+    #include "../../../templates/statics/M2.hpp"
+    #define TEMPLATE_CAMO Olive
+    #include "../../../templates/apc/Badger.hpp"
+    #include "../../../templates/cars/MATV.hpp"
+    #include "../../../templates/helicopters/Apache.hpp"
+    #undef TEMPLATE_CAMO
+    #define TEMPLATE_CAMO NATO_P
+    #include "../../../templates/cars/Ram_Civilian.hpp"
+    #include "../../../templates/cars/Ram_Advanced.hpp"
+    #undef TEMPLATE_CAMO
+    #define TEMPLATE_CAMO Olive_green
+    #include "../../../templates/tanks/Merkava.hpp"
+    #include "../../../templates/tanks/Merkava_SPG.hpp"
+    #include "../../../templates/apc/Namer.hpp"
+    #undef TEMPLATE_CAMO
+    #define TEMPLATE_CAMO OLIVE
+    #include "../../../templates/helicopters/Puma_Military.hpp"
+    #undef TEMPLATE_CAMO
+    #define TEMPLATE_CAMO CamoGrey
+    #include "../../../templates/planes/JAS39.hpp"
+
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {
         displayName = "Treidan Base Army Combat";
@@ -16,15 +39,13 @@ class CfgVehicles {
 
         @Vests({
             "variants": {
-                "Atlas_V_OCarrierRig_Lite_oli_F": 1,
-                "Atlas_V_OCarrierRig_CQB_oli_F": 1,
+                "WSLV_Platecarrier_GRN_NF": 1,
+                "V_PlateCarrier1_rgr_noflag_F": 1,
             },
             "packs": [
                 "t3_standard",
+                "military_standard",
             ],
-            "magazines": {
-                "MiniGrenade": 2,
-            },
         });
 
         @Headgear({
@@ -33,25 +54,19 @@ class CfgVehicles {
         });
 
         @Facewear({
-            "synixe_mgp_f_face_shield_rgr_shemagh_rgr": 1,
-            "synixe_mgp_f_face_shield_rgr_shemagh_rgr_tactical": 1,
-            "synixe_mgp_f_face_shield_rgr_shemagh_rgr_ess": 1,
-            "synixe_mgp_f_face_shield_blk_shemagh_rgr": 1,
-            "synixe_mgp_f_face_shield_blk_shemagh_rgr_tactical": 1,
-            "synixe_mgp_f_face_shield_blk_shemagh_rgr_ess": 1,
+            "synixe_mgp_f_face_shield_rgr_shemagh_khk": 1,
+            "synixe_mgp_f_face_shield_rgr_shemagh_khk_tactical": 1,
+            "synixe_mgp_f_face_shield_blk_shemagh_khk": 1,
+            "synixe_mgp_f_face_shield_blk_shemagh_khk_tactical": 1,
+            "G_Balaclava_light_blk_F": 1,
+            "synixe_mgp_f_tactical": 1,
         });
-
-        @Assigned(Military);
-    };
-
-    class CLASS(Rifleman): CLASS(Base) {
-        @Role(Rifleman);
 
         @Primary({
             "weapons": {
-                "arifle_CTAR_blk_F": {
+                "arifle_SA80_blk_F": {
                     "magazinesVest": {
-                        "30Rnd_580x42_Mag_F": 8,
+                        "30Rnd_65x39_caseless_black_mag": 7,
                     },
                 },
             },
@@ -63,6 +78,12 @@ class CfgVehicles {
                 "Aegis_acc_pointer_DM": 1,
             },
         });
+
+        @Assigned(Military);
+    };
+
+    class CLASS(Rifleman): CLASS(Base) {
+        @Role(Rifleman);
 
         @Launchers({
             "weapons": {
@@ -76,24 +97,11 @@ class CfgVehicles {
     class CLASS(SquadLeader): CLASS(Rifleman) {
         @Role(SquadLeader);
 
-        @Vests({
-            "variants": {
-                "Atlas_V_OCarrierRig_Lite_oli_F": 1,
-                "Atlas_V_OCarrierRig_CQB_oli_F": 1,
-            },
-            "packs": [
-                "t3_standard",
-            ],
-            "magazines": {
-                "SmokeShell": 2,
-            },
-        });
-
         @Secondary({
             "weapons": {
-                "hgun_P07_blk_F": {
+                "Aegis_hgun_P320_black_F": {
                     "magazinesVest": {
-                        "16Rnd_9x21_Mag_v2": 3,
+                        "17Rnd_9x21_Mag": 2,
                     },
                 },
             },
@@ -105,13 +113,13 @@ class CfgVehicles {
 
         @Primary({
             "weapons": {
-                "arifle_CTAR_GL_blk_F": {
+                "arifle_SA80_GL_blk_F": {
                     "magazinesVest": {
-                        "30Rnd_580x42_Mag_F": 8,
-                        "1Rnd_HEDP_Grenade_shell": 5,
+                        "30Rnd_65x39_caseless_black_mag": 7,
+                        "1Rnd_HE_Grenade_shell": 4,
                     },
-                    "loadedPrimary": "30Rnd_580x42_Mag_F",
-                    "loadedSecondary": "1Rnd_HEDP_Grenade_shell",
+                    "loadedPrimary": "30Rnd_65x39_caseless_black_mag",
+                    "loadedSecondary": "1Rnd_HE_Grenade_shell",
                 },
             },
             "optics": {
@@ -129,12 +137,12 @@ class CfgVehicles {
 
         @Primary({
             "weapons": {
-                "arifle_CTARS_blk_F": {
+                "LMG_Mk200_black_F": {
                     "magazinesVest": {
-                        "100Rnd_580x42_Mag_Tracer_F": 4,
+                        "200Rnd_65x39_cased_Box_Red": 2,
                     },
                     "magazinesBackpack": {
-                        "100Rnd_580x42_Mag_Tracer_F": 4,
+                        "200Rnd_65x39_cased_Box_Red": 2,
                     },
                 },
             },
@@ -145,13 +153,16 @@ class CfgVehicles {
             "pointers": {
                 "Aegis_acc_pointer_DM": 1,
             },
+            "bipods": {
+                "bipod_02_F_blk": 1,
+            },
         });
 
         @Secondary({
             "weapons": {
-                "hgun_P07_blk_F": {
+                "Aegis_hgun_P320_black_F": {
                     "magazinesVest": {
-                        "16Rnd_9x21_Mag_v2": 3,
+                        "17Rnd_9x21_Mag": 2,
                     },
                 },
             },
@@ -159,7 +170,7 @@ class CfgVehicles {
         
         @Backpacks({
             "variants": {
-                "B_AssaultPack_sgg": 1,
+                "B_AssaultPack_rgr": 1,
             },
         });
 
@@ -168,28 +179,20 @@ class CfgVehicles {
     class CLASS(Machinegunner): CLASS(Autorifleman) {
         @Role(Machinegunner);
 
-        @Vests({
-            "variants": {
-                "Atlas_V_OCarrierRig_Lite_oli_F": 1,
-                "Atlas_V_OCarrierRig_CQB_oli_F": 1,
-            },
-        });
-
         @Primary({
             "weapons": {
-                "Aegis_MMG_FNMAG_F": {
+                "Aegis_MMG_FNMAG_240_F": {
                     "magazinesVest": {
-                        "Aegis_200Rnd_762x51_MAG_Green_Tracer_F": 2,
+                        "Aegis_200Rnd_762x51_MAG_Red_Tracer_F": 2,
                     },
                     "magazinesBackpack": {
-                        "Aegis_200Rnd_762x51_MAG_Green_Tracer_F": 3,
+                        "Aegis_200Rnd_762x51_MAG_Red_Tracer_F": 2,
                     },
                 },
             },
             "optics": {
                 "": 1,
                 "optic_VRCO_RF": 1,
-                "Aegis_optic_1p87": 1,
             },
             "pointers": {
                 "Aegis_acc_pointer_DM": 1,
@@ -198,9 +201,9 @@ class CfgVehicles {
 
         @Secondary({
             "weapons": {
-                "hgun_P07_blk_F": {
+                "Aegis_hgun_P320_black_F": {
                     "magazinesVest": {
-                        "16Rnd_9x21_Mag_v2": 3,
+                        "17Rnd_9x21_Mag": 2,
                     },
                 },
             },
@@ -208,62 +211,52 @@ class CfgVehicles {
 
         @Backpacks({
             "variants": {
-                "B_AssaultPack_sgg": 1,
+                "B_AssaultPack_rgr": 1,
             },
         });
 
     };
 
-    class CLASS(AsstMachinegunner): CLASS(Rifleman) {
+    class CLASS(AsstMachinegunner): CLASS(Base) {
         @Role(AsstMachinegunner);
 
         @Backpacks({
             "variants": {
-                "B_AssaultPack_sgg": 1,
+                "B_AssaultPack_rgr": 1,
             },
             "magazines": {
-                "Aegis_200Rnd_762x51_MAG_Green_Tracer_F": 3,
+                "Aegis_200Rnd_762x51_MAG_Red_Tracer_F": 3,
             },
         });
     };
 
-    class CLASS(Marksman): CLASS(Rifleman) {
+    class CLASS(Marksman): CLASS(Base) {
         @Role(Marksman);
-
-        @Vests({
-            "variants": {
-                "Atlas_V_OCarrierRig_Lite_oli_F": 1,
-                "Atlas_V_OCarrierRig_CQB_oli_F": 1,
-            },
-            "magazines": {
-                "MiniGrenade": 1,
-            },
-        });
 
         @Primary({
             "weapons": {
-                "srifle_DMR_03_F": {
+                "srifle_EBR_blk_lxWS": {
                     "magazinesVest": {
-                        "20Rnd_762x51_Mag": 8,
+                        "20Rnd_762x51_Mag_blk_lxWS": 7,
                     },
                 },
             },
             "optics": {
-                "optic_MRCO": 1,
+                "optic_VRCO_RF": 1,
             },
             "pointers": {
                 "Aegis_acc_pointer_DM": 1,
             },
-            "bipod": {
-                "bipod_01_F_blk": 1,
+            "bipods": {
+                "bipod_02_F_blk": 1,
             },
         });
 
         @Secondary({
             "weapons": {
-                "hgun_P07_blk_F": {
+                "Aegis_hgun_P320_black_F": {
                     "magazinesVest": {
-                        "16Rnd_9x21_Mag_v2": 3,
+                        "17Rnd_9x21_Mag": 2,
                     },
                 },
             },
@@ -271,12 +264,12 @@ class CfgVehicles {
 
     };
 
-    class CLASS(Medic): CLASS(Rifleman) {
+    class CLASS(Medic): CLASS(Base) {
         @Role(Medic);
 
         @Backpacks({
             "variants": {
-                "tacs_Backpack_Kitbag_Medic_Sage": 1,
+                "tacs_Backpack_Kitbag_Medic_Green": 1,
             },
             "packs": [
                 "t2_t3_medic",
@@ -284,7 +277,7 @@ class CfgVehicles {
         });
     };
 
-    class CLASS(RiflemanMAT): CLASS(Rifleman) {
+    class CLASS(RiflemanMAT): CLASS(Base) {
         @Role(RiflemanMAT);
 
         @Launchers({
@@ -300,12 +293,12 @@ class CfgVehicles {
 
         @Backpacks({
             "variants": {
-                "B_Kitbag_sgg": 1,
+                "B_Kitbag_rgr": 1,
             },
         });
     };
 
-    class CLASS(RiflemanAA): CLASS(Rifleman) {
+    class CLASS(RiflemanAA): CLASS(Base) {
         @Role(RiflemanAA);
 
         @Launchers({
@@ -320,12 +313,12 @@ class CfgVehicles {
 
         @Backpacks({
             "variants": {
-                "B_Kitbag_sgg": 1,
+                "B_Kitbag_rgr": 1,
             },
         });
     };
 
-    class CLASS(RiflemanHAT): CLASS(Rifleman) {
+    class CLASS(RiflemanHAT): CLASS(Base) {
         @Role(RiflemanHAT);
 
         @Launchers({
@@ -340,27 +333,27 @@ class CfgVehicles {
 
         @Backpacks({
             "variants": {
-                "B_Kitbag_sgg": 1,
+                "B_Kitbag_rgr": 1,
             },
         });
     };
 
-    class CLASS(RadioOperator): CLASS(Rifleman) {
+    class CLASS(RadioOperator): CLASS(Base) {
         @Role(RadioOperator);
 
         @Backpacks({
             "variants": {
-                "B_RadioBag_01_sage_F": 1,
+                "B_RadioBag_01_green_F": 1,
             },
         });
     };
 
-    class CLASS(Engineer): CLASS(Rifleman) {
+    class CLASS(Engineer): CLASS(Base) {
         @Role(Engineer);
 
         @Backpacks({
             "variants": {
-                "B_AssaultPack_sgg": 1,
+                "B_TacticalPack_rgr": 1,
             },
             "packs": [
                 "engineer",
@@ -368,12 +361,12 @@ class CfgVehicles {
         });
     };
 
-    class CLASS(Demolitions): CLASS(Rifleman) {
+    class CLASS(Demolitions): CLASS(Base) {
         @Role(Demolitions);
 
         @Backpacks({
             "variants": {
-                "B_Kitbag_sgg": 1,
+                "B_TacticalPack_rgr": 1,
             },
             "packs": [
                 "eod",
@@ -406,9 +399,9 @@ class CfgVehicles {
 
         @Primary({
             "weapons": {
-                "JCA_smg_MP5_FL_black_F": {
+                "arifle_SA80_C_blk_F": {
                     "magazinesVest": {
-                        "JCA_30Rnd_9x21_MP5_Mag": 4,
+                        "30Rnd_65x39_caseless_black_mag": 4,
                     },
                 },
             },
@@ -425,4 +418,3 @@ class CfgVehicles {
         });
     };
 };
-
