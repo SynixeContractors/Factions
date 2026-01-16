@@ -23,6 +23,10 @@ class CfgVehicles {
             "variants": {
                 "WSLV_Platecarrier_WDL_NF": 1,
             },
+            "packs": [
+                "military_standard",
+                "rifleman_medical",
+            ],
         });
 
         @Headgear({

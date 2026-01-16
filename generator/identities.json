@@ -64,4 +64,11 @@
         ],
         "genericNames": "Arab"
     },
+    "Chernarus": {
+        "identityTypes": [
+            "Head_Russian",
+            "LanguageRUS_F"
+        ],
+        "genericNames": "Russian"
+    },
 }
