@@ -64,7 +64,7 @@ class CfgVehicles {
         #include "../weapons/lmg.hpp"
         #include "../weapons/pistol.hpp"
     };
-    class CLASS(Machinegunner): CLASS(Rifleman) {
+    class CLASS(Machinegunner): CLASS(RiflemanCarabine) {
         @Role(Machinegunner);
         #include "../weapons/mg.hpp"
         #include "../weapons/pistol.hpp"
@@ -109,7 +109,7 @@ class CfgVehicles {
         @Role(HeliPilot);
         #include "../wear/pilot.hpp"
     };
-    class CLASS(Marksman): CLASS(Rifleman) {
+    class CLASS(Marksman): CLASS(RiflemanCarabine) {
         @Role(Marksman);
         #include "../weapons/marksman.hpp"
         #include "../weapons/pistol.hpp"

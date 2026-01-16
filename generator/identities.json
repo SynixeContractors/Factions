@@ -56,6 +56,14 @@
         ],
         "genericNames": "Arab"
     },
+    "Luban": {
+        "identityTypes": [
+            "Head_Asian",
+            "Head_Russian",
+            "LanguagePER_F"
+        ],
+        "genericNames": "Arab"
+    },
     "Chernarus": {
         "identityTypes": [
             "Head_Russian",

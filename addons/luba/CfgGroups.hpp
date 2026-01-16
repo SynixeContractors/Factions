@@ -3,6 +3,7 @@ class CfgGroups {
         class CLASS(t3_indep) {
             name = "[T3] Luban Union";
             @Groups(T3,INDEP,Army_Combat);
+            @Groups(T3,INDEP,Reserves);
         };
     };
 };
