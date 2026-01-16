@@ -1,7 +1,14 @@
 class CfgVehicles {
+    #define TEMPLATE_FACTION QPCLASS(t3_indep)
+    #define TEMPLATE_SIDE 2
+    #define TEMPLATE_CAMO Guerilla_07
+    #include "../../../templates/cars/Offroad_Civilian.hpp"
+    #include "../../../templates/cars/Offroad_Armed.hpp"
+    #include "../../../templates/cars/Offroad_Armor.hpp"
+
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {
-        displayName = "Viatken Base Army Recon";
+        displayName = "Viatka Base Army Recon";
         editorSubcategory = QGCLASS(army_recon);
         
         @Uniforms({
@@ -24,13 +31,11 @@ class CfgVehicles {
 
         @Vests({
             "variants": {
-                "Atlas_V_OCarrierGora_Lite_ardi_F": 1,
-                "Atlas_V_OCarrierGora_Lite_grn_F": 1,
                 "V_Chestrig_rgr": 1,
                 "Aegis_V_TacVest_RigB_oli_RF": 1,
             },
             "packs": [
-                "t3_standard",
+                "military_standard",
             ],
         });
 
@@ -86,12 +91,10 @@ class CfgVehicles {
                 "Aegis_V_TacVest_RigB_oli_RF": 1,
             },
             "packs": [
-                "t2_standard",
+                "t3_standard",
+                "rifleman_medical",
+                "military_standard",
             ],
-            "magazines": {
-                "SmokeShell": 2,
-                "HandGrenade": 1,
-            },
         });
 
         @Primary({
@@ -118,7 +121,7 @@ class CfgVehicles {
             "weapons": {
                 "hgun_G17_black_F": {
                     "magazinesVest": {
-                        "17Rnd_9x21_Mag": 3,
+                        "17Rnd_9x21_Mag": 2,
                     },
                 },
             },
@@ -157,21 +160,6 @@ class CfgVehicles {
     class CLASS(Autorifleman): CLASS(Base) {
         @Role(Autorifleman);
 
-        @Vests({
-            "variants": {
-                "Atlas_V_OCarrierGora_Lite_ardi_F": 1,
-                "Atlas_V_OCarrierGora_Lite_grn_F": 1,
-                "V_Chestrig_rgr": 1,
-                "Aegis_V_TacVest_RigB_oli_RF": 1,
-            },
-            "packs": [
-                "t3_standard",
-            ],
-            "magazines": {
-                "SmokeShell": 1,
-            },
-        });
-
         @Primary({
             "weapons": {
                 "arifle_RPK12_F": {
@@ -192,7 +180,7 @@ class CfgVehicles {
             "weapons": {
                 "hgun_G17_black_F": {
                     "magazinesVest": {
-                        "17Rnd_9x21_Mag": 3,
+                        "17Rnd_9x21_Mag": 2,
                     },
                 },
             },
@@ -228,7 +216,7 @@ class CfgVehicles {
             "weapons": {
                 "hgun_G17_black_F": {
                     "magazinesVest": {
-                        "17Rnd_9x21_Mag": 3,
+                        "17Rnd_9x21_Mag": 2,
                     },
                 },
             },
@@ -340,7 +328,8 @@ class CfgVehicles {
                 "V_ChestrigF_rgr": 1,
             },
             "packs": [
-                "t2_standard",
+                "t3_standard",
+                "military_standard",
             ],
         });
 
@@ -350,7 +339,7 @@ class CfgVehicles {
             "weapons": {
                 "hgun_G17_black_F": {
                     "magazinesVest": {
-                        "17Rnd_9x21_Mag": 3,
+                        "17Rnd_9x21_Mag": 2,
                     },
                 },
             },

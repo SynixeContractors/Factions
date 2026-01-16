@@ -1,7 +1,38 @@
 class CfgVehicles {
+    #define TEMPLATE_FACTION QPCLASS(t3_indep)
+    #define TEMPLATE_SIDE 2
+    #include "../../../templates/statics/M2.hpp"
+    #define TEMPLATE_CAMO ardistan
+    #include "../../../templates/apc/BTR.hpp"
+    #include "../../../templates/apc/BTR_IFV.hpp"
+    #include "../../../templates/apc/BTR_SPG.hpp"
+    #include "../../../templates/apc/BM2K.hpp"
+    #undef TEMPLATE_CAMO
+    #define TEMPLATE_CAMO Ardistan
+    #include "../../../templates/helicopters/Mi35.hpp"
+    #include "../../../templates/helicopters/Orca_Military.hpp"
+    #include "../../../templates/helicopters/Orca_Civilian.hpp"
+    #include "../../../templates/cars/LUT_AA.hpp"
+    #include "../../../templates/cars/LUT_Ammo.hpp"
+    #include "../../../templates/cars/LUT_Cargo.hpp"
+    #include "../../../templates/cars/LUT_Medical.hpp"
+    #include "../../../templates/cars/LUT_MRL.hpp"
+    #include "../../../templates/cars/LUT_Repair.hpp"
+    #include "../../../templates/cars/LUT_Transport.hpp"
+    #include "../../../templates/planes/Yak130.hpp"
+    #undef TEMPLATE_CAMO
+    #define TEMPLATE_CAMO Ardistan_green
+    #include "../../../templates/tanks/T100.hpp"
+    #undef TEMPLATE_CAMO
+    #define TEMPLATE_CAMO Green_green
+    #include "../../../templates/tanks/T100_SPG.hpp"
+    #undef TEMPLATE_CAMO
+    #define TEMPLATE_CAMO Green
+    #include "../../../templates/apc/BM2_AA.hpp"
+
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {
-        displayName = "Viatken Base Army Combat";
+        displayName = "Viatka Base Army Combat";
         editorSubcategory = QGCLASS(army_combat);
         
         @Uniforms({
@@ -33,25 +64,27 @@ class CfgVehicles {
                 "Atlas_V_OCarrierGora_Lite_grn_F": 1,
             },
             "packs": [
-                "t3_standard",
+                "military_standard",
             ],
         });
 
         @Headgear({
-            "H_I_Helmet_canvas_Green": 1,
+            "H_HelmetLuchnik_cover_grn_F": 1,
+            "H_HelmetLuchnik_cover_ardi_F": 1,
+            "H_HelmetLuchnik_olive_F": 1,
         });
 
         @Primary({
             "weapons": {
                 "arifle_AK12_F": {
                     "magazinesVest": {
-                        "30Rnd_762x39_polymer_Black_Mag_Green_F": 6,
+                        "30Rnd_762x39_polymer_Black_Mag_Green_F": 7,
                     }
                 },
             },
             "optics": {
-                "Aegis_optic_ICO": 0.5,
-                "": 0.5,
+                "Aegis_optic_ICO": 1,
+                "": 1,
             },
             "pointers": {
                 "saber_light_lxWS": 1,
@@ -85,19 +118,16 @@ class CfgVehicles {
                 "Atlas_V_OCarrierGora_Lite_grn_F": 1,
             },
             "packs": [
-                "t2_standard",
+                "t3_standard",
+                "military_standard",
             ],
-            "magazines": {
-                "SmokeShell": 2,
-                "HandGrenade": 1,
-            },
         });
 
         @Primary({
             "weapons": {
                 "arifle_AK12_F": {
                     "magazinesVest": {
-                        "30Rnd_762x39_polymer_Black_Mag_Green_F": 6,
+                        "30Rnd_762x39_polymer_Black_Mag_Green_F": 7,
                         "30Rnd_762x39_polymer_Black_Mag_Tracer_Green_F": 2,
                     }
                 },
@@ -115,7 +145,7 @@ class CfgVehicles {
             "weapons": {
                 "hgun_G17_black_F": {
                     "magazinesVest": {
-                        "17Rnd_9x21_Mag": 3,
+                        "17Rnd_9x21_Mag": 2,
                     },
                 },
             },
@@ -129,7 +159,7 @@ class CfgVehicles {
             "weapons": {
                 "arifle_AK12_GL_F": {
                     "magazinesVest": {
-                        "30Rnd_762x39_polymer_Black_Mag_Green_F": 6,
+                        "30Rnd_762x39_polymer_Black_Mag_Green_F": 7,
                         "1Rnd_HE_Grenade_shell": 4,
                     },
                     "loadedPrimary": "30Rnd_762x39_polymer_Black_Mag_Green_F",
@@ -137,8 +167,8 @@ class CfgVehicles {
                 },
             },
             "optics": {
-                "Aegis_optic_ICO": 0.5,
-                "": 0.5,
+                "Aegis_optic_ICO": 1,
+                "": 1,
             },
             "pointers": {
                 "acc_pointer_IR": 1,
@@ -149,7 +179,7 @@ class CfgVehicles {
             "weapons": {
                 "hgun_G17_black_F": {
                     "magazinesVest": {
-                        "17Rnd_9x21_Mag": 3,
+                        "17Rnd_9x21_Mag": 2,
                     },
                 },
             },
@@ -159,26 +189,11 @@ class CfgVehicles {
     class CLASS(Autorifleman): CLASS(Base) {
         @Role(Autorifleman);
 
-        @Vests({
-            "variants": {
-                "Atlas_V_OCarrierGora_CQB_ardi_F": 1,
-                "Atlas_V_OCarrierGora_Lite_ardi_F": 1,
-                "Atlas_V_OCarrierGora_CQB_grn_F": 1,
-                "Atlas_V_OCarrierGora_Lite_grn_F": 1,
-            },
-            "packs": [
-                "t3_standard",
-            ],
-            "magazines": {
-                "SmokeShell": 1,
-            },
-        });
-
         @Primary({
             "weapons": {
                 "arifle_RPK12_F": {
                     "magazinesVest": {
-                        "75rnd_762x39_AK12_Mag_Tracer_F": 4,
+                        "75rnd_762x39_AK12_Mag_Tracer_F": 5,
                     },
                 },
             },
@@ -194,7 +209,7 @@ class CfgVehicles {
             "weapons": {
                 "hgun_G17_black_F": {
                     "magazinesVest": {
-                        "17Rnd_9x21_Mag": 3,
+                        "17Rnd_9x21_Mag": 2,
                     },
                 },
             },
@@ -234,6 +249,7 @@ class CfgVehicles {
         @Backpacks({
             "variants": {
                 "B_FieldPack_green_F": 1,
+                "B_FieldPack_ardi": 1,
             },
             "magazines": {
                 "100Rnd_762x51_S77_Green_Tracer_lxWS": 6,
@@ -267,7 +283,7 @@ class CfgVehicles {
             "weapons": {
                 "hgun_G17_black_F": {
                     "magazinesVest": {
-                        "17Rnd_9x21_Mag": 3,
+                        "17Rnd_9x21_Mag": 2,
                     },
                 },
             },
@@ -316,6 +332,7 @@ class CfgVehicles {
         @Backpacks({
             "variants": {
                 "B_FieldPack_green_F": 1,
+                "B_FieldPack_ardi": 1,
             },
         });
     };
@@ -336,6 +353,7 @@ class CfgVehicles {
         @Backpacks({
             "variants": {
                 "B_FieldPack_green_F": 1,
+                "B_FieldPack_ardi": 1,
             },
         });
     };
@@ -369,6 +387,7 @@ class CfgVehicles {
         @Backpacks({
             "variants": {
                 "B_FieldPack_green_F": 1,
+                "B_FieldPack_ardi": 1,
             },
             "packs": [
                 "eod",
@@ -414,9 +433,9 @@ class CfgVehicles {
         @Role(HeliPilot);
 
         @Headgear({
-            "H_PilotHelmetHeli_O_visor_up": 0.3,
-            "H_PilotHelmetHeli_O": 0.4,
-            "H_CrewHelmetHeli_O": 0.3,
+            "H_PilotHelmetHeli_O_visor_up": 1,
+            "H_PilotHelmetHeli_O": 1,
+            "H_CrewHelmetHeli_O": 1,
         });
     };
 };

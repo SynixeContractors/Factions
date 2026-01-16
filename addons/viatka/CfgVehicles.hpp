@@ -3,7 +3,7 @@ class CfgVehicles {
 
     class CLASS(Base): GCLASS(Base_INDEP) {
         faction = QCLASS(t3_indep);
-        displayName = "Viatken Base";
+        displayName = "Viatka Base";
         identityTypes[] = {
             "LanguageRUS_F",
             "Head_Euro",
