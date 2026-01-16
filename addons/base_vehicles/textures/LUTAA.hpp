@@ -74,8 +74,8 @@ class TextureSources {
         };
         factions[] = {};
     };
-    class RUS {
-        displayName = "Olive";
+    class Green {
+        displayName = "Green";
         textures[] = {
             "\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_kab_RUkhk_CO.paa",
             "\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_cargo_RUkhk_CO.paa",
@@ -246,6 +246,21 @@ class TextureSources {
             "\A3_Atlas\Soft_F_Atlas\Truck_02\Data\Truck_02_kuz_tk_CO.paa",
             "\A3\Soft_F_Beta\Truck_02\Data\Truck_02_int_CO.paa",
             "\A3\Soft_F_Beta\Truck_02\Data\Truck_02_chassis_OPFOR_CO.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_base_green_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_green_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_addon_1_green_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_addon_2_green_co.paa",
+            "lxws\vehicles_f_lxws\Truck_02\data\addons_black_co.paa"
+        };
+        factions[] = {};
+    };
+    class Cdf {
+        displayName = "CDF";
+        textures[] = {
+            "\s\synixe_factions\addons\textures\data\lut\lut_cab_CDF_CO.paa",
+            "\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_cargo_RUkhk_CO.paa",
+            "\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_int_RUkhk_CO.paa",
+            "\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_chassis_RUkhk_CO.paa",
             "lxws\vehicles_f_lxws\zu23\data\zu23_base_green_co.paa",
             "lxws\vehicles_f_lxws\zu23\data\zu23_green_co.paa",
             "lxws\vehicles_f_lxws\zu23\data\zu23_addon_1_green_co.paa",
