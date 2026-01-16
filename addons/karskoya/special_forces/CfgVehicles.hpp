@@ -23,6 +23,8 @@ class CfgVehicles {
             },
             "packs": [
                 "t2_standard",
+                "military_standard",
+                "rifleman_medical",
             ],
         });
 
@@ -91,13 +93,10 @@ class CfgVehicles {
             },
             "packs": [
                 "t2_standard",
+                "military_standard",
+                "rifleman_medical",
+                "jtac",
             ],
-        });
-
-        @Binoculars({
-            "weapons": {
-                "Rangefinder": 1,
-            }
         });
     };
 
@@ -148,6 +147,8 @@ class CfgVehicles {
             },
             "packs": [
                 "t2_standard",
+                "military_standard",
+                "rifleman_medical",
             ],
         });
 
@@ -210,6 +211,8 @@ class CfgVehicles {
             },
             "packs": [
                 "t2_standard",
+                "military_standard",
+                "rifleman_medical",
             ],
         });
 
@@ -245,6 +248,8 @@ class CfgVehicles {
             },
             "packs": [
                 "t2_standard",
+                "military_standard",
+                "rifleman_medical",
             ],
         });
 
@@ -324,12 +329,6 @@ class CfgVehicles {
 
     class CLASS(Spotter): CLASS(Base) {
         @Role(Spotter);
-        
-        @Binoculars({
-            "weapons": {
-                "Rangefinder": 1,
-            }
-        });
 
         @Headgear({
             "synixe_mgp_h_cap_m81_earphones": 1,
@@ -354,6 +353,12 @@ class CfgVehicles {
             "muzzles": {
                 "muzzle_snds_acp": 1,
             },
+        });
+
+        @Binoculars({
+            "weapons": {
+                "Rangefinder": 1,
+            }
         });
     };
 
