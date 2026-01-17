@@ -40,7 +40,7 @@ class TextureSources {
         factions[] = {};
     };
     class WhiteUN {
-        displayName = "United Assistance";
+        displayName = "UNA";
         textures[] = {"\lxws\vehicles_f_lxws\data\Offroad_01\offroad_01_ext_UN_co.paa","\lxws\vehicles_f_lxws\data\Offroad_01\offroad_01_ext_UN_co.paa","\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_adds_black_co.paa","\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_armor_whiteUN_co.paa"};
         factions[] = {};
     };

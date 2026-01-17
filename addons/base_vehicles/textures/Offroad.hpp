@@ -192,4 +192,54 @@ class TextureSources {
         displayName = "Port Authority";
         textures[] = {"\A3\Soft_F_Bootcamp\Offroad_01\Data\Offroad_01_ext_repair_CIV_CO.paa","\A3\Soft_F_Bootcamp\Offroad_01\Data\Offroad_01_ext_repair_CIV_CO.paa","a3\Soft_F_Enoch\Offroad_01\Data\offroad_01_cover_blk_co.paa"};
     };
+    class Pink {
+        displayName = "Pink";
+        textures[] = {
+            "\lxws\vehicles_f_lxws\data\Offroad_01\offroad_01_ext_pink_co.paa",
+            "\lxws\vehicles_f_lxws\data\Offroad_01\offroad_01_ext_pink_co.paa",
+            "\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_adds_black_co.paa",
+            "\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_armor_rust_co.paa"
+        };
+        factions[] = {};
+    };
+    class Zebra {
+        displayName = "Zebra";
+        textures[] = {
+            "\lxws\vehicles_f_lxws\data\offroad_01\offroad_01_ext_zebra_co.paa",
+            "\lxws\vehicles_f_lxws\data\offroad_01\offroad_01_ext_zebra_co.paa",
+            "\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_adds_black_co.paa",
+            "\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_armor_rust_co.paa"
+        };
+        factions[] = {};
+    };
+    class SFIA2 {
+        displayName = "Blotches (Desert)";
+        textures[] = {
+            "\lxWS\vehicles_f_lxws\Offroad_01\data\Offroad_01_ext_tura_CO.paa",
+            "\lxws\vehicles_f_lxws\data\offroad_01\offroad_01_ext_sfia_co.paa",
+            "\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_adds_black_co.paa",
+            "\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_armor_tura_co.paa"
+        };
+        factions[] = {};
+    };
+    class SFIA {
+        displayName = "SFIA 01";
+        textures[] = {
+            "\lxws\vehicles_f_lxws\data\offroad_01\offroad_01_ext_sfia_co.paa",
+            "\lxws\vehicles_f_lxws\data\offroad_01\offroad_01_ext_sfia_co.paa",
+            "\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_adds_black_co.paa",
+            "\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_armor_sfia_co.paa"
+        };
+        factions[] = {};
+    };
+    class WhiteUN {
+        displayName = "UNA";
+        textures[] = {
+            "\lxws\vehicles_f_lxws\data\Offroad_01\offroad_01_ext_UN_co.paa",
+            "\lxws\vehicles_f_lxws\data\Offroad_01\offroad_01_ext_UN_co.paa",
+            "\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_adds_black_co.paa",
+            "\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_armor_whiteUN_co.paa"
+        };
+        factions[] = {};
+    };
 };
