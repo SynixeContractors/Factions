@@ -56,6 +56,9 @@ class CfgVehicles {
         #include "CfgVehicles_T_CitizensCars.hpp"
         #include "CfgVehicles_T_CitizensHelicopters.hpp"
         #include "CfgVehicles_T_CitizensPlanes.hpp"
+        #define SIDE 2
+        #include "CfgVehicles_T_Police.hpp"
         #undef NATION
+        #undef SIDE
     @EndFor
 };
