@@ -108,4 +108,5 @@ class CfgVehicles {
     #include "CfgVehicles_RSG60.hpp"
     #include "CfgVehicles_Titan.hpp"
     #include "CfgVehicles_XM.hpp"
+    #include "CfgVehicles_Radar01.hpp"
 };

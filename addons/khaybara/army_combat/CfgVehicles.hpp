@@ -2,6 +2,9 @@ class CfgVehicles {
     #define TEMPLATE_FACTION QPCLASS(t2_blufor)
     #define TEMPLATE_SIDE 1
     #include "../../../templates/statics/M2.hpp"
+    #define TEMPLATE_CAMO Desert
+    #include "../../../templates/statics/SAM01.hpp"
+    #undef TEMPLATE_CAMO
     #define TEMPLATE_CAMO Karzeg_01
     #include "../../../templates/apc/Pandur.hpp"
     #include "../../../templates/helicopters/Puma_Military.hpp"
