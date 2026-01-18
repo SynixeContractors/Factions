@@ -6,7 +6,10 @@ class CfgPatches {
         units[] = {};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {"cba_main", "Christmas_Wearables"};
+        requiredAddons[] = {
+            "synixe_factions_main",
+            "Christmas_Wearables",
+        };
         skipWhenMissingDependencies = 1;
         author = "Synixe Contractors";
         VERSION_CONFIG;

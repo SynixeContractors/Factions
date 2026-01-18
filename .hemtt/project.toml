@@ -4,6 +4,7 @@ mainprefix = "s"
 
 [lints.config.cfgpatches_scope]
 options.check_cfgpatches = false
+options.check_prefixes = []
 
 [hemtt.launch.default]
 dlc = []

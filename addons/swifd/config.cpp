@@ -9,7 +9,7 @@ class CfgPatches {
         };
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
-            "synixe_factions_main"
+            "synixe_factions_base_vehicles"
         };
         author = "Synixe Contractors";
         VERSION_CONFIG;

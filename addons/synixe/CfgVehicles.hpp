@@ -8,8 +8,8 @@ class CfgVehicles {
         @Templated();
     };
 
-    class CLASS(clothing_Unit_Contractor_Shirt);
-    class CLASS(Contractor): CLASS(clothing_Unit_Contractor_Shirt) {
+    class CLASS(Unit_Contractor_Shirt);
+    class CLASS(Contractor): CLASS(Unit_Contractor_Shirt) {
         scope = 2;
         scopeCurator = 2;
         faction = QPCLASS(t4_blufor);

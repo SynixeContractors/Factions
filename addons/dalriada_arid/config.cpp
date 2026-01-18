@@ -7,7 +7,9 @@ class CfgPatches {
         units[] = {};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {"cba_main"};
+        requiredAddons[] = {
+            "synixe_factions_base_vehicles"
+        };
         author = "Synixe Contractors";
         VERSION_CONFIG;
     };

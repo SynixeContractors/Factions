@@ -48,7 +48,7 @@
                 CAMONET\
             }
 
-ADD_CAMO_EVENT_HANDLER(I_MBT_03_cannon_F,MBT_03_base_F);
+ADD_CAMO_EVENT_HANDLER(I_MBT_03_cannon_F,I_MBT_03_base_F);
 class GCLASS(Leopard2): I_MBT_03_cannon_F {
     displayName = "Leopard 2A4M+";
     faction = QGCLASS(base_vehicles);

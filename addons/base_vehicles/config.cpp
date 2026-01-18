@@ -7,7 +7,7 @@ class CfgPatches {
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
-            "synixe_factions_main",
+            "synixe_factions_vehicle_textures",
 
             // Warrior
             "A3_Aegis_Armor_F_Aegis_APC_Tracked_03",

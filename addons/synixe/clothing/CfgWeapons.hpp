@@ -2,7 +2,7 @@ class CfgWeapons {
     class Uniform_Base;
 
     class UniformItem;
-    class CLASS(Uniform_Base): Uniform_Base {
+    class PCLASS(Uniform_Base): Uniform_Base {
         dlc = QUOTE(PREFIX);
         scope = 0;
         model = "\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
@@ -15,7 +15,7 @@ class CfgWeapons {
     };
 
     // Contractor Shirt
-    class CLASS(Uniform_Contractor_Shirt): CLASS(Uniform_Base) {
+    class PCLASS(Uniform_Contractor_Shirt): PCLASS(Uniform_Base) {
         scope = 2;
         author = "Brett Harrison";
         displayName = "Polo [Synixe] (Black, Pants)";
@@ -27,7 +27,7 @@ class CfgWeapons {
     };
 
     // Synixe Tartan
-    class CLASS(Uniform_Combat_LS_Synixe_BP_BB): CLASS(Uniform_Base) {
+    class PCLASS(Uniform_Combat_LS_Synixe_BP_BB): PCLASS(Uniform_Base) {
         scope = 2;
         author = "Brett Harrison";
         displayName = "Combat Uniform (Synixe)";
@@ -37,7 +37,7 @@ class CfgWeapons {
             uniformClass = QCLASS(Unit_Combat_LS_Synixe_BP_BB);
         };
     };
-    class CLASS(Uniform_Combat_RS_Synixe_BP_BB): CLASS(Uniform_Base) {
+    class PCLASS(Uniform_Combat_RS_Synixe_BP_BB): PCLASS(Uniform_Base) {
         scope = 2;
         author = "Brett Harrison";
         displayName = "Combat Uniform (Synixe, Rolled-Up)";

@@ -14,10 +14,10 @@
 
 class CfgVehicles {
     class B_RangeMaster_F;
-    class CLASS(Unit_Polo_Base): B_RangeMaster_F {
+    class PCLASS(Unit_Polo_Base): B_RangeMaster_F {
         MACRO_BASE_CLASS_COMMON;
     };
-    class CLASS(Unit_Contractor_Shirt): CLASS(Unit_Polo_Base) {
+    class PCLASS(Unit_Contractor_Shirt): PCLASS(Unit_Polo_Base) {
         scope = 1;
         author = "Brett Harrison";
         uniformClass = QCLASS(Uniform_Contractor_Shirt);
@@ -26,12 +26,12 @@ class CfgVehicles {
 
     // Long Sleeve Plaid
     class B_Soldier_base_F;
-    class CLASS(Unit_Combat_LS_C_Base): B_Soldier_base_F {
+    class PCLASS(Unit_Combat_LS_C_Base): B_Soldier_base_F {
         MACRO_BASE_CLASS_COMMON;
         hiddenSelectionsMaterials[] = {QPATHTOF(clothing\data\uniform_combat_plaid.rvmat)};
     };
 
-    class CLASS(Unit_Combat_LS_Synixe_BP_BB): CLASS(Unit_Combat_LS_C_Base) {
+    class PCLASS(Unit_Combat_LS_Synixe_BP_BB): PCLASS(Unit_Combat_LS_C_Base) {
         scope = 1;
         author = "Brett Harrison";
         uniformClass = QCLASS(Uniform_Combat_LS_Synixe_BP_BB);
@@ -40,15 +40,15 @@ class CfgVehicles {
 
     // Rolled Plaid
     class B_Soldier_03_f;
-    class CLASS(Unit_Combat_RS_Base): B_Soldier_03_f {
+    class PCLASS(Unit_Combat_RS_Base): B_Soldier_03_f {
         MACRO_BASE_CLASS_COMMON;
         hiddenSelectionsMaterials[] = {QPATHTOF(clothing\data\uniform_combat_plaid.rvmat)};
     };
-    class CLASS(Unit_Combat_RS_C_Base): CLASS(Unit_Combat_RS_Base) {
+    class PCLASS(Unit_Combat_RS_C_Base): PCLASS(Unit_Combat_RS_Base) {
         hiddenSelectionsMaterials[] = {QPATHTOF(clothing\data\uniform_combat_plaid.rvmat)};
     };
 
-    class CLASS(Unit_Combat_RS_Synixe_BP_BB): CLASS(Unit_Combat_RS_C_Base) {
+    class PCLASS(Unit_Combat_RS_Synixe_BP_BB): PCLASS(Unit_Combat_RS_C_Base) {
         scope = 1;
         author = "Brett Harrison";
         uniformClass = QCLASS(Uniform_Combat_RS_Synixe_BP_BB);

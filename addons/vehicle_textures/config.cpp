@@ -6,7 +6,9 @@ class CfgPatches {
         units[] = {};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {};
+        requiredAddons[] = {
+            "synixe_factions_main"
+        };
         skipWhenMissingDependencies = 1;
         author = "Synixe Contractors";
         VERSION_CONFIG;
