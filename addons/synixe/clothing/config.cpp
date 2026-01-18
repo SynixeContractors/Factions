@@ -5,9 +5,9 @@ class CfgPatches {
         name = QUOTE(DOUBLES(COMPONENT,SUBCOMPONENT));
         units[] = {};
         weapons[] = {
-            QCLASS(Uniform_Combat_LS_Synixe_BP_BB),
-            QCLASS(Uniform_Combat_RS_Synixe_BP_BB),
-            QCLASS(Uniform_Contractor_Shirt)
+            QPCLASS(Uniform_Combat_LS_Synixe_BP_BB),
+            QPCLASS(Uniform_Combat_RS_Synixe_BP_BB),
+            QPCLASS(Uniform_Contractor_Shirt)
         };
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {

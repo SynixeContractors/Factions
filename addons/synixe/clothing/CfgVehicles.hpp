@@ -20,7 +20,7 @@ class CfgVehicles {
     class PCLASS(Unit_Contractor_Shirt): PCLASS(Unit_Polo_Base) {
         scope = 1;
         author = "Brett Harrison";
-        uniformClass = QCLASS(Uniform_Contractor_Shirt);
+        uniformClass = QPCLASS(Uniform_Contractor_Shirt);
         hiddenSelectionsTextures[] = {QPATHTOF(clothing\data\uniform_contractor_shirt_co.paa)};
     };
 
@@ -34,7 +34,7 @@ class CfgVehicles {
     class PCLASS(Unit_Combat_LS_Synixe_BP_BB): PCLASS(Unit_Combat_LS_C_Base) {
         scope = 1;
         author = "Brett Harrison";
-        uniformClass = QCLASS(Uniform_Combat_LS_Synixe_BP_BB);
+        uniformClass = QPCLASS(Uniform_Combat_LS_Synixe_BP_BB);
         hiddenSelectionsTextures[] = {QPATHTOF(clothing\data\uniform_combat_synixe_bp_bb_co.paa)};
     };
 
@@ -51,7 +51,7 @@ class CfgVehicles {
     class PCLASS(Unit_Combat_RS_Synixe_BP_BB): PCLASS(Unit_Combat_RS_C_Base) {
         scope = 1;
         author = "Brett Harrison";
-        uniformClass = QCLASS(Uniform_Combat_RS_Synixe_BP_BB);
+        uniformClass = QPCLASS(Uniform_Combat_RS_Synixe_BP_BB);
         hiddenSelectionsTextures[] = {QPATHTOF(clothing\data\uniform_combat_synixe_bp_bb_co.paa)};
     };
 
