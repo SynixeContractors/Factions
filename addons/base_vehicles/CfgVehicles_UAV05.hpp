@@ -4,8 +4,7 @@ class GCLASS(MQ47): B_UAV_05_F {
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
-    crew = "Civilian";
-    typicalCargo[] = {"Soldier"};
+    crew = "C_UAV_AI_F";
     ace_refuel_fuelCapacity = 450;
     #include "textures/UAV05.hpp"
     // class Components {

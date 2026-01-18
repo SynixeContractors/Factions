@@ -4,8 +4,7 @@ class GCLASS(UGV): B_UGV_01_F {
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
-    crew = "Civilian";
-    typicalCargo[] = {"Soldier"};
+    crew = "C_UAV_AI_F";
     ace_refuel_fuelCapacity = 200;
     #include "textures/UGV.hpp"
 };
@@ -16,8 +15,7 @@ class GCLASS(UGV_RCWS): B_UGV_01_rcws_F {
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
-    crew = "Civilian";
-    typicalCargo[] = {"Soldier"};
+    crew = "C_UAV_AI_F";
     ace_refuel_fuelCapacity = 200;
     #include "textures/UGV.hpp"
 };
