@@ -5,7 +5,7 @@ class GCLASS(MQ12): B_UAV_03_dynamicLoadout_F {
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
     crew = "C_UAV_AI_F";
-    ace_refuel_fuelCapacity = 450;
+    ace_refuel_fuelCapacity = 233; //taken from MD500
     #include "eventhandler_camo.hpp"
     #include "textures/UAV03.hpp"
     // class Components {

@@ -5,7 +5,7 @@ class GCLASS(MQ47): B_UAV_05_F {
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
     crew = "C_UAV_AI_F";
-    ace_refuel_fuelCapacity = 450;
+    ace_refuel_fuelCapacity = 2000; //total guess
     #include "eventhandler_camo.hpp"
     #include "textures/UAV05.hpp"
     // class Components {
