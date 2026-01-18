@@ -15,7 +15,7 @@ class TextureSources {
         };
         factions[] = {};
     };
-    class LDF {
+    class EAF {
         displayName = "LDF";
         textures[] = {
             "\A3_Aegis\Static_F_Aegis\SAM_System_03\Data\Sam_system_03_mat_01_EAF_CO.paa",
