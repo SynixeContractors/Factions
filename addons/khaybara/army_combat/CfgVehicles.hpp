@@ -27,6 +27,9 @@ class CfgVehicles {
     #undef TEMPLATE_CAMO
     #define TEMPLATE_CAMO Default
     #include "../../../templates/drones/MQ47.hpp"
+    #undef TEMPLATE_CAMO
+    #define TEMPLATE_CAMO Sand
+    #include "../../../templates/drones/MQ12.hpp"
 
 
     class PCLASS(Base);
