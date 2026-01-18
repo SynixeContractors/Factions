@@ -284,4 +284,244 @@ class TextureSources {
         };
         factions[] = {};
     };
+    class Blue {
+        displayName = "Blue";
+        textures[] = {
+            "\a3\Soft_F\Offroad_01\data\Offroad_01_ext_BASE03_CO.paa",
+            "\a3\Soft_F\Offroad_01\data\Offroad_01_ext_BASE03_CO.paa",
+            "\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_adds_black_co.paa",
+            "\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_armor_rust_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_base_green_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_green_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_addon_1_green_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_addon_2_green_co.paa",
+            "lxws\vehicles_f_lxws\Offroad_01\data\adds\offroad_01_metal_frame_green_CO.paa"
+        };
+        factions[] = {};
+    };
+    class Bluecustom {
+        displayName = "Blue Custom";
+        textures[] = {
+            "\a3\Soft_F\Offroad_01\data\Offroad_01_ext_BASE05_CO.paa",
+            "\a3\Soft_F\Offroad_01\data\Offroad_01_ext_BASE05_CO.paa",
+            "\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_adds_black_co.paa",
+            "\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_armor_rust_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_base_green_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_green_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_addon_1_green_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_addon_2_green_co.paa",
+            "lxws\vehicles_f_lxws\Offroad_01\data\adds\offroad_01_metal_frame_green_CO.paa"
+        };
+        factions[] = {};
+    };
+    class Brown {
+        displayName = "Brown";
+        textures[] = {
+            "\A3_Aegis\Soft_F_Aegis\Offroad_01\Data\Offroad_01_ext_brn_CO.paa",
+            "\A3_Aegis\Soft_F_Aegis\Offroad_01\Data\Offroad_01_ext_brn_CO.paa",
+            "\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_adds_black_co.paa",
+            "\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_armor_rust_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_base_green_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_green_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_addon_1_green_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_addon_2_green_co.paa",
+            "lxws\vehicles_f_lxws\Offroad_01\data\adds\offroad_01_metal_frame_green_CO.paa"
+        };
+        factions[] = {};
+    };
+    class Darkred {
+        displayName = "Dark Red";
+        textures[] = {
+            "\a3\Soft_F\Offroad_01\data\Offroad_01_ext_BASE04_CO.paa",
+            "\a3\Soft_F\Offroad_01\data\Offroad_01_ext_BASE04_CO.paa",
+            "\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_adds_black_co.paa",
+            "\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_armor_rust_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_base_green_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_green_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_addon_1_green_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_addon_2_green_co.paa",
+            "lxws\vehicles_f_lxws\Offroad_01\data\adds\offroad_01_metal_frame_green_CO.paa"
+        };
+        factions[] = {};
+    };
+    class Gendarmerie {
+        displayName = "Gendarmerie";
+        textures[] = {
+            "\A3\Soft_F_Exp\Offroad_01\Data\Offroad_01_ext_gen_CO.paa",
+            "\A3\Soft_F_Exp\Offroad_01\Data\Offroad_01_ext_gen_CO.paa",
+            "\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_adds_black_co.paa",
+            "\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_armor_rust_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_base_green_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_green_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_addon_1_green_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_addon_2_green_co.paa",
+            "lxws\vehicles_f_lxws\Offroad_01\data\adds\offroad_01_metal_frame_green_CO.paa"
+        };
+        factions[] = {};
+    };
+    class ParkRanger {
+        displayName = "Forest Ranger";
+        textures[] = {
+            "\a3\Soft_F_Enoch\Offroad_01\Data\offroad_01_ext_Ranger_CO.paa",
+            "\a3\Soft_F_Enoch\Offroad_01\Data\offroad_01_ext_Ranger_CO.paa",
+            "\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_adds_black_co.paa",
+            "\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_armor_rust_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_base_green_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_green_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_addon_1_green_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_addon_2_green_co.paa",
+            "lxws\vehicles_f_lxws\Offroad_01\data\adds\offroad_01_metal_frame_green_CO.paa"
+        };
+        factions[] = {};
+    };
+    class IDAP {
+        displayName = "IDAP";
+        textures[] = {
+            "\A3\Soft_F_Orange\Offroad_01\Data\Offroad_01_ext_IDAP_CO.paa",
+            "\A3\Soft_F_Orange\Offroad_01\Data\Offroad_01_ext_IDAP_CO.paa",
+            "\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_adds_black_co.paa",
+            "\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_armor_rust_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_base_green_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_green_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_addon_1_green_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_addon_2_green_co.paa",
+            "lxws\vehicles_f_lxws\Offroad_01\data\adds\offroad_01_metal_frame_green_CO.paa"
+        };
+        factions[] = {};
+    };
+    class KZG {
+        displayName = "Khaybaran";
+        textures[] = {
+            "\A3_Atlas\Soft_F_Atlas\Offroad_01\Data\offroad_01_ext_kzg_co.paa",
+            "\A3_Atlas\Soft_F_Atlas\Offroad_01\Data\offroad_01_ext_kzg_co.paa",
+            "\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_adds_black_co.paa",
+            "\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_armor_rust_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_base_green_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_green_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_addon_1_green_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_addon_2_green_co.paa",
+            "lxws\vehicles_f_lxws\Offroad_01\data\adds\offroad_01_metal_frame_green_CO.paa"
+        };
+        factions[] = {};
+    };
+    class EAF {
+        displayName = "LDF (Geo Woodland)";
+        textures[] = {
+            "\a3\Soft_F_Enoch\Offroad_01\Data\offroad_01_ext_EAF_CO.paa",
+            "\a3\Soft_F_Enoch\Offroad_01\Data\offroad_01_ext_EAF_CO.paa",
+            "\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_adds_black_co.paa",
+            "\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_armor_rust_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_base_green_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_green_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_addon_1_green_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_addon_2_green_co.paa",
+            "lxws\vehicles_f_lxws\Offroad_01\data\adds\offroad_01_metal_frame_green_CO.paa"
+        };
+        factions[] = {};
+    };
+    class EAF_Arid {
+        displayName = "LDF (Arid)";
+        textures[] = {
+            "\A3_Aegis\Soft_F_Aegis\Offroad_01\Data\Offroad_01_ext_EAF_Arid_CO.paa",
+            "\A3_Aegis\Soft_F_Aegis\Offroad_01\Data\Offroad_01_ext_EAF_Arid_CO.paa",
+            "\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_adds_black_co.paa",
+            "\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_armor_rust_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_base_green_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_green_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_addon_1_green_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_addon_2_green_co.paa",
+            "lxws\vehicles_f_lxws\Offroad_01\data\adds\offroad_01_metal_frame_green_CO.paa"
+        };
+        factions[] = {};
+    };
+    class Olive {
+        displayName = "Olive";
+        textures[] = {
+            "\A3_Aegis\Soft_F_Aegis\Offroad_01\Data\Offroad_01_ext_oli_CO.paa",
+            "\A3_Aegis\Soft_F_Aegis\Offroad_01\Data\Offroad_01_ext_oli_CO.paa",
+            "\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_adds_black_co.paa",
+            "\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_armor_rust_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_base_green_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_green_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_addon_1_green_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_addon_2_green_co.paa",
+            "lxws\vehicles_f_lxws\Offroad_01\data\adds\offroad_01_metal_frame_green_CO.paa"
+        };
+        factions[] = {};
+    };
+    class PortAuthority {
+        displayName = "Port Authority";
+        textures[] = {
+            "\A3\Soft_F_Bootcamp\Offroad_01\Data\Offroad_01_ext_repair_CIV_CO.paa",
+            "\A3\Soft_F_Bootcamp\Offroad_01\Data\Offroad_01_ext_repair_CIV_CO.paa",
+            "\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_adds_black_co.paa",
+            "\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_armor_rust_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_base_green_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_green_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_addon_1_green_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_addon_2_green_co.paa",
+            "lxws\vehicles_f_lxws\Offroad_01\data\adds\offroad_01_metal_frame_green_CO.paa"
+        };
+        factions[] = {};
+    };
+    class Red {
+        displayName = "Red";
+        textures[] = {
+            "\a3\Soft_F\Offroad_01\data\Offroad_01_ext_CO.paa",
+            "\a3\Soft_F\Offroad_01\data\Offroad_01_ext_CO.paa",
+            "\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_adds_black_co.paa",
+            "\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_armor_rust_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_base_green_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_green_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_addon_1_green_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_addon_2_green_co.paa",
+            "lxws\vehicles_f_lxws\Offroad_01\data\adds\offroad_01_metal_frame_green_CO.paa"
+        };
+        factions[] = {};
+    };
+    class Pink {
+        displayName = "Pink";
+        textures[] = {
+            "\lxws\vehicles_f_lxws\data\Offroad_01\offroad_01_ext_pink_co.paa",
+            "\lxws\vehicles_f_lxws\data\Offroad_01\offroad_01_ext_pink_co.paa",
+            "\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_adds_black_co.paa",
+            "\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_armor_rust_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_base_green_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_green_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_addon_1_green_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_addon_2_green_co.paa",
+            "lxws\vehicles_f_lxws\Offroad_01\data\adds\offroad_01_metal_frame_green_CO.paa"
+        };
+        factions[] = {};
+    };
+    class Sep_01 {
+        displayName = "Seperatists";
+        textures[] = {
+            "\A3_Opf\Soft_F_Opf\Offroad_01\Data\Offroad_01_ext_sep_CO.paa",
+            "\A3_Opf\Soft_F_Opf\Offroad_01\Data\Offroad_01_ext_sep_CO.paa",
+            "\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_adds_black_co.paa",
+            "\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_armor_rust_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_base_green_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_green_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_addon_1_green_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_addon_2_green_co.paa",
+            "lxws\vehicles_f_lxws\Offroad_01\data\adds\offroad_01_metal_frame_green_CO.paa"
+        };
+        factions[] = {};
+    };
+    class Zebra {
+        displayName = "Zebra";
+        textures[] = {
+            "\lxws\vehicles_f_lxws\data\offroad_01\offroad_01_ext_zebra_co.paa",
+            "\lxws\vehicles_f_lxws\data\offroad_01\offroad_01_ext_zebra_co.paa",
+            "\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_adds_black_co.paa",
+            "\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_armor_rust_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_base_green_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_green_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_addon_1_green_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_addon_2_green_co.paa",
+            "lxws\vehicles_f_lxws\Offroad_01\data\adds\offroad_01_metal_frame_green_CO.paa"
+        };
+        factions[] = {};
+    };
 };

@@ -168,7 +168,6 @@ class TextureSources {
     class Olive {
         factions[] = {};
         displayName = "Olive";
-        materials[] = {"\A3_Aegis\Soft_F_Aegis\Offroad_01\Data\Offroad_01_ext_IG.rvmat","\A3\Soft_F\Offroad_01\Data\Offroad_01_ext_plastic.rvmat"};
         textures[] = {"\A3_Aegis\Soft_F_Aegis\Offroad_01\Data\Offroad_01_ext_oli_CO.paa","\A3_Aegis\Soft_F_Aegis\Offroad_01\Data\Offroad_01_ext_oli_CO.paa","a3\Soft_F_Enoch\Offroad_01\Data\offroad_01_cover_blk_co.paa"};
     };
     class Sep_01 {

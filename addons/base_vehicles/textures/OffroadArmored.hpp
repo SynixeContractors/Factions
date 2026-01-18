@@ -125,7 +125,7 @@ class TextureSources {
         factions[] = {};
     };
     class EAF {
-        displayName = "LDF";
+        displayName = "LDF (Geo Woodland)";
         textures[] = {"\a3\Soft_F_Enoch\Offroad_01\Data\offroad_01_ext_EAF_CO.paa","\a3\Soft_F_Enoch\Offroad_01\Data\offroad_01_ext_EAF_CO.paa","\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_adds_black_co.paa","\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_armor_rust_co.paa"};
         factions[] = {};
     };
@@ -183,7 +183,66 @@ class TextureSources {
     class Sep_01 {
         displayName = "Separatist";
         textures[] = {"\A3_Opf\Soft_F_Opf\Offroad_01\Data\Offroad_01_ext_sep_CO.paa","\A3_Opf\Soft_F_Opf\Offroad_01\Data\Offroad_01_ext_sep_CO.paa","\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_adds_black_co.paa","\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_armor_rust_co.paa"};
-        materials[] = {"\A3_Aegis\Soft_F_Aegis\Offroad_01\Data\Offroad_01_ext_IG.rvmat","\A3\Soft_F\Offroad_01\Data\Offroad_01_ext_plastic.rvmat"};
+        factions[] = {};
+    };
+    class Brown {
+        displayName = "Brown";
+        textures[] = {
+            "\A3_Aegis\Soft_F_Aegis\Offroad_01\Data\Offroad_01_ext_brn_CO.paa",
+            "\A3_Aegis\Soft_F_Aegis\Offroad_01\Data\Offroad_01_ext_brn_CO.paa",
+            "\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_adds_black_co.paa",
+            "\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_armor_rust_co.paa"
+        };
+        factions[] = {};
+    };
+    class Olive {
+        displayName = "Olive";
+        textures[] = {
+            "\A3_Aegis\Soft_F_Aegis\Offroad_01\Data\Offroad_01_ext_oli_CO.paa",
+            "\A3_Aegis\Soft_F_Aegis\Offroad_01\Data\Offroad_01_ext_oli_CO.paa",
+            "\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_adds_black_co.paa",
+            "\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_armor_rust_co.paa"
+        };
+        factions[] = {};
+    };
+    class PortAuthority {
+        displayName = "Port Authority";
+        textures[] = {
+            "\A3\Soft_F_Bootcamp\Offroad_01\Data\Offroad_01_ext_repair_CIV_CO.paa",
+            "\A3\Soft_F_Bootcamp\Offroad_01\Data\Offroad_01_ext_repair_CIV_CO.paa",
+            "\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_adds_black_co.paa",
+            "\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_armor_rust_co.paa"
+        };
+        factions[] = {};
+    };
+    class KZG {
+        displayName = "Khaybaran";
+        textures[] = {
+            "\A3_Atlas\Soft_F_Atlas\Offroad_01\Data\offroad_01_ext_kzg_co.paa",
+            "\A3_Atlas\Soft_F_Atlas\Offroad_01\Data\offroad_01_ext_kzg_co.paa",
+            "\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_adds_black_co.paa",
+            "\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_armor_rust_co.paa"
+        };
+        factions[] = {};
+    };
+    class EAF_Arid {
+        displayName = "LDF (Arid)";
+        textures[] = {
+            "\A3_Aegis\Soft_F_Aegis\Offroad_01\Data\Offroad_01_ext_EAF_Arid_CO.paa",
+            "\A3_Aegis\Soft_F_Aegis\Offroad_01\Data\Offroad_01_ext_EAF_Arid_CO.paa",
+            "\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_adds_black_co.paa",
+            "\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_armor_rust_co.paa"
+        };
+        factions[] = {};
+    };
+    class UNO {
+        displayName = "United Nations";
+        textures[] = {
+            "\A3_Atlas\Soft_F_Atlas\Offroad_01\Data\Offroad_01_ext_UN_CO.paa",
+            "\A3_Atlas\Soft_F_Atlas\Offroad_01\Data\Offroad_01_ext_UN_CO.paa",
+            "\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_adds_black_co.paa",
+            "\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_armor_rust_co.paa"
+        };
         factions[] = {};
     };
 };
