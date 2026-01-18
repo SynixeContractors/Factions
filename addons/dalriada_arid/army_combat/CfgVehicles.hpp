@@ -3,6 +3,7 @@ class CfgVehicles {
     #define TEMPLATE_SIDE 0
     #include "../../../templates/statics/XM3XX.hpp"
     #define TEMPLATE_CAMO Hex
+    #include "../../../templates/statics/SAM02.hpp"
     #include "../../../templates/tanks/T14.hpp"
     #include "../../../templates/tanks/T100.hpp"
     #include "../../../templates/tanks/T100_SPG.hpp"
@@ -17,6 +18,9 @@ class CfgVehicles {
     #include "../../../templates/planes/Yak130.hpp"
     #undef TEMPLATE_CAMO
     #define TEMPLATE_CAMO Opfor
+    #include "../../../templates/drones/Shahpar.hpp"
+    #include "../../../templates/drones/CH3A.hpp"
+    #include "../../../templates/drones/UGV.hpp"
     #include "../../../templates/helicopters/Orca_Civilian.hpp"
     #include "../../../templates/helicopters/Orca_Military.hpp"
     #undef TEMPLATE_CAMO

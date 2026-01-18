@@ -5,6 +5,7 @@ class GCLASS(CH3A): O_T_UAV_04_CAS_F {
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
-    crew = "Civilian";
-    typicalCargo[] = {"Soldier"};
+    crew = "C_UAV_AI_F";
+    ace_refuel_fuelCapacity = 480; //like mq1 predator
+    #include "textures/UAV04.hpp"
 };

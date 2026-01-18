@@ -30,6 +30,8 @@ class CfgVehicles {
     #include "../../../templates/helicopters/Mi35.hpp"
     #include "../../../templates/helicopters/Puma_Military.hpp"
 
+    #include "../../../templates/drones/UGV.hpp"
+
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {
         displayName = "Livonia Base Army Garrison";

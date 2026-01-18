@@ -4,9 +4,8 @@ class GCLASS(Shahpar): O_UAV_02_dynamicLoadout_F {
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
-    crew = "Civilian";
-    typicalCargo[] = {"Soldier"};
-    ace_refuel_fuelCapacity = 450;
+    crew = "C_UAV_AI_F";
+    ace_refuel_fuelCapacity = 480; //like mq1 predator
     #include "textures/UAV02.hpp"
     // class Components {
     //   class TransportPylonsComponent {

@@ -10,6 +10,8 @@ class CfgVehicles {
     #include "../../../templates/tanks/Leopard.hpp"
     #undef TEMPLATE_CAMO
     #define TEMPLATE_CAMO EAF
+    #include "../../../templates/statics/SAM01.hpp"
+
     #include "../../../templates/cars/LUT_AA.hpp"
     #include "../../../templates/cars/LUT_Ammo.hpp"
     #include "../../../templates/cars/LUT_Cargo.hpp"
@@ -29,6 +31,9 @@ class CfgVehicles {
     #include "../../../templates/helicopters/Wildcat.hpp"
     #include "../../../templates/helicopters/Mi35.hpp"
     #include "../../../templates/helicopters/Puma_Military.hpp"
+
+    #include "../../../templates/drones/MQ9.hpp"
+    #include "../../../templates/drones/UGV.hpp"
 
     #undef TEMPLATE_CAMO
     #define TEMPLATE_CAMO LDF

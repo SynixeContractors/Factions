@@ -1,12 +1,12 @@
-class Atlas_B_L_UAV_07_F;
+ADD_CAMO_EVENT_HANDLER(Atlas_B_L_UAV_07_F,Aegis_UAV_07_base_F);
 class GCLASS(MQ9): Atlas_B_L_UAV_07_F {
     displayName = "MQ-9X Reaper";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
-    crew = "Civilian";
-    typicalCargo[] = {"Soldier"};
-    ace_refuel_fuelCapacity = 450;
+    crew = "C_UAV_AI_F";
+    ace_refuel_fuelCapacity = 2200;
+    #include "eventhandler_camo.hpp"
     #include "textures/UAV07.hpp"
     // class Components {
     //   class TransportPylonsComponent {
