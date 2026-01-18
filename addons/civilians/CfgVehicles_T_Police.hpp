@@ -94,7 +94,7 @@ class CLASS3(GendarmeBreacher,NATION,SIDE): CLASS3(Gendarme,NATION,SIDE) {
     #include "weapons/shotgun.hpp"
 };
 class CLASS3(GendarmeSniper,NATION,SIDE): CLASS3(Gendarme,NATION,SIDE) {
-    displayName = "Gendarme (Shotgun)";
+    displayName = "Gendarme (Sniper)";
     @Primary({
         "weapons": {
             "srifle_h6_blk_rf": {
