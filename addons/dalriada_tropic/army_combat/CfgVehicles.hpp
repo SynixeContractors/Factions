@@ -20,6 +20,9 @@ class CfgVehicles {
     #undef TEMPLATE_CAMO
     #define TEMPLATE_CAMO CamoGreenHex
     #include "../../../templates/planes/SU75.hpp"
+    #undef TEMPLATE_CAMO
+    #define TEMPLATE_CAMO Opfor
+    #include "../../../templates/drones/Shahpar.hpp"
 
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {
