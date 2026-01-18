@@ -380,7 +380,7 @@ class TextureSources {
             "\A3\Soft_F_Orange\Offroad_01\Data\Offroad_01_ext_IDAP_CO.paa",
             "\A3\Soft_F_Orange\Offroad_01\Data\Offroad_01_ext_IDAP_CO.paa",
             "\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_adds_black_co.paa",
-            "\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_armor_rust_co.paa",
+            "\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_armor_white_co.paa",
             "lxws\vehicles_f_lxws\zu23\data\zu23_base_co.paa",
             "lxws\vehicles_f_lxws\zu23\data\zu23_co.paa",
             "lxws\vehicles_f_lxws\zu23\data\zu23_addon_1_white_co.paa",
@@ -520,6 +520,111 @@ class TextureSources {
             "lxws\vehicles_f_lxws\zu23\data\zu23_green_co.paa",
             "lxws\vehicles_f_lxws\zu23\data\zu23_addon_1_green_co.paa",
             "lxws\vehicles_f_lxws\zu23\data\zu23_addon_2_green_co.paa",
+            "lxws\vehicles_f_lxws\Offroad_01\data\adds\offroad_01_metal_frame_green_CO.paa"
+        };
+        factions[] = {};
+    };
+    class Insurgent_01 {
+        displayName = "Insurgent 01";
+        textures[] = {
+            "\A3_Opf\Soft_F_Opf\Offroad_01\Data\Offroad_01_ext_INS01_CO.paa",
+            "\A3_Opf\Soft_F_Opf\Offroad_01\Data\Offroad_01_ext_INS01_CO.paa",
+            "\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_adds_black_co.paa",
+            "\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_armor_rust_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_base_green_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_green_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_addon_1_green_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_addon_2_green_co.paa",
+            "lxws\vehicles_f_lxws\Offroad_01\data\adds\offroad_01_metal_frame_green_CO.paa"
+        };
+        factions[] = {};
+    };
+    class Insurgent_02 {
+        displayName = "Insurgent 02";
+        textures[] = {
+            "\A3_Opf\Soft_F_Opf\Offroad_01\Data\Offroad_01_ext_INS02_CO.paa",
+            "\A3_Opf\Soft_F_Opf\Offroad_01\Data\Offroad_01_ext_INS02_CO.paa",
+            "\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_adds_black_co.paa",
+            "\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_armor_rust_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_base_green_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_green_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_addon_1_green_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_addon_2_green_co.paa",
+            "lxws\vehicles_f_lxws\Offroad_01\data\adds\offroad_01_metal_frame_green_CO.paa"
+        };
+        factions[] = {};
+    };
+    class Insurgent_03 {
+        displayName = "Insurgent 03";
+        textures[] = {
+            "\A3_Opf\Soft_F_Opf\Offroad_01\Data\Offroad_01_ext_INS03_CO.paa",
+            "\A3_Opf\Soft_F_Opf\Offroad_01\Data\Offroad_01_ext_INS03_CO.paa",
+            "\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_adds_black_co.paa",
+            "\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_armor_rust_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_base_green_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_green_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_addon_1_green_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_addon_2_green_co.paa",
+            "lxws\vehicles_f_lxws\Offroad_01\data\adds\offroad_01_metal_frame_green_CO.paa"
+        };
+        factions[] = {};
+    };
+    class Insurgent_04 {
+        displayName = "Insurgent 04";
+        textures[] = {
+            "\A3_Opf\Soft_F_Opf\Offroad_01\Data\Offroad_01_ext_INS04_CO.paa",
+            "\A3_Opf\Soft_F_Opf\Offroad_01\Data\Offroad_01_ext_INS04_CO.paa",
+            "\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_adds_black_co.paa",
+            "\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_armor_rust_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_base_green_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_green_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_addon_1_green_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_addon_2_green_co.paa",
+            "lxws\vehicles_f_lxws\Offroad_01\data\adds\offroad_01_metal_frame_green_CO.paa"
+        };
+        factions[] = {};
+    };
+    class Insurgent_05 {
+        displayName = "Insurgent 05";
+        textures[] = {
+            "\A3_Opf\Soft_F_Opf\Offroad_01\Data\Offroad_01_ext_INS05_CO.paa",
+            "\A3_Opf\Soft_F_Opf\Offroad_01\Data\Offroad_01_ext_INS05_CO.paa",
+            "\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_adds_black_co.paa",
+            "\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_armor_rust_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_base_green_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_green_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_addon_1_green_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_addon_2_green_co.paa",
+            "lxws\vehicles_f_lxws\Offroad_01\data\adds\offroad_01_metal_frame_green_CO.paa"
+        };
+        factions[] = {};
+    };
+    class Insurgent_06 {
+        displayName = "Insurgent 06";
+        textures[] = {
+            "\A3_Opf\Soft_F_Opf\Offroad_01\Data\Offroad_01_ext_INS06_CO.paa",
+            "\A3_Opf\Soft_F_Opf\Offroad_01\Data\Offroad_01_ext_INS06_CO.paa",
+            "\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_adds_black_co.paa",
+            "\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_armor_sfia2_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_base_sfia_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_sfia_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_addon_1_beige_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_addon_2_sfia_co.paa",
+            "lxws\vehicles_f_lxws\Offroad_01\data\adds\offroad_01_metal_frame_green_CO.paa"
+        };
+        factions[] = {};
+    };
+    class UNO {
+        displayName = "United Nations";
+        textures[] = {
+            "\A3_Atlas\Soft_F_Atlas\Offroad_01\Data\Offroad_01_ext_UN_CO.paa",
+            "\A3_Atlas\Soft_F_Atlas\Offroad_01\Data\Offroad_01_ext_UN_CO.paa",
+            "\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_adds_black_co.paa",
+            "\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_armor_white_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_base_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_addon_1_white_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_addon_2_co.paa",
             "lxws\vehicles_f_lxws\Offroad_01\data\adds\offroad_01_metal_frame_green_CO.paa"
         };
         factions[] = {};
