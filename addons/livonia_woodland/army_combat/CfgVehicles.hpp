@@ -10,6 +10,8 @@ class CfgVehicles {
     #include "../../../templates/tanks/Leopard.hpp"
     #undef TEMPLATE_CAMO
     #define TEMPLATE_CAMO EAF
+    #include "../../../templates/statics/SAM01.hpp"
+
     #include "../../../templates/cars/LUT_AA.hpp"
     #include "../../../templates/cars/LUT_Ammo.hpp"
     #include "../../../templates/cars/LUT_Cargo.hpp"
