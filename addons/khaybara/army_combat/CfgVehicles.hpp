@@ -24,6 +24,10 @@ class CfgVehicles {
     #undef TEMPLATE_CAMO
     #define TEMPLATE_CAMO Khaybaran
     #include "../../../templates/planes/FA181.hpp"
+    #undef TEMPLATE_CAMO
+    #define TEMPLATE_CAMO Default
+    #include "../../../templates/drones/MQ47.hpp"
+
 
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {
