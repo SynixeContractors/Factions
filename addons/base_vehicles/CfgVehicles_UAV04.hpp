@@ -6,4 +6,5 @@ class GCLASS(CH3A): O_T_UAV_04_CAS_F {
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
     crew = "C_UAV_AI_F";
+    #include "textures/UAV04.hpp"
 };
