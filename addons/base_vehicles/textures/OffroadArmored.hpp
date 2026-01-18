@@ -176,7 +176,12 @@ class TextureSources {
     };
     class Insurgent_06 {
         displayName = "Insurgent 06";
-        textures[] = {"\A3_Opf\Soft_F_Opf\Offroad_01\Data\Offroad_01_ext_INS06_CO.paa","\A3_Opf\Soft_F_Opf\Offroad_01\Data\Offroad_01_ext_INS06_CO.paa","\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_adds_black_co.paa","\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_armor_rust_co.paa"};
+        textures[] = {
+            "\A3_Opf\Soft_F_Opf\Offroad_01\Data\Offroad_01_ext_INS06_CO.paa",
+            "\A3_Opf\Soft_F_Opf\Offroad_01\Data\Offroad_01_ext_INS06_CO.paa",
+            "\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_adds_black_co.paa",
+            "\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_armor_sfia2_co.paa"
+        };
         materials[] = {"\A3_Aegis\Soft_F_Aegis\Offroad_01\Data\Offroad_01_ext_IG.rvmat","\A3\Soft_F\Offroad_01\Data\Offroad_01_ext_plastic.rvmat"};
         factions[] = {};
     };
@@ -221,7 +226,7 @@ class TextureSources {
             "\A3_Atlas\Soft_F_Atlas\Offroad_01\Data\offroad_01_ext_kzg_co.paa",
             "\A3_Atlas\Soft_F_Atlas\Offroad_01\Data\offroad_01_ext_kzg_co.paa",
             "\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_adds_black_co.paa",
-            "\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_armor_rust_co.paa"
+            "\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_armor_sfia2_co.paa"
         };
         factions[] = {};
     };
@@ -231,7 +236,7 @@ class TextureSources {
             "\A3_Aegis\Soft_F_Aegis\Offroad_01\Data\Offroad_01_ext_EAF_Arid_CO.paa",
             "\A3_Aegis\Soft_F_Aegis\Offroad_01\Data\Offroad_01_ext_EAF_Arid_CO.paa",
             "\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_adds_black_co.paa",
-            "\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_armor_rust_co.paa"
+            "\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_armor_sfia2_co.paa"
         };
         factions[] = {};
     };
@@ -241,7 +246,7 @@ class TextureSources {
             "\A3_Atlas\Soft_F_Atlas\Offroad_01\Data\Offroad_01_ext_UN_CO.paa",
             "\A3_Atlas\Soft_F_Atlas\Offroad_01\Data\Offroad_01_ext_UN_CO.paa",
             "\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_adds_black_co.paa",
-            "\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_armor_rust_co.paa"
+            "\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_armor_white_co.paa"
         };
         factions[] = {};
     };

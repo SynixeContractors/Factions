@@ -381,10 +381,10 @@ class TextureSources {
             "\A3\Soft_F_Orange\Offroad_01\Data\Offroad_01_ext_IDAP_CO.paa",
             "\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_adds_black_co.paa",
             "\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_armor_rust_co.paa",
-            "lxws\vehicles_f_lxws\zu23\data\zu23_base_green_co.paa",
-            "lxws\vehicles_f_lxws\zu23\data\zu23_green_co.paa",
-            "lxws\vehicles_f_lxws\zu23\data\zu23_addon_1_green_co.paa",
-            "lxws\vehicles_f_lxws\zu23\data\zu23_addon_2_green_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_base_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_addon_1_white_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_addon_2_co.paa",
             "lxws\vehicles_f_lxws\Offroad_01\data\adds\offroad_01_metal_frame_green_CO.paa"
         };
         factions[] = {};
@@ -395,11 +395,11 @@ class TextureSources {
             "\A3_Atlas\Soft_F_Atlas\Offroad_01\Data\offroad_01_ext_kzg_co.paa",
             "\A3_Atlas\Soft_F_Atlas\Offroad_01\Data\offroad_01_ext_kzg_co.paa",
             "\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_adds_black_co.paa",
-            "\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_armor_rust_co.paa",
-            "lxws\vehicles_f_lxws\zu23\data\zu23_base_green_co.paa",
-            "lxws\vehicles_f_lxws\zu23\data\zu23_green_co.paa",
-            "lxws\vehicles_f_lxws\zu23\data\zu23_addon_1_green_co.paa",
-            "lxws\vehicles_f_lxws\zu23\data\zu23_addon_2_green_co.paa",
+            "\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_armor_sfia2_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_base_sfia_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_sfia_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_addon_1_beige_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_addon_2_sfia_co.paa",
             "lxws\vehicles_f_lxws\Offroad_01\data\adds\offroad_01_metal_frame_green_CO.paa"
         };
         factions[] = {};
@@ -425,11 +425,11 @@ class TextureSources {
             "\A3_Aegis\Soft_F_Aegis\Offroad_01\Data\Offroad_01_ext_EAF_Arid_CO.paa",
             "\A3_Aegis\Soft_F_Aegis\Offroad_01\Data\Offroad_01_ext_EAF_Arid_CO.paa",
             "\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_adds_black_co.paa",
-            "\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_armor_rust_co.paa",
-            "lxws\vehicles_f_lxws\zu23\data\zu23_base_green_co.paa",
-            "lxws\vehicles_f_lxws\zu23\data\zu23_green_co.paa",
-            "lxws\vehicles_f_lxws\zu23\data\zu23_addon_1_green_co.paa",
-            "lxws\vehicles_f_lxws\zu23\data\zu23_addon_2_green_co.paa",
+            "\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_armor_sfia2_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_base_sfia_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_sfia_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_addon_1_beige_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_addon_2_sfia_co.paa",
             "lxws\vehicles_f_lxws\Offroad_01\data\adds\offroad_01_metal_frame_green_CO.paa"
         };
         factions[] = {};
