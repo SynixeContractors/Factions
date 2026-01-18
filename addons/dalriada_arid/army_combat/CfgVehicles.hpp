@@ -3,6 +3,7 @@ class CfgVehicles {
     #define TEMPLATE_SIDE 0
     #include "../../../templates/statics/XM3XX.hpp"
     #define TEMPLATE_CAMO Hex
+    #include "../../../templates/statics/SAM02.hpp"
     #include "../../../templates/tanks/T14.hpp"
     #include "../../../templates/tanks/T100.hpp"
     #include "../../../templates/tanks/T100_SPG.hpp"
