@@ -198,6 +198,7 @@ class TextureSources {
             "\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_adds_black_co.paa",
             "\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_armor_rust_co.paa"
         };
+        materials[] = {"\A3_Aegis\Soft_F_Aegis\Offroad_01\Data\Offroad_01_ext_IG.rvmat","\A3\Soft_F\Offroad_01\Data\Offroad_01_ext_plastic.rvmat"};
         factions[] = {};
     };
     class Olive {

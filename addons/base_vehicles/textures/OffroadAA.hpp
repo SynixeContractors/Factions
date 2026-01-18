@@ -327,6 +327,7 @@ class TextureSources {
             "lxws\vehicles_f_lxws\zu23\data\zu23_addon_2_green_co.paa",
             "lxws\vehicles_f_lxws\Offroad_01\data\adds\offroad_01_metal_frame_green_CO.paa"
         };
+        materials[] = {"\A3_Aegis\Soft_F_Aegis\Offroad_01\Data\Offroad_01_ext_IG.rvmat","\A3\Soft_F\Offroad_01\Data\Offroad_01_ext_plastic.rvmat"};
         factions[] = {};
     };
     class Darkred {
