@@ -31,6 +31,7 @@ class CfgVehicles {
     #include "../../../templates/helicopters/Puma_Military.hpp"
 
     #include "../../../templates/drones/MQ9.hpp"
+    #include "../../../templates/drones/UGV.hpp"
 
     #undef TEMPLATE_CAMO
     #define TEMPLATE_CAMO LDF
