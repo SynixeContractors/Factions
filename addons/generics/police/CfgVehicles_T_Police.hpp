@@ -1,8 +1,8 @@
 class CLASS3(Policeman,NATION,SIDE): CLASS2(Base,NATION) {
     SCOPE_DLC;
     displayName = "Police (Worker)";
-    side = SIDE;
-    factions = QGCLASS(police);
+    side = TEMPLATE_SIDE;
+    factions = QCLASS(police);
 
     @Uniforms({
         "variants": {
