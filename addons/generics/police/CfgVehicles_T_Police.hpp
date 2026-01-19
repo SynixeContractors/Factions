@@ -68,10 +68,32 @@ class CLASS3(NATION,SIDE,SWAT): CLASS3(NATION,SIDE,Policeman) {
     });
 };
 class CLASS3(NATION,SIDE,SWATBreacher): CLASS3(NATION,SIDE,SWAT) {
-    displayName = "Police (Shotgun)";
+    displayName = "SWAT (Shotgun)";
     #include "weapons/shotgun.hpp"
 };
-
+class CLASS3(NATION,SIDE,SWATSMG): CLASS3(NATION,SIDE,SWAT) {
+    displayName = "SWAT (SMG)";
+    #include "weapons/smg.hpp"
+};
+class CLASS3(NATION,SIDE,SWATRifle): CLASS3(NATION,SIDE,SWAT) {
+    displayName = "SWAT (Rifle)";
+    #include "weapons/rifle.hpp"
+};
+class CLASS3(NATION,SIDE,SWATDemo): CLASS3(NATION,SIDE,Policeman) {
+    displayName = "SWAT (SMG)";
+    #include "weapons/smg.hpp"
+    @Headgear({
+        "H_PASGT_basic_blue_F": 1,
+    });
+    @Vests({
+        "variants" : {
+            "V_TacVest_blk_POLICE" : 1,
+        },
+        "packs" : [
+            "t2_standard",
+        ],
+    });
+};
 class CLASS3(NATION,SIDE,SWATSniper): CLASS3(NATION,SIDE,Policeman) {
     //police snipers are usually not kitted up in tactical gear
     displayName = "SWAT (Sniper)";
