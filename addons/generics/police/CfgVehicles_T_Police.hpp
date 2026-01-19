@@ -20,6 +20,14 @@ class CLASS2(SIDE,Policeman): CLASS2(Base,NATION) {
         },
     });
 };
+class CLASS2(SIDE,HeliPilot): CLASS2(SIDE,Policeman) {
+    @Role(HeliPilot);
+    @Headgear({
+        "H_PilotHelmetHeli_B_visor_up": 1,
+        "H_Cap_marshal_blue_RF": 1,
+        "Aegis_H_MilCap_tachs_blue_F": 1,
+    });
+};
 class CLASS2(SIDE,PolicemanPistol): CLASS2(SIDE,Policeman) {
     @Role(Pistol);
     @Headgear({
@@ -131,6 +139,14 @@ class CLASS2(SIDE,GendarmeSMG): CLASS2(SIDE,Gendarme) {
     @Role(SMG);
     #include "weapons/smg.hpp"
 };
+class CLASS2(SIDE,Crewman): CLASS2(SIDE,Gendarme) {
+    @Role(Crewman);
+    #include "weapons/smg.hpp"
+    @Headgear({
+        "lxWS_H_HelmetCrew_Blue": 1,
+    });
+};
+
 class CLASS2(SIDE,GendarmeRifle): CLASS2(SIDE,Gendarme) {
     @Role(Rifleman);
     #include "weapons/rifle.hpp"
