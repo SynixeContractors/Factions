@@ -3,6 +3,7 @@ class CLASS3(Policeman,NATION,SIDE): CLASS2(Base,NATION) {
     displayName = "Police (Worker)";
     side = TEMPLATE_SIDE;
     factions = QCLASS(police);
+    editorSubcategory = QGCLASS(police);
 
     @Uniforms({
         "variants": {
@@ -67,6 +68,8 @@ class CLASS3(PolicemanSniper,NATION,SIDE): CLASS3(PolicemanPistol,NATION,SIDE) {
 };
 class CLASS3(Gendarme,NATION,SIDE): CLASS3(Policeman,NATION,SIDE) {
     displayName = "Gendarme (Pistol)";
+    editorSubcategory = QGCLASS(gendarmerie);
+
     @Headgear({
         "H_PASGT_basic_blue_F": 1,
     });

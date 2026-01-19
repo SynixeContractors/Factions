@@ -1,24 +1,23 @@
 class CfgVehicles {
-    class GCLASS(Base);
-    class CLASS(Base): GCLASS(Base) {
+    class PCLASS(Base);
+    class CLASS(Base): PCLASS(Base) {
         faction = QCLASS(civilian);
         displayName = "Police Base Unit";
         @Templated();
     };
-    @For(Identities)
-        class CLASS(Base_$1): CLASS(Base) {
-            faction = QCLASS($1);
-            displayName = "$1 Civilian Base Unit";
-            @Identity($1);
+        #define NATION Calvane
+        class CLASS2(Base,NATION): CLASS(Base) {
+            faction = QPCLASS(NATION);
+            displayName = "Calvane Police Base Unit";
+            @Identity(Calvane);
         };
-        #define NATION $1
         //tried to fix nested for loops in rhai but i was rewriting whole template code so i gave up
-        #define SIDE BLUFOR
+        #define SIDE OPFOR
         #define TEMPLATE_SIDE 0
         #include "CfgVehicles_T_Police.hpp"
         #undef SIDE
         #undef TEMPLATE_SIDE
-        #define SIDE OPFOR
+        #define SIDE BLUFOR
         #define TEMPLATE_SIDE 1
         #include "CfgVehicles_T_Police.hpp"
         #undef SIDE
@@ -29,5 +28,4 @@ class CfgVehicles {
         #undef SIDE
         #undef TEMPLATE_SIDE
         #undef NATION
-    @EndFor
 };
