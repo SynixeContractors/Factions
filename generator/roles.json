@@ -95,4 +95,15 @@
     "FighterPilot": {
         "displayName": "Fighter Pilot"
     },
+    "Pistol": {
+        "displayName": "Rifleman (Pistol)",
+    },
+    "SMG": {
+        "displayName": "Rifleman (SMG)",
+    },
+    "Breacher": {
+        "displayName": "Breacher",
+        "icon": "iconManEngineer",
+        "role": "Sapper",
+    },
 }
