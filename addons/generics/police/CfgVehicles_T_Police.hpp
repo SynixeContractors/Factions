@@ -1,4 +1,4 @@
-class CLASS3(Policeman,NATION,SIDE): CLASS2(Base,NATION) {
+class CLASS3(NATION,SIDE,Policeman): CLASS2(Base,NATION) {
     SCOPE_DLC;
     displayName = "Police (Worker)";
     side = TEMPLATE_SIDE;
@@ -21,7 +21,7 @@ class CLASS3(Policeman,NATION,SIDE): CLASS2(Base,NATION) {
         },
     });
 };
-class CLASS3(PolicemanPistol,NATION,SIDE): CLASS3(Policeman,NATION,SIDE) {
+class CLASS3(NATION,SIDE,PolicemanPistol): CLASS3(NATION,SIDE,Policeman) {
     displayName = "Police (Pistol)";
     @Headgear({
         "" : 1,
@@ -41,20 +41,40 @@ class CLASS3(PolicemanPistol,NATION,SIDE): CLASS3(Policeman,NATION,SIDE) {
         ],
     });
 };
-class CLASS3(PolicemanSMG,NATION,SIDE): CLASS3(PolicemanPistol,NATION,SIDE) {
+class CLASS3(NATION,SIDE,PolicemanSMG): CLASS3(NATION,SIDE,PolicemanPistol) {
     displayName = "Police (SMG)";
     #include "weapons/smg.hpp"
 };
-class CLASS3(PolicemanRifle,NATION,SIDE): CLASS3(PolicemanPistol,NATION,SIDE) {
+class CLASS3(NATION,SIDE,PolicemanRifle):CLASS3(NATION,SIDE,PolicemanPistol) {
     displayName = "Police (Rifle)";
     #include "weapons/rifle.hpp"
 };
-class CLASS3(PolicemanBreacher,NATION,SIDE): CLASS3(PolicemanPistol,NATION,SIDE) {
+class CLASS3(NATION,SIDE,PolicemanBreacher): CLASS3(NATION,SIDE,PolicemanPistol) {
     displayName = "Police (Shotgun)";
     #include "weapons/shotgun.hpp"
 };
-class CLASS3(PolicemanSniper,NATION,SIDE): CLASS3(PolicemanPistol,NATION,SIDE) {
-    displayName = "Police (Sniper)";
+class CLASS3(NATION,SIDE,SWAT): CLASS3(NATION,SIDE,Policeman) {
+    displayName = "SWAT Base";
+    @Headgear({
+        "H_PASGT_basic_blue_F": 1,
+    });
+    @Vests({
+        "variants" : {
+            "V_TacVest_blk_POLICE" : 1,
+        },
+        "packs" : [
+            "t2_standard",
+        ],
+    });
+};
+class CLASS3(NATION,SIDE,SWATBreacher): CLASS3(NATION,SIDE,SWAT) {
+    displayName = "Police (Shotgun)";
+    #include "weapons/shotgun.hpp"
+};
+
+class CLASS3(NATION,SIDE,SWATSniper): CLASS3(NATION,SIDE,Policeman) {
+    //police snipers are usually not kitted up in tactical gear
+    displayName = "SWAT (Sniper)";
     @Primary({
         "weapons": {
             "srifle_h6_blk_rf": {
@@ -66,7 +86,7 @@ class CLASS3(PolicemanSniper,NATION,SIDE): CLASS3(PolicemanPistol,NATION,SIDE) {
         },
     });
 };
-class CLASS3(Gendarme,NATION,SIDE): CLASS3(Policeman,NATION,SIDE) {
+class CLASS3(NATION,SIDE,Gendarme): CLASS3(NATION,SIDE,Policeman) {
     displayName = "Gendarme (Pistol)";
     editorSubcategory = QGCLASS(gendarmerie);
 
@@ -84,19 +104,19 @@ class CLASS3(Gendarme,NATION,SIDE): CLASS3(Policeman,NATION,SIDE) {
         ],
     });
 };
-class CLASS3(GendarmeSMG,NATION,SIDE): CLASS3(Gendarme,NATION,SIDE) {
+class CLASS3(NATION,SIDE,GendarmeSMG): CLASS3(NATION,SIDE,Gendarme) {
     displayName = "Gendarme (SMG)";
     #include "weapons/smg.hpp"
 };
-class CLASS3(GendarmeRifle,NATION,SIDE): CLASS3(Gendarme,NATION,SIDE) {
+class CLASS3(NATION,SIDE,GendarmeRifle): CLASS3(NATION,SIDE,Gendarme) {
     displayName = "Gendarme (Rifle)";
     #include "weapons/rifle.hpp"
 };
-class CLASS3(GendarmeBreacher,NATION,SIDE): CLASS3(Gendarme,NATION,SIDE) {
+class CLASS3(NATION,SIDE,GendarmeBreacher): CLASS3(NATION,SIDE,Gendarme) {
     displayName = "Gendarme (Shotgun)";
     #include "weapons/shotgun.hpp"
 };
-class CLASS3(GendarmeSniper,NATION,SIDE): CLASS3(Gendarme,NATION,SIDE) {
+class CLASS3(NATION,SIDE,GendarmeSniper): CLASS3(NATION,SIDE,Gendarme) {
     displayName = "Gendarme (Sniper)";
     @Primary({
         "weapons": {
