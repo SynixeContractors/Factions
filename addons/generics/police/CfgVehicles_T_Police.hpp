@@ -1,4 +1,4 @@
-class CLASS3(NATION,SIDE,Policeman): CLASS2(Base,NATION) {
+class CLASS2(SIDE,Policeman): CLASS2(Base,NATION) {
     @Role(Worker);
     side = TEMPLATE_SIDE;
     factions = QCLASS(police);
@@ -20,7 +20,7 @@ class CLASS3(NATION,SIDE,Policeman): CLASS2(Base,NATION) {
         },
     });
 };
-class CLASS3(NATION,SIDE,PolicemanPistol): CLASS3(NATION,SIDE,Policeman) {
+class CLASS2(SIDE,PolicemanPistol): CLASS2(SIDE,Policeman) {
     @Role(Pistol);
     @Headgear({
         "" : 1,
@@ -40,19 +40,19 @@ class CLASS3(NATION,SIDE,PolicemanPistol): CLASS3(NATION,SIDE,Policeman) {
         ],
     });
 };
-class CLASS3(NATION,SIDE,PolicemanSMG): CLASS3(NATION,SIDE,PolicemanPistol) {
+class CLASS2(SIDE,PolicemanSMG): CLASS2(SIDE,PolicemanPistol) {
     @Role(SMG);
     #include "weapons/smg.hpp"
 };
-class CLASS3(NATION,SIDE,PolicemanRifle):CLASS3(NATION,SIDE,PolicemanPistol) {
+class CLASS2(SIDE,PolicemanRifle):CLASS2(SIDE,PolicemanPistol) {
     @Role(Rifleman);
     #include "weapons/rifle.hpp"
 };
-class CLASS3(NATION,SIDE,PolicemanBreacher): CLASS3(NATION,SIDE,PolicemanPistol) {
+class CLASS2(SIDE,PolicemanBreacher): CLASS2(SIDE,PolicemanPistol) {
     @Role(Breacher);
     #include "weapons/shotgun.hpp"
 };
-class CLASS3(NATION,SIDE,SWAT): CLASS3(NATION,SIDE,Policeman) {
+class CLASS2(SIDE,SWAT): CLASS2(SIDE,Policeman) {
     @Role(Hidden);
     editorSubcategory = QGCLASS(SWAT);
     @Headgear({
@@ -67,19 +67,19 @@ class CLASS3(NATION,SIDE,SWAT): CLASS3(NATION,SIDE,Policeman) {
         ],
     });
 };
-class CLASS3(NATION,SIDE,SWATBreacher): CLASS3(NATION,SIDE,SWAT) {
+class CLASS2(SIDE,SWATBreacher): CLASS2(SIDE,SWAT) {
     @Role(Breacher);
     #include "weapons/shotgun.hpp"
 };
-class CLASS3(NATION,SIDE,SWATSMG): CLASS3(NATION,SIDE,SWAT) {
+class CLASS2(SIDE,SWATSMG): CLASS2(SIDE,SWAT) {
     @Role(SMG);
     #include "weapons/smg.hpp"
 };
-class CLASS3(NATION,SIDE,SWATRifle): CLASS3(NATION,SIDE,SWAT) {
+class CLASS2(SIDE,SWATRifle): CLASS2(SIDE,SWAT) {
     @Role(Rifleman);
     #include "weapons/rifle.hpp"
 };
-class CLASS3(NATION,SIDE,SWATDemo): CLASS3(NATION,SIDE,SWAT) {
+class CLASS2(SIDE,SWATDemo): CLASS2(SIDE,SWAT) {
     @Role(Demolitions);
     #include "weapons/smg.hpp"
     @Headgear({
@@ -94,7 +94,7 @@ class CLASS3(NATION,SIDE,SWATDemo): CLASS3(NATION,SIDE,SWAT) {
         ],
     });
 };
-class CLASS3(NATION,SIDE,SWATSniper): CLASS3(NATION,SIDE,Policeman) {
+class CLASS2(SIDE,SWATSniper): CLASS2(SIDE,Policeman) {
     //police snipers are usually not kitted up in tactical gear
     editorSubcategory = QGCLASS(SWAT);
 
@@ -110,7 +110,7 @@ class CLASS3(NATION,SIDE,SWATSniper): CLASS3(NATION,SIDE,Policeman) {
         },
     });
 };
-class CLASS3(NATION,SIDE,Gendarme): CLASS3(NATION,SIDE,Policeman) {
+class CLASS2(SIDE,Gendarme): CLASS2(SIDE,Policeman) {
     @Role(Pistol);
     editorSubcategory = QGCLASS(gendarmerie);
     @Headgear({
@@ -127,19 +127,19 @@ class CLASS3(NATION,SIDE,Gendarme): CLASS3(NATION,SIDE,Policeman) {
         ],
     });
 };
-class CLASS3(NATION,SIDE,GendarmeSMG): CLASS3(NATION,SIDE,Gendarme) {
+class CLASS2(SIDE,GendarmeSMG): CLASS2(SIDE,Gendarme) {
     @Role(SMG);
     #include "weapons/smg.hpp"
 };
-class CLASS3(NATION,SIDE,GendarmeRifle): CLASS3(NATION,SIDE,Gendarme) {
+class CLASS2(SIDE,GendarmeRifle): CLASS2(SIDE,Gendarme) {
     @Role(Rifleman);
     #include "weapons/rifle.hpp"
 };
-class CLASS3(NATION,SIDE,GendarmeBreacher): CLASS3(NATION,SIDE,Gendarme) {
+class CLASS2(SIDE,GendarmeBreacher): CLASS2(SIDE,Gendarme) {
     @Role(Breacher);
     #include "weapons/shotgun.hpp"
 };
-class CLASS3(NATION,SIDE,GendarmeSniper): CLASS3(NATION,SIDE,Gendarme) {
+class CLASS2(SIDE,GendarmeSniper): CLASS2(SIDE,Gendarme) {
     @Role(Sniper);
     @Primary({
         "weapons": {
