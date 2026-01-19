@@ -24,5 +24,11 @@
                 "JCA_25Rnd_45ACP_UMP_Mag": 4,
             },
         },
+        "SMG_02_F": {
+            "probability": 1,
+            "magazinesVest": {
+                "30Rnd_9x21_Mag_SMG_02": 4,
+            },
+        },
     },
 });

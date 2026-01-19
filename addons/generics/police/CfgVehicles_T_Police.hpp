@@ -19,6 +19,15 @@ class CLASS2(SIDE,Policeman): CLASS2(Base,NATION) {
             },
         },
     });
+    @Primary({
+        "optics": {
+            "": 4,
+            "optic_r1_high_lxWS": 1,
+            "30Rnd_9x21_Mag_SMG_02": 1,
+            "Aegis_optic_ICO": 1,
+            "optic_Holosight_smg_blk_F": 1,
+        },
+    });
 };
 class CLASS2(SIDE,HeliPilot): CLASS2(SIDE,Policeman) {
     @Role(HeliPilot);
