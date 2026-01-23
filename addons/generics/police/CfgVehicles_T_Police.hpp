@@ -1,8 +1,8 @@
 class CLASS2(SIDE,Policeman): CLASS2(Base,NATION) {
     @Role(Worker);
     side = TEMPLATE_SIDE;
-    factions = QCLASS(police);
-    editorSubcategory = QGCLASS(police);
+    faction = QGCLASS(police);
+    editorSubcategory = QPCLASS(NATION);
 
     @Uniforms({
         "variants": {
@@ -71,7 +71,7 @@ class CLASS2(SIDE,PolicemanBreacher): CLASS2(SIDE,PolicemanPistol) {
 };
 class CLASS2(SIDE,SWAT): CLASS2(SIDE,Policeman) {
     @Role(Hidden);
-    editorSubcategory = QGCLASS(SWAT);
+    faction = QGCLASS(SWAT);
     @Headgear({
         "H_PASGT_basic_blue_F": 1,
     });
@@ -113,7 +113,7 @@ class CLASS2(SIDE,SWATDemo): CLASS2(SIDE,SWAT) {
 };
 class CLASS2(SIDE,SWATSniper): CLASS2(SIDE,Policeman) {
     //police snipers are usually not kitted up in tactical gear
-    editorSubcategory = QGCLASS(SWAT);
+    faction = QGCLASS(SWAT);
 
     @Role(Sniper);
     @Primary({
@@ -129,7 +129,7 @@ class CLASS2(SIDE,SWATSniper): CLASS2(SIDE,Policeman) {
 };
 class CLASS2(SIDE,Gendarme): CLASS2(SIDE,Policeman) {
     @Role(Pistol);
-    editorSubcategory = QGCLASS(gendarmerie);
+    faction = QGCLASS(gendarmerie);
     @Headgear({
         "H_PASGT_basic_blue_F": 1,
     });

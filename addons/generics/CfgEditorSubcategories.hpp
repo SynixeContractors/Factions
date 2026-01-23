@@ -1,11 +1,12 @@
 class CfgEditorSubcategories {
-    class GCLASS(police) {
-        displayName = "Men (Police)";
-    };
-    class GCLASS(SWAT) {
-        displayName = "Men (SWAT)";
-    };
-    class GCLASS(gendarmerie) {
-        displayName = "Men (Gendarmerie)";
-    };
+    @For(Identities)
+        class CLASS($1) {
+            SCOPE_DLC;
+            #if "$1" == "DalRiada"
+            displayName = "Dal Riada";
+            #else
+            displayName = "$1";
+            #endif
+        };
+    @EndFor
 };
