@@ -6,8 +6,8 @@ class CfgVehicles {
 
         @Uniforms({
             "variants": {
-                "U_lxWS_SFIA_soldier_2_O": 0.3,
-                "U_lxWS_SFIA_soldier_1_O": 0.7,
+                "U_lxWS_SFIA_soldier_2_O": 1,
+                "U_lxWS_SFIA_soldier_1_O": 1,
             },
             "packs": [
                 "rifleman_medical",
@@ -15,9 +15,9 @@ class CfgVehicles {
         });
 
         @Facewear({
-            "synixe_mgp_f_face_shield_khk_shemagh_rgr": 0.2,
-            "synixe_mgp_f_face_shield_blk_shemagh_khk": 0.2,
-            "synixe_mgp_f_shemagh_khk": 0.1,
+            "synixe_mgp_f_face_shield_khk_shemagh_rgr": 1,
+            "synixe_mgp_f_face_shield_blk_shemagh_khk": 1,
+            "synixe_mgp_f_shemagh_khk": 1,
         });
 
         @Assigned(Military);
@@ -36,10 +36,10 @@ class CfgVehicles {
         });
 
         @Headgear({
-            "H_HelmetLuchnik_cover_sfia_F": 0.2,
-            "H_HelmetLuchnik_headset_brn_F": 0.2,
-            "H_Booniehat_khk": 0.3,
-            "H_Beret_Headset_lxWS": 0.3,
+            "H_HelmetLuchnik_cover_sfia_F": 1,
+            "H_HelmetLuchnik_headset_brn_F": 1,
+            "H_Booniehat_khk": 1,
+            "H_Beret_Headset_lxWS": 1,
             
         });
 
@@ -52,7 +52,7 @@ class CfgVehicles {
                 },
             },
             "optics": {
-                "": 0.4,
+                "": 1,
             },
             "pointers": {
                 "Aegis_acc_LightModule_Pistol_black": 1,
@@ -75,7 +75,7 @@ class CfgVehicles {
                 },
             },
             "optics": {
-                "Aegis_optic_1p87": 0.5,
+                "Aegis_optic_1p87": 1,
             },
             "pointers": {
                 "Aegis_acc_LightModule_Pistol_black": 1,
@@ -103,7 +103,7 @@ class CfgVehicles {
             "weapons": {
                 "hgun_Rook40_F": {
                     "magazinesVest": {
-                        "17Rnd_9x21_Mag": 3,
+                        "17Rnd_9x21_Mag": 1,
                     },
                 },
             },
@@ -128,9 +128,9 @@ class CfgVehicles {
         @Role(Maintainer);
 
         @Headgear({
-            "H_Headset_Tactical": 0.4,
-            "H_HeadSet_olive_F": 0.3,
-            "H_HeadSet_black_F": 0.3,
+            "H_Headset_Tactical": 1,
+            "H_HeadSet_olive_F": 1,
+            "H_HeadSet_black_F": 1,
         });
 
         @Vests({
@@ -165,15 +165,15 @@ class CfgVehicles {
         @Role(Worker);
 
         @Headgear({
-            "H_EarProtectors_black_F": 0.3,
-            "H_Construction_earprot_white_F": 0.4,
-            "H_Construction_earprot_yellow_F": 0.4,           
+            "H_EarProtectors_black_F": 1,
+            "H_Construction_earprot_white_F": 1,
+            "H_Construction_earprot_yellow_F": 1,           
         });
 
         @Vests({
             "variants": {
-                "V_Safety_blue_F": 0.5,
-                "V_Safety_yellow_F": 0.5,
+                "V_Safety_blue_F": 1,
+                "V_Safety_yellow_F": 1,
             },
         });
     };
