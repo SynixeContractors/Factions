@@ -246,7 +246,7 @@ class CfgVehicles {
     class CLASS(Sniper): CLASS(Spotter) {
         @Role(Sniper);
 
-        
+        #include "..\weapons\Sniper.hpp"
 
         @Secondary({
             "weapons": {
