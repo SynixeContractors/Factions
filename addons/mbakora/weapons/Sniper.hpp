@@ -2,7 +2,7 @@
     "weapons": {
         "srifle_DMR_05_hex_F": {
             "magazinesVest": {
-                "synixe_armoursynixe_armoury_10Rnd_93x64_APy_10Rnd_93x64_AP": 6,
+                "synixe_armoury_10Rnd_93x64_AP": 6,
             },
         },
     },

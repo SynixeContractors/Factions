@@ -1,4 +1,9 @@
 class CfgVehicles {
+    #define TEMPLATE_FACTION QPCLASS(t3_opfor)
+    #define TEMPLATE_SIDE 0
+    #define TEMPLATE_CAMO Hex
+    #include "../../../templates/cars/LSV.hpp"
+
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {
         displayName = "Mbakora Base Army SOF";

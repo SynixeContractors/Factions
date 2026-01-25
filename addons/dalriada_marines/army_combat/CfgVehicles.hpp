@@ -17,6 +17,13 @@ class CfgVehicles {
     #include "../../../templates/helicopters/Orca_Military.hpp"
     #include "../../../templates/helicopters/Taru.hpp"
     #include "../../../templates/cars/Ram_Civilian.hpp"
+    #undef TEMPLATE_CAMO
+    #define TEMPLATE_CAMO Opfor
+    #include "../../../templates/boats/ABoat_M134.hpp"
+    #include "../../../templates/boats/ABoat_HMG.hpp"
+    #undef TEMPLATE_CAMO
+    #define TEMPLATE_CAMO Green
+    #include "../../../templates/statics/Mk6.hpp"
 
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {

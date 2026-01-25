@@ -1,4 +1,30 @@
 class CfgVehicles {
+    #define TEMPLATE_FACTION QPCLASS(t3_opfor)
+    #define TEMPLATE_SIDE 0
+    #include "../../../templates/statics/XM3XX.hpp"
+    #define TEMPLATE_CAMO Hex
+    #include "../../../templates/statics/SAM02.hpp"
+    #include "../../../templates/statics/Mk6.hpp"
+    #include "../../../templates/tanks/T100.hpp"
+    #include "../../../templates/tanks/T100_SPG.hpp"
+    #include "../../../templates/apc/Otokar.hpp"
+    #include "../../../templates/apc/BM2_AA.hpp"
+    #include "../../../templates/apc/BM2K.hpp"
+    #include "../../../templates/apc/BM2T.hpp"
+    #include "../../../templates/cars/Karatel.hpp"
+    #include "../../../templates/cars/Typhoon.hpp"
+    #include "../../../templates/helicopters/Mi35.hpp"
+    #include "../../../templates/planes/Yak130.hpp"
+    #include "../../../templates/planes/C130.hpp"
+    #undef TEMPLATE_CAMO
+    #define TEMPLATE_CAMO Opfor
+    #include "../../../templates/drones/CH3A.hpp"
+    #include "../../../templates/helicopters/Orca_Civilian.hpp"
+    #include "../../../templates/helicopters/Orca_Military.hpp"
+    #undef TEMPLATE_CAMO
+    #define TEMPLATE_CAMO CSAT
+    #include "../../../templates/helicopters/Puma_Military.hpp"
+
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {
         displayName = "Mbakora Base Army Combat";

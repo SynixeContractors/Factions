@@ -19,6 +19,7 @@ class CfgVehicles {
     #include "../../../templates/helicopters/Taru.hpp"
     #include "../../../templates/planes/Yak130.hpp"
     #include "../../../templates/drones/UGV.hpp"
+    #include "../../../templates/statics/Mk6.hpp"
     #undef TEMPLATE_CAMO
     #define TEMPLATE_CAMO CamoGreenHex
     #include "../../../templates/planes/SU75.hpp"
