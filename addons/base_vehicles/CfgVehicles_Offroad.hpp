@@ -1,14 +1,21 @@
-class Offroad_01_military_base_F: Offroad_01_base_F {
-    class AnimationSources;
-};
-class Offroad_01_military_covered_base_F: Offroad_01_military_base_F {
-    class AnimationSources: AnimationSources {
-        class HideAntennas;
-        class HideCover;
-        class HideRoofRack;
-    };
-};
-class GCLASS(Offroad): Offroad_01_military_covered_base_F {
+#define OFFROAD_TEXTURE_LIST textureList[] = {\
+  "Beige",1,\
+  "Black",1,\
+  "Blue",1,\
+  "Bluecustom",1,\
+  "Brown",1,\
+  "Darkred",1,\
+  "Green",1,\
+  "Olive",1,\
+  "Pink",1,\
+  "Red",1,\
+  "White",1,\
+  "Zebra",1,\
+}
+
+
+class C_Offroad_01_F;
+class GCLASS(Offroad): C_Offroad_01_F {
     displayName = "Offroad";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
@@ -16,20 +23,8 @@ class GCLASS(Offroad): Offroad_01_military_covered_base_F {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 80;
-    textureList[] = {"Beige",1,"Black",1,"Blue",1,"Darkred",1,"Green",1,"Olive",1,"Red",1,"White",1};
+    OFFROAD_TEXTURE_LIST;
     #include "textures/Offroad.hpp"
-    class AnimationSources: AnimationSources {
-        class HideAntennas: HideAntennas {
-            initPhase = 1;
-        };
-        class HideCover: HideCover {
-            initPhase = 1;
-        };
-        class HideRoofRack: HideRoofRack {
-            initPhase = 1;
-        };
-    };
-    animationList[] = {};
 };
 
 class C_Offroad_01_covered_F;
@@ -41,28 +36,21 @@ class GCLASS(Offroad_Covered): C_Offroad_01_covered_F {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 80;
+    OFFROAD_TEXTURE_LIST;
     #include "textures/Offroad.hpp"
 };
-
-class GCLASS(Offroad_Comms): GCLASS(Offroad) {
+class C_Offroad_01_comms_F;
+class GCLASS(Offroad_Comms): C_Offroad_01_comms_F {
     displayName = "Offroad (Comms)";
+    faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 80;
+    OFFROAD_TEXTURE_LIST;
+    #include "textures/Offroad.hpp"
     #include "racks\carcomms.hpp"
-    class AnimationSources: AnimationSources {
-        class HideAntennas: HideAntennas {
-            initPhase = 0;
-        };
-        class HideCover: HideCover {
-            initPhase = 0;
-        };
-        class HideRoofRack: HideRoofRack {
-            initPhase = 0;
-        };
-    };
 };
 
 class C_Offroad_01_repair_F;
@@ -74,6 +62,7 @@ class GCLASS(Offroad_Services): C_Offroad_01_repair_F {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 80;
+    OFFROAD_TEXTURE_LIST;
     #include "textures/Offroad.hpp"
 };
 
