@@ -42,6 +42,7 @@ class GCLASS(Offroad_Covered): C_Offroad_01_covered_F {
 class C_Offroad_01_comms_F;
 class GCLASS(Offroad_Comms): C_Offroad_01_comms_F {
     displayName = "Offroad (Comms)";
+    faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
     crew = "Civilian";
