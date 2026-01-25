@@ -1,4 +1,14 @@
 class CfgVehicles {
+    #define TEMPLATE_FACTION QPCLASS(t3_indep)
+    #define TEMPLATE_SIDE 2
+    #define TEMPLATE_CAMO SFIA
+    #include "../../../templates/cars/Offroad_Armed.hpp"
+    #include "../../../templates/cars/Offroad_Civilian.hpp"
+    #undef TEMPLATE_CAMO
+    #define TEMPLATE_CAMO Black
+    #include "../../../templates/boats/RHIB.hpp"
+    #include "../../../templates/boats/Dinghy.hpp"
+
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {
         displayName = "Ngabiri Base Army Recon";
@@ -29,16 +39,16 @@ class CfgVehicles {
             "H_Booniehat_khk_hs": 1,
             "lxWS_H_turban_02_sand": 2,
             "lxWS_H_turban_02_green": 2,
-            "Aegis_H_Milcap_nohs_grn_F": 0.5,
-            "Aegis_H_MilCap_tachs_grn_F": 0.5,
+            "Aegis_H_Milcap_nohs_grn_F": 1,
+            "Aegis_H_MilCap_tachs_grn_F": 1,
         });
 
         @Facewear({
             "G_Balaclava_snd_lxWS": 1,
             "synixe_mgp_f_face_shield_khk_shemagh_rgr": 1,
             "synixe_mgp_f_face_shield_blk_shemagh_khk": 1,
-            "synixe_mgp_f_face_shield_blk_shemagh_khk_ess": 0.5,
-            "synixe_mgp_f_face_shield_khk_shemagh_rgr_ess": 0.5,
+            "synixe_mgp_f_face_shield_blk_shemagh_khk_ess": 1,
+            "synixe_mgp_f_face_shield_khk_shemagh_rgr_ess": 1,
             "synixe_mgp_f_shemagh_khk": 1,
         });
 
