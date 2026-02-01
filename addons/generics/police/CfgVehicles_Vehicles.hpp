@@ -45,21 +45,25 @@ class GCLASS(Ram_Covered): Pickup_covered_base_rf {
         class hide_frame_full;
         class hide_fram_full_panel;
         class box_door_open;
+        class enable_FFV;
     };
 };
 class GCLASS(Ram_Comms);
 
 
 class CLASS(Offroad): GCLASS(Offroad) {
+    scope = 0;
     textureList[] = {QUOTE(TEMPLATE_CAMO),1};
 };
 class CLASS(Offroad_Covered): GCLASS(Offroad_Covered) {
+    scope = 0;
     textureList[] = {QUOTE(TEMPLATE_CAMO),1};
     class AnimationSources: AnimationSources {
         ANIMATION_OFF(hidePolice);
     };
 };
 class CLASS(Van_Transport): GCLASS(Van_Transport) {
+    scope = 0;
     textureList[] = {QUOTE(TEMPLATE_CAMO),1};
     class AnimationSources: AnimationSources {
         ANIMATION_OFF(beacon_front_hide);
@@ -72,12 +76,14 @@ class CLASS(Van_Transport): GCLASS(Van_Transport) {
     };
 };
 class CLASS(Ram_Covered): GCLASS(Ram_Covered) {
+    scope = 0;
     textureList[] = {QUOTE(TEMPLATE_CAMO),1};
     class AnimationSources: AnimationSources {
         ANIMATION_OFF(hide_police);
     };
 };
 class CLASS(Ram_Bars_Covered): GCLASS(Ram_Covered) {
+    scope = 0;
     displayName = "Ram 1500 (Bars, Covered)";
     textureList[] = {QUOTE(TEMPLATE_CAMO),1};
     class AnimationSources: AnimationSources {
@@ -91,17 +97,23 @@ class CLASS(Ram_Bars_Covered): GCLASS(Ram_Covered) {
     };
 };
 class CLASS(Ram_Bars): CLASS(Ram_Bars_Covered) {
+    scope = 0;
     displayName = "Ram 1500 (Bars)";
     textureList[] = {QUOTE(TEMPLATE_CAMO),1};
     class AnimationSources: AnimationSources {
-        ANIMATION_OFF(hide_box);
+        ANIMATION_ON(hide_box);
         ANIMATION_ON(hide_frame);
         ANIMATION_ON(hide_frame_full);
         ANIMATION_ON(hide_fram_full_panel);
         ANIMATION_OFF(box_door_open);
+        ANIMATION_OFF(enable_FFV);
     };
-    //forceAnimate[] = {"hide_frame",1,"hide_frame_full",1,"hide_frame_full_panel",1,"box_door_open",0,"enable_FFV",0};
 };
 class CLASS(Ram): GCLASS(Ram) {
+    scope = 0;
     textureList[] = {QUOTE(TEMPLATE_CAMO),1};
 };
+
+class GCLASS(Otokar);
+class GCLASS(Otokar_HMG);
+class GCLASS(Otokar_RCWS);

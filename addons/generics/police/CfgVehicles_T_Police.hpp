@@ -126,6 +126,9 @@ class CLASS2(SIDE,SWATSniper): CLASS2(SIDE,Policeman) {
                 },
             },
         },
+        "optics": {
+            "optic_DMS": 1,
+        },
     });
 };
 class CLASS2(SIDE,Gendarme): CLASS2(SIDE,Policeman) {
@@ -175,6 +178,9 @@ class CLASS2(SIDE,GendarmeSniper): CLASS2(SIDE,Gendarme) {
                     "10Rnd_556x45_AP_Stanag_green_RF": 8,
                 },
             },
+        },
+        "optics": {
+            "optic_DMS": 1,
         },
     });
 };

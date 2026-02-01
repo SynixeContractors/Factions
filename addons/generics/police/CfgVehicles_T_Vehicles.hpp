@@ -73,6 +73,31 @@ class CLASS2(SIDE,Ram_Comms): GCLASS(Ram_Comms) {
     editorSubcategory = QPCLASS2(NATION,vehicles);
     textureList[] = {QUOTE(TEMPLATE_CAMO),1};
 };
+class CLASS2(SIDE,Otokar): GCLASS(Otokar) {
+    SCOPE_DLC;
+    faction = TEMPLATE_FACTION;
+    side = TEMPLATE_SIDE;
+    crew = QCLASS2(SIDE,Crewman);
+    editorSubcategory = QPCLASS2(NATION,vehicles);
+    textureList[] = {QUOTE(TEMPLATE_CAMO),1};
+};
+class CLASS2(SIDE,Otokar_HMG): GCLASS(Otokar_HMG) {
+    SCOPE_DLC;
+    faction = TEMPLATE_FACTION;
+    side = TEMPLATE_SIDE;
+    crew = QCLASS2(SIDE,Crewman);
+    editorSubcategory = QPCLASS2(NATION,vehicles);
+    textureList[] = {QUOTE(TEMPLATE_CAMO),1};
+};
+class CLASS2(SIDE,Otokar_RCWS): GCLASS(Otokar_RCWS) {
+    SCOPE_DLC;
+    faction = TEMPLATE_FACTION;
+    side = TEMPLATE_SIDE;
+    crew = QCLASS2(SIDE,Crewman);
+    editorSubcategory = QPCLASS2(NATION,vehicles);
+    textureList[] = {QUOTE(TEMPLATE_CAMO),1};
+};
+
 
 #undef TEMPLATE_CAMO
 #undef TEMPLATE_FACTION
