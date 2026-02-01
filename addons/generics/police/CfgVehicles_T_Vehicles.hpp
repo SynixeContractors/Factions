@@ -49,6 +49,14 @@ class CLASS2(SIDE,Ram_Covered): CLASS(Ram_Covered) {
     editorSubcategory = QPCLASS2(NATION,vehicles);
     textureList[] = {QUOTE(TEMPLATE_CAMO),1};
 };
+class CLASS2(SIDE,Ram_Armored_Covered): CLASS(Ram_Armored_Covered) {
+    SCOPE_DLC;
+    faction = TEMPLATE_FACTION;
+    side = TEMPLATE_SIDE;
+    crew = QCLASS2(SIDE,Gendarme);
+    editorSubcategory = QPCLASS2(NATION,vehicles);
+    textureList[] = {QUOTE(TEMPLATE_CAMO),1};
+};
 class CLASS2(SIDE,Ram_Comms): GCLASS(Ram_Comms) {
     SCOPE_DLC;
     faction = TEMPLATE_FACTION;

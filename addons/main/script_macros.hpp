@@ -89,3 +89,13 @@
             0 \
         }; \
     }
+
+// animations for vehicles
+#define ANIMATION_OFF(var1) \
+class var1: var1 { \
+    initPhase = 0; \
+}
+#define ANIMATION_ON(var1) \
+class var1: var1 { \
+    initPhase = 1; \
+}
