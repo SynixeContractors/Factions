@@ -33,7 +33,7 @@ class CLASS2(SIDE,Van_Transport): CLASS(Van_Transport) {
     editorSubcategory = QPCLASS2(NATION,vehicles);
     textureList[] = {QUOTE(TEMPLATE_CAMO),1};
 };
-class CLASS2(SIDE,Ram): GCLASS(Ram) {
+class CLASS2(SIDE,Ram): CLASS(Ram) {
     SCOPE_DLC;
     faction = TEMPLATE_FACTION;
     side = TEMPLATE_SIDE;

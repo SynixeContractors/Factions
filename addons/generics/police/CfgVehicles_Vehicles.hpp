@@ -84,3 +84,6 @@ class CLASS(Ram_Covered): GCLASS(Ram_Covered) {
         };
     };
 };
+class CLASS(Ram): GCLASS(Ram) {
+    textureList[] = {QUOTE(TEMPLATE_CAMO),1};
+};
