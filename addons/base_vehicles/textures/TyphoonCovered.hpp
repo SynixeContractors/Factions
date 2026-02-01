@@ -52,9 +52,9 @@ class TextureSources {
     class Maze {
         displayName = "Maze";
         textures[] = {
-            "\s\synixe_factions\addons\textures\data\typhoon\typhoon_01_JSN_CO.paa",
-            "\s\synixe_factions\addons\textures\data\typhoon\typhoon_02_JSN_CO.paa",
-            "\s\synixe_factions\addons\textures\data\typhoon\typhoon_cargo_JSN_CO.paa",
+            "\s\synixe_factions\addons\vehicle_textures\data\typhoon\typhoon_01_JSN_CO.paa",
+            "\s\synixe_factions\addons\vehicle_textures\data\typhoon\typhoon_02_JSN_CO.paa",
+            "\s\synixe_factions\addons\vehicle_textures\data\typhoon\typhoon_cargo_JSN_CO.paa",
             "\A3_Aegis\Soft_F_Aegis\Truck_03\Data\Truck_03_cover_RUkhk_CO.paa"
         };
         factions[] = {};

@@ -94,7 +94,7 @@ textures[] = {\
     "\A3_Atlas\Armor_F_Atlas\APC_Tracked_02\Data\APC_Tracked_02_ext_01_CDF_CO.paa",\
     "\A3_Atlas\Armor_F_Atlas\APC_Tracked_02\Data\APC_Tracked_02_ext_02_CDF_CO.paa",\
     "\A3_Aegis\Armor_F_Aegis\APC_Tracked_02\Data\apc_tracked_02_ext_03_RUkhk_co.paa",\
-    "\s\synixe_factions\addons\textures\data\common\turret_bumerang_CDF_CO.paa",\
+    "\s\synixe_factions\addons\vehicle_textures\data\common\turret_bumerang_CDF_CO.paa",\
     CAMONET,\
     "\A3_Atlas\Armor_F_Atlas\Data\cage_CDF_CO.paa",\
 };

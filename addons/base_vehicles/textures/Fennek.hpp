@@ -26,8 +26,8 @@ class TextureSources {
     class KZG_01 {
         displayName = "Khaybaran";
         textures[] = {
-            "\s\synixe_factions\addons\textures\data\fennek\Fennek_KZG_CO.paa",
-            "\s\synixe_factions\addons\textures\data\common\Turret_rcws_KZG_CO.paa",
+            "\s\synixe_factions\addons\vehicle_textures\data\fennek\Fennek_KZG_CO.paa",
+            "\s\synixe_factions\addons\vehicle_textures\data\common\Turret_rcws_KZG_CO.paa",
         };
         factions[] = {};
     };
@@ -42,8 +42,8 @@ class TextureSources {
     class Maze {
         displayName = "Maze";
         textures[] = {
-            "\s\synixe_factions\addons\textures\data\fennek\Fennek_JSN_CO.paa",
-            "\s\synixe_factions\addons\textures\data\common\Turret_rcws_JSN_CO.paa",
+            "\s\synixe_factions\addons\vehicle_textures\data\fennek\Fennek_JSN_CO.paa",
+            "\s\synixe_factions\addons\vehicle_textures\data\common\Turret_rcws_JSN_CO.paa",
         };
         factions[] = {};
     };

@@ -62,7 +62,7 @@ class TextureSources {
     class KZG_01 {
         displayName= "Khaybaran";
         textures[] = {
-            "\s\synixe_factions\addons\textures\data\polaris\Polaris_01_KZG_CO.paa", \
+            "\s\synixe_factions\addons\vehicle_textures\data\polaris\Polaris_01_KZG_CO.paa", \
             "\A3\Soft_F_Exp\LSV_01\Data\NATO_LSV_02_sand_CO.paa",
             "\A3\Soft_F_Exp\LSV_01\Data\NATO_LSV_03_sand_CO.paa",
             "\A3\Soft_F_Exp\LSV_01\Data\NATO_LSV_Adds_sand_CO.paa",

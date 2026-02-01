@@ -93,8 +93,8 @@ class TextureSources {
     class Luba {
         displayName = "Blotches (Desert)";
         textures[] = {
-            "\s\synixe_factions\addons\textures\data\hemtt\hemtt_01_LUB_CO.paa", \
-            "\s\synixe_factions\addons\textures\data\hemtt\hemtt_02_LUB_CO.paa",\
+            "\s\synixe_factions\addons\vehicle_textures\data\hemtt\hemtt_01_LUB_CO.paa", \
+            "\s\synixe_factions\addons\vehicle_textures\data\hemtt\hemtt_02_LUB_CO.paa",\
             "\a3\soft_f_gamma\truck_01\data\truck_01_ammo_co.paa",
             "\a3\structures_f\data\metal\containers\containers_02_set_co.paa"
         };

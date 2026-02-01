@@ -2,3 +2,6 @@
 .hemttout/
 releases/
 ref/
+
+*.hemttprivatekey
+*.biprivatekey

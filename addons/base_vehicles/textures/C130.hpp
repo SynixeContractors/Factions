@@ -183,8 +183,8 @@ class TextureSources {
     class Maze {
         displayName = "Maze";
         textures[] = {
-            "\s\synixe_factions\addons\textures\data\c130\c130_body_JSN_CO.paa",
-            "\s\synixe_factions\addons\textures\data\c130\c130_wings_JSN_CO.paa",
+            "\s\synixe_factions\addons\vehicle_textures\data\c130\c130_body_JSN_CO.paa",
+            "\s\synixe_factions\addons\vehicle_textures\data\c130\c130_wings_JSN_CO.paa",
             "\A3_Aegis\Air_F_Aegis\Plane_Transport_01\Data\Plane_Transport_01_interior_CO.paa",
             ""
         };

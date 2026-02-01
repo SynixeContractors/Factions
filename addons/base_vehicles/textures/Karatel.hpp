@@ -56,8 +56,8 @@ class TextureSources {
     class Cdf {
         displayName = "CDF";
         textures[] = {
-            "\s\synixe_factions\addons\textures\data\karatel\Karatel_01_CDF_CO.paa",
-            "\s\synixe_factions\addons\textures\data\karatel\Karatel_02_CDF_CO.paa",
+            "\s\synixe_factions\addons\vehicle_textures\data\karatel\Karatel_01_CDF_CO.paa",
+            "\s\synixe_factions\addons\vehicle_textures\data\karatel\Karatel_02_CDF_CO.paa",
             "\A3_Aegis\Soft_F_Aegis\UGV_01\Data\Turret_RUkhk_CO.paa"
         };
         factions[] = {};

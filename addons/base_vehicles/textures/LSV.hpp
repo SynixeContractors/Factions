@@ -42,7 +42,7 @@ class TextureSources {
     class Maze {
         displayName = "Maze";
         textures[] = {
-            "\s\synixe_factions\addons\textures\data\lsv\lsv_01_JSN_CO.paa",
+            "\s\synixe_factions\addons\vehicle_textures\data\lsv\lsv_01_JSN_CO.paa",
             "\A3_Aegis\Soft_F_Aegis\LSV_02\Data\CSAT_LSV_02_RUkhk_CO.paa",
             "\A3_Aegis\Soft_F_Aegis\LSV_02\Data\CSAT_LSV_03_RUkhk_CO.paa",
             "\A3\Weapons_F_Tank\Launchers\Vorona\Data\Vorona_green_F_CO.paa",
