@@ -1,4 +1,4 @@
-#include "CfgVehicles_Vehicles.hpp"
+#include "CfgVehicles_T_Vehicles.hpp"
 
 class CLASS2(SIDE,Policeman): CLASS2(Base,NATION) {
     @Role(Worker);
