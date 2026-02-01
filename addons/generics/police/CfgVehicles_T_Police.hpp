@@ -1,3 +1,5 @@
+#include "CfgVehicles_Vehicles.hpp"
+
 class CLASS2(SIDE,Policeman): CLASS2(Base,NATION) {
     @Role(Worker);
     side = TEMPLATE_SIDE;

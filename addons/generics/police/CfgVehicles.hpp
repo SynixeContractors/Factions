@@ -13,6 +13,16 @@ class CfgVehicles {
     @Identity($1);
   };
   @EndFor
+
+  class GCLASS(Offroad);
+  class GCLASS(Offroad_Covered);
+  class GCLASS(Offroad_Comms);
+  class GCLASS(Offroad_Services);
+  class GCLASS(Van_Transport);
+  class GCLASS(Ram);
+  class GCLASS(Ram_Covered);
+  class GCLASS(Ram_Comms);
+
 #define TEMPLATE_SIDE 0
 #define SIDE DOUBLES(NATION,OPFOR)
 #include "CfgVehicles_Sides.hpp"
