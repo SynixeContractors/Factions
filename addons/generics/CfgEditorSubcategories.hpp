@@ -3,9 +3,9 @@ class CfgEditorSubcategories {
         class CLASS($1) {
             SCOPE_DLC;
             #if "$1" == "DalRiada"
-            displayName = "Dal Riada";
+            displayName = "Men (Dal Riada)";
             #else
-            displayName = "$1";
+            displayName = "Men ($1)";
             #endif
         };
     @EndFor

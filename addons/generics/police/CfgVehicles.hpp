@@ -18,5 +18,13 @@ class CfgVehicles {
 #include "CfgVehicles_Sides.hpp"
 #undef SIDE
 #undef TEMPLATE_SIDE
+#define TEMPLATE_SIDE 1
+#define SIDE DOUBLES(NATION,BLUFOR)
+#include "CfgVehicles_Sides.hpp"
+#undef SIDE
+#undef TEMPLATE_SIDE
+#define TEMPLATE_SIDE 2
+#define SIDE DOUBLES(NATION,INDEP)
+#include "CfgVehicles_Sides.hpp"
 
 };
