@@ -40,6 +40,11 @@ class GCLASS(Ram_Covered): Pickup_covered_base_rf {
         class hide_armor_window_armor_F_L;
         class hide_armor_window_armor_R_R;
         class hide_armor_window_armor_R_L;
+        class hide_box;
+        class hide_frame;
+        class hide_frame_full;
+        class hide_fram_full_panel;
+        class box_door_open;
     };
 };
 class GCLASS(Ram_Comms);
@@ -72,8 +77,8 @@ class CLASS(Ram_Covered): GCLASS(Ram_Covered) {
         ANIMATION_OFF(hide_police);
     };
 };
-class CLASS(Ram_Armored_Covered): GCLASS(Ram_Covered) {
-    displayName = "Ram 1500 (UP, Covered)";
+class CLASS(Ram_Bars_Covered): GCLASS(Ram_Covered) {
+    displayName = "Ram 1500 (Bars, Covered)";
     textureList[] = {QUOTE(TEMPLATE_CAMO),1};
     class AnimationSources: AnimationSources {
         ANIMATION_OFF(hide_police);
@@ -85,11 +90,18 @@ class CLASS(Ram_Armored_Covered): GCLASS(Ram_Covered) {
         ANIMATION_OFF(hide_armor_window_armor_R_L);
     };
 };
+class CLASS(Ram_Bars): CLASS(Ram_Bars_Covered) {
+    displayName = "Ram 1500 (Bars)";
+    textureList[] = {QUOTE(TEMPLATE_CAMO),1};
+    class AnimationSources: AnimationSources {
+        ANIMATION_OFF(hide_box);
+        ANIMATION_ON(hide_frame);
+        ANIMATION_ON(hide_frame_full);
+        ANIMATION_ON(hide_fram_full_panel);
+        ANIMATION_OFF(box_door_open);
+    };
+    //forceAnimate[] = {"hide_frame",1,"hide_frame_full",1,"hide_frame_full_panel",1,"box_door_open",0,"enable_FFV",0};
+};
 class CLASS(Ram): GCLASS(Ram) {
     textureList[] = {QUOTE(TEMPLATE_CAMO),1};
-    // class AnimationSources: AnimationSources {
-    //     class hide_police: hide_police {
-    //         initPhase = 0;
-    //     };
-    // };
 };
