@@ -1,20 +1,18 @@
 #define RAM_TEXTURE_LIST textureList[] = {\
   "Black",1,\
-  "White",1, \
   "Blue",1,\
+  "Brown",1,\
+  "Cruiser",1,\
   "Gray",1,\
-  "Red",1,\
-  "Tan",1,\
   "Green",1,\
-  "Yellow",1,\
-  "Orange",1,\
-  "Daltgreen",1,\
   "NATO",1,\
   "NATO_P",1,\
-  "Brown",1,\
   "Olive",1,\
-  "Cruiser",1,\
-  "Astra",1,\
+  "Orange",1,\
+  "Red",1,\
+  "Tan",1,\
+  "White",1, \
+  "Yellow",1,\
 }
 
 
