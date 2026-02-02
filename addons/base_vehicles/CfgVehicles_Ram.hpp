@@ -1,3 +1,21 @@
+#define RAM_TEXTURE_LIST textureList[] = {\
+  "Black",1,\
+  "Blue",1,\
+  "Brown",1,\
+  "Cruiser",1,\
+  "Gray",1,\
+  "Green",1,\
+  "NATO",1,\
+  "NATO_P",1,\
+  "Olive",1,\
+  "Orange",1,\
+  "Red",1,\
+  "Tan",1,\
+  "White",1, \
+  "Yellow",1,\
+}
+
+
 class Pickup_01_base_rf;
 class GCLASS(Ram): Pickup_01_base_rf {
     displayName = "Ram 1500";
@@ -5,9 +23,9 @@ class GCLASS(Ram): Pickup_01_base_rf {
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
     ace_refuel_fuelCapacity = 98;
+    RAM_TEXTURE_LIST;
     #include "textures\Ram.hpp"
 };
-
 class Pickup_covered_base_rf;
 class GCLASS(Ram_Covered): Pickup_covered_base_rf {
     displayName = "Ram 1500 (Covered)";
@@ -15,6 +33,7 @@ class GCLASS(Ram_Covered): Pickup_covered_base_rf {
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
     ace_refuel_fuelCapacity = 98;
+    RAM_TEXTURE_LIST;
     #include "textures\Ram.hpp"
 };
 
@@ -25,6 +44,7 @@ class GCLASS(Ram_HMG): Pickup_01_hmg_base_rf {
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
     ace_refuel_fuelCapacity = 98;
+    RAM_TEXTURE_LIST;
     #include "textures\Ram.hpp"
 };
 
@@ -35,6 +55,7 @@ class GCLASS(Ram_AA): Pickup_01_aat_base_rf {
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
     ace_refuel_fuelCapacity = 98;
+    RAM_TEXTURE_LIST;
     #include "racks\singlerack.hpp"
     #include "textures\Ram.hpp"
 };
@@ -46,6 +67,7 @@ class GCLASS(Ram_RCWS): Pickup_01_rcws_base_rf {
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
     ace_refuel_fuelCapacity = 98;
+    RAM_TEXTURE_LIST;
     #include "racks\singlerack.hpp"
     #include "textures\Ram.hpp"
 };
@@ -57,6 +79,7 @@ class GCLASS(Ram_M134): Pickup_01_minigun_base_rf {
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
     ace_refuel_fuelCapacity = 98;
+    RAM_TEXTURE_LIST;
     #include "textures\Ram.hpp"
 };
 
@@ -67,6 +90,7 @@ class GCLASS(Ram_Comms): Pickup_comms_base_rf {
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
     ace_refuel_fuelCapacity = 98;
+    RAM_TEXTURE_LIST;
     #include "racks\carcomms.hpp"
     #include "textures\Ram.hpp"
 };
@@ -78,6 +102,7 @@ class GCLASS(Ram_MRL): Pickup_01_mrl_base_rf {
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
     ace_refuel_fuelCapacity = 98;
+    RAM_TEXTURE_LIST;
     #include "racks\singlerack.hpp"
     #include "textures\Ram.hpp"
 };
@@ -89,6 +114,7 @@ class GCLASS(Ram_Fuel): Pickup_fuel_base_rf {
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
     ace_refuel_fuelCapacity = 98;
+    RAM_TEXTURE_LIST;
     #include "textures\Ram.hpp"
 };
 
@@ -99,6 +125,7 @@ class GCLASS(Ram_MMG): Pickup_01_mmg_base_rf {
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
     ace_refuel_fuelCapacity = 98;
+    RAM_TEXTURE_LIST;
     #include "textures\Ram.hpp"
 };
 
@@ -109,6 +136,7 @@ class GCLASS(Ram_AT): Aegis_Pickup_01_AT_base_RF {
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
     ace_refuel_fuelCapacity = 98;
+    RAM_TEXTURE_LIST;
     #include "racks\singlerack.hpp"
     #include "textures\Ram.hpp"
 };
@@ -120,6 +148,7 @@ class GCLASS(Ram_Rocket): Pickup_01_Rocket_base_rf {
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
     ace_refuel_fuelCapacity = 98;
+    RAM_TEXTURE_LIST;
     class TextureSources {
         class Black {
             displayName = "Black";
