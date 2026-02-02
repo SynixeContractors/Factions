@@ -1,8 +1,8 @@
 @Secondary({
     "weapons": {
-        "Aegis_hgun_Pistol_R57_sand_F": {
+        "hgun_G17_F": {
             "magazinesUniform": {
-                "Aegis_20rnd_570x28_RP57_Mag": 2,
+                "17Rnd_9x21_Mag": 2,
             },
         },
     },

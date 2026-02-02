@@ -1,9 +1,9 @@
 @Primary({
     "weapons": {
-        "arifle_AUG_F": {
+        "arifle_MXM_F": {
             "probability": 1,
             "magazinesVest": {
-                "30Rnd_556x45_AUG_Mag_F": 8,
+                "30Rnd_65x39_caseless_mag_Tracer": 8,
             },
         },
     },

@@ -1,12 +1,14 @@
 @Primary({
     "weapons": {
-        "SMG_03C_black": {
+        "SMG_04_snd_F": {
             "probability": 1,
             "magazinesVest": {
-                "50Rnd_570x28_SMG_03": 3,
+                "40Rnd_460x30_Mag_F": 4,
             },
-        },    },
+            "loadedPrimary": "20Rnd_460x30_Mag_F",
+        },
+    },
     "optics": {
-        "": 1,
+        "optic_r1_low_lxWS": 1,
     },
 });

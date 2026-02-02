@@ -1,8 +1,9 @@
 @Launchers({
     "weapons": {
-        "Atlas_Launch_Pzf3_F": {
+        "launch_PSRL1_PWS_sand_RF": {
             "magazinesBackpack": {
-                "Atlas_DM12_HEAT_F": 2,
+                "PSRL1_AT_RF": 2,
+                "PSRL1_HE_RF": 1,
             },
         },
     },

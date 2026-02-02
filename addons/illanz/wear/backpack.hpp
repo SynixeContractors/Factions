@@ -1,5 +1,5 @@
 @Backpacks({
   "variants" : {
-    "B_FieldPack_cbr" : 1,
+    "B_AssaultPack_mcamo" : 1,
   },
 });

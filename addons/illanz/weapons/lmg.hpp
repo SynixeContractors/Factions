@@ -1,18 +1,18 @@
 @Primary({
     "weapons": {
-        "LMG_03_snd_F": {
+        "arifle_Galat_lxWS": {
             "probability": 1,
             "magazinesVest": {
-                "200Rnd_556x45_Box_Tracer_Red_F": 1,
+                "75rnd_762x39_AK12_Mag_F": 1,
             },
             "magazinesBackpack": {
-                "200Rnd_556x45_Box_Tracer_Red_F": 3,
+                "75rnd_762x39_AK12_Mag_F": 3,
             },
 
         },
     },
     "optics": {
-        "optic_VRCO_tan_RF": 0.2,
-        "optic_LRCO_snd_F": 0.8,
+        "optic_r1_high_lxWS": 0.2,
+        "optic_LRCO_blk_F": 0.8,
     },
 });

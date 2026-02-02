@@ -1,6 +1,6 @@
 @Backpacks({
   "variants" : {
-    "B_FieldPack_cbr" : 1,
+    "B_Carryall_mcamo" : 1,
   },
   "packs" : [
     "engineer",
