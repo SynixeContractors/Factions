@@ -34,6 +34,7 @@ class CfgVehicles {
     };
     class CLASS(Medic): CLASS(RiflemanBackpack) {
         @Role(Medic);
+        #include "../wear/backpack_medic.hpp"
     };
     class CLASS(Worker): CLASS(Base) {
         @Role(Worker);

@@ -1,8 +1,8 @@
 @Backpacks({
-  "variants" : {
-    "B_Carryall_mcamo" : 1,
+  "variants": {
+    "B_Carryall_mcamo": 1,
   },
-  "packs" : [
+  "packs": [
     "engineer",
   ],
 });

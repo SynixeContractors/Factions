@@ -4,6 +4,6 @@
     "V_ChestrigF_khk" : 0.2,
   },
   "packs" : [
-    "t2_standard",
+    "t3_standard",
   ],
 });

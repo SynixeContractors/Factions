@@ -1,14 +1,14 @@
 @Backpacks({
-  "variants" : {
-    "B_FieldPack_cbr" : 1,
+  "variants": {
+    "B_Carryall_mcamo": 1,
   },
-  "packs" : [
+  "packs": [
     "eod",
     "demo",
   ],
 });
 @Secondary({
-  "weapons" : {
-    "ACE_VMH3" : {},
+  "weapons": {
+    "ACE_VMH3": {},
   },
 });

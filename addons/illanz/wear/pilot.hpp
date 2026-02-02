@@ -1,3 +1,3 @@
 @Headgear({
-  "H_PilotHelmetHeli_B_visor_up" : 1,
+    "H_PilotHelmetHeli_B_visor_up": 1,
 });

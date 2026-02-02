@@ -1,6 +1,6 @@
 @Primary({
     "weapons": {
-        "srifle_EBR_cbr_F": {
+        "srifle_DMR_03_tan_F": {
             "magazinesVest": {
                 "20Rnd_762x51_Mag": 6,
             },
