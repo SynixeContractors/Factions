@@ -61,7 +61,7 @@ class CfgVehicles {
     };
     class CLASS(Autorifleman): CLASS(RiflemanBackpack) {
         @Role(Autorifleman);
-
+        #include "../weapons/mg.hpp"
         #include "../weapons/pistol.hpp"
     };
     class CLASS(Medic): CLASS(RiflemanBackpack) {
