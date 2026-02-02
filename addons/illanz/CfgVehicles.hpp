@@ -4,7 +4,7 @@ class CfgVehicles {
     class CLASS(Base): GCLASS(Base_OPFOR) {
         faction = QCLASS(t3_opfor);
         displayName = FACTION_NAME;
-        @Identity(Ngabiri);//FIXME
+        @Identity(gen_westEuro_EN);
         @Templated();
     };
 };
