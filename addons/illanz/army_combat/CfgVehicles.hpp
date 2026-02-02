@@ -2,6 +2,22 @@ class CfgVehicles {
     #define TEMPLATE_FACTION QPCLASS(t3_opfor)
     #define TEMPLATE_SIDE 0
     #include "../../../templates/statics/M2.hpp"
+    #define TEMPLATE_CAMO Desert
+    #include "../../../templates/statics/SAM01.hpp"
+    #undef TEMPLATE_CAMO
+    #define TEMPLATE_CAMO France
+    #include "../../../templates/tanks/Rooikat.hpp"
+    #include "../../../templates/cars/Polaris.hpp"
+    #include "../../../templates/cars/HEMTT.hpp"
+    #undef TEMPLATE_CAMO
+    #define TEMPLATE_CAMO Jagged
+    #include "../../../templates/cars/Fennek.hpp"
+    #undef TEMPLATE_CAMO
+    #define TEMPLATE_CAMO NATO
+    #include "../../../templates/cars/Ram_Civilian.hpp"
+    #include "../../../templates/cars/Ram_Armed.hpp"
+    #include "../../../templates/cars/Ram_Advanced.hpp"
+
 
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {
