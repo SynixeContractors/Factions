@@ -95,8 +95,16 @@ class CfgVehicles {
     };
     class CLASS(Spotter): CLASS(Marksman) {
         @Role(Spotter);
+        @Uniforms({
+            "variants": {
+              "synixe_mgp_g3_field_set_mc_mc": 1,
+            },
+            "packs": [
+                "rifleman_medical",
+            ],
+        });
     };
-    class CLASS(Sniper): CLASS(Marksman) {
+    class CLASS(Sniper): CLASS(Spotter) {
         @Role(Sniper);
         #include "../weapons/sniper.hpp"
     };
