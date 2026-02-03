@@ -242,31 +242,26 @@ class CLASS2(SIDE,Base): PCLASS2(SIDE,Base) {
                 }
             },
             "Aegis_arifle_M16A4_F": {
-                "probability": 1,
                 "magazinesVest": {
                     "30Rnd_556x45_Stanag": 7,
                 }
             },
             "Aegis_arifle_M16A4_FG_F": {
-                "probability": 1,
                 "magazinesVest": {
                     "30Rnd_556x45_Stanag": 7,
                 }
             },
             "Aegis_arifle_M4A1_F": {
-                "probability": 1,
                 "magazinesVest": {
                     "30Rnd_556x45_Stanag": 7,
                 }
             },
             "Aegis_arifle_M4A1_grip_F": {
-                "probability": 1,
                 "magazinesVest": {
                     "30Rnd_556x45_Stanag": 7,
                 }
             },
             "Aegis_arifle_M4A1_short_F": {
-                "probability": 1,
                 "magazinesVest": {
                     "30Rnd_556x45_Stanag": 7,
                 }
@@ -294,11 +289,9 @@ class CLASS2(SIDE,Rifleman): CLASS2(SIDE,Base) {
         "weapons": {
             "": 9,
             "launch_RPG7_F": {
-                "probability": 1,
                 "loadedPrimary": "PSRL1_AT_RF",
             },
             "Aegis_launch_RPG7M_F": {
-                "probability": 1,
                 "loadedPrimary": "PSRL1_AT_RF",
             },
         },

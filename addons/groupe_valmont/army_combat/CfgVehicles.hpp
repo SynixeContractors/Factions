@@ -100,49 +100,41 @@ class CLASS2(SIDE,Base): PCLASS2(SIDE,Base) {
     @Primary({
         "weapons": {
             "arifle_AK12_545_F": {
-                "probability": 1,
                 "magazinesVest": {
                     "30Rnd_545x39_Black_Mag_Yellow_F": 7,
                 },
             },
             "arifle_SCAR_short_black_F": {
-                "probability": 1,
                 "magazinesVest": {
                     "20Rnd_762x51_Mag": 7,
                 },
             },
             "Atlas_Arifle_famasG2_Grip_F": {
-                "probability": 1,
                 "magazinesVest": {
                     "30Rnd_556x45_Stanag": 7,
                 },
             },
             "arifle_SCAR_L_short_black_F": {
-                "probability": 1,
                 "magazinesVest": {
                     "30Rnd_556x45_Stanag": 7,
                 },
             },
             "arifle_Galat_lxWS": {
-                "probability": 1,
                 "magazinesVest": {
                     "30Rnd_762x39_polymer_Black_Mag_F": 7,
                 },
             },
             "arifle_AK12_F": {
-                "probability": 1,
                 "magazinesVest": {
                     "30Rnd_762x39_polymer_Black_Mag_F": 7,
                 },
             },
             "sgun_aa40_lxWS": {
-                "probability": 1,
                 "magazinesVest": {
-                    "8Rnd_12Gauge_AA40_HE_lxWS": 7,
+                    "20Rnd_12Gauge_AA40_Pellets_lxWS": 7,
                 },
             },
             "arifle_VelkoR5_lxWS": {
-                "probability": 1,
                 "magazinesVest": {
                     "35Rnd_556x45_Velko_reload_tracer_yellow_lxWS": 7,
                 },
@@ -167,13 +159,11 @@ class CLASS2(SIDE,Base): PCLASS2(SIDE,Base) {
     @Secondary({
         "weapons": {
             "hgun_Pistol_heavy_01_black_F": {
-                "probability": 1,
                 "magazinesVest": {
                     "11Rnd_45ACP_Mag": 3,
                 },
             },
             "hgun_G17_black_F": {
-                "probability": 1,
                 "magazinesVest": {
                     "17Rnd_9x21_Mag": 3,
                 },
@@ -189,7 +179,6 @@ class CLASS2(SIDE,Rifleman): CLASS2(SIDE,Base) {
         "weapons": {
             "": 2,
             "JCA_launch_M72_olive_F": {
-                "probability": 1,
                 "loadedPrimary": "JCA_M72_HEAT_F",
             },
         },
@@ -202,19 +191,16 @@ class CLASS2(SIDE,SquadLeader): CLASS2(SIDE,Rifleman) {
     @Primary({
         "weapons": {
             "arifle_AK12_545_F": {
-                "probability": 1,
                 "magazinesVest": {
                     "Aegis_45Rnd_545x39_Mag_F": 7,
                 },
             },
             "arifle_SCAR_L_short_black_F": {
-                "probability": 1,
                 "magazinesVest": {
                     "75Rnd_556x45_Stanag_lxWS": 7,
                 },
             },
             "arifle_VelkoR5_lxWS": {
-                "probability": 1,
                 "magazinesVest": {
                     "50Rnd_556x45_Velko_reload_tracer_yellow_lxWS": 7,
                 },
@@ -243,7 +229,6 @@ class CLASS2(SIDE,TeamLeader): CLASS2(SIDE,Base) {
     @Primary({
         "weapons": {
             "arifle_AK12_GL_F": {
-                "probability": 1,
                 "magazinesVest": {
                     "30Rnd_762x39_polymer_Black_Mag_F": 7,
                     "1Rnd_HE_Grenade_shell": 5,
@@ -252,7 +237,6 @@ class CLASS2(SIDE,TeamLeader): CLASS2(SIDE,Base) {
                 "loadedSecondary": "1Rnd_HE_Grenade_shell",
             },
             "Atlas_Arifle_famasG2_GL_F": {
-                "probability": 1,
                 "magazinesVest": {
                     "30Rnd_556x45_Stanag": 7,
                     "1Rnd_HE_Grenade_shell": 5,
@@ -261,7 +245,6 @@ class CLASS2(SIDE,TeamLeader): CLASS2(SIDE,Base) {
                 "loadedSecondary": "1Rnd_HE_Grenade_shell",
             },
             "arifle_SCAR_L_GL_black_F": {
-                "probability": 1,
                 "magazinesVest": {
                     "30Rnd_556x45_Stanag": 7,
                     "1Rnd_HE_Grenade_shell": 5,
@@ -270,7 +253,6 @@ class CLASS2(SIDE,TeamLeader): CLASS2(SIDE,Base) {
                 "loadedSecondary": "1Rnd_HE_Grenade_shell",
             },
             "arifle_AK12_GL_545_F": {
-                "probability": 1,
                 "magazinesVest": {
                     "30Rnd_545x39_Black_Mag_Yellow_F": 7,
                     "1Rnd_HE_Grenade_shell": 5,
@@ -296,7 +278,6 @@ class CLASS2(SIDE,Autorifleman): CLASS2(SIDE,Base) {
     @Primary({
         "weapons": {
             "Aegis_arifle_RPK12_545_F": {
-                "probability": 1,
                 "magazinesVest": {
                     "Aegis_60Rnd_545x39_Mag_Tracer_F": 4,
                 },
@@ -305,7 +286,6 @@ class CLASS2(SIDE,Autorifleman): CLASS2(SIDE,Base) {
                 },
             },
             "LMG_Zafir_black_F": {
-                "probability": 1,
                 "magazinesVest": {
                     "ACE_150Rnd_762x54_Box_tracer_yellow": 2,
                 },
@@ -314,7 +294,6 @@ class CLASS2(SIDE,Autorifleman): CLASS2(SIDE,Base) {
                 },
             },
             "LMG_03_F": {
-                "probability": 1,
                 "magazinesVest": {
                     "200Rnd_556x45_Box_F": 2,
                 },
@@ -323,7 +302,6 @@ class CLASS2(SIDE,Autorifleman): CLASS2(SIDE,Base) {
                 },
             },
             "arifle_RPK12_F": {
-                "probability": 1,
                 "magazinesVest": {
                     "75rnd_762x39_AK12_Mag_F": 4,
                 },
@@ -404,19 +382,16 @@ class CLASS2(SIDE,Marksman): CLASS2(SIDE,Base) {
     @Primary({
         "weapons": {
             "arifle_AK12_545_F": {
-                "probability": 1,
                 "magazinesVest": {
                     "30Rnd_545x39_Black_Mag_Yellow_F": 8,
                 },
             },
             "arifle_MXM_Black_F": {
-                "probability": 1,
                 "magazinesVest": {
                     "30Rnd_65x39_caseless_black_mag": 8,
                 },
             },
             "arifle_SCAR_grip_black_F": {
-                "probability": 1,
                 "magazinesVest": {
                     "20Rnd_762x51_Mag": 8,
                 },
@@ -457,14 +432,12 @@ class CLASS2(SIDE,RiflemanMAT): CLASS2(SIDE,Base) {
     @Launchers({
         "weapons": {
             "launch_PSRL1_black_RF": {
-                "probability": 1,
                 "magazinesBackpack": {
                     "PSRL1_AT_RF": 2,
                     "PSRL1_FRAG_RF": 2,
                 },
             },
             "launch_MRAWS_green_rail_F": {
-                "probability": 1,
                 "magazinesBackpack": {
                     "MRAWS_HEAT55_F": 2,
                     "MRAWS_HE_F": 2,
@@ -488,25 +461,21 @@ class CLASS2(SIDE,RiflemanAA): CLASS2(SIDE,Base) {
     @Primary({
         "weapons": {
             "arifle_AKSM_F": {
-                "probability": 1,
                 "magazinesVest": {
                     "30Rnd_545x39_Black_Mag_Yellow_F": 7,
                 },
             },
             "SMG_03C_TR_black": {
-                "probability": 1,
                 "magazinesVest": {
                     "50Rnd_570x28_SMG_03": 7,
                 },
             },
             "JCA_smg_MP5_FL_black_F": {
-                "probability": 1,
                 "magazinesVest": {
                     "JCA_30Rnd_9x21_MP5_Mag": 7,
                 },
             },
             "JCA_smg_UMP_VFG_black_F": {
-                "probability": 1,
                 "magazinesVest": {
                     "JCA_25Rnd_45ACP_UMP_Mag": 7,
                 },
@@ -551,25 +520,21 @@ class CLASS2(SIDE,RiflemanHAT): CLASS2(SIDE,Base) {
     @Primary({
         "weapons": {
             "arifle_AKSM_F": {
-                "probability": 1,
                 "magazinesVest": {
                     "30Rnd_545x39_Black_Mag_Yellow_F": 7,
                 },
             },
             "SMG_03C_TR_black": {
-                "probability": 1,
                 "magazinesVest": {
                     "50Rnd_570x28_SMG_03": 7,
                 },
             },
             "JCA_smg_MP5_FL_black_F": {
-                "probability": 1,
                 "magazinesVest": {
                     "JCA_30Rnd_9x21_MP5_Mag": 7,
                 },
             },
             "JCA_smg_UMP_VFG_black_F": {
-                "probability": 1,
                 "magazinesVest": {
                     "JCA_25Rnd_45ACP_UMP_Mag": 7,
                 },
@@ -670,25 +635,21 @@ class CLASS2(SIDE,HeliPilot): CLASS2(SIDE,Base) {
     @Primary({
         "weapons": {
             "arifle_AKSM_F": {
-                "probability": 1,
                 "magazinesVest": {
                     "30Rnd_545x39_Black_Mag_Yellow_F": 4,
                 },
             },
             "SMG_03C_TR_black": {
-                "probability": 1,
                 "magazinesVest": {
                     "50Rnd_570x28_SMG_03": 4,
                 },
             },
             "JCA_smg_MP5_FL_black_F": {
-                "probability": 1,
                 "magazinesVest": {
                     "JCA_30Rnd_9x21_MP5_Mag": 4,
                 },
             },
             "JCA_smg_UMP_VFG_black_F": {
-                "probability": 1,
                 "magazinesVest": {
                     "JCA_25Rnd_45ACP_UMP_Mag": 4,
                 },

@@ -102,45 +102,38 @@ class CLASS2(SIDE,Rifleman): CLASS2(SIDE,Base) {
     @Primary({
         "weapons": {
             "arifle_AK12_545_F": {
-                "probability": 1,
                 "magazinesVest": {
                     "30Rnd_545x39_Black_Mag_Yellow_F": 7,
                 },
             },
             "arifle_SCAR_short_black_F": {
-                "probability": 1,
                 "magazinesVest": {
                     "20Rnd_762x51_Mag": 7,
                 },
             },
             "Atlas_Arifle_famasG2_Grip_F": {
-                "probability": 1,
                 "magazinesVest": {
                     "30Rnd_556x45_Stanag": 7,
                 },
             },
             "arifle_SCAR_L_short_black_F": {
-                "probability": 1,
                 "magazinesVest": {
                     "30Rnd_556x45_Stanag": 7,
                 },
             },
             "arifle_Galat_lxWS": {
-                "probability": 1,
                 "magazinesVest": {
                     "30Rnd_762x39_polymer_Black_Mag_F": 7,
                 },
             },
             "arifle_AK12_F": {
-                "probability": 1,
                 "magazinesVest": {
                     "30Rnd_762x39_polymer_Black_Mag_F": 7,
                 },
             },
             "sgun_aa40_lxWS": {
-                "probability": 1,
                 "magazinesVest": {
-                    "8Rnd_12Gauge_AA40_HE_lxWS": 7,
+                    "20Rnd_12Gauge_AA40_Pellets_lxWS": 7,
                 },
             },
         },
@@ -167,7 +160,6 @@ class CLASS2(SIDE,TeamLeader): CLASS2(SIDE,Rifleman) {
     @Primary({
         "weapons": {
             "arifle_AK12_GL_F": {
-                "probability": 1,
                 "magazinesVest": {
                     "30Rnd_762x39_polymer_Black_Mag_F": 7,
                     "1Rnd_HE_Grenade_shell": 5,
@@ -176,7 +168,6 @@ class CLASS2(SIDE,TeamLeader): CLASS2(SIDE,Rifleman) {
                 "loadedSecondary": "1Rnd_HE_Grenade_shell",
             },
             "Atlas_Arifle_famasG2_GL_F": {
-                "probability": 1,
                 "magazinesVest": {
                     "30Rnd_556x45_Stanag": 7,
                     "1Rnd_HE_Grenade_shell": 5,
@@ -185,7 +176,6 @@ class CLASS2(SIDE,TeamLeader): CLASS2(SIDE,Rifleman) {
                 "loadedSecondary": "1Rnd_HE_Grenade_shell",
             },
             "arifle_SCAR_L_GL_black_F": {
-                "probability": 1,
                 "magazinesVest": {
                     "30Rnd_556x45_Stanag": 7,
                     "1Rnd_HE_Grenade_shell": 5,
@@ -194,7 +184,6 @@ class CLASS2(SIDE,TeamLeader): CLASS2(SIDE,Rifleman) {
                 "loadedSecondary": "1Rnd_HE_Grenade_shell",
             },
             "arifle_AK12_GL_545_F": {
-                "probability": 1,
                 "magazinesVest": {
                     "30Rnd_545x39_Black_Mag_Yellow_F": 7,
                     "1Rnd_HE_Grenade_shell": 5,
@@ -220,7 +209,6 @@ class CLASS2(SIDE,Autorifleman): CLASS2(SIDE,Rifleman) {
     @Primary({
         "weapons": {
             "Aegis_arifle_RPK12_545_F": {
-                "probability": 1,
                 "magazinesVest": {
                     "Aegis_60Rnd_545x39_Mag_Tracer_F": 4,
                 },
@@ -229,7 +217,6 @@ class CLASS2(SIDE,Autorifleman): CLASS2(SIDE,Rifleman) {
                 },
             },
             "LMG_Zafir_black_F": {
-                "probability": 1,
                 "magazinesVest": {
                     "ACE_150Rnd_762x54_Box_tracer_yellow": 2,
                 },
@@ -238,7 +225,6 @@ class CLASS2(SIDE,Autorifleman): CLASS2(SIDE,Rifleman) {
                 },
             },
             "LMG_03_F": {
-                "probability": 1,
                 "magazinesVest": {
                     "200Rnd_556x45_Box_F": 2,
                 },
@@ -247,7 +233,6 @@ class CLASS2(SIDE,Autorifleman): CLASS2(SIDE,Rifleman) {
                 },
             },
             "arifle_RPK12_F": {
-                "probability": 1,
                 "magazinesVest": {
                     "75rnd_762x39_AK12_Mag_F": 4,
                 },

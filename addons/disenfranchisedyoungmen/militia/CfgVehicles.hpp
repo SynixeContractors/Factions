@@ -83,49 +83,41 @@ class CLASS2(SIDE,Base): PCLASS2(SIDE,Base) {
     @Primary({
         "weapons": {
             "arifle_AKM_F": {
-                "probability": 1,
                 "magazinesVest": {
                     "30Rnd_762x39_Mag_F": 7,
                 }
             },
             "Aegis_arifle_AKS74_F": {
-                "probability": 1,
                 "magazinesVest": {
                     "30Rnd_545x39_Mag_F": 7,
                 }
             },
             "Aegis_arifle_AK74_F": {
-                "probability": 1,
                 "magazinesVest": {
                     "30Rnd_545x39_Mag_F": 7,
                 }
             },
             "sgun_Mp153_classic_F": {
-                "probability": 1,
                 "magazinesVest": {
                     "4Rnd_12Gauge_Pellets": 8,
                 }
             },
             "sgun_HunterShotgun_01_F": {
-                "probability": 1,
                 "magazinesVest": {
                     "2Rnd_12Gauge_Pellets": 10,
                 }
             },
             "sgun_HunterShotgun_01_sawedoff_F": {
-                "probability": 1,
                 "magazinesVest": {
                     "2Rnd_12Gauge_Pellets": 10,
                 }
             },
             "srifle_DMR_06_hunter_F": {
-                "probability": 1,
                 "magazinesVest": {
                     "10Rnd_Mk14_762x51_Mag_blk_lxWS": 7,
                 }
             },
             "Opf_arifle_SKS_F": {
-                "probability": 1,
                 "magazinesVest": {
                     "30Rnd_762x39_Mag_F": 7,
                 }
@@ -155,7 +147,6 @@ class CLASS2(SIDE,Autorifleman): CLASS2(SIDE,Base) {
     @Primary({
         "weapons": {
             "arifle_AKM_F": {
-                "probability": 1,
                 "magazinesVest": {
                     "75Rnd_762x39_Mag_F": 4,
                 },
@@ -164,7 +155,6 @@ class CLASS2(SIDE,Autorifleman): CLASS2(SIDE,Base) {
                 },
             },
             "arifle_RPK_F": {
-                "probability": 1,
                 "magazinesVest": {
                     "75Rnd_762x39_Mag_F": 4,
                 },
