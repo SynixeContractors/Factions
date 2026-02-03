@@ -1,6 +1,9 @@
 #include "..\script_component.hpp"
 
-params [["_unit", objNull, [objNull]]];
+params [
+    ["_unit", objNull, [objNull]],
+    ["_packs", true, [true]]
+];
 
 if (isNull _unit) exitWith {
     WARNING_1("Unit [%1] is null",_unit);
@@ -31,6 +34,7 @@ if (_cache isEqualTo []) exitWith {true};
         _slot = _loadout select _x;
     };
     _slot set [0, selectRandomWeighted (_cached select 0)];
+    if (!_packs) then { continue; };
     private _packs = _cached select 1;
     private _items = +(_cached select 2);
     {

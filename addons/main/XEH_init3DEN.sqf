@@ -3,8 +3,7 @@
 add3DENEventHandler ["OnEditableEntityAdded", {
     params ["_entity"];
     if (typeName _entity != "OBJECT") exitWith {};
-    private _units = [_entity];
-    _units append crew _entity;
+    _units = crew _entity;
     {
         private _entity = _x;
         if (BASE_CLASSES findIf { _entity isKindOf _x } != -1) then {
@@ -18,12 +17,11 @@ add3DENEventHandler ["OnPaste", {
     private _units = [];
     {
         _units append crew _x;
-        _units pushBack _x;
     } forEach _entities;
     {
         private _entity = _x;
         if (BASE_CLASSES findIf { _entity isKindOf _x } != -1) then {
-            [_entity] call FUNC(randomizeLoadout);
+            [_entity, false] call FUNC(randomizeLoadout);
         };
     } forEach _units;
 }];
