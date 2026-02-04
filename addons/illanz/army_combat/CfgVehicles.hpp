@@ -31,7 +31,7 @@ class CfgVehicles {
 
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {
-        displayName = FACTION_NAME;
+        displayName = FACTION_NAME" Army Combat";
         editorSubcategory = QGCLASS(army_combat);
 
         #include "../wear/uniform.hpp"
