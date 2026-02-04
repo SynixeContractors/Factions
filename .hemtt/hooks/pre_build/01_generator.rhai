@@ -344,6 +344,9 @@ fn overlay_properties(base, file, key) {
     }
     overlay = overlay[key];
     for key in overlay.keys() {
+        if file == "identities" && key == "displayName" {
+            continue;
+        }
         base[key] = overlay[key];
     }
     let ret = "";
@@ -374,8 +377,16 @@ fn replace_placeholder(text, value) {
     let result = "";
     let i = 0;
     while i < text.len() {
-        if text[i] == "$" && i + 1 < text.len() && text[i + 1] == "1" {
-            result += value;
+        if text[i] == "$" && i + 1 < text.len() {
+            let index = parse_int(text[i+1].to_string()) - 1;
+            if type_of(value) == "array" {
+                if index < 0 || index >= value.len() {
+                    fatal("Placeholder index out of bounds: " + text[i..i+2]);
+                }
+                result += value[index];
+            } else {
+                result += value;
+            }
             i += 2;
         } else {
             result += text[i];
@@ -414,7 +425,7 @@ fn parse_macro(line) {
             fatal("Macro does not have closing parenthesis: " + line);
         }
         let raw_json = line.sub_string(args_start, json_end - args_start);
-        args = parse_json(raw_json);
+        args = parse_json_array(raw_json);
     } else {
         let args_end = line.index_of(')', args_start);
         if args_end == -1 {
@@ -559,7 +570,14 @@ fn process_lines(lines, start_index) {
             let raw_json = macro_text.sub_string(args_start, args_end - args_start);
             let items = [];
             if raw_json == "Identities" {
-                items = load_json("identities").keys();
+                let identities = load_json("identities");
+                for id in identities.keys() {
+                    let displayName = id;
+                    if "displayName" in identities[id] {
+                        displayName = identities[id].displayName;
+                    }
+                    items.push([id, displayName]);
+                }
             } else {
                 items = parse_json_array(raw_json);
             }
@@ -671,6 +689,7 @@ for addon in addons {
         }
         
         if touched {
+            debug("Processing file: " + file);
             let replacement = process_lines(lines, 0);
             debug("Writing modified file: " + file);
             file.create_file().write(replacement);

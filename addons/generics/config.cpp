@@ -3,26 +3,24 @@
 class CfgPatches {
     class ADDON {
         name = QUOTE(COMPONENT);
-        units[] = {};
+        units[] = {
+        };
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
-            "cba_main"
+            "synixe_factions_base_vehicles"
         };
         author = "Synixe Contractors";
         VERSION_CONFIG;
     };
 };
 
-class SynixeIdentities {
-    @For(Identities)
-        class $1 {
-            displayName = "$2";
-        };
-    @EndFor
+class ADDON {
+    class GCLASS(police) {};
 };
 
-#include "CfgEditorSubcategories.hpp"
 #include "CfgEventHandlers.hpp"
+#include "CfgEditorSubcategories.hpp"
+#include "CfgFactionClasses.hpp"
 #include "CfgVehicles.hpp"
-#include "CfgWorlds.hpp"
+#include "Display3DEN.hpp"
