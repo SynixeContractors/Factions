@@ -1,16 +1,16 @@
 class CfgVehicles {
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {
-      faction = QCLASS(civilian);
-      displayName = "Police Base Unit";
-      @Templated();
+        faction = QGCLASS(police);
+        factionTest = QUOTE(PREFIX);
+        displayName = "Police Base Unit";
+        @Templated();
     };
 
     @For(Identities)
     class CLASS2(Base,$1): CLASS(Base) {
-      faction = QPCLASS($1);
-      displayName = "$1 Police Base Unit";
-      @Identity($1);
+        displayName = "$1 Police Base Unit";
+        @Identity($1);
     };
     @EndFor
 

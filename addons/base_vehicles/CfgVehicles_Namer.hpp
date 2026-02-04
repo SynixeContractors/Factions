@@ -28,9 +28,9 @@
         };
 #define NAMER_KZG(CAMONET) \
         textures[] = {\
-          "\s\synixe_factions\addons\textures\data\namer\Namer_body_KZG_CO.paa",\
-          "\s\synixe_factions\addons\textures\data\merkava\Merkava_body_KZG_CO.paa",\
-          "\s\synixe_factions\addons\textures\data\common\Turret_rcws_KZG_CO.paa",\
+          "\s\synixe_factions\addons\vehicle_textures\data\namer\Namer_body_KZG_CO.paa",\
+          "\s\synixe_factions\addons\vehicle_textures\data\merkava\Merkava_body_KZG_CO.paa",\
+          "\s\synixe_factions\addons\vehicle_textures\data\common\Turret_rcws_KZG_CO.paa",\
           CAMONET\
         };
 
@@ -297,10 +297,10 @@ class GCLASS(Namer_RCWS): B_APC_Tracked_01_rcws_F {
         };
 #define NAMER_CEV_KZG(CAMONET) \
         textures[] = {\
-          "\s\synixe_factions\addons\textures\data\namer\Namer_body_KZG_CO.paa",\
-          "\s\synixe_factions\addons\textures\data\merkava\Merkava_body_KZG_CO.paa",\
-          "\s\synixe_factions\addons\textures\data\common\Turret_rcws_KZG_CO.paa",\
-          "\s\synixe_factions\addons\textures\data\namer\Namer_CEV_KZG_CO.paa",\
+          "\s\synixe_factions\addons\vehicle_textures\data\namer\Namer_body_KZG_CO.paa",\
+          "\s\synixe_factions\addons\vehicle_textures\data\merkava\Merkava_body_KZG_CO.paa",\
+          "\s\synixe_factions\addons\vehicle_textures\data\common\Turret_rcws_KZG_CO.paa",\
+          "\s\synixe_factions\addons\vehicle_textures\data\namer\Namer_CEV_KZG_CO.paa",\
           CAMONET\
         };
 
@@ -448,9 +448,9 @@ class GCLASS(Namer_CEV): B_APC_Tracked_01_CRV_F {
         };
 #define NAMER_AA_KZG(CAMONET) \
         textures[] = {\
-          "\s\synixe_factions\addons\textures\data\namer\Namer_body_KZG_CO.paa",\
-          "\s\synixe_factions\addons\textures\data\merkava\Merkava_body_KZG_CO.paa",\
-          "\s\synixe_factions\addons\textures\data\namer\Namer_AA_KZG_CO.paa",\
+          "\s\synixe_factions\addons\vehicle_textures\data\namer\Namer_body_KZG_CO.paa",\
+          "\s\synixe_factions\addons\vehicle_textures\data\merkava\Merkava_body_KZG_CO.paa",\
+          "\s\synixe_factions\addons\vehicle_textures\data\namer\Namer_AA_KZG_CO.paa",\
           CAMONET\
         };
 

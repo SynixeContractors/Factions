@@ -1,5 +1,6 @@
 {
     "Synixe": {
+        "displayName": "Synixe Contractors",
         "identityTypes": [
             "Head_NATO",
             "LanguageENG_F",
@@ -22,6 +23,7 @@
         "genericNames": "American"
     },
     "DalRiada": {
+        "displayName": "Dal Riada",
         "identityTypes": [
             "Head_Euro",
             "LanguageENGGB_F"

@@ -2,8 +2,8 @@ class TextureSources {
     class Default {
         displayName = "Grey";
         textures[] = {
-            "\s\synixe_factions\addons\textures\data\mq47\mq47_01_default_CO.paa",
-            "\s\synixe_factions\addons\textures\data\mq47\mq47_02_default_CO.paa",
+            "\s\synixe_factions\addons\vehicle_textures\data\mq47\mq47_01_default_CO.paa",
+            "\s\synixe_factions\addons\vehicle_textures\data\mq47\mq47_02_default_CO.paa",
         };
         factions[] = {};
     };

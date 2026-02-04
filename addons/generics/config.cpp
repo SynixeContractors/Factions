@@ -15,6 +15,12 @@ class CfgPatches {
     };
 };
 
+class ADDON {
+    class GCLASS(police) {};
+};
+
+#include "CfgEventHandlers.hpp"
 #include "CfgEditorSubcategories.hpp"
 #include "CfgFactionClasses.hpp"
 #include "CfgVehicles.hpp"
+#include "Display3DEN.hpp"

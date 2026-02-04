@@ -28,9 +28,9 @@
         };
 #define MERKAVA_SPG_KZG(CAMONET) \
         textures[] = {\
-          "\s\synixe_factions\addons\textures\data\Merkava\Merkava_body_KZG_CO.paa", \
-          "\s\synixe_factions\addons\textures\data\Merkava\Merkava_SPG_KZG_CO.paa",\
-          "\s\synixe_factions\addons\textures\data\common\Turret_rcws_KZG_CO.paa",\
+          "\s\synixe_factions\addons\vehicle_textures\data\Merkava\Merkava_body_KZG_CO.paa", \
+          "\s\synixe_factions\addons\vehicle_textures\data\Merkava\Merkava_SPG_KZG_CO.paa",\
+          "\s\synixe_factions\addons\vehicle_textures\data\common\Turret_rcws_KZG_CO.paa",\
           CAMONET\
         };
 
@@ -173,8 +173,8 @@ class GCLASS(Merkava_SPG): B_MBT_01_arty_F {
         };
 #define MERKAVA_MLRS_KZG(CAMONET) \
         textures[] = {\
-          "\s\synixe_factions\addons\textures\data\Merkava\Merkava_body_KZG_CO.paa",\
-          "\s\synixe_factions\addons\textures\data\Merkava\Merkava_MLRS_KZG_CO.paa",\
+          "\s\synixe_factions\addons\vehicle_textures\data\Merkava\Merkava_body_KZG_CO.paa",\
+          "\s\synixe_factions\addons\vehicle_textures\data\Merkava\Merkava_MLRS_KZG_CO.paa",\
           CAMONET\
         };
 

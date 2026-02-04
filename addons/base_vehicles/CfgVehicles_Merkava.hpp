@@ -24,8 +24,8 @@
         };
 #define MERKAVA_KZG(CAMONET) \
         textures[] = {\
-          "\s\synixe_factions\addons\textures\data\Merkava\Merkava_body_KZG_CO.paa",\
-          "\s\synixe_factions\addons\textures\data\Merkava\Merkava_turret_KZG_CO.paa",\
+          "\s\synixe_factions\addons\vehicle_textures\data\Merkava\Merkava_body_KZG_CO.paa",\
+          "\s\synixe_factions\addons\vehicle_textures\data\Merkava\Merkava_turret_KZG_CO.paa",\
           CAMONET\
         };
 
@@ -173,8 +173,8 @@ class GCLASS(Merkava): B_MBT_01_cannon_F {
         };
 #define MERKAVA_TUSK_KZG(CAMONET) \
         textures[] = {\
-          "\s\synixe_factions\addons\textures\data\Merkava\Merkava_body_KZG_CO.paa", \
-          "\s\synixe_factions\addons\textures\data\Merkava\Merkava_turret_KZG_CO.paa",\
+          "\s\synixe_factions\addons\vehicle_textures\data\Merkava\Merkava_body_KZG_CO.paa", \
+          "\s\synixe_factions\addons\vehicle_textures\data\Merkava\Merkava_turret_KZG_CO.paa",\
           "a3\armor_f_epc\mbt_01\data\mbt_addons_co.paa",\
           CAMONET\
         };

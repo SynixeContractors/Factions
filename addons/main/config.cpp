@@ -14,6 +14,14 @@ class CfgPatches {
     };
 };
 
+class SynixeIdentities {
+    @For(Identities)
+        class $1 {
+            displayName = "$2";
+        };
+    @EndFor
+};
+
 #include "CfgEditorSubcategories.hpp"
 #include "CfgEventHandlers.hpp"
 #include "CfgVehicles.hpp"

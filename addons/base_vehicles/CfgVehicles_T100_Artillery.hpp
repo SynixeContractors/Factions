@@ -64,10 +64,10 @@
             };
 #define T100_SPG_MAZE(CAMONET) \
             textures[] = {\
-              "\s\synixe_factions\addons\textures\data\t100\t100_body_JSN_CO.paa",\
-              "\s\synixe_factions\addons\textures\data\t100\t100_spg_JSN_CO.paa",\
-              "\s\synixe_factions\addons\textures\data\t100\t100_addons_JSN_CO.paa",\
-              "\s\synixe_factions\addons\textures\data\common\Turret_rcws_JSN_CO.paa",\
+              "\s\synixe_factions\addons\vehicle_textures\data\t100\t100_body_JSN_CO.paa",\
+              "\s\synixe_factions\addons\vehicle_textures\data\t100\t100_spg_JSN_CO.paa",\
+              "\s\synixe_factions\addons\vehicle_textures\data\t100\t100_addons_JSN_CO.paa",\
+              "\s\synixe_factions\addons\vehicle_textures\data\common\Turret_rcws_JSN_CO.paa",\
               CAMONET\
             };
 class O_MBT_02_arty_F;
