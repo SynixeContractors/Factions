@@ -18,6 +18,16 @@ class CfgVehicles {
     #include "../../../templates/cars/Ram_Armed.hpp"
     #include "../../../templates/cars/Ram_Advanced.hpp"
 
+    #undef TEMPLATE_CAMO
+    #define TEMPLATE_CAMO Sand
+    #include "../../../templates/helicopters/Ghosthawk.hpp"
+    #include "../../../templates/helicopters/Ghosthawk_Armed.hpp"
+    #include "../../../templates/helicopters/Comanche.hpp"
+    #include "../../../templates/helicopters/MD500_Military.hpp"
+    #undef TEMPLATE_CAMO
+    #define TEMPLATE_CAMO CamoGrey
+    #include "../../../templates/planes/JAS39.hpp"
+
 
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {
