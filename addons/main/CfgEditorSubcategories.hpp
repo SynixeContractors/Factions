@@ -31,5 +31,7 @@ class CfgEditorSubcategories {
     class GCLASS(army_airborne) {
         displayName = "Men (Army - Airborne)";
     };
-
+    class GCLASS(story) {
+        displayName = "Men (Story)";
+    };
 };

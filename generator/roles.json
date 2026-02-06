@@ -106,4 +106,64 @@
         "icon": "iconManEngineer",
         "role": "Sapper",
     },
+
+    // Story
+
+    "Anton": {
+        "displayName": "Anton van der Merwe"
+    },
+
+    "Raymond": {
+        "displayName": "Ng Chi-Ming"
+    },
+
+    "Bart": {
+        "displayName": "Bart Smeets"
+    },
+
+    "Peter": {
+        "displayName": "Peter Balkenende"
+    },
+
+    "Ludwig": {
+        "displayName": "Ludwig Meijer"
+    },
+
+    "Sjoerd": {
+        "displayName": "Sjoerd Koster"
+    },
+
+    "Jorn": {
+        "displayName": "Jorn Wessels"
+    },
+
+    // Story
+
+    "Anton": {
+        "displayName": "Anton van der Merwe"
+    },
+
+    "Raymond": {
+        "displayName": "Ng Chi-Ming"
+    },
+
+    "Bart": {
+        "displayName": "Bart Smeets"
+    },
+
+    "Peter": {
+        "displayName": "Peter Balkenende"
+    },
+
+    "Ludwig": {
+        "displayName": "Ludwig Meijer"
+    },
+
+    "Sjoerd": {
+        "displayName": "Sjoerd Koster"
+    },
+
+    "Jorn": {
+        "displayName": "Jorn Wessels"
+    },
 }
