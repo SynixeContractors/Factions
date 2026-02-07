@@ -121,33 +121,35 @@ fn parse_json_array(json_str) {
     return result;
 }
 
-fn probability_list(name, value) {
+fn build_list(name, value, format) {
     let ret = "Synixe_" + name + "[] = {";
-    for key in value.keys() {
-        let v = value[key];
-        ret += "\"" + key + "\"," + v + ",";
+    if format == "probability" {
+        for key in value.keys() {
+            ret += "\"" + key + "\"," + value[key] + ",";
+        }
+    } else if format == "quantity" {
+        for key in value.keys() {
+            ret += "{\"" + key + "\"," + value[key] + "},";
+        }
+    } else if format == "string" || format == "array" {
+        for item in value {
+            ret += "\"" + item + "\",";
+        }
     }
     ret += "};";
     return ret;
+}
+
+fn probability_list(name, value) {
+    return build_list(name, value, "probability");
 }
 
 fn quantity_list(name, value) {
-    let ret = "Synixe_" + name + "[] = {";
-    for key in value.keys() {
-        let v = value[key];
-        ret += "{\"" + key + "\"," + v + "},";
-    }
-    ret += "};";
-    return ret;
+    return build_list(name, value, "quantity");
 }
 
 fn string_list(name, value) {
-    let ret = "Synixe_" + name + "[] = {";
-    for item in value {
-        ret += "\"" + item + "\",";
-    }
-    ret += "};";
-    return ret;
+    return build_list(name, value, "string");
 }
 
 fn container(name, value) {
@@ -349,27 +351,42 @@ fn groups(args) {
     return ret;
 }
 
+fn build_name_list(name, names_array) {
+    let ret = "class " + name + " {\n";
+    for i in 0..names_array.len() {
+        ret += "name" + i + " = \"" + names_array[i] + "\";\n";
+    }
+    ret += "};\n";
+    return ret;
+}
+
 fn names(args) {
     if args.len() != 1 {
         fatal("Names macro requires exactly 1 argument");
     }
     let nationality = args[0];
     let names_source = load_json("names/" + to_lower(nationality));
-    let ret = "class " + nationality + "{\nclass FirstNames {\n";
-    let i = 0;
-    for first_name in names_source.first_names {
-        ret += "name" + i + " = \"" + first_name + "\";\n";
-        i += 1;
-    }
+    let ret = "class " + nationality + " {\n";
+    ret += build_name_list("FirstNames", names_source.first_names);
+    ret += build_name_list("LastNames", names_source.last_names);
     ret += "};\n";
-    ret += "class LastNames {\n";
-    let i = 0;
-    for last_name in names_source.last_names {
-        ret += "name" + i + " = \"" + last_name + "\";\n";
-        i += 1;
-    }
-    ret += "};};\n";
     return ret;
+}
+
+fn format_value_for_config(value) {
+    switch type_of(value) {
+        "array" => {
+            let arr_str = "{";
+            for item in value {
+                arr_str += "\"" + item + "\",";
+            }
+            return arr_str + "}";
+        }
+        "string" => {
+            return "\"" + value + "\"";
+        }
+        _ => { return value; }
+    }
 }
 
 fn overlay_properties(base, file, key) {
@@ -387,29 +404,28 @@ fn overlay_properties(base, file, key) {
     let ret = "";
     for key in base.keys() {
         let value = base[key];
-        switch type_of(value) {
-            "array" => {
-                key = key + "[]";
-                let arr = value;
-                let arr_str = "{";
-                for item in arr {
-                    arr_str += "\"" + item + "\",";
-                }
-                arr_str += "}";
-                value = arr_str;
-            }
-            "string" => {
-                value = "\"" + value + "\"";
-            }
-            _ => {}
+        let formatted_value = format_value_for_config(value);
+        let key_name = key;
+        if type_of(value) == "array" {
+            key_name = key + "[]";
         }
-        ret += key + " = " + value + ";";
+        ret += key_name + " = " + formatted_value + ";";
     }
     return ret;
 }
 
 fn is_alphanumeric(char) {
     return (char >= "a" && char <= "z") || (char >= "A" && char <= "Z") || (char >= "0" && char <= "9");
+}
+
+fn get_side_data(side) {
+    switch side {
+        "BLUFOR" => { return #{SIDE: 1, UPPER: "BLUFOR", LOWER: "blufor"} }
+        "OPFOR" => { return #{SIDE: 0, UPPER: "OPFOR", LOWER: "opfor"} }
+        "INDEP" => { return #{SIDE: 2, UPPER: "INDEP", LOWER: "indep"} }
+        "CIV" => { return #{SIDE: 3, UPPER: "CIV", LOWER: "civ"} }
+        _ => { fatal("Unknown side: " + side); }
+    }
 }
 
 fn replace_placeholder(text, variables) {
@@ -440,30 +456,26 @@ fn replace_placeholder(text, variables) {
 fn parse_macro_args(line) {
     let args_start = 0;
     let args = [];
+    
+    // Determine argument format and parse accordingly
     if line[args_start] == "{" {
         let json_end = line.index_of("});");
         if json_end == -1 {
             fatal("Macro does not have closing json brace: " + line);
         }
-        let raw_json = line.sub_string(args_start, json_end - args_start + 1);
-        args = parse_json(raw_json);
+        args = parse_json(line.sub_string(args_start, json_end - args_start + 1));
     } else if line[args_start] == "[" {
         let json_end = line.index_of(")");
         if json_end == -1 {
             fatal("Macro does not have closing parenthesis: " + line);
         }
-        let raw_json = line.sub_string(args_start, json_end - args_start);
-        args = parse_json_array(raw_json);
+        args = parse_json_array(line.sub_string(args_start, json_end - args_start));
     } else {
         let args_end = line.index_of(')', args_start);
         if args_end == -1 {
             fatal("Macro does not have closing parenthesis: " + line);
         }
-
-        let raw_args = line.sub_string(args_start, args_end - args_start);
-        let split_args = raw_args.split(",");
-
-        for a in split_args {
+        for a in line.sub_string(args_start, args_end - args_start).split(",") {
             a.trim();
             if a != "" {
                 args.push(a);
@@ -487,7 +499,6 @@ fn parse_macro(line) {
     debug("Macro name: " + name);
 
     let args_start = name_end + 1;
-
     let args_line = line.sub_string(args_start);
     let args = parse_macro_args(args_line);
     debug("Macro args: " + args);
@@ -571,11 +582,9 @@ respawnLinkedItems[] = {};
             return names(args);
         }
         "For" => {
-            // This should not be called directly, handled in process_lines
             fatal("@For must be paired with @EndFor");
         }
         "ForSides" => {
-            // This should not be called directly, handled in process_lines
             fatal("@ForSides must be paired with @EndFor");
         }
         _ => {
@@ -636,30 +645,65 @@ fn parse_complete_macro(lines, start_index) {
     return [macro_text, line_index];
 }
 
-fn expand_macro_in_line(line, variables) {
-    // Try to expand a macro in a line with current variables
-    line.trim();
-    if !line.starts_with("@") {
-        return line;
+fn merge_variables(parent_vars, new_vars) {
+    let merged = #{};
+    for k in parent_vars.keys() {
+        merged[k] = parent_vars[k];
     }
-    
-    let parsed = parse_complete_macro([line], 0);
-    let macro_text = parsed[0];
-    
-    let depth = 0;
-    for char in macro_text.chars() {
-        if char == '(' {
-            depth += 1;
-        } else if char == ')' {
-            depth -= 1;
+    for k in new_vars.keys() {
+        merged[k] = new_vars[k];
+    }
+    return merged;
+}
+
+fn parse_for_items(raw_json) {
+    let items = [];
+    if raw_json == "Identities" {
+        let identities = load_json("identities");
+        for id in identities.keys() {
+            if "generic" in identities[id] && identities[id].generic == false {
+                continue;
+            }
+            let displayName = id;
+            if "displayName" in identities[id] {
+                displayName = identities[id].displayName;
+            }
+            items.push([id, displayName]);
         }
+    } else {
+        items = parse_json_array("[" + raw_json + "]");
     }
-    
-    if depth != 0 {
-        fatal("Malformed macro: " + macro_text);
+    return items;
+}
+
+fn build_item_variables(item) {
+    let item_data = #{};
+    if type_of(item) == "array" {
+        for i in 0..item.len() {
+            item_data["" + (i + 1)] = item[i];
+        }
+    } else {
+        item_data["1"] = item;
     }
-    
-    return parse_macro(macro_text);
+    return item_data;
+}
+
+fn process_block_iterations(block, parent_variables, iteration_items, iter_type) {
+    let result = "";
+    for item in iteration_items {
+        // Build the variable map for this iteration
+        let item_vars = #{};
+        if iter_type == "ForSides" {
+            item_vars = get_side_data(item);
+        } else {
+            item_vars = build_item_variables(item);
+        }
+        
+        let merged_vars = merge_variables(parent_variables, item_vars);
+        let processed_body = process_lines(block, 0, merged_vars);
+        result += processed_body;
+    }
+    return result;
 }
 
 fn process_lines(lines, start_index, variables) {
@@ -678,64 +722,9 @@ fn process_lines(lines, start_index, variables) {
             
             let args_line = macro_text.sub_string(macro_text.index_of('(') + 1);
             let args = parse_macro_args(args_line);
-            
-            // Build side data
-            let side_data_map = #{};
-            for side in args {
-                switch side {
-                    "BLUFOR" => {
-                        side_data_map[side] = #{
-                            SIDE: 1,
-                            UPPER: "BLUFOR",
-                            LOWER: "blufor",
-                        }
-                    }
-                    "OPFOR" => {
-                        side_data_map[side] = #{
-                            SIDE: 0,
-                            UPPER: "OPFOR",
-                            LOWER: "opfor",
-                        }
-                    }
-                    "INDEP" => {
-                        side_data_map[side] = #{
-                            SIDE: 2,
-                            UPPER: "INDEP",
-                            LOWER: "indep",
-                        }
-                    }
-                    "CIV" => {
-                        side_data_map[side] = #{
-                            SIDE: 3,
-                            UPPER: "CIV",
-                            LOWER: "civ",
-                        }
-                    }
-                    _ => {
-                        fatal("Unknown side in @ForSides: " + side);
-                    }
-                }
-            }
-            
             let block = find_block(lines, end_index, "@EndForSides");
             
-            // Process body for each side
-            for side in args {
-                let side_vars = side_data_map[side];
-                // Merge current variables with side-specific variables
-                let merged_vars = #{};
-                for k in variables.keys() {
-                    merged_vars[k] = variables[k];
-                }
-                for k in side_vars.keys() {
-                    merged_vars[k] = side_vars[k];
-                }
-                
-                // Recursively process body lines with merged variables
-                let processed_body = process_lines(block[0], 0, merged_vars);
-                replacement += processed_body;
-            }
-            
+            replacement += process_block_iterations(block[0], variables, args, "ForSides");
             index = block[1];
         } else if line.starts_with("@For(") {
             // Parse @For and get the items to iterate
@@ -746,50 +735,10 @@ fn process_lines(lines, start_index, variables) {
             let args_start = macro_text.index_of('(') + 1;
             let args_end = macro_text.index_of(')');
             let raw_json = macro_text.sub_string(args_start, args_end - args_start);
-            
-            let items = [];
-            if raw_json == "Identities" {
-                let identities = load_json("identities");
-                for id in identities.keys() {
-                    if "generic" in identities[id] && identities[id].generic == false {
-                        continue;
-                    }
-                    let displayName = id;
-                    if "displayName" in identities[id] {
-                        displayName = identities[id].displayName;
-                    }
-                    items.push([id, displayName]);
-                }
-            } else {
-                items = parse_json_array("[" + raw_json + "]");
-            }
-            
+            let items = parse_for_items(raw_json);
             let block = find_block(lines, end_index, "@EndFor");
             
-            // Process body for each item
-            for item in items {
-                // Create variable map for this iteration
-                let item_vars = #{};
-                
-                // Copy parent variables
-                for k in variables.keys() {
-                    item_vars[k] = variables[k];
-                }
-                
-                // Add indexed variables for this item
-                if type_of(item) == "array" {
-                    for i in 0..item.len() {
-                        item_vars["" + (i + 1)] = item[i];
-                    }
-                } else {
-                    item_vars["1"] = item;
-                }
-                
-                // Recursively process body lines with item variables
-                let processed_body = process_lines(block[0], 0, item_vars);
-                replacement += processed_body;
-            }
-            
+            replacement += process_block_iterations(block[0], variables, items, "For");
             index = block[1];
         } else if line.starts_with("@") {
             // Parse and expand a standalone macro
