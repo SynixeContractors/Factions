@@ -1,4 +1,14 @@
-class GCLASS(Offroad); // FIXME: when offroad is fixed add the light bar on it
+class Offroad_01_civil_base_F;
+class C_Offroad_01_F: Offroad_01_civil_base_F {
+    class AnimationSources;
+};
+
+class GCLASS(Offroad): C_Offroad_01_F {
+    class AnimationSources: AnimationSources {
+        class hidePolice;
+    };
+};
+
 class Offroad_01_military_covered_base_F;
 class C_Offroad_01_covered_F: Offroad_01_military_covered_base_F {
     class AnimationSources;
@@ -54,6 +64,9 @@ class GCLASS(Ram_Comms);
 class CLASS(Offroad): GCLASS(Offroad) {
     scope = 0;
     textureList[] = {QUOTE(TEMPLATE_CAMO),1};
+    class AnimationSources: AnimationSources {
+        ANIMATION_OFF(hidePolice);
+    };
 };
 class CLASS(Offroad_Covered): GCLASS(Offroad_Covered) {
     scope = 0;

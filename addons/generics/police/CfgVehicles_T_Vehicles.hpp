@@ -98,3 +98,30 @@ class CLASS2(SIDE,Otokar_RCWS): GCLASS(Otokar_RCWS) {
 };
 
 #undef TEMPLATE_CAMO
+#define TEMPLATE_CAMO Police
+
+class CLASS2(SIDE,Offroad_Police): CLASS(Offroad) {
+    SCOPE_DLC;
+    faction = QGCLASS(police);
+    side = TEMPLATE_SIDE;
+    crew = QCLASS2(SIDE,Policeman);
+    editorSubcategory = QPCLASS2(NATION,Patrol_vehicles);
+    textureList[] = {QUOTE(TEMPLATE_CAMO),1};
+};
+class CLASS2(SIDE,Offroad_Covered_Police): CLASS(Offroad_Covered) {
+    SCOPE_DLC;
+    faction = QGCLASS(police);
+    side = TEMPLATE_SIDE;
+    crew = QCLASS2(SIDE,Policeman);
+    editorSubcategory = QPCLASS2(NATION,Patrol_vehicles);
+    textureList[] = {QUOTE(TEMPLATE_CAMO),1};
+};
+class CLASS2(SIDE,Offroad_Comms_Police): GCLASS(Offroad_Comms) {
+    SCOPE_DLC;
+    faction = QGCLASS(police);
+    side = TEMPLATE_SIDE;
+    crew = QCLASS2(SIDE,Policeman);
+    editorSubcategory = QPCLASS2(NATION,Patrol_vehicles);
+    textureList[] = {QUOTE(TEMPLATE_CAMO),1};
+};
+#undef TEMPLATE_CAMO
