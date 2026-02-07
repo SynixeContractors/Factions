@@ -1,23 +1,23 @@
-class GCLASS(Comanche);
-class CLASS(Comanche): GCLASS(Comanche) {
+class GCLASS(Roooikat);
+class CLASS(Roooikat): GCLASS(Roooikat) {
     SCOPE_DLC;
     faction = TEMPLATE_FACTION;
     side = TEMPLATE_SIDE;
-    crew = QCLASS(HeliPilot);
-    typicalCargo[] = {QCLASS(HeliPilot)};
+    crew = QCLASS(Crewman);
+    typicalCargo[] = {QCLASS(Crewman)};
     #ifdef TEMPLATE_CAMO_LIST
     textureList[] = TEMPLATE_CAMO_LIST;
     #else
     textureList[] = {QUOTE(TEMPLATE_CAMO),1};
     #endif
 };
-class GCLASS(Comanche_Pylons);
-class CLASS(Comanche_Pylons): GCLASS(Comanche_Pylons) {
+class GCLASS(Roooikat_ERA);
+class CLASS(Roooikat_ERA): GCLASS(Roooikat_ERA) {
     SCOPE_DLC;
     faction = TEMPLATE_FACTION;
     side = TEMPLATE_SIDE;
-    crew = QCLASS(HeliPilot);
-    typicalCargo[] = {QCLASS(HeliPilot)};
+    crew = QCLASS(Crewman);
+    typicalCargo[] = {QCLASS(Crewman)};
     #ifdef TEMPLATE_CAMO_LIST
     textureList[] = TEMPLATE_CAMO_LIST;
     #else

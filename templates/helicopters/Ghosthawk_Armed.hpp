@@ -1,5 +1,5 @@
-class GCLASS(Comanche);
-class CLASS(Comanche): GCLASS(Comanche) {
+class GCLASS(Ghosthawk_M134);
+class CLASS(Ghosthawk_M134): GCLASS(Ghosthawk_M134) {
     SCOPE_DLC;
     faction = TEMPLATE_FACTION;
     side = TEMPLATE_SIDE;
@@ -11,8 +11,8 @@ class CLASS(Comanche): GCLASS(Comanche) {
     textureList[] = {QUOTE(TEMPLATE_CAMO),1};
     #endif
 };
-class GCLASS(Comanche_Pylons);
-class CLASS(Comanche_Pylons): GCLASS(Comanche_Pylons) {
+class GCLASS(Ghosthawk_Pylons);
+class CLASS(Ghosthawk_Pylons): GCLASS(Ghosthawk_Pylons) {
     SCOPE_DLC;
     faction = TEMPLATE_FACTION;
     side = TEMPLATE_SIDE;

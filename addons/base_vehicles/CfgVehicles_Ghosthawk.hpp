@@ -1,4 +1,4 @@
-class B_Heli_Transport_01_unarmed;
+ADD_CAMO_EVENT_HANDLER(B_Heli_Transport_01_unarmed,Heli_Transport_01_unarmed_base);
 class GCLASS(Ghosthawk): B_Heli_Transport_01_unarmed {
     displayName = "UH-80 Ghosthawk";
     faction = QGCLASS(base_vehicles);
@@ -7,6 +7,7 @@ class GCLASS(Ghosthawk): B_Heli_Transport_01_unarmed {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 1100;
+    #include "eventhandler_camo.hpp"
     #include "textures/Ghosthawk.hpp"
 };
 
@@ -22,7 +23,7 @@ class GCLASS(Ghosthawk_MEV): B_Heli_Transport_01_unarmed {
     class TextureSources {};
 };
 
-class B_Heli_Transport_01_F;
+ADD_CAMO_EVENT_HANDLER(B_Heli_Transport_01_F,Heli_Transport_01_base_F);
 class GCLASS(Ghosthawk_M134): B_Heli_Transport_01_F {
     displayName = "UH-80 Ghosthawk (M134)";
     faction = QGCLASS(base_vehicles);
@@ -31,10 +32,11 @@ class GCLASS(Ghosthawk_M134): B_Heli_Transport_01_F {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 1100;
+    #include "eventhandler_camo.hpp"
     #include "textures/Ghosthawk.hpp"
 };
 
-class B_Heli_Transport_01_pylons_F;
+ADD_CAMO_EVENT_HANDLER(B_Heli_Transport_01_pylons_F,Heli_Transport_01_pylons_base_F);
 class GCLASS(Ghosthawk_Pylons): B_Heli_Transport_01_pylons_F {
     displayName = "UH-80 Ghosthawk (Pylons)";
     faction = QGCLASS(base_vehicles);
@@ -43,5 +45,6 @@ class GCLASS(Ghosthawk_Pylons): B_Heli_Transport_01_pylons_F {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 2200;
+    #include "eventhandler_camo.hpp"
     #include "textures/Ghosthawk.hpp"
 };

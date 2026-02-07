@@ -73,4 +73,15 @@
         ],
         "genericNames": "Russian"
     },
+    "Illianz": {
+        "identityTypes": [
+            "Head_NATO",
+            "Head_Enoch",
+            "Head_TK",
+            "Head_Tanoan",
+            "lxWS_Head_African",
+            "LanguageFRE_F"
+        ],
+        "genericNames": "French"
+    },
 }
