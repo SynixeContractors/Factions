@@ -64,20 +64,55 @@ fn parse_json_array(json_str) {
     while i < json_str.len() {
         let char = json_str[i];
         
-        if char == '"' {
+        if char == '[' {
+            // Determine where the array ends, then recursively parse it
+            let depth = 1;
+            let array_str = "[";
+            i += 1;
+            while i < json_str.len() && depth > 0 {
+                let char = json_str[i];
+                array_str += char;
+                if char == '[' {
+                    depth += 1;
+                } else if char == ']' {
+                    depth -= 1;
+                }
+                i += 1;
+            }
+            if depth != 0 {
+                fatal("Mismatched brackets in JSON array: " + json_str);
+            }
+            result.push(parse_json_array(array_str));
+        } else if char == '"' {
             if in_string {
                 // End of string
+                current += "\"";
                 result.push(current);
                 current = "";
                 in_string = false;
             } else {
                 // Start of string
+                current = "\"";
                 in_string = true;
             }
         } else if in_string {
             current += char;
         } else if char == ']' {
+            current.trim();
+            if current != "" {
+                result.push(current);
+            }
             break;
+        } else if char == ',' {
+            current.trim();
+            if current != "" {
+                result.push(current);
+            }
+            current = "";
+        } else if char == ' ' {
+            // skip
+        } else {
+            current += char;
         }
         
         i += 1;
@@ -344,7 +379,7 @@ fn overlay_properties(base, file, key) {
     }
     overlay = overlay[key];
     for key in overlay.keys() {
-        if file == "identities" && key == "displayName" {
+        if file == "identities" && (key == "displayName" || key == "generic") {
             continue;
         }
         base[key] = overlay[key];
@@ -396,21 +431,37 @@ fn replace_placeholder(text, value) {
     return result;
 }
 
-fn parse_macro(line) {
-    if !line.starts_with("@") {
-        fatal("Line does not start with @: " + line);
+fn is_alphanumeric(char) {
+    return (char >= "a" && char <= "z") || (char >= "A" && char <= "Z") || (char >= "0" && char <= "9") || char == "_";
+}
+
+fn replace_placeholder_map(text, map) {
+    let result = "";
+    let i = 0;
+    while i < text.len() {
+        if text[i] == "$" && i + 1 < text.len() {
+            let key = "";
+            let j = i + 1;
+            while j < text.len() && (is_alphanumeric(text[j])) {
+                key += text[j];
+                j += 1;
+            }
+            if key in map {
+                result += map[key];
+            } else {
+                fatal("Unknown placeholder: " + key);
+            }
+            i = j;
+        } else {
+            result += text[i];
+            i += 1;
+        }
     }
+    return result;
+}
 
-    let name_end = line.index_of('(');
-    if name_end == -1 {
-        fatal("Macro does not have parentheses: " + line);
-    }
-    let name = line.sub_string(1, name_end - 1);
-    name.trim();
-    debug("Macro name: " + name);
-
-    let args_start = name_end + 1;
-
+fn parse_macro_args(line) {
+    let args_start = 0;
     let args = [];
     if line[args_start] == "{" {
         let json_end = line.index_of("});");
@@ -442,7 +493,26 @@ fn parse_macro(line) {
             }
         }
     }
+    return args;
+}
 
+fn parse_macro(line) {
+    if !line.starts_with("@") {
+        fatal("Line does not start with @: " + line);
+    }
+
+    let name_end = line.index_of('(');
+    if name_end == -1 {
+        fatal("Macro does not have parentheses: " + line);
+    }
+    let name = line.sub_string(1, name_end - 1);
+    name.trim();
+    debug("Macro name: " + name);
+
+    let args_start = name_end + 1;
+
+    let args_line = line.sub_string(args_start);
+    let args = parse_macro_args(args_line);
     debug("Macro args: " + args);
 
     let ret = "";
@@ -527,10 +597,37 @@ respawnLinkedItems[] = {};
             // This should not be called directly, handled in process_lines
             fatal("@For must be paired with @EndFor");
         }
+        "ForSides" => {
+            // This should not be called directly, handled in process_lines
+            fatal("@ForSides must be paired with @EndFor");
+        }
         _ => {
             fatal("Unknown macro name: " + name);
         }
     }
+}
+
+fn find_block(lines, line_index, target) {
+    let for_body_start = line_index + 1;
+    let for_body_end = for_body_start;
+    while for_body_end < lines.len() {
+        let check_line = lines[for_body_end];
+        check_line.trim();
+        if check_line.starts_with(target) {
+            break;
+        }
+        for_body_end += 1;
+    }
+    
+    if for_body_end >= lines.len() {
+        fatal("Could not find " + target);
+    }
+
+    let body_lines = [];
+    for i in for_body_start..for_body_end {
+        body_lines.push(lines[i]);
+    }
+    return [body_lines, for_body_end];
 }
 
 fn process_lines(lines, start_index) {
@@ -541,7 +638,77 @@ fn process_lines(lines, start_index) {
         let line = lines[index];
         line.trim();
         
-        if line.starts_with("@For") {
+        if line.starts_with("@ForSides(") {
+            let args_line = line.sub_string(line.index_of('(') + 1);
+            let args = parse_macro_args(args_line);
+            let data = #{};
+            for i in 0..args.len() {
+                let side = args[i];
+                switch side {
+                    "BLUFOR" => {
+                        data[side] = #{
+                            SIDE: 1,
+                            UPPER: "BLUFOR",
+                            LOWER: "blufor",
+                        }
+                    }
+                    "OPFOR" => {
+                        data[side] = #{
+                            SIDE: 0,
+                            UPPER: "OPFOR",
+                            LOWER: "opfor",
+                        }
+                    }
+                    "INDEP" => {
+                        data[side] = #{
+                            SIDE: 2,
+                            UPPER: "INDEP",
+                            LOWER: "indep",
+                        }
+                    }
+                    "CIV" => {
+                        data[side] = #{
+                            SIDE: 3,
+                            UPPER: "CIV",
+                            LOWER: "civ",
+                        }
+                    }
+                    _ => {
+                        fatal("Unknown side in @ForSides: " + side);
+                    }
+                }
+            }
+            let block = find_block(lines, index, "@EndForSides");
+            for side in args {
+                let side_data = data[side];
+                for body_line in block[0] {
+                    let processed_line = replace_placeholder_map(body_line, side_data);
+                    
+                    // Check if line contains a macro
+                    processed_line.trim();
+                    if processed_line.starts_with("@") {
+                        // Parse and expand the macro
+                        let depth = 0;
+                        let macro_text = processed_line;
+                        for char in macro_text.chars() {
+                            if char == '(' {
+                                depth += 1;
+                            } else if char == ')' {
+                                depth -= 1;
+                            }
+                        }
+                        if depth == 0 {
+                            replacement += parse_macro(macro_text) + "\n";
+                        } else {
+                            fatal("Malformed macro in @ForSides body: " + macro_text);
+                        }
+                    } else {
+                        replacement += processed_line + "\n";
+                    }
+                }
+            }
+            index = block[1];
+        } else if line.starts_with("@For(") {
             // Parse the @For arguments
             let depth = 0;
             let macro_text = "";
@@ -564,7 +731,6 @@ fn process_lines(lines, start_index) {
                 line_index += 1;
             }
             
-            // Extract array from @For([...])
             let args_start = macro_text.index_of('(') + 1;
             let args_end = macro_text.index_of(')');
             let raw_json = macro_text.sub_string(args_start, args_end - args_start);
@@ -572,6 +738,9 @@ fn process_lines(lines, start_index) {
             if raw_json == "Identities" {
                 let identities = load_json("identities");
                 for id in identities.keys() {
+                    if "generic" in identities[id] && identities[id].generic == false {
+                        continue;
+                    }
                     let displayName = id;
                     if "displayName" in identities[id] {
                         displayName = identities[id].displayName;
@@ -579,34 +748,14 @@ fn process_lines(lines, start_index) {
                     items.push([id, displayName]);
                 }
             } else {
-                items = parse_json_array(raw_json);
+                items = parse_json_array("[" + raw_json + "]");
             }
             
-            // Find @EndFor
-            let for_body_start = line_index + 1;
-            let for_body_end = for_body_start;
-            while for_body_end < lines.len() {
-                let check_line = lines[for_body_end];
-                check_line.trim();
-                if check_line.starts_with("@EndFor") {
-                    break;
-                }
-                for_body_end += 1;
-            }
-            
-            if for_body_end >= lines.len() {
-                fatal("@For without matching @EndFor");
-            }
-            
-            // Extract body lines
-            let body_lines = [];
-            for i in for_body_start..for_body_end {
-                body_lines.push(lines[i]);
-            }
+            let block = find_block(lines, line_index, "@EndFor");
             
             // Process body for each item
             for item in items {
-                for body_line in body_lines {
+                for body_line in block[0] {
                     let processed_line = replace_placeholder(body_line, item);
                     
                     // Check if line contains a macro
@@ -633,7 +782,7 @@ fn process_lines(lines, start_index) {
                 }
             }
             
-            index = for_body_end;
+            index = block[1];
         } else if line.starts_with("@") {
             let depth = 0;
             let macro_text = "";

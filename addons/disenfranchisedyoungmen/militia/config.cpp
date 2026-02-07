@@ -28,27 +28,13 @@ class CfgVehicles {
     class GCLASS(Van_Transport);
     class GCLASS(QuadBike);
 
-    #define SIDE OPFOR
-    #define SIDE_NUMBER 0
-    #define SIDE_FACTION t4_opfor
+    @ForSides(OPFOR,INDEP,BLUFOR)
+    #define SIDE $UPPER
+    #define SIDE_NUMBER $SIDE
+    #define SIDE_FACTION t4_$LOWER
     #include "CfgVehicles.hpp"
     #undef SIDE
     #undef SIDE_NUMBER
     #undef SIDE_FACTION
-
-    #define SIDE INDEP
-    #define SIDE_NUMBER 2
-    #define SIDE_FACTION t4_indep
-    #include "CfgVehicles.hpp"
-    #undef SIDE
-    #undef SIDE_NUMBER
-    #undef SIDE_FACTION
-
-    #define SIDE BLUFOR
-    #define SIDE_NUMBER 1
-    #define SIDE_FACTION t4_blufor
-    #include "CfgVehicles.hpp"
-    #undef SIDE
-    #undef SIDE_NUMBER
-    #undef SIDE_FACTION
+    @EndForSides
 };

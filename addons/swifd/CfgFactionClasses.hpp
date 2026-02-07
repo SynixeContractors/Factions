@@ -1,5 +1,5 @@
 class CfgFactionClasses {
-    class CLASS(civilian) {
+    class GCLASS(swifd) {
         SCOPE_DLC;
         displayName = "SwifD";
         priority = 1;

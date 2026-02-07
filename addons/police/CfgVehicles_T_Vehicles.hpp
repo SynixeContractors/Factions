@@ -5,7 +5,7 @@ class CLASS2(SIDE,Offroad): CLASS(Offroad) {
     faction = QGCLASS(police);
     side = TEMPLATE_SIDE;
     crew = QCLASS2(SIDE,Gendarme);
-    editorSubcategory = QPCLASS2(NATION,Gendarmerie_vehicles);
+    editorSubcategory = QCLASS2(NATION,Gendarmerie_vehicles);
     textureList[] = {QUOTE(TEMPLATE_CAMO),1};
 };
 class CLASS2(SIDE,Offroad_Covered): CLASS(Offroad_Covered) {
@@ -13,7 +13,7 @@ class CLASS2(SIDE,Offroad_Covered): CLASS(Offroad_Covered) {
     faction = QGCLASS(police);
     side = TEMPLATE_SIDE;
     crew = QCLASS2(SIDE,Gendarme);
-    editorSubcategory = QPCLASS2(NATION,Gendarmerie_vehicles);
+    editorSubcategory = QCLASS2(NATION,Gendarmerie_vehicles);
     textureList[] = {QUOTE(TEMPLATE_CAMO),1};
 };
 class CLASS2(SIDE,Offroad_Comms): GCLASS(Offroad_Comms) {
@@ -21,7 +21,7 @@ class CLASS2(SIDE,Offroad_Comms): GCLASS(Offroad_Comms) {
     faction = QGCLASS(police);
     side = TEMPLATE_SIDE;
     crew = QCLASS2(SIDE,Gendarme);
-    editorSubcategory = QPCLASS2(NATION,Gendarmerie_vehicles);
+    editorSubcategory = QCLASS2(NATION,Gendarmerie_vehicles);
     textureList[] = {QUOTE(TEMPLATE_CAMO),1};
 };
 class CLASS2(SIDE,Van_Transport): CLASS(Van_Transport) {
@@ -29,7 +29,7 @@ class CLASS2(SIDE,Van_Transport): CLASS(Van_Transport) {
     faction = QGCLASS(police);
     side = TEMPLATE_SIDE;
     crew = QCLASS2(SIDE,Gendarme);
-    editorSubcategory = QPCLASS2(NATION,Gendarmerie_vehicles);
+    editorSubcategory = QCLASS2(NATION,Gendarmerie_vehicles);
     textureList[] = {QUOTE(TEMPLATE_CAMO),1};
 };
 class CLASS2(SIDE,Ram): CLASS(Ram) {
@@ -37,7 +37,7 @@ class CLASS2(SIDE,Ram): CLASS(Ram) {
     faction = QGCLASS(police);
     side = TEMPLATE_SIDE;
     crew = QCLASS2(SIDE,Gendarme);
-    editorSubcategory = QPCLASS2(NATION,Gendarmerie_vehicles);
+    editorSubcategory = QCLASS2(NATION,Gendarmerie_vehicles);
     textureList[] = {QUOTE(TEMPLATE_CAMO),1};
 };
 class CLASS2(SIDE,Ram_Covered): CLASS(Ram_Covered) {
@@ -45,7 +45,7 @@ class CLASS2(SIDE,Ram_Covered): CLASS(Ram_Covered) {
     faction = QGCLASS(police);
     side = TEMPLATE_SIDE;
     crew = QCLASS2(SIDE,Gendarme);
-    editorSubcategory = QPCLASS2(NATION,Gendarmerie_vehicles);
+    editorSubcategory = QCLASS2(NATION,Gendarmerie_vehicles);
     textureList[] = {QUOTE(TEMPLATE_CAMO),1};
 };
 class CLASS2(SIDE,Ram_Bars_Covered): CLASS(Ram_Bars_Covered) {
@@ -53,7 +53,7 @@ class CLASS2(SIDE,Ram_Bars_Covered): CLASS(Ram_Bars_Covered) {
     faction = QGCLASS(police);
     side = TEMPLATE_SIDE;
     crew = QCLASS2(SIDE,Gendarme);
-    editorSubcategory = QPCLASS2(NATION,Gendarmerie_vehicles);
+    editorSubcategory = QCLASS2(NATION,Gendarmerie_vehicles);
     textureList[] = {QUOTE(TEMPLATE_CAMO),1};
 };
 class CLASS2(SIDE,Ram_Bars): CLASS(Ram_Bars) {
@@ -61,7 +61,7 @@ class CLASS2(SIDE,Ram_Bars): CLASS(Ram_Bars) {
     faction = QGCLASS(police);
     side = TEMPLATE_SIDE;
     crew = QCLASS2(SIDE,Gendarme);
-    editorSubcategory = QPCLASS2(NATION,Gendarmerie_vehicles);
+    editorSubcategory = QCLASS2(NATION,Gendarmerie_vehicles);
     textureList[] = {QUOTE(TEMPLATE_CAMO),1};
 };
 class CLASS2(SIDE,Ram_Comms): GCLASS(Ram_Comms) {
@@ -69,7 +69,7 @@ class CLASS2(SIDE,Ram_Comms): GCLASS(Ram_Comms) {
     faction = QGCLASS(police);
     side = TEMPLATE_SIDE;
     crew = QCLASS2(SIDE,Gendarme);
-    editorSubcategory = QPCLASS2(NATION,Gendarmerie_vehicles);
+    editorSubcategory = QCLASS2(NATION,Gendarmerie_vehicles);
     textureList[] = {QUOTE(TEMPLATE_CAMO),1};
 };
 class CLASS2(SIDE,Otokar): GCLASS(Otokar) {
@@ -77,7 +77,7 @@ class CLASS2(SIDE,Otokar): GCLASS(Otokar) {
     faction = QGCLASS(police);
     side = TEMPLATE_SIDE;
     crew = QCLASS2(SIDE,Crewman);
-    editorSubcategory = QPCLASS2(NATION,Gendarmerie_vehicles);
+    editorSubcategory = QCLASS2(NATION,Gendarmerie_vehicles);
     textureList[] = {QUOTE(TEMPLATE_CAMO),1};
 };
 class CLASS2(SIDE,Otokar_HMG): GCLASS(Otokar_HMG) {
@@ -85,7 +85,7 @@ class CLASS2(SIDE,Otokar_HMG): GCLASS(Otokar_HMG) {
     faction = QGCLASS(police);
     side = TEMPLATE_SIDE;
     crew = QCLASS2(SIDE,Crewman);
-    editorSubcategory = QPCLASS2(NATION,Gendarmerie_vehicles);
+    editorSubcategory = QCLASS2(NATION,Gendarmerie_vehicles);
     textureList[] = {QUOTE(TEMPLATE_CAMO),1};
 };
 class CLASS2(SIDE,Otokar_RCWS): GCLASS(Otokar_RCWS) {
@@ -93,7 +93,7 @@ class CLASS2(SIDE,Otokar_RCWS): GCLASS(Otokar_RCWS) {
     faction = QGCLASS(police);
     side = TEMPLATE_SIDE;
     crew = QCLASS2(SIDE,Crewman);
-    editorSubcategory = QPCLASS2(NATION,Gendarmerie_vehicles);
+    editorSubcategory = QCLASS2(NATION,Gendarmerie_vehicles);
     textureList[] = {QUOTE(TEMPLATE_CAMO),1};
 };
 
@@ -105,7 +105,7 @@ class CLASS2(SIDE,Offroad_Police): CLASS(Offroad) {
     faction = QGCLASS(police);
     side = TEMPLATE_SIDE;
     crew = QCLASS2(SIDE,Policeman);
-    editorSubcategory = QPCLASS2(NATION,Patrol_vehicles);
+    editorSubcategory = QCLASS2(NATION,Patrol_vehicles);
     textureList[] = {QUOTE(TEMPLATE_CAMO),1};
 };
 class CLASS2(SIDE,Offroad_Covered_Police): CLASS(Offroad_Covered) {
@@ -113,7 +113,7 @@ class CLASS2(SIDE,Offroad_Covered_Police): CLASS(Offroad_Covered) {
     faction = QGCLASS(police);
     side = TEMPLATE_SIDE;
     crew = QCLASS2(SIDE,Policeman);
-    editorSubcategory = QPCLASS2(NATION,Patrol_vehicles);
+    editorSubcategory = QCLASS2(NATION,Patrol_vehicles);
     textureList[] = {QUOTE(TEMPLATE_CAMO),1};
 };
 class CLASS2(SIDE,Offroad_Comms_Police): GCLASS(Offroad_Comms) {
@@ -121,7 +121,7 @@ class CLASS2(SIDE,Offroad_Comms_Police): GCLASS(Offroad_Comms) {
     faction = QGCLASS(police);
     side = TEMPLATE_SIDE;
     crew = QCLASS2(SIDE,Policeman);
-    editorSubcategory = QPCLASS2(NATION,Patrol_vehicles);
+    editorSubcategory = QCLASS2(NATION,Patrol_vehicles);
     textureList[] = {QUOTE(TEMPLATE_CAMO),1};
 };
 #undef TEMPLATE_CAMO

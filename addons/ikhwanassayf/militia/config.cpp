@@ -34,19 +34,13 @@ class CfgVehicles {
     class GCLASS(Offroad_Armored_AT);
     class GCLASS(Jay_Fuel);
 
-    #define SIDE OPFOR
-    #define SIDE_NUMBER 0
-    #define SIDE_FACTION t4_opfor
+    @ForSides(OPFOR,INDEP)
+    #define SIDE $UPPER
+    #define SIDE_NUMBER $SIDE
+    #define SIDE_FACTION t4_$LOWER
     #include "CfgVehicles.hpp"
     #undef SIDE
     #undef SIDE_NUMBER
     #undef SIDE_FACTION
-
-    #define SIDE INDEP
-    #define SIDE_NUMBER 2
-    #define SIDE_FACTION t4_indep
-    #include "CfgVehicles.hpp"
-    #undef SIDE
-    #undef SIDE_NUMBER
-    #undef SIDE_FACTION
+    @EndForSides
 };

@@ -1,6 +1,6 @@
 class CfgVehicles {
-    class PCLASS(Base);
-    class CLASS(Base): PCLASS(Base) {
+    class GCLASS(Base_CIV);
+    class CLASS(Base): GCLASS(Base_CIV) {
         faction = QGCLASS(police);
         factionTest = QUOTE(PREFIX);
         displayName = "Police Base Unit";
@@ -16,18 +16,11 @@ class CfgVehicles {
 
     #include "CfgVehicles_Vehicles.hpp"
 
-    #define TEMPLATE_SIDE 0
-    #define SIDE DOUBLES(NATION,OPFOR)
+    @ForSides(OPFOR,BLUFOR,INDEP,CIV)
+    #define TEMPLATE_SIDE $SIDE
+    #define SIDE DOUBLES(NATION,$UPPER)
     #include "CfgVehicles_Sides.hpp"
     #undef SIDE
     #undef TEMPLATE_SIDE
-    #define TEMPLATE_SIDE 1
-    #define SIDE DOUBLES(NATION,BLUFOR)
-    #include "CfgVehicles_Sides.hpp"
-    #undef SIDE
-    #undef TEMPLATE_SIDE
-    #define TEMPLATE_SIDE 2
-    #define SIDE DOUBLES(NATION,INDEP)
-    #include "CfgVehicles_Sides.hpp"
-
+    @EndForSides
 };

@@ -1,25 +1,11 @@
 class CfgVehicles {
-    class GCLASS(Base_OPFOR);
-    class CLASS2(OPFOR,Base): GCLASS(Base_OPFOR) {
-        faction = QCLASS(t4_opfor);
+    @ForSides(OPFOR,INDEP,BLUFOR)
+    class GCLASS(Base_$UPPER);
+    class CLASS2($UPPER,Base): GCLASS(Base_$UPPER) {
+        faction = QCLASS(t4_$LOWER);
         displayName = "DYM Base";
         @Identity(Livonia);
         @Templated();
     };
-
-    class GCLASS(Base_INDEP);
-    class CLASS2(INDEP,Base): GCLASS(Base_INDEP) {
-        faction = QCLASS(t4_indep);
-        displayName = "DYM Base";
-        @Identity(Livonia);
-        @Templated();
-    };
-
-    class GCLASS(Base_BLUFOR);
-    class CLASS2(BLUFOR,Base): GCLASS(Base_BLUFOR) {
-        faction = QCLASS(t4_BLUFOR);
-        displayName = "DYM Base";
-        @Identity(Livonia);
-        @Templated();
-    };
+    @EndForSides
 };

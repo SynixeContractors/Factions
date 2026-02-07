@@ -1,5 +1,6 @@
 {
     "Synixe": {
+        "generic": false,
         "displayName": "Synixe Contractors",
         "identityTypes": [
             "Head_NATO",

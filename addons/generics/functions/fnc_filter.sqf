@@ -18,7 +18,7 @@ if (GVAR(selectedIdentity) == "All") exitWith {};
         };
         for "_j" from ((_ctrlTree tvCount [_i]) - 1) to 0 step -1 do {
             private _entryData = _ctrlTree tvData [_i, _j];
-            private _identity = getText (configFile >> "CfgEditorSubcategories" >> _entryData >> QGVAR(identity));
+            private _identity = getText (configFile >> "CfgEditorSubcategories" >> _entryData >> "synixe_factions_identity");
             if (_identity == "") then {
                 continue;
             };

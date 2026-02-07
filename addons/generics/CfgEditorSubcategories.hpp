@@ -1,36 +1,19 @@
 class CfgEditorSubcategories {
     @For(Identities)
-        class CLASS($1_Patrol) {
+        class CLASS($1) {
             SCOPE_DLC;
-            displayName = "Men (Patrol, $2)";
-            GVAR(identity) = "$1";
+            displayName = "Men ($2)";
+            GCLASS(identity) = "$1";
         };
-        class CLASS($1_SWAT) {
+        class CLASS($1_cars) {
             SCOPE_DLC;
-            displayName = "Men (SWAT, $2)";
-            GVAR(identity) = "$1";
+            displayName = "Cars ($2)";
+            GCLASS(identity) = "$1";
         };
-        class CLASS($1_Gendarmerie) {
+        class CLASS($1_helicopters) {
             SCOPE_DLC;
-            displayName = "Men (Gendarmerie, $2)";
-            GVAR(identity) = "$1";
-        };
-    @EndFor
-    @For(Identities)
-        class CLASS($1_Patrol_vehicles) {
-            SCOPE_DLC;
-            displayName = "Vehicles (Patrol, $2)";
-            GVAR(identity) = "$1";
-        };
-        class CLASS($1_SWAT_vehicles) {
-            SCOPE_DLC;
-            displayName = "Vehicles (SWAT, $2)";
-            GVAR(identity) = "$1";
-        };
-        class CLASS($1_Gendarmerie_vehicles) {
-            SCOPE_DLC;
-            displayName = "Vehicles (Gendarmerie, $2)";
-            GVAR(identity) = "$1";
+            displayName = "Helicopters ($2)";
+            GCLASS(identity) = "$1";
         };
     @EndFor
 };

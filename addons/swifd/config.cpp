@@ -16,6 +16,10 @@ class CfgPatches {
     };
 };
 
+class synixe_factions_generics {
+    class GCLASS(swifd) {};
+};
+
 #include "CfgFactionClasses.hpp"
 #include "CfgVehicles.hpp"
 #include "CfgWeapons.hpp"

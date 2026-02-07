@@ -1,6 +1,6 @@
 class CLASS2(SIDE,Gendarme): CLASS2(SIDE,Policeman) {
     @Role(Pistol);
-    editorSubcategory = QPCLASS2(NATION,Gendarmerie);
+    editorSubcategory = QCLASS2(NATION,Gendarmerie);
     @Headgear({
         "H_PASGT_basic_blue_F": 1,
     });
