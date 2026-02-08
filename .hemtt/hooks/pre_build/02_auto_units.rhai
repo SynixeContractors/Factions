@@ -13,7 +13,7 @@ fn get_vehicle_configs(folder) {
     return children;
 }
 
-let ignore = ["civilians","main"];
+let ignore = ["police","civilians","main"];
 
 let addons = HEMTT_VFS.join("addons").list();
 for addon in addons {
@@ -119,6 +119,9 @@ for addon in addons {
                 new_content += new_line + "\n";
             }
             config.create_file().write(new_content);
+            // let parent = HEMTT_RFS.join("auto_units").join(addon.file_name());
+            // parent.create_dir_all();
+            // parent.join("config.cpp").create_file().write(new_content);
         }
     }
 }

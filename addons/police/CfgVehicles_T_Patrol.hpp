@@ -4,6 +4,7 @@ class CLASS2(SIDE,Policeman): CLASS2(Base,NATION) {
     @Role(Worker);
     side = TEMPLATE_SIDE;
     editorSubcategory = QCLASS2(NATION,Patrol);
+    faction = FACTION;
 
     @Uniforms({
         "variants": {

@@ -60,9 +60,9 @@ class GCLASS(Ram_Covered): Pickup_covered_base_rf {
 };
 class GCLASS(Ram_Comms);
 
-
 class CLASS(Offroad): GCLASS(Offroad) {
     scope = 0;
+    scopeCurator = 0;
     textureList[] = {QUOTE(TEMPLATE_CAMO),1};
     class AnimationSources: AnimationSources {
         ANIMATION_OFF(hidePolice);
@@ -70,6 +70,7 @@ class CLASS(Offroad): GCLASS(Offroad) {
 };
 class CLASS(Offroad_Covered): GCLASS(Offroad_Covered) {
     scope = 0;
+    scopeCurator = 0;
     textureList[] = {QUOTE(TEMPLATE_CAMO),1};
     class AnimationSources: AnimationSources {
         ANIMATION_OFF(hidePolice);
@@ -77,6 +78,7 @@ class CLASS(Offroad_Covered): GCLASS(Offroad_Covered) {
 };
 class CLASS(Van_Transport): GCLASS(Van_Transport) {
     scope = 0;
+    scopeCurator = 0;
     textureList[] = {QUOTE(TEMPLATE_CAMO),1};
     class AnimationSources: AnimationSources {
         ANIMATION_OFF(beacon_front_hide);
@@ -90,6 +92,7 @@ class CLASS(Van_Transport): GCLASS(Van_Transport) {
 };
 class CLASS(Ram_Covered): GCLASS(Ram_Covered) {
     scope = 0;
+    scopeCurator = 0;
     textureList[] = {QUOTE(TEMPLATE_CAMO),1};
     class AnimationSources: AnimationSources {
         ANIMATION_OFF(hide_police);
@@ -97,6 +100,7 @@ class CLASS(Ram_Covered): GCLASS(Ram_Covered) {
 };
 class CLASS(Ram_Bars_Covered): GCLASS(Ram_Covered) {
     scope = 0;
+    scopeCurator = 0;
     displayName = "Ram 1500 (Bars, Covered)";
     textureList[] = {QUOTE(TEMPLATE_CAMO),1};
     class AnimationSources: AnimationSources {
@@ -111,6 +115,7 @@ class CLASS(Ram_Bars_Covered): GCLASS(Ram_Covered) {
 };
 class CLASS(Ram_Bars): CLASS(Ram_Bars_Covered) {
     scope = 0;
+    scopeCurator = 0;
     displayName = "Ram 1500 (Bars)";
     textureList[] = {QUOTE(TEMPLATE_CAMO),1};
     class AnimationSources: AnimationSources {
@@ -124,6 +129,7 @@ class CLASS(Ram_Bars): CLASS(Ram_Bars_Covered) {
 };
 class CLASS(Ram): GCLASS(Ram) {
     scope = 0;
+    scopeCurator = 0;
     textureList[] = {QUOTE(TEMPLATE_CAMO),1};
 };
 

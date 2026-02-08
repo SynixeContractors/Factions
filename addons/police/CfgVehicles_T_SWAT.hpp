@@ -1,6 +1,7 @@
 class CLASS2(SIDE,SWAT): CLASS2(SIDE,Policeman) {
     @Role(Hidden);
     editorSubcategory = QCLASS2(NATION,SWAT);
+    faction = FACTION;
     @Headgear({
         "H_PASGT_basic_blue_F": 1,
     });

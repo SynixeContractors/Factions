@@ -1,7 +1,10 @@
 class CfgFactionClasses {
-    class GCLASS(police) {
+    @ForSides(BLUFOR,INDEP,OPFOR,CIV)
+    class CLASS($LOWER) {
+        SCOPE_DLC;
         displayName = "Police";
         priority = 1;
-        side = 3; // Civilian
+        side = $SIDE;
     };
+    @EndForSides
 };
