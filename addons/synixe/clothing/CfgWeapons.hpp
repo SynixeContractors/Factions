@@ -22,7 +22,7 @@ class CfgWeapons {
         picture = QPATHTOF(clothing\ui\contractor_shirt_ca.paa);
 
         class ItemInfo: ItemInfo {
-            uniformClass = QCLASS(Unit_Contractor_Shirt);
+            uniformClass = QPCLASS(Unit_Contractor_Shirt);
         };
     };
 
@@ -34,7 +34,7 @@ class CfgWeapons {
         picture = QPATHTOF(clothing\ui\uniform_combat_ls_synixe_bp_ca.paa);
 
         class ItemInfo: ItemInfo {
-            uniformClass = QCLASS(Unit_Combat_LS_Synixe_BP_BB);
+            uniformClass = QPCLASS(Unit_Combat_LS_Synixe_BP_BB);
         };
     };
     class PCLASS(Uniform_Combat_RS_Synixe_BP_BB): PCLASS(Uniform_Base) {
@@ -44,7 +44,7 @@ class CfgWeapons {
         picture = QPATHTOF(clothing\ui\uniform_combat_rs_synixe_bp_ca.paa);
 
         class ItemInfo: ItemInfo {
-            uniformClass = QCLASS(Unit_Combat_RS_Synixe_BP_BB);
+            uniformClass = QPCLASS(Unit_Combat_RS_Synixe_BP_BB);
         };
     };
 };
