@@ -1,3 +1,22 @@
+#define HATCHBACK_TEXTURE_LIST textureList[] = {\
+    "Beige", HATCHBACK_TEXTURE_CIVILIAN,\
+    "Beigecustom", HATCHBACK_TEXTURE_CIVILIAN,\
+    "Black", HATCHBACK_TEXTURE_CIVILIAN,\
+    "Blue", HATCHBACK_TEXTURE_CIVILIAN,\
+    "Bluecustom", HATCHBACK_TEXTURE_CIVILIAN,\
+    "Dark", HATCHBACK_TEXTURE_CIVILIAN,\
+    "Green", HATCHBACK_TEXTURE_CIVILIAN,\
+    "Grey", HATCHBACK_TEXTURE_CIVILIAN,\
+    \
+    "Beige_wrap", HATCHBACK_TEXTURE_SPORT,\
+    "Blue_wrap", HATCHBACK_TEXTURE_SPORT,\
+    "Green_wrap", HATCHBACK_TEXTURE_SPORT,\
+    "Orange", HATCHBACK_TEXTURE_SPORT,\
+    "Red", HATCHBACK_TEXTURE_SPORT,\
+    "White", HATCHBACK_TEXTURE_SPORT,\
+}
+
+
 class C_Hatchback_01_F;
 class GCLASS(Hatchback): C_Hatchback_01_F {
     displayName = "Hatchback";
@@ -7,52 +26,13 @@ class GCLASS(Hatchback): C_Hatchback_01_F {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 80;
+    #define HATCHBACK_TEXTURE_CIVILIAN 1
+    #define HATCHBACK_TEXTURE_SPORT 0.1
+    HATCHBACK_TEXTURE_LIST;
+    #undef HATCHBACK_TEXTURE_CIVILIAN
+    #undef HATCHBACK_TEXTURE_SPORT
     class TextureSources {
-        class Beige {
-            displayName = "Beige";
-            textures[] = {"\A3\Soft_F_Gamma\Hatchback_01\data\Hatchback_01_ext_BASE01_CO.paa"};
-            factions[] = {};
-        };
-        class Green {
-            displayName = "Green";
-            textures[] = {"\A3\Soft_F_Gamma\Hatchback_01\data\Hatchback_01_ext_BASE02_CO.paa"};
-            factions[] = {};
-        };
-        class Blue {
-            displayName = "Blue";
-            textures[] = {"\A3\Soft_F_Gamma\Hatchback_01\data\Hatchback_01_ext_BASE03_CO.paa"};
-            factions[] = {};
-        };
-        class Bluecustom {
-            displayName = "Blue (Decal)";
-            textures[] = {"\A3\Soft_F_Gamma\Hatchback_01\data\Hatchback_01_ext_BASE04_CO.paa"};
-            factions[] = {};
-        };
-        class Beigecustom {
-            displayName = "Beige (Decal)";
-            textures[] = {"\A3\Soft_F_Gamma\Hatchback_01\data\Hatchback_01_ext_BASE05_CO.paa"};
-            factions[] = {};
-        };
-        class Yellow {
-            displayName = "Yellow";
-            textures[] = {"\A3\Soft_F_Gamma\Hatchback_01\data\Hatchback_01_ext_BASE06_CO.paa"};
-            factions[] = {};
-        };
-        class Grey {
-            displayName = "Silver";
-            textures[] = {"\A3\Soft_F_Gamma\Hatchback_01\data\Hatchback_01_ext_BASE07_CO.paa"};
-            factions[] = {};
-        };
-        class Black {
-            displayName = "Grey";
-            textures[] = {"\A3\Soft_F_Gamma\Hatchback_01\data\Hatchback_01_ext_BASE08_CO.paa"};
-            factions[] = {};
-        };
-        class Dark {
-            displayName = "Black";
-            textures[] = {"\A3\Soft_F_Gamma\Hatchback_01\data\Hatchback_01_ext_BASE09_CO.paa"};
-            factions[] = {};
-        };
+         #include "textures/Hatchback.hpp"
     };
 };
 
@@ -64,41 +44,12 @@ class GCLASS(Hatchback_Sport): C_Hatchback_01_sport_F {
     EMPTY_INVENTORY;
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
+    #define HATCHBACK_TEXTURE_CIVILIAN 1
+    #define HATCHBACK_TEXTURE_SPORT 1
+    HATCHBACK_TEXTURE_LIST;
+    #undef HATCHBACK_TEXTURE_CIVILIAN
+    #undef HATCHBACK_TEXTURE_SPORT
     class TextureSources {
-        class Red {
-            displayName = "Red";
-            textures[] = {"\A3\soft_f_gamma\Hatchback_01\data\Hatchback_01_ext_SPORT01_CO.paa"};
-            factions[] = {};
-        };
-        class Blue {
-            displayName = "Blue";
-            textures[] = {"\A3\soft_f_gamma\Hatchback_01\data\Hatchback_01_ext_SPORT02_CO.paa"};
-            factions[] = {};
-        };
-        class Orange {
-            displayName = "Orange";
-            textures[] = {"\A3\soft_f_gamma\Hatchback_01\data\Hatchback_01_ext_SPORT03_CO.paa"};
-            factions[] = {};
-        };
-        class White {
-            displayName = "White";
-            textures[] = {"\A3\soft_f_gamma\Hatchback_01\data\Hatchback_01_ext_SPORT04_CO.paa"};
-            factions[] = {};
-        };
-        class Beige {
-            displayName = "Beige";
-            textures[] = {"\A3\soft_f_gamma\Hatchback_01\data\Hatchback_01_ext_SPORT05_CO.paa"};
-            factions[] = {};
-        };
-        class Green {
-            displayName = "Green";
-            textures[] = {"\A3\soft_f_gamma\Hatchback_01\data\Hatchback_01_ext_SPORT06_CO.paa"};
-            factions[] = {};
-        };
-        class Grey {
-            displayName = "Grey";
-            textures[] = {"\A3\Soft_F_Gamma\Hatchback_01\data\Hatchback_01_ext_BASE07_CO.paa"};
-            factions[] = {};
-        };
+        #include "textures/Hatchback.hpp"
     };
 };
