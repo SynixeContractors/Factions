@@ -123,7 +123,7 @@ class GCLASS(LUT_MRL): Truck_02_MRL_base_F {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 210;
-    LUT_TEXTURE_LIST;
+    // no civlian use for randomization
     #include "eventhandler_camo.hpp"
     #include "textures\LUTMRL.hpp"
 };
