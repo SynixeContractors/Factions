@@ -14,11 +14,10 @@
   "White",1, \
   "Yellow",1,\
 }
+
+
 class Pickup_01_base_rf;
-class C_Pickup_rf: Pickup_01_base_rf {
-  class AnimationSources;
-};
-class GCLASS(Ram): C_Pickup_rf {
+class GCLASS(Ram): Pickup_01_base_rf {
     displayName = "Ram 1500";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
@@ -26,31 +25,6 @@ class GCLASS(Ram): C_Pickup_rf {
     ace_refuel_fuelCapacity = 98;
     RAM_TEXTURE_LIST;
     #include "textures\Ram.hpp"
-    class AnimationSources: AnimationSources {
-        class hide_armor_window_armor_top;
-        class hide_armor_window_armor_front;
-        class hide_armor_window_armor_F_L;
-        class hide_armor_window_armor_F_R;
-        class hide_armor_window_armor_R_L;
-        class hide_armor_window_armor_R_R;
-    };
-};
-class GCLASS(Ram_Armored): GCLASS(Ram) {
-    displayName = "Ram 1500 (UP)";
-    faction = QGCLASS(base_vehicles);
-    SCOPE_DLC_VEHICLE;
-    EMPTY_INVENTORY;
-    ace_refuel_fuelCapacity = 98;
-    RAM_TEXTURE_LIST;
-    #include "textures\Ram.hpp"
-    class AnimationSources: AnimationSources {
-        ANIMATION_OFF(hide_armor_window_armor_top);
-        ANIMATION_OFF(hide_armor_window_armor_front);
-        ANIMATION_OFF(hide_armor_window_armor_F_L);
-        ANIMATION_OFF(hide_armor_window_armor_F_R);
-        ANIMATION_OFF(hide_armor_window_armor_R_L);
-        ANIMATION_OFF(hide_armor_window_armor_R_R);
-    };
 };
 class Pickup_covered_base_rf;
 class GCLASS(Ram_Covered): Pickup_covered_base_rf {
@@ -66,15 +40,6 @@ class GCLASS(Ram_Covered): Pickup_covered_base_rf {
 class Pickup_01_hmg_base_rf;
 class GCLASS(Ram_HMG): Pickup_01_hmg_base_rf {
     displayName = "Ram 1500 (HMG)";
-    faction = QGCLASS(base_vehicles);
-    SCOPE_DLC_VEHICLE;
-    EMPTY_INVENTORY;
-    ace_refuel_fuelCapacity = 98;
-    RAM_TEXTURE_LIST;
-    #include "textures\Ram.hpp"
-};
-class GCLASS(Ram_Armored_HMG): Pickup_01_hmg_base_rf {
-    displayName = "Ram 1500 (UP,HMG)";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
