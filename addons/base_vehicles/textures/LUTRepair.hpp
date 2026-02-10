@@ -19,7 +19,7 @@ class TextureSources {
         };
         factions[] = {};
     };
-    class OrangeOrange {
+    class Orange {
         displayName = "Orange";
         textures[] = {
             "\A3\Soft_F_Beta\Truck_02\Data\Truck_02_kab_CO.paa",
@@ -39,7 +39,7 @@ class TextureSources {
         };
         factions[] = {};
     };
-    class BlueOrange {
+    class Blue {
         displayName = "Blue Orange";
         textures[] = {
             "\A3\Soft_F_Beta\Truck_02\Data\Truck_02_kab_blue_CO.paa",

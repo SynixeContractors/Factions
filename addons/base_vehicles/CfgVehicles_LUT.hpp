@@ -1,3 +1,15 @@
+#define LUT_TEXTURE_LIST textureList[] = {\
+  "Black",1,\
+  "Blue",1,\
+  "Brown",1,\
+  "Green",1,\
+  "Lime",1,\
+  "Orange",1,\
+  "Sand",1,\
+  "Yellow",1,\
+}
+
+
 class Truck_02_transport_base_F;
 class GCLASS(LUT_Transport): Truck_02_transport_base_F {
     displayName = "LUT (Transport)";
@@ -7,6 +19,7 @@ class GCLASS(LUT_Transport): Truck_02_transport_base_F {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 210;
+    LUT_TEXTURE_LIST;
     #include "textures\LUTTransport.hpp"
 };
 
@@ -19,6 +32,7 @@ class GCLASS(LUT_TransportCovered): Truck_02_base_F {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 210;
+    LUT_TEXTURE_LIST;
     #include "textures\LUTTransport.hpp"
 };
 
@@ -31,6 +45,7 @@ class GCLASS(LUT_Repair): Truck_02_box_base_F {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 210;
+    LUT_TEXTURE_LIST;
     #include "textures\LUTRepair.hpp"
 };
 
@@ -43,6 +58,7 @@ class GCLASS(LUT_Medical): Truck_02_medical_base_F {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 210;
+    LUT_TEXTURE_LIST;
     #include "textures\LUTTransport.hpp"
 };
 
@@ -55,6 +71,7 @@ class GCLASS(LUT_Fuel): Truck_02_fuel_base_F {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 210;
+    LUT_TEXTURE_LIST;
     #include "textures\LUTFuel.hpp"
 };
 
@@ -67,6 +84,7 @@ class GCLASS(LUT_Cargo): Truck_02_cargo_base_lxWS {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 210;
+    LUT_TEXTURE_LIST;
     #include "textures\LUTBed.hpp"
 };
 
@@ -79,6 +97,7 @@ class GCLASS(LUT_Flatbed): Truck_02_flatbed_base_lxWS {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 210;
+    LUT_TEXTURE_LIST;
     #include "textures\LUTBed.hpp"
 };
 
@@ -91,6 +110,7 @@ class GCLASS(LUT_Ammo): Truck_02_Ammo_base_F {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 210;
+    LUT_TEXTURE_LIST;
     #include "textures\LUTRepair.hpp"
 };
 
@@ -103,6 +123,7 @@ class GCLASS(LUT_MRL): Truck_02_MRL_base_F {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 210;
+    LUT_TEXTURE_LIST;
     #include "eventhandler_camo.hpp"
     #include "textures\LUTMRL.hpp"
 };
@@ -116,5 +137,6 @@ class GCLASS(LUT_AA): Truck_02_aa_base_lxWS {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 210;
+    LUT_TEXTURE_LIST;
     #include "textures\LUTAA.hpp"
 };
