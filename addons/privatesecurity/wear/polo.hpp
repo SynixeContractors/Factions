@@ -111,7 +111,6 @@
         "tacs_Uniform_Floral_JP_BS_LP_BB": 1,
         "tacs_Uniform_Floral_JP_GS_LP_BB": 1,
         "tacs_Uniform_Floral_JP_WS_LP_BB": 1,
-        "tacs_Uniform_Floral_SP_BS_LP_BB": 1,
         "tacs_Uniform_Plaid_BP_LPP_BP_BB": 1,
         "tacs_Uniform_Plaid_BP_LY_BP_BB": 1,
         "tacs_Uniform_Plaid_JP_CB_BP_BB": 1,
