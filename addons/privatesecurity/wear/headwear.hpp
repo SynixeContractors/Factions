@@ -6,7 +6,6 @@
     "synixe_mgp_h_cap_cb": 1,
     "H_Cap_blk": 1,
     "H_Cap_grn": 1,
-    "H_Cap_grn": 1,
     "H_Cap_oli": 1,
     "synixe_mgp_h_cap_rgr": 1,
     "H_Cap_red": 1,
