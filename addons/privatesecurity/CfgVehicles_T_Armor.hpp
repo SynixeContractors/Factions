@@ -4,6 +4,7 @@ class CLASS2(SIDE,Armor): CLASS2(Base,NATION) {
     faction = FACTION;
 
     #include "wear/polo.hpp"
+    #include "wear/headwear.hpp"
     @Vests({
         "variants": {
             "V_TacVest_blk": 1,

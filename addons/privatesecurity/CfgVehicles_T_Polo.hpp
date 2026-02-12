@@ -4,6 +4,7 @@ class CLASS2(SIDE,Polo): CLASS2(Base,NATION) {
     faction = FACTION;
 
     #include "wear/polo.hpp"
+    #include "wear/headwear.hpp"
     @Vests({
         "variants": {
             "V_Rangemaster_belt_blk": 1,
