@@ -21,6 +21,7 @@ class CfgVehicles {
             #define NATION $1
             #include "CfgVehicles_T_Polo.hpp"
             #include "CfgVehicles_T_Suit.hpp"
+            #include "CfgVehicles_T_Armor.hpp"
             #undef NATION
         @EndFor
         #undef FACTION

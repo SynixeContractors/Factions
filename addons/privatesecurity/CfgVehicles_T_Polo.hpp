@@ -6,7 +6,26 @@ class CLASS2(SIDE,Polo): CLASS2(Base,NATION) {
     #include "wear/polo.hpp"
     @Vests({
         "variants": {
-            "V_Rangemaster_belt_blk" : 1,
+            "V_Rangemaster_belt_blk": 1,
+            "V_Rangemaster_belt_cbr": 1,
+            "V_Rangemaster_belt_oli": 1,
+            "V_Rangemaster_belt_khk": 1,
+            "synixe_mgp_vest_battle_belt_assaulter_blk": 1,
+            "synixe_mgp_vest_battle_belt_assaulter_cb": 1,
+            "synixe_mgp_vest_battle_belt_assaulter_khk": 1,
+            "synixe_mgp_vest_battle_belt_hgunner_blk": 1,
+            "synixe_mgp_vest_battle_belt_hgunner_cb": 1,
+            "synixe_mgp_vest_battle_belt_hgunner_khk": 1,
+            "Aegis_V_CarrierRigKBT_01_holster_black_F": 1,
+            "Aegis_V_CarrierRigKBT_01_holster_cbr_F": 1,
+            "Aegis_V_CarrierRigKBT_01_holster_khk_F": 1,
+            "Aegis_V_CarrierRigKBT_01_holster_olive_F": 1,
+            "V_LegStrapBag_black_F": 1,
+            "V_LegStrapBag_coyote_F": 1,
+            "V_LegStrapBag_olive_F": 1,
+            "V_BandollierB_blk": 1,
+            "V_BandollierB_rgr": 1,
+            "V_BandollierB_oli": 1,
         },
         "packs": [
             "t2_standard",

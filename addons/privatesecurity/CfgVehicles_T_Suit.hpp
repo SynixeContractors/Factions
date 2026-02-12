@@ -18,19 +18,12 @@ class CLASS2(SIDE,Suit): CLASS2(Base,NATION) {
     });
     @Vests({
         "variants": {
-            "V_TacVest_blk_POLICE" : 1,
+            "Aegis_V_CarrierRigKBT_01_holster_black_F": 1,
+            "": 5,
         },
         "packs": [
             "t2_standard",
         ],
-    });
-    @Primary({
-        "optics": {
-            "": 4,
-            "optic_r1_high_lxWS": 1,
-            "Aegis_optic_ICO": 1,
-            "optic_Holosight_smg_blk_F": 1,
-        },
     });
 };
 class CLASS2(SIDE,Suit_Rifleman_Pistol): CLASS2(SIDE,Suit) {
@@ -39,21 +32,39 @@ class CLASS2(SIDE,Suit_Rifleman_Pistol): CLASS2(SIDE,Suit) {
 };
 class CLASS2(SIDE,Suit_Rifleman_SMG): CLASS2(SIDE,Suit) {
     @Role(SMG);
-    #include "weapons/smg.hpp"
-};
-class CLASS2(SIDE,Suit_Rifleman_556): CLASS2(SIDE,Suit) {
-    @Role(Rifleman);
-    #include "weapons/556.hpp"
-};
-class CLASS2(SIDE,Suit_Rifleman_545): CLASS2(SIDE,Suit) {
-    @Role(Rifleman);
-    #include "weapons/556.hpp"
-};
-class CLASS2(SIDE,Suit_Rifleman_762): CLASS2(SIDE,Suit) {
-    @Role(Rifleman);
-    #include "weapons/556.hpp"
-};
-class CLASS2(SIDE,Suit_Rifleman_65): CLASS2(SIDE,Suit) {
-    @Role(Rifleman);
-    #include "weapons/556.hpp"
+    @Primary({
+        "weapons": {
+            "Aegis_SMG_Gepard_blk_F": {
+                "magazinesUniform": {
+                    "Aegis_40Rnd_9x21_Gepard_Mag_F": 2,
+                },
+                "loadedPrimary":"Aegis_20Rnd_9x21_Gepard_Mag_F",
+            },
+            "hgun_PDW2000_F": {
+                "magazinesUniform": {
+                    "30Rnd_9x21_Mag_SMG_02": 2,
+                },
+            },
+            "SMG_05_F": {
+                "magazinesUniform": {
+                    "30Rnd_9x21_Mag_SMG_02": 2,
+                },
+            },
+            "SMG_04_blk_F": {
+                "magazinesUniform": {
+                    "40Rnd_460x30_Mag_F": 2,
+                },
+                "loadedPrimary":"20Rnd_460x30_Mag_F",
+            },
+            "SMG_03C_black": {
+                "magazinesUniform": {
+                    "50Rnd_570x28_SMG_03": 1,
+                },
+            },
+        },
+        "optics": {
+            "optic_Yorris": 1,
+            "": 4,
+        },
+    });
 };
