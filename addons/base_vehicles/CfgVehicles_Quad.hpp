@@ -8,7 +8,15 @@ class GCLASS(QuadBike): Quadbike_01_base_F {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 18;
-    textureList[] = {"Black",1};
+    textureList[] = {
+        "Blufor",1,
+        "Brown",1,
+        "Green",1,
+        "Red",1,
+        "White",1,
+        "Black",1,
+        "Blue",1,
+    };
     class TextureSources {
         class Black {
             displayName = "Black";

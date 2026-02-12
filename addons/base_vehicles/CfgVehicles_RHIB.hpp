@@ -1,4 +1,4 @@
-class C_Boat_Transport_02_F;
+ADD_CAMO_EVENT_HANDLER(C_Boat_Transport_02_F,Boat_Transport_02_base_F);
 class GCLASS(RHIB): C_Boat_Transport_02_F {
     displayName = "RHIB";
     faction = QGCLASS(base_vehicles);
@@ -7,8 +7,9 @@ class GCLASS(RHIB): C_Boat_Transport_02_F {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 227;
-    textureList[] = {"Civilian",1};
+    textureList[] = {"Civilian",1,"Black",1};
     #include "racks\singlerack.hpp"
+    #include "eventhandler_camo.hpp"
     class TextureSources {
         class Black {
             displayName = "Black";

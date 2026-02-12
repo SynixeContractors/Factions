@@ -1,4 +1,4 @@
-class C_Rubberboat;
+ADD_CAMO_EVENT_HANDLER(C_Rubberboat,Rescue_duck_base_F);
 class GCLASS(Dinghy): C_Rubberboat {
     displayName = "Dinghy";
     faction = QGCLASS(base_vehicles);
@@ -7,6 +7,13 @@ class GCLASS(Dinghy): C_Rubberboat {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 30;
+    textureList[] = {
+        "Black",1,
+        "Rus",1,
+        "Civlian",1,
+        "Rescue",1,
+    };
+    #include "eventhandler_camo.hpp"
     class TextureSources {
         class Black {
             displayName = "Black";
@@ -24,7 +31,7 @@ class GCLASS(Dinghy): C_Rubberboat {
             factions[] = {};
         };
         class Civilian {
-            displayName = "Civilian";
+            displayName = "Blue White";
             textures[] = {"\A3\boat_F\Boat_Transport_01\data\Boat_Transport_01_civilian_CO.paa"};
             factions[] = {};
         };
