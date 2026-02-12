@@ -1,11 +1,11 @@
 class CfgEditorSubcategories {
     @For(Identities)
         class CLASS($1_Security_Polo) {
-            displayName = "Men (Polo, $2)";
+            displayName = "Men (Semi-formal, $2)";
             GCLASS(identity) = "$1";
         };
         class CLASS($1_Security_Suit) {
-            displayName = "Men (Suit, $2)";
+            displayName = "Men (Formal, $2)";
             GCLASS(identity) = "$1";
         };
         class CLASS($1_Security_Armor) {
