@@ -12,7 +12,6 @@
         "U_C_Man_casual_7_F": 1,
         "U_C_Man_casual_8_F": 1,
         "U_C_Uniform_Formal_01_white_F": 1,
-        "U_I_C_Soldier_Bandit_1_F": 1,
         "U_Marshal": 1,
         "U_Marshal_grey": 1,
         "U_Marshal_tan": 1,

@@ -25,7 +25,7 @@ class CLASS2(SIDE,Armor): CLASS2(Base,NATION) {
             "": 4,
             "optic_r1_high_lxWS": 1,
             "Aegis_optic_ICO": 1,
-            "SMA_eotech552": 1,
+            "optic_Holosight_blk_F": 1,
             "Aegis_optic_1p87": 1,
             "JCA_optic_MROS_black": 1,
         },
@@ -60,4 +60,9 @@ class CLASS2(SIDE,Armor_Rifleman_65): CLASS2(SIDE,Armor_Rifleman_556) {
 class CLASS2(SIDE,Armor_Rifleman_58): CLASS2(SIDE,Armor_Rifleman_556) {
     displayName = "Rifleman (5.8mm)";
     #include "weapons/58.hpp"
+};
+class CLASS2(SIDE,Armor_Marksman): CLASS2(SIDE,Armor) {
+    @Role(Marksman);
+    #include "weapons/pistol.hpp"
+    #include "weapons/marksman.hpp"
 };

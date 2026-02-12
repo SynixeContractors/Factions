@@ -13,6 +13,7 @@ class CfgPatches {
                     QCLASS($1_$UPPER_Polo_Rifleman_762),
                     QCLASS($1_$UPPER_Polo_Rifleman_65),
                     QCLASS($1_$UPPER_Polo_Rifleman_58),
+                    QCLASS($1_$UPPER_Polo_Marksman),
                     QCLASS($1_$UPPER_Armor_Rifleman_Pistol),
                     QCLASS($1_$UPPER_Armor_Rifleman_SMG),
                     QCLASS($1_$UPPER_Armor_Rifleman_556),
@@ -20,6 +21,7 @@ class CfgPatches {
                     QCLASS($1_$UPPER_Armor_Rifleman_762),
                     QCLASS($1_$UPPER_Armor_Rifleman_65),
                     QCLASS($1_$UPPER_Armor_Rifleman_58),
+                    QCLASS($1_$UPPER_Armor_Marksman),
                     QCLASS($1_$UPPER_Suit_Rifleman_Pistol),
                     QCLASS($1_$UPPER_Suit_Rifleman_SMG),
                 @EndFor
