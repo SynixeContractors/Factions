@@ -28,15 +28,17 @@ class CLASS2(SIDE,Polo): CLASS2(Base,NATION) {
             "V_BandollierB_oli": 1,
         },
         "packs": [
-            "t2_standard",
+            "t4_standard",
         ],
     });
     @Primary({
         "optics": {
-            "": 4,
+            "": 8,
             "optic_r1_high_lxWS": 1,
             "Aegis_optic_ICO": 1,
-            "optic_Holosight_smg_blk_F": 1,
+            "SMA_eotech552": 1,
+            "Aegis_optic_1p87": 1,
+            "JCA_optic_MROS_black": 1,
         },
     });
 };
@@ -59,7 +61,7 @@ class CLASS2(SIDE,Polo_Rifleman_545): CLASS2(SIDE,Polo_Rifleman_556) {
     #include "weapons/545.hpp"
 };
 class CLASS2(SIDE,Polo_Rifleman_762): CLASS2(SIDE,Polo_Rifleman_556) {
-    displayName = "Rifleman (7.62mm)";
+    displayName = "Rifleman (7.62x39mm)";
     #include "weapons/762.hpp"
 };
 class CLASS2(SIDE,Polo_Rifleman_65): CLASS2(SIDE,Polo_Rifleman_556) {

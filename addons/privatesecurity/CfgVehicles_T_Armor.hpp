@@ -6,10 +6,21 @@ class CLASS2(SIDE,Armor): CLASS2(Base,NATION) {
     #include "wear/polo.hpp"
     @Vests({
         "variants": {
-            "": 1,
+            "V_TacVest_blk": 1,
+            "tacs_Vest_Tactical_DarkBlack": 1,
+            "V_TacVest_grn": 1,
+            "V_TacVest_khk": 1,
+            "V_HarnessOSpec_blk": 1,
+            "V_lxWS_TacVestIR_oli": 1,
+            "V_HarnessOSpec_brn": 1,
+            "V_BandollierB_blk": 1,
+            "V_TacChestrig_grn_F": 1,
+            "V_HarnessOSpec_blk": 1,
+            "V_HarnessOSpec_blk": 1,
+            "V_lxWS_TacVestIR_oli": 1,
         },
         "packs": [
-            "t2_standard",
+            "t4_standard",
         ],
     });
     @Primary({
@@ -17,7 +28,9 @@ class CLASS2(SIDE,Armor): CLASS2(Base,NATION) {
             "": 4,
             "optic_r1_high_lxWS": 1,
             "Aegis_optic_ICO": 1,
-            "optic_Holosight_smg_blk_F": 1,
+            "SMA_eotech552": 1,
+            "Aegis_optic_1p87": 1,
+            "JCA_optic_MROS_black": 1,
         },
     });
 };
