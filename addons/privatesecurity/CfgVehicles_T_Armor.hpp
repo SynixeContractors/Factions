@@ -11,12 +11,8 @@ class CLASS2(SIDE,Armor): CLASS2(Base,NATION) {
             "V_TacVest_grn": 1,
             "V_TacVest_khk": 1,
             "V_HarnessOSpec_blk": 1,
-            "V_lxWS_TacVestIR_oli": 1,
-            "V_HarnessOSpec_brn": 1,
             "V_BandollierB_blk": 1,
             "V_TacChestrig_grn_F": 1,
-            "V_HarnessOSpec_blk": 1,
-            "V_HarnessOSpec_blk": 1,
             "V_lxWS_TacVestIR_oli": 1,
         },
         "packs": [
