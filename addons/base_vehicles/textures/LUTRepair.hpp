@@ -123,7 +123,7 @@ class TextureSources {
         displayName = "Jungle";
         textures[] = {
             "\A3_Atlas\Soft_F_Atlas\Truck_02\Data\Truck_02_kab_Jungle_CO.paa",
-            "\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_repair_RUkhk_CO.paa",
+            "\A3_Atlas\Soft_F_Atlas\Truck_02\Data\Truck_02_repair_Jungle_CO.paa",
             "\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_int_RUKHK_CO.paa",
             "\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_chassis_RUkhk_CO.paa",
         };
@@ -143,7 +143,7 @@ class TextureSources {
         displayName = "Hex Woodland";
         textures[] = {
             "\A3_Atlas\Soft_F_Atlas\Truck_02\Data\Truck_02_kab_WHex_CO.paa",
-            "\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_repair_RUkhk_CO.paa",
+            "\A3_Atlas\Soft_F_Atlas\Truck_02\Data\Truck_02_repair_whex_CO.paa",
             "\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_int_RUKHK_CO.paa",
             "\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_chassis_RUkhk_CO.paa",
         };
@@ -153,7 +153,7 @@ class TextureSources {
         displayName = "Marar";
         textures[] = {
             "\A3_Atlas\Soft_F_Atlas\Truck_02\Data\Truck_02_kab_Marar_CO.paa",
-            "\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_repair_LDF_arid_CO.paa",
+            "\A3_Atlas\Soft_F_Atlas\Truck_02\Data\Truck_02_repair_marar_CO.paa",
             "\A3\Soft_F_Beta\Truck_02\Data\Truck_02_int_CO.paa",
             "\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_chassis_ghex_CO.paa",
         };
@@ -163,8 +163,7 @@ class TextureSources {
         displayName = "Ardistan";
         textures[] = {
             "\A3_Atlas\Soft_F_Atlas\Truck_02\Data\Truck_02_kab_ardi_CO.paa",
-            // maybe in future dedicated repair texture, but seems fine
-            "\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_repair_RUkhk_CO.paa",
+            "\A3_Atlas\Soft_F_Atlas\Truck_02\Data\Truck_02_repair_ardi_CO.paa",
             "\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_int_RUKHK_CO.paa",
             "\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_chassis_RUkhk_CO.paa",
         };
@@ -184,7 +183,7 @@ class TextureSources {
         displayName = "United Nations";
         textures[] = {
             "\A3_Atlas\Soft_F_Atlas\Truck_02\Data\Truck_02_kab_UN_CO.paa",
-            "\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_repair_RUkhk_CO.paa",
+            "\A3_Atlas\Soft_F_Atlas\Truck_02\Data\Truck_02_repair_UN_CO.paa",
             "\A3\Soft_F_Beta\Truck_02\Data\Truck_02_int_CO.paa",
             "\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_chassis_RUkhk_CO.paa",
         };
@@ -204,8 +203,7 @@ class TextureSources {
         displayName = "Hex Mixed";
         textures[] = {
             "\A3_Atlas\Soft_F_Atlas\Truck_02\Data\Truck_02_kab_tk_CO.paa",
-            //TODO better fitting repair texture
-            "\A3\Soft_F_Beta\Truck_02\Data\Truck_02_repair_OPFOR_CO.paa",
+            "\A3_Atlas\Soft_F_Atlas\Truck_02\Data\Truck_02_repair_tk_CO.paa",
             "\A3\Soft_F_Beta\Truck_02\Data\Truck_02_int_CO.paa",
             "\A3\Soft_F_Beta\Truck_02\Data\Truck_02_chassis_OPFOR_CO.paa",
         };
