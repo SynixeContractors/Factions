@@ -1,16 +1,15 @@
 @Primary({
     "pointers": {
-        "saber_light_lxWS": 2,
-        "saber_light_ir_sand_lxWS": 2,
-        "acc_pointer_IR_sand_lxWS": 5,
+        "saber_light_lxWS": 4,
+        "saber_light_ir_lxWS": 2,
+        "Aegis_acc_pointer_compact_green": 1,
     },
     "optics": {
-        "Aegis_optic_1p87": 1,
+        "Aegis_optic_1p87": 3,
         "": 1,
     },
     "muzzles" : {
-        "muzzle_snds_58_blk_F": 1,
-        "": 8,
+        "": 1,
     },
     "bipod" : {
         "bipod_03_F_blk": 1,

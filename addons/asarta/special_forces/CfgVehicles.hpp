@@ -43,13 +43,13 @@ class CfgVehicles {
         #include "../weapons/pistol.hpp"
         @Primary({
             "weapons": {
-                "arifle_MX_GL_F": {
+                "synixe_armoury_arifle_AK03_GL_sand": {
                     "probability": 1,
                     "magazinesVest": {
-                        "30Rnd_65x39_caseless_mag": 8,
+                        "30Rnd_580x42_Mag_F": 8,
                         "1Rnd_HE_Grenade_shell": 4,
                     },
-                    "loadedPrimary": "30Rnd_65x39_caseless_mag",
+                    "loadedPrimary": "30Rnd_580x42_Mag_F",
                     "loadedSecondary": "1Rnd_HE_Grenade_shell",
                 },
             },
@@ -90,14 +90,23 @@ class CfgVehicles {
     };
     class CLASS(Marksman): CLASS(RiflemanCarabine) {
         @Role(Marksman);
-        #include "../weapons/marksman.hpp"
+        @Primary({
+            "weapons": {
+                "synixe_armoury_arifle_RPK03_sand": {
+                    "probability": 1,
+                    "magazinesVest": {
+                        "100Rnd_580x42_Mag_F": 4,
+                    },
+                },
+            },
+        });
         #include "../weapons/pistol.hpp"
     };
     class CLASS(Spotter): CLASS(Marksman) {
         @Role(Spotter);
         @Uniforms({
             "variants": {
-              "synixe_mgp_g3_field_set_mc_mc": 1,
+              "U_O_FullGhillie_sard": 1,
             },
             "packs": [
                 "rifleman_medical",
