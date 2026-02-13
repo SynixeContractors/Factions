@@ -2,6 +2,25 @@ class CfgVehicles {
     #define TEMPLATE_FACTION QPCLASS(t4_opfor)
     #define TEMPLATE_SIDE 0
     #include "../../../templates/statics/M2.hpp"
+    #define TEMPLATE_CAMO takistan
+    #include "../../../templates/statics/Mk6.hpp"
+    #include "../../../templates/tanks/T100.hpp"
+    #include "../../../templates/apc/Otokar.hpp"
+    #include "../../../templates/apc/BM2K.hpp"
+    #include "../../../templates/apc/BM2T.hpp"
+    #include "../../../templates/cars/LUT_AA.hpp"
+    #include "../../../templates/cars/LUT_Ammo.hpp"
+    #include "../../../templates/cars/LUT_Cargo.hpp"
+    #include "../../../templates/cars/LUT_Fuel.hpp"
+    #include "../../../templates/cars/LUT_Medical.hpp"
+    #include "../../../templates/cars/LUT_MRL.hpp"
+    #include "../../../templates/cars/LUT_Repair.hpp"
+    #include "../../../templates/cars/LUT_Transport.hpp"
+    #include "../../../templates/helicopters/Mi35.hpp"
+    #include "../../../templates/helicopters/Ka54.hpp"
+    #include "../../../templates/planes/L159.hpp"
+    #include "../../../templates/helicopters/Orca_Civilian.hpp"
+    #include "../../../templates/helicopters/Orca_Military.hpp"
 
 
     class PCLASS(Base);
