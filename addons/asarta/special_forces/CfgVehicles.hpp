@@ -61,7 +61,16 @@ class CfgVehicles {
     };
     class CLASS(Autorifleman): CLASS(RiflemanBackpack) {
         @Role(Autorifleman);
-        #include "../weapons/mg.hpp"
+        @Primary({
+            "weapons": {
+                "synixe_armoury_arifle_RPK03_sand": {
+                    "probability": 1,
+                    "magazinesVest": {
+                        "100Rnd_580x42_Mag_F": 4,
+                    },
+                },
+            },
+        });
         #include "../weapons/pistol.hpp"
     };
     class CLASS(Medic): CLASS(RiflemanBackpack) {
@@ -95,11 +104,15 @@ class CfgVehicles {
                 "synixe_armoury_arifle_RPK03_sand": {
                     "probability": 1,
                     "magazinesVest": {
-                        "100Rnd_580x42_Mag_F": 4,
+                        "30Rnd_580x42_Mag_F": 8,
                     },
                 },
             },
+            "optics": {
+                 "optic_dms": 1,
+            },
         });
+
         #include "../weapons/pistol.hpp"
     };
     class CLASS(Spotter): CLASS(Marksman) {
