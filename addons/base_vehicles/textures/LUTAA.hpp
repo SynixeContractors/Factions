@@ -314,6 +314,21 @@ class TextureSources {
         };
         factions[] = {};
     };
+    class Daltgreen {
+        displayName = "Daltgreen";
+        textures[] = {
+            "\lxws\vehicles_f_lxws\data\Truck_02\Truck_02_kab_daltgreen_CO.paa",
+            "\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_cargo_RUkhk_CO.paa",
+            "\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_int_RUkhk_CO.paa",
+            "\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_chassis_RUkhk_CO.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_base_green_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_green_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_addon_1_green_co.paa",
+            "lxws\vehicles_f_lxws\zu23\data\zu23_addon_2_green_co.paa",
+            "lxws\vehicles_f_lxws\Truck_02\data\addons_black_co.paa"
+        };
+        factions[] = {};
+    };
     class Yellow {
         displayName = "Yellow";
         textures[] = {
