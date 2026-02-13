@@ -16,6 +16,8 @@ class CfgVehicles {
         @Templated();
     };
 
+    @For(Identities)
+
     GENERIC_VEHICLE(Van_Cargo,Daltgreen,Worker,Daltgreen,$1);
     GENERIC_VEHICLE(Van_Transport,Daltgreen,Worker,Daltgreen,$1);
     GENERIC_VEHICLE(Ram,Daltgreen,Worker,Daltgreen,$1);
@@ -26,8 +28,6 @@ class CfgVehicles {
     GENERIC_VEHICLE(LUT_Fuel,Daltgreen,Worker,Daltgreen,$1);
     GENERIC_VEHICLE(LUT_Cargo,Daltgreen,Worker,Daltgreen,$1);
     GENERIC_VEHICLE(LUT_Flatbed,Daltgreen,Worker,Daltgreen,$1);
-
-    @For(Identities)
     class CLASS(Base_$1): CLASS(CIV) {
         @Identity($1);
         editorSubcategory = QGCLASS(generics_$1);
