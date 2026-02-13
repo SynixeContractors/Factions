@@ -223,7 +223,7 @@ class TextureSources {
         displayName = "Daltgreen";
         textures[] = {
             "\lxws\vehicles_f_lxws\data\Truck_02\Truck_02_kab_daltgreen_CO.paa",
-            "\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_repair_LDF_arid_CO.paa",
+            "\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_repair_RUkhk_CO.paa",
             "\a3\soft_f_beta\truck_02\data\truck_02_int_co.paa",
             "\A3\Soft_F_Beta\Truck_02\Data\Truck_02_chassis_CO.paa"
         };
@@ -233,7 +233,7 @@ class TextureSources {
         displayName = "Lime";
         textures[] = {
             "\lxws\vehicles_f_lxws\data\Truck_02\Truck_02_kab_lime_CO.paa",
-            "\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_repair_LDF_arid_CO.paa",
+            "\A3\Soft_F_Beta\Truck_02\Data\Truck_02_repair_green_CO.paa",
             "\a3\soft_f_beta\truck_02\data\truck_02_int_co.paa",
             "\A3\Soft_F_Beta\Truck_02\Data\Truck_02_chassis_CO.paa"
         };
