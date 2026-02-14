@@ -81,6 +81,17 @@ class CfgVehicles {
     };
     class CLASS(Crewman): CLASS(RiflemanCarabine) {
         @Role(Crewman);
+        @Headgear({
+            "H_HelmetCrew_I": 1,
+        });
+        @Uniforms({
+            "variants": {
+                "U_Tank_green_F": 1,
+            },
+            "packs": [
+                "rifleman_medical",
+            ],
+        });
         #include "../weapons/pdw.hpp"
     };
     class CLASS(HeliPilot): CLASS(Crewman) {

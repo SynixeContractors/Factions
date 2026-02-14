@@ -10,4 +10,8 @@
     "optics": {
         "optic_DMS": 1,
     },
+    "bipods": {
+        "bipod_02_F_lush": 0.95,
+        "": 0.05,
+    },
 });
