@@ -1,9 +1,9 @@
 @Launchers({
     "weapons": {
         "": 0.9,
-        "JCA_launch_M72_olive_F": {
+        "launch_PSRL1_digi_RF": {
             "probability": 0.1,
-            "loadedPrimary": "JCA_M72_HEAT_F",
+            "loadedPrimary": "PSRL1_AT_RF",
         },
     },
 });

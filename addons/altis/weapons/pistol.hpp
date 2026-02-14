@@ -1,8 +1,8 @@
 @Secondary({
     "weapons": {
-        "hgun_Pistol_01_F": {
+        "Aegis_hgun_P320_khaki_F": {
             "magazinesUniform": {
-                "10Rnd_9x21_Mag": 3,
+                "17Rnd_9x21_Mag": 3,
             },
         },
     },

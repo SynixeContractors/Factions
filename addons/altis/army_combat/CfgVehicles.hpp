@@ -1,6 +1,6 @@
 class CfgVehicles {
-    #define TEMPLATE_FACTION QPCLASS(t3_opfor)
-    #define TEMPLATE_SIDE 0
+    #define TEMPLATE_FACTION QPCLASS(t3_indep)
+    #define TEMPLATE_SIDE 2
     #include "../../../templates/statics/M2.hpp"
 
     class PCLASS(Base);
@@ -11,7 +11,6 @@ class CfgVehicles {
         #include "../wear/uniform.hpp"
         #include "../wear/vest_army.hpp"
         #include "../wear/helmet.hpp"
-        #include "../wear/facewear_army.hpp"
         @Assigned(Military);
     };
     class CLASS(Rifleman): CLASS(Base) {

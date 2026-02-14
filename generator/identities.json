@@ -85,4 +85,11 @@
         ],
         "genericNames": "French"
     },
+    "Altian": {
+        "identityTypes": [
+            "Head_Enoch",
+            "LanguageRUS_F"
+        ],
+        "genericNames": "Enochmen"
+    },
 }
