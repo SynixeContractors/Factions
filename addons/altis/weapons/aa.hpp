@@ -1,6 +1,6 @@
 @Launchers({
     "weapons": {
-        "launch_B_Titan_coyote_F": {
+        "launch_I_Titan_F": {
             "magazinesBackpack": {
                 "Titan_AA": 1,
             },

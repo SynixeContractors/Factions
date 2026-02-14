@@ -1,8 +1,8 @@
 @Backpacks({
     "variants": {
-        "B_FieldPack_semiarid": 1,
+        "B_AssaultPack_dgtl": 1,
     },
     "magazines": {
-        "Aegis_200Rnd_762x51_MAG_Yellow_F": 2,
+        "100Rnd_762x51_S77_Red_lxWS": 2,
     },
 });

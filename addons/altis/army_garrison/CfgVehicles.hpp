@@ -6,20 +6,24 @@ class CfgVehicles {
 
         #include "../wear/uniform.hpp"
         #include "../wear/vest_garrison.hpp"
-        #include "../wear/helmet.hpp"
-        #include "../wear/facewear_army.hpp"
+        #include "../wear/headwear.hpp"
+        @Primary({
+            "pointers": {
+                "saber_light_khaki_lxWS": 5,
+                "": 2,
+            },
+        });
         @Assigned(Military);
     };
     class CLASS(Rifleman): CLASS(Base) {
         @Role(Rifleman);
         #include "../weapons/rifle.hpp"
         #include "../weapons/launcher.hpp"
-        #include "../weapons/attachments_army.hpp"
+
     };
     class CLASS(RiflemanCarabine): CLASS(Base) {
         @Role(Hidden);
         #include "../weapons/rifle.hpp"
-        #include "../weapons/attachments_army.hpp"
     };
     class CLASS(RiflemanBackpack): CLASS(RiflemanCarabine) {
         @Role(Hidden);
@@ -43,6 +47,6 @@ class CfgVehicles {
     class CLASS(Maintainer): CLASS(Base) {
         @Role(Maintainer);
         #include "../wear/worker.hpp"
-        #include "../weapons/rifle.hpp"
+        #include "../weapons/pistol.hpp"
     };
 };

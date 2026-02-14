@@ -1,6 +1,6 @@
 @Backpacks({
     "variants": {
-        "B_Carryall_semiarid": 1,
+        "B_AssaultPack_dgtl": 1,
     },
     "packs": [
         "engineer",

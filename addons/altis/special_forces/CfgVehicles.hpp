@@ -7,19 +7,25 @@ class CfgVehicles {
         #include "../wear/uniform.hpp"
         @Vests({
             "variants": {
-              "Atlas_V_OCarrierRig_Lite_semiarid_F": 0.8,
-              "Atlas_V_OCarrierRig_CQB_semiarid_F": 0.1,
-              "Atlas_V_OCarrierRig_GL_semiarid_F": 0.1,
+              "V_PlateCarrierIA1_dgtl": 0.8,
+              "V_PlateCarrierIA2_dgtl": 0.1,
+              "V_PlateCarrierIAGL_dgtl": 0.1,
             },
             "packs": [
                 "t3_standard",
             ],
         });
         @Headgear({
-            "H_HelmetSpecter_cover_semiarid_CO": 1,
+            "H_HelmetSpecter_cover_AAF_F": 1,
+            "H_HelmetIA_sb_digital_RF": 1,
         });
         @Facewear({
-            "": 1,
+            "G_Combat_Goggles_tna_F": 1,
+            "G_Bandanna_oli": 1,
+            "G_Shemag_oli": 1,
+            "G_Balaclava_oli": 1,
+            "G_Balaclava_oli_lxWS": 1,
+            "": 10,
         });
         @Assigned(Military);
     };
@@ -41,19 +47,7 @@ class CfgVehicles {
     class CLASS(TeamLeader): CLASS(RiflemanCarabine) {
         @Role(TeamLeader);
         #include "../weapons/pistol.hpp"
-        @Primary({
-            "weapons": {
-                "synixe_armoury_arifle_AK03_GL_sand": {
-                    "probability": 1,
-                    "magazinesVest": {
-                        "30Rnd_580x42_Mag_F": 8,
-                        "1Rnd_HE_Grenade_shell": 4,
-                    },
-                    "loadedPrimary": "30Rnd_580x42_Mag_F",
-                    "loadedSecondary": "1Rnd_HE_Grenade_shell",
-                },
-            },
-        });
+        #include "../weapons/gl.hpp"
     };
     class CLASS(SquadLeader): CLASS(RiflemanCarabine) {
         @Role(SquadLeader);
@@ -61,16 +55,7 @@ class CfgVehicles {
     };
     class CLASS(Autorifleman): CLASS(RiflemanBackpack) {
         @Role(Autorifleman);
-        @Primary({
-            "weapons": {
-                "synixe_armoury_arifle_RPK03_sand": {
-                    "probability": 1,
-                    "magazinesVest": {
-                        "100Rnd_580x42_Mag_F": 4,
-                    },
-                },
-            },
-        });
+        #include "../weapons/lmg.hpp"
         #include "../weapons/pistol.hpp"
     };
     class CLASS(Medic): CLASS(RiflemanBackpack) {
@@ -99,27 +84,14 @@ class CfgVehicles {
     };
     class CLASS(Marksman): CLASS(RiflemanCarabine) {
         @Role(Marksman);
-        @Primary({
-            "weapons": {
-                "synixe_armoury_arifle_RPK03_sand": {
-                    "probability": 1,
-                    "magazinesVest": {
-                        "30Rnd_580x42_Mag_F": 8,
-                    },
-                },
-            },
-            "optics": {
-                 "optic_dms": 1,
-            },
-        });
-
+        #include "../weapons/sniper.hpp"
         #include "../weapons/pistol.hpp"
     };
     class CLASS(Spotter): CLASS(Marksman) {
         @Role(Spotter);
         @Uniforms({
             "variants": {
-              "U_O_FullGhillie_sard": 1,
+                "H_HelmetIA_sb_digital_RF": 1,
             },
             "packs": [
                 "rifleman_medical",
@@ -128,6 +100,5 @@ class CfgVehicles {
     };
     class CLASS(Sniper): CLASS(Spotter) {
         @Role(Sniper);
-        #include "../weapons/sniper.hpp"
     };
 };
