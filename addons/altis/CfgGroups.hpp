@@ -1,10 +1,10 @@
 class CfgGroups {
     class EAST {
-        class CLASS(t3_indep) {
+        class CLASS(t2_indep) {
             name = FACTION_NAME;
-            @Groups(T3,INDEP,Army_Combat);
-            @Groups(T3,INDEP,Army_Garrison);
-            @Groups(T3,INDEP,Special_Forces);
+            @Groups(T2,INDEP,Army_Combat);
+            @Groups(T2,INDEP,Army_Garrison);
+            @Groups(T2,INDEP,Special_Forces);
         };
     };
 };

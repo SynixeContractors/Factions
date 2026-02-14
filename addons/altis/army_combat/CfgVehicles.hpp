@@ -1,7 +1,47 @@
 class CfgVehicles {
-    #define TEMPLATE_FACTION QPCLASS(t3_indep)
+    #define TEMPLATE_FACTION QPCLASS(t2_indep)
     #define TEMPLATE_SIDE 2
     #include "../../../templates/statics/M2.hpp"
+    #define TEMPLATE_CAMO Indep
+    #include "../../../templates/cars/LUT_AA.hpp"
+    #include "../../../templates/cars/LUT_Ammo.hpp"
+    #include "../../../templates/cars/LUT_Cargo.hpp"
+    #include "../../../templates/cars/LUT_Fuel.hpp"
+    #include "../../../templates/cars/LUT_MRL.hpp"
+    #include "../../../templates/cars/LUT_Medical.hpp"
+    #include "../../../templates/cars/LUT_Repair.hpp"
+    #include "../../../templates/cars/LUT_Transport.hpp"
+    #include "../../../templates/cars/Fennek.hpp"
+    #include "../../../templates/apc/BTR.hpp"
+    #include "../../../templates/apc/BTR_SPG.hpp"
+    #include "../../../templates/apc/Pandur.hpp"
+    #include "../../../templates/apc/Warrior.hpp"
+    #include "../../../templates/drones/Shahpar.hpp"
+    #include "../../../templates/drones/UGV.hpp"
+    #include "../../../templates/helicopters/Apache.hpp"
+    #include "../../../templates/helicopters/Mohawk_Military.hpp"
+    #include "../../../templates/helicopters/Orca_Military.hpp"
+    #include "../../../templates/helicopters/Orca_Civilian.hpp"
+    #include "../../../templates/helicopters/Wildcat.hpp"
+    #undef TEMPLATE_CAMO
+    #define TEMPLATE_CAMO Indep_01_green
+    #include "../../../templates/tanks/Leopard.hpp"
+    #undef TEMPLATE_CAMO
+    #define TEMPLATE_CAMO Indep_01
+    #include "../../../templates/tanks/Wiesel.hpp"
+    #undef TEMPLATE_CAMO
+    #define TEMPLATE_CAMO AAF
+    #include "../../../templates/helicopters/Puma_Military.hpp"
+    #include "../../../templates/helicopters/Puma_Civilian.hpp"
+    #include "../../../templates/drones/MQ9.hpp"
+    #include "../../../templates/cars/Ram_Civilian.hpp"
+    #include "../../../templates/cars/Ram_Advanced.hpp"
+    #include "../../../templates/cars/Ram_Armed.hpp"
+    #include "../../../templates/cars/Ram_Rocket.hpp"
+    #undef TEMPLATE_CAMO
+    #define TEMPLATE_CAMO Green
+    #include "../../../templates/statics/SAM02.hpp"
+    #include "../../../templates/statics/Mk6.hpp"
 
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {
