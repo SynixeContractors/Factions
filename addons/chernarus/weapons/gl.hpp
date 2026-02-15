@@ -12,10 +12,10 @@
         "Aegis_arifle_AK74_GL_F": {
             "probability": 1,
             "magazinesVest": {
-                "30Rnd_545x39_AK12_Arid_Mag_F": 6,
+                "30Rnd_545x39_Steel_Mag_Green_F": 6,
                 "1Rnd_HE_Grenade_shell": 4,
             },
-            "loadedPrimary": "30Rnd_545x39_AK12_Arid_Mag_F",
+            "loadedPrimary": "30Rnd_545x39_Steel_Mag_Green_F",
             "loadedSecondary": "1Rnd_HE_Grenade_shell",
         },
     },
