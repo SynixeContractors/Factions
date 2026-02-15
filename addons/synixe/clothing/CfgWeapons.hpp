@@ -17,6 +17,7 @@ class CfgWeapons {
     // Contractor Shirt
     class PCLASS(Uniform_Contractor_Shirt): PCLASS(Uniform_Base) {
         scope = 2;
+        scopeArsenal = 2;
         author = "Brett Harrison";
         displayName = "Polo [Synixe] (Black, Pants)";
         picture = QPATHTOF(clothing\ui\contractor_shirt_ca.paa);
