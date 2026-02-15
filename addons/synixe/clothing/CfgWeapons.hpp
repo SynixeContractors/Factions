@@ -30,6 +30,7 @@ class CfgWeapons {
     // Synixe Tartan
     class PCLASS(Uniform_Combat_LS_Synixe_BP_BB): PCLASS(Uniform_Base) {
         scope = 2;
+        scopeArsenal = 2;
         author = "Brett Harrison";
         displayName = "Combat Uniform (Synixe)";
         picture = QPATHTOF(clothing\ui\uniform_combat_ls_synixe_bp_ca.paa);
@@ -40,6 +41,7 @@ class CfgWeapons {
     };
     class PCLASS(Uniform_Combat_RS_Synixe_BP_BB): PCLASS(Uniform_Base) {
         scope = 2;
+        scopeArsenal = 2;
         author = "Brett Harrison";
         displayName = "Combat Uniform (Synixe, Rolled-Up)";
         picture = QPATHTOF(clothing\ui\uniform_combat_rs_synixe_bp_ca.paa);
