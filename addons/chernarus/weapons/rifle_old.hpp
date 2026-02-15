@@ -1,18 +1,12 @@
 @Primary({
     "weapons": {
-        "synixe_armoury_arifle_AK12K_green": {
-            "probability": 0.6,
-            "magazinesVest": {
-                "30Rnd_545x39_Black_Mag_F": 6,
-            },
-        },
-        "Aegis_arifle_AKS74_F": {
+        "Aegis_arifle_AK74_F": {
             "probability": 0.2,
             "magazinesVest": {
                 "30Rnd_545x39_Steel_Mag_Green_F": 6,
             },
         },
-        "arifle_AKS_F": {
+        "Aegis_arifle_AKS74_oak_F": {
             "probability": 0.2,
             "magazinesVest": {
                 "30Rnd_545x39_Steel_Mag_Green_F": 6,

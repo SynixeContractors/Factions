@@ -9,7 +9,7 @@
         "Aegis_arifle_AK74_F": {
             "probability": 0.2,
             "magazinesVest": {
-                "30Rnd_545x39_AK12_Arid_Mag_F": 6,
+                "30Rnd_545x39_Steel_Mag_Green_F": 6,
             },
         },
     },
