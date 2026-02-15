@@ -6,6 +6,7 @@ class CfgGroups {
             @Groups(T2,INDEP,Army_Garrison);
             @Groups(T2,INDEP,Army_Recon);
             @Groups(T2,INDEP,Special_Forces);
+            @Groups(T2,INDEP,Reserves);
         };
     };
 };
