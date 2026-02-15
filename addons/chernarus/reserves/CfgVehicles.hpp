@@ -84,8 +84,4 @@ class CfgVehicles {
         #include "../weapons/marksman.hpp"
         #include "../weapons/pistol.hpp"
     };
-    class CLASS(Sniper): CLASS(Marksman) {
-        @Role(Sniper);
-        #include "../weapons/sniper.hpp"
-    };
 };
