@@ -1,10 +1,9 @@
 @Vests({
-  "variants" : {
-    "synixe_mgp_vest_jpc_assaulter_mc": 0.2,
-    "synixe_mgp_vest_jpc_light_mc": 0.5,
-    "synixe_mgp_vest_jpc_marksman_mc": 0.3,
-  },
-  "packs": [
-    "t3_standard",
-  ],
+    "variants": {
+        "V_TacVest_oli": 0.8,
+        "V_TacVest_rig_oli_RF": 0.2,
+    },
+    "packs": [
+        "t3_standard",
+    ],
 });
