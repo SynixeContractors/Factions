@@ -1,9 +1,9 @@
 @Vests({
     "variants" : {
-        "Aegis_V_ChestrigEast_oli_F": 0.1,
-        "Atlas_V_ChestRigEast_semiarid_F": 0.9,
+        "V_lxWS_HarnessO_oli": 0.5,
+        "V_TacVest_oli": 0.5,
     },
     "packs": [
-        "t4_standard",
+        "t3_standard",
     ],
 });

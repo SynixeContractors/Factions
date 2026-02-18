@@ -87,9 +87,9 @@
     },
     "Altian": {
         "identityTypes": [
-            "Head_Enoch",
-            "LanguageRUS_F"
+            "Head_Greek",
+            "LanguageGRE_F"
         ],
-        "genericNames": "Enochmen"
+        "genericNames": "GreekMen"
     },
 }
