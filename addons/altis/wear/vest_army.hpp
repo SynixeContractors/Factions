@@ -5,5 +5,6 @@
     },
     "packs": [
         "t2_standard",
+        "military_standard"
     ],
 });

@@ -12,7 +12,8 @@ class CfgVehicles {
               "V_PlateCarrierIAGL_dgtl": 0.1,
             },
             "packs": [
-                "t3_standard",
+                "t2_standard",
+                "military_standard"
             ],
         });
         @Headgear({
@@ -91,10 +92,11 @@ class CfgVehicles {
         @Role(Spotter);
         @Uniforms({
             "variants": {
-                "H_HelmetIA_sb_digital_RF": 1,
+                "U_I_GhillieSuit": 1,
             },
             "packs": [
                 "rifleman_medical",
+                "military_standard"
             ],
         });
     };
