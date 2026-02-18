@@ -5,5 +5,6 @@
     },
     "packs": [
         "t4_standard",
+        "military_standard"
     ],
 });
