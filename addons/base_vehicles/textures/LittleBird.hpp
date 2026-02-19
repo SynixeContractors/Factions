@@ -6,7 +6,7 @@ class TextureSources {
         factions[] = {};
     };
     class Theseus {
-        displayName = "Black";
+        displayName = "Theseus";
         textures[] = {"\x\tacs\addons\variants_melb\data\melb_theseus_black_ext_co.paa"};
         factions[] = {};
     };
