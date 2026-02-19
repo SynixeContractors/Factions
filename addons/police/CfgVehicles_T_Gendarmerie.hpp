@@ -6,13 +6,13 @@ class CLASS2(SIDE,Gendarme): CLASS2(SIDE,Policeman) {
         "H_PASGT_basic_blue_F": 1,
     });
     @Vests({
-        "variants" : {
+        "variants": {
             "V_TacVest_gen_F": 2,
             "V_TacVest_gen_holster_RF": 3,
             "Atlas_V_OCarrierRig_Lite_alt_blk_F": 1,
         },
-        "packs" : [
-            "t2_standard",
+        "packs": [
+            "t4_standard",
         ],
     });
 };
