@@ -77,6 +77,7 @@ class CfgVehicles {
     #include "CfgVehicles_Comanche.hpp"
     #include "CfgVehicles_Ghosthawk.hpp"
     #include "CfgVehicles_Ka54.hpp"
+    #include "CfgVehicles_LittleBird.hpp"
     #include "CfgVehicles_MD500.hpp"
     #include "CfgVehicles_Mi35.hpp"
     #include "CfgVehicles_Mohawk.hpp"
