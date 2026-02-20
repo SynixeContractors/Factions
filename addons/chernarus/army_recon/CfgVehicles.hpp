@@ -44,7 +44,7 @@ class CfgVehicles {
     };
     class CLASS(RiflemanMAT): CLASS(RiflemanBackpack) {
         @Role(RiflemanMAT);
-        #include "../weapons/hat.hpp"
+        #include "../weapons/mat.hpp"
     };
     class CLASS(Engineer): CLASS(RiflemanBackpack) {
         @Role(Engineer);
