@@ -53,7 +53,7 @@ class CfgPatches {
 
 class synixe_factions_generics {
     @ForSides(BLUFOR,INDEP,OPFOR,CIV)
-        class GCLASS(police_$LOWER) {};
+        class CLASS($LOWER) {};
     @EndForSides
 };
 
