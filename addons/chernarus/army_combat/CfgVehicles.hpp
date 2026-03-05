@@ -2,6 +2,7 @@ class CfgVehicles {
     #define TEMPLATE_FACTION QPCLASS(t2_indep)
     #define TEMPLATE_SIDE 2
     #include "../../../templates/statics/M2.hpp"
+    #include "../../../templates/statics/Ship.hpp"
     #define TEMPLATE_CAMO Cdf
     #include "../../../templates/apc/BM2_AA.hpp"
     #include "../../../templates/cars/Karatel.hpp"
