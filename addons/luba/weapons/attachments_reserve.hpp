@@ -1,7 +1,7 @@
 @Primary({
   "pointers" : {
-    "saber_light_sand_lxWS" : 0.3,
-    "" : 0.7,
+    "saber_light_sand_lxWS" : 0.7,
+    "" : 0.3,
   },
   "optics": {
     "": 0.85,
