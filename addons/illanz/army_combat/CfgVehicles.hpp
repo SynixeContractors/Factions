@@ -2,6 +2,7 @@ class CfgVehicles {
     #define TEMPLATE_FACTION QPCLASS(t3_opfor)
     #define TEMPLATE_SIDE 0
     #include "../../../templates/statics/M2.hpp"
+    #include "../../../templates/statics/Ship.hpp"
     #define TEMPLATE_CAMO Desert
     #include "../../../templates/statics/SAM01.hpp"
     #undef TEMPLATE_CAMO

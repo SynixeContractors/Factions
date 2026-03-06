@@ -110,4 +110,5 @@ class CfgVehicles {
     #include "CfgVehicles_XM.hpp"
     #include "CfgVehicles_Radar01.hpp"
     #include "CfgVehicles_Radar02.hpp"
+    #include "CfgVehicles_ShipWeapons.hpp"
 };
