@@ -12,7 +12,7 @@ class CLASS2(SIDE,Gendarme): CLASS2(SIDE,Policeman) {
             "Atlas_V_OCarrierRig_Lite_alt_blk_F": 1,
         },
         "packs": [
-            "t4_standard",
+            "t3_standard",
         ],
     });
 };
