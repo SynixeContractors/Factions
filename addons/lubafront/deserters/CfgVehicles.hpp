@@ -34,6 +34,7 @@ class CfgVehicles {
         @Role(Rifleman);
         #include "../../luba/weapons/rifle_reserve.hpp"
         #include "../../luba/weapons/launcher_reserve.hpp"
+        #include "../../luba/weapons/attachments_reserve.hpp"
     };
     class CLASS(RiflemanCarabine): CLASS(Base) {
         @Role(Hidden);
