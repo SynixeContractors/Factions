@@ -10,7 +10,7 @@ class CLASS2(SIDE,SWAT): CLASS2(SIDE,Policeman) {
             "V_TacVest_blk_POLICE" : 1,
         },
         "packs" : [
-            "t2_standard",
+            "t3_standard",
         ],
     });
 };
@@ -37,7 +37,7 @@ class CLASS2(SIDE,SWATDemo): CLASS2(SIDE,SWAT) {
             "V_EOD_blue_F" : 1,
         },
         "packs" : [
-            "t2_standard",
+            "t3_standard",
         ],
     });
 };
