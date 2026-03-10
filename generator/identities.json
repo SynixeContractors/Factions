@@ -85,4 +85,11 @@
         ],
         "genericNames": "French"
     },
+    "Altian": {
+        "identityTypes": [
+            "Head_Greek",
+            "LanguageGRE_F"
+        ],
+        "genericNames": "GreekMen"
+    },
 }
