@@ -1,8 +1,8 @@
 class CfgVehicles {
-    class GCLASS(Base_OPFOR);
-
-    class CLASS(Base): GCLASS(Base_OPFOR) {
-        faction = QCLASS(t4_opfor);
+    @ForSides(OPFOR,INDEP)
+    class GCLASS(Base_$UPPER);
+    class CLASS2($UPPER,Base): GCLASS(Base_$UPPER) {
+        faction = QCLASS(t4_$LOWER);
         displayName = "Coming Dawn Base";
         identityTypes[] = {
             "LanguagePOL_F",
@@ -13,4 +13,5 @@ class CfgVehicles {
         genericNames = "EnochMen";
         @Templated();
     };
+    @EndForSides
 };
