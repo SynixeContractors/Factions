@@ -31,7 +31,7 @@ class GCLASS(AP5): B_UAV_02_lxWS {
     crew = "C_UAV_AI_F";
 };
 class B_G_UAV_02_IED_lxWS;
-class GCLASS(AP5_IED): B_G_UAV_02_IED_lxWS {
+class GCLASS(AP5_Bomber): B_G_UAV_02_IED_lxWS {
     displayName = "AP-5B Bomber";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
