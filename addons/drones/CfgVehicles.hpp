@@ -32,6 +32,7 @@ class CfgVehicles {
 
     class GCLASS(Ship_Gun);
     class GCLASS(Ship_VLS);
+    class GCLASS(AMOS);
 
     class GCLASS(UGV);
     class GCLASS(UGV_RCWS);
@@ -63,6 +64,7 @@ class CfgVehicles {
 
         DRONE(Ship_Gun,artillery,$LOWER,$SIDE);
         DRONE(Ship_VLS,artillery,$LOWER,$SIDE);
+        DRONE(AMOS,artillery,$LOWER,$SIDE);
 
         DRONE(UGV,ground,$LOWER,$SIDE);
         DRONE(UGV_RCWS,ground,$LOWER,$SIDE);
