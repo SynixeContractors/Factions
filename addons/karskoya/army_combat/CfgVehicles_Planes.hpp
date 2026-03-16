@@ -35,6 +35,6 @@ class CLASS(Shahpar): GCLASS(Shahpar) {
     textureList[] = {"BAF",1};
     editorPreview = "\A3_Aegis\EditorPreviews_F_Aegis\Data\CfgVehicles\B_A_UAV_02_dynamicLoadout_F.jpg";
     hiddenSelectionsTextures[] = {"\A3_Aegis\Air_F_Aegis\UAV_02\Data\UAV_02_CO.paa"};
-    crew = QCLASS(Hidden);
+    crew = "C_UAV_AI_F";
     typicalCargo[] = {QCLASS(Hidden)};
 };
