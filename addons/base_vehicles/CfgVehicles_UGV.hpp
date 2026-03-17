@@ -6,6 +6,7 @@ class GCLASS(UGV): B_UGV_01_F {
     EMPTY_INVENTORY;
     crew = "C_UAV_AI_F";
     ace_refuel_fuelCapacity = 200;
+    aid_uav_mode = "SAT";
     #include "eventhandler_camo.hpp"
     #include "textures/UGV.hpp"
 };
@@ -18,6 +19,7 @@ class GCLASS(UGV_RCWS): B_UGV_01_rcws_F {
     EMPTY_INVENTORY;
     crew = "C_UAV_AI_F";
     ace_refuel_fuelCapacity = 200;
+    aid_uav_mode = "SAT";
     #include "eventhandler_camo.hpp"
     #include "textures/UGV.hpp"
 };
