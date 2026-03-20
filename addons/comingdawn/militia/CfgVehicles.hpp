@@ -1,19 +1,13 @@
-class CfgVehicles {
-    #define TEMPLATE_FACTION QPCLASS(t4_opfor)
-    #define TEMPLATE_SIDE 0
-    #define TEMPLATE_CAMO_LIST {"Beige", 1, "Black", 1}
-    // #include "../../../templates/cars/Offroad_Civilian.hpp"
-    // #include "../../../templates/cars/Offroad_Armed.hpp"
-    // #include "../../../templates/cars/Offroad_Armor.hpp"
-    #include "../../../templates/cars/Offroad_AA.hpp"
-    // #include "../../../templates/cars/Offroad_Armor_AA.hpp"
 
-    #undef TEMPLATE_CAMO_LIST
-    #define TEMPLATE_CAMO Guerrilla_03
-    #include "../../../templates/apc/BTR.hpp"
+#include "CfgVehicles_Cars.hpp"
 
-    class PCLASS(Base);
-    class CLASS(Base): PCLASS(Base) {
+    class PCLASS2(SIDE,Base);
+    class CLASS2(SIDE,Base): PCLASS2(SIDE,Base) {
+        #define TEMPLATE_FACTION QPCLASS(SIDE_FACTION)
+        #define TEMPLATE_SIDE SIDE_NUMBER
+        #undef TEMPLATE_FACTION
+        #undef TEMPLATE_SIDE
+
         displayName = "Coming Dawn Militia";
         editorSubcategory = QGCLASS(Militia);
         
@@ -391,7 +385,7 @@ class CfgVehicles {
         });
     };
 
-    class CLASS(Rifleman): CLASS(Base) {
+    class CLASS2(SIDE,Rifleman): CLASS2(SIDE,Base) {
         @Role(Rifleman);
 
         @Launchers({
@@ -405,15 +399,15 @@ class CfgVehicles {
         });
     };
 
-    class CLASS(SquadLeader): CLASS(Rifleman) {
+    class CLASS2(SIDE,SquadLeader): CLASS2(SIDE,Rifleman) {
         @Role(SquadLeader);
     };
 
-    class CLASS(TeamLeader): CLASS(Rifleman) {
+    class CLASS2(SIDE,TeamLeader): CLASS2(SIDE,Rifleman) {
         @Role(TeamLeader);
     };
 
-    class CLASS(Autorifleman): CLASS(Base) {
+    class CLASS2(SIDE,Autorifleman): CLASS2(SIDE,Base) {
         @Role(Autorifleman);
 
         @Primary({
@@ -475,7 +469,7 @@ class CfgVehicles {
         });
     };
 
-    class CLASS(Machinegunner): CLASS(Autorifleman) {
+    class CLASS2(SIDE,Machinegunner): CLASS2(SIDE,Autorifleman) {
         @Role(Machinegunner);
 
         @Primary({
@@ -535,7 +529,7 @@ class CfgVehicles {
         });
     };
 
-    class CLASS(Marksman): CLASS(Base) {
+    class CLASS2(SIDE,Marksman): CLASS2(SIDE,Base) {
         @Role(Marksman);
 
         @Primary({
@@ -588,7 +582,7 @@ class CfgVehicles {
         });
     };
 
-    class CLASS(Medic): CLASS(Base) {
+    class CLASS2(SIDE,Medic): CLASS2(SIDE,Base) {
         @Role(Medic);
 
         @Backpacks({
@@ -607,7 +601,7 @@ class CfgVehicles {
         });
     };
 
-    class CLASS(RiflemanMAT): CLASS(Base) {
+    class CLASS2(SIDE,RiflemanMAT): CLASS2(SIDE,Base) {
         @Role(RiflemanMAT);
 
         @Launchers({
@@ -645,7 +639,7 @@ class CfgVehicles {
         });
     };
 
-    class CLASS(Engineer): CLASS(Base) {
+    class CLASS2(SIDE,Engineer): CLASS2(SIDE,Base) {
         @Role(Engineer);
 
         @Backpacks({
@@ -669,7 +663,7 @@ class CfgVehicles {
         });
     };
 
-    class CLASS(Demolitions): CLASS(Base) {
+    class CLASS2(SIDE,Demolitions): CLASS2(SIDE,Base) {
         @Role(Demolitions);
 
         @Backpacks({
@@ -692,7 +686,6 @@ class CfgVehicles {
             },
         });
     };
-    class CLASS(Crewman): CLASS(Rifleman) {
+    class CLASS2(SIDE,Crewman): CLASS2(SIDE,Rifleman) {
       @Role(Crewman);
     };
-};
