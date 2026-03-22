@@ -85,4 +85,12 @@
         ],
         "genericNames": "French"
     },
+    "Sahrani": {
+    "identityTypes": [
+            "Head_Greek",
+            "Head_NATO",
+            "LanguageGRE_F"
+        ],
+        "genericNames": "Spanish"
+    },
 }
