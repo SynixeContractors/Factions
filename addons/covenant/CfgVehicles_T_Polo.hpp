@@ -1,6 +1,6 @@
 class CLASS2(SIDE,Base): CLASS2(Base,NATION) {
     side = TEMPLATE_SIDE;
-    editorSubcategory = QGCLASS2(generics,NATION);
+    //editorSubcategory = QGCLASS2(generics,NATION);
     faction = FACTION;
     @Role(Hidden);
     #include "wear/uniform.hpp"
@@ -46,6 +46,6 @@ class CLASS2(SIDE,Base): CLASS2(Base,NATION) {
 class CLASS2(SIDE,Rifleman): CLASS2(SIDE,Base) {
     @Role(Rifleman);
 };
-class CLASS2(SIDE,RiflemanCarabine): CLASS2(SIDE,Base) {
-    @Role(Hidden);
-};
+// class CLASS2(SIDE,RiflemanCarabine): CLASS2(SIDE,Base) {
+//     @Role(Hidden);
+// };
