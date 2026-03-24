@@ -7,6 +7,5 @@ class GCLASS(CH3A): O_T_UAV_04_CAS_F {
     EMPTY_INVENTORY;
     crew = "C_UAV_AI_F";
     ace_refuel_fuelCapacity = 480; //like mq1 predator
-    aid_uav_mode = "SAT";
     #include "textures/UAV04.hpp"
 };
