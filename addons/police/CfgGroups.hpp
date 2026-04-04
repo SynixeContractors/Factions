@@ -16,21 +16,22 @@ class CfgGroups {
                     GROUP_UNIT(CLASS2(SIDE,PolicemanPistol),0);
                 };
                 class CLASS2(SIDE,Patrol_Patrol) {
-                    name = "Patrol";
+                    name = "Quick Response Patrol";
                     faction = QCLASS($LOWER);
                     side = $SIDE;
                     __COUNTER_RESET__
-                    GROUP_UNIT(CLASS2(SIDE,Policeman),0);
-                    GROUP_UNIT(CLASS2(SIDE,Policeman),0);
+                    GROUP_UNIT(CLASS2(SIDE,PolicemanSMG),0);
+                    GROUP_UNIT(CLASS2(SIDE,PolicemanSMG),0);
                 };
                 class CLASS2(SIDE,Patrol_ResponseTeam) {
                     name = "Response Team";
                     faction = QCLASS($LOWER);
                     side = $SIDE;
                     __COUNTER_RESET__
-                    GROUP_UNIT(CLASS2(SIDE,Policeman),0);
                     GROUP_UNIT(CLASS2(SIDE,PolicemanSMG),0);
-                    GROUP_UNIT(CLASS2(SIDE,PolicemanPistol),0);
+                    GROUP_UNIT(CLASS2(SIDE,PolicemanSMG),0);
+                    GROUP_UNIT(CLASS2(SIDE,PolicemanRifle),0);
+                    GROUP_UNIT(CLASS2(SIDE,PolicemanRifle),0);
                 };
             };
             class CLASS2(SIDE,SWAT) {
@@ -40,8 +41,8 @@ class CfgGroups {
                     faction = QCLASS($LOWER);
                     side = $SIDE;
                     __COUNTER_RESET__
-                    GROUP_UNIT(CLASS2(SIDE,SWAT),0);
-                    GROUP_UNIT(CLASS2(SIDE,SWAT),0);
+                    GROUP_UNIT(CLASS2(SIDE,SWATSMG),0);
+                    GROUP_UNIT(CLASS2(SIDE,SWATSMG),0);
                 };
                 class CLASS2(SIDE,SWAT_SniperTeam) {
                     name = "Sniper Team";
@@ -56,18 +57,10 @@ class CfgGroups {
                     faction = QCLASS($LOWER);
                     side = $SIDE;
                     __COUNTER_RESET__
-                    GROUP_UNIT(CLASS2(SIDE,SWAT),0);
+                    GROUP_UNIT(CLASS2(SIDE,SWATSMG),0);
                     GROUP_UNIT(CLASS2(SIDE,SWATRifle),0);
                     GROUP_UNIT(CLASS2(SIDE,SWATRifle),0);
                     GROUP_UNIT(CLASS2(SIDE,SWATDemo),0);
-                };
-                class CLASS2(SIDE,SWAT_EscortTeam) {
-                    name = "Escort Team";
-                    faction = QCLASS($LOWER);
-                    side = $SIDE;
-                    __COUNTER_RESET__
-                    GROUP_UNIT(CLASS2(SIDE,SWATSMG),0);
-                    GROUP_UNIT(CLASS2(SIDE,SWATSMG),0);
                 };
             };
             class CLASS2(SIDE,Gendarmerie) {
@@ -77,8 +70,8 @@ class CfgGroups {
                     faction = QCLASS($LOWER);
                     side = $SIDE;
                     __COUNTER_RESET__
-                    GROUP_UNIT(CLASS2(SIDE,Gendarme),0);
-                    GROUP_UNIT(CLASS2(SIDE,Gendarme),0);
+                    GROUP_UNIT(CLASS2(SIDE,GendarmeSMG),0);
+                    GROUP_UNIT(CLASS2(SIDE,GendarmeSMG),0);
                 };
                 class CLASS2(SIDE,Gendarmerie_SniperTeam) {
                     name = "Sniper Team";
@@ -93,18 +86,10 @@ class CfgGroups {
                     faction = QCLASS($LOWER);
                     side = $SIDE;
                     __COUNTER_RESET__
-                    GROUP_UNIT(CLASS2(SIDE,Gendarme),0);
+                    GROUP_UNIT(CLASS2(SIDE,GendarmeSMG),0);
                     GROUP_UNIT(CLASS2(SIDE,GendarmeRifle),0);
                     GROUP_UNIT(CLASS2(SIDE,GendarmeRifle),0);
                     GROUP_UNIT(CLASS2(SIDE,GendarmeBreacher),0);
-                };
-                class CLASS2(SIDE,Gendarmerie_EscortTeam) {
-                    name = "Escort Team";
-                    faction = QCLASS($LOWER);
-                    side = $SIDE;
-                    __COUNTER_RESET__
-                    GROUP_UNIT(CLASS2(SIDE,GendarmeSMG),0);
-                    GROUP_UNIT(CLASS2(SIDE,GendarmeSMG),0);
                 };
             };
             #undef SIDE
