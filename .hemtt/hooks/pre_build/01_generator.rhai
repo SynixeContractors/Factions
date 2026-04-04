@@ -420,10 +420,10 @@ fn is_alphanumeric(char) {
 
 fn get_side_data(side) {
     switch side {
-        "BLUFOR" => { return #{SIDE: 1, UPPER: "BLUFOR", LOWER: "blufor"} }
-        "OPFOR" => { return #{SIDE: 0, UPPER: "OPFOR", LOWER: "opfor"} }
-        "INDEP" => { return #{SIDE: 2, UPPER: "INDEP", LOWER: "indep"} }
-        "CIV" => { return #{SIDE: 3, UPPER: "CIV", LOWER: "civ"} }
+        "BLUFOR" => { return #{SIDE: 1, UPPER: "BLUFOR", LOWER: "blufor", GROUP: "West"} }
+        "OPFOR" => { return #{SIDE: 0, UPPER: "OPFOR", LOWER: "opfor", GROUP: "East"} }
+        "INDEP" => { return #{SIDE: 2, UPPER: "INDEP", LOWER: "indep", GROUP: "Indep"} }
+        "CIV" => { return #{SIDE: 3, UPPER: "CIV", LOWER: "civ", GROUP: "Civ"} }
         _ => { fatal("Unknown side: " + side); }
     }
 }
