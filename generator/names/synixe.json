@@ -15,7 +15,6 @@
         "Matías",
         "Matty",
         "Michael",
-        "Mike",
         "Nathanial",
         "Noah",
         "Philippe",
@@ -24,10 +23,11 @@
         "Roberto",
         "Thomas",
         "Tobias",
-        "Valerie"
+        "Valkyrie",
     ],
     "last_names": [
         "Bolland",
+        "Best",
         "Cecil",
         "Connect",
         "Curio",
@@ -51,9 +51,8 @@
         "Shevchenko",
         "Singh",
         "Smith",
-        "Utley",
         "Valentine",
         "Watson",
-        "Yi"
+        "Yi",
     ]
 }
