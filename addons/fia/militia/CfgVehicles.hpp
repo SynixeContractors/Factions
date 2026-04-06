@@ -12,6 +12,7 @@ class CLASS2(SIDE,Base): PCLASS2(SIDE,Base) {
 
     #include "../wear/uniform_militia.hpp"
     #include "../../altis/wear/vest_garrison.hpp"
+    #include "../wear/headwear.hpp"
 
     @Facewear({
         "Aegis_G_Armband_FIA_alt_F": 1,
