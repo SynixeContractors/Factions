@@ -12,6 +12,7 @@ class CfgPatches {
         author = "Synixe Contractors";
         VERSION_CONFIG;
     };
+
 };
 
 #include "CfgFactionClasses.hpp"
