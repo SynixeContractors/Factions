@@ -8,12 +8,23 @@ class CfgVehicles {
         @Templated();
     };
 
+    class CLASS(ContractorOffice): CLASS(Base) {
+        displayName = "Contractor (Office)";
+        scope = 2;
+        scopeCurator = 2;
+        @Uniforms({
+            "variants": {
+                "synixe_factions_synixe_Uniform_Contractor_Shirt": 1,
+            },
+        });
+    };
+
     class CLASS(Unit_Contractor_Shirt);
     class CLASS(Contractor): CLASS(Unit_Contractor_Shirt) {
         scope = 2;
         scopeCurator = 2;
         faction = QPCLASS(t4_blufor);
-        displayName = "Contractor (No Equipment)";
+        displayName = "Contractor (Player)";
         @Identity(Synixe);
     };
 };

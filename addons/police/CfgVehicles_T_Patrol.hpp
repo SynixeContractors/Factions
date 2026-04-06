@@ -11,6 +11,9 @@ class CLASS2(SIDE,Policeman): CLASS2(Base,NATION) {
             "U_B_GEN_Soldier_F": 0.8,
             "U_B_GEN_Commander_F": 0.2,
         },
+        "packs": [
+            "rifleman_medical"
+        ],
     });
     @Secondary({
         "weapons": {
@@ -53,9 +56,6 @@ class CLASS2(SIDE,PolicemanPistol): CLASS2(SIDE,Policeman) {
         "variants" : {
             "V_TacVest_blk_POLICE" : 1,
         },
-        "packs" : [
-            "t2_standard",
-        ],
     });
 };
 class CLASS2(SIDE,PolicemanSMG): CLASS2(SIDE,PolicemanPistol) {

@@ -97,7 +97,7 @@ class GCLASS(MD500): C_Heli_Light_01_civil_F {
 };
 ADD_CAMO_EVENT_HANDLER(B_Heli_Light_01_F,Heli_Light_01_unarmed_base_F);
 class GCLASS(MD500E): B_Heli_Light_01_F {
-    displayName ="MD 500E (MH-6) Little Bird";
+    displayName ="MD 500E (MH-9) Hummingbird";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
@@ -146,7 +146,7 @@ class GCLASS(MD500E): B_Heli_Light_01_F {
 
 ADD_CAMO_EVENT_HANDLER(B_Heli_Light_01_dynamicLoadout_F,Heli_Light_01_dynamicLoadout_base_F);
 class GCLASS(MD500E_Armed): B_Heli_Light_01_dynamicLoadout_F {
-    displayName ="MD 500E (AH-6) Little Bird";
+    displayName ="MD 500E (AH-9) Hummingbird";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;

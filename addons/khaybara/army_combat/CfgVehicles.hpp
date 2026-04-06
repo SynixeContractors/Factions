@@ -2,6 +2,7 @@ class CfgVehicles {
     #define TEMPLATE_FACTION QPCLASS(t2_blufor)
     #define TEMPLATE_SIDE 1
     #include "../../../templates/statics/M2.hpp"
+    #include "../../../templates/statics/Ship.hpp"
     #define TEMPLATE_CAMO Desert
     #include "../../../templates/statics/SAM01.hpp"
     #undef TEMPLATE_CAMO
@@ -97,7 +98,7 @@ class CfgVehicles {
     };
     class CLASS(RiflemanHAT): CLASS(RiflemanBackpack) {
         @Role(RiflemanHAT);
-        #include "../weapons/mat.hpp"
+        #include "../weapons/hat.hpp"
     };
     class CLASS(Engineer): CLASS(RiflemanBackpack) {
         @Role(Engineer);

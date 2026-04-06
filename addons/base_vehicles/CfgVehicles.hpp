@@ -61,6 +61,8 @@ class CfgVehicles {
     #include "CfgVehicles_UAV04.hpp"
     #include "CfgVehicles_UAV05.hpp"
     #include "CfgVehicles_UAV07.hpp"
+    #include "CfgVehicles_UAV_small.hpp"
+    #include "CfgVehicles_AutoMortar.hpp"
 
     // Tanks
     #include "CfgVehicles_T100.hpp"
@@ -77,6 +79,7 @@ class CfgVehicles {
     #include "CfgVehicles_Comanche.hpp"
     #include "CfgVehicles_Ghosthawk.hpp"
     #include "CfgVehicles_Ka54.hpp"
+    #include "CfgVehicles_LittleBird.hpp"
     #include "CfgVehicles_MD500.hpp"
     #include "CfgVehicles_Mi35.hpp"
     #include "CfgVehicles_Mohawk.hpp"
@@ -109,4 +112,5 @@ class CfgVehicles {
     #include "CfgVehicles_XM.hpp"
     #include "CfgVehicles_Radar01.hpp"
     #include "CfgVehicles_Radar02.hpp"
+    #include "CfgVehicles_ShipWeapons.hpp"
 };

@@ -53,10 +53,11 @@ class CfgPatches {
 
 class synixe_factions_generics {
     @ForSides(BLUFOR,INDEP,OPFOR,CIV)
-        class GCLASS(police_$LOWER) {};
+        class CLASS($LOWER) {};
     @EndForSides
 };
 
-#include "CfgVehicles.hpp"
 #include "CfgEditorSubcategories.hpp"
 #include "CfgFactionClasses.hpp"
+#include "CfgGroups.hpp"
+#include "CfgVehicles.hpp"
