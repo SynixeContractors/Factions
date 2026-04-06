@@ -17,6 +17,7 @@ class CfgPatches {
 class CfgVehicles {
     class GCLASS(BTR);
     class GCLASS(BTR_SPG);
+    class GCLASS(Ram_MMG);
 
     @ForSides(BLUFOR,OPFOR,INDEP)
     #define SIDE $UPPER
