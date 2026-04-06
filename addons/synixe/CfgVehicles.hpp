@@ -1,8 +1,8 @@
 class CfgVehicles {
-    class GCLASS(Base_INDEP);
+    class GCLASS(Base_BLUFOR);
 
-    class CLASS(Base): GCLASS(Base_INDEP) {
-        faction = QCLASS(t4_indep);
+    class CLASS(Base): GCLASS(Base_BLUFOR) {
+        faction = QCLASS(t4_blufor);
         displayName = "Synixe Base";
         @Identity(Synixe);
         @Templated();
