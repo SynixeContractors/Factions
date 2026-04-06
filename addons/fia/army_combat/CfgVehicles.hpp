@@ -36,23 +36,28 @@ class CLASS2(SIDE,RiflemanCarabine): CLASS2(SIDE,Base) {
 
 class CLASS2(SIDE,RiflemanBackpack): CLASS2(SIDE,RiflemanCarabine) {
     @Role(Hidden);
-    #include "../../altis/wear/backpack.hpp"
+    #include "../wear/backpack.hpp"
 };
 
 class CLASS2(SIDE,SquadLeader): CLASS2(SIDE,RiflemanCarabine) {
     @Role(SquadLeader);
     #include "../../altis/weapons/gl.hpp"
+    #include "../../altis/weapons/pistol.hpp"
 };
 
 class CLASS2(SIDE,TeamLeader): CLASS2(SIDE,RiflemanCarabine) {
-    #include "../../altis/weapons/pistol.hpp"
     @Role(TeamLeader);
+    #include "../../altis/weapons/pistol.hpp"
 };
 
 class CLASS2(SIDE,Autorifleman): CLASS2(SIDE,RiflemanBackpack) {
     @Role(Autorifleman);
     #include "../../altis/weapons/lmg.hpp"
     #include "../../altis/weapons/pistol.hpp"
+};
+
+class CLASS2(SIDE,AsstMachinegunner): CLASS2(SIDE,RiflemanBackpack) {
+    @Role(AsstMachinegunner);
 };
 
 class CLASS2(SIDE,Machinegunner): CLASS2(SIDE,RiflemanBackpack) {
@@ -75,6 +80,16 @@ class CLASS2(SIDE,Medic): CLASS2(SIDE,RiflemanBackpack) {
 class CLASS2(SIDE,RiflemanMAT): CLASS2(SIDE,RiflemanBackpack) {
     #include "../../altis/weapons/mat.hpp"
     @Role(RiflemanMAT);
+};
+
+class CLASS2(SIDE,RiflemanHAT): CLASS2(SIDE,RiflemanBackpack) {
+    #include "../../altis/weapons/hat.hpp"
+    @Role(RiflemanHAT);
+};
+
+class CLASS2(SIDE,RiflemanAA): CLASS2(SIDE,RiflemanBackpack) {
+    #include "../../altis/weapons/aa.hpp"
+    @Role(RiflemanAA);
 };
 
 class CLASS2(SIDE,Engineer): CLASS2(SIDE,RiflemanBackpack) {
