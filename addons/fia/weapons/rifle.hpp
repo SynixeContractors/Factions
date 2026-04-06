@@ -1,23 +1,23 @@
 @Primary({
-    "weapons": {
-        "JCA_arifle_M16A4_black_F": {
+"weapons": {
+    "JCA_arifle_M16A4_black_F": {
         "probability": 1,
         "magazinesVest": {
              "30Rnd_556x45_Stanag": 6,
         },
     },
     "arifle_Mk20_F": {
-            "probability": 4,
-            "magazinesVest": {
-                "30Rnd_556x45_Stanag_red": 6,
-            },
+        "probability": 4,
+        "magazinesVest": {
+            "30Rnd_556x45_Stanag_red": 6,
         },
+    },
     "arifle_Mk20C_F": {
-            "probability": 4,
-            "magazinesVest": {
-                "30Rnd_556x45_Stanag_red": 6,
-            },
+        "probability": 4,
+        "magazinesVest": {
+            "30Rnd_556x45_Stanag_red": 6,
         },
+    },
     "Atlas_Arifle_famasG2_F": {
         "probability": 1,
         "magazinesVest": {
