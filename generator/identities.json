@@ -85,4 +85,32 @@
         ],
         "genericNames": "French"
     },
+    "Sahrani": {
+        "identityTypes": [
+            "Head_Greek",
+            "Head_NATO",
+            "LanguageGRE_F"
+        ],
+        "genericNames": "Spanish"
+    },
+    "Altian": {
+        "identityTypes": [
+            "Head_Greek",
+            "LanguageGRE_F"
+        ],
+        "genericNames": "GreekMen"
+    },
+    "Asarta": {
+        "identityTypes": [
+            "Head_African",
+            "lxWS_Head_African",
+            "Head_Tanoan",
+            "Head_Russian",
+            "Head_TK",
+            "Head_Euro",
+            "LanguagePOL_F",
+            "Head_NATO"
+        ],
+        "genericNames": "Polish"
+    },
 }

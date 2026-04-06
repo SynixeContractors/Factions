@@ -1,4 +1,4 @@
-class O_Mortar_01_F;
+ADD_CAMO_EVENT_HANDLER(O_Mortar_01_F,Mortar_01_base_F);
 class GCLASS(Mk6Mortar): O_Mortar_01_F {
     displayName = "Mk6 Mortar";
     faction = QGCLASS(base_vehicles);
@@ -7,6 +7,7 @@ class GCLASS(Mk6Mortar): O_Mortar_01_F {
     EMPTY_INVENTORY;
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
+    #include "eventhandler_camo.hpp"
     class TextureSources {
         class Green {
             displayName = "Green";
