@@ -18,18 +18,6 @@
             "30Rnd_556x45_Stanag_red": 6,
         },
     },
-    "Atlas_Arifle_famasG2_F": {
-        "probability": 1,
-        "magazinesVest": {
-             "30Rnd_556x45_Stanag": 6,
-        },
-    },
-    "Atlas_Arifle_famasG2_Grip_F": {
-        "probability": 1,
-        "magazinesVest": {
-             "30Rnd_556x45_Stanag": 6,
-        },
-    },
     "arifle_SPAR_02_blk_F": {
         "probability": 1,
         "magazinesVest": {
@@ -102,5 +90,5 @@
              "30Rnd_556x45_Stanag": 6,
         },
     },
-    },
+},
 });
