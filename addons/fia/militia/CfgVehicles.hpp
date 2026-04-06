@@ -7,12 +7,11 @@ class CLASS2(SIDE,Base): PCLASS2(SIDE,Base) {
     #undef TEMPLATE_FACTION
     #undef TEMPLATE_SIDE
 
-    displayName = "FIA Army Combat";
-    editorSubcategory = QGCLASS(army_combat);
+    displayName = "FIA Militia";
+    editorSubcategory = QGCLASS(militia);
 
-    #include "../wear/uniform.hpp"
+    #include "../wear/uniform_militia.hpp"
     #include "../../altis/wear/vest_garrison.hpp"
-    #include "../../altis/wear/headwear.hpp"
 
     @Facewear({
         "Aegis_G_Armband_FIA_alt_F": 1,
@@ -85,20 +84,4 @@ class CLASS2(SIDE,Engineer): CLASS2(SIDE,RiflemanBackpack) {
 class CLASS2(SIDE,Demolitions): CLASS2(SIDE,RiflemanBackpack) {
     @Role(Demolitions)
     #include "../../altis/wear/demo.hpp"
-};
-
-class CLASS2(SIDE,Crewman): CLASS2(SIDE,Base) {
-    @Role(Crewman);
-    @Headgear({
-        "H_HelmetCrew_I": 1,
-    });
-    @Uniforms({
-        "variants": {
-            "U_Tank_green_F": 1,
-        },
-        "packs": [
-            "rifleman_medical",
-        ],
-    });
-    #include "../../altis/weapons/pdw.hpp"
 };
