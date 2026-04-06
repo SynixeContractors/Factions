@@ -24,5 +24,6 @@ class SynixeIdentities {
 
 #include "CfgEditorSubcategories.hpp"
 #include "CfgEventHandlers.hpp"
+#include "CfgGroups.hpp"
 #include "CfgVehicles.hpp"
 #include "CfgWorlds.hpp"
