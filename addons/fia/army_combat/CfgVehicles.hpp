@@ -7,8 +7,8 @@ class CLASS2(SIDE,Base): PCLASS2(SIDE,Base) {
     #undef TEMPLATE_FACTION
     #undef TEMPLATE_SIDE
 
-    displayName = "FIA Army Reserve";
-    editorSubcategory = QGCLASS(reserves);
+    displayName = "FIA Army Combat";
+    editorSubcategory = QGCLASS(army_combat);
 
     #include "../wear/uniform.hpp"
     #include "../../altis/wear/vest_garrison.hpp"
