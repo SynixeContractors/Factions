@@ -16,6 +16,10 @@ class CfgPatches {
 
 class CfgVehicles {
     class GCLASS(Ram);
+    class GCLASS(Ram_Covered);
+    class GCLASS(Ram_HMG);
+    class GCLASS(Ram_Fuel);
+    class GCLASS(Ram_Rocket);
 
     @ForSides(BLUFOR,OPFOR,INDEP)
     #define SIDE $UPPER
