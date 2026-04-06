@@ -7,7 +7,7 @@
 
 class Item_Base_F;
 
-class PCLASS(Item_Uniform_Contractor_Shirt): Item_Base_F {
+class CLASS(Item_Uniform_Contractor_Shirt): Item_Base_F {
     MACRO_ITEM_COMMON
     author = "Brett Harrison";
     displayName = "Contractor Shirt";
@@ -17,7 +17,7 @@ class PCLASS(Item_Uniform_Contractor_Shirt): Item_Base_F {
     };
 };
 
-class PCLASS(Item_Uniform_Combat_LS_Synixe_BP_BB): Item_Base_F {
+class CLASS(Item_Uniform_Combat_LS_Synixe_BP_BB): Item_Base_F {
     MACRO_ITEM_COMMON
     author = "Brett Harrison";
     displayName = "Combat Uniform (Synixe)";
@@ -27,7 +27,7 @@ class PCLASS(Item_Uniform_Combat_LS_Synixe_BP_BB): Item_Base_F {
     };
 };
 
-class PCLASS(Item_Uniform_Combat_RS_Synixe_BP_BB): Item_Base_F {
+class CLASS(Item_Uniform_Combat_RS_Synixe_BP_BB): Item_Base_F {
     MACRO_ITEM_COMMON
     author = "Brett Harrison";
     displayName = "Combat Uniform (Synixe, Rolled-Up)";
