@@ -22,14 +22,14 @@ class CLASS2(SIDE,Base): PCLASS2(SIDE,Base) {
 
 class CLASS2(SIDE,Rifleman): CLASS2(SIDE,Base) {
     @Role(Rifleman);
-    #include "../../altis/weapons/rifle.hpp"
+    #include "../weapons/rifle.hpp"
     #include "../../altis/weapons/launcher.hpp"
-    #include "../../altis/weapons/attachments_army.hpp"
+    #include "../weapons/attachments_militia.hpp"
 };
 
 class CLASS2(SIDE,RiflemanCarabine): CLASS2(SIDE,Base) {
     @Role(Hidden);
-    #include "../../altis/weapons/rifle.hpp"
+    #include "../weapons/rifle.hpp"
     #include "../../altis/weapons/attachments_army.hpp"
 };
 
