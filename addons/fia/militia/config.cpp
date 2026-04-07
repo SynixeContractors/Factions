@@ -15,10 +15,18 @@ class CfgPatches {
 };
 
 class CfgVehicles {
+    class GCLASS(LUT_AA);
+    class GCLASS(LUT_Cargo);
+    class GCLASS(LUT_Flatbed);
+    class GCLASS(LUT_Fuel);
+    class GCLASS(LUT_Medical);
+    class GCLASS(LUT_Repair);
+    class GCLASS(LUT_Transport);
+    class GCLASS(LUT_TransportCovered);
     class GCLASS(Ram);
     class GCLASS(Ram_Covered);
-    class GCLASS(Ram_HMG);
     class GCLASS(Ram_Fuel);
+    class GCLASS(Ram_HMG);
     class GCLASS(Ram_Rocket);
 
     @ForSides(BLUFOR,OPFOR,INDEP)
