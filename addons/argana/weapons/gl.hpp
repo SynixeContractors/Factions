@@ -1,12 +1,12 @@
 @Primary({
     "weapons": {
-        "Aegis_arifle_AK103_GL_plum_F": {
+        "arifle_Katiba_GL_F": {
             "probability": 1,
             "magazinesVest": {
-                "30Rnd_762x39_Mag_Tracer_F": 8,
+                "30Rnd_65x39_caseless_green": 8,
                 "1Rnd_HE_Grenade_shell": 4,
             },
-            "loadedPrimary": "30Rnd_762x39_Mag_Tracer_F",
+            "loadedPrimary": "30Rnd_65x39_caseless_green",
             "loadedSecondary": "1Rnd_HE_Grenade_shell",
         },
     },

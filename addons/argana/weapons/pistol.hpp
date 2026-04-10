@@ -1,8 +1,8 @@
 @Secondary({
     "weapons": {
-        "hgun_Pistol_01_F": {
+        "hgun_ACPC2_F": {
             "magazinesUniform": {
-                "10Rnd_9x21_Mag": 3,
+                "9Rnd_45ACP_Mag": 3,
             },
         },
     },

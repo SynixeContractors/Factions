@@ -1,3 +1,3 @@
 @Headgear({
-    "Atlas_H_PASGT_Cover_O_SAHex_F": 1,
+    "lxWS_H_ssh40_sand": 1,
 });

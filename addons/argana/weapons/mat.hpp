@@ -1,9 +1,9 @@
 @Launchers({
     "weapons": {
-        "launch_PSRL1_sand_RF": {
+        "JCA_launch_Mk153_sand_F": {
             "magazinesBackpack": {
-                "PSRL1_AT_RF": 2,
-                "PSRL1_HE_RF": 1,
+                "JCA_MK153_HEAT_F": 2,
+                "JCA_MK153_HE_F": 1,
             },
         },
     },

@@ -1,10 +1,10 @@
 @Primary({
     "pointers": {
-        "Aegis_acc_LightModule_Pistol_black": 5,
+        "acc_flashlight": 5,
         "": 2,
     },
     "optics": {
-        "": 0.95,
-        "optic_ACO_grn_AK_F": 0.05,
+        "": 0.85,
+        "optic_ACO_grn": 0.15,
     },
 });
