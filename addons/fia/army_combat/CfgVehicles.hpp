@@ -98,7 +98,7 @@ class CLASS2(SIDE,Engineer): CLASS2(SIDE,RiflemanBackpack) {
 };
 
 class CLASS2(SIDE,Demolitions): CLASS2(SIDE,RiflemanBackpack) {
-    @Role(Demolitions)
+    @Role(Demolitions);
     #include "../../altis/wear/demo.hpp"
 };
 
