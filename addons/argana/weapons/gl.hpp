@@ -10,8 +10,4 @@
             "loadedSecondary": "1Rnd_HE_Grenade_shell",
         },
     },
-    "optics": {
-        "Aegis_optic_1p87": 0.5,
-        "": 0.5,
-    },
 });

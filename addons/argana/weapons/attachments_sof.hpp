@@ -5,7 +5,7 @@
         "Aegis_acc_pointer_compact_green": 1,
     },
     "optics": {
-        "Aegis_optic_1p87": 3,
+        "optic_rds_RF": 3,
         "": 1,
     },
     "muzzles" : {
