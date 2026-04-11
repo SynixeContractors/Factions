@@ -1,9 +1,9 @@
 @Primary({
     "weapons": {
-        "Aegis_MMG_FNMAG_old_F": {
+        "LMG_S77_Desert_lxWS": {
             "probability": 1,
             "magazinesVest": {
-                "Aegis_200Rnd_762x51_MAG_Yellow_F": 2,
+                "100Rnd_762x51_S77_Green_lxWS": 2,
             },
         },
     },

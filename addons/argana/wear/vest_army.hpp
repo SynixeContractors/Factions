@@ -1,10 +1,10 @@
 @Vests({
     "variants" : {
-        "V_Pocketed_coyote_F": 0.9,
-        "V_BandollierB_snake": 0.1,
+        "V_Pocketed_coyote_F": 0.7,
+        "V_HarnessOSpec_tan": 0.3,
     },
     "packs": [
-        "t4_standard",
+        "t3_standard",
         "military_standard"
     ],
 });
