@@ -60,25 +60,28 @@ class GCLASS(Ram_Covered): Pickup_covered_base_rf {
 };
 class GCLASS(Ram_Comms);
 
-class CLASS(Offroad): GCLASS(Offroad) {
+class GCLASS(Offroad_Lights): GCLASS(Offroad) {
     scope = 0;
     scopeCurator = 0;
+    textureList[] = {QUOTE(TEMPLATE_CAMO),1};
+    displayName = "Offroad (Lightbar)";
+    class AnimationSources: AnimationSources {
+        ANIMATION_OFF(hidePolice);
+    };
+};
+class GCLASS(Offroad_Covered_Lights): GCLASS(Offroad_Covered) {
+    scope = 0;
+    scopeCurator = 0;
+    displayName = "Offroad (Covered, Lightbar)";
     textureList[] = {QUOTE(TEMPLATE_CAMO),1};
     class AnimationSources: AnimationSources {
         ANIMATION_OFF(hidePolice);
     };
 };
-class CLASS(Offroad_Covered): GCLASS(Offroad_Covered) {
+class GCLASS(Van_Transport_Lights): GCLASS(Van_Transport) {
     scope = 0;
     scopeCurator = 0;
-    textureList[] = {QUOTE(TEMPLATE_CAMO),1};
-    class AnimationSources: AnimationSources {
-        ANIMATION_OFF(hidePolice);
-    };
-};
-class CLASS(Van_Transport): GCLASS(Van_Transport) {
-    scope = 0;
-    scopeCurator = 0;
+    displayName = "Van (Transport, Lightbar)";
     textureList[] = {QUOTE(TEMPLATE_CAMO),1};
     class AnimationSources: AnimationSources {
         ANIMATION_OFF(beacon_front_hide);
@@ -90,15 +93,16 @@ class CLASS(Van_Transport): GCLASS(Van_Transport) {
         ANIMATION_OFF(reflective_tape_hide);
     };
 };
-class CLASS(Ram_Covered): GCLASS(Ram_Covered) {
+class GCLASS(Ram_Covered_Lights): GCLASS(Ram_Covered) {
     scope = 0;
     scopeCurator = 0;
+    displayName = "Ram 1500 (Covered, Lightbar)";
     textureList[] = {QUOTE(TEMPLATE_CAMO),1};
     class AnimationSources: AnimationSources {
         ANIMATION_OFF(hide_police);
     };
 };
-class CLASS(Ram_Bars_Covered): GCLASS(Ram_Covered) {
+class GCLASS(Ram_Bars_Covered): GCLASS(Ram_Covered) {
     scope = 0;
     scopeCurator = 0;
     displayName = "Ram 1500 (Bars, Covered)";
@@ -113,7 +117,7 @@ class CLASS(Ram_Bars_Covered): GCLASS(Ram_Covered) {
         ANIMATION_OFF(hide_armor_window_armor_R_L);
     };
 };
-class CLASS(Ram_Bars): CLASS(Ram_Bars_Covered) {
+class GCLASS(Ram_Bars): GCLASS(Ram_Bars_Covered) {
     scope = 0;
     scopeCurator = 0;
     displayName = "Ram 1500 (Bars)";

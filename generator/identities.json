@@ -113,4 +113,12 @@
         ],
         "genericNames": "Polish"
     },
+    "Tura": {
+        "identityTypes": [
+            "lxWS_Head_African",
+            "LanguageFRE_F"
+        ],
+        "genericNames": "French"
+    },
+
 }
