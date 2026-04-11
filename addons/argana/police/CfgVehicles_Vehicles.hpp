@@ -71,6 +71,28 @@ class CLASS(Ram_HMG): GCLASS(Ram_HMG) {
     textureList[] = {QUOTE(TEMPLATE_CAMO),1};
     editorSubcategory = QGCLASS(police_cars);
 };
+//Lights Variants
+class GCLASS(Ram_Bars_Covered);
+class CLASS(Ram_Bars_Covered): GCLASS(Ram_Bars_Covered) {
+    SCOPE_DLC;
+    faction = TEMPLATE_FACTION;
+    side = TEMPLATE_SIDE;
+    crew = QCLASS(Rifleman);
+    typicalCargo[] = {QCLASS(Rifleman)};
+    textureList[] = {QUOTE(TEMPLATE_CAMO),1};
+    editorSubcategory = QGCLASS(police_cars);
+};
+class GCLASS(Ram_Covered_Lights);
+class CLASS(Ram_Bars_Covered_Lights): GCLASS(Ram_Covered_Lights) {
+    SCOPE_DLC;
+    faction = TEMPLATE_FACTION;
+    side = TEMPLATE_SIDE;
+    crew = QCLASS(Rifleman);
+    typicalCargo[] = {QCLASS(Rifleman)};
+    textureList[] = {QUOTE(TEMPLATE_CAMO),1};
+    editorSubcategory = QGCLASS(police_cars);
+};
+
 #undef TEMPLATE_CAMO
 #define TEMPLATE_CAMO ArganaRoyal
 class GCLASS(Van_Transport);
@@ -85,6 +107,17 @@ class CLASS(Van_Transport): GCLASS(Van_Transport) {
 };
 class GCLASS(Van_Cargo);
 class CLASS(Van_Cargo): GCLASS(Van_Cargo) {
+    SCOPE_DLC;
+    faction = TEMPLATE_FACTION;
+    side = TEMPLATE_SIDE;
+    crew = QCLASS(Rifleman);
+    typicalCargo[] = {QCLASS(Rifleman)};
+    textureList[] = {QUOTE(TEMPLATE_CAMO),1};
+    editorSubcategory = QGCLASS(police_cars);
+};
+//lights
+class GCLASS(Van_Transport_Lights);
+class CLASS(Van_Transport_lights): GCLASS(Van_Transport_Lights) {
     SCOPE_DLC;
     faction = TEMPLATE_FACTION;
     side = TEMPLATE_SIDE;

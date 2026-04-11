@@ -64,6 +64,7 @@ class GCLASS(Offroad_Lights): GCLASS(Offroad) {
     scope = 0;
     scopeCurator = 0;
     textureList[] = {QUOTE(TEMPLATE_CAMO),1};
+    displayName = "Offroad (Lightbar)";
     class AnimationSources: AnimationSources {
         ANIMATION_OFF(hidePolice);
     };
@@ -71,6 +72,7 @@ class GCLASS(Offroad_Lights): GCLASS(Offroad) {
 class GCLASS(Offroad_Covered_Lights): GCLASS(Offroad_Covered) {
     scope = 0;
     scopeCurator = 0;
+    displayName = "Offroad (Covered, Lightbar)";
     textureList[] = {QUOTE(TEMPLATE_CAMO),1};
     class AnimationSources: AnimationSources {
         ANIMATION_OFF(hidePolice);
@@ -79,6 +81,7 @@ class GCLASS(Offroad_Covered_Lights): GCLASS(Offroad_Covered) {
 class GCLASS(Van_Transport_Lights): GCLASS(Van_Transport) {
     scope = 0;
     scopeCurator = 0;
+    displayName = "Van (Transport, Lightbar)";
     textureList[] = {QUOTE(TEMPLATE_CAMO),1};
     class AnimationSources: AnimationSources {
         ANIMATION_OFF(beacon_front_hide);
@@ -93,6 +96,7 @@ class GCLASS(Van_Transport_Lights): GCLASS(Van_Transport) {
 class GCLASS(Ram_Covered_Lights): GCLASS(Ram_Covered) {
     scope = 0;
     scopeCurator = 0;
+    displayName = "Ram 1500 (Covered, Lightbar)";
     textureList[] = {QUOTE(TEMPLATE_CAMO),1};
     class AnimationSources: AnimationSources {
         ANIMATION_OFF(hide_police);
