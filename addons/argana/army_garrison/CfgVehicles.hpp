@@ -39,10 +39,11 @@ class CfgVehicles {
     class CLASS(Worker): CLASS(Base) {
         @Role(Worker);
         #include "../wear/worker.hpp"
+        #include "../weapons/pistol.hpp"
     };
     class CLASS(Maintainer): CLASS(Base) {
         @Role(Maintainer);
         #include "../wear/worker.hpp"
-        #include "../weapons/rifle_old.hpp"
+        #include "../weapons/pdw.hpp"
     };
 };
