@@ -138,7 +138,7 @@ class TextureSources {
         factions[] = {};
     };
     class ArganaRoyal {
-        displayName = "Argana (Royal)";
+        displayName = "Argana (Royal Police)";
         dlc = "rf";
         materials[] = {"\a3\Soft_F_Orange\Van_02\Data\van_body.rvmat","\A3\Soft_F_Orange\Van_02\Data\van_wheel.rvmat","","\a3\Data_f\Lights\Car_Beacon_Blue_emit.rvmat"};
         textures[] = {"\lxrf\vehicles_rf\Van_02\data\van_body_argana_royal_co.paa","\a3\Soft_F_Orange\Van_02\Data\van_wheel_dirty_CO.paa","\lxrf\vehicles_rf\Van_02\data\van_glass_argana_royal_ca.paa","\lxrf\vehicles_rf\Van_02\data\van_body_argana_royal_co.paa"};

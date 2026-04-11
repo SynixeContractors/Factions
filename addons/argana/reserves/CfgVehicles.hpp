@@ -5,7 +5,7 @@ class CfgVehicles {
         editorSubcategory = QGCLASS(reserves);
 
         #include "../wear/uniform.hpp"
-        #include "../wear/vest_army.hpp"
+        #include "../wear/vest_garrison.hpp"
         #include "../wear/helmet.hpp"
         #include "../wear/facewear_army.hpp"
         @Assigned(Military);

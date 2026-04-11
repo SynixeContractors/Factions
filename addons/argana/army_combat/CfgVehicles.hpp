@@ -14,6 +14,7 @@ class CfgVehicles {
     #include "../../../templates/cars/LUT_MRL.hpp"
     #include "../../../templates/cars/LUT_Repair.hpp"
     #include "../../../templates/cars/LUT_Transport.hpp"
+    #include "../../../templates/cars/Jeep.hpp"
     #undef TEMPLATE_CAMO
     #define TEMPLATE_CAMO Para_01
     #include "../../../templates/apc/BTR.hpp"
