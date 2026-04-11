@@ -1,13 +1,13 @@
 @Primary({
     "weapons": {
-        "srifle_DMR_03_tan_F": {
+        "JCA_srifle_AWM_sand_F": {
             "magazinesVest": {
-                "20Rnd_762x51_Mag": 6,
+                "JCA_5Rnd_338LM_AWM_Tracer_Green_Mag": 6,
             },
         },
     },
     "optics": {
-        "optic_AMS": 1,
+        "optic_LRPS": 1,
     },
     "bipods": {
         "bipod_01_F_snd": 0.95,
