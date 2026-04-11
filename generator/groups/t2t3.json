@@ -193,7 +193,7 @@
                 },
                 {
                     "class": "Patrol_ResponseTeam",
-                    "name": "Quick Response Patrol",
+                    "name": "Response Team",
                     "units": [
                         "RiflemanSMG",
                         "RiflemanSMG",

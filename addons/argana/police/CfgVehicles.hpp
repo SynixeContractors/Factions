@@ -18,20 +18,19 @@ class CfgVehicles {
         @Role(Hidden);
         #include "../weapons/rifle_old.hpp"
     };
-    class CLASS(RiflemanBackpack): CLASS(RiflemanCarabine) {
-        @Role(Hidden);
-        #include "../wear/backpack.hpp"
-    };
     class CLASS(TeamLeader): CLASS(RiflemanCarabine) {
         @Role(TeamLeader);
-    };
-    class CLASS(RiflemanSMG): CLASS(Base) {
-        @Role(SMG);
-        #include "../weapons/pdw.hpp"
     };
     class CLASS(RiflemanPistol): CLASS(Base) {
         @Role(Pistol);
         #include "../weapons/pistol.hpp"
     };
-
+    class CLASS(RiflemanSMG): CLASS(Base) {
+        @Role(SMG);
+        #include "../weapons/pdw.hpp"
+    };
+    class CLASS(Breacher): CLASS(RiflemanPistol) {
+        @Role(Breacher);
+        #include "../../police/weapons/shotgun.hpp"
+    };
 };
