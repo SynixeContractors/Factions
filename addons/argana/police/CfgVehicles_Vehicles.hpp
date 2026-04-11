@@ -1,3 +1,4 @@
+#define TEMPLATE_FACTION QPCLASS(t4_opfor)
 #define TEMPLATE_SIDE 0
 #define TEMPLATE_CAMO Argana_Royal
 class GCLASS(Ram);
@@ -64,3 +65,4 @@ class CLASS(Van_Cargo): GCLASS(Van_Cargo) {
 };
 #undef TEMPLATE_CAMO
 #undef TEMPLATE_SIDE
+#undef TEMPLATE_FACTION
