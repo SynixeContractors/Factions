@@ -106,6 +106,8 @@ class CfgVehicles {
     };
     class CLASS(Crewman): CLASS(RiflemanCarabine) {
         @Role(Crewman);
+        #include "../weapons/pdw.hpp"
+        #include "../wear/tanker.hpp"
     };
     class CLASS(HeliPilot): CLASS(Crewman) {
         @Role(HeliPilot);
