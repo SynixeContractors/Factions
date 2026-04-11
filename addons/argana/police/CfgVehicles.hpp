@@ -3,7 +3,7 @@ class CfgVehicles {
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {
         displayName = "National Police";
-        editorSubcategory = QGCLASS(army_garrison);
+        editorSubcategory = QGCLASS(police);
 
         #include "../wear/uniform_police.hpp"
         #include "../wear/vest_garrison.hpp"
