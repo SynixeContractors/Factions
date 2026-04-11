@@ -2,9 +2,9 @@
     "weapons": {
         "arifle_MSBS65_Mark_camo_F": {
             "magazinesVest": {
-                "synixe_armoury_20Rnd_65x39_EPR_MSR_MSBS": 5,
+                "synixe_armoury_30Rnd_65x39_EPR_MSBS": 5,
                 "synixe_armoury_30Rnd_65x39_AP_MSBS": 3,
-                "synixe_armoury_20Rnd_65x39_Ball_Tracer_MSR_MSBS": 2,
+                "synixe_armoury_30Rnd_65x39_Ball_Tracer_MSBS": 2,
             }
         }
     },
