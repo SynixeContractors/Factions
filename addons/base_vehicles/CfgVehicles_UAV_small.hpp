@@ -22,6 +22,15 @@ class GCLASS(AR2): B_UAV_01_F {
     EMPTY_INVENTORY;
     crew = "C_UAV_AI_F";
 };
+class B_G_UAV_01_DroneDropMineAT;
+class GCLASS(AR2_Bomber): B_G_UAV_01_DroneDropMineAT {
+    displayName = "AR-2 Bomber";
+    faction = QGCLASS(base_vehicles);
+    SCOPE_DLC_VEHICLE;
+    EMPTY_INVENTORY;
+    crew = "C_UAV_AI_F";
+};
+
 class B_UAV_02_lxWS;
 class GCLASS(AP5): B_UAV_02_lxWS {
     displayName = "AP-5 Bustard";

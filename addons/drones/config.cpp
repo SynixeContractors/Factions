@@ -10,6 +10,7 @@ class CfgPatches {
             QCLASS2(AP5,$LOWER),
             QCLASS2(AP5_Bomber,$LOWER),
             QCLASS2(AR2,$LOWER),
+            QCLASS2(AR2_Bomber,$LOWER),
             QCLASS2(RC40_HE,$LOWER),
             QCLASS2(RC40_Scout,$LOWER),
 

@@ -12,6 +12,7 @@ class CfgVehicles {
     class GCLASS(AP5);
     class GCLASS(AP5_Bomber);
     class GCLASS(AR2);
+    class GCLASS(AR2_Bomber);
     class GCLASS(RC40_HE);
     class GCLASS(RC40_Scout);
 
@@ -44,6 +45,7 @@ class CfgVehicles {
         DRONE(AP5,drone,$LOWER,$SIDE);
         DRONE(AP5_Bomber,drone,$LOWER,$SIDE);
         DRONE(AR2,drone,$LOWER,$SIDE);
+        DRONE(AR2_Bomber,drone,$LOWER,$SIDE);
         DRONE(RC40_HE,drone,$LOWER,$SIDE);
         DRONE(RC40_Scout,drone,$LOWER,$SIDE);
 
