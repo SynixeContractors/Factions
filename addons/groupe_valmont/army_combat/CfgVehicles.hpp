@@ -368,12 +368,12 @@ class CLASS2(SIDE,AsstMachinegunner): CLASS2(SIDE,Base) {
 
     @Backpacks({
         "variants": {
-            "B_AssaultPack_rgr_F": 1,
+            "B_AssaultPack_rgr": 1,
         },
         "magazines": {
             "130Rnd_338_Mag": 3,
         },
-    });   
+    });
 };
 
 class CLASS2(SIDE,Marksman): CLASS2(SIDE,Base) {
