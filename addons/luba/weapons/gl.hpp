@@ -3,9 +3,11 @@
       "Aegis_arifle_M4A1_GL_sand_F": {
         "probability": 1,
         "magazinesVest": {
-          "30Rnd_556x45_Stanag_Sand": 8,
+          "30Rnd_556x45_Stanag_Sand": 7,
           "1Rnd_HE_Grenade_shell": 4,
         },
+        "loadedPrimary": "30Rnd_556x45_Stanag_Sand",
+        "loadedSecondary": "1Rnd_HE_Grenade_shell",
       },
     },
     "optics": {
