@@ -28,6 +28,17 @@ class CfgVehicles {
     class GCLASS(Ram_Fuel);
     class GCLASS(Ram_HMG);
     class GCLASS(Ram_Rocket);
+    class GCLASS(Offroad);
+    class GCLASS(Offroad_AA);
+    class GCLASS(Offroad_AT);
+    class GCLASS(Offroad_Armored);
+    class GCLASS(Offroad_Armored_AA);
+    class GCLASS(Offroad_Armored_AT);
+    class GCLASS(Offroad_Armored_HMG);
+    class GCLASS(Offroad_Comms);
+    class GCLASS(Offroad_Covered);
+    class GCLASS(Offroad_HMG);
+    class GCLASS(Offroad_Services);
 
     @ForSides(BLUFOR,OPFOR,INDEP)
     #define SIDE $UPPER

@@ -137,3 +137,107 @@ class CLASS2(SIDE,LUT_AA): GCLASS(LUT_AA) {
     LUT_CIVILIAN_TEXTURES;
 };
 #undef LUT_CIVILIAN_TEXTURES
+
+#define OFFROAD_CIVILIAN_TEXTURES textureList[] = {\
+  "Black",1,\
+  "Blue",1,\
+  "Bluecustom",1,\
+  "Brown",1,\
+  "Darkred",1,\
+  "Green",1,\
+  "Olive",1,\
+  "Pink",1,\
+  "Red",1,\
+  "White",1,\
+  "Zebra",1,\
+}
+
+class CLASS2(SIDE,Offroad): GCLASS(Offroad) {
+    SCOPE_DLC;
+    faction = QPCLASS(SIDE_FACTION);
+    side = SIDE_NUMBER;
+    crew = QCLASS2(SIDE,Rifleman);
+    typicalCargo[] = {QCLASS2(SIDE,Rifleman)};
+    OFFROAD_CIVILIAN_TEXTURES;
+};
+class CLASS2(SIDE,Offroad_Covered): GCLASS(Offroad_Covered) {
+    SCOPE_DLC;
+    faction = QPCLASS(SIDE_FACTION);
+    side = SIDE_NUMBER;
+    crew = QCLASS2(SIDE,Rifleman);
+    typicalCargo[] = {QCLASS2(SIDE,Rifleman)};
+    OFFROAD_CIVILIAN_TEXTURES;
+};
+class CLASS2(SIDE,Offroad_Comms): GCLASS(Offroad_Comms) {
+    SCOPE_DLC;
+    faction = QPCLASS(SIDE_FACTION);
+    side = SIDE_NUMBER;
+    crew = QCLASS2(SIDE,Rifleman);
+    typicalCargo[] = {QCLASS2(SIDE,Rifleman)};
+    OFFROAD_CIVILIAN_TEXTURES;
+};
+class CLASS2(SIDE,Offroad_Services): GCLASS(Offroad_Services) {
+    SCOPE_DLC;
+    faction = QPCLASS(SIDE_FACTION);
+    side = SIDE_NUMBER;
+    crew = QCLASS2(SIDE,Rifleman);
+    typicalCargo[] = {QCLASS2(SIDE,Rifleman)};
+    OFFROAD_CIVILIAN_TEXTURES;
+};
+class CLASS2(SIDE,Offroad_HMG): GCLASS(Offroad_HMG) {
+    SCOPE_DLC;
+    faction = QPCLASS(SIDE_FACTION);
+    side = SIDE_NUMBER;
+    crew = QCLASS2(SIDE,Rifleman);
+    typicalCargo[] = {QCLASS2(SIDE,Rifleman)};
+    OFFROAD_CIVILIAN_TEXTURES;
+};
+class CLASS2(SIDE,Offroad_AT): GCLASS(Offroad_AT) {
+    SCOPE_DLC;
+    faction = QPCLASS(SIDE_FACTION);
+    side = SIDE_NUMBER;
+    crew = QCLASS2(SIDE,Rifleman);
+    typicalCargo[] = {QCLASS2(SIDE,Rifleman)};
+    OFFROAD_CIVILIAN_TEXTURES;
+};
+class CLASS2(SIDE,Offroad_AA): GCLASS(Offroad_AA) {
+    SCOPE_DLC;
+    faction = QPCLASS(SIDE_FACTION);
+    side = SIDE_NUMBER;
+    crew = QCLASS2(SIDE,Rifleman);
+    typicalCargo[] = {QCLASS2(SIDE,Rifleman)};
+    OFFROAD_CIVILIAN_TEXTURES;
+};
+class CLASS2(SIDE,Offroad_Armored): GCLASS(Offroad_Armored) {
+    SCOPE_DLC;
+    faction = QPCLASS(SIDE_FACTION);
+    side = SIDE_NUMBER;
+    crew = QCLASS2(SIDE,Rifleman);
+    typicalCargo[] = {QCLASS2(SIDE,Rifleman)};
+    OFFROAD_CIVILIAN_TEXTURES;
+};
+class CLASS2(SIDE,Offroad_Armored_AT): GCLASS(Offroad_Armored_AT) {
+    SCOPE_DLC;
+    faction = QPCLASS(SIDE_FACTION);
+    side = SIDE_NUMBER;
+    crew = QCLASS2(SIDE,Rifleman);
+    typicalCargo[] = {QCLASS2(SIDE,Rifleman)};
+    OFFROAD_CIVILIAN_TEXTURES;
+};
+class CLASS2(SIDE,Offroad_Armored_HMG): GCLASS(Offroad_Armored_HMG) {
+    SCOPE_DLC;
+    faction = QPCLASS(SIDE_FACTION);
+    side = SIDE_NUMBER;
+    crew = QCLASS2(SIDE,Rifleman);
+    typicalCargo[] = {QCLASS2(SIDE,Rifleman)};
+    OFFROAD_CIVILIAN_TEXTURES;
+};
+class CLASS2(SIDE,Offroad_Armored_AA): GCLASS(Offroad_Armored_AA) {
+    SCOPE_DLC;
+    faction = QPCLASS(SIDE_FACTION);
+    side = SIDE_NUMBER;
+    crew = QCLASS2(SIDE,Rifleman);
+    typicalCargo[] = {QCLASS2(SIDE,Rifleman)};
+    OFFROAD_CIVILIAN_TEXTURES;
+};
+#undef OFFROAD_CIVILIAN_TEXTURES
