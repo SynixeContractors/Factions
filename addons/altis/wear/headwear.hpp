@@ -7,4 +7,5 @@
     "H_MilCap_dgtl": 1,
     "H_Watchcap_aaf_hs": 1,
     "H_Watchcap_aaf_hsless": 1,
+    "": 3,
 });
