@@ -12,26 +12,26 @@ class CfgGroups {
                     faction = QCLASS($LOWER);
                     side = $SIDE;
                     __COUNTER_RESET__
-                    GROUP_UNIT(CLASS2(SIDE,PolicemanPistol),0);
-                    GROUP_UNIT(CLASS2(SIDE,PolicemanPistol),0);
+                    GROUP_UNIT(CLASS2(SIDE,PolicemanPistol),$SIDE);
+                    GROUP_UNIT(CLASS2(SIDE,PolicemanPistol),$SIDE);
                 };
                 class CLASS2(SIDE,Patrol_Patrol) {
                     name = "Quick Response Patrol";
                     faction = QCLASS($LOWER);
                     side = $SIDE;
                     __COUNTER_RESET__
-                    GROUP_UNIT(CLASS2(SIDE,PolicemanSMG),0);
-                    GROUP_UNIT(CLASS2(SIDE,PolicemanSMG),0);
+                    GROUP_UNIT(CLASS2(SIDE,PolicemanSMG),$SIDE);
+                    GROUP_UNIT(CLASS2(SIDE,PolicemanSMG),$SIDE);
                 };
                 class CLASS2(SIDE,Patrol_ResponseTeam) {
                     name = "Response Team";
                     faction = QCLASS($LOWER);
                     side = $SIDE;
                     __COUNTER_RESET__
-                    GROUP_UNIT(CLASS2(SIDE,PolicemanSMG),0);
-                    GROUP_UNIT(CLASS2(SIDE,PolicemanSMG),0);
-                    GROUP_UNIT(CLASS2(SIDE,PolicemanRifle),0);
-                    GROUP_UNIT(CLASS2(SIDE,PolicemanRifle),0);
+                    GROUP_UNIT(CLASS2(SIDE,PolicemanSMG),$SIDE);
+                    GROUP_UNIT(CLASS2(SIDE,PolicemanSMG),$SIDE);
+                    GROUP_UNIT(CLASS2(SIDE,PolicemanRifle),$SIDE);
+                    GROUP_UNIT(CLASS2(SIDE,PolicemanRifle),$SIDE);
                 };
             };
             class CLASS2(SIDE,SWAT) {
@@ -41,26 +41,26 @@ class CfgGroups {
                     faction = QCLASS($LOWER);
                     side = $SIDE;
                     __COUNTER_RESET__
-                    GROUP_UNIT(CLASS2(SIDE,SWATSMG),0);
-                    GROUP_UNIT(CLASS2(SIDE,SWATSMG),0);
+                    GROUP_UNIT(CLASS2(SIDE,SWATSMG),$SIDE);
+                    GROUP_UNIT(CLASS2(SIDE,SWATSMG),$SIDE);
                 };
                 class CLASS2(SIDE,SWAT_SniperTeam) {
                     name = "Sniper Team";
                     faction = QCLASS($LOWER);
                     side = $SIDE;
                     __COUNTER_RESET__
-                    GROUP_UNIT(CLASS2(SIDE,SWATSniper),0);
-                    GROUP_UNIT(CLASS2(SIDE,SWATSniper),0);
+                    GROUP_UNIT(CLASS2(SIDE,SWATSniper),$SIDE);
+                    GROUP_UNIT(CLASS2(SIDE,SWATSniper),$SIDE);
                 };
                 class CLASS2(SIDE,SWAT_ResponseTeam) {
                     name = "Response Team";
                     faction = QCLASS($LOWER);
                     side = $SIDE;
                     __COUNTER_RESET__
-                    GROUP_UNIT(CLASS2(SIDE,SWATSMG),0);
-                    GROUP_UNIT(CLASS2(SIDE,SWATRifle),0);
-                    GROUP_UNIT(CLASS2(SIDE,SWATRifle),0);
-                    GROUP_UNIT(CLASS2(SIDE,SWATDemo),0);
+                    GROUP_UNIT(CLASS2(SIDE,SWATSMG),$SIDE);
+                    GROUP_UNIT(CLASS2(SIDE,SWATRifle),$SIDE);
+                    GROUP_UNIT(CLASS2(SIDE,SWATRifle),$SIDE);
+                    GROUP_UNIT(CLASS2(SIDE,SWATDemo),$SIDE);
                 };
             };
             class CLASS2(SIDE,Gendarmerie) {
@@ -70,26 +70,26 @@ class CfgGroups {
                     faction = QCLASS($LOWER);
                     side = $SIDE;
                     __COUNTER_RESET__
-                    GROUP_UNIT(CLASS2(SIDE,GendarmeSMG),0);
-                    GROUP_UNIT(CLASS2(SIDE,GendarmeSMG),0);
+                    GROUP_UNIT(CLASS2(SIDE,GendarmeSMG),$SIDE);
+                    GROUP_UNIT(CLASS2(SIDE,GendarmeSMG),$SIDE);
                 };
                 class CLASS2(SIDE,Gendarmerie_SniperTeam) {
                     name = "Sniper Team";
                     faction = QCLASS($LOWER);
                     side = $SIDE;
                     __COUNTER_RESET__
-                    GROUP_UNIT(CLASS2(SIDE,GendarmeSniper),0);
-                    GROUP_UNIT(CLASS2(SIDE,GendarmeSniper),0);
+                    GROUP_UNIT(CLASS2(SIDE,GendarmeSniper),$SIDE);
+                    GROUP_UNIT(CLASS2(SIDE,GendarmeSniper),$SIDE);
                 };
                 class CLASS2(SIDE,Gendarmerie_ResponseTeam) {
                     name = "Response Team";
                     faction = QCLASS($LOWER);
                     side = $SIDE;
                     __COUNTER_RESET__
-                    GROUP_UNIT(CLASS2(SIDE,GendarmeSMG),0);
-                    GROUP_UNIT(CLASS2(SIDE,GendarmeRifle),0);
-                    GROUP_UNIT(CLASS2(SIDE,GendarmeRifle),0);
-                    GROUP_UNIT(CLASS2(SIDE,GendarmeBreacher),0);
+                    GROUP_UNIT(CLASS2(SIDE,GendarmeSMG),$SIDE);
+                    GROUP_UNIT(CLASS2(SIDE,GendarmeRifle),$SIDE);
+                    GROUP_UNIT(CLASS2(SIDE,GendarmeRifle),$SIDE);
+                    GROUP_UNIT(CLASS2(SIDE,GendarmeBreacher),$SIDE);
                 };
             };
             #undef SIDE
