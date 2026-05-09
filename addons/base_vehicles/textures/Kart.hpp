@@ -79,39 +79,4 @@ class TextureSources {
         textures[] = {"\a3\Soft_F_Kart\Kart_01\Data\Kart_01_vrana_CO.paa","\a3\Soft_F_Kart\Kart_01\Data\Kart_01_logos_vrana_CA.paa","\a3\Soft_F_Kart\Kart_01\Data\Kart_num_1_CA.paa","\a3\Soft_F_Kart\Kart_01\Data\Kart_num_3_CA.paa"};
         decals[] = {1,2,3};
     };
-    // class Green {
-    //     displayName = "Green";
-    //     textures[] = {"\a3\Soft_F_Kart\Kart_01\Data\Kart_01_base_green_CO.paa","\a3\Soft_F_Kart\Kart_01\Data\Kart_01_logos_blu_CA.paa","\a3\Soft_F_Kart\Kart_01\Data\Kart_num_1_CA.paa","\a3\Soft_F_Kart\Kart_01\Data\Kart_num_3_CA.paa"};
-    //     decals[] = {1,2,3};
-    // };
-    // class Blue {
-    //     displayName = "Blue (Larkin)";
-    //     textures[] = {"\a3\Soft_F_Kart\Kart_01\Data\Kart_01_base_blue_CO.paa","\a3\Soft_F_Kart\Kart_01\Data\Kart_01_logos_blu_CA.paa","\a3\Soft_F_Kart\Kart_01\Data\Kart_num_1_CA.paa","\a3\Soft_F_Kart\Kart_01\Data\Kart_num_3_CA.paa"};
-    //     decals[] = {1,2,3};
-    // };
-    // class Orange {
-    //     displayName = "Orange";
-    //     textures[] = {"\a3\Soft_F_Kart\Kart_01\Data\Kart_01_base_orange_CO.paa","\a3\Soft_F_Kart\Kart_01\Data\Kart_01_logos_blu_CA.paa","\a3\Soft_F_Kart\Kart_01\Data\Kart_num_1_CA.paa","\a3\Soft_F_Kart\Kart_01\Data\Kart_num_3_CA.paa"};
-    //     decals[] = {1,2,3};
-    // };
-    // class White {
-    //     displayName = "White";
-    //     textures[] = {"\a3\Soft_F_Kart\Kart_01\Data\Kart_01_base_white_CO.paa","","\a3\Soft_F_Kart\Kart_01\Data\Kart_num_1_CA.paa","\a3\Soft_F_Kart\Kart_01\Data\Kart_num_3_CA.paa"};
-    //     decals[] = {1,2,3};
-    // };
-    // class Yellow {
-    //     displayName = "Yellow";
-    //     textures[] = {"\a3\Soft_F_Kart\Kart_01\Data\Kart_01_base_yellow_CO.paa","","\a3\Soft_F_Kart\Kart_01\Data\Kart_num_1_CA.paa","\a3\Soft_F_Kart\Kart_01\Data\Kart_num_3_CA.paa"};
-    //     decals[] = {1,2,3};
-    // };
-    // class Black {
-    //     displayName = "Black (Redstone)";
-    //     textures[] = {"\a3\Soft_F_Kart\Kart_01\Data\Kart_01_base_black_CO.paa","\a3\Soft_F_Kart\Kart_01\Data\Kart_01_logos_black_CA.paa","\a3\Soft_F_Kart\Kart_01\Data\Kart_num_1_CA.paa","\a3\Soft_F_Kart\Kart_01\Data\Kart_num_3_CA.paa"};
-    //     decals[] = {1,2,3};
-    // };
-    // class Red {
-    //     displayName = "Red";
-    //     textures[] = {"\a3\Soft_F_Kart\Kart_01\Data\Kart_01_base_red_CO.paa","\a3\Soft_F_Kart\Kart_01\Data\Kart_01_logos_CA.paa","\a3\Soft_F_Kart\Kart_01\Data\Kart_num_1_CA.paa","\a3\Soft_F_Kart\Kart_01\Data\Kart_num_3_CA.paa"};
-    //     decals[] = {1,2,3};
-    // };
 };
