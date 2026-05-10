@@ -23,7 +23,7 @@ class CLASS2(SIDE,Rifleman): CLASS2(SIDE,Base) {
 
 class CLASS2(SIDE,RiflemanCarabine): CLASS2(SIDE,Base) {
     @Role(Hidden);
-    #include "../weapons/rifle.hpp"
+    #include "../weapons/rifle_sof.hpp"
     #include "../weapons/attachments_sof.hpp"
 };
 
