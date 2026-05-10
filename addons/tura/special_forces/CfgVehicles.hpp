@@ -1,5 +1,3 @@
-#include "CfgVehicles_Cars.hpp"
-
 class PCLASS2(SIDE,Base);
 class CLASS2(SIDE,Base): PCLASS2(SIDE,Base) {
     #define TEMPLATE_FACTION QPCLASS(SIDE_FACTION)
@@ -7,10 +5,10 @@ class CLASS2(SIDE,Base): PCLASS2(SIDE,Base) {
     #undef TEMPLATE_FACTION
     #undef TEMPLATE_SIDE
 
-    editorSubcategory = QGCLASS(militia);
+    editorSubcategory = QGCLASS(special_forces);
 
-    #include "../wear/uniform_militia.hpp"
-    #include "../wear/vest_militia.hpp"
+    #include "../wear/uniform_sof.hpp"
+    #include "../wear/vest_sof.hpp"
     #include "../wear/headwear.hpp"
 
     @Assigned(Military);
@@ -18,14 +16,14 @@ class CLASS2(SIDE,Base): PCLASS2(SIDE,Base) {
 
 class CLASS2(SIDE,Rifleman): CLASS2(SIDE,Base) {
     @Role(Rifleman);
-    #include "../weapons/rifle.hpp"
-    #include "../weapons/attachments_militia.hpp"
+    #include "../weapons/rifle_sof.hpp"
+    #include "../weapons/attachments_sof.hpp"
 };
 
 class CLASS2(SIDE,RiflemanCarabine): CLASS2(SIDE,Base) {
     @Role(Hidden);
     #include "../weapons/rifle.hpp"
-    #include "../weapons/attachments_militia.hpp"
+    #include "../weapons/attachments_sof.hpp"
 };
 
 class CLASS2(SIDE,RiflemanBackpack): CLASS2(SIDE,RiflemanCarabine) {
@@ -35,20 +33,18 @@ class CLASS2(SIDE,RiflemanBackpack): CLASS2(SIDE,RiflemanCarabine) {
 
 class CLASS2(SIDE,SquadLeader): CLASS2(SIDE,RiflemanCarabine) {
     @Role(SquadLeader);
-    #include "../weapons/attachments_sof.hpp"
     #include "../../argana/weapons/gl.hpp"
     #include "../../argana/weapons/pistol.hpp"
 };
 
 class CLASS2(SIDE,TeamLeader): CLASS2(SIDE,RiflemanCarabine) {
-    #include "../weapons/attachments_sof.hpp"
     #include "../../argana/weapons/pistol.hpp"
     @Role(TeamLeader);
 };
 
 class CLASS2(SIDE,Autorifleman): CLASS2(SIDE,RiflemanBackpack) {
     @Role(Autorifleman);
-    #include "../weapons/lmg.hpp"
+    #include "../weapons/lmg_sof.hpp"
     #include "../../argana/weapons/pistol.hpp"
 };
 

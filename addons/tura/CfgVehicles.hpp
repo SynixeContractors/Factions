@@ -6,5 +6,11 @@ class CfgVehicles {
         @Identity(Tura);
         @Templated();
     };
+    class CLASS2($UPPER,Base2): GCLASS(Base_$UPPER) {
+        faction = QCLASS(t4_$LOWER);
+        // international intervention
+        @Identity(AllFrench);
+        @Templated();
+    };
     @EndForSides
 };
