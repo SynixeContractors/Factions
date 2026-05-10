@@ -60,7 +60,7 @@ class CLASS2(SIDE,Machinegunner): CLASS2(SIDE,RiflemanBackpack) {
 
 class CLASS2(SIDE,Marksman): CLASS2(SIDE,RiflemanCarabine) {
     @Role(Marksman);
-    #include "../weapons/marksman.hpp"
+    #include "../weapons/marksman_sof.hpp"
     #include "../../argana/weapons/pistol.hpp"
 };
 
@@ -70,7 +70,7 @@ class CLASS2(SIDE,Medic): CLASS2(SIDE,RiflemanBackpack) {
 };
 
 class CLASS2(SIDE,RiflemanMAT): CLASS2(SIDE,RiflemanBackpack) {
-    #include "../weapons/mat.hpp"
+    #include "../../argana/weapons/mat.hpp"
     @Role(RiflemanMAT);
 };
 
