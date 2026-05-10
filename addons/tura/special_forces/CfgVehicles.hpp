@@ -9,7 +9,8 @@ class CLASS2(SIDE,Base): PCLASS2(SIDE,Base) {
 
     #include "../wear/uniform_sof.hpp"
     #include "../wear/vest_sof.hpp"
-    #include "../wear/headwear.hpp"
+    #include "../wear/headwear_sof.hpp"
+    #include "../wear/facewear_sof.hpp"
 
     @Assigned(Military);
 };
@@ -28,7 +29,7 @@ class CLASS2(SIDE,RiflemanCarabine): CLASS2(SIDE,Base) {
 
 class CLASS2(SIDE,RiflemanBackpack): CLASS2(SIDE,RiflemanCarabine) {
     @Role(Hidden);
-    #include "../wear/backpack.hpp"
+    #include "../wear/backpack_sof.hpp"
 };
 
 class CLASS2(SIDE,SquadLeader): CLASS2(SIDE,RiflemanCarabine) {
