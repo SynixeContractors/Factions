@@ -23,6 +23,7 @@ class CfgVehicles {
     #include "CfgVehicles_Jay.hpp"
     #include "CfgVehicles_Jeep.hpp"
     #include "CfgVehicles_Karatel.hpp"
+    #include "CfgVehicles_Kart.hpp"
     #include "CfgVehicles_LSV.hpp"
     #include "CfgVehicles_LUT.hpp"
     #include "CfgVehicles_MATV.hpp"
