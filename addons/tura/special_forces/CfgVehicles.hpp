@@ -94,3 +94,23 @@ class CLASS2(SIDE,Demolitions): CLASS2(SIDE,RiflemanBackpack) {
     @Role(Demolitions);
     #include "../../argana/wear/demo.hpp"
 };
+class CLASS2(SIDE,RadioOperator): CLASS2(SIDE,RiflemanBackpack) {
+    @Role(RadioOperator);
+    #include "../../argana/wear/backpack_radio.hpp"
+};
+
+class CLASS2(SIDE,Spotter): CLASS2(SIDE,Marksman) {
+    @Role(Spotter);
+    @Uniforms({
+        "variants": {
+            "U_B_FullGhillie_ard": 1,
+        },
+        "packs": [
+            "rifleman_medical",
+        ],
+    });
+};
+class CLASS2(SIDE,Sniper): CLASS2(SIDE,Spotter) {
+    @Role(Sniper);
+    #include "../../argana/weapons/sniper.hpp"
+};
