@@ -1,6 +1,6 @@
 class PCLASS2(SIDE,Base);
 class CLASS2(SIDE,Base): PCLASS2(SIDE,Base) {
-    displayName = "GV Base Army Garrison";
+    displayName = "ION Base Army Garrison";
     editorSubcategory = QGCLASS(army_garrison);
 
     @Uniforms({
@@ -28,19 +28,6 @@ class CLASS2(SIDE,Base): PCLASS2(SIDE,Base) {
         ],
     });
 
-    @Vests({
-        "variants": {
-            "V_PlateCarrier1_rgr_noflag_F": 1,
-            "V_PlateCarrier1_blk": 1,
-            "V_PlateCarrier2_blk": 1,
-            "Aegis_V_PlateCarrier2_alt_blk": 1,
-            "Aegis_V_PlateCarrier2_alt_cbr": 1,
-            "Aegis_V_PlateCarrier2_alt_oli": 1,
-            "WSLV_Platecarrier_SNK_NF": 1,
-            "WSLV_Platecarrier_WDL_NF": 1,
-        },
-    });
-
     @Headgear({
         "H_Cap_blk_ION": 1,
         "H_Cap_blk_ION_hs": 1,
@@ -59,6 +46,23 @@ class CLASS2(SIDE,Base): PCLASS2(SIDE,Base) {
     });
 
     @Assigned(Military);
+};
+
+class CLASS2(SIDE,Rifleman): CLASS2(SIDE,Base) {
+    @Role(Rifleman);
+
+    @Vests({
+        "variants": {
+            "V_PlateCarrier1_rgr_noflag_F": 1,
+            "V_PlateCarrier1_blk": 1,
+            "V_PlateCarrier2_blk": 1,
+            "Aegis_V_PlateCarrier2_alt_blk": 1,
+            "Aegis_V_PlateCarrier2_alt_cbr": 1,
+            "Aegis_V_PlateCarrier2_alt_oli": 1,
+            "WSLV_Platecarrier_SNK_NF": 1,
+            "WSLV_Platecarrier_WDL_NF": 1,
+        },
+    });
 
     @Primary({
         "weapons": {
@@ -153,10 +157,6 @@ class CLASS2(SIDE,Base): PCLASS2(SIDE,Base) {
             },
         },
     });
-};
-
-class CLASS2(SIDE,Rifleman): CLASS2(SIDE,Base) {
-    @Role(Rifleman);
 };
 
 class CLASS2(SIDE,TeamLeader): CLASS2(SIDE,Rifleman) {
@@ -296,18 +296,6 @@ class CLASS2(SIDE,Maintainer): CLASS2(SIDE,Base) {
 
 class CLASS2(SIDE,Worker): CLASS2(SIDE,Base) {
     @Role(Worker);
-
-    @Primary({
-        "variants": {
-            "": 1,
-        },
-    });
-
-    @Vests({
-        "variants": {
-            "": 1,
-        },
-    });
 
     @Facewear({
         "": 1,
