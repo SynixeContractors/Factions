@@ -167,7 +167,7 @@ class CLASS2(SIDE,SquadLeader): CLASS2(SIDE,Rifleman) {
             },
             "arifle_Katiba_F": {
                 "magazinesVest": {
-                    "synixe_armoury_30Rnd_65x39_Ball_Katiba": 7,
+                    "30Rnd_65x39_caseless_green": 7,
                 }
             },
         },
