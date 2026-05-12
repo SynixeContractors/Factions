@@ -76,6 +76,11 @@ class CLASS2(SIDE,Base): PCLASS2(SIDE,Base) {
     });
 
     @Facewear({
+        "": 1,
+        "G_Shades_Black": 1,
+        "G_Spectacles_Tinted": 1,
+        "G_Shemag_shades": 1,
+        "G_Shemag_tactical": 1,
         "JCA_G_balaclava_01_black_F": 1,
         "synixe_mgp_f_tactical": 2,
         "synixe_mgp_f_face_shield_blk": 1,
