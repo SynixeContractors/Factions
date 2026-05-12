@@ -34,7 +34,6 @@ class CLASS2(SIDE,Suit_Rifleman_SMG): CLASS2(SIDE,Suit) {
                 "magazinesVest": {
                     "40Rnd_460x30_Mag_F": 3,
                 },
-                "loadedPrimary":"40Rnd_460x30_Mag_F"
             },
             "SMG_03C_TR_black": {
                 "probability": 1,

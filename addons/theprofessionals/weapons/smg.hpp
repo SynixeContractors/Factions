@@ -11,7 +11,6 @@
             "magazinesVest": {
                 "40Rnd_460x30_Mag_F": 5,
             },
-            "loadedPrimary":"40Rnd_460x30_Mag_F"
         },
         "SMG_03C_TR_black": {
             "probability": 1,

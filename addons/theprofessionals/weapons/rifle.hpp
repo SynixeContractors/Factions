@@ -27,7 +27,7 @@
         "arifle_VelkoR5_lxWS": {
             "probability": 1,
             "magazinesVest": {
-                "30Rnd_556x45_Stanag": 6,
+                "35Rnd_556x45_Velko_reload_tracer_green_lxWS": 6,
             },
         },
         "arifle_SPAR_01_blk_F": {
