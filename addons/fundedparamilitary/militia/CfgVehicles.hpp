@@ -68,32 +68,32 @@ class CLASS2(SIDE,Base): PCLASS2(SIDE,Base) {
         "weapons": {
             "Aegis_arifle_AK103_F": {
                 "magazinesVest": {
-                    "synixe_armoury_30Rnd_762x39_Ball_Plastic_Black": 7,
+                    "30Rnd_762x39_polymer_Black_Mag_Green_F": 7,
                 }
             },
             "arifle_Galat_lxWS": {
                 "magazinesVest": {
-                    "synixe_armoury_30Rnd_762x39_Ball_Plastic_Black": 7,
+                    "30Rnd_762x39_polymer_Black_Mag_Green_F": 7,
                 }
             },
             "Aegis_arifle_AKM74_F": {
                 "magazinesVest": {
-                    "synixe_armoury_30Rnd_545x39_Ball_Plum": 7,
+                    "30Rnd_545x39_Mag_Green_F": 7,
                 }
             },
             "arifle_AKSM_F": {
                 "magazinesVest": {
-                    "synixe_armoury_30Rnd_545x39_Ball_Plum": 7,
+                    "30Rnd_545x39_Mag_Green_F": 7,
                 }
             },
             "arifle_Katiba_F": {
                 "magazinesVest": {
-                    "synixe_armoury_30Rnd_65x39_Ball_Katiba": 7,
+                    "30Rnd_65x39_caseless_green": 7,
                 }
             },
             "arifle_Katiba_C_F": {
                 "magazinesVest": {
-                    "synixe_armoury_30Rnd_65x39_Ball_Katiba": 7,
+                    "30Rnd_65x39_caseless_green": 7,
                 }
             },
         },
@@ -117,12 +117,12 @@ class CLASS2(SIDE,Base): PCLASS2(SIDE,Base) {
         "weapons": {
             "JCA_hgun_M9A1_black_F": {
                 "magazinesVest": {
-                    "synixe_armoury_15Rnd_9x19_Ball_M9A1_JCA": 3,
+                    "JCA_15Rnd_9x19_M9A1_FMJ_Mag": 3,
                 },
             },
             "hgun_G17_black_F": {
                 "magazinesVest": {
-                    "synixe_armoury_17Rnd_9x21_Ball_G17_Aegis": 3,
+                    "17Rnd_9x21_Mag": 3,
                 },
             },
         },
@@ -152,17 +152,17 @@ class CLASS2(SIDE,SquadLeader): CLASS2(SIDE,Rifleman) {
         "weapons": {
             "Aegis_arifle_AK103_F": {
                 "magazinesVest": {
-                    "synixe_armoury_30Rnd_762x39_Ball_Plastic_Black": 7,
+                    "30Rnd_762x39_polymer_Black_Mag_Green_F": 7,
                 }
             },
             "arifle_Galat_lxWS": {
                 "magazinesVest": {
-                    "synixe_armoury_30Rnd_762x39_Ball_Plastic_Black": 7,
+                    "30Rnd_762x39_polymer_Black_Mag_Green_F": 7,
                 }
             },
-            "arifle_AKSM_F": {
+            "Aegis_arifle_AKM74_F": {
                 "magazinesVest": {
-                    "synixe_armoury_30Rnd_545x39_Ball_Plum": 7,
+                    "30Rnd_545x39_Mag_Green_F": 7,
                 }
             },
             "arifle_Katiba_F": {
@@ -199,26 +199,26 @@ class CLASS2(SIDE,TeamLeader): CLASS2(SIDE,Rifleman) {
         "weapons": {
             "Aegis_arifle_AK103_GL_F": {
                 "magazinesVest": {
-                    "synixe_armoury_30Rnd_762x39_Ball_Plastic_Black": 7,
+                    "30Rnd_762x39_polymer_Black_Mag_Green_F": 7,
                     "1Rnd_HE_Grenade_shell": 5,
                 },
-                "loadedPrimary": "synixe_armoury_30Rnd_762x39_Ball_Plastic_Black",
+                "loadedPrimary": "30Rnd_762x39_polymer_Black_Mag_Green_F",
                 "loadedSecondary": "1Rnd_HE_Grenade_shell",
             },
             "Aegis_arifle_AKM74_GL_F": {
                 "magazinesVest": {
-                    "synixe_armoury_30Rnd_545x39_Ball_Plum": 7,
+                    "30Rnd_545x39_Mag_Green_F": 7,
                     "1Rnd_HE_Grenade_shell": 5,
                 },
-                "loadedPrimary": "synixe_armoury_30Rnd_545x39_Ball_Plum",
+                "loadedPrimary": "30Rnd_545x39_Mag_Green_F",
                 "loadedSecondary": "1Rnd_HE_Grenade_shell",
             },
             "arifle_Katiba_GL_F": {
                 "magazinesVest": {
-                    "synixe_armoury_30Rnd_65x39_Ball_Katiba": 7,
+                    "30Rnd_65x39_caseless_green": 7,
                     "1Rnd_HE_Grenade_shell": 5,
                 },
-                "loadedPrimary": "synixe_armoury_30Rnd_65x39_Ball_Katiba",
+                "loadedPrimary": "30Rnd_65x39_caseless_green",
                 "loadedSecondary": "1Rnd_HE_Grenade_shell",
             },
         },
@@ -240,10 +240,10 @@ class CLASS2(SIDE,Autorifleman): CLASS2(SIDE,Base) {
         "weapons": {
             "Aegis_arifle_RPK74M_F": {
                 "magazinesVest": {
-                    "synixe_armoury_45Rnd_545x39_Ball_Aegis": 4,
+                    "Aegis_45Rnd_545x39_Mag_Green_F": 4,
                 },
                 "magazinesBackpack": {
-                    "synixe_armoury_45Rnd_545x39_Ball_Aegis": 6,
+                    "Aegis_45Rnd_545x39_Mag_Green_F": 6,
                 },
             },
         },
@@ -271,10 +271,10 @@ class CLASS2(SIDE,Machinegunner): CLASS2(SIDE,Autorifleman) {
         "weapons": {
             "LMG_S77_lxWS": {
                 "magazinesVest": {
-                    "synixe_armoury_100Rnd_762x51_Ball_Belt_SA77": 2,
+                    "100Rnd_762x51_S77_Green_lxWS": 2,
                 },
                 "magazinesBackpack": {
-                    "synixe_armoury_100Rnd_762x51_Ball_Belt_SA77": 4,
+                    "100Rnd_762x51_S77_Green_lxWS": 4,
                 },
             },
         },
@@ -300,7 +300,7 @@ class CLASS2(SIDE,AsstMachinegunner): CLASS2(SIDE,Base) {
             "B_FieldPack_green_F": 1,
         },
         "magazines": {
-            "synixe_armoury_100Rnd_762x51_Ball_Belt_SA77": 4,
+            "100Rnd_762x51_S77_Green_lxWS": 4,
         },
     });
 };
@@ -312,12 +312,12 @@ class CLASS2(SIDE,Marksman): CLASS2(SIDE,Base) {
         "weapons": {
             "srifle_DMR_01_black_RF": {
                 "magazinesVest": {
-                    "synixe_armoury_10Rnd_762x54r_AP": 9,
+                    "10Rnd_762x54_Mag": 9,
                 }
             },
             "arifle_Katiba_F": {
                 "magazinesVest": {
-                    "synixe_armoury_30Rnd_65x39_EPR_Katiba": 6,
+                    "30Rnd_65x39_caseless_green": 6,
                 }
             },
         },
@@ -491,7 +491,7 @@ class CLASS2(SIDE,Sniper): CLASS2(SIDE,Spotter) {
         "weapons": {
             "srifle_LRR_tna_F": {
                 "magazinesVest": {
-                    "synixe_armoury_7Rnd_408C_AP": 8,
+                    "7Rnd_408_Mag": 8,
                 },
             },
         },
