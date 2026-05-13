@@ -149,28 +149,6 @@ class CLASS2(SIDE,SquadLeader): CLASS2(SIDE,Rifleman) {
     });
 
     @Primary({
-        "weapons": {
-            "Aegis_arifle_AK103_F": {
-                "magazinesVest": {
-                    "30Rnd_762x39_polymer_Black_Mag_Green_F": 7,
-                }
-            },
-            "arifle_Galat_lxWS": {
-                "magazinesVest": {
-                    "30Rnd_762x39_polymer_Black_Mag_Green_F": 7,
-                }
-            },
-            "Aegis_arifle_AKM74_F": {
-                "magazinesVest": {
-                    "30Rnd_545x39_Mag_Green_F": 7,
-                }
-            },
-            "arifle_Katiba_F": {
-                "magazinesVest": {
-                    "30Rnd_65x39_caseless_green": 7,
-                }
-            },
-        },
         "optics": {
             "optic_Arco_blk_F": 1,
             "JCA_optic_IHO_black_magnifier": 1,
@@ -282,12 +260,6 @@ class CLASS2(SIDE,Machinegunner): CLASS2(SIDE,Autorifleman) {
             "": 1,
             "optic_Arco_blk_F": 1,
             "JCA_optic_IHO_black_magnifier": 1,
-        },
-    });
-
-    @Backpacks({
-        "variants": {
-            "B_FieldPack_green_F": 1,
         },
     });
 };

@@ -8,7 +8,6 @@ class CLASS2(SIDE,LUT_Transport): GCLASS(LUT_Transport) {
         "Green",1,
     };
     editorPreview = "\A3_Aegis\EditorPreviews_F_Aegis\Data\CfgVehicles\O_R_Truck_02_transport_F.jpg";
-    hiddenSelectionsTextures[] = {"\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_kab_RUkhk_CO.paa","\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_kuz_RUkhk_CO.paa","\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_int_RUkhk_CO.paa","\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_chassis_RUkhk_CO.paa"};
     crew = QCLASS2(SIDE,Rifleman);
     typicalCargo[] = {QCLASS2(SIDE,Rifleman)};
 };
@@ -21,7 +20,6 @@ class CLASS2(SIDE,LUT_TransportCovered): GCLASS(LUT_TransportCovered) {
         "Green",1,
     };
     editorPreview = "\A3_Aegis\EditorPreviews_F_Aegis\Data\CfgVehicles\O_R_Truck_02_F.jpg";
-    hiddenSelectionsTextures[] = {"\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_kab_RUkhk_CO.paa","\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_kuz_RUkhk_CO.paa","\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_int_RUkhk_CO.paa","\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_chassis_RUkhk_CO.paa"};
     crew = QCLASS2(SIDE,Rifleman);
     typicalCargo[] = {QCLASS2(SIDE,Rifleman)};
 };
@@ -46,7 +44,6 @@ class CLASS2(SIDE,LUT_Cargo): GCLASS(LUT_Cargo) {
         "Green",1,
     };
     editorPreview = "\lxws\editorpreviews_f_lxws\Data\CfgVehicles\O_Truck_02_flatbed_lxWS.jpg";
-    hiddenSelectionsTextures[] = {"\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_kab_RUkhk_CO.paa","\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_cargo_RUkhk_CO.paa","\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_int_RUkhk_CO.paa","\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_chassis_RUkhk_CO.paa","lxws\vehicles_f_lxws\Truck_02\data\addons_black_co.paa"};
     crew = QCLASS2(SIDE,Rifleman);
     typicalCargo[] = {QCLASS2(SIDE,Rifleman)};
 };
@@ -59,7 +56,6 @@ class CLASS2(SIDE,LUT_Ammo): GCLASS(LUT_Ammo) {
         "Green",1,
     };
     editorPreview = "\A3_Aegis\EditorPreviews_F_Aegis\Data\CfgVehicles\O_R_Truck_02_Ammo_F.jpg";
-    hiddenSelectionsTextures[] = {"\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_kab_RUkhk_CO.paa","\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_repair_RUkhk_CO.paa","\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_int_RUkhk_CO.paa","\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_chassis_RUkhk_CO.paa"};
     crew = QCLASS2(SIDE,Rifleman);
     typicalCargo[] = {QCLASS2(SIDE,Rifleman)};
 };
