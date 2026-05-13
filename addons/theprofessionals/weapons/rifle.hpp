@@ -54,10 +54,11 @@
                 "8Rnd_12Gauge_Pellets": 6,
             },
         },
+    },
     "optics": {
-        "": 2,
+        "": 1,
         "JCA_optic_IHO_black": 1,
         "JCA_optic_MROS_black": 1,
-        },
     },
+
 });
