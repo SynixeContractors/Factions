@@ -62,12 +62,9 @@ class CLASS2(SIDE,Base): PCLASS2(SIDE,Base) {
             "V_CarrierRigKBT_01_light_Olive_F": 1,
             "V_CarrierRigKBT_01_light_Coyote_F": 1,
         },
-        "magazines": {
-            "SmokeShell": 1,
-            "HandGrenade": 1,
-        },
         "packs": [
             "t3_standard",
+            "military_standard",
         ],
     });
 
@@ -79,11 +76,18 @@ class CLASS2(SIDE,Base): PCLASS2(SIDE,Base) {
         "synixe_mgp_helmet_airframe_01_rgr_hexagon": 1,
         "synixe_mgp_helmet_airframe_01_rgr": 1,
         "synixe_mgp_helmet_airframe_01_blk_mcb": 1,
+        "H_Headset_Tactical": 1,
+        "H_Headset_Tactical_grn": 1,
+        "synixe_mgp_h_cap_mc_earphones": 1,
+        "synixe_mgp_h_cap_mcb_earphones": 1,
+        "synixe_mgp_h_cap_rgr_earphones": 1,
     });
 
     @Facewear({
-        "G_Balaclava_light_blk_F": 1,
-        "G_Balaclava_light_G_blk_F": 1,
+        "JCA_G_balaclava_01_black_F": 1,
+        "JCA_G_balaclava_01_glasses_black_F": 1,
+        "JCA_G_balaclava_01_olive_F": 1,
+        "JCA_G_balaclava_01_glasses_olive_F": 1,
         "synixe_mgp_f_face_shield_blk": 1,
         "synixe_mgp_f_face_shield_blk_ess": 1,
         "synixe_mgp_f_face_shield_blk_tactical": 1,
