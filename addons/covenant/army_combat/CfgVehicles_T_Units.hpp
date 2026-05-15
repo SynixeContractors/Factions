@@ -4,7 +4,7 @@ class CLASS2(SIDE,Base): PCLASS(DOUBLES(Base,NATION)) {
     faction = FACTION;
     @Role(Hidden);
     #include "../../civilians/wear/winter.hpp"
-    #include "../wear/headwear.hpp"
+    #include "../../civilians/wear/headwear_winter.hpp"
     #include "../wear/armor.hpp"
     @Primary({
         "optics": {
@@ -36,7 +36,7 @@ class CLASS2(SIDE,RiflemanCarabine): CLASS2(SIDE,Base) {
 
 class CLASS2(SIDE,RiflemanBackpack): CLASS2(SIDE,RiflemanCarabine) {
     @Role(Hidden);
-    //#include "../wear/backpack.hpp"
+    #include "../wear/backpack.hpp"
 };
 
 class CLASS2(SIDE,SquadLeader): CLASS2(SIDE,RiflemanCarabine) {
