@@ -30,12 +30,6 @@
                 "75Rnd_556x45_Stanag_green_lxWS": 5,
             },
         },
-        "atlas_arifle_famasF1_Grip_F": {
-            "probability": 1,
-            "magazinesVest": {
-                "Atlas_25Rnd_556x45_Famas": 5,
-            },
-        },
         "Atlas_Arifle_famasG2_F": {
             "probability": 1,
             "magazinesVest": {
