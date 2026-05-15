@@ -52,19 +52,19 @@ class CLASS2(SIDE,TeamLeader): CLASS2(SIDE,RiflemanCarabine) {
 
 class CLASS2(SIDE,Autorifleman): CLASS2(SIDE,RiflemanBackpack) {
     @Role(Autorifleman);
-    //#include "../weapons/lmg.hpp"
+    #include "../weapons/lmg.hpp"
     #include "../weapons/pistol.hpp"
 };
 
-class CLASS2(SIDE,AsstMachinegunner): CLASS2(SIDE,RiflemanBackpack) {
-    @Role(AsstMachinegunner);
-};
+// class CLASS2(SIDE,AsstMachinegunner): CLASS2(SIDE,RiflemanBackpack) {
+//     @Role(AsstMachinegunner);
+// };
 
-class CLASS2(SIDE,Machinegunner): CLASS2(SIDE,RiflemanBackpack) {
-    @Role(Machinegunner);
-    //#include "../weapons/mg.hpp"
-    #include "../weapons/pistol.hpp"
-};
+// class CLASS2(SIDE,Machinegunner): CLASS2(SIDE,RiflemanBackpack) {
+//     @Role(Machinegunner);
+//     #include "../weapons/lmg.hpp"
+//     #include "../weapons/pistol.hpp"
+// };
 
 class CLASS2(SIDE,Marksman): CLASS2(SIDE,RiflemanCarabine) {
     @Role(Marksman);
@@ -79,17 +79,17 @@ class CLASS2(SIDE,Medic): CLASS2(SIDE,RiflemanBackpack) {
 
 class CLASS2(SIDE,RiflemanMAT): CLASS2(SIDE,RiflemanBackpack) {
     @Role(RiflemanMAT);
-    //#include "../weapons/mat.hpp"
+    #include "../weapons/mat.hpp"
 };
 
 class CLASS2(SIDE,RiflemanHAT): CLASS2(SIDE,RiflemanBackpack) {
     @Role(RiflemanHAT);
-    //#include "../weapons/hat.hpp"
+    #include "../weapons/hat.hpp"
 };
 
 class CLASS2(SIDE,RiflemanAA): CLASS2(SIDE,RiflemanBackpack) {
-    //@Role(RiflemanAA);
-    //#include "../weapons/aa.hpp"
+    @Role(RiflemanAA);
+    #include "../weapons/aa.hpp"
 };
 
 class CLASS2(SIDE,Engineer): CLASS2(SIDE,RiflemanBackpack) {
@@ -106,14 +106,6 @@ class CLASS2(SIDE,Crewman): CLASS2(SIDE,Base) {
     @Role(Crewman);
     @Headgear({
         "H_HelmetCrew_I": 1,
-    });
-    @Uniforms({
-        "variants": {
-            "U_Tank_green_F": 1,
-        },
-        "packs": [
-            "rifleman_medical",
-        ],
     });
     #include "../weapons/smg.hpp"
 };
