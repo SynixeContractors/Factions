@@ -15,6 +15,31 @@ class CfgPatches {
 };
 
 class CfgVehicles {
+    class GCLASS(LUT_AA);
+    class GCLASS(LUT_Cargo);
+    class GCLASS(LUT_Flatbed);
+    class GCLASS(LUT_Fuel);
+    class GCLASS(LUT_Medical);
+    class GCLASS(LUT_Repair);
+    class GCLASS(LUT_Transport);
+    class GCLASS(LUT_TransportCovered);
+    class GCLASS(Ram);
+    class GCLASS(Ram_Covered);
+    class GCLASS(Ram_Fuel);
+    class GCLASS(Ram_HMG);
+    class GCLASS(Ram_Rocket);
+    class GCLASS(Offroad);
+    class GCLASS(Offroad_AA);
+    class GCLASS(Offroad_AT);
+    class GCLASS(Offroad_Armored);
+    class GCLASS(Offroad_Armored_AA);
+    class GCLASS(Offroad_Armored_AT);
+    class GCLASS(Offroad_Armored_HMG);
+    class GCLASS(Offroad_Comms);
+    class GCLASS(Offroad_Covered);
+    class GCLASS(Offroad_HMG);
+    class GCLASS(Offroad_Services);
+
     @For(Identities)
     class PCLASS(DOUBLES(Base,$1));
     @EndFor
@@ -25,6 +50,7 @@ class CfgVehicles {
         @For(Identities)
         #define NATION $1
         #include "CfgVehicles_T_Units.hpp"
+        #include "CfgVehicles_Cars.hpp"
         #undef NATION
         @EndFor
     #undef FACTION
