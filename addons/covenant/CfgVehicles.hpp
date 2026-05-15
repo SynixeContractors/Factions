@@ -12,18 +12,4 @@ class CfgVehicles {
         @Identity($1);
     };
     @EndFor
-
-    @ForSides(OPFOR,BLUFOR,INDEP)
-        #define TEMPLATE_SIDE $SIDE
-        #define SIDE DOUBLES(NATION,$UPPER)
-        #define FACTION QCLASS($LOWER)
-        @For(Identities)
-            #define NATION $1
-            #include "CfgVehicles_T_Units.hpp"
-            #undef NATION
-        @EndFor
-        #undef FACTION
-        #undef SIDE
-        #undef TEMPLATE_SIDE
-    @EndForSides
 };
