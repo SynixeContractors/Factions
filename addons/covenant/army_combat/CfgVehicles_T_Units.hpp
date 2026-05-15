@@ -1,4 +1,3 @@
-//#include "CfgVehicles_Cars.hpp"
 class CLASS2(SIDE,Base): PCLASS(DOUBLES(Base,NATION)) {
     side = TEMPLATE_SIDE;
     editorSubcategory = QGCLASS(DOUBLES(generics,NATION));
