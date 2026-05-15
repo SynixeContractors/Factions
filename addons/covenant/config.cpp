@@ -22,4 +22,5 @@ class synixe_factions_generics {
 };
 
 #include "CfgVehicles.hpp"
+#include "CfgGroups.hpp"
 #include "CfgFactionClasses.hpp"
