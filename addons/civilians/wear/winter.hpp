@@ -1,9 +1,5 @@
 @Uniforms({
     "variants": {
-        "U_C_CBRN_Suit_01_Black_F": 1,
-        "U_C_CBRN_Suit_01_Blue_F": 1,
-        "Atlas_U_I_I_CBRN_Suit_01_Olive_F": 1,
-        "U_C_CBRN_Suit_01_White_F": 1,
         "U_B_CTRG_Soldier_Black_F": 1,
         "WSLV_Wood_white_Camo": 1,
         "WSLV_Brown_white_Camo": 1,
@@ -66,12 +62,6 @@
         "U_C_PilotJacket_lbrown_RF": 1,
         "U_C_PilotJacket_open_lbrown_RF": 1,
         "U_C_E_LooterJacket_01_F": 1,
-        "JCA_U_NBCD_Suit_01_black_F": 1,
-        "JCA_U_NBCD_Suit_01_hood_black_F": 1,
-        "JCA_U_NBCD_Suit_01_olive_F": 1,
-        "JCA_U_NBCD_Suit_01_hood_olive_F": 1,
-        "JCA_U_NBCD_Suit_01_sand_F": 1,
-        "JCA_U_NBCD_Suit_01_hood_sand_F": 1,
     },
     "packs": [
         "rifleman_medical",
