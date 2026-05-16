@@ -1,14 +1,10 @@
 @Primary({
     "weapons": {
-        "LMG_Zafir_F": {
+        "MMG_02_sand_F": {
             "probability": 1,
             "magazinesVest": {
-                "150Rnd_762x54_Box": 1,
+                "130Rnd_338_Mag": 1,
             },
-            "magazinesBackpack": {
-                "150Rnd_762x54_Box": 3,
-            },
-
         },
     },
     "optics": {
@@ -16,5 +12,5 @@
     },
     "pointers": {
         "saber_light_sand_lxWS": 1,
-    },    
+    },
 });

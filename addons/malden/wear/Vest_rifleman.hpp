@@ -4,7 +4,7 @@
         "synixe_mgp_vest_marciras_assaulter_cb_belt": 0.1,
     },
     "packs": [
-        "t2_standard",
+        "t3_standard",
         "military_standard"
     ],
 });

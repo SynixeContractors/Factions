@@ -1,8 +1,8 @@
 #include "script_component.hpp"
 
 class CfgPatches {
-    class ADDON {
-        name = QUOTE(COMPONENT);
+    class DOUBLES(ADDON,SUBCOMPONENT) {
+        name = QUOTE(DOUBLES(COMPONENT,SUBCOMPONENT));
         units[] = {};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
@@ -14,6 +14,4 @@ class CfgPatches {
     };
 };
 
-#include "CfgFactionClasses.hpp"
-#include "CfgGroups.hpp"
 #include "CfgVehicles.hpp"
