@@ -148,7 +148,7 @@ class CfgVehicles {
 
         @Backpacks({
             "variants": {
-                "B_AssaultPack_eaf_F": 1,
+                "B_AssaultPack_khk": 1,
             },
             "packs": [
                 "engineer",
@@ -161,7 +161,7 @@ class CfgVehicles {
 
         @Backpacks({
             "variants": {
-                "B_TacticalPack_eaf_F": 1,
+                "B_Carryall_oli": 1,
             },
             "packs": [
                 "eod",

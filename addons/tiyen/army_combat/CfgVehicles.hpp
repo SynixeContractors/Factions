@@ -2,18 +2,15 @@ class CfgVehicles {
     #define TEMPLATE_FACTION QPCLASS(t3_opfor)
     #define TEMPLATE_SIDE 0
     #include "../../../templates/statics/M2.hpp"
-    #define TEMPLATE_CAMO Green
+    #define TEMPLATE_CAMO Hex
     #include "../../../templates/statics/Mk6.hpp"
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO SFIA
-    #include "../../../templates/tanks/T100.hpp"
-    #include "../../../templates/apc/Otokar.hpp"
-    #include "../../../templates/apc/BM2_AA.hpp"
-    #include "../../../templates/apc/BM2K.hpp"
-    #include "../../../templates/apc/BM2T.hpp"
     #include "../../../templates/apc/BTR.hpp"
     #include "../../../templates/apc/BTR_IFV.hpp"
     #include "../../../templates/apc/BTR_SPG.hpp"
+    #include "../../../templates/apc/Otokar.hpp"
+    #include "../../../templates/tanks/T100.hpp"
+    #undef TEMPLATE_CAMO
+    #define TEMPLATE_CAMO Opfor
     #include "../../../templates/cars/LUT_AA.hpp"
     #include "../../../templates/cars/LUT_Ammo.hpp"
     #include "../../../templates/cars/LUT_Cargo.hpp"
@@ -22,14 +19,9 @@ class CfgVehicles {
     #include "../../../templates/cars/LUT_MRL.hpp"
     #include "../../../templates/cars/LUT_Repair.hpp"
     #include "../../../templates/cars/LUT_Transport.hpp"
-    #include "../../../templates/helicopters/Ka54.hpp"
-    #include "../../../templates/helicopters/Mi35.hpp"
     #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO CAMO_SFIA
+    #define TEMPLATE_CAMO CSAT
     #include "../../../templates/helicopters/Puma_Military.hpp"
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO Rus
-    #include "../../../templates/drones/Shahpar.hpp"
     
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {
