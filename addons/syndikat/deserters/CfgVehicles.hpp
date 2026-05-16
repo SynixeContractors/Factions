@@ -9,14 +9,11 @@ class CfgVehicles {
     #include "../../../templates/cars/Quadbike.hpp"
     #undef TEMPLATE_CAMO_LIST
     #define TEMPLATE_CAMO_LIST {\
-        QUOTE(Guerilla_03),1,\
-        QUOTE(Guerilla_06),1,\
+        QUOTE(Guerilla_04),1,\
+        QUOTE(Guerilla_05),1,\
         QUOTE(Guerilla_07),1,\
         QUOTE(Guerilla_08),1,\
         QUOTE(Guerilla_09),1,\
-        QUOTE(Guerilla_10),1,\
-        QUOTE(Guerilla_11),1,\
-        QUOTE(Guerilla_12),1,\
     }
     #include "../../../templates/cars/Offroad_Civilian.hpp"
     #include "../../../templates/cars/Offroad_Armed.hpp"
@@ -26,11 +23,11 @@ class CfgVehicles {
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {
         displayName = "Syndikat Paramilitary Base";
-        editorSubcategory = QGCLASS(reserves);
+        editorSubcategory = QGCLASS(deserters);
         @Assigned(Military);
 
         @Uniforms({
-            "variants" {
+            "variants": {
                 "U_I_C_Soldier_Para_2_F": 1,
                 "U_I_C_Soldier_Para_3_F": 1,
                 "U_I_C_Soldier_Para_5_F": 1,
@@ -38,41 +35,39 @@ class CfgVehicles {
                 "U_I_C_Soldier_Para_1_F": 1,
                 "U_I_C_Soldier_Camo_F": 1,
             },
-            "packs" {
+            "packs": [
                 "rifleman_medical",
-            },
+            ],
         });
 
         @Facewear({
-            "variants" {
-                "G_Aviator": 1,
-                "G_Bandanna_aviator": 1,
-                "G_Bandanna_beast": 1,
-                "G_Bandanna_blk": 1,
-                "G_Bandanna_khk": 1,
-                "G_Bandanna_oli": 1,
-                "G_Shades_Black": 1,
-                "G_Bandanna_Skull1": 1,
-                "G_Bandanna_Syndikat1": 1,
-                "G_Bandanna_Skull2": 1,
-                "G_Bandanna_Syndikat2": 1,
-                "G_Balaclava_blk_lxWS": 1,
-            }
-        })
+            "G_Aviator": 1,
+            "G_Bandanna_aviator": 1,
+            "G_Bandanna_beast": 1,
+            "G_Bandanna_blk": 1,
+            "G_Bandanna_khk": 1,
+            "G_Bandanna_oli": 1,
+            "G_Shades_Black": 1,
+            "G_Bandanna_Skull1": 1,
+            "G_Bandanna_Syndikat1": 1,
+            "G_Bandanna_Skull2": 1,
+            "G_Bandanna_Syndikat2": 1,
+            "G_Balaclava_blk_lxWS": 1,
+        });
     };
     class CLASS(Rifleman): CLASS(Base) {
         @Role(Rifleman);
 
         @Vests({
             "variants": {
-                "V_TacVest_grn": 1,
-                "V_TacChestrig_cbr_F": 1,
-                "V_TacChestrig_grn_F": 1,
-                "V_TacChestrig_oli_F": 1,
-                "Atlas_V_ORigLBV_oli_F": 1,
-                "Atlas_V_OCarrierRig_CQB_oli_F": 0.5,
-                "Atlas_V_OCarrierRig_oli_F": 0.5,
-                "Atlas_V_OCarrierRig_Lite_oli_F": 0.5,
+                "V_TacVest_grn": 2,
+                "V_TacChestrig_cbr_F": 2,
+                "V_TacChestrig_grn_F": 2,
+                "V_TacChestrig_oli_F": 2,
+                "Atlas_V_ORigLBV_oli_F": 2,
+                "Atlas_V_OCarrierRig_CQB_oli_F": 0.4,
+                "Atlas_V_OCarrierRig_oli_F": 0.4,
+                "Atlas_V_OCarrierRig_Lite_oli_F": 0.4,
             },
             "packs": [
                 "t4_standard",
@@ -84,18 +79,16 @@ class CfgVehicles {
         });
 
         @Headgear({
-            "variants" {
-                "": 1,
-                "H_PASGT_basic_olive_F": 0.5,
-                "Atlas_H_PASGT_Cover_HIMF_F": 0.5,
-                "H_Booniehat_jungle": 1,
-                "H_Booniehat_oli": 1,
-                "Atlas_H_MilCap_nohs_jungle": 1,
-                "Aegis_H_Milcap_nohs_grn_F": 1,
-                "H_Bandanna_cbr": 1,
-                "H_Bandanna_khk": 1,
-                "H_Bandanna_camo": 1,
-            },
+            "": 1,
+            "H_PASGT_basic_olive_F": 0.5,
+            "Atlas_H_PASGT_Cover_HIMF_F": 0.5,
+            "H_Booniehat_jungle": 1,
+            "H_Booniehat_oli": 1,
+            "Atlas_H_MilCap_nohs_jungle": 1,
+            "Aegis_H_Milcap_nohs_grn_F": 1,
+            "H_Bandanna_cbr": 1,
+            "H_Bandanna_khk": 1,
+            "H_Bandanna_camo": 1,
         });
 
         @Primary({
@@ -166,7 +159,7 @@ class CfgVehicles {
             ],
             "magazines": {
                 "HandGrenade": 1,
-                "SmokeShell": 2,
+                "SmokeShell": 1,
             },
         });
 
@@ -179,6 +172,12 @@ class CfgVehicles {
                     },
                 },
             },
+        });
+
+        @Binoculars({
+            "weapons": {
+                "Binocular": 1,
+            }
         });
     };
     class CLASS(TeamLeader): CLASS(SquadLeader) {
@@ -292,8 +291,17 @@ class CfgVehicles {
             "variants": {
                 "B_Kitbag_rgr": 1,
             },
-            "packs": {
-                "t4_medic"
+            "packs": [
+                "t4_medic",
+            ],
+        });
+    };
+    class CLASS(Radiooperator): CLASS(Rifleman) {
+        @Role(RadioOperator);
+
+        @Backpacks({
+            "variants": {
+                "B_RadioBag_01_jungle_F": 1,
             },
         });
     };
@@ -325,9 +333,9 @@ class CfgVehicles {
             "variants": {
                 "B_FieldPack_khk": 1,
             },
-            "packs": {
+            "packs": [
                 "engineer"
-            }
+            ],
         });
     };
     class CLASS(Demolitions): CLASS(Rifleman) {
@@ -337,37 +345,13 @@ class CfgVehicles {
             "variants": {
                 "B_Kitbag_rgr": 1,
             },
-            "packs": {
+            "packs": [
                 "eod",
                 "demo",
                 "ap_mine",
-            }
+            ],
         });
     };
-    class CLASS(Marksman): CLASS(Rifleman) {
-        @Role(Marksman);
-
-        @Primary({
-            "weapons": {
-                "arifle_SLR_V_lxWS": {
-                    "probability": 1,
-                    "magazinesVest": {
-                        "Aegis_20Rnd_762x51_slr_reload_tracer_red_lxWS": 7,
-                    },
-                },
-                "Aegis_srifle_SVD_f": {
-                    "probability": 1,
-                    "magazinesVest": {
-                        "10Rnd_762x54_Mag": 7,
-                    },
-                },
-            },
-            "optics": {
-                "optic_DMS_weathered_F": 1,
-            }
-        });
-    };
-
     class CLASS(Marksman): CLASS(Rifleman) {
         @Role(Marksman);
 

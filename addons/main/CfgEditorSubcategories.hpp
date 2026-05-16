@@ -37,4 +37,7 @@ class CfgEditorSubcategories {
     class GCLASS(police_cars) {
         displayName = "Cars (Police)";
     };
+    class GCLASS(deserters) {
+        displayName = "Men (Deserters)";
+    };
 };

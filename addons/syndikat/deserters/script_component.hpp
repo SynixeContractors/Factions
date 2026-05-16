@@ -1,3 +1,3 @@
-#define SUBCOMPONENT militia
+#define SUBCOMPONENT deserters
 
 #include "..\script_component.hpp"

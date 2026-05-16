@@ -37,22 +37,20 @@ class CfgVehicles {
                 "U_MU_B_GuerillaGarment2_grey": 1,
                 "U_MU_B_GuerillaGarment2_olive": 1,
             },
-          });
+        });
 
         @Facewear({
-            "variants" {
-                "G_Aviator": 1,
-                "G_Bandanna_aviator": 1,
-                "G_Bandanna_beast": 1,
-                "G_Bandanna_blk": 1,
-                "G_Bandanna_khk": 1,
-                "G_Bandanna_oli": 1,
-                "G_Shades_Black": 1,
-                "G_Bandanna_Skull1": 1,
-                "G_Bandanna_Syndikat1": 1,
-                "G_Bandanna_Skull2": 1,
-                "G_Bandanna_Syndikat2": 1,
-            }
+            "G_Aviator": 1,
+            "G_Bandanna_aviator": 1,
+            "G_Bandanna_beast": 1,
+            "G_Bandanna_blk": 1,
+            "G_Bandanna_khk": 1,
+            "G_Bandanna_oli": 1,
+            "G_Shades_Black": 1,
+            "G_Bandanna_Skull1": 1,
+            "G_Bandanna_Syndikat1": 1,
+            "G_Bandanna_Skull2": 1,
+            "G_Bandanna_Syndikat2": 1,
         });
 
         @Vests({
@@ -68,13 +66,11 @@ class CfgVehicles {
         });
 
         @Headgear({
-            "variants" {
-                "": 1,
-                "H_Booniehat_oli": 1,
-                "H_Bandanna_cbr": 1,
-                "H_Bandanna_khk": 1,
-                "H_Bandanna_camo": 1,
-            },
+            "": 1,
+            "H_Booniehat_oli": 1,
+            "H_Bandanna_cbr": 1,
+            "H_Bandanna_khk": 1,
+            "H_Bandanna_camo": 1,
         });
 
         @Assigned(Military);
@@ -127,9 +123,12 @@ class CfgVehicles {
                 "V_TacChestrig_grn_F": 1,
                 "V_TacChestrig_oli_F": 1,
             },
-            "packs": [
-                "binoculars",
-            ],
+        });
+
+        @Binoculars({
+            "weapons": {
+                "Binocular": 1,
+            }
         });
     };
     class CLASS(TeamLeader): CLASS(SquadLeader) {
@@ -232,9 +231,9 @@ class CfgVehicles {
             "variants": {
                 "B_Kitbag_rgr": 1,
             },
-            "packs": {
-                "t4_medic"
-            },
+            "packs": [
+                "t4_medic",
+            ],
         });
     };
     class CLASS(RiflemanMAT): CLASS(Rifleman) {
@@ -265,9 +264,9 @@ class CfgVehicles {
             "variants": {
                 "B_FieldPack_khk": 1,
             },
-            "packs": {
+            "packs": [
                 "engineer"
-            }
+            ],
         });
     };
     class CLASS(Demolitions): CLASS(Rifleman) {
@@ -277,10 +276,10 @@ class CfgVehicles {
             "variants": {
                 "B_Kitbag_rgr": 1,
             },
-            "packs": {
+            "packs": [
                 "eod",
                 "demo",
-            }
+            ],
         });
     };
     class CLASS(Marksman): CLASS(Rifleman) {
@@ -342,10 +341,8 @@ class CfgVehicles {
         });
 
         @Headgear({
-            "variants" {
-                "": 1,
-                "H_Cap_marshal": 1,
-            },
+            "": 1,
+            "H_Cap_marshal": 1,
         });
     };
 };
