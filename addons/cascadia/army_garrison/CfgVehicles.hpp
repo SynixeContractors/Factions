@@ -171,7 +171,7 @@ class CfgVehicles {
                 "": 1,
                 "arifle_CTAR_blk_F": {
                     "probability": 0.5,
-                    "magazinesBackpack": {
+                    "magazinesUniform": {
                         "30Rnd_580x42_Mag_F": 3,
                     },
                 },
