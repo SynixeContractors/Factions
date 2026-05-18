@@ -304,7 +304,7 @@ fn groups(args, context) {
         "INDEP" => 2,
         "CIV" => 3,
         _ => {
-            fatal("Unknown side: " + context["group_side"]);
+            fatal("Unknown side: " + context["group_side"] + " in Groups macro with args: " + args);
         }
     };
     let id = tier + "_" + type;
@@ -419,10 +419,10 @@ fn is_alphanumeric(char) {
 
 fn get_side_data(side) {
     switch side {
-        "BLUFOR" => { return #{SIDE: 1, UPPER: "BLUFOR", LOWER: "blufor", GROUP: "West"} }
-        "OPFOR" => { return #{SIDE: 0, UPPER: "OPFOR", LOWER: "opfor", GROUP: "East"} }
-        "INDEP" => { return #{SIDE: 2, UPPER: "INDEP", LOWER: "indep", GROUP: "Indep"} }
-        "CIV" => { return #{SIDE: 3, UPPER: "CIV", LOWER: "civ", GROUP: "Civ"} }
+        "BLUFOR" => { return #{SIDE: 1, UPPER: "BLUFOR", LOWER: "blufor", GROUP: "WEST"} }
+        "OPFOR" => { return #{SIDE: 0, UPPER: "OPFOR", LOWER: "opfor", GROUP: "EAST"} }
+        "INDEP" => { return #{SIDE: 2, UPPER: "INDEP", LOWER: "indep", GROUP: "INDEP"} }
+        "CIV" => { return #{SIDE: 3, UPPER: "CIV", LOWER: "civ", GROUP: "CIV"} }
         _ => { fatal("Unknown side: " + side); }
     }
 }
@@ -714,16 +714,6 @@ fn process_lines(lines, start_index, variables) {
     while index < lines.len() {
         let line = lines[index];
         line.trim();
-
-        if line == "class INDEP {" {
-            context["group_side"] = "INDEP";
-        } else if line == "class EAST {" {
-            context["group_side"] = "OPFOR";
-        } else if line == "class WEST {" {
-            context["group_side"] = "BLUFOR";
-        } else if line == "class CIV {" {
-            context["group_side"] = "CIV";
-        }
         
         if line.starts_with("@ForSides(") {
             // Parse @ForSides and get the sides to iterate
@@ -764,6 +754,20 @@ fn process_lines(lines, start_index, variables) {
         } else {
             // Regular line - apply variable substitution
             let processed_line = replace_placeholder(line, variables);
+            let trimmed_line = processed_line;
+            trimmed_line.trim();
+            if trimmed_line.contains("class ") {
+                debug("Processing class line: " + trimmed_line);
+            }
+            if trimmed_line == "class INDEP {" {
+                context["group_side"] = "INDEP";
+            } else if trimmed_line == "class EAST {" {
+                context["group_side"] = "OPFOR";
+            } else if trimmed_line == "class WEST {" {
+                context["group_side"] = "BLUFOR";
+            } else if trimmed_line == "class CIV {" {
+                context["group_side"] = "CIV";
+            }
             replacement += processed_line + "\n";
         }
         index += 1;
