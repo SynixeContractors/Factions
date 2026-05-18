@@ -51,7 +51,7 @@ class CfgVehicles {
 
         @Headgear({
             "H_Shemag_olive": 1,
-            "H_I_Helmet_canvas_Green": 1,
+            "H_I_Helmet_canvas_Green": 3,
             "Aegis_H_Milcap_nohs_grn_F": 1,
             "H_Booniehat_khk": 1,
         });
