@@ -7,7 +7,7 @@
         },
     },
     "optics": {
-        "optic_Arco_arid_F": 1,
+        "optic_Arco_AK_arid_F": 1,
         "JCA_optic_IHO_sand_magnifier": 1,
     },
     "pointers": {

@@ -15,7 +15,6 @@ class CfgVehicles {
     #undef TEMPLATE_CAMO_LIST
     #define TEMPLATE_CAMO_LIST {\
         QUOTE(Desert),1,\
-        QUOTE(Green),1,\
     }
     #include "../../../templates/cars/LSV.hpp"
     #undef TEMPLATE_CAMO_LIST
@@ -110,7 +109,6 @@ class CfgVehicles {
     class CLASS(Medic): CLASS(Rifleman) {
         @Role(Medic);
 
-        #include "..\headgear\Helmet.hpp"
         #include "..\vests\Medic.hpp"
 
         @Backpacks({
@@ -135,6 +133,7 @@ class CfgVehicles {
                         "RPG7_F": 2,
                         "PSRL1_FRAG_RF": 2,
                     },
+                    "loadedPrimary": "RPG7_F",
                 },
             },
             "optics": {
@@ -188,6 +187,8 @@ class CfgVehicles {
     class CLASS(RadioOperator): CLASS(Rifleman) {
         @Role(RadioOperator);
 
+        #include "..\headgear\Helmet.hpp"
+
         @Backpacks({
             "variants": {
                 "B_RadioBag_01_ardi_F": 1,
@@ -212,6 +213,8 @@ class CfgVehicles {
 
     class CLASS(Demolitions): CLASS(Rifleman) {
         @Role(Demolitions);
+
+        #include "..\headgear\Helmet.hpp"
 
         @Backpacks({
             "variants": {
