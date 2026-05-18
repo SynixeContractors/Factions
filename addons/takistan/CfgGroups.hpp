@@ -2,8 +2,8 @@ class CfgGroups {
     class INDEP {
         class CLASS(t4_indep) {
             name = "[T4] Takistan";
-            @Groups(T4,INDEP,Army_Combat);
-            @Groups(T4,INDEP,Militia);
+            @Groups(T4,Army_Combat);
+            @Groups(T4,Militia);
         };
     };
 };

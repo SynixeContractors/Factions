@@ -1,8 +1,8 @@
 class CfgFactionClasses {
-    @ForSides(BLUFOR,INDEP,OPFOR,CIV)
+    @ForSides(INDEP,OPFOR)
     class CLASS($LOWER) {
         SCOPE_DLC;
-        displayName = "[T4] Private Security";
+        displayName = "[T4] The Professionals";
         priority = 1;
         side = $SIDE;
     };
