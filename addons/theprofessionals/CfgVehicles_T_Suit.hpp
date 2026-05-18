@@ -4,7 +4,7 @@ class CLASS2(SIDE,Suit): CLASS2(Base,NATION) {
     faction = FACTION;
 
     #include "wear/suit.hpp"
-    #include "wear/headwear.hpp"
+    #include "wear/headwear_suit.hpp"
     #include "weapons/pistol.hpp"
 
     @Vests({
