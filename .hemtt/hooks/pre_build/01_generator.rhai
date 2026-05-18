@@ -714,6 +714,16 @@ fn process_lines(lines, start_index, variables) {
     while index < lines.len() {
         let line = lines[index];
         line.trim();
+
+        if line == "class INDEP {" {
+            context["group_side"] = "INDEP";
+        } else if line == "class EAST {" {
+            context["group_side"] = "OPFOR";
+        } else if line == "class WEST {" {
+            context["group_side"] = "BLUFOR";
+        } else if line == "class CIV {" {
+            context["group_side"] = "CIV";
+        }
         
         if line.starts_with("@ForSides(") {
             // Parse @ForSides and get the sides to iterate
