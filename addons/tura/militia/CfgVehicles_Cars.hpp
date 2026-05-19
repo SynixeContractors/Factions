@@ -3,7 +3,7 @@ class CLASS2(SIDE,BTR): GCLASS(BTR) {
     faction = QPCLASS(SIDE_FACTION);
     side = SIDE_NUMBER;
     textureList[] = {
-        "Loyalist",1,
+        "Sand",1,
     };
     crew = QCLASS2(SIDE,Rifleman);
     typicalCargo[] = {QCLASS2(SIDE,Rifleman)};
@@ -13,7 +13,7 @@ class CLASS2(SIDE,BTR_SPG): GCLASS(BTR_SPG) {
     faction = QPCLASS(SIDE_FACTION);
     side = SIDE_NUMBER;
     textureList[] = {
-        "Loyalist",1,
+        "Sand",1,
     };
     crew = QCLASS2(SIDE,Rifleman);
     typicalCargo[] = {QCLASS2(SIDE,Rifleman)};
