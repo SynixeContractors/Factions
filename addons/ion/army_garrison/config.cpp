@@ -6,7 +6,9 @@ class CfgPatches {
         units[] = {};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
-        requiredAddons[] = {"cba_main"};
+        requiredAddons[] = {
+            "synixe_factions_base_vehicles"
+        };
         author = "Synixe Contractors";
         VERSION_CONFIG;
     };
@@ -14,27 +16,13 @@ class CfgPatches {
 
 class CfgVehicles {
 
-    #define SIDE OPFOR
-    #define SIDE_NUMBER 0
-    #define SIDE_FACTION t3_opfor
+    @ForSides(BLUFOR,OPFOR,INDEP)
+    #define SIDE $UPPER
+    #define SIDE_NUMBER $SIDE
+    #define SIDE_FACTION t3_$LOWER
     #include "CfgVehicles.hpp"
     #undef SIDE
     #undef SIDE_NUMBER
     #undef SIDE_FACTION
-
-    #define SIDE INDEP
-    #define SIDE_NUMBER 2
-    #define SIDE_FACTION t3_indep
-    #include "CfgVehicles.hpp"
-    #undef SIDE
-    #undef SIDE_NUMBER
-    #undef SIDE_FACTION
-
-    #define SIDE BLUFOR
-    #define SIDE_NUMBER 1
-    #define SIDE_FACTION t3_blufor
-    #include "CfgVehicles.hpp"
-    #undef SIDE
-    #undef SIDE_NUMBER
-    #undef SIDE_FACTION
+    @EndForSides
 };

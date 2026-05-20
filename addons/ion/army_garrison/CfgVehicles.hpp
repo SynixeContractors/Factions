@@ -1,5 +1,10 @@
 class PCLASS2(SIDE,Base);
 class CLASS2(SIDE,Base): PCLASS2(SIDE,Base) {
+    #define TEMPLATE_FACTION QPCLASS(SIDE_FACTION)
+    #define TEMPLATE_SIDE SIDE_NUMBER
+    #undef TEMPLATE_FACTION
+    #undef TEMPLATE_SIDE
+    
     displayName = "ION Base Army Garrison";
     editorSubcategory = QGCLASS(army_garrison);
 

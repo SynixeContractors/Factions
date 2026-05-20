@@ -1,4 +1,5 @@
 #include "CfgVehicles_APC.hpp"
+#include "CfgVehicles_Arcadian.hpp"
 #include "CfgVehicles_Dinghy.hpp"
 #include "CfgVehicles_LUT.hpp"
 #include "CfgVehicles_Mk6Mortar.hpp"
@@ -10,6 +11,11 @@
 
 class PCLASS2(SIDE,Base);
 class CLASS2(SIDE,Base): PCLASS2(SIDE,Base) {
+    #define TEMPLATE_FACTION QPCLASS(SIDE_FACTION)
+    #define TEMPLATE_SIDE SIDE_NUMBER
+    #undef TEMPLATE_FACTION
+    #undef TEMPLATE_SIDE
+
     displayName = "ION Base Army Combat";
     editorSubcategory = QGCLASS(army_combat);
     
@@ -62,23 +68,26 @@ class CLASS2(SIDE,Base): PCLASS2(SIDE,Base) {
         "H_Cap_blk_ION_hs": 1,
         "H_Cap_headphones_ion_lxws": 1,
         "lxWS_H_CapB_rvs_blk_ION": 1,
+        "JCA_H_Headset_Combat_01_black_F": 1,
+        "H_Bandanna_khk_hs": 1,
+        "lxWS_H_Headset": 1,
         "H_HelmetB_black": 1,
         "H_HelmetSpecB_blk": 1,
-        "H_HelmetB_grass": 1,
-        "H_HelmetSpecB_paint1": 1,
         "H_HelmetB": 1,
+        "H_HelmetSpecB": 1,
         "H_HelmetB_sand": 1,
         "H_HelmetSpecB_sand": 1,
         "H_HelmetB_green": 1,
         "H_HelmetSpecB_green": 1,
-        "H_Headset_Tactical": 1,
         "": 1,
     });
 
     @Facewear({
         "": 1,
         "G_Shades_Black": 1,
+        "G_Aviator": 1,
         "G_Spectacles_Tinted": 1,
+        "G_Shemag_tan": 1,
         "G_Shemag_shades": 1,
         "G_Shemag_tactical": 1,
         "JCA_G_balaclava_01_black_F": 1,
@@ -164,6 +173,7 @@ class CLASS2(SIDE,Base): PCLASS2(SIDE,Base) {
             "optic_Holosight_blk_F": 1,
             "optic_VRCO_RF": 1,
             "optic_Aco": 1,
+            "": 1,
         },
         "pointers": {
             "acc_pointer_IR": 1,
@@ -400,6 +410,7 @@ class CLASS2(SIDE,Marksman): CLASS2(SIDE,Base) {
         },
         "muzzles": {
             "muzzle_snds_B": 1,
+            "": 1,
         },
     });
 };

@@ -1,22 +1,10 @@
 class CfgFactionClasses {
-    class CLASS(t3_indep) {
+    @ForSides(BLUFOR,OPFOR,INDEP)
+    class CLASS(t3_$LOWER) {
         SCOPE_DLC;
         displayName = "[T3] ION Services";
         priority = 1;
-        side = 2; // INDEP
+        side = $SIDE;
     };
-
-    class CLASS(t3_opfor) {
-        SCOPE_DLC;
-        displayName = "[T3] ION Services";
-        priority = 1;
-        side = 0; // OPFOR
-    };
-
-    class CLASS(t3_blufor) {
-        SCOPE_DLC;
-        displayName = "[T3] ION Services";
-        priority = 1;
-        side = 1; // BLUFOR
-    };
+    @EndForSides
 };
