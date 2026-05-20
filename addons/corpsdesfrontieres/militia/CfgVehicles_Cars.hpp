@@ -60,6 +60,39 @@ class CLASS2(SIDE,LUT_Ammo): GCLASS(LUT_Ammo) {
     typicalCargo[] = {QCLASS2(SIDE,Rifleman)};
 };
 
+class CLASS2(SIDE,LUT_AA): GCLASS(LUT_AA) {
+    SCOPE_DLC;
+    faction = QPCLASS(SIDE_FACTION);
+    side = SIDE_NUMBER;
+    textureList[] = {
+        "Green",1,
+    };
+    crew = QCLASS2(SIDE,Rifleman);
+    typicalCargo[] = {QCLASS2(SIDE,Rifleman)};
+};
+
+class CLASS2(SIDE,LUT_Fuel): GCLASS(LUT_Fuel) {
+    SCOPE_DLC;
+    faction = QPCLASS(SIDE_FACTION);
+    side = SIDE_NUMBER;
+    textureList[] = {
+        "Green",1,
+    };
+    crew = QCLASS2(SIDE,Rifleman);
+    typicalCargo[] = {QCLASS2(SIDE,Rifleman)};
+};
+
+class CLASS2(SIDE,LUT_Repair): GCLASS(LUT_Repair) {
+    SCOPE_DLC;
+    faction = QPCLASS(SIDE_FACTION);
+    side = SIDE_NUMBER;
+    textureList[] = {
+        "Green",1,
+    };
+    crew = QCLASS2(SIDE,Rifleman);
+    typicalCargo[] = {QCLASS2(SIDE,Rifleman)};
+};
+
 // Offroad
 
 class CLASS2(SIDE,Offroad): GCLASS(Offroad) {
@@ -342,4 +375,15 @@ class CLASS2(SIDE,MD500E): GCLASS(MD500E) {
     editorPreview = "\A3\EditorPreviews_F\Data\CfgVehicles\B_Heli_Light_01_F.jpg";
     crew = QCLASS2(SIDE,HeliPilot);
     typicalCargo[] = {QCLASS2(SIDE,HeliPilot)};
+};
+
+class CLASS2(SIDE,BTR): GCLASS(BTR) {
+    SCOPE_DLC;
+    faction = QPCLASS(SIDE_FACTION);
+    side = SIDE_NUMBER;
+    textureList[] = {
+        "Guerrilla_02",1,
+    };
+    crew = QCLASS2(SIDE,Crewman);
+    typicalCargo[] = {QCLASS2(SIDE,Crewman)};
 };

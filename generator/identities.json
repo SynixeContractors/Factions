@@ -120,5 +120,11 @@
         ],
         "genericNames": "French"
     },
-
+    "Brienne": {
+        "identityTypes": [
+            "Head_Euro",
+            "LanguageFRE_F"
+        ],
+        "genericNames": "French"
+    },
 }

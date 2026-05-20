@@ -15,13 +15,17 @@ class CfgPatches {
 };
 
 class CfgVehicles {
+    class GCLASS(BTR);
     class GCLASS(Jay_Fuel);
     class GCLASS(Jay_Flatbed);
+    class GCLASS(LUT_AA);
     class GCLASS(LUT_Ammo);
     class GCLASS(LUT_Cargo);
     class GCLASS(LUT_Flatbed);
     class GCLASS(LUT_Transport);
     class GCLASS(LUT_TransportCovered);
+    class GCLASS(LUT_Fuel);
+    class GCLASS(LUT_Repair);
     class GCLASS(Offroad);
     class GCLASS(Offroad_Covered);
     class GCLASS(Offroad_AT);
@@ -39,7 +43,7 @@ class CfgVehicles {
     class GCLASS(M2_Low);
     class GCLASS(MD500E);
 
-    @ForSides(OPFOR,INDEP,BLUFOR)
+    @ForSides(BLUFOR,OPFOR,INDEP)
     #define SIDE $UPPER
     #define SIDE_NUMBER $SIDE
     #define SIDE_FACTION t4_$LOWER

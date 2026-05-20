@@ -4,11 +4,10 @@ class PCLASS2(SIDE,Base);
 class CLASS2(SIDE,Base): PCLASS2(SIDE,Base) {
     #define TEMPLATE_FACTION QPCLASS(SIDE_FACTION)
     #define TEMPLATE_SIDE SIDE_NUMBER
-    #include "..\..\..\templates\statics\M2.hpp"
     #undef TEMPLATE_FACTION
     #undef TEMPLATE_SIDE
 
-    displayName = "Funded Paramilitary";
+    displayName = "Corps des Frontieres";
     editorSubcategory = QGCLASS(militia);
     
     @Uniforms({
@@ -419,6 +418,48 @@ class CLASS2(SIDE,HeliPilot): CLASS2(SIDE,Base) {
             },
         },
     });
+};
+
+class CLASS2(SIDE,Crewman): CLASS2(SIDE,Base) {
+    @Role(Crewman);
+
+    @Headgear({
+        "H_Tank_black_F": 1,
+    });
+
+    @Vests({
+        "variants": {
+            "Aegis_V_TacVest_RigB_blk_RF": 1,
+        },
+        "packs": [
+            "t4_standard",
+        ],
+    });
+
+    @Primary({
+        "weapons": {
+            "arifle_Katiba_C_F": {
+                "magazinesVest": {
+                    "30Rnd_65x39_caseless_green": 4,
+                }
+            },
+            "arifle_AKSM_F": {
+                "magazinesVest": {
+                    "30Rnd_545x39_Mag_Green_F": 4,
+                }
+            },
+        },
+        "optics": {
+            "": 1,
+        },
+        "muzzles": {
+            "": 1,
+        },
+        "pointers": {
+            "": 1,
+        },
+    });
+
 };
 
 class CLASS2(SIDE,Spotter): CLASS2(SIDE,Base) {
