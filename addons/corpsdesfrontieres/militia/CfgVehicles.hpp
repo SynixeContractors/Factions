@@ -331,6 +331,7 @@ class CLASS2(SIDE,RiflemanMAT): CLASS2(SIDE,Base) {
                     "RPG7_F": 2,
                     "PSRL1_FRAG_RF": 2,
                 },
+                "loadedPrimary": "RPG7_F",
             },
         },
     });
