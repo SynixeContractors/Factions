@@ -23,7 +23,7 @@ class CfgVehicles {
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {
         displayName = "Syndikat Paramilitary Base";
-        editorSubcategory = QGCLASS(deserters);
+        editorSubcategory = QGCLASS(army_combat);
         @Assigned(Military);
 
         @Uniforms({
