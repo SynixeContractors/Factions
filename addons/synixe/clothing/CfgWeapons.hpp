@@ -50,11 +50,14 @@ class CfgWeapons {
             uniformClass = QPCLASS(Unit_Combat_RS_Synixe_BP_BB);
         };
     };
+    // Djellaba
     class WSLV_Black_yellow_Camo: Uniform_Base {
         class ItemInfo;
     };
-
     class PCLASS(WSLV_Black_Synixe): WSLV_Black_yellow_Camo {
+        displayName = "Djellaba Combat [Synixe] (Yellow, Black)";
+        // FIXME: when photoshoot works
+        picture = "";
         class ItemInfo: ItemInfo {
             uniformClass = QPCLASS(WSLV_Black_Synixe_Uniform);
         };
