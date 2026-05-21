@@ -57,7 +57,6 @@ class CfgWeapons {
     class PCLASS(WSLV_Black_Synixe): WSLV_Black_yellow_Camo {
         displayName = "Djellaba Combat [Synixe] (Yellow, Black)";
         // FIXME: when photoshoot works
-        picture = "";
         class ItemInfo: ItemInfo {
             uniformClass = QPCLASS(WSLV_Black_Synixe_Uniform);
         };
