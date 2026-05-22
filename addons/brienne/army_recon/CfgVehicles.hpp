@@ -50,6 +50,7 @@ class CfgVehicles {
     };
     class CLASS(RadioOperator): CLASS(Base) {
         @Role(RadioOperator);
+        #include "../weapons/rifle.hpp"
         #include "../wear/backpack_radio.hpp"
     };
     class CLASS(Demolitions): CLASS(Base) {

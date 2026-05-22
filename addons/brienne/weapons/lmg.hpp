@@ -11,6 +11,10 @@
 
         },
     },
+    "optics": {
+        "Aegis_optic_1p87": 1,
+        "optic_Hamr": 1,
+    },
     "pointers": {
         "JCA_acc_LaserModule_black_Pointer": 1,
     },

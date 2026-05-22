@@ -136,7 +136,7 @@ class CfgVehicles {
                 "V_TacVest_oli" : 1,
             },
             "packs" : [
-                "t4_standard",
+                "t2_standard",
             ],
         });
         #include "../weapons/pdw.hpp"
