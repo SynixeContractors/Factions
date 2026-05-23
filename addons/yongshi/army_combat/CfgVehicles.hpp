@@ -185,7 +185,7 @@ class CfgVehicles {
         @Launchers({
             "weapons": {
                 "launch_O_Vorona_brown_F": {
-                    "magazinesBackpack": { 
+                    "magazinesBackpack": {
                         "Vorona_HEAT": 2,
                     },
                 },
