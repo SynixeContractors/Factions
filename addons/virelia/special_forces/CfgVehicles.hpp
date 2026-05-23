@@ -7,6 +7,15 @@ class CfgVehicles {
     #define TEMPLATE_CAMO AAF
     //FIXME: placeholder camo
     #include "../../../templates/drones/MQ9.hpp"
+    #undef TEMPLATE_CAMO
+    #define TEMPLATE_CAMO Dazzle
+    #include "../../../templates/cars/Polaris.hpp"
+    #include "../../../templates/cars/Ram_Advanced.hpp"
+    #include "../../../templates/cars/Ram_Armed.hpp"
+    #include "../../../templates/cars/Ram_Civilian.hpp"
+    #undef TEMPLATE_CAMO
+    #define TEMPLATE_CAMO Olive
+    #include "../../../templates/statics/RGS60.hpp"
 
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {
@@ -16,9 +25,9 @@ class CfgVehicles {
 
         @Uniforms({
             "variants": {
-                "U_B_CTRG_Soldier_F": 1,
+                "U_B_CTRG_Soldier_F": 3,
                 "U_B_CTRG_Soldier_2_F": 1,
-                "U_B_CTRG_Soldier_3_F": 1,
+                "U_B_CTRG_Soldier_3_F": 3,
             },
             "packs": [
                 "rifleman_medical",
@@ -32,60 +41,331 @@ class CfgVehicles {
             "packs": [
                 "t2_standard",
                 "military_standard",
-                "rifleman_medical",
             ],
         });
 
         @Headgear({
             "Aegis_H_Helmet_FASTMT_Cover_dazzle_tna_F": 1,
-            "Aegis_H_Helmet_FASTMT_Headset_rgr_F": 1,
+            "H_HelmetB_TI_tna_F": 1,
         });
 
         @Facewear({
-            "synixe_mgp_f_tactical": 1,
-            "synixe_mgp_f_face_shield_rgr_tactical": 1,
-            "synixe_mgp_f_face_shield_rgr": 1,
-            "synixe_mgp_f_face_shield_blk": 0.5,
-            "synixe_mgp_f_face_shield_blk_tactical": 0.5,
+            "JCA_G_balaclava_01_black_F": 1,
+            "synixe_mgp_f_face_shield_blk": 1,
+            "synixe_mgp_f_face_shield_blk_tactical": 1,
         });
 
         @Primary({
             "weapons": {
+                "arifle_SPAR_02_blk_F": {
+                    "probability": 1,
+                    "magazinesVest": {
+                        "30Rnd_556x45_Stanag": 8,
+                    },
+                },
                 "arifle_SPAR_01_blk_F": {
                     "probability": 1,
                     "magazinesVest": {
-                        "30Rnd_556x45_AP_Stanag_red_RF": 6,
+                        "30Rnd_556x45_Stanag": 8,
                     },
                 },
             },
             "optics": {
-                "JCA_optic_MROS_black_magnifier": 1,
-                "optic_Holosight_blk_F": 1,
+                "JCA_optic_IHO_black": 1,
+                "JCA_optic_IHO_black_magnifier": 1,
+                "JCA_optic_CRBS_black": 1,
             },
             "pointers": {
-                "acc_pointer_IR": 1,
+                "ACE_DBAL_A3_Red": 1,
             },
             "muzzles": {
-                "suppressor_l_lxWS": 1,
+                "JCA_muzzle_snds_556_advanced_black": 1,
             },
         });
 
         @Secondary({
             "weapons": {
-                "hgun_Pistol_heavy_01_black_F": {
+                "JCA_hgun_P320_black_F": {
                     "magazinesVest": {
-                        "11Rnd_45ACP_Mag": 3,
+                        "JCA_15Rnd_9x19_P320C_FMJ_Mag": 3,
                     },
                 },
             },
             "optics": {
-                "optic_MRD_black": 1,
+                "JCA_optic_PRO_black": 1,
             },
             "pointers": {
-                "Aegis_acc_LightModule_Pistol_black": 1,
+                "JCA_acc_LightMount_Pistol_black": 1,
             },
         });
     };
 
-    
+    class CLASS(Rifleman): CLASS(Base) {
+        @Role(Rifleman);
+
+    };
+
+    class CLASS(SquadLeader): CLASS(Rifleman) {
+        @Role(SquadLeader);
+
+        @Vests({
+            "variants": {
+                "synixe_mgp_vest_mmac_teamleader_rgr_belt": 1,
+            },
+            "packs": [
+                "t2_standard",
+                "military_standard",
+                "jtac",
+            ],
+        });
+    };
+
+    class CLASS(TeamLeader): CLASS(SquadLeader) {
+        @Role(TeamLeader);
+
+        @Primary({
+            "weapons": {
+                "arifle_SPAR_01_GL_blk_F": {
+                    "magazinesVest": {
+                        "30Rnd_556x45_Stanag": 8,
+                        "1Rnd_HE_Grenade_shell": 5,
+                    },
+                    "loadedPrimary": "30Rnd_556x45_Stanag",
+                    "loadedSecondary": "1Rnd_HE_Grenade_shell",
+                },
+            },
+            "optics": {
+                "JCA_optic_IHO_black": 1,
+                "JCA_optic_IHO_black_magnifier": 1,
+            },
+            "pointers": {
+                "ACE_DBAL_A3_Red": 1,
+            },
+            "muzzles": {
+                "JCA_muzzle_snds_556_advanced_black": 1,
+            },
+        });
+    };
+
+    class CLASS(Autorifleman): CLASS(Base) {
+        @Role(Autorifleman);
+
+        @Vests({
+            "variants": {
+                "synixe_mgp_vest_mmac_hgunner_rgr_belt": 1,
+            },
+            "packs": [
+                "t2_standard",
+                "military_standard",
+            ],
+        });
+
+        @Primary({
+            "weapons": {
+                "arifle_SPAR_02_blk_F": {
+                    "probability": 1,                    
+                    "magazinesVest": {
+                        "150Rnd_556x45_Drum_Mag_F": 4,
+                    },
+                    "magazinesBackpack": {
+                        "150Rnd_556x45_Drum_Mag_F": 4,
+                    },
+                },
+            },
+            "optics": {
+                "JCA_optic_IHO_black": 1,
+                "JCA_optic_IHO_black_magnifier": 1,
+                "JCA_optic_CRBS_black": 1,
+            },
+            "pointers": {
+                "ACE_DBAL_A3_Red": 1,
+            },
+            "muzzles": {
+                "JCA_muzzle_snds_556_advanced_black": 1,
+            },
+            "bipods": {
+                "bipod_01_F_blk": 1,
+            },
+        });
+
+        @Backpacks({
+            "variants": {
+                "B_AssaultPackSpec_rgr": 1,
+            },
+        });
+    };
+
+    class CLASS(Marksman): CLASS(Base) {
+        @Role(Marksman);
+
+        @Vests({
+            "variants": {
+                "synixe_mgp_vest_mmac_marksman_rgr_belt": 1,
+            },
+            "packs": [
+                "t2_standard",
+                "military_standard",
+            ],
+        });
+
+        @Primary({
+            "weapons": {
+                "arifle_SPAR_03_blk_F": {
+                    "magazinesVest": {
+                        "20Rnd_762x51_Mag": 8,
+                    }
+                }
+            },
+            "optics": {
+                "optic_AMS": 1,
+            },
+            "pointers": {
+                "acc_pointer_IR": 1,
+            },
+            "bipods": {
+                "bipod_01_F_blk": 1,
+            },
+            "muzzles": {
+                "JCA_muzzle_snds_762_tactical_black": 1,
+            },
+        });
+    };
+
+    class CLASS(Medic): CLASS(Base) {
+        @Role(Medic);
+
+        @Vests({
+            "variants": {
+                "synixe_mgp_vest_mmac_medic_rgr_belt": 1,
+            },
+            "packs": [
+                "t2_standard",
+                "military_standard",
+            ],
+        });
+
+        @Backpacks({
+            "variants": {
+                "tacs_Backpack_Kitbag_Medic_Green": 1,
+            },
+            "packs": [
+                "t2_t3_medic",
+            ],
+        });
+    };
+
+    class CLASS(RiflemanMAT): CLASS(Base) {
+        @Role(RiflemanMAT);
+
+        @Launchers({
+            "weapons": {
+                "launch_MRAWS_green_F": {
+                    "magazinesBackpack": {
+                        "MRAWS_HEAT_F": 2,
+                        "MRAWS_HEAT55_F": 2,
+                    },
+                },
+            },
+        });
+
+        @Backpacks({
+            "variants": {
+                "B_AssaultPackSpec_rgr": 1,
+            },
+        });
+    };
+
+    class CLASS(RadioOperator): CLASS(Base) {
+        @Role(RadioOperator);
+
+        @Backpacks({
+            "variants": {
+                "B_RadioBag_01_green_F": 1,
+            },
+            "packs": [
+                "jtac",
+            ],
+        });
+    };
+
+        class CLASS(Engineer): CLASS(Base) {
+        @Role(Engineer);
+
+        @Backpacks({
+            "variants": {
+                "synixe_mgp_bp_molle_pointman_rgr": 1,
+            },
+            "packs": [
+                "engineer",
+            ],
+        });
+    };
+
+    class CLASS(Demolitions): CLASS(Base) {
+        @Role(Demolitions);
+
+        @Backpacks({
+            "variants": {
+                "synixe_mgp_bp_molle_tomahawk_rgr": 1,
+            },
+            "packs": [
+                "eod",
+                "demo",
+            ],
+        });
+
+        @Secondary({
+            "weapons": {
+                "ACE_VMH3": {},
+            },
+        });
+    };
+
+    class CLASS(Spotter): CLASS(Base) {
+        @Role(Spotter);
+
+        @Headgear({
+            "JCA_H_Headset_Combat_01_olive_F": 1,
+            "Aegis_H_Helmet_FASTMT_Cover_dazzle_tna_F": 1,
+        });
+
+        @Binoculars({
+            "weapons": {
+                "Rangefinder": 1,
+            },
+        });
+    };
+
+    class CLASS(Sniper): CLASS(Spotter) {
+        @Role(Sniper);
+
+        @Vests({
+            "variants": {
+                "synixe_mgp_vest_mmac_marksman_rgr_belt": 1,
+            },
+            "packs": [
+                "t2_standard",
+            ],
+        });
+
+        @Primary({
+            "weapons": {
+                "JCA_srifle_AWM_black_F": {
+                    "magazinesVest": {
+                        "JCA_5Rnd_338LM_AWM_Mag": 6,
+                    },
+                },
+            },
+            "optics": {
+                "JCA_optic_HPPO_RAD_black": 2,
+                "optic_tws_sniper": 1,
+            },
+            "bipods": {
+                "JCA_bipod_AWM_01_black": 1,
+            },
+            "muzzles": {
+                "JCA_muzzle_snds_AWM_black": 1,
+            },
+        });
+    };
 };
