@@ -92,6 +92,7 @@ class CfgVehicles {
             "packs": [
                 "t2_standard",
                 "military_standard",
+                "leader_smoke",
                 "jtac",
             ],
         });

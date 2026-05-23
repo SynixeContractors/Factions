@@ -113,11 +113,8 @@ class CfgVehicles {
             "packs": [
                 "t2_standard",
                 "military_standard",
+                "leader_smoke",
             ],
-            "magazines": {
-                "SmokeShellRed": 1,
-                "SmokeShellPurple": 1,
-            },
         });
 
         @Secondary({
@@ -468,7 +465,7 @@ class CfgVehicles {
                 "JCA_V_CarrierRigKBT_01_compact_olive_F": 1,
             },
             "packs": [
-                "t4_standard",
+                "t2_standard",
             ],
         });
 
@@ -525,6 +522,20 @@ class CfgVehicles {
 
         @Facewear({
             "": 1,
+        });
+
+        @Primary({
+            "weapons": {
+                "JCA_smg_MP5_FL_black_F": {
+                    "magazinesUniform": {
+                        "JCA_30Rnd_9x19_MP5_FMJ_Mag": 2,
+                    }
+                },
+            },
+            "optics": {
+                "JCA_optic_IHO_black": 1,
+                "": 1,
+            },
         });
     };
 };

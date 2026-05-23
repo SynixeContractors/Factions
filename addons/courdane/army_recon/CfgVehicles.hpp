@@ -70,6 +70,17 @@ class CfgVehicles {
     class CLASS(SquadLeader): CLASS(Rifleman) {
         @Role(SquadLeader);
 
+        @Vests({
+            "variants": {
+                "JCA_V_CarrierRigKBT_01_combat_olive_F": 1,
+            },
+            "packs": [
+                "t2_standard",
+                "military_standard",
+                "leader_smoke",
+            ],
+        });
+
         @Binoculars({
             "weapons": {
                 "Rangefinder": 1,

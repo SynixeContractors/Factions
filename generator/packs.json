@@ -106,5 +106,11 @@
         "magazines": [
             ["APERSMine_Range_Mag", 4]
         ]
-    }
+    },
+    "leader_smoke": {
+        "magazines": [
+            ["SmokeShellRed", 1],
+            ["SmokeShellPurple", 1],
+        ]
+    },
 }
