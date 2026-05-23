@@ -106,5 +106,10 @@
         "magazines": [
             ["APERSMine_Range_Mag", 4]
         ]
+    },
+    "compact_nvg": {
+        "items": [
+            ["O_NVGoggles_grn_F", 1]
+        ]
     }
 }
