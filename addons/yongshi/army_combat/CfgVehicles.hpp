@@ -23,7 +23,7 @@ class CfgVehicles {
     class CLASS(Base): PCLASS(Base) {
         displayName = "Yong Shì Base Army Combat";
         editorSubcategory = QGCLASS(army_combat);
-        
+
         @Uniforms({
             "variants": {
                 "Atlas_U_I_Afghanka_01_ardi_half_F": 1,
