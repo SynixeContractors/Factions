@@ -9,6 +9,9 @@ class CfgVehicles {
     #include "../../../templates/apc/BTR_SPG.hpp"
     #include "../../../templates/apc/Otokar.hpp"
     #include "../../../templates/tanks/T100.hpp"
+    #include "../../../templates/planes/Yak130.hpp"
+    #include "../../../templates/planes/L159.hpp"
+    #include "../../../templates/planes/C130.hpp"
     #undef TEMPLATE_CAMO
     #define TEMPLATE_CAMO Opfor
     #include "../../../templates/cars/LUT_AA.hpp"
@@ -39,16 +42,6 @@ class CfgVehicles {
             ],
         });
 
-        @Vests({
-            "variants": {
-                "V_lxWS_HarnessO_oli": 1,
-                "V_lxWS_TacVestIR_oli": 1,
-            },
-            "packs": [
-                "military_standard",
-            ],
-        });
-
         @Headgear({
             "H_Shemag_olive": 1,
             "H_I_Helmet_canvas_Green": 3,
@@ -69,6 +62,16 @@ class CfgVehicles {
 
     class CLASS(Rifleman): CLASS(Base) {
         @Role(Rifleman);
+
+        @Vests({
+            "variants": {
+                "V_lxWS_HarnessO_oli": 1,
+                "V_lxWS_TacVestIR_oli": 1,
+            },
+            "packs": [
+                "military_standard",
+            ],
+        });
 
         @Primary({
             "weapons": {
@@ -128,7 +131,7 @@ class CfgVehicles {
         });
     };
 
-    class CLASS(Autorifleman): CLASS(Base) {
+    class CLASS(Autorifleman): CLASS(Rifleman) {
         @Role(Autorifleman);
 
         @Primary({
@@ -339,6 +342,12 @@ class CfgVehicles {
 
     class CLASS(Crewman): CLASS(Base) {
         @Role(Crewman);
+
+        @Vests({
+            "variants": {
+                "V_lxWS_TacVestIR_oli": 1,
+            },
+        });
 
         @Headgear({
             "lxWS_H_Tank_tan_F": 1,
