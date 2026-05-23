@@ -90,6 +90,15 @@ class CfgVehicles {
         @Role(AsstMachinegunner);
 
         #include "..\weapons\Rifleman.hpp"
+
+        @Backpacks({
+            "variants": {
+                "B_AssaultPack_rgr": 1,
+            },
+            "magazinesBackpack": {
+                "100Rnd_762x51_S77_Yellow_lxWS": 4,
+            },
+        });
     };
 
     class CLASS(Marksman): CLASS(Base) {
