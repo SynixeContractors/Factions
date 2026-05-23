@@ -499,6 +499,9 @@ class CLASS2(SIDE,RadioOperator): CLASS2(SIDE,Base) {
         "variants": {
             "B_RadioBag_01_green_F": 1,
         },
+        "packs": [
+            "jtac",
+        ],
     });
 };
 
