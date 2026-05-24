@@ -16,6 +16,13 @@ class CfgVehicles {
     #undef TEMPLATE_CAMO
     #define TEMPLATE_CAMO Olive
     #include "../../../templates/statics/RGS60.hpp"
+    #undef TEMPLATE_CAMO
+    #define TEMPLATE_CAMO DazzleDark
+    #include "../../../templates/helicopters/Ghosthawk.hpp"
+    #include "../../../templates/helicopters/Ghosthawk_Armed.hpp"
+    #undef TEMPLATE_CAMO
+    #define TEMPLATE_CAMO Black
+    #include "../../../templates/helicopters/MD500_Military.hpp"
 
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {
@@ -39,7 +46,7 @@ class CfgVehicles {
                 "synixe_mgp_vest_mmac_assaulter_rgr_belt": 1,
             },
             "packs": [
-                "t2_standard",
+                "ivas",
                 "military_standard",
             ],
         });
@@ -113,15 +120,21 @@ class CfgVehicles {
                 "synixe_mgp_vest_mmac_teamleader_rgr_belt": 1,
             },
             "packs": [
-                "t2_standard",
+                "ivas",
                 "military_standard",
                 "jtac",
             ],
         });
     };
 
-    class CLASS(TeamLeader): CLASS(SquadLeader) {
+    class CLASS(TeamLeader): CLASS(Base) {
         @Role(TeamLeader);
+
+        @Vests({
+            "variants": {
+                "synixe_mgp_vest_mmac_grenadier_rgr_belt": 1,
+            },
+        });
 
         @Primary({
             "weapons": {
@@ -154,10 +167,6 @@ class CfgVehicles {
             "variants": {
                 "synixe_mgp_vest_mmac_hgunner_rgr_belt": 1,
             },
-            "packs": [
-                "t2_standard",
-                "military_standard",
-            ],
         });
 
         @Primary({
@@ -165,10 +174,10 @@ class CfgVehicles {
                 "arifle_SPAR_02_blk_F": {
                     "probability": 1,                    
                     "magazinesVest": {
-                        "150Rnd_556x45_Drum_Mag_F": 4,
+                        "75Rnd_556x45_Stanag_red_lxWS": 6,
                     },
                     "magazinesBackpack": {
-                        "150Rnd_556x45_Drum_Mag_F": 4,
+                        "75Rnd_556x45_Stanag_red_lxWS": 6,
                     },
                 },
             },
@@ -202,10 +211,6 @@ class CfgVehicles {
             "variants": {
                 "synixe_mgp_vest_mmac_marksman_rgr_belt": 1,
             },
-            "packs": [
-                "t2_standard",
-                "military_standard",
-            ],
         });
 
         @Primary({
@@ -238,10 +243,6 @@ class CfgVehicles {
             "variants": {
                 "synixe_mgp_vest_mmac_medic_rgr_belt": 1,
             },
-            "packs": [
-                "t2_standard",
-                "military_standard",
-            ],
         });
 
         @Backpacks({
@@ -329,6 +330,16 @@ class CfgVehicles {
             "Aegis_H_Helmet_FASTMT_Cover_dazzle_tna_F": 1,
         });
 
+        @Vests({
+            "variants": {
+                "synixe_mgp_vest_mmac_assaulter_rgr_belt": 1,
+            },
+            "packs": [
+                "nvg_wide",
+                "military_standard"
+            ],
+        });
+
         @Binoculars({
             "weapons": {
                 "Rangefinder": 1,
@@ -343,9 +354,6 @@ class CfgVehicles {
             "variants": {
                 "synixe_mgp_vest_mmac_marksman_rgr_belt": 1,
             },
-            "packs": [
-                "t2_standard",
-            ],
         });
 
         @Primary({
@@ -365,6 +373,101 @@ class CfgVehicles {
             },
             "muzzles": {
                 "JCA_muzzle_snds_AWM_black": 1,
+            },
+        });
+    };
+
+    class CLASS(RiflemanAA): CLASS(Rifleman) {
+        @Role(RiflemanAA);
+
+        @Launchers({
+            "weapons": {
+                "launch_B_Titan_olive_F": {
+                    "magazinesBackpack": {
+                        "Titan_AA": 2,
+                    },
+                },
+            },
+        });
+
+        @Backpacks({
+            "variants": {
+                "B_Kitbag_rgr": 1,
+            },
+        });
+    };
+
+    class CLASS(RiflemanHAT): CLASS(RiflemanAA) {
+        @Role(RiflemanHAT);
+
+        @Launchers({
+            "weapons": {
+                "launch_I_Titan_short_F": {
+                    "magazinesBackpack": { 
+                        "Titan_AT": 2,
+                    },
+                },
+            },
+        });
+    };
+
+    class CLASS(HeliPilot): PCLASS(Base) {
+        @Role(HeliPilot);
+
+        @Uniforms({
+            "variants": {
+                "U_B_CTRG_Soldier_Black_F": 3,
+                "U_B_CTRG_Soldier_3_Black_F": 1,
+            },
+            "packs": [
+                "rifleman_medical",
+            ],
+        });
+
+        @Vests({
+            "variants": {
+                "JCA_V_CarrierRigKBT_01_compact_olive_F": 1,
+            },
+            "packs": [
+                "nvg_wide",
+            ],
+        });
+
+        @Headgear({
+            "H_CrewHelmetHeli_O": 1,
+            "H_PilotHelmetHeli_O": 1,
+            "H_PilotHelmetHeli_O_visor_up": 1,
+        });
+
+        @Facewear({
+            "synixe_mgp_f_face_shield_blk": 1,
+            "synixe_mgp_f_face_shield_blk_tactical": 1,
+        });
+
+        @Primary({
+            "weapons": {
+                "arifle_SPAR_01_blk_F": {
+                    "probability": 1,
+                    "magazinesVest": {
+                        "30Rnd_556x45_Stanag": 8,
+                    },
+                },
+            },
+            "optics": {
+                "JCA_optic_IHO_black": 1,
+            },
+        });
+
+        @Secondary({
+            "weapons": {
+                "JCA_hgun_P320_black_F": {
+                    "magazinesVest": {
+                        "JCA_15Rnd_9x19_P320C_FMJ_Mag": 3,
+                    },
+                },
+            },
+            "pointers": {
+                "JCA_acc_LightMount_Pistol_black": 1,
             },
         });
     };
