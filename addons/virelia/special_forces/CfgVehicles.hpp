@@ -449,7 +449,7 @@ class CfgVehicles {
                 "arifle_SPAR_01_blk_F": {
                     "probability": 1,
                     "magazinesVest": {
-                        "30Rnd_556x45_Stanag": 8,
+                        "30Rnd_556x45_Stanag": 5,
                     },
                 },
             },
