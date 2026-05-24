@@ -15,6 +15,11 @@ class CfgVehicles {
     #define TEMPLATE_CAMO Gray
     #include "../../../templates/cars/Ram_Advanced.hpp"
     #include "../../../templates/cars/Ram_Civilian.hpp"
+    #undef TEMPLATE_CAMO
+    #define TEMPLATE_CAMO Black
+    #include "../../../templates/helicopters/Ka54.hpp"
+    #include "../../../templates/helicopters/Orca_Military.hpp"
+    #include "../../../templates/helicopters/Orca_Civilian.hpp"
 
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {
@@ -378,6 +383,107 @@ class CfgVehicles {
             "optics": {
                 "JCA_optic_MRPS_olive": 3,
                 "optic_tws_sniper": 1,
+            },
+        });
+    };
+
+    class CLASS(RiflemanAA): CLASS(Rifleman) {
+        @Role(RiflemanAA);
+
+        @Launchers({
+            "weapons": {
+                "launch_B_Titan_olive_F": {
+                    "magazinesBackpack": {
+                        "Titan_AA": 2,
+                    },
+                },
+            },
+        });
+
+        @Backpacks({
+            "variants": {
+                "B_Kitbag_khk": 1,
+            },
+        });
+    };
+
+    class CLASS(RiflemanHAT): CLASS(RiflemanAA) {
+        @Role(RiflemanHAT);
+
+        @Launchers({
+            "weapons": {
+                "launch_I_Titan_short_F": {
+                    "magazinesBackpack": { 
+                        "Titan_AT": 2,
+                    },
+                },
+            },
+        });
+    };
+
+    class CLASS(HeliPilot): PCLASS(Base) {
+        @Role(HeliPilot);
+
+        @Uniforms({
+            "variants": {
+                "synixe_mgp_g3_fleece_rgr_atacsfg": 1,
+                "synixe_mgp_g3_fleece_gry_atacsfg": 1,
+            },
+            "packs": [
+                "rifleman_medical",
+            ],
+        });
+
+        @Vests({
+            "variants": {
+                "JCA_V_CarrierRigKBT_01_black_F": 1,
+            },
+            "packs": [
+                "compact_nvg",
+            ],
+        });
+
+        @Headgear({
+            "H_CrewHelmetHeli_B": 1,
+        });
+
+        @Facewear({
+            "": 1,
+        });
+
+        @Primary({
+            "weapons": {
+                "arifle_AK12U_F": {
+                    "probability": 1,
+                    "magazinesVest": {
+                        "30rnd_762x39_AK12_Lush_Mag_F": 4,
+                    },
+                },
+            },
+            "optics": {
+                "JCA_optic_MROS_olive": 1,
+            },
+            "pointers": {
+                "ACE_DBAL_A3_Green": 1,
+            },
+            "muzzles": {
+                "": 1,
+            },
+        });
+
+        @Secondary({
+            "weapons": {
+                "hgun_Pistol_heavy_01_black_F": {
+                    "magazinesVest": {
+                        "11Rnd_45ACP_Mag": 3,
+                    },
+                },
+            },
+            "optics": {
+                "optic_MRD_black": 1,
+            },
+            "pointers": {
+                "JCA_acc_LightMount_Pistol_black": 1,
             },
         });
     };
