@@ -325,6 +325,17 @@ fn groups(args, context) {
     }
     let group_source = load_json("groups/" + tier_file);
     for section in group_source.groups {
+	if !(match_type in section.types) {
+	    // probably an identity
+	    let parts = match_type.split("_");
+	    match_type = "";
+            for i in 0..parts.len() - 1 {
+		if i > 0 {
+                    match_type += "_";
+		}
+		match_type += parts[i];
+            }
+	}
         if match_type in section.types {
             for group in section.groups {
                 ret += "class CLASS(" + group.class + ")";
@@ -345,6 +356,9 @@ fn groups(args, context) {
                 ret += "};\n";
             }
         }
+	else {
+	    fatal("Unmatched group type: " + match_type + " in Groups macro with args: " + args);
+	};
     }
     ret += "};\n";
     return ret;
