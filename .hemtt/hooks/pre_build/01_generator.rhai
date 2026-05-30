@@ -327,14 +327,15 @@ fn groups(args, context) {
     for section in group_source.groups {
 	if !(match_type in section.types) {
 	    // probably an identity
-	    let parts = match_type.split("_");
-	    match_type = "";
-            for i in 0..parts.len() - 1 {
-		if i > 0 {
-                    match_type += "_";
-		}
-		match_type += parts[i];
-            }
+	    // let parts = match_type.split("_");
+	    // match_type = "";
+            // for i in 0..parts.len() - 1 {
+	    // 	if i > 0 {
+            //         match_type += "_";
+	    // 	}
+	    // 	match_type += parts[i];
+            // }
+	    // print("unmatched type switched to: " + match_type);
 	}
         if match_type in section.types {
             for group in section.groups {
@@ -357,7 +358,7 @@ fn groups(args, context) {
             }
         }
 	else {
-	    fatal("Unmatched group type: " + match_type + " in Groups macro with args: " + args);
+	    print("Unmatched group type: " + match_type + " in Groups macro with args: " + args + " " + faction);
 	};
     }
     ret += "};\n";
