@@ -421,7 +421,7 @@ class CfgVehicles {
         });
     };
 
-    class CLASS(HeliPilot): PCLASS(Base) {
+    class CLASS(HeliPilot): CLASS(Base) {
         @Role(HeliPilot);
 
         @Uniforms({
