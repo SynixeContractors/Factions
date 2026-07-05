@@ -122,9 +122,9 @@ class CfgVehicles {
 
         @Secondary({
             "weapons": {
-                "hgun_ACPC2_black_F": {
+                "JCA_hgun_P226_black_F": {
                     "magazinesVest": {
-                        "9Rnd_45ACP_Mag": 2,
+                        "JCA_15Rnd_9x19_P226_FMJ_Mag": 2,
                     },
                 },
             },
@@ -290,6 +290,22 @@ class CfgVehicles {
             },
             "muzzles": {
                 "suppressor_l_lxWS": 1,
+            },
+        });
+        
+        @Secondary({
+            "weapons": {
+                "JCA_hgun_P226_black_F": {
+                    "magazinesVest": {
+                        "JCA_15Rnd_9x19_P226_FMJ_Mag": 2,
+                    },
+                },
+            },
+            "optics": {
+                "JCA_optic_MPO_black": 1,
+            },
+            "pointers": {
+                "JCA_acc_LightMount_Pistol_black": 1,
             },
         });
 
