@@ -479,4 +479,8 @@ class CfgVehicles {
             "": 1,
         });
     };
+
+    class CLASS(Hidden): CLASS(Base) {
+        @Role(Hidden);
+    };
 };
