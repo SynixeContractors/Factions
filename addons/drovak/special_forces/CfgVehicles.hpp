@@ -23,7 +23,7 @@ class CfgVehicles {
 
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {
-        displayName = "Virelia Base Army SOF";
+        displayName = "Drovak Base Army SOF";
         editorSubcategory = QGCLASS(special_forces);
         @Assigned(Military);
 
