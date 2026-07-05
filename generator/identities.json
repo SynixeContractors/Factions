@@ -120,5 +120,11 @@
         ],
         "genericNames": "French"
     },
-
+    "Courdane": {
+        "identityTypes": [
+            "Head_Nato",
+            "LanguageFRE_F"
+        ],
+        "genericNames": "French"
+    },
 }
