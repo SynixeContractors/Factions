@@ -10,7 +10,7 @@ class CfgVehicles {
         @Uniforms({
             "variants": {
                 "synixe_mgp_g3_field_set_m81_rgr": 1,
-                "synixe_mgp_g3_field_set_m81_m81": 1,
+                "synixe_mgp_g3_field_set_m81_m81": 2,
             },
             "packs": [
                 "rifleman_medical",
@@ -24,7 +24,6 @@ class CfgVehicles {
             "packs": [
                 "t2_standard",
                 "military_standard",
-                "rifleman_medical",
             ],
         });
 
@@ -37,16 +36,16 @@ class CfgVehicles {
             "synixe_mgp_f_tactical": 1,
             "synixe_mgp_f_face_shield_rgr_tactical": 1,
             "synixe_mgp_f_face_shield_rgr": 1,
-            "synixe_mgp_f_face_shield_blk": 0.5,
-            "synixe_mgp_f_face_shield_blk_tactical": 0.5,
+            "synixe_mgp_f_face_shield_blk": 1,
+            "synixe_mgp_f_face_shield_blk_tactical": 1,
         });
 
         @Primary({
             "weapons": {
-                "arifle_SPAR_01_blk_F": {
+                "JCA_arifle_M4A4_AFG_black_F": {
                     "probability": 1,
                     "magazinesVest": {
-                        "30Rnd_556x45_AP_Stanag_red_RF": 6,
+                        "JCA_30Rnd_556x45_PMAG": 8,
                     },
                 },
             },
@@ -55,10 +54,10 @@ class CfgVehicles {
                 "optic_Holosight_blk_F": 1,
             },
             "pointers": {
-                "acc_pointer_IR": 1,
+                "Aegis_acc_pointer_DM": 1,
             },
             "muzzles": {
-                "suppressor_l_lxWS": 1,
+                "JCA_muzzle_snds_556_Enhanced_black": 1,
             },
         });
 
@@ -94,7 +93,6 @@ class CfgVehicles {
             "packs": [
                 "t2_standard",
                 "military_standard",
-                "rifleman_medical",
                 "jtac",
             ],
         });
@@ -105,13 +103,13 @@ class CfgVehicles {
 
         @Primary({
             "weapons": {
-                "arifle_SPAR_01_GL_blk_F": {
+                "JCA_arifle_M4A4_GL_black_F": {
                     "probability": 1,
                     "magazinesVest": {
-                        "30Rnd_556x45_AP_Stanag_red_RF": 8,
+                        "JCA_30Rnd_556x45_PMAG": 8,
                         "1Rnd_HE_Grenade_shell": 5,
                     },
-                    "loadedPrimary": "30Rnd_556x45_AP_Stanag_red_RF",
+                    "loadedPrimary": "JCA_30Rnd_556x45_PMAG",
                     "loadedSecondary": "1Rnd_HE_Grenade_shell",
                 },
             },
@@ -120,10 +118,10 @@ class CfgVehicles {
                 "JCA_optic_MROS_black_magnifier": 1,
             },
             "pointers": {
-                "acc_pointer_IR": 1,
+                "Aegis_acc_pointer_DM": 1,
             },
             "muzzles": {
-                "suppressor_l_lxWS": 1,
+                "JCA_muzzle_snds_556_Enhanced_black": 1,
             },
         });
 
@@ -148,7 +146,6 @@ class CfgVehicles {
             "packs": [
                 "t2_standard",
                 "military_standard",
-                "rifleman_medical",
             ],
         });
 
@@ -163,26 +160,16 @@ class CfgVehicles {
                         "Atlas_150Rnd_762x51_Box_Red": 3,
                     },
                 },
-                "arifle_SPAR_02_blk_F": {
-                    "probability": 1,                    
-                    "magazinesVest": {
-                        "75Rnd_556x45_Stanag_red_lxWS": 5,
-                    },
-                    "magazinesBackpack": {
-                        "75Rnd_556x45_Stanag_red_lxWS": 5,
-                    },
-                },
             },
             "optics": {
                 "optic_Holosight_blk_F": 1,
             },
             "pointers": {
-                "acc_pointer_IR": 1,
+                "Aegis_acc_pointer_DM": 1,
             },
             "muzzles": {
                 "aegis_muzzle_snds_pbs_762_blk": 1,
-                "suppressor_l_lxWS": 1,
-            }
+            },
         });
 
         @Secondary({
@@ -212,29 +199,28 @@ class CfgVehicles {
             "packs": [
                 "t2_standard",
                 "military_standard",
-                "rifleman_medical",
             ],
         });
 
         @Primary({
             "weapons": {
-                "arifle_SPAR_03_blk_F": {
+                "JCA_arifle_SR10_VFG_black_F": {
                     "magazinesVest": {
-                        "20Rnd_762x51_Mag": 8,
+                        "JCA_20Rnd_762x51_PMAG": 8,
                     }
                 }
             },
             "optics": {
-                "optic_AMS": 1,
+                "JCA_optic_CRBS_black": 1,
             },
             "pointers": {
-                "acc_pointer_IR": 1,
+                "Aegis_acc_pointer_DM": 1,
             },
             "bipods": {
                 "bipod_01_F_blk": 1,
             },
             "muzzles": {
-                "suppressor_h_lxWS": 1,
+                "JCA_muzzle_snds_762_tactical_black": 1,
             },
         });
     };
@@ -249,7 +235,6 @@ class CfgVehicles {
             "packs": [
                 "t2_standard",
                 "military_standard",
-                "rifleman_medical",
             ],
         });
 
