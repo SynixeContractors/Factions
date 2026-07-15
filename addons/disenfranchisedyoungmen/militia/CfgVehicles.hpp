@@ -84,17 +84,22 @@ class CLASS2(SIDE,Base): PCLASS2(SIDE,Base) {
         "weapons": {
             "arifle_AKM_F": {
                 "magazinesVest": {
-                    "30Rnd_762x39_Mag_F": 7,
+                    "30Rnd_762x39_Mag_F": 5,
                 }
             },
             "Aegis_arifle_AKS74_F": {
                 "magazinesVest": {
-                    "30Rnd_545x39_Mag_F": 7,
+                    "30Rnd_545x39_Mag_F": 5,
                 }
             },
             "Aegis_arifle_AK74_F": {
                 "magazinesVest": {
-                    "30Rnd_545x39_Mag_F": 7,
+                    "30Rnd_545x39_Mag_F": 5,
+                }
+            },
+            "arifle_AKS_F": {
+                "magazinesVest": {
+                    "30Rnd_545x39_Mag_F": 5,
                 }
             },
             "sgun_Mp153_classic_F": {
@@ -107,9 +112,9 @@ class CLASS2(SIDE,Base): PCLASS2(SIDE,Base) {
                     "2Rnd_12Gauge_Pellets": 10,
                 }
             },
-            "sgun_HunterShotgun_01_sawedoff_F": {
+            "sgun_Mp153_classic_F": {
                 "magazinesVest": {
-                    "2Rnd_12Gauge_Pellets": 10,
+                    "4Rnd_12Gauge_Pellets": 10,
                 }
             },
             "srifle_DMR_06_hunter_F": {
@@ -119,7 +124,17 @@ class CLASS2(SIDE,Base): PCLASS2(SIDE,Base) {
             },
             "Opf_arifle_SKS_F": {
                 "magazinesVest": {
-                    "30Rnd_762x39_Mag_F": 7,
+                    "30Rnd_762x39_Mag_F": 5,
+                }
+            },
+            "arifle_SLR_lxWS": {
+                "magazinesVest": {
+                    "20Rnd_762x51_slr_lxWS": 5,
+                }
+            },
+            "synixe_armoury_arifle_M16A3": {
+                "magazinesVest": {
+                    "30Rnd_556x45_Stanag": 5,
                 }
             },
         },
@@ -148,7 +163,7 @@ class CLASS2(SIDE,Autorifleman): CLASS2(SIDE,Base) {
         "weapons": {
             "arifle_AKM_F": {
                 "magazinesVest": {
-                    "75Rnd_762x39_Mag_F": 4,
+                    "75Rnd_762x39_Mag_F": 2,
                 },
                 "magazinesBackpack": {
                     "75Rnd_762x39_Mag_F": 4,
@@ -156,7 +171,7 @@ class CLASS2(SIDE,Autorifleman): CLASS2(SIDE,Base) {
             },
             "arifle_RPK_F": {
                 "magazinesVest": {
-                    "75Rnd_762x39_Mag_F": 4,
+                    "75Rnd_762x39_Mag_F": 2,
                 },
                 "magazinesBackpack": {
                     "75Rnd_762x39_Mag_F": 4,
@@ -164,7 +179,7 @@ class CLASS2(SIDE,Autorifleman): CLASS2(SIDE,Base) {
             },
         },
         "optics": {
-            "": 8,
+            "": 1,
         },
     });
     
@@ -227,22 +242,22 @@ class CLASS2(SIDE,Marksman): CLASS2(SIDE,Base) {
         "weapons": {
             "srifle_DMR_06_black_F": {
                 "magazinesVest": {
-                    "20Rnd_762x51_Mag_blk_lxWS": 7,
+                    "20Rnd_762x51_Mag_blk_lxWS": 5,
                 }
             },
             "srifle_DMR_06_camo_F": {
                 "magazinesVest": {
-                    "20Rnd_762x51_Mag_blk_lxWS": 7,
+                    "20Rnd_762x51_Mag_blk_lxWS": 5,
                 }
             },
             "srifle_DMR_06_hunter_F": {
                 "magazinesVest": {
-                    "20Rnd_762x51_Mag_blk_lxWS": 7,
+                    "20Rnd_762x51_Mag_blk_lxWS": 5,
                 }
             },
             "srifle_DMR_06_olive_F": {
                 "magazinesVest": {
-                    "20Rnd_762x51_Mag_blk_lxWS": 7,
+                    "20Rnd_762x51_Mag_blk_lxWS": 5,
                 }
             },
             "Aegis_srifle_SVD_f": {
@@ -262,6 +277,34 @@ class CLASS2(SIDE,Marksman): CLASS2(SIDE,Base) {
 
 class CLASS2(SIDE,Medic): CLASS2(SIDE,Base) {
     @Role(Medic);
+
+    @Primary({
+        "weapons": {
+            "Aegis_arifle_AKS74_F": {
+                "magazinesVest": {
+                    "30Rnd_545x39_Mag_F": 5,
+                }
+            },
+            "arifle_AKS_F": {
+                "magazinesVest": {
+                    "30Rnd_545x39_Mag_F": 5,
+                }
+            },
+            "SMG_05_F": {
+                "magazinesVest": {
+                    "30Rnd_9x21_Mag_SMG_02": 5,
+                }
+            },
+            "sgun_HunterShotgun_01_sawedoff_F": {
+                "magazinesVest": {
+                    "2Rnd_12Gauge_Pellets": 10,
+                }
+            },
+        },
+        "optics": {
+            "": 1,
+        },
+    });
 
     @Backpacks({
         "variants": {
@@ -304,6 +347,34 @@ class CLASS2(SIDE,RiflemanMAT): CLASS2(SIDE,Base) {
 class CLASS2(SIDE,Engineer): CLASS2(SIDE,Base) {
     @Role(Engineer);
 
+    @Primary({
+        "weapons": {
+            "Aegis_arifle_AKS74_F": {
+                "magazinesVest": {
+                    "30Rnd_545x39_Mag_F": 5,
+                }
+            },
+            "arifle_AKS_F": {
+                "magazinesVest": {
+                    "30Rnd_545x39_Mag_F": 5,
+                }
+            },
+            "SMG_05_F": {
+                "magazinesVest": {
+                    "30Rnd_9x21_Mag_SMG_02": 5,
+                }
+            },
+            "sgun_HunterShotgun_01_sawedoff_F": {
+                "magazinesVest": {
+                    "2Rnd_12Gauge_Pellets": 10,
+                }
+            },
+        },
+        "optics": {
+            "": 1,
+        },
+    });
+
     @Backpacks({
         "variants": {
             "B_FieldPack_blk": 1,
@@ -320,6 +391,34 @@ class CLASS2(SIDE,Engineer): CLASS2(SIDE,Base) {
 
 class CLASS2(SIDE,Demolitions): CLASS2(SIDE,Base) {
     @Role(Demolitions);
+
+    @Primary({
+        "weapons": {
+            "Aegis_arifle_AKS74_F": {
+                "magazinesVest": {
+                    "30Rnd_545x39_Mag_F": 5,
+                }
+            },
+            "arifle_AKS_F": {
+                "magazinesVest": {
+                    "30Rnd_545x39_Mag_F": 5,
+                }
+            },
+            "SMG_05_F": {
+                "magazinesVest": {
+                    "30Rnd_9x21_Mag_SMG_02": 5,
+                }
+            },
+            "sgun_HunterShotgun_01_sawedoff_F": {
+                "magazinesVest": {
+                    "2Rnd_12Gauge_Pellets": 10,
+                }
+            },
+        },
+        "optics": {
+            "": 1,
+        },
+    });
 
     @Backpacks({
         "variants": {
