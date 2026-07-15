@@ -127,4 +127,11 @@
         ],
         "genericNames": "French"
     },
+    "Tanoan": {
+        "identityTypes": [
+            "Head_Tanoan",
+            "LanguageENGFRE_F"
+        ],
+        "genericNames": "TanoanMen"
+    },
 }
