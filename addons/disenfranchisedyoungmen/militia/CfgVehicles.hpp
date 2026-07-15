@@ -112,11 +112,6 @@ class CLASS2(SIDE,Base): PCLASS2(SIDE,Base) {
                     "2Rnd_12Gauge_Pellets": 10,
                 }
             },
-            "sgun_Mp153_classic_F": {
-                "magazinesVest": {
-                    "4Rnd_12Gauge_Pellets": 10,
-                }
-            },
             "srifle_DMR_06_hunter_F": {
                 "magazinesVest": {
                     "10Rnd_Mk14_762x51_Mag_blk_lxWS": 7,
