@@ -127,5 +127,18 @@
         ],
         "genericNames": "Chinese"
     },
-
+    "Brienne": {
+        "identityTypes": [
+            "Head_Euro",
+            "LanguageFRE_F"
+        ],
+        "genericNames": "French"
+    },
+    "Tanoan": {
+        "identityTypes": [
+            "Head_Tanoan",
+            "LanguageENGFRE_F"
+        ],
+        "genericNames": "TanoanMen"
+    },
 }
