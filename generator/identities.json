@@ -120,6 +120,13 @@
         ],
         "genericNames": "French"
     },
+    "Tiyen": {
+        "identityTypes": [
+            "Head_Asian",
+            "LanguageCHI_F"
+        ],
+        "genericNames": "Chinese"
+    },
     "Brienne": {
         "identityTypes": [
             "Head_Euro",
