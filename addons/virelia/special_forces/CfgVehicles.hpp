@@ -23,6 +23,9 @@ class CfgVehicles {
     #undef TEMPLATE_CAMO
     #define TEMPLATE_CAMO Black
     #include "../../../templates/helicopters/MD500_Military.hpp"
+    #undef TEMPLATE_CAMO
+    #define TEMPLATE_CAMO Blue
+    #include "../../../templates/planes/Blackfish.hpp"
 
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {
@@ -289,7 +292,7 @@ class CfgVehicles {
         });
     };
 
-        class CLASS(Engineer): CLASS(Base) {
+    class CLASS(Engineer): CLASS(Base) {
         @Role(Engineer);
 
         @Backpacks({
@@ -411,7 +414,7 @@ class CfgVehicles {
         });
     };
 
-    class CLASS(HeliPilot): PCLASS(Base) {
+    class CLASS(HeliPilot): CLASS(Base) {
         @Role(HeliPilot);
 
         @Uniforms({
@@ -456,6 +459,12 @@ class CfgVehicles {
             "optics": {
                 "JCA_optic_IHO_black": 1,
             },
+            "pointers": {
+                "": 1,
+            },
+            "muzzles": {
+                "ACE_DBAL_A3_Red": 1,
+            },
         });
 
         @Secondary({
@@ -467,7 +476,10 @@ class CfgVehicles {
                 },
             },
             "pointers": {
-                "JCA_acc_LightMount_Pistol_black": 1,
+                "": 1,
+            },
+            "optics": {
+                "": 1,
             },
         });
     };
