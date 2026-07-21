@@ -13,9 +13,6 @@ workshop = [
     "synixe:@3den_attributes_fast_load",
     "synixe:@ace_noactionmenu",
     "synixe:@ace_nocrosshair",
-    "synixe:@ace_particles",
-    "synixe:@ace_realisticdispersion",
-    "synixe:@ace_tracers",
     "synixe:@ace",
     "synixe:@aegis_atlas",
     "synixe:@aegis_opposing_forces",
@@ -72,5 +69,4 @@ workshop = [
     "synixe:@suonkomarsahav",
     "synixe:@vinjesvingen",
     "synixe:@virolahti_valtatie_7",
-    "synixe:@ws",
 ]
