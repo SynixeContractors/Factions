@@ -111,5 +111,15 @@
         "items": [
             ["O_NVGoggles_grn_F", 1]
         ]
-    }
+    },
+    "ivas": {
+        "items": [
+            ["Aegis_NVG_IVAS_01_blk_F", 1]
+        ]
+    },
+    "nvg_wide": {
+        "items": [
+            ["ACE_NVG_Wide_Black_WP", 1]
+        ]
+    },
 }

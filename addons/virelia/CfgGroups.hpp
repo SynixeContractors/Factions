@@ -2,7 +2,7 @@ class CfgGroups {
     class WEST {
         class CLASS(t1_blufor) {
             name = "{IEA} [T1] Virelia";
-            //@Groups(T1,Special_Forces);
+            @Groups(T2,Special_Forces);
         };
     };
 };
