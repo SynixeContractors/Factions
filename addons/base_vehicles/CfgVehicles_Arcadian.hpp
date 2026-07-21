@@ -37,6 +37,16 @@ class GCLASS(Arcadian): tacs_Arcadian_Unarmed_Base {
             textures[] = {"\x\tacs\addons\arcadian\data\arcadian_body_grey_co.paa","\x\tacs\addons\arcadian\data\arcadian_interior_co.paa"};
             factions[] = {};
         };
+        class Pink {
+            displayName = "Pink";
+            textures[] = {QPATHTOEF(vehicle_textures,data\arcadian\arcadian_body_pink_co.paa),"\x\tacs\addons\arcadian\data\arcadian_interior_co.paa"};
+            factions[] = {};
+        };
+        class Yellow {
+            displayName = "Yellow";
+            textures[] = {QPATHTOEF(vehicle_textures,data\arcadian\arcadian_body_yellow_co.paa),"\x\tacs\addons\arcadian\data\arcadian_interior_co.paa"};
+            factions[] = {};
+        };
     };
 };
 
