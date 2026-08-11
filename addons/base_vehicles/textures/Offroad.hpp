@@ -214,8 +214,8 @@ class TextureSources {
     class Police {
         displayName = "Police";
         textures[] = {
-            "\s\synixe_factions\addons\vehicle_textures\data\offroad\offroad_police_CO.paa",
-            "\s\synixe_factions\addons\vehicle_textures\data\offroad\offroad_police_CO.paa",
+            QPATHTOEF(vehicle_textures,data\offroad\offroad_police_CO.paa),
+            QPATHTOEF(vehicle_textures,data\offroad\offroad_police_CO.paa),
             "\a3\Soft_F_Enoch\Offroad_01\Data\offroad_01_cover_gen_co.paa",
             "\lxws\vehicles_f_lxws\Offroad_01\data\offroad_01_armor_rust_co.paa"
         };
