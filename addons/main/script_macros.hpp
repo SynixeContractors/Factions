@@ -99,3 +99,13 @@ class var1: var1 { \
 class var1: var1 { \
     initPhase = 1; \
 }
+// for generic cars
+
+#define GENERIC_VEHICLE(VEHICLE,TEXTURE,CREW,FACTION,SIDE)\
+class CLASS(VEHICLE##_##SIDE): GCLASS(##VEHICLE##) {      \
+    SCOPE_DLC;                                            \
+    faction = QGCLASS(FACTION);                           \
+    textureList[] = {QUOTE(TEXTURE),1};                   \
+    crew = QCLASS2(CREW,SIDE);                            \
+    editorSubcategory = QGCLASS(generics_##SIDE##_cars);  \
+}
