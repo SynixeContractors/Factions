@@ -75,6 +75,21 @@ class GCLASS(LUT_Fuel): Truck_02_fuel_base_F {
     #include "textures\LUTFuel.hpp"
 };
 
+class GCLASS(LUT_Water): Truck_02_fuel_base_F {
+    displayName = "LUT (Water)";
+    faction = QGCLASS(base_vehicles);
+    SCOPE_DLC_VEHICLE;
+    EMPTY_INVENTORY;
+    crew = "Civilian";
+    typicalCargo[] = {"Soldier"};
+    ace_refuel_fuelCapacity = 210;
+    ace_refuel_fuelCargo = -1;
+    transportFuel = 0;
+    LUT_TEXTURE_LIST;
+    #include "textures\LUTFuel.hpp"
+};
+
+
 class Truck_02_cargo_base_lxWS;
 class GCLASS(LUT_Cargo): Truck_02_cargo_base_lxWS {
     displayName = "LUT (Cargo)";
