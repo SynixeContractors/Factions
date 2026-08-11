@@ -4,7 +4,7 @@ class CfgVehicles {
     class C_Man_casual_3_F;
 
     class CLASS(man_worker): C_Man_casual_3_F {
-        SCOPE_DLC;
+        scope = 1;
         faction = QGCLASS(swifd);
         author = "Synixe Contractors";
         displayName = "Worker (Polo Pants)";
