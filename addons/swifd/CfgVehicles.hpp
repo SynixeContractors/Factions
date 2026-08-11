@@ -11,7 +11,6 @@ class CfgVehicles {
         uniformClass = QCLASS(uniform_casual);
         editorPreview = QPATHTOF(previews\man_worker.jpg);
         hiddenSelectionsTextures[] = {QPATHTOF(data\c_man_casual_co.paa)};
-        editorSubcategory = QGCLASS(generics);
     };
 
     @For(Identities)
