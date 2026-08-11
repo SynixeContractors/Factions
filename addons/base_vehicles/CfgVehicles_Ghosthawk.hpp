@@ -48,3 +48,29 @@ class GCLASS(Ghosthawk_Pylons): B_Heli_Transport_01_pylons_F {
     #include "eventhandler_camo.hpp"
     #include "textures/Ghosthawk.hpp"
 };
+
+class Heli_Transport_01_Assault_base_F;
+class GCLASS(Ghosthawk_Assault): Heli_Transport_01_Assault_base_F {
+    displayName = "UH-80 Ghosthawk (Assault)";
+    faction = QGCLASS(base_vehicles);
+    SCOPE_DLC_VEHICLE;
+    EMPTY_INVENTORY;
+    crew = "Civilian";
+    typicalCargo[] = {"Soldier"};
+    ace_refuel_fuelCapacity = 2200;
+    #include "eventhandler_camo.hpp"
+    #include "textures/Ghosthawk.hpp"
+};
+
+class Heli_Transport_01_DAP_base_F;
+class GCLASS(Ghosthawk_DAP): Heli_Transport_01_DAP_base_F {
+    displayName = "UH-80 Ghosthawk (Gunship)";
+    faction = QGCLASS(base_vehicles);
+    SCOPE_DLC_VEHICLE;
+    EMPTY_INVENTORY;
+    crew = "Civilian";
+    typicalCargo[] = {"Soldier"};
+    ace_refuel_fuelCapacity = 2200;
+    #include "eventhandler_camo.hpp"
+    #include "textures/Ghosthawk.hpp"
+};
