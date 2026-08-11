@@ -47,6 +47,12 @@ class CfgVehicles {
                         "JCA_30Rnd_556x45_PMAG": 8,
                     },
                 },
+                "lot_SCAR_L_grip_F": {
+                    "probability": 1,
+                    "magazinesVest": {
+                        "JCA_30Rnd_556x45_PMAG": 8,
+                    },
+                },
             },
             "optics": {
                 "JCA_optic_IHO_black_magnifier": 1,

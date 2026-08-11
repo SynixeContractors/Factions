@@ -90,7 +90,7 @@ class CfgVehicles {
                 },
             },
             "optics": {
-                "JCA_optic_IHO_black": 3,
+                "JCA_optic_IHO_black": 2,
                 "JCA_optic_MRCS_black": 1,
             },
             "pointers": {
