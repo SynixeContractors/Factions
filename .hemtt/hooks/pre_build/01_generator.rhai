@@ -287,7 +287,6 @@ fn groups(args, context) {
     let type = args[1];
     let match_type = type;
     if type.ends_with("_OPFOR") || type.ends_with("_BLUFOR") || type.ends_with("_INDEP") || type.ends_with("_CIV") {
-	//print(type);
         // remove side suffix
         let parts = type.split("_");
         match_type = "";
@@ -297,7 +296,6 @@ fn groups(args, context) {
             }
             match_type += parts[i];
         }
-	//print(match_type);
     }
     let faction = to_lower(tier) + "_" + to_lower(context["group_side"]);
     //print("faction:" + faction);
@@ -318,6 +316,8 @@ fn groups(args, context) {
         let parts = match_type.split("_");
         if parts.len() == 2 {
             ret += "name = \"" + parts[0] + " (" + parts[1] + ")\";\n";
+	} else if parts.len() == 3 {
+	    ret += "name = \"" + parts[0] + " (" + parts[1] + ", " + parts[2] + ")\";\n";
         } else {
             ret += "name = \"" + match_type + "\";\n";
         }
@@ -330,7 +330,6 @@ fn groups(args, context) {
     for section in group_source.groups {
 	if !(match_type in section.types) {
 	    // probably an identity
-	    print("unmatched type: " + match_type);
 	    let parts = match_type.split("_");
 	    match_type = "";
             for i in 0..parts.len() - 1 {
@@ -339,9 +338,7 @@ fn groups(args, context) {
 		}
 		match_type += parts[i];
             }
-	    print("unmatched type switched to: " + match_type);
 	}
-	//print(section.types);
         if match_type in section.types {
             for group in section.groups {
                 ret += "class CLASS(" + group.class + ")";
@@ -360,12 +357,11 @@ fn groups(args, context) {
                     ret += "GROUP_UNIT(CLASS(" + type + "_" + unit + ")," + side + ");\n";
                 }
                 ret += "};\n";
-		//print(ret);
             }
         }
 	else {
-	    print("Unmatched group type: " + type + " = " + match_type + " in Groups macro with args: " + args + " " + faction);
-	};
+	    // print("Unmatched group type: " + type + " = " + match_type + " in Groups macro with args: " + args + " " + faction);
++	};
     }
     ret += "};\n";
     return ret;
