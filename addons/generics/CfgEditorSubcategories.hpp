@@ -10,6 +10,11 @@ class CfgEditorSubcategories {
             displayName = "Army (Combat, $2)";
             GCLASS(identity) = "$1";
         };
+        class CLASS(militia_$1) {
+            SCOPE_DLC;
+            displayName = "Militia ($2)";
+            GCLASS(identity) = "$1";
+        };
         class CLASS($1_cars) {
             SCOPE_DLC;
             displayName = "Cars ($2)";
