@@ -35,12 +35,6 @@ class CLASS2(SIDE,Tropic): CLASS2(Base,NATION) {
 
     @Headgear({
         "": 1,
-        "H_Shemag_khk": 1,
-        "H_Shemag_olive": 1,
-        "H_ShemagOpen_tan": 1,
-        "H_ShemagOpen_khk": 1,
-        "H_Shemag_blk": 1,
-        "H_Shemag_red": 1,
         "H_HeadBandage_stained_F": 1,
         "H_HeadBandage_bloody_F": 1,
         "H_Booniehat_blk": 1,
