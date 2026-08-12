@@ -16,6 +16,7 @@ class CLASS2(SIDE,Base): PCLASS(DOUBLES(Base,NATION)) {
             "JCA_optic_MROS_black": 1,
         },
     });
+    @Assigned(Civilian);
 };
 class CLASS2(SIDE,Rifleman): CLASS2(SIDE,Base) {
     @Role(Rifleman);
