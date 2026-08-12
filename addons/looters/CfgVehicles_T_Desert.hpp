@@ -82,140 +82,19 @@ class CLASS2(SIDE,Desert): CLASS2(Base,NATION) {
     });
 };
 class CLASS2(SIDE,Desert_Looter): CLASS2(SIDE,Desert) {
-    @Role(Looter);
+    @Role(Rifleman);
 
-    @Primary({
-        "weapons": {
-            "hgun_PDW2000_F": {
-                "probability": 2,
-                "magazinesBackpack": {
-                    "30Rnd_9x21_Mag_SMG_02": 5,
-                },
-            },
-            "SMG_02_F": {
-                "probability": 2,
-                "magazinesBackpack": {
-                    "30Rnd_9x21_Mag_SMG_02": 5,
-                },
-            },
-            "sgun_Mp153_classic_F": {
-                "probability": 1,
-                "magazinesBackpack": {
-                    "4Rnd_12Gauge_Pellets": 8,
-                },
-            },
-            "sgun_HunterShotgun_01_sawedoff_F": {
-                "probability": 1,
-                "magazinesBackpack": {
-                    "2Rnd_12Gauge_Pellets": 8,
-                },
-            },
-            "Aegis_arifle_AKS74_F": {
-                "probability": 2,
-                "magazinesBackpack": {
-                    "30Rnd_545x39_Mag_F": 5,
-                },
-            },
-            "arifle_AKM_F": {
-                "probability": 1,
-                "magazinesBackpack": {
-                    "30Rnd_762x39_Mag_F": 5,
-                },
-            },
-            "Opf_arifle_SKS_F": {
-                "probability": 2,
-                "magazinesBackpack": {
-                    "30Rnd_762x39_Mag_F": 5,
-                },
-            },
-        },
-    });
+    #include "weapons/primary.hpp"
 };
 
 class CLASS2(SIDE,Desert_LooterPistol): CLASS2(SIDE,Desert) {
-    @Role(PistolLooter);
+    @Role(Pistol);
 
-    @Secondary({
-        "weapons": {
-            "hgun_ACPC2_black_F": {
-                "probability": 1,
-                "magazinesUniform": {
-                    "9Rnd_45ACP_Mag": 3,
-                },
-            },
-            "hgun_Pistol_heavy_02_F": {
-                "probability": 1,
-                "magazinesUniform": {
-                    "6Rnd_45ACP_Cylinder": 5,
-                },
-            },
-            "hgun_G17_black_F": {
-                "probability": 1,
-                "magazinesUniform": {
-                    "17Rnd_9x21_Mag": 3,
-                },
-            },
-            "JCA_hgun_M9A1_black_F": {
-                "probability": 1,
-                "magazinesUniform": {
-                    "JCA_15Rnd_9x19_M9A1_FMJ_Mag": 3,
-                },
-            },
-            "hgun_Pistol_01_F": {
-                "probability": 1,
-                "magazinesUniform": {
-                    "10Rnd_9x21_Mag": 5,
-                },
-            },
-            "hgun_Rook40_F": {
-                "probability": 1,
-                "magazinesUniform": {
-                    "17Rnd_9x21_Mag": 3,
-                },
-            },
-        },
-    });
+    #include "weapons/secondary.hpp"
 };
 
 class CLASS2(SIDE,Desert_Hunter): CLASS2(SIDE,Desert) {
-    @Role(Hunter);
+    @Role(Marksman);
 
-    @Primary({
-        "weapons": {
-            "srifle_DMR_06_hunter_F": {
-                "probability": 3,
-                "magazinesBackpack": {
-                    "10Rnd_Mk14_762x51_Mag_blk_lxWS": 10,
-                },
-            },
-            "Aegis_srifle_SVD_f": {
-                "probability": 3,
-                "magazinesBackpack": {
-                    "10Rnd_762x54_Mag": 8,
-                },
-            },
-            "arifle_SLR_lxWS": {
-                "probability": 1,
-                "magazinesBackpack": {
-                    "20Rnd_762x51_slr_lxWS": 4,
-                },
-            },
-            "sgun_Mp153_classic_F": {
-                "probability": 1,
-                "magazinesBackpack": {
-                    "4Rnd_12Gauge_Slug": 8,
-                },
-            },
-            "sgun_HunterShotgun_01_F": {
-                "probability": 1,
-                "magazinesBackpack": {
-                    "2Rnd_12Gauge_Slug": 8,
-                },
-            },
-        },
-        "optics": {
-            "": 2,
-            "optic_DMS_weathered_F": 1,
-        },
-    });
+    #include "weapons/hunter.hpp"
 };
