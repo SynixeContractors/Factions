@@ -298,7 +298,6 @@ fn groups(args, context) {
         }
     }
     let faction = to_lower(tier) + "_" + to_lower(context["group_side"]);
-    //print("faction:" + faction);
     let side = switch context["group_side"] {
         "BLUFOR" => 1,
         "OPFOR" => 0,
@@ -316,8 +315,8 @@ fn groups(args, context) {
         let parts = match_type.split("_");
         if parts.len() == 2 {
             ret += "name = \"" + parts[0] + " (" + parts[1] + ")\";\n";
-	} else if parts.len() == 3 {
-	    ret += "name = \"" + parts[0] + " (" + parts[1] + ", " + parts[2] + ")\";\n";
+        } else if parts.len() == 3 {
+            ret += "name = \"" + parts[0] + " (" + parts[1] + ", " + parts[2] + ")\";\n";
         } else {
             ret += "name = \"" + match_type + "\";\n";
         }
@@ -328,17 +327,17 @@ fn groups(args, context) {
     }
     let group_source = load_json("groups/" + tier_file);
     for section in group_source.groups {
-	if !(match_type in section.types) {
-	    // probably an identity
-	    let parts = match_type.split("_");
-	    match_type = "";
+        if !(match_type in section.types) {
+            // probably an identity
+            let parts = match_type.split("_");
+            match_type = "";
             for i in 0..parts.len() - 1 {
-		if i > 0 {
+                if i > 0 {
                     match_type += "_";
-		}
-		match_type += parts[i];
+                }
+                match_type += parts[i];
             }
-	}
+        }
         if match_type in section.types {
             for group in section.groups {
                 ret += "class CLASS(" + group.class + ")";
@@ -359,9 +358,9 @@ fn groups(args, context) {
                 ret += "};\n";
             }
         }
-	else {
-	    // print("Unmatched group type: " + type + " = " + match_type + " in Groups macro with args: " + args + " " + faction);
-+	};
+        else {
+            print("Unmatched group type: " + type + " = " + match_type + " in Groups macro with args: " + args + " " + faction);
+        }
     }
     ret += "};\n";
     return ret;
