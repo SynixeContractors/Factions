@@ -106,4 +106,13 @@
         "icon": "iconManEngineer",
         "role": "Sapper",
     },
+    "PistolLooter": {
+        "displayName": "Looter (Pistol)",
+    },
+    "Looter": {
+        "displayName": "Looter",
+    },
+    "Hunter": {
+        "displayName": "Hunter",
+    },
 }
