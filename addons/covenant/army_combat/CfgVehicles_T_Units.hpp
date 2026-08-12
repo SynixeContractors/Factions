@@ -1,6 +1,6 @@
 class CLASS2(SIDE,Base): PCLASS(DOUBLES(Base,NATION)) {
     side = TEMPLATE_SIDE;
-    editorSubcategory = QGCLASS(DOUBLES(generics,NATION));
+    editorSubcategory = QGCLASS(TRIPLES(generics,army_combat,NATION));
     faction = FACTION;
     @Role(Hidden);
     #include "../../civilians/wear/winter.hpp"
@@ -41,7 +41,7 @@ class CLASS2(SIDE,RiflemanBackpack): CLASS2(SIDE,RiflemanCarabine) {
 
 class CLASS2(SIDE,SquadLeader): CLASS2(SIDE,RiflemanCarabine) {
     @Role(SquadLeader);
-    //#include "../weapons/gl.hpp"
+    #include "../weapons/gl.hpp"
     #include "../weapons/pistol.hpp"
 };
 
@@ -56,15 +56,15 @@ class CLASS2(SIDE,Autorifleman): CLASS2(SIDE,RiflemanBackpack) {
     #include "../weapons/pistol.hpp"
 };
 
-// class CLASS2(SIDE,AsstMachinegunner): CLASS2(SIDE,RiflemanBackpack) {
-//     @Role(AsstMachinegunner);
-// };
+class CLASS2(SIDE,AsstMachinegunner): CLASS2(SIDE,RiflemanBackpack) {
+    @Role(AsstMachinegunner);
+};
 
-// class CLASS2(SIDE,Machinegunner): CLASS2(SIDE,RiflemanBackpack) {
-//     @Role(Machinegunner);
-//     #include "../weapons/lmg.hpp"
-//     #include "../weapons/pistol.hpp"
-// };
+class CLASS2(SIDE,Machinegunner): CLASS2(SIDE,RiflemanBackpack) {
+    @Role(Machinegunner);
+    #include "../weapons/mg.hpp"
+    #include "../weapons/pistol.hpp"
+};
 
 class CLASS2(SIDE,Marksman): CLASS2(SIDE,RiflemanCarabine) {
     @Role(Marksman);
@@ -94,12 +94,12 @@ class CLASS2(SIDE,RiflemanAA): CLASS2(SIDE,RiflemanBackpack) {
 
 class CLASS2(SIDE,Engineer): CLASS2(SIDE,RiflemanBackpack) {
     @Role(Engineer);
-    //#include "../wear/engineer.hpp"
+    #include "../wear/engineer.hpp"
 };
 
 class CLASS2(SIDE,Demolitions): CLASS2(SIDE,RiflemanBackpack) {
     @Role(Demolitions);
-    //#include "../wear/demo.hpp"
+    #include "../wear/demo.hpp"
 };
 
 class CLASS2(SIDE,Crewman): CLASS2(SIDE,Base) {
