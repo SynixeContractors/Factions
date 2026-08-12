@@ -329,6 +329,8 @@ fn groups(args, context) {
     for section in group_source.groups {
         if !(match_type in section.types) {
             // probably an identity
+	    // this check could potentially be better for build time
+	    // if we load identities and check against them
             let parts = match_type.split("_");
             match_type = "";
             for i in 0..parts.len() - 1 {
@@ -357,9 +359,6 @@ fn groups(args, context) {
                 }
                 ret += "};\n";
             }
-        }
-        else {
-            print("Unmatched group type: " + type + " = " + match_type + " in Groups macro with args: " + args + " " + faction);
         }
     }
     ret += "};\n";
