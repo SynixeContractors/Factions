@@ -72,6 +72,8 @@ class CfgVehicles {
                 "optic_MRD_black": 1,
             },
         });
+
+        @Assigned(Military);
     };
 
     class CLASS(Rifleman): CLASS(Base) {
