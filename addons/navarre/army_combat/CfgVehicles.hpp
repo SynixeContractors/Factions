@@ -7,21 +7,28 @@ class CfgVehicles {
     #include "../../../templates/statics/Mk6.hpp"
     #include "../../../templates/tanks/T100.hpp"
     #include "../../../templates/tanks/T100_SPG.hpp"
-    #include "../../../templates/apc/Otokar.hpp"
     #include "../../../templates/apc/BM2_AA.hpp"
     #include "../../../templates/apc/BM2K.hpp"
     #include "../../../templates/apc/BM2T.hpp"
     #include "../../../templates/cars/Karatel.hpp"
     #include "../../../templates/cars/Typhoon.hpp"
-    #include "../../../templates/helicopters/Mi35.hpp"
-    #include "../../../templates/planes/Yak130.hpp"
-    #include "../../../templates/planes/C130.hpp"
     #include "../../../templates/helicopters/Orca_Civilian.hpp"
     #include "../../../templates/helicopters/Orca_Military.hpp"
+    #include "../../../templates/helicopters/Ka54.hpp"
     #undef TEMPLATE_CAMO
     #define TEMPLATE_CAMO Opfor
     #include "../../../templates/drones/CH3A.hpp"
     #undef TEMPLATE_CAMO
+    #define TEMPLATE_CAMO Grey
+    #include "../../../templates/planes/Yak130.hpp"
+    #include "../../../templates/planes/Xian.hpp"
+    #include "../../../templates/planes/C130.hpp"
+    #undef TEMPLATE_CAMO
+    #define TEMPLATE_CAMO CamoGreyHex
+    #include "../../../templates/planes/SU75.hpp"
+    #undef TEMPLATE_CAMO
+    #define TEMPLATE_CAMO MarineHex
+    #include "../../../templates/apc/Otokar.hpp"
 
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {
@@ -44,7 +51,29 @@ class CfgVehicles {
             },
             "packs": [
                 "t2_standard",
+                "military_standard",
             ],
+        });
+
+        #include "..\weapons\Rifleman.hpp"
+
+        @Primary({
+            "muzzles": {
+                "": 4,
+                "muzzle_snds_58_blk_F": 1,
+            },
+        });
+
+        @Secondary({
+            "weapons": {
+                "": 0.6,
+                "hgun_Pistol_heavy_01_black_F": {
+                    "probability": 0.4,
+                    "magazinesVest": {
+                        "11Rnd_45ACP_Mag": 3,
+                    },
+                },
+            },
         });
 
         @Headgear({
@@ -66,23 +95,21 @@ class CfgVehicles {
     class CLASS(Rifleman): CLASS(Base) {
         @Role(Rifleman);
 
-        #include "..\weapons\Rifleman.hpp"
-
-        @Secondary({
+        @Launchers({
             "weapons": {
-                "": 0.6,
-                "hgun_Pistol_heavy_01_black_F": {
-                    "probability": 0.4,
-                    "magazinesVest": {
-                        "11Rnd_45ACP_Mag": 3,
-                    },
+                "": 0.7,
+                "launch_NLAW_F": {
+                    "probability": 0.3, 
+                    "loadedPrimary": "NLAW_F",
                 },
             },
         });
     };
 
-    class CLASS(SquadLeader): CLASS(Rifleman) {
+    class CLASS(SquadLeader): CLASS(Base) {
         @Role(SquadLeader);
+
+        #include "..\weapons\Rifleman.hpp"
 
         #include "..\weapons\Secondary.hpp"
     };
@@ -93,11 +120,10 @@ class CfgVehicles {
         #include "..\weapons\TeamLeader.hpp"
     };
 
-    class CLASS(Autorifleman): CLASS(Rifleman) {
+    class CLASS(Autorifleman): CLASS(Base) {
         @Role(Autorifleman);
 
         #include "..\weapons\Autorifleman.hpp"
-
         #include "..\weapons\Secondary.hpp"
         
         @Backpacks({
@@ -113,16 +139,9 @@ class CfgVehicles {
 
         #include "..\weapons\Machinegunner.hpp"
         #include "..\weapons\Secondary.hpp"
-
-        @Backpacks({
-            "variants": {
-                "B_AssaultPack_rgr": 1,
-            },
-        });
-
     };
 
-    class CLASS(AsstMachinegunner): CLASS(Rifleman) {
+    class CLASS(AsstMachinegunner): CLASS(Base) {
         @Role(AsstMachinegunner);
 
         @Backpacks({
@@ -130,19 +149,19 @@ class CfgVehicles {
                 "B_AssaultPack_rgr": 1,
             },
             "magazines": {
-                "synixe_armoury_120Rnd_93x64_EPR": 3,
+                "150Rnd_93x64_Mag": 3,
             },
         });
     };
 
-    class CLASS(Marksman): CLASS(Rifleman) {
+    class CLASS(Marksman): CLASS(Base) {
         @Role(Marksman);
 
         #include "..\weapons\Marksman.hpp"
         #include "..\weapons\Secondary.hpp"
     };
 
-    class CLASS(Medic): CLASS(Rifleman) {
+    class CLASS(Medic): CLASS(Base) {
         @Role(Medic);
 
         @Backpacks({
@@ -155,12 +174,12 @@ class CfgVehicles {
         });
     };
 
-    class CLASS(RiflemanMAT): CLASS(Rifleman) {
+    class CLASS(RiflemanMAT): CLASS(Base) {
         @Role(RiflemanMAT);
 
         @Launchers({
             "weapons": {
-                "launch_RPG32_green_F": {
+                "launch_RPG32_black_F": {
                     "magazinesBackpack": {
                         "RPG32_F": 2,
                         "RPG32_HE_F": 1,
@@ -176,7 +195,7 @@ class CfgVehicles {
         });
     };
 
-    class CLASS(RiflemanAA): CLASS(Rifleman) {
+    class CLASS(RiflemanAA): CLASS(Base) {
         @Role(RiflemanAA);
 
         @Launchers({
@@ -196,7 +215,7 @@ class CfgVehicles {
         });
     };
 
-    class CLASS(RiflemanHAT): CLASS(Rifleman) {
+    class CLASS(RiflemanHAT): CLASS(Base) {
         @Role(RiflemanHAT);
 
         @Launchers({
@@ -216,17 +235,17 @@ class CfgVehicles {
         });
     };
 
-    class CLASS(RadioOperator): CLASS(Rifleman) {
+    class CLASS(RadioOperator): CLASS(Base) {
         @Role(RadioOperator);
 
         @Backpacks({
             "variants": {
-                "B_RadioBag_01_green_F": 1,
+                "B_RadioBag_01_oucamo_F": 1,
             },
         });
     };
 
-    class CLASS(Engineer): CLASS(Rifleman) {
+    class CLASS(Engineer): CLASS(Base) {
         @Role(Engineer);
 
         @Backpacks({
@@ -239,12 +258,12 @@ class CfgVehicles {
         });
     };
 
-    class CLASS(Demolitions): CLASS(Rifleman) {
+    class CLASS(Demolitions): CLASS(Base) {
         @Role(Demolitions);
 
         @Backpacks({
             "variants": {
-                "B_Kitbag_rgr": 1,
+                "B_Carryall_oucamo": 1,
             },
             "packs": [
                 "eod",

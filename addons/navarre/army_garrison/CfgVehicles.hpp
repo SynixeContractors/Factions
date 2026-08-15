@@ -7,7 +7,6 @@ class CfgVehicles {
         @Uniforms({
             "variants": {
                 "U_O_officer_noInsignia_urb_F": 1,
-                "Aegis_U_O_LightCombatFatigues_urb_F": 0.5,
             },
             "packs": [
                 "rifleman_medical",
@@ -29,7 +28,6 @@ class CfgVehicles {
 
         @Vests({
             "variants": {
-                "JCA_V_CarrierRigKBT_01_CQB_olive_F": 1,
                 "JCA_V_CarrierRigKBT_01_combat_olive_F": 1,
             },
             "packs": [
@@ -131,7 +129,7 @@ class CfgVehicles {
                 "arifle_CTAR_blk_F": {
                     "probability": 0.15,
                     "magazinesVest": {
-                        "synixe_armoury_30Rnd_58x42_EPR": 4,
+                        "30Rnd_580x42_Mag_F": 4,
                     }
                 },
             },

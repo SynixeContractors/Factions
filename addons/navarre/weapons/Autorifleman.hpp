@@ -2,10 +2,10 @@
     "weapons": {
         "arifle_CTARS_blk_F": {
             "magazinesVest": {
-                "synixe_armoury_100Rnd_58x42_EPR": 2,
+                "100Rnd_580x42_Mag_F": 2,
             },
             "magazinesBackpack": {
-                "synixe_armoury_100Rnd_58x42_EPR": 4,
+                "100Rnd_580x42_Mag_F": 4,
             },
         },
     },

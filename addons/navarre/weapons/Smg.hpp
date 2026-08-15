@@ -1,14 +1,16 @@
 @Primary({
     "weapons": {
-        "arifle_CTAR_blk_F": {
+        "SMG_03C_TR_hex": {
             "magazinesVest": {
-                "30Rnd_580x42_Mag_F": 7,
+                "50Rnd_570x28_SMG_03": 7,
             }
         },
     },
     "optics": {
-        "optic_LRCO_blk_F": 1,
-        "optic_ACO_grn": 1,
+        "optic_Holosight_blk_F": 1,
+    },
+    "muzzles": {
+        "muzzle_snds_570": 1,
     },
     "pointers": {
         "ACE_DBAL_A3_Green": 1,

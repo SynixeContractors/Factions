@@ -2,11 +2,11 @@
     "weapons": {
         "arifle_CTAR_GL_blk_F": {
             "magazinesVest": {
-                "synixe_armoury_30Rnd_58x42_EPR": 7,
+                "30Rnd_580x42_Mag_F": 7,
                 "1Rnd_HE_Grenade_shell": 4,
                 "1Rnd_Smoke_Grenade_shell": 2,
             },
-            "loadedPrimary": "synixe_armoury_30Rnd_58x42_EPR",
+            "loadedPrimary": "30Rnd_580x42_Mag_F",
             "loadedSecondary": "1Rnd_HE_Grenade_shell",
         },
     },

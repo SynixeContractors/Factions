@@ -2,7 +2,7 @@
     "weapons": {
         "srifle_DMR_07_blk_F": {
             "magazinesVest": {
-                "synixe_armoury_20Rnd_65x39_AP": 7,
+                "20Rnd_650x39_Cased_Mag_F": 7,
             }
         },
     },

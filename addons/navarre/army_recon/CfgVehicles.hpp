@@ -1,7 +1,7 @@
 class CfgVehicles {
     #define TEMPLATE_FACTION QPCLASS(t2_opfor)
     #define TEMPLATE_SIDE 0
-    #define TEMPLATE_CAMO CSAT
+    #define TEMPLATE_CAMO CSAT_Pacific
     #include "../../../templates/cars/Ram_Civilian.hpp"
 
     class PCLASS(Base);
@@ -25,6 +25,7 @@ class CfgVehicles {
             },
             "packs": [
                 "t2_standard",
+                "military_standard",
             ],
         });
 
@@ -48,6 +49,7 @@ class CfgVehicles {
 
         @Primary({
             "muzzles": {
+                "": 1,
                 "muzzle_snds_58_blk_F": 1,
             },
         });
@@ -69,6 +71,8 @@ class CfgVehicles {
                 "Binocular": 1,
             }
         });
+
+        @Assigned(Military);
     };
 
     class CLASS(Rifleman): CLASS(Base) {
@@ -99,7 +103,7 @@ class CfgVehicles {
             "weapons": {
                 "arifle_CTARS_blk_F": {
                     "magazinesVest": {
-                        "synixe_armoury_100Rnd_58x42_EPR": 6,
+                        "100Rnd_580x42_Mag_F": 6,
                     },
                 },
             },
@@ -151,7 +155,7 @@ class CfgVehicles {
 
         @Launchers({
             "weapons": {
-                "launch_RPG32_green_F": {
+                "launch_RPG32_black_F": {
                     "magazinesBackpack": {
                         "RPG32_F": 2,
                         "RPG32_HE_F": 1,
@@ -172,7 +176,7 @@ class CfgVehicles {
 
         @Backpacks({
             "variants": {
-                "B_RadioBag_01_green_F": 1,
+                "B_RadioBag_01_oucamo_F": 1,
             },
         });
     };
