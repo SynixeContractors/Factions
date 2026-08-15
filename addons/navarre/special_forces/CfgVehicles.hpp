@@ -312,7 +312,7 @@ class CfgVehicles {
             "weapons": {
                 "srifle_GM6_F": {
                     "magazinesVest": {
-                        "10Rnd_93x64_DMR_05_Mag": 8,
+                        "5Rnd_127x108_Mag": 8,
                     },
                 },
             },
