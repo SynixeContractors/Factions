@@ -122,4 +122,9 @@
             ["ACE_NVG_Wide_Black_WP", 1]
         ]
     },
+    "compact_nvg_urb": {
+        "items": [
+            ["O_NVGoggles_urb_F", 1]
+        ]
+    },
 }
