@@ -315,6 +315,8 @@ fn groups(args, context) {
         let parts = match_type.split("_");
         if parts.len() == 2 {
             ret += "name = \"" + parts[0] + " (" + parts[1] + ")\";\n";
+        } else if parts.len() == 3 {
+            ret += "name = \"" + parts[0] + " (" + parts[1] + ", " + parts[2] + ")\";\n";
         } else {
             ret += "name = \"" + match_type + "\";\n";
         }
@@ -325,6 +327,19 @@ fn groups(args, context) {
     }
     let group_source = load_json("groups/" + tier_file);
     for section in group_source.groups {
+        if !(match_type in section.types) {
+            // probably an identity
+	    // this check could potentially be better for build time
+	    // if we load identities and check against them
+            let parts = match_type.split("_");
+            match_type = "";
+            for i in 0..parts.len() - 1 {
+                if i > 0 {
+                    match_type += "_";
+                }
+                match_type += parts[i];
+            }
+        }
         if match_type in section.types {
             for group in section.groups {
                 ret += "class CLASS(" + group.class + ")";
@@ -688,6 +703,11 @@ fn build_item_variables(item) {
 }
 
 fn process_block_iterations(block, parent_variables, iteration_items, iter_type) {
+    let context = #{
+    };
+    process_block_iterations(block, parent_variables, iteration_items, iter_type, context);
+};
+fn process_block_iterations(block, parent_variables, iteration_items, iter_type, context) {
     let result = "";
     for item in iteration_items {
         // Build the variable map for this iteration
@@ -699,18 +719,21 @@ fn process_block_iterations(block, parent_variables, iteration_items, iter_type)
         }
         
         let merged_vars = merge_variables(parent_variables, item_vars);
-        let processed_body = process_lines(block, 0, merged_vars);
+        let processed_body = process_lines(block, 0, merged_vars, context);
         result += processed_body;
     }
     return result;
 }
 
 fn process_lines(lines, start_index, variables) {
-    let replacement = "";
-    let index = start_index;
     let context = #{
         group_side: "",
     };
+    return process_lines(lines, start_index, variables, context);
+};
+fn process_lines(lines, start_index, variables, context) {
+    let replacement = "";
+    let index = start_index;
     while index < lines.len() {
         let line = lines[index];
         line.trim();
@@ -749,7 +772,7 @@ fn process_lines(lines, start_index, variables) {
             let items = parse_for_items(raw_json);
             let block = find_block(lines, end_index, "@EndFor");
             
-            replacement += process_block_iterations(block[0], variables, items, "For");
+            replacement += process_block_iterations(block[0], variables, items, "For", context);
             index = block[1];
         } else if line.starts_with("@") {
             // Parse and expand a standalone macro

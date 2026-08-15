@@ -257,3 +257,11 @@ class CLASS2(Citizen_Fisherman,NATION): CLASS2(Base,NATION) {
         },
     });
 };
+
+class CLASS2(Citizen_Winter,NATION): CLASS2(Base,NATION) {
+    SCOPE_DLC;
+    displayName = "Citizen (Winter)";
+
+    #include "wear/winter.hpp"
+    #include "wear/headwear_winter.hpp"
+};
