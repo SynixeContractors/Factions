@@ -141,4 +141,11 @@
         ],
         "genericNames": "TanoanMen"
     },
+    "Courdane": {
+        "identityTypes": [
+            "Head_NATO",
+            "LanguageFRE_F"
+        ],
+        "genericNames": "French"
+    },
 }
