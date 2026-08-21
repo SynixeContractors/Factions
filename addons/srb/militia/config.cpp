@@ -33,6 +33,11 @@ class CfgVehicles {
     class GCLASS(Offroad_Armored_HMG);
     class GCLASS(Offroad_Armored_AT);
     class GCLASS(Jay_Fuel);
+    class GCLASS(BTR);
+    class GCLASS(BTR_IFV);
+    class GCLASS(BM2_IFV1);
+    class GCLASS(BM2_IFV2);
+    class GCLASS(T100);
 
     @ForSides(OPFOR,INDEP)
     #define SIDE $UPPER
