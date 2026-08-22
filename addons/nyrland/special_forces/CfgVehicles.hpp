@@ -1,4 +1,7 @@
 class CfgVehicles {
+
+    #include "CfgVehicles_Cars.hpp"
+
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {
         displayName = "Nyrland Base Army SOF";
