@@ -38,12 +38,65 @@
     ],
     "offroad_civilian": [
         "Offroad",
-        "Offroad_Covered",
         "Offroad_Comms",
+        "Offroad_Covered",
         "Offroad_Services",
     ],
     "sam01": [
-        "SAM01",
         "Radar01",
-    ]
+        "SAM01",
+    ],
+    "ship": [
+        "Ship_BoxARH",
+        "Ship_BoxIR",
+        "Ship_CIWS",
+        "Ship_Gun",
+        "Ship_VLS",
+    ],
+    "merkava": [
+        "Merkava",
+        "Merkava_TUSK",
+    ],
+    "merkava_spg": [
+        "Merkava_MLRS",
+        "Merkava_SPG",
+    ],
+    "namer": [
+        "Namer",
+        "Namer_AA",
+        "Namer_CEV",
+        "Namer_RCWS",
+    ],
+    "fennek": [
+        "Fennek",
+        "Fennek_HMG",
+        "Fennek_GMG",
+    ],
+    "polaris": [
+        "Polaris",
+        "Polaris_NoDoor",
+        "Polaris_Titan",
+        "Polaris_HMG",
+    ],
+    "ram_civilian": [
+        "Ram",
+        "Ram_Covered",
+        "Ram_Comms",
+        "Ram_Fuel",
+    ],
+    "ram_armed": [
+        "Ram_HMG",
+        "Ram_MMG",
+    ],
+    "ram_advanced": [
+        "Ram_AA",
+        "Ram_RCWS",
+        "Ram_M134",
+        "Ram_MRL",
+        "Ram_AT",
+    ],
+    "ram_rocket": [
+        "Ram_Rocket",
+    ],
+
 }
