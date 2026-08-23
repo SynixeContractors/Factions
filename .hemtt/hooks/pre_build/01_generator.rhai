@@ -302,7 +302,7 @@ fn vehicle(args, context) {
         // we can do something fancy or be very lazy instead and still use macros
         ret += "faction = TEMPLATE_FACTION;\n";
         ret += "side = TEMPLATE_SIDE;\n";
-        ret += "textureList[] = {\"" + camo + "\"};\n";
+        ret += "textureList[] = {\"" + camo + "\",1};\n";
 
         if args.len() == 3 {
             ret += "crew = QCLASS(" + crew + ");\n";
