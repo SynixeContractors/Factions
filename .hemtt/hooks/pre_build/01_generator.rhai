@@ -278,6 +278,40 @@ fn assigned(value) {
 
     return ret;
 }
+fn vehicle(args, context) {
+    if args.len() < 2 {
+        fatal("Vehicles macro requires more than 2 arguments");
+    }
+    let camo = args[1];
+    let vehicle_class = args[0];
+    let crew = "";
+    if args.len() == 3 {
+        crew = args[2];
+    }
+
+    let vehicle_list = [vehicle_class];
+    let vehicle_source = load_json("vehicles");
+    if vehicle_class in vehicle_source {
+        vehicle_list = vehicle_source[vehicle_class];
+    }
+
+    let ret = "";
+    for vehicle in vehicle_list {
+        ret += "\nclass GCLASS(" + vehicle +");\n";
+        ret += "class CLASS(" + vehicle + "): GCLASS(" + vehicle +") {\n";
+        // we can do something fancy or be very lazy instead and still use macros
+        ret += "faction = TEMPLATE_FACTION;\n";
+        ret += "side = TEMPLATE_SIDE;\n";
+        ret += "textureList[] = {\"" + camo + "\"};\n";
+
+        if args.len() == 3 {
+            ret += "crew = QCLASS(" + crew + ");\n";
+        }
+
+        ret += "};";
+    }
+    return ret;
+}
 
 fn groups(args, context) {
     if args.len() != 2 {
@@ -579,6 +613,9 @@ respawnLinkedItems[] = {};
         }
         "Names" => {
             return names(args);
+        }
+        "Vehicle" => {
+            return vehicle(args, context);
         }
         "For" => {
             fatal("@For must be paired with @EndFor");
