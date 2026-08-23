@@ -278,9 +278,21 @@ fn assigned(value) {
 
     return ret;
 }
-fn vehicle(args, context) {
+fn vehicle_assign(args, context) {
+    print(args);
     if args.len() < 2 {
-        fatal("Vehicles macro requires more than 2 arguments");
+        fatal("VehiclesAssign macro requires more than 1 arguments");
+    }
+    let faction = args[0];
+    let side = args[1];
+    context["faction"] = faction;
+    context["side"] = side;
+    return context;
+}
+fn vehicle(args, context) {
+    print(context);
+    if args.len() < 2 {
+        fatal("Vehicles macro requires more than 1 arguments");
     }
     let camo = args[1];
     let vehicle_class = args[0];
@@ -294,14 +306,14 @@ fn vehicle(args, context) {
     if vehicle_class in vehicle_source {
         vehicle_list = vehicle_source[vehicle_class];
     }
-
+    print(vehicle_list);
     let ret = "";
     for vehicle in vehicle_list {
         ret += "\nclass GCLASS(" + vehicle +");\n";
         ret += "class CLASS(" + vehicle + "): GCLASS(" + vehicle +") {\n";
         // we can do something fancy or be very lazy instead and still use macros
-        ret += "faction = TEMPLATE_FACTION;\n";
-        ret += "side = TEMPLATE_SIDE;\n";
+        ret += "faction = " + context["faction"] + ";\n";
+        ret += "side = " + context["side"] + ";\n";
         ret += "textureList[] = {\"" + camo + "\",1};\n";
 
         if args.len() == 3 {
@@ -505,11 +517,21 @@ fn parse_macro_args(line) {
         args = parse_json_array(line.sub_string(args_start, json_end - args_start));
     } else {
         let args_end = line.index_of(')', args_start);
+	if line[args_end - 1] == "\\" {
+	    print("backslash found at " + args_end);
+	    args_end = line.index_of(')', args_end + 1);
+	    print("new args_end = " + args_end);
+	    print(line);
+	}
         if args_end == -1 {
             fatal("Macro does not have closing parenthesis: " + line);
         }
         for a in line.sub_string(args_start, args_end - args_start).split(",") {
             a.trim();
+	    a.replace("\\)",")");
+	    // this is just so it doesnt look ridiculous with one escaped paranthesis
+	    // QPCLASS(something\) => QPCLASS\(something\)
+	    a.replace("\\(","(");
             if a != "" {
                 args.push(a);
             }
@@ -616,6 +638,9 @@ respawnLinkedItems[] = {};
         }
         "Vehicle" => {
             return vehicle(args, context);
+        }
+	"VehicleAssign" => {
+	    return vehicle_assign(args, context);
         }
         "For" => {
             fatal("@For must be paired with @EndFor");
@@ -747,6 +772,8 @@ fn process_lines(lines, start_index, variables) {
     let index = start_index;
     let context = #{
         group_side: "",
+	faction: "",
+	side: "",
     };
     while index < lines.len() {
         let line = lines[index];
@@ -796,7 +823,13 @@ fn process_lines(lines, start_index, variables) {
             
             // Apply variable substitution to macro text before parsing
             let substituted_macro = replace_placeholder(macro_text, variables);
-            replacement += parse_macro(substituted_macro, context) + "\n";
+	    // terrible terrible hack to persist context
+	    let incoming = parse_macro(substituted_macro, context);
+	    if type_of(incoming) == "map" {
+		context = incoming;
+	    } else {
+		replacement += incoming + "\n";
+	    }
             index = end_index;
         } else {
             // Regular line - apply variable substitution

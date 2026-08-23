@@ -1,7 +1,5 @@
 class CfgVehicles {
-    #define TEMPLATE_FACTION QPCLASS(t2_blufor)
-    #define TEMPLATE_SIDE 1
-
+    @VehicleAssign(QPCLASS\(t2_blufor\),1)
     @Vehicle(puma_military,Karzeg_01,HeliPilot)
     @Vehicle(Pandur,Karzeg_01,Crewman)
 
