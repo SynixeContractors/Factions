@@ -31,7 +31,28 @@ class CfgEditorSubcategories {
     class GCLASS(army_airborne) {
         displayName = "Men (Army - Airborne)";
     };
+
+    // Campaign
+
     class GCLASS(story) {
         displayName = "Men (Story)";
+    };
+    class GCLASS(joldermark) {
+        displayName = "Men (Joldermark)";
+    };
+    class GCLASS(nordveld) {
+        displayName = "Men (Nordveld)";
+    };
+    class GCLASS(sfor) {
+        displayName = "Men (SFOR)";
+    };
+    class GCLASS(politie) {
+        displayName = "Men (Politie)";
+    };
+    class GCLASS(dbg) {
+        displayName = "Men (de Boer Group)";
+    };
+    class GCLASS(heifung) {
+        displayName = "Men (Hei Fung)";
     };
 };

@@ -39,10 +39,6 @@ workshop = [
     "synixe:@theseus_services",
     "synixe:@toh_characters",
     "synixe:@ws",
-
-    "2950257727", # Yulakia
-    "583496184", # CUP Terrains - Core
-    "623475643", # 3den enhanced
 ]
 
 [hemtt.launch.maps]

@@ -1,7 +1,10 @@
-class CfgVehicles {
+class PCLASS2(SIDE,Base);
+class CLASS2(SIDE,Base): PCLASS2(SIDE,Base) {
+    #define TEMPLATE_FACTION QPCLASS(SIDE_FACTION)
+    #define TEMPLATE_SIDE SIDE_NUMBER
+    #undef TEMPLATE_FACTION
+    #undef TEMPLATE_SIDE
 
-    class PCLASS(Base);
-    class CLASS(Base): PCLASS(Base) {
         displayName = "Joldermark story base";
         editorSubcategory = QGCLASS(story);
         
@@ -9,7 +12,7 @@ class CfgVehicles {
 
     };
 
-    class CLASS(Anton): CLASS(Base) {
+    class CLASS2(SIDE,Anton): CLASS2(SIDE,Base) {
         @Role(Anton);
 
         identityTypes[] = {
@@ -59,7 +62,7 @@ class CfgVehicles {
         });
     };
 
-        class CLASS(Raymond): CLASS(Base) {
+        class CLASS2(SIDE,Raymond): CLASS2(SIDE,Base) {
         @Role(Raymond);
 
         identityTypes[] = {
@@ -76,7 +79,7 @@ class CfgVehicles {
 
         @Uniforms({
             "variants": {
-                "tacs_Suit_VIP": 1
+                "U_C_FormalSuit_01_tshirt_gray_F": 1
             },
             "packs": [
                 "rifleman_medical",
@@ -104,7 +107,7 @@ class CfgVehicles {
         });
     };
     
-    class CLASS(Bart): CLASS(Base) {
+    class CLASS2(SIDE,Bart): CLASS2(SIDE,Base) {
         @Role(Bart);
 
         identityTypes[] = {
@@ -152,7 +155,7 @@ class CfgVehicles {
         });
     };
 
-    class CLASS(Peter): CLASS(Base) {
+    class CLASS2(SIDE,Peter): CLASS2(SIDE,Base) {
         @Role(Peter);
 
         identityTypes[] = {
@@ -201,7 +204,7 @@ class CfgVehicles {
         });
     };
 
-    class CLASS(Ludwig): CLASS(Base) {
+    class CLASS2(SIDE,Ludwig): CLASS2(SIDE,Base) {
         @Role(Ludwig);
 
         identityTypes[] = {
@@ -249,7 +252,7 @@ class CfgVehicles {
         });
     };
 
-    class CLASS(Sjoerd): CLASS(Base) {
+    class CLASS2(SIDE,Sjoerd): CLASS2(SIDE,Base) {
         @Role(Sjoerd);
 
         identityTypes[] = {
@@ -298,7 +301,7 @@ class CfgVehicles {
         });
     };
 
-    class CLASS(Jorn): CLASS(Base) {
+    class CLASS2(SIDE,Jorn): CLASS2(SIDE,Base) {
         @Role(Jorn);
 
         identityTypes[] = {
@@ -346,6 +349,3 @@ class CfgVehicles {
             },
         });
     };
-
-
-};

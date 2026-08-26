@@ -117,34 +117,8 @@
         "displayName": "Ng Chi-Ming"
     },
 
-    "Bart": {
-        "displayName": "Bart Smeets"
-    },
-
-    "Peter": {
-        "displayName": "Peter Balkenende"
-    },
-
-    "Ludwig": {
-        "displayName": "Ludwig Meijer"
-    },
-
-    "Sjoerd": {
-        "displayName": "Sjoerd Koster"
-    },
-
-    "Jorn": {
-        "displayName": "Jorn Wessels"
-    },
-
-    // Story
-
-    "Anton": {
-        "displayName": "Anton van der Merwe"
-    },
-
-    "Raymond": {
-        "displayName": "Ng Chi-Ming"
+    "Trafficker": {
+        "displayName": "Trafficker"
     },
 
     "Bart": {
@@ -166,4 +140,20 @@
     "Jorn": {
         "displayName": "Jorn Wessels"
     },
+
+    "Politie_U": {
+        "displayName": "Politie (Unarmed)"
+    },
+
+    "Politie": {
+        "displayName": "Politie (Pistol)"
+    },
+
+    "Politie_SMG": {
+        "displayName": "Politie (SMG)"
+    },
+
+    "Politie_SG": {
+        "displayName": "Politie (Shotgun)"
+    }
 }
