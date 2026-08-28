@@ -279,7 +279,6 @@ fn assigned(value) {
     return ret;
 }
 fn vehicle_assign(args, context) {
-    print(args);
     if args.len() < 2 {
         fatal("VehiclesAssign macro requires more than 1 arguments");
     }
@@ -287,10 +286,17 @@ fn vehicle_assign(args, context) {
     let side = args[1];
     context["faction"] = faction;
     context["side"] = side;
+    if (args.len == 3) {
+        let class_placeholder = args[2];
+        context["class_placeholder"] = class_placeholder;
+        print("setting class placeholder = " + class_placeholder);
+    } else {
+        // clear
+        context["class_placeholder"] = "";
+    }
     return context;
 }
 fn vehicle(args, context) {
-    print(context);
     if args.len() < 2 {
         fatal("Vehicles macro requires more than 1 arguments");
     }
@@ -300,17 +306,25 @@ fn vehicle(args, context) {
     if args.len() == 3 {
         crew = args[2];
     }
+    let class_placeholder = context["class_placeholder"];
 
     let vehicle_list = [vehicle_class];
     let vehicle_source = load_json("vehicles");
     if vehicle_class in vehicle_source {
         vehicle_list = vehicle_source[vehicle_class];
     }
-    print(vehicle_list);
+
     let ret = "";
     for vehicle in vehicle_list {
-        ret += "\nclass GCLASS(" + vehicle +");\n";
-        ret += "class CLASS(" + vehicle + "): GCLASS(" + vehicle +") {\n";
+        if (class_placeholder == "") {
+            ret += "\nclass GCLASS(" + vehicle +");\n";
+            ret += "class CLASS(" + vehicle + ")";
+        } else {
+            class_placeholder.replace("%",vehicle);
+            ret += class_placeholder;
+        }
+        ret+= ": GCLASS(" + vehicle +") {\n";
+
         // we can do something fancy or be very lazy instead and still use macros
         ret += "faction = " + context["faction"] + ";\n";
         ret += "side = " + context["side"] + ";\n";
@@ -516,17 +530,18 @@ fn parse_macro_args(line) {
         }
         args = parse_json_array(line.sub_string(args_start, json_end - args_start));
     } else {
-        let args_end = line.index_of(')', args_start);
-        if line[args_end - 1] == "\\" {
+        let args_end = line.index_of(')', args_start);;
+        while (line[args_end - 1] == "\\" && args_end > 0) {
             print("backslash found at " + args_end);
             args_end = line.index_of(')', args_end + 1);
             print("new args_end = " + args_end);
             print(line);
         }
+
         if args_end == -1 {
             fatal("Macro does not have closing parenthesis: " + line);
         }
-        for a in line.sub_string(args_start, args_end - args_start).split(",") {
+        for a in split_escaped(line.sub_string(args_start, args_end - args_start),",") {
             a.trim();
             a.replace("\\)",")");
             // this is just so it doesnt look ridiculous with one escaped paranthesis
@@ -538,6 +553,42 @@ fn parse_macro_args(line) {
         }
     }
     return args;
+}
+
+fn split_escaped(input, delimiter) {
+    let tokens = [];
+    let current = "";
+    let i = 0;
+    let len = input.len;
+
+    while i < len {
+        let ch = input.sub_string(i, 1);
+
+        if ch == "\\" {
+            // Check if there is a next character
+            if i + 1 < len {
+                let next_ch = input.sub_string(i + 1, 1);
+
+                // If it escapes the delimiter or another backslash, consume it
+                if next_ch == delimiter || next_ch == "\\" {
+                    current += next_ch;
+                    i += 2; // Skip both the backslash and the escaped char
+                    continue;
+                }
+            }
+        }
+
+        if ch == delimiter {
+            tokens.push(current);
+            current = "";
+        } else {
+            current += ch;
+        }
+        i += 1;
+    }
+
+    tokens.push(current); // Push the final token
+    return tokens;
 }
 
 fn parse_macro(line, context) {
@@ -774,6 +825,7 @@ fn process_lines(lines, start_index, variables) {
         group_side: "",
         faction: "",
         side: "",
+        class_placeholder: "",
     };
     while index < lines.len() {
         let line = lines[index];
