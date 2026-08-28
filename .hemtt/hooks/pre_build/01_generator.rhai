@@ -54,16 +54,16 @@ fn parse_json_array(json_str) {
     let in_string = false;
     let current = "";
     let i = 0;
-    
+
     // Skip opening [
     while i < json_str.len() && json_str[i] != '[' {
         i += 1;
     }
     i += 1;
-    
+
     while i < json_str.len() {
         let char = json_str[i];
-        
+
         if char == '[' {
             // Determine where the array ends, then recursively parse it
             let depth = 1;
@@ -114,10 +114,10 @@ fn parse_json_array(json_str) {
         } else {
             current += char;
         }
-        
+
         i += 1;
     }
-    
+
     return result;
 }
 
@@ -234,7 +234,7 @@ fn weapon(name, value) {
             ret += probability_list(name + attachment, value[key]) + "\n";
         }
     }
-    
+
     return ret;
 }
 
@@ -501,7 +501,7 @@ fn replace_placeholder(text, variables) {
 fn parse_macro_args(line) {
     let args_start = 0;
     let args = [];
-    
+
     // Determine argument format and parse accordingly
     if line[args_start] == "{" {
         let json_end = line.index_of("});");
@@ -517,21 +517,21 @@ fn parse_macro_args(line) {
         args = parse_json_array(line.sub_string(args_start, json_end - args_start));
     } else {
         let args_end = line.index_of(')', args_start);
-	if line[args_end - 1] == "\\" {
-	    print("backslash found at " + args_end);
-	    args_end = line.index_of(')', args_end + 1);
-	    print("new args_end = " + args_end);
-	    print(line);
-	}
+        if line[args_end - 1] == "\\" {
+            print("backslash found at " + args_end);
+            args_end = line.index_of(')', args_end + 1);
+            print("new args_end = " + args_end);
+            print(line);
+        }
         if args_end == -1 {
             fatal("Macro does not have closing parenthesis: " + line);
         }
         for a in line.sub_string(args_start, args_end - args_start).split(",") {
             a.trim();
-	    a.replace("\\)",")");
-	    // this is just so it doesnt look ridiculous with one escaped paranthesis
-	    // QPCLASS(something\) => QPCLASS\(something\)
-	    a.replace("\\(","(");
+            a.replace("\\)",")");
+            // this is just so it doesnt look ridiculous with one escaped paranthesis
+            // QPCLASS(something\) => QPCLASS\(something\)
+            a.replace("\\(","(");
             if a != "" {
                 args.push(a);
             }
@@ -565,7 +565,7 @@ fn parse_macro(line, context) {
             if args.len() != 0 {
                 fatal("Templated macro requires no arguments");
             }
-            ret = 
+            ret =
 `
 weapons[] = {"Throw","Put"};
 respawnWeapons[] = {"Throw","Put"};
@@ -639,8 +639,8 @@ respawnLinkedItems[] = {};
         "Vehicle" => {
             return vehicle(args, context);
         }
-	"VehicleAssign" => {
-	    return vehicle_assign(args, context);
+        "VehicleAssign" => {
+            return vehicle_assign(args, context);
         }
         "For" => {
             fatal("@For must be paired with @EndFor");
@@ -665,7 +665,7 @@ fn find_block(lines, line_index, target) {
         }
         for_body_end += 1;
     }
-    
+
     if for_body_end >= lines.len() {
         fatal("Could not find " + target);
     }
@@ -682,13 +682,13 @@ fn parse_complete_macro(lines, start_index) {
     let depth = 0;
     let macro_text = "";
     let line_index = start_index;
-    
+
     while line_index < lines.len() {
         let macro_line = lines[line_index];
         let macro_line = strip_comments(macro_line);
         macro_line.trim();
         macro_text += macro_line;
-        
+
         for char in macro_line.chars() {
             if char == '(' {
                 depth += 1;
@@ -696,13 +696,13 @@ fn parse_complete_macro(lines, start_index) {
                 depth -= 1;
             }
         }
-        
+
         if depth == 0 {
             break;
         }
         line_index += 1;
     }
-    
+
     return [macro_text, line_index];
 }
 
@@ -759,7 +759,7 @@ fn process_block_iterations(block, parent_variables, iteration_items, iter_type)
         } else {
             item_vars = build_item_variables(item);
         }
-        
+
         let merged_vars = merge_variables(parent_variables, item_vars);
         let processed_body = process_lines(block, 0, merged_vars);
         result += processed_body;
@@ -772,8 +772,8 @@ fn process_lines(lines, start_index, variables) {
     let index = start_index;
     let context = #{
         group_side: "",
-	faction: "",
-	side: "",
+        faction: "",
+        side: "",
     };
     while index < lines.len() {
         let line = lines[index];
@@ -788,17 +788,17 @@ fn process_lines(lines, start_index, variables) {
         } else if line == "class CIV {" {
             context["group_side"] = "CIV";
         }
-        
+
         if line.starts_with("@ForSides(") {
             // Parse @ForSides and get the sides to iterate
             let parsed = parse_complete_macro(lines, index);
             let macro_text = parsed[0];
             let end_index = parsed[1];
-            
+
             let args_line = macro_text.sub_string(macro_text.index_of('(') + 1);
             let args = parse_macro_args(args_line);
             let block = find_block(lines, end_index, "@EndForSides");
-            
+
             replacement += process_block_iterations(block[0], variables, args, "ForSides");
             index = block[1];
         } else if line.starts_with("@For(") {
@@ -806,13 +806,13 @@ fn process_lines(lines, start_index, variables) {
             let parsed = parse_complete_macro(lines, index);
             let macro_text = parsed[0];
             let end_index = parsed[1];
-            
+
             let args_start = macro_text.index_of('(') + 1;
             let args_end = macro_text.index_of(')');
             let raw_json = macro_text.sub_string(args_start, args_end - args_start);
             let items = parse_for_items(raw_json);
             let block = find_block(lines, end_index, "@EndFor");
-            
+
             replacement += process_block_iterations(block[0], variables, items, "For");
             index = block[1];
         } else if line.starts_with("@") {
@@ -820,16 +820,16 @@ fn process_lines(lines, start_index, variables) {
             let parsed = parse_complete_macro(lines, index);
             let macro_text = parsed[0];
             let end_index = parsed[1];
-            
+
             // Apply variable substitution to macro text before parsing
             let substituted_macro = replace_placeholder(macro_text, variables);
-	    // terrible terrible hack to persist context
-	    let incoming = parse_macro(substituted_macro, context);
-	    if type_of(incoming) == "map" {
-		context = incoming;
-	    } else {
-		replacement += incoming + "\n";
-	    }
+            // terrible terrible hack to persist context
+            let incoming = parse_macro(substituted_macro, context);
+            if type_of(incoming) == "map" {
+                context = incoming;
+            } else {
+                replacement += incoming + "\n";
+            }
             index = end_index;
         } else {
             // Regular line - apply variable substitution
@@ -852,7 +852,7 @@ fn process_lines(lines, start_index, variables) {
         }
         index += 1;
     }
-    
+
     return replacement;
 }
 
@@ -867,7 +867,7 @@ for addon in addons {
     for file in files {
         let content = file.open_file().read();
         let lines = content.split("\n");
-        
+
         // Check if file needs processing
         let touched = false;
         for line in lines {
@@ -877,7 +877,7 @@ for addon in addons {
                 break;
             }
         }
-        
+
         if touched {
             debug("Processing file: " + file);
             let replacement = process_lines(lines, 0, #{});
