@@ -1,6 +1,6 @@
-textureList[] = {"Black_US",1,"Grey",1};
+textureList[] = {"Black",1,"Grey",1};
 class TextureSources {
-    class Black_US {
+    class Black {
         displayName = "Black";
         textures[] = {"\x\tacs\addons\variants_melb\data\melb_black_ext_co.paa","melb\data\decals\sn\blank_ca.paa"};
         factions[] = {};
