@@ -122,4 +122,10 @@
             ["ACE_NVG_Wide_Black_WP", 1]
         ]
     },
+    "leader_smoke": {
+        "magazines": [
+            ["SmokeShellRed", 1],
+            ["SmokeShellPurple", 1],
+        ]
+    },
 }
