@@ -327,20 +327,21 @@ fn groups(args, context) {
     }
     let group_source = load_json("groups/" + tier_file);
     for section in group_source.groups {
-        if !(match_type in section.types) {
-            // probably an identity
+	let group_type = match_type;
+        if !(group_type in section.types) {
+            // might be an identity
 	    // this check could potentially be better for build time
 	    // if we load identities and check against them
-            let parts = match_type.split("_");
-            match_type = "";
+            let parts = group_type.split("_");
+            group_type = "";
             for i in 0..parts.len() - 1 {
                 if i > 0 {
-                    match_type += "_";
+                    group_type += "_";
                 }
-                match_type += parts[i];
+                group_type += parts[i];
             }
         }
-        if match_type in section.types {
+        if group_type in section.types {
             for group in section.groups {
                 ret += "class CLASS(" + group.class + ")";
                 if "parent" in group {
