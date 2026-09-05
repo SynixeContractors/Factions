@@ -1,0 +1,102 @@
+{
+    "puma_military": [
+        "Cougar",
+        "Cougar_Armed",
+        "Cougar_Pylon",
+        "PumaM",
+        "PumaT",
+    ],
+    "puma_civilian": [
+        "Cougar_Rescue",
+        "Puma",
+        "PumaA",
+    ],
+    "fa181": [
+        "FA181",
+        "FA181_Stealth",
+    ],
+    "m2": [
+        "M2_High",
+        "M2_Low",
+    ],
+    "wildcat": [
+        "Wildcat",
+        "Wildcat_Pylons",
+    ],
+    "hemtt":[
+        "HEMTT",
+        "HEMTT_Ammo",
+        "HEMTT_Bench",
+        "HEMTT_Cargo",
+        "HEMTT_Container",
+        "HEMTT_Covered",
+        "HEMTT_FireTruck",
+        "HEMTT_Flatbed",
+        "HEMTT_Fuel",
+        "HEMTT_Medical",
+        "HEMTT_Repair",
+    ],
+    "offroad_civilian": [
+        "Offroad",
+        "Offroad_Comms",
+        "Offroad_Covered",
+        "Offroad_Services",
+    ],
+    "sam01": [
+        "Radar01",
+        "SAM01",
+    ],
+    "ship": [
+        "Ship_BoxARH",
+        "Ship_BoxIR",
+        "Ship_CIWS",
+        "Ship_Gun",
+        "Ship_VLS",
+    ],
+    "merkava": [
+        "Merkava",
+        "Merkava_TUSK",
+    ],
+    "merkava_spg": [
+        "Merkava_MLRS",
+        "Merkava_SPG",
+    ],
+    "namer": [
+        "Namer",
+        "Namer_AA",
+        "Namer_CEV",
+        "Namer_RCWS",
+    ],
+    "fennek": [
+        "Fennek",
+        "Fennek_HMG",
+        "Fennek_GMG",
+    ],
+    "polaris": [
+        "Polaris",
+        "Polaris_NoDoor",
+        "Polaris_Titan",
+        "Polaris_HMG",
+    ],
+    "ram_civilian": [
+        "Ram",
+        "Ram_Covered",
+        "Ram_Comms",
+        "Ram_Fuel",
+    ],
+    "ram_armed": [
+        "Ram_HMG",
+        "Ram_MMG",
+    ],
+    "ram_advanced": [
+        "Ram_AA",
+        "Ram_RCWS",
+        "Ram_M134",
+        "Ram_MRL",
+        "Ram_AT",
+    ],
+    "ram_rocket": [
+        "Ram_Rocket",
+    ],
+
+}
