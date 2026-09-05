@@ -44,7 +44,7 @@ class CLASS(C130): GCLASS(C130) {
     faction = QPCLASS(t3_indep);
     side = 2;
     textureList[] = {"GenBlue",1};
-    editorPreview = "\A3\EditorPreviews_F\Data\CfgVehicles\I_MBT_03_cannon_F.jpg";
+    editorPreview = "\A3_Aegis\EditorPreviews_F_Aegis\Data\CfgVehicles\B_A_Plane_Transport_01_infantry_F.jpg";
     crew = QCLASS(HeliPilot);
     typicalCargo[] = {QCLASS(HeliPilot), QCLASS(HeliPilot), QCLASS(HeliPilot)};
 };
