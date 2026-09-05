@@ -412,11 +412,7 @@ class CLASS2(SIDE,HeliPilot): CLASS2(SIDE,Base) {
 
     @Primary({
         "weapons": {
-            "": {
-                "magazinesVest": {
-                    "": 0,
-                }
-            },
+            "": 1,
         },
     });
 };
