@@ -1,4 +1,18 @@
 {
+    "AllFrench": {
+        "identityTypes": [
+            "Head_African",
+            "lxWS_Head_African",
+            "Head_Tanoan",
+            "Head_Russian",
+            "Head_TK",
+            "Head_Euro",
+            "Head_NATO",
+            "Head_Asian",
+            "LanguageFre_F",
+        ],
+        "genericNames": "French"
+    },
     "Synixe": {
         "generic": false,
         "displayName": "Synixe Contractors",
