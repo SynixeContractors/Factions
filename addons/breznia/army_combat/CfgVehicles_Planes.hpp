@@ -35,7 +35,7 @@ class CLASS(Shahpar): GCLASS(Shahpar) {
     side = 2;
     textureList[] = {"Rus",1};
     editorPreview = "\A3\EditorPreviews_F\Data\CfgVehicles\O_UAV_02_dynamicLoadout_F.jpg";
-    crew = QCLASS(FighterPilot);
+    crew = "C_UAV_AI_F";
 };
 
 class GCLASS(C130);
