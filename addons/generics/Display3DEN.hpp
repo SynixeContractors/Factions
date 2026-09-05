@@ -16,7 +16,7 @@ class Display3DEN {
                                     h = "safezoneH - ((5 + (5 + 2) + (5 + 1) + 10) + 21 + 5 + (5 + 2) + (5 + 2)) * (pixelH * pixelGrid * 0.50)";
                                 };
                                 class SearchCreate: ctrlEdit {
-                                    onKeyDown = QUOTE(_this call FUNC(onSearchCreateKeyDown););
+                                    onKeyDown = QUOTE(call FUNC(onSearchCreateKeyDown););
                                 };
                                 class GVAR(identitySelect): ctrlControlsGroupNoScrollbars {
                                     h = "(5 + 2) * (pixelH * pixelGrid * 0.50)";
