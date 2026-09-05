@@ -9,7 +9,7 @@
         "Aegis_srifle_SVD_f": {
             "probability": 3,
             "magazinesBackpack": {
-                 "10Rnd_762x54_Mag": 8,
+                "10Rnd_762x54_Mag": 8,
             },
         },
         "arifle_SLR_lxWS": {

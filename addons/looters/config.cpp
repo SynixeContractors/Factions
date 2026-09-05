@@ -3,27 +3,7 @@
 class CfgPatches {
     class DOUBLES(ADDON,SUBCOMPONENT) {
         name = QUOTE(DOUBLES(COMPONENT,SUBCOMPONENT));
-        units[] = {
-            @ForSides(OPFOR,BLUFOR,INDEP)
-                @For(Identities)
-                    QCLASS($1_$UPPER_Arid_Looter),
-                    QCLASS($1_$UPPER_Arid_LooterPistol),
-                    QCLASS($1_$UPPER_Arid_Hunter),
-                    QCLASS($1_$UPPER_Boreal_Looter),
-                    QCLASS($1_$UPPER_Boreal_LooterPistol),
-                    QCLASS($1_$UPPER_Boreal_Hunter),
-                    QCLASS($1_$UPPER_Cold_Looter),
-                    QCLASS($1_$UPPER_Cold_LooterPistol),
-                    QCLASS($1_$UPPER_Cold_Hunter),
-                    QCLASS($1_$UPPER_Desert_Looter),
-                    QCLASS($1_$UPPER_Desert_LooterPistol),
-                    QCLASS($1_$UPPER_Desert_Hunter),
-                    QCLASS($1_$UPPER_Tropic_Looter),
-                    QCLASS($1_$UPPER_Tropic_LooterPistol),
-                    QCLASS($1_$UPPER_Tropic_Hunter),
-                @EndFor
-            @EndForSides
-        };
+        units[] = {};
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
@@ -40,6 +20,7 @@ class synixe_factions_generics {
     @EndForSides
 };
 
-#include "CfgVehicles.hpp"
 #include "CfgEditorSubcategories.hpp"
 #include "CfgFactionClasses.hpp"
+#include "CfgGroups.hpp"
+#include "CfgVehicles.hpp"

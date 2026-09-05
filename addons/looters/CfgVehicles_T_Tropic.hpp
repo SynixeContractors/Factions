@@ -56,33 +56,7 @@ class CLASS2(SIDE,Tropic): CLASS2(Base,NATION) {
         "G_Spectacles_Tinted": 1,
     });
 
-    @Backpacks({
-        "variants": {
-            "B_AssaultPack_blk": 1,
-            "B_AssaultPack_rgr": 1,
-            "B_FieldPack_blk": 1,
-            "B_FieldPack_khk": 1,
-            "B_TacticalPack_blk": 1,
-            "B_TacticalPack_oli": 1,
-            "B_CivilianBackpack_01_Everyday_Astra_F": 1,
-            "B_CivilianBackpack_01_Everyday_Black_F": 1,
-            "B_CivilianBackpack_01_Everyday_Vrana_F": 1,
-            "B_CivilianBackpack_01_Sport_Blue_F": 1,
-            "B_CivilianBackpack_01_Sport_Red_F": 1,
-            "B_DuffleBag_MTP_RF": 1,
-            "B_DuffleBag_Black_RF": 1,
-            "B_DuffleBag_Blue_RF": 1,
-            "B_DuffleBag_Sand_RF": 1,
-            "B_DuffleBag_Olive_RF": 1,
-            "B_LegStrapBag_black_F": 1,
-            "B_LegStrapBag_coyote_F": 1,
-            "B_LegStrapBag_olive_F": 1,
-            "B_Messenger_Black_F": 1,
-            "B_Messenger_Coyote_F": 1,
-            "B_Messenger_Gray_F": 1,
-            "B_Messenger_Olive_F": 1,
-        },
-    });
+    #include "weapons\backpack.hpp"
 };
 class CLASS2(SIDE,Tropic_Looter): CLASS2(SIDE,Tropic) {
     @Role(Rifleman);
