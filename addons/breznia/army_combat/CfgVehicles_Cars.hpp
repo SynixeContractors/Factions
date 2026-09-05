@@ -4,7 +4,7 @@ class CLASS(Ram): GCLASS(Ram) {
     faction = QPCLASS(t3_indep);
     side = 2;
     textureList[] = {"Green",1};
-    editorPreview = "";
+    editorPreview = "\lxRF\editorpreviews_rf\Data\CfgVehicles\B_T_Pickup_rf.jpg";
     crew = QCLASS(Rifleman);
     typicalCargo[] = {QCLASS(Rifleman)};
 };
