@@ -4,7 +4,7 @@ class CLASS(SU75): GCLASS(SU75) {
     faction = QPCLASS(t3_indep);
     side = 2;
     textureList[] = {"RUBlue",1};
-    editorPreview = "\A3\EditorPreviews_F_Jets\Data\Cfgvehicles\O_Plane_Fighter_02_F.jpg";
+    editorPreview = "\A3\EditorPreviews_F_Jets\Data\CfgVehicles\O_Plane_Fighter_02_F.jpg";
     crew = QCLASS(FighterPilot);
 };
 
