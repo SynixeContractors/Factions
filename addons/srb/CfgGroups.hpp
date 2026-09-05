@@ -2,7 +2,13 @@ class CfgGroups {
     class EAST {
         class CLASS(t4_opfor) {
             name = "[T4] Swift Response Battalions";
-            @Groups(T4,Militia);
+            @Groups(T4,Militia_OPFOR);
+        };
+    };
+    class INDEP {
+        class CLASS(t4_indep) {
+            name = "[T4] Swift Response Battalions";
+            @Groups(T4,Militia_INDEP);
         };
     };
 };
