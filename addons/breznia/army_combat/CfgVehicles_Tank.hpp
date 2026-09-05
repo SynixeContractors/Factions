@@ -15,7 +15,7 @@ class CLASS(T100): GCLASS(T100) {
     faction = QPCLASS(t3_indep);
     side = 2;
     textureList[] = {"Green",1};
-    editorPreview = "\A3\EditorPreviews_F\Data\CfgVehicles\I_MBT_03_cannon_F.jpg";
+    editorPreview = "\A3\EditorPreviews_F\Data\CfgVehicles\O_MBT_02_cannon_F.jpg";
     crew = QCLASS(Crewman);
     typicalCargo[] = {QCLASS(Crewman), QCLASS(Crewman), QCLASS(Crewman)};
 };
