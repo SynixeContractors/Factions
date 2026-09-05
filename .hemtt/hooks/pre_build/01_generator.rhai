@@ -705,7 +705,7 @@ fn build_item_variables(item) {
 fn process_block_iterations(block, parent_variables, iteration_items, iter_type) {
     let context = #{
     };
-    process_block_iterations(block, parent_variables, iteration_items, iter_type, context);
+    return process_block_iterations(block, parent_variables, iteration_items, iter_type, context);
 };
 fn process_block_iterations(block, parent_variables, iteration_items, iter_type, context) {
     let result = "";
