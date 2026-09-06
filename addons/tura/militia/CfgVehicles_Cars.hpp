@@ -140,7 +140,6 @@ class CLASS2(SIDE,Ram_AT): GCLASS(Ram_AT) {
 
 
 #define LUT_CIVILIAN_TEXTURES textureList[] = {\
-  "Indep",4,\
   "Black",1,\
   "Blue",1,\
   "Brown",1,\
