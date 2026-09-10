@@ -2,21 +2,21 @@ class CfgVehicles {
     #define TEMPLATE_FACTION QPCLASS(t3_indep)
     #define TEMPLATE_SIDE 2
     #include "../../../templates/statics/M2.hpp"
-    
+
     #define TEMPLATE_CAMO Hex
     #include "../../../templates/cars/Karatel.hpp"
     #include "../../../templates/planes/Yak130.hpp"
-    
+
     #undef TEMPLATE_CAMO
     #define TEMPLATE_CAMO Green
     #include "../../../templates/cars/Ram_Civilian.hpp"
     #include "../../../templates/cars/Ram_Advanced.hpp"
-    #include "../../../templates/cars/Ram_Armed.hpp"    
+    #include "../../../templates/cars/Ram_Armed.hpp"
     #include "../../../templates/cars/Ram_Rocket.hpp"
     #include "../../../templates/helicopters/Orca_Military.hpp"
 
     #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO AAF_Olive  
+    #define TEMPLATE_CAMO AAF_Olive
     #include "../../../templates/helicopters/Puma_Military.hpp"
 
     class PCLASS(Base);
@@ -44,12 +44,12 @@ class CfgVehicles {
         @Role(SquadLeader);
         #include "../weapons/Pistol.hpp"
         #include "../wear/Vest_teamleader.hpp"
-    };    
+    };
     class CLASS(Marksman): CLASS(Base) {
         @Role(Marksman);
         #include "../weapons/Marksman.hpp"
         #include "../wear/Vest_marksman.hpp"
-    };        
+    };
     class CLASS(Autorifleman): CLASS(Base) {
         @Role(Autorifleman);
         #include "../weapons/Lmg.hpp"
@@ -97,7 +97,7 @@ class CfgVehicles {
     class CLASS(AsstMachinegunner): CLASS(Base) {
         @Role(AsstMachinegunner);
         #include "../weapons/Rifleman.hpp"
-        #include "../wear/Backpack_machinegunner.hpp" 
+        #include "../wear/Backpack_machinegunner.hpp"
     };
     class CLASS(HeliPilot): CLASS(Base) {
         @Role(HeliPilot);
@@ -113,5 +113,5 @@ class CfgVehicles {
             ],
         });
         #include "../weapons/Pdw.hpp"
-    };                                                                                                
-};    
+    };
+};
