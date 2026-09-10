@@ -54,6 +54,16 @@ class CfgVehicles {
         uniformClass = QPCLASS(Uniform_Combat_RS_Synixe_BP_BB);
         hiddenSelectionsTextures[] = {QPATHTOF(clothing\data\uniform_combat_synixe_bp_bb_co.paa)};
     };
+    //djellaba
+    class WSLV_Black_yellow_Uniform;
+    class PCLASS(WSLV_Black_Synixe_Uniform): WSLV_Black_yellow_Uniform {
+        uniformClass = QPCLASS(WSLV_Black_Synixe);
+        hiddenSelectionsTextures[] = {
+            "\lxws\characters_f_lxws\data\nato\clothing1_black_co.paa",
+            QPATHTOF(clothing\data\djellaba_synixe.paa),
+            "lxws\characters_f_lxws\uniform\djellaba\data\lxWS_djellaba_pants_black_co.paa"
+        };
+    };
 
     #include "CfgVehicles_GroundItems.hpp"
 };

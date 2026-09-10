@@ -34,7 +34,6 @@ class CfgVehicles {
             "variants": {
                 "WSLV_Platecarrier_GRN_NF": 0.25,
                 "V_MU_PlateCarrier2_2_rgr": 0.25,
-                "V_PlateCarrier4_rgr_F": 0.5,
             },
             "magazines": {
                 "SmokeShell": 2,

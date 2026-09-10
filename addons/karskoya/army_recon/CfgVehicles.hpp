@@ -20,13 +20,12 @@ class CfgVehicles {
 
         @Vests({
             "variants": {
-                "Aegis_V_TacVest_RigB_camo_RF": 1,
+                "V_lxWS_TacVestIR_oli": 1,
                 "V_TacChestrig_grn_F": 1,
             },
             "packs": [
                 "t3_standard",
                 "military_standard",
-                "rifleman_medical",
             ],
         });
 
@@ -49,7 +48,7 @@ class CfgVehicles {
 
         @Primary({
             "weapons": {
-                "arifle_SPAR_02_blk_F": {
+                "JCA_arifle_M4A4_AFG_black_F": {
                     "magazinesVest": {
                         "30Rnd_556x45_Stanag_red": 7,
                     },
@@ -60,20 +59,10 @@ class CfgVehicles {
                 "optic_VRCO_RF": 1,
             },
             "pointers": {
-                "acc_pointer_IR": 1,
+                "Aegis_acc_pointer_DM": 1,
             },
             "muzzles": {
                 "muzzle_snds_M": 1,
-            },
-        });
-
-        @Secondary({
-            "weapons": {
-                "hgun_ACPC2_black_F": {
-                    "magazinesVest": {
-                        "9Rnd_45ACP_Mag": 2,
-                    },
-                },
             },
         });
 
@@ -104,7 +93,7 @@ class CfgVehicles {
 
         @Primary({
             "weapons": {
-                "arifle_SPAR_01_GL_blk_F": {
+                "JCA_arifle_M4A4_GL_black_F": {
                     "magazinesVest": {
                         "30Rnd_556x45_Stanag_red": 7,
                         "1Rnd_HE_Grenade_shell": 4,
@@ -118,23 +107,13 @@ class CfgVehicles {
                 "optic_VRCO_RF": 1,
             },
             "pointers": {
-                "acc_pointer_IR": 1,
+                "Aegis_acc_pointer_DM": 1,
             },
             "muzzles": {
                 "muzzle_snds_M": 1,
             },
         });
-
-        @Secondary({
-            "weapons": {
-                "hgun_ACPC2_black_F": {
-                    "magazinesVest": {
-                        "9Rnd_45ACP_Mag": 2,
-                    },
-                },
-            },
-        });
-    };
+};
 
     class CLASS(Autorifleman): CLASS(Base) {
         @Role(Autorifleman);
@@ -151,17 +130,7 @@ class CfgVehicles {
                 },
             },
             "pointers": {
-                "acc_pointer_IR": 1,
-            },
-        });
-
-        @Secondary({
-            "weapons": {
-                "hgun_ACPC2_black_F": {
-                    "magazinesVest": {
-                        "9Rnd_45ACP_Mag": 2,
-                    },
-                },
+                "Aegis_acc_pointer_DM": 1,
             },
         });
         
@@ -177,17 +146,17 @@ class CfgVehicles {
 
         @Primary({
             "weapons": {
-                "arifle_SPAR_03_blk_F": {
+                "JCA_arifle_SR25_black_F": {
                     "magazinesVest": {
-                        "20Rnd_762x51_Mag": 8,
+                        "JCA_20Rnd_762x51_SMAG": 8,
                     }
                 }
             },
             "optics": {
-                "optic_AMS": 1,
+                "JCA_optic_MRPS_black": 1,
             },
             "pointers": {
-                "acc_pointer_IR": 1,
+                "Aegis_acc_pointer_DM": 1,
             },
             "bipods": {
                 "bipod_01_F_blk": 1,
@@ -286,7 +255,7 @@ class CfgVehicles {
         
         @Primary({
             "weapons": {
-                "arifle_SPAR_02_blk_F": {
+                "JCA_arifle_M4A4_AFG_black_F": {
                     "magazinesVest": {
                         "30Rnd_556x45_Stanag_red": 7,
                     },
@@ -296,7 +265,7 @@ class CfgVehicles {
                 "optic_VRCO_RF": 1,
             },
             "pointers": {
-                "acc_pointer_IR": 1,
+                "Aegis_acc_pointer_DM": 1,
             },
             "muzzles": {
                 "muzzle_snds_M": 1,
@@ -319,7 +288,6 @@ class CfgVehicles {
             "packs": [
                 "t3_standard",
                 "military_standard",
-                "rifleman_medical",
             ],
         });
 

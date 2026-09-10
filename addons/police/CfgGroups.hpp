@@ -2,7 +2,7 @@ class CfgGroups {
     @ForSides(OPFOR,BLUFOR,INDEP,CIV)
     class $GROUP {
         class CLASS(SIDE) {
-            name = "Police";
+            name = "[T4] Police";
             @For(Identities)
             #define SIDE DOUBLES($1,$UPPER)
             class CLASS2(SIDE,Patrol) {

@@ -25,7 +25,6 @@ class CfgVehicles {
             },
             "packs": [
                 "military_standard",
-                "rifleman_medical",
             ],
         });
 
@@ -51,7 +50,7 @@ class CfgVehicles {
 
         @Primary({
             "weapons": {
-                "arifle_SPAR_02_blk_F": {
+                "JCA_arifle_M4A1_black_F": {
                     "probability": 1,
                     "magazinesVest": {
                         "30Rnd_556x45_Stanag_red": 7,
@@ -73,7 +72,7 @@ class CfgVehicles {
 
         @Primary({
             "weapons": {
-                "arifle_SPAR_01_GL_blk_F": {
+                "JCA_arifle_M4A1_GL_black_F": {
                     "probability": 1,
                     "magazinesVest": {
                         "30Rnd_556x45_Stanag_red": 7,
@@ -179,6 +178,18 @@ class CfgVehicles {
             "variants": {
                 "V_Safety_blue_F": 1,
                 "V_Safety_yellow_F": 1,
+            },
+        });
+
+        @Secondary({
+            "weapons": {
+                "": 0.85,
+                "hgun_Pistol_heavy_01_black_F": {
+                    "probability": 0.15,
+                    "magazinesVest": {
+                        "11Rnd_45ACP_Mag": 3,
+                    },
+                },
             },
         });
     };
