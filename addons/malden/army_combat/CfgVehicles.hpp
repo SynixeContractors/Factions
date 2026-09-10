@@ -26,25 +26,22 @@ class CfgVehicles {
 
         #include "../wear/Uniform.hpp"
         #include "../wear/Helmet.hpp"
+        #include "../weapons/Attachments_army.hpp"
+        #include "../wear/Vest_rifleman.hpp"
+        #include "../weapons/Rifleman.hpp"
         @Assigned(Military);
     };
     class CLASS(Rifleman): CLASS(Base) {
         @Role(Rifleman);
-        #include "../weapons/Rifleman.hpp"
-        #include "../weapons/Attachments_army.hpp"
-        #include "../wear/Vest_rifleman.hpp"
     };
     class CLASS(TeamLeader): CLASS(Base) {
         @Role(TeamLeader);
         #include "../weapons/Gl.hpp"
-        #include "../weapons/Attachments_army.hpp"
         #include "../weapons/Pistol.hpp"
         #include "../wear/Vest_grenadier.hpp"
     };
     class CLASS(SquadLeader): CLASS(Base) {
         @Role(SquadLeader);
-        #include "../weapons/Rifleman.hpp"
-        #include "../weapons/Attachments_army.hpp"
         #include "../weapons/Pistol.hpp"
         #include "../wear/Vest_teamleader.hpp"
     };    
@@ -62,67 +59,44 @@ class CfgVehicles {
     };
     class CLASS(Medic): CLASS(Base) {
         @Role(Medic);
-        #include "../weapons/Rifleman.hpp"
-        #include "../weapons/Attachments_army.hpp"
         #include "../wear/Vest_medic.hpp"
         #include "../wear/Backpack_medic.hpp"
     };
     class CLASS(Engineer): CLASS(Base) {
         @Role(Engineer);
-        #include "../weapons/Rifleman.hpp"
-        #include "../weapons/Attachments_army.hpp"
-        #include "../wear/Vest_rifleman.hpp"
         #include "../wear/Backpack_engineer.hpp"
     };
     class CLASS(RiflemanMAT): CLASS(Base) {
         @Role(RiflemanMAT);
-        #include "../weapons/Rifleman.hpp"
-        #include "../weapons/Attachments_army.hpp"
         #include "../weapons/Mat.hpp"
-        #include "../wear/Vest_rifleman.hpp"
         #include "../wear/Backpack.hpp"
     };
     class CLASS(RadioOperator): CLASS(Base) {
         @Role(RadioOperator);
-        #include "../weapons/Rifleman.hpp"
-        #include "../weapons/Attachments_army.hpp"
-        #include "../wear/Vest_rifleman.hpp"
         #include "../wear/Backpack_radio.hpp"
     };
     class CLASS(Demolitions): CLASS(Base) {
         @Role(Demolitions);
-        #include "../weapons/Rifleman.hpp"
-        #include "../weapons/Attachments_army.hpp"
-        #include "../wear/Vest_rifleman.hpp"
         #include "../wear/Backpack_demo.hpp"
     };
     class CLASS(RiflemanAA): CLASS(Base) {
         @Role(RiflemanAA);
-        #include "../weapons/Rifleman.hpp"
-        #include "../weapons/Attachments_army.hpp"
         #include "../weapons/Aa.hpp"
-        #include "../wear/Vest_rifleman.hpp"
         #include "../wear/Backpack.hpp"
     };
     class CLASS(RiflemanHAT): CLASS(Base) {
         @Role(RiflemanHAT);
-        #include "../weapons/Rifleman.hpp"
-        #include "../weapons/Attachments_army.hpp"
         #include "../weapons/Hat.hpp"
-        #include "../wear/Vest_rifleman.hpp"
         #include "../wear/Backpack.hpp"
     };
     class CLASS(Machinegunner): CLASS(Base) {
         @Role(Machinegunner);
         #include "../weapons/Mg.hpp"
-        #include "../wear/Vest_autorifleman.hpp"
         #include "../wear/Backpack_machinegunner.hpp"
     };
     class CLASS(AsstMachinegunner): CLASS(Base) {
         @Role(AsstMachinegunner);
         #include "../weapons/Rifleman.hpp"
-        #include "../weapons/Attachments_army.hpp"
-        #include "../wear/Vest_rifleman.hpp"
         #include "../wear/Backpack_machinegunner.hpp" 
     };
     class CLASS(HeliPilot): CLASS(Base) {
