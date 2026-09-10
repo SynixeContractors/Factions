@@ -24,15 +24,16 @@ class CLASS2(SIDE,Boreal): CLASS2(Base,NATION) {
             "U_I_L_Uniform_01_tshirt_skull_F": 1,
             "U_I_L_Uniform_01_tshirt_sport_F": 1,
         },
+        "packs": [
+            "t4_standard",
+            "civilian_medical"
+        ],
     });
 
     @Vests({
         "variants": {
             "": 1,
         },
-        "packs": [
-            "t4_standard",
-        ],
     });
 
     @Headgear({
