@@ -1,40 +1,30 @@
 class CfgVehicles {
-    #define TEMPLATE_FACTION QPCLASS(t2_blufor)
-    #define TEMPLATE_SIDE 1
-    #include "../../../templates/statics/M2.hpp"
-    #include "../../../templates/statics/Ship.hpp"
-    #define TEMPLATE_CAMO Desert
-    #include "../../../templates/statics/SAM01.hpp"
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO Karzeg_01
-    #include "../../../templates/apc/Pandur.hpp"
-    #include "../../../templates/helicopters/Puma_Military.hpp"
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO KZG_01
-    #include "../../../templates/tanks/Leopard.hpp"
-    #include "../../../templates/tanks/Merkava.hpp"
-    #include "../../../templates/tanks/Merkava_SPG.hpp"
-    #include "../../../templates/apc/Namer.hpp"
-    #include "../../../templates/cars/Fennek.hpp"
-    #include "../../../templates/cars/Polaris.hpp"
-    #include "../../../templates/cars/Ram_Civilian.hpp"
-    #include "../../../templates/cars/Ram_Armed.hpp"
-    #include "../../../templates/cars/Ram_Advanced.hpp"
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO KZG
-    #include "../../../templates/cars/Offroad_Civilian.hpp"
-    #include "../../../templates/cars/HEMTT.hpp"
-    #include "../../../templates/helicopters/Wildcat.hpp"
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO Khaybaran
-    #include "../../../templates/planes/FA181.hpp"
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO Default
-    #include "../../../templates/drones/MQ47.hpp"
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO Sand
-    #include "../../../templates/drones/MQ12.hpp"
+    @VehicleAssign(QPCLASS\(t2_blufor\),1)
+    @Vehicle(puma_military,Karzeg_01,HeliPilot)
+    @Vehicle(Pandur,Karzeg_01,Crewman)
 
+    @Vehicle(MQ12,Sand)
+    @Vehicle(fa181,Khaybaran,HeliPilot)
+    @Vehicle(sam01,Desert)
+
+    @Vehicle(m2,Default,Rifleman)
+    @Vehicle(MQ47,Default)
+    @Vehicle(ship,Default)
+
+    @Vehicle(wildcat,KZG,HeliPilot)
+    @Vehicle(hemtt,KZG,Rifleman)
+    @Vehicle(offroad_civilian,KZG,Rifleman)
+
+    @Vehicle(merkava,KZG_01,Crewman)
+    @Vehicle(merkava_spg,KZG_01,Crewman)
+    @Vehicle(namer,KZG_01,Crewman)
+    @Vehicle(Leopard2,KZG_01,Crewman)
+
+    @Vehicle(fennek,KZG_01,Rifleman)
+    @Vehicle(polaris,KZG_01,Rifleman)
+    @Vehicle(ram_civilian,KZG_01,Rifleman)
+    @Vehicle(ram_armed,KZG_01,Rifleman)
+    @Vehicle(ram_advanced,KZG_01,Rifleman)
 
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {
