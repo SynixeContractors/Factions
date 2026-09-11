@@ -89,6 +89,13 @@
             ["DemoCharge_Remote_Mag", 2]
         ]
     },
+    "ied": {
+        "magazines": [
+            ["IEDUrbanSmall_Remote_Mag", 1],
+            ["IEDUrbanSmall_Remote_Mag", 1],
+            ["IEDUrbanBig_Remote_Mag", 1],
+        ]
+    },
     "jtac": {
         "items": [
             ["Laserdesignator_04", 1],
