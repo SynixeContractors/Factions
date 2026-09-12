@@ -17,3 +17,5 @@ class CfgPatches {
 #include "CfgFactionClasses.hpp"
 #include "CfgGroups.hpp"
 #include "CfgVehicles.hpp"
+
+MAKE_FLAG(Khaybara,flag.paa);
