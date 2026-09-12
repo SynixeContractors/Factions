@@ -11,3 +11,16 @@ class CLASS(C130): GCLASS(C130) {
     textureList[] = {QUOTE(TEMPLATE_CAMO),1};
     #endif
 };
+class GCLASS(C130_cargo);
+class CLASS(C130_cargo): GCLASS(C130_cargo) {
+    SCOPE_DLC;
+    faction = TEMPLATE_FACTION;
+    side = TEMPLATE_SIDE;
+    crew = QCLASS(HeliPilot);
+    typicalCargo[] = {QCLASS(HeliPilot)};
+    #ifdef TEMPLATE_CAMO_LIST
+    textureList[] = TEMPLATE_CAMO_LIST;
+    #else
+    textureList[] = {QUOTE(TEMPLATE_CAMO),1};
+    #endif
+};
