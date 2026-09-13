@@ -7,4 +7,5 @@ class CfgVehicles {
         @Identity(Illianz);
         @Templated();
     };
+    MAKE_FLAGPOLE(Illanz,flag.paa);
 };

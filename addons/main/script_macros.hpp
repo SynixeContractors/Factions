@@ -109,3 +109,28 @@ class CLASS(VEHICLE##_##SIDE): GCLASS(##VEHICLE##) {      \
     crew = QCLASS2(CREW,SIDE);                            \
     editorSubcategory = QGCLASS(generics_##SIDE##_cars);  \
 }
+
+#define MAKE_FLAG(NAME,IMG_PATH) \
+class CfgMarkers { \
+class Flag; \
+class CLASS(flag): Flag { \
+    name = QUOTE(NAME); \
+    icon = QPATHTOF(IMG_PATH); \
+    texture = QPATHTOF(IMG_PATH); \
+    color[] = {1,1,1,1}; \
+    shadow = 0; \
+    SCOPE_DLC; \
+    markerClass = "Flags"; \
+    size = 32; \
+}; \
+}
+
+#define MAKE_FLAGPOLE(NAME,IMG_PATH) \
+class FlagCarrier; \
+class CLASS(flagpole): FlagCarrier { \
+   SCOPE_DLC; \
+   displayName = QUOTE(Flag (NAME)); \
+   class EventHandlers { \
+       init = QUOTE((_this select 0) setFlagTexture 'PATHTOF(IMG_PATH)'); \
+   }; \
+}
