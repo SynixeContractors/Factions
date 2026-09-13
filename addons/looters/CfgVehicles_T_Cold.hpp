@@ -23,6 +23,10 @@ class CLASS2(SIDE,Cold): CLASS2(Base,NATION) {
             "eou_gorka_12": 1,
             "eou_gorka_9": 1,
         },
+        "packs": [
+            "t4_standard",
+            "civilian_medical"
+        ],
     });
 
     @Vests({
@@ -33,9 +37,6 @@ class CLASS2(SIDE,Cold): CLASS2(Base,NATION) {
             "V_Pocketed_coyote_F": 1,
             "V_Pocketed_wdl_F": 1,
         },
-        "packs": [
-            "t4_standard",
-        ],
     });
 
     @Headgear({

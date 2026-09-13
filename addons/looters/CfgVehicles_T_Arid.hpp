@@ -27,6 +27,10 @@ class CLASS2(SIDE,Arid): CLASS2(Base,NATION) {
             "casual_solid_red_sage_uniform": 1,
             "casual_plaid_blue_khaki_uniform": 1,
         },
+        "packs": [
+            "t4_standard",
+            "civilian_medical"
+        ],
     });
 
     @Vests({
@@ -37,9 +41,6 @@ class CLASS2(SIDE,Arid): CLASS2(Base,NATION) {
             "V_Pocketed_coyote_F": 1,
             "V_Pocketed_wdl_F": 1,
         },
-        "packs": [
-            "t4_standard",
-        ],
     });
 
     @Headgear({
