@@ -216,19 +216,19 @@ class CfgVehicles {
                     "probability": 1,
                     "magazinesVest": {
                         "30Rnd_545x39_Mag_Green_F": 6,
-                        "1Rnd_40mm_HE_lxWS": 4,
+                        "1Rnd_HEDP_Grenade_shell": 4,
                     },
                     "loadedPrimary": "30Rnd_545x39_Mag_Green_F",
-                    "loadedSecondary": "1Rnd_40mm_HE_lxWS",
+                    "loadedSecondary": "1Rnd_HEDP_Grenade_shell",
                 },
                 "arifle_AK12_GL_F": {
                     "probability": 1,
                     "magazinesVest": {
                         "30Rnd_762x39_Mag_F": 6,
-                        "1Rnd_40mm_HE_lxWS": 4,
+                        "1Rnd_HEDP_Grenade_shell": 4,
                     },
                     "loadedPrimary": "30Rnd_762x39_Mag_F",
-                    "loadedSecondary": "1Rnd_40mm_HE_lxWS",
+                    "loadedSecondary": "1Rnd_HEDP_Grenade_shell",
                 },
             },
         });
