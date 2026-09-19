@@ -1,8 +1,8 @@
-@Secondary({
+@Primary({
     "weapons": {
-        "JCA_hgun_Mk23_sand_F": {
+        "SMG_01_F": {
             "magazinesUniform": {
-                "JCA_12Rnd_45ACP_Mk23_Mag": 3,
+                "30Rnd_45ACP_Mag_SMG_01": 3,
             },
         },
     },

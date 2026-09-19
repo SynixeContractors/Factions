@@ -102,7 +102,7 @@ class CfgVehicles {
         @Role(Demolitions);
         #include "../wear/demo.hpp"
     };
-    class CLASS(Crewman): CLASS(RiflemanCarabine) {
+    class CLASS(Crewman): CLASS(Base) {
         @Role(Crewman);
         #include "../weapons/pdw.hpp"
         #include "../wear/tanker.hpp"

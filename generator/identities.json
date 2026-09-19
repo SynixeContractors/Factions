@@ -155,4 +155,11 @@
         ],
         "genericNames": "TanoanMen"
     },
+    "Marar": {
+        "identityTypes": [
+            "Head_Greek",
+            "LanguageRUS_F"
+        ],
+        "genericNames": "Russian"
+    },
 }
