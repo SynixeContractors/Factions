@@ -21,6 +21,15 @@
             ["Chemlight_blue", 1]
         ]
     },
+    "police_standard": {
+        "items": [
+            ["ACE_CableTie", 6]
+        ],
+        "magazines": [
+            ["Chemlight_green", 1],
+            ["Chemlight_blue", 1]
+        ]
+    },
     "t2_standard": {
         "items": [
             ["ACE_NVG_Gen4_Black_WP", 1]

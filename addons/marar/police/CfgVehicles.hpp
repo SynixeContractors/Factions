@@ -3,12 +3,21 @@ class CfgVehicles {
     class CLASS(Base): PCLASS(Base) {
         displayName = "National Police";
         editorSubcategory = QGCLASS(police);
-
+        @Primary({
+            "pointers": {
+                "acc_flashlight": 1,
+            },
+        });
+        @Secondary({
+            "pointers": {
+                "acc_flashlight_pistol": 1,
+            },
+        });
         @Headgear({
-            "H_ParadeDressCap_01_LDF_F": 5,
+            "H_ParadeDressCap_01_LDF_F": 10,
             "H_Cap_police": 2,
             "H_Cap_police_headset": 1,
-            "": 1,
+            "": 3,
         });
         @Uniforms({
             "variants": {
@@ -22,11 +31,11 @@ class CfgVehicles {
         @Vests({
             "variants" : {
                 "V_HarnessO_blk": 6,
-                "V_TacChestrig_cbr_F": 1,
+                "V_TacVest_blk_POLICE": 1,
             },
             "packs": [
                 "t4_standard",
-                "military_standard"
+                "police_standard"
             ],
         });
         @Assigned(Military);

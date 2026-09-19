@@ -6,4 +6,8 @@
             },
         },
     },
+    "pointers": {
+        "acc_flashlight_smg_01": 5,
+        "": 2,
+    },
 });

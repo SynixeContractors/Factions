@@ -12,7 +12,8 @@ class CLASS2(SIDE,Policeman): CLASS2(Base,NATION) {
             "U_B_GEN_Commander_F": 0.2,
         },
         "packs": [
-            "rifleman_medical"
+            "rifleman_medical",
+            "police_standard"
         ],
     });
     @Secondary({
