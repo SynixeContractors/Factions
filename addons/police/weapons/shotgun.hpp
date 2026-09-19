@@ -8,4 +8,7 @@
             },
         },
     },
+    "pointers": {
+        "acc_flashlight_pistol": 1,
+    },
 });
