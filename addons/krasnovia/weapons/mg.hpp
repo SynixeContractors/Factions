@@ -1,9 +1,9 @@
 @Primary({
     "weapons": {
-        "LMG_Mk200_F": {
+        "Aegis_MMG_FNMAG_F": {
             "probability": 1,
             "magazinesVest": {
-                "200Rnd_65x39_cased_Box": 2,
+                "Aegis_200Rnd_762x51_MAG_Green_F": 2,
             },
         },
     },

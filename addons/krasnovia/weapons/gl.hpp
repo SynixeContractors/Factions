@@ -1,13 +1,13 @@
 @Primary({
     "weapons": {
-        "Atlas_Arifle_famasG2_F": {
+        "arifle_VelkoR5_GL_lxWS": {
             "probability": 1,
             "magazinesVest": {
-                "30Rnd_556x45_Stanag": 8,
-                "1Rnd_40mm_HE_lxWS": 4,
+                "35Rnd_556x45_Velko_tracer_green_lxWS": 8,
+                "1Rnd_HE_Grenade_shell": 4,
             },
-            "loadedPrimary": "30Rnd_556x45_Stanag",
-            "loadedSecondary": "1Rnd_40mm_HE_lxWS",
+            "loadedPrimary": "35Rnd_556x45_Velko_tracer_green_lxWS",
+            "loadedSecondary": "1Rnd_HE_Grenade_shell",
         },
     },
 });

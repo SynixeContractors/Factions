@@ -1,9 +1,10 @@
 @Launchers({
     "weapons": {
-        "JCA_launch_Mk153_sand_F": {
+        "launch_PSRL1_PWS_olive_RF": {
+            "probability": 1,
             "magazinesBackpack": {
-                "JCA_MK153_HEAT_F": 2,
-                "JCA_MK153_HE_F": 1,
+                "RPG7_F": 2,
+                "PSRL1_FRAG_RF": 1,
             },
         },
     },

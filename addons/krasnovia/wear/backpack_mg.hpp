@@ -1,8 +1,8 @@
 @Backpacks({
     "variants": {
-        "B_FieldPack_cbr": 1,
+        "B_FieldPack_green_F": 1,
     },
     "magazines": {
-        "200Rnd_65x39_cased_Box": 2,
+        "Aegis_200Rnd_762x51_MAG_Green_F": 2,
     },
 });
