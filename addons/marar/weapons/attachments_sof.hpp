@@ -11,7 +11,7 @@
     "muzzles" : {
         "": 1,
     },
-    "bipod" : {
+    "bipods" : {
         "bipod_03_F_blk": 1,
         "": 3,
     },
