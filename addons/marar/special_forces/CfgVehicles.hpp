@@ -15,10 +15,26 @@ class CfgVehicles {
             ],
         });
         @Headgear({
-            "H_HelmetB_snakeskin": 1,
+            "H_Bandanna_cbr": 1,
+            "H_Bandanna_cbr_headset": 1,
+            "H_Watchcap_cbr": 1,
+            "H_Watchcap_cbr_hs": 1,
+            "tacs_Helmet_Modular_Coyote": 3,
+            "tacs_Helmet_Modular_Ear_Coyote": 3,
+            "tacs_Helmet_Modular_Headset_Coyote": 3,
         });
         @Facewear({
-            "": 1,
+            "G_Balaclava_Scarecrow_01": 1,
+            "G_Balaclava_snd_lxWS": 1,
+            "G_Bandanna_khk": 1,
+            "G_Bandanna_tan": 1,
+            "JCA_G_shemagh_01_sand_F": 1,
+            "synixe_mgp_f_shemagh_cb_ess": 1,
+            "JCA_G_shemagh_01_glasses_sand_F": 1,
+            "synixe_mgp_f_shemagh_cb_shades": 1,
+            "synixe_mgp_f_face_shield_cb": 1,
+            "JCA_G_balaclava_01_sand_F": 1,
+            "": 10,
         });
         @Assigned(Military);
     };
