@@ -25,7 +25,6 @@ class CLASS2(SIDE,Cold): CLASS2(Base,NATION) {
         },
         "packs": [
             "t4_standard",
-            "civilian_medical"
         ],
     });
 

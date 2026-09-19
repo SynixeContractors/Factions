@@ -29,7 +29,6 @@ class CLASS2(SIDE,Arid): CLASS2(Base,NATION) {
         },
         "packs": [
             "t4_standard",
-            "civilian_medical"
         ],
     });
 
