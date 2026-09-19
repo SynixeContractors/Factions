@@ -52,7 +52,6 @@ class CfgVehicles {
                 "V_PlateCarrier1_rgr_noflag_F": 1,
             },
             "packs": [
-                "t3_standard",
                 "military_standard",
             ],
         });
@@ -86,15 +85,26 @@ class CfgVehicles {
             },
             "optics": {
                 "optic_Aco": 1,
+                "": 1,
             },
             "pointers": {
-                "ACE_DBAL_A3_Red": 1,
+                "saber_light_lxWS": 1,
             },
         });
     };
 
     class CLASS(SquadLeader): CLASS(Rifleman) {
         @Role(SquadLeader);
+
+        @Vests({
+            "variants": {
+                "V_PlateCarrier1_rgr_noflag_F": 1,
+            },
+            "packs": [
+                "t3_standard",
+                "military_standard",
+            ],
+        });
 
         @Primary({
             "weapons": {
@@ -169,7 +179,7 @@ class CfgVehicles {
                 },
             },
             "pointers": {
-                "ACE_DBAL_A3_Red": 1,
+                "saber_light_lxWS": 1,
             },
             "bipods": {
                 "bipod_03_F_blk": 1,
@@ -207,9 +217,6 @@ class CfgVehicles {
                         "150Rnd_93x64_Mag": 4,
                     },
                 },
-            },
-            "pointers": {
-                "ACE_DBAL_A3_Red": 1,
             },
             "bipods": {
                 "bipod_03_F_blk": 1,

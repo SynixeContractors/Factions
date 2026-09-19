@@ -27,17 +27,17 @@ class CfgVehicles {
         });
 
         @Headgear({
-            "H_HelmetLuchnik_olive_F": 1,
+            "Atlas_H_PASGT_Cover_Olive_F": 1,
             "H_Booniehat_whex_F": 1,
             "Atlas_H_MilCap_nohs_whex_F": 1,
             "H_Watchcap_camo": 1,
+            "": 1,
         });
 
         @Facewear({
-            "G_Shades_Black": 1,
-            "JCA_G_balaclava_01_black_F": 1,
-            "JCA_G_balaclava_01_olive_F": 1,
-            "Aegis_G_Condor_EyePro_F": 1,
+            "": 1,
+            "synixe_mgp_f_face_shield_blk": 1,
+            "synixe_mgp_f_face_shield_rgr": 1,
         });
 
         @Primary({
@@ -45,6 +45,16 @@ class CfgVehicles {
                 "synixe_armoury_arifle_AK03_black": {
                     "magazinesVest": {
                         "30Rnd_580x42_Mag_F": 7,
+                    }
+                },
+                "arifle_Velko_lxWS": {
+                    "magazinesVest": {
+                        "35Rnd_556x45_Velko_reload_tracer_green_lxWS": 7,
+                    }
+                },
+                "srifle_DMR_06_black_F": {
+                    "magazinesVest": {
+                        "20Rnd_762x51_Mag_blk_lxWS": 7,
                     }
                 },
             },
@@ -64,6 +74,17 @@ class CfgVehicles {
     class CLASS(SquadLeader): CLASS(Rifleman) {
         @Role(SquadLeader);
 
+        @Primary({
+            "optics": {
+                "": 1,
+                "optic_Aco": 1,
+                "optic_Arco_blk_F": 1,
+            },
+            "pointers": {
+                "saber_light_lxWS": 1,
+            },
+        });
+
         @Binoculars({
             "weapons": {
                 "Binocular": 1,
@@ -80,7 +101,14 @@ class CfgVehicles {
                     "magazinesVest": {
                         "30Rnd_580x42_Mag_F": 7,
                         "1Rnd_HE_Grenade_shell": 4,
-                        "1Rnd_Smoke_Grenade_shell": 2,
+                    },
+                    "loadedPrimary": "30Rnd_580x42_Mag_F",
+                    "loadedSecondary": "1Rnd_HE_Grenade_shell",
+                },
+                "synixe_armoury_arifle_AK03_GL_black": {
+                    "magazinesVest": {
+                        "30Rnd_580x42_Mag_F": 7,
+                        "1Rnd_HE_Grenade_shell": 4,
                     },
                     "loadedPrimary": "30Rnd_580x42_Mag_F",
                     "loadedSecondary": "1Rnd_HE_Grenade_shell",
@@ -88,6 +116,8 @@ class CfgVehicles {
             },
             "optics": {
                 "": 1,
+                "optic_Aco": 1,
+                "optic_Arco_blk_F": 1,
             },
             "pointers": {
                 "saber_light_lxWS": 1,
@@ -103,6 +133,11 @@ class CfgVehicles {
                 "synixe_armoury_arifle_RPK03_black": {
                     "magazinesVest": {
                         "100Rnd_580x42_Mag_F": 6,
+                    },
+                },
+                "arifle_Velko_lxWS": {
+                    "magazinesVest": {
+                        "50Rnd_556x45_Velko_reload_tracer_green_lxWS": 8,
                     },
                 },
             },
@@ -137,6 +172,12 @@ class CfgVehicles {
                     "magazinesBackpack": {
                         "JCA_MK153_HEAT_F": 1,
                         "JCA_MK153_HE_F": 2,
+                    },
+                },
+                "Aegis_launch_RPG7M_F": {
+                    "magazinesBackpack": {
+                        "RPG7_F": 1,
+                        "PSRL1_FRAG_RF": 2,
                     },
                 },
             },
