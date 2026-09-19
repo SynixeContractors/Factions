@@ -16,6 +16,8 @@ class CfgVehicles {
     #include "../../../templates/cars/LUT_Transport.hpp"
     #include "../../../templates/apc/Badger.hpp"
     #include "../../../templates/cars/MATV.hpp"
+    #include "../../../templates/helicopters/Orca_Civilian.hpp"
+    #include "../../../templates/helicopters/Orca_Military.hpp"
     #undef TEMPLATE_CAMO
     #define TEMPLATE_CAMO Tan
     #include "../../../templates/cars/Ram_Civilian.hpp"

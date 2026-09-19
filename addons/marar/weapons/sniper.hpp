@@ -1,8 +1,8 @@
 @Primary({
     "weapons": {
-        "JCA_srifle_AWM_sand_F": {
+        "srifle_LRR_F": {
             "magazinesVest": {
-                "JCA_5Rnd_338LM_AWM_Tracer_Green_Mag": 6,
+                "7Rnd_408_Mag": 6,
             },
         },
     },
