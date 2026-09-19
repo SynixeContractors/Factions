@@ -70,6 +70,7 @@ class CfgVehicles {
     class CLASS(Crewman): CLASS(Base) {
         @Role(Crewman);
         #include "../wear/tanker.hpp"
+        #include "../weapons/pistol.hpp"
     };
     class CLASS(Marksman): CLASS(RiflemanCarabine) {
         @Role(Marksman);
