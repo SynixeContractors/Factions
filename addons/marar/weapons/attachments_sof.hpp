@@ -8,10 +8,10 @@
         "optic_rds_RF": 3,
         "": 1,
     },
-    "muzzles" : {
+    "muzzles": {
         "": 1,
     },
-    "bipods" : {
+    "bipods": {
         "bipod_03_F_blk": 1,
         "": 3,
     },
