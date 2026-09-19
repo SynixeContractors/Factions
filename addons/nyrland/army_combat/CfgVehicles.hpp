@@ -1,7 +1,10 @@
 class CfgVehicles {
 
     #include "CfgVehicles_APC.hpp"
+    #include "CfgVehicles_Tank.hpp"
     #include "CfgVehicles_Cars.hpp"
+    #include "CfgVehicles_Helicopters.hpp"
+    #include "CfgVehicles_Planes.hpp"
 
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {
@@ -20,7 +23,6 @@ class CfgVehicles {
 
         @Vests({
             "variants": {
-                "V_PlateCarrier4_rgr_F": 0.5,
                 "WSLV_Platecarrier_GRN_NF": 0.25,
                 "V_MU_PlateCarrier2_2_rgr": 0.25,
             },
@@ -420,7 +422,7 @@ class CfgVehicles {
 
         @Vests({
             "variants": {
-                "V_PlateCarrier4_rgr_F": 1,
+                "V_TacVest_grn": 1,
             },
             "packs": [
                 "t3_standard",
@@ -466,6 +468,52 @@ class CfgVehicles {
             "H_PilotHelmetHeli_O_visor_up": 0.3,
             "H_PilotHelmetHeli_O": 0.4,
             "H_CrewHelmetHeli_O": 0.3,
+        });
+    };
+
+    class CLASS(FighterPilot): CLASS(Base) {
+        @Role(FighterPilot);
+
+            @Uniforms({
+            "variants": {
+                "U_B_PilotCoveralls": 1,
+                "U_I_pilotCoveralls": 1,
+            },
+            "packs": [
+                "rifleman_medical",
+            ],
+        });
+
+        @Vests({
+            "variants": {
+                "": 1,
+            },
+        });
+
+        @Headgear({
+            "H_PilotHelmetFighter_B": 1,
+            "H_PilotHelmetFighter_O": 1,
+            "H_PilotHelmetFighter_I": 1,
+        });
+
+        @Facewear({
+            "": 1,
+        });
+
+        @Primary({
+            "weapons": {
+                "": 1,
+            },
+        });
+
+        @Secondary({
+            "weapons": {
+                "hgun_G17_black_F": {
+                    "magazinesUniform": {
+                        "17Rnd_9x21_Mag": 3,
+                    },
+                },
+            },
         });
     };
 };

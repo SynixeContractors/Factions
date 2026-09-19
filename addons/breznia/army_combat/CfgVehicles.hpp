@@ -1,4 +1,11 @@
 class CfgVehicles {
+
+    #include "CfgVehicles_APC.hpp"
+    #include "CfgVehicles_Tank.hpp"
+    #include "CfgVehicles_Cars.hpp"
+    #include "CfgVehicles_Helicopters.hpp"
+    #include "CfgVehicles_Planes.hpp"
+
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {
         displayName = "Breznia Base Army Combat";
@@ -466,6 +473,52 @@ class CfgVehicles {
             "H_PilotHelmetHeli_O_visor_up": 1,
             "H_PilotHelmetHeli_O": 1,
             "H_CrewHelmetHeli_O": 1,
+        });
+    };
+
+    class CLASS(FighterPilot): CLASS(Base) {
+        @Role(FighterPilot);
+
+            @Uniforms({
+            "variants": {
+                "U_B_PilotCoveralls": 1,
+                "U_I_pilotCoveralls": 1,
+            },
+            "packs": [
+                "rifleman_medical",
+            ],
+        });
+
+        @Vests({
+            "variants": {
+                "": 1,
+            },
+        });
+
+        @Headgear({
+            "H_PilotHelmetFighter_B": 1,
+            "H_PilotHelmetFighter_O": 1,
+            "H_PilotHelmetFighter_I": 1,
+        });
+
+        @Facewear({
+            "": 1,
+        });
+
+        @Primary({
+            "weapons": {
+                "": 1,
+            },
+        });
+
+        @Secondary({
+            "weapons": {
+                "hgun_Rook40_F": {
+                    "magazinesUniform": {
+                        "17Rnd_9x21_Mag": 3,
+                    },
+                },
+            },
         });
     };
 };
