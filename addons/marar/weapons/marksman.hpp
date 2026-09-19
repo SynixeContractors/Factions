@@ -1,13 +1,13 @@
 @Primary({
     "weapons": {
-        "arifle_Katiba_F": {
+        "srifle_DMR_07_blk_F": {
             "probability": 1,
             "magazinesVest": {
-                "30Rnd_65x39_caseless_green": 8,
+                "20Rnd_650x39_Cased_Mag_F": 8,
             },
         },
     },
     "optics": {
-        "optic_MRCO": 1,
+        "optic_DMS": 1,
     },
 });

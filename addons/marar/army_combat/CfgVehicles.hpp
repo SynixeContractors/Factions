@@ -14,9 +14,14 @@ class CfgVehicles {
     #include "../../../templates/cars/LUT_MRL.hpp"
     #include "../../../templates/cars/LUT_Repair.hpp"
     #include "../../../templates/cars/LUT_Transport.hpp"
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO Marar
     #include "../../../templates/apc/Badger.hpp"
+    #include "../../../templates/cars/MATV.hpp"
+    #undef TEMPLATE_CAMO
+    #define TEMPLATE_CAMO Tan
+    #include "../../../templates/cars/Ram_Civilian.hpp"
+    #include "../../../templates/cars/Ram_Armed.hpp"
+    #include "../../../templates/cars/Ram_Advanced.hpp"
+    #include "../../../templates/cars/Ram_Rocket.hpp"
 
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {
