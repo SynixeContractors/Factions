@@ -3,6 +3,6 @@
         "B_FieldPack_cbr": 1,
     },
     "magazines": {
-        "Aegis_200Rnd_762x51_MAG_Yellow_F": 2,
+        "200Rnd_65x39_cased_Box": 2,
     },
 });

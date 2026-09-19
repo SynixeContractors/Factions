@@ -1,9 +1,7 @@
 @Vests({
     "variants" : {
-        "V_Pocketed_olive_F": 3,
-        "V_ChestrigF_rgr": 3,
-        "V_LegStrapBag_olive_F": 3,
-        "V_lxWS_TacVestIR_oli": 1,
+        "V_HarnessO_whex_F": 6,
+        "V_TacChestrig_cbr_F": 1,
     },
     "packs": [
         "t4_standard",
