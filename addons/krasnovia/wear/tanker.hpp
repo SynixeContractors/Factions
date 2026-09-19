@@ -1,6 +1,6 @@
 @Uniforms({
     "variants": {
-        "Atlas_U_B_M_Tank_Marar_F": 1,
+        "U_C_HeliPilotCoveralls_Green_RF": 1,
     },
     "packs": [
         "rifleman_medical",

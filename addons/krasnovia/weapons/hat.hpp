@@ -1,9 +1,7 @@
 @Launchers({
     "weapons": {
-        "launch_O_Vorona_brown_F": {
-            "magazinesBackpack": {
-                "Vorona_HEAT": 1,
-            },
+        "launch_NLAW_F": {
+             "loadedPrimary": "NLAW_F"
         },
     },
 });
