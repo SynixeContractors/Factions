@@ -24,8 +24,14 @@ class CLASS2(SIDE,Policeman): CLASS2(Base,NATION) {
                 },
             },
         },
+        "pointers": {
+            "acc_flashlight_pistol": 1,
+        },
     });
     @Primary({
+        "pointers": {
+            "acc_flashlight": 1,
+        },
         "optics": {
             "": 4,
             "optic_r1_high_lxWS": 1,
