@@ -155,4 +155,11 @@
         ],
         "genericNames": "TanoanMen"
     },
+    "Navarre": {
+        "identityTypes": [
+            "Head_Enoch",
+            "LanguageGRE_F"
+        ],
+        "genericNames": "Spanish"
+    },
 }
