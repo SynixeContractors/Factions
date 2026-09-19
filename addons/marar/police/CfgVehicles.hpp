@@ -4,9 +4,31 @@ class CfgVehicles {
         displayName = "National Police";
         editorSubcategory = QGCLASS(police);
 
-        #include "../wear/uniform_police.hpp"
-        #include "../wear/vest_police.hpp"
-        #include "../wear/headwear_police.hpp"
+        @Headgear({
+            "H_ParadeDressCap_01_LDF_F": 5,
+            "H_Cap_police": 2,
+            "H_Cap_police_headset": 1,
+            "": 1,
+        });
+        @Uniforms({
+            "variants": {
+                "Aegis_U_O_Luchnik_RolledUp_urban_F": 0.8,
+                "Aegis_U_O_Luchnik_urban_F": 0.2,
+            },
+            "packs": [
+                "rifleman_medical",
+            ],
+        });
+        @Vests({
+            "variants" : {
+                "V_HarnessO_blk": 6,
+                "V_TacChestrig_cbr_F": 1,
+            },
+            "packs": [
+                "t4_standard",
+                "military_standard"
+            ],
+        });
         @Assigned(Military);
     };
     class CLASS(Rifleman): CLASS(Base) {
