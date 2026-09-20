@@ -86,7 +86,7 @@ class GCLASS(LUT_Water): Truck_02_fuel_base_F {
     ace_refuel_fuelCargo = -1;
     transportFuel = 0;
     LUT_TEXTURE_LIST;
-    #include "textures\LUTFuel.hpp"
+    #include "textures\LUTWater.hpp"
 };
 
 
