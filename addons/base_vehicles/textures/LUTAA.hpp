@@ -333,10 +333,9 @@ class TextureSources {
         displayName = "Yellow";
         textures[] = {
             "\lxws\vehicles_f_lxws\data\Truck_02\Truck_02_kab_yellow_CO.paa",
-            "\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_cargo_RUkhk_CO.paa",
-            "\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_int_RUkhk_CO.paa",
-            "\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_chassis_RUkhk_CO.paa",
-            "lxws\vehicles_f_lxws\zu23\data\zu23_base_green_co.paa",
+            "\lxws\vehicles_f_lxws\Truck_02\data\truck_02_cargo_yellow_CO.paa",
+            "\a3\soft_f_beta\truck_02\data\truck_02_int_co.paa",
+            "\A3\Soft_F_Beta\Truck_02\Data\Truck_02_chassis_CO.paa",
             "lxws\vehicles_f_lxws\zu23\data\zu23_green_co.paa",
             "lxws\vehicles_f_lxws\zu23\data\zu23_addon_1_green_co.paa",
             "lxws\vehicles_f_lxws\zu23\data\zu23_addon_2_green_co.paa",
