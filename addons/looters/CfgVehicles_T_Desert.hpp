@@ -18,15 +18,15 @@ class CLASS2(SIDE,Desert): CLASS2(Base,NATION) {
             "U_I_C_Soldier_Bandit_2_F": 1,
             "U_C_Mechanic_01_F": 1,
         },
+        "packs": [
+            "t4_standard",
+        ],
     });
 
     @Vests({
         "variants": {
             "": 1,
         },
-        "packs": [
-            "t4_standard",
-        ],
     });
 
     @Headgear({

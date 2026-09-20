@@ -4,6 +4,7 @@ class CfgVehicles {
         factionTest = QUOTE(PREFIX);
         displayName = "Looter Base Unit";
         @Templated();
+        @Assigned(Civilian)
     };
 
     @For(Identities)

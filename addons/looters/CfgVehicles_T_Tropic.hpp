@@ -22,15 +22,15 @@ class CLASS2(SIDE,Tropic): CLASS2(Base,NATION) {
             "U_C_Mechanic_01_F": 1,
             "Opf_U_I_I_Uniform_01_tshirt_black_F": 1,
         },
+        "packs": [
+            "t4_standard",
+        ],
     });
 
     @Vests({
         "variants": {
             "": 1,
         },
-        "packs": [
-            "t4_standard",
-        ],
     });
 
     @Headgear({

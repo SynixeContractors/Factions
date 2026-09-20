@@ -10,6 +10,15 @@
             ["ACE_painkillers", 1]
         ]
     },
+    "civilian_medical": {
+        "items": [
+            ["ACE_elasticBandage", 4],
+            ["ACE_packingBandage", 4]
+        ],
+        "magazines": [
+            ["ACE_painkillers", 1]
+        ]
+    },
     "military_standard": {
         "items": [
             ["ACE_CableTie", 6]
