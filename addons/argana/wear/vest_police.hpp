@@ -7,6 +7,6 @@
     },
     "packs": [
         "t4_standard",
-        "military_standard"
+        "police_standard"
     ],
 });
