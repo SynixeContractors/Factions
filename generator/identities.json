@@ -162,4 +162,11 @@
         ],
         "genericNames": "Russian"
     },
+    "Krasnovia": {
+        "identityTypes": [
+            "Head_Tanoan",
+            "LanguageRUS_F"
+        ],
+        "genericNames": "Russian"
+    },
 }
