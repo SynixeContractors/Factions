@@ -1,0 +1,242 @@
+class TextureSources {
+    class Indep {
+        displayName = "DAP Green";
+        textures[] = {
+            "\A3\Soft_F_Beta\Truck_02\Data\Truck_02_kab_INDP_CO.paa",
+            QPATHTOEF(vehicle_textures,data\lut\lut_water_white.paa),
+            "\A3\Soft_F_Beta\Truck_02\Data\Truck_02_int_CO.paa",
+            "\A3\Soft_F_Beta\Truck_02\Data\Truck_02_chassis_INDP_CO.paa"
+        };
+        factions[] = {};
+    };
+    class Opfor {
+        displayName = "Hex Ochre";
+        textures[] = {
+            "\A3\Soft_F_Beta\Truck_02\Data\Truck_02_kab_OPFOR_CO.paa",
+            QPATHTOEF(vehicle_textures,data\lut\lut_water_white.paa),
+            "\A3\Soft_F_Beta\Truck_02\Data\Truck_02_int_CO.paa",
+            "\A3\Soft_F_Beta\Truck_02\Data\Truck_02_chassis_OPFOR_CO.paa"
+        };
+        factions[] = {};
+    };
+    class Orange {
+        displayName = "Orange";
+        textures[] = {
+            "\A3\Soft_F_Beta\Truck_02\Data\Truck_02_kab_CO.paa",
+            QPATHTOEF(vehicle_textures,data\lut\lut_water_white.paa),
+            "\A3\Soft_F_Beta\Truck_02\Data\Truck_02_int_CO.paa",
+            "\A3\Soft_F_Beta\Truck_02\Data\Truck_02_chassis_CO.paa"
+        };
+        factions[] = {};
+    };
+    class Blue {
+        displayName = "Blue";
+        textures[] = {
+            "\A3\Soft_F_Beta\Truck_02\Data\Truck_02_kab_blue_CO.paa",
+            QPATHTOEF(vehicle_textures,data\lut\lut_water_white.paa),
+            "\A3\Soft_F_Beta\Truck_02\Data\Truck_02_int_CO.paa",
+            "\A3\Soft_F_Beta\Truck_02\Data\Truck_02_chassis_CO.paa"
+        };
+        factions[] = {};
+    };
+    class GreenHex {
+        displayName = "Hex Green";
+        textures[] = {
+            "\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_kab_ghex_CO.paa",
+            QPATHTOEF(vehicle_textures,data\lut\lut_water_white.paa),
+            "\A3\Soft_F_Beta\Truck_02\Data\Truck_02_int_CO.paa",
+            "\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_chassis_ghex_CO.paa"
+        };
+        factions[] = {};
+    };
+    class IDAP {
+        displayName = "IDAP";
+        textures[] = {
+            "\A3\Soft_F_Orange\Truck_02\Data\Truck_02_kab_IDAP_CO.paa",
+            QPATHTOEF(vehicle_textures,data\lut\lut_water_white.paa),
+            "\A3\Soft_F_Beta\Truck_02\Data\Truck_02_int_CO.paa",
+            "\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_chassis_RUkhk_CO.paa"
+        };
+        factions[] = {};
+    };
+    class EAF {
+        displayName = "LDF (Geo Woodland)";
+        textures[] = {
+            "\A3\soft_f_Enoch\Truck_02\Data\Truck_02_kab_EAF_co.paa",
+            QPATHTOEF(vehicle_textures,data\lut\lut_water_white.paa),
+            "\A3\soft_f_Enoch\Truck_02\Data\Truck_02_int_EAF_co.paa",
+            "\A3\soft_f_Enoch\Truck_02\Data\truck_02_chassis_EAF_CO.paa"
+        };
+        factions[] = {};
+    };
+    class Green {
+        displayName = "Green";
+        textures[] = {
+            "\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_kab_RUkhk_CO.paa",
+            QPATHTOEF(vehicle_textures,data\lut\lut_water_white.paa),
+            "\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_int_RUkhk_CO.paa",
+            "\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_chassis_RUkhk_CO.paa"
+        };
+        factions[] = {};
+    };
+    class EAF_Arid {
+        displayName = "LDF (Arid)";
+        textures[] = {
+            "\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_kab_LDF_arid_CO.paa",
+            QPATHTOEF(vehicle_textures,data\lut\lut_water_white.paa),
+            "\A3\soft_f_Enoch\Truck_02\Data\Truck_02_int_EAF_co.paa",
+            "\A3\Soft_F_Beta\Truck_02\Data\Truck_02_chassis_CO.paa"
+        };
+        factions[] = {};
+    };
+    class Marar {
+        displayName = "Marar";
+        textures[] = {
+            "\A3_Atlas\Soft_F_Atlas\Truck_02\Data\Truck_02_kab_Marar_CO.paa",
+            QPATHTOEF(vehicle_textures,data\lut\lut_water_white.paa),
+            "\A3\Soft_F_Beta\Truck_02\Data\Truck_02_int_CO.paa",
+            "\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_chassis_ghex_CO.paa"
+        };
+        factions[] = {};
+    };
+    class UNO {
+        displayName = "United Nations";
+        textures[] = {
+            "\A3_Atlas\Soft_F_Atlas\Truck_02\Data\Truck_02_kab_UN_CO.paa",
+            QPATHTOEF(vehicle_textures,data\lut\lut_water_white.paa),
+            "\A3\Soft_F_Beta\Truck_02\Data\Truck_02_int_CO.paa",
+            "\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_chassis_RUkhk_CO.paa"
+        };
+        factions[] = {};
+    };
+    class WoodlandHex {
+        displayName = "Hex Woodland";
+        textures[] = {
+            "\A3_Atlas\Soft_F_Atlas\Truck_02\Data\Truck_02_kab_WHex_CO.paa",
+            QPATHTOEF(vehicle_textures,data\lut\lut_water_white.paa),
+            "\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_int_RUKHK_CO.paa",
+            "\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_chassis_RUkhk_CO.paa"
+        };
+        factions[] = {};
+    };
+    class Jungle {
+        displayName = "Jungle";
+        textures[] = {
+            "\A3_Atlas\Soft_F_Atlas\Truck_02\Data\Truck_02_kab_Jungle_CO.paa",
+            QPATHTOEF(vehicle_textures,data\lut\lut_water_white.paa),
+            "\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_int_RUKHK_CO.paa",
+            "\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_chassis_RUkhk_CO.paa"
+        };
+        factions[] = {};
+    };
+    class Takistan {
+        displayName = "Hex Mixed";
+        textures[] = {
+            "\A3_Atlas\Soft_F_Atlas\Truck_02\Data\Truck_02_kab_tk_CO.paa",
+            QPATHTOEF(vehicle_textures,data\lut\lut_water_white.paa),
+            "\A3\Soft_F_Beta\Truck_02\Data\Truck_02_int_CO.paa",
+            "\A3\Soft_F_Beta\Truck_02\Data\Truck_02_chassis_OPFOR_CO.paa"
+        };
+        factions[] = {};
+    };
+    class Ardistan {
+        displayName = "Ardistan";
+        textures[] = {
+            "\A3_Atlas\Soft_F_Atlas\Truck_02\Data\Truck_02_kab_ardi_CO.paa",
+            QPATHTOEF(vehicle_textures,data\lut\lut_water_white.paa),
+            "\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_int_RUKHK_CO.paa",
+            "\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_chassis_RUkhk_CO.paa"
+        };
+        factions[] = {};
+    };
+    class Sep_01 {
+        displayName = "Seperatist";
+        textures[] = {
+            "\A3_Opf\Soft_F_Opf\Truck_02\Data\Truck_02_kab_Sep_CO.paa",
+            QPATHTOEF(vehicle_textures,data\lut\lut_water_white.paa),
+            "\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_int_RUkhk_CO.paa",
+            "\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_chassis_RUkhk_CO.paa"
+        };
+        factions[] = {};
+    };
+    class SFIA {
+        displayName = "Mudwalker";
+        textures[] = {
+            "lxws\vehicles_f_lxws\data\Truck_02\Truck_02_kab_sfia_CO.paa",
+            QPATHTOEF(vehicle_textures,data\lut\lut_water_white.paa),
+            "\a3\soft_f_beta\truck_02\data\truck_02_int_co.paa",
+            "\A3\Soft_F_Beta\Truck_02\Data\Truck_02_chassis_OPFOR_CO.paa",
+        };
+        factions[] = {};
+    };
+    class Sand {
+        displayName = "Sand";
+        textures[] = {
+            "\lxws\vehicles_f_lxws\data\Truck_02\Truck_02_kab_sand_CO.paa",
+            QPATHTOEF(vehicle_textures,data\lut\lut_water_white.paa),
+            "\a3\soft_f_beta\truck_02\data\truck_02_int_co.paa",
+            "\A3\Soft_F_Beta\Truck_02\Data\Truck_02_chassis_CO.paa",
+        };
+        factions[] = {};
+    };
+    class Brown {
+        displayName = "Brown";
+        textures[] = {
+            "lxws\vehicles_f_lxws\data\Truck_02\Truck_02_kab_brown_CO.paa",
+            QPATHTOEF(vehicle_textures,data\lut\lut_water_white.paa),
+            "\a3\soft_f_beta\truck_02\data\truck_02_int_co.paa",
+            "\A3\Soft_F_Beta\Truck_02\Data\Truck_02_chassis_CO.paa",
+        };
+        factions[] = {};
+    };
+    class Black {
+        displayName = "Black";
+        textures[] = {
+            "\lxws\vehicles_f_lxws\data\Truck_02\Truck_02_kab_black_CO.paa",
+            QPATHTOEF(vehicle_textures,data\lut\lut_water_white.paa),
+            "\a3\soft_f_beta\truck_02\data\truck_02_int_co.paa",
+            "\A3\Soft_F_Beta\Truck_02\Data\Truck_02_chassis_CO.paa",
+        };
+        factions[] = {};
+    };
+    class Daltgreen {
+        displayName = "Daltgreen";
+        textures[] = {
+            "\lxws\vehicles_f_lxws\data\Truck_02\Truck_02_kab_daltgreen_CO.paa",
+            QPATHTOEF(vehicle_textures,data\lut\lut_water_white.paa),
+            "\a3\soft_f_beta\truck_02\data\truck_02_int_co.paa",
+            "\A3\Soft_F_Beta\Truck_02\Data\Truck_02_chassis_CO.paa"
+        };
+        factions[] = {};
+    };
+    class Lime {
+        displayName = "Lime";
+        textures[] = {
+            "\lxws\vehicles_f_lxws\data\Truck_02\Truck_02_kab_lime_CO.paa",
+            QPATHTOEF(vehicle_textures,data\lut\lut_water_white.paa),
+            "\a3\soft_f_beta\truck_02\data\truck_02_int_co.paa",
+            "\A3\Soft_F_Beta\Truck_02\Data\Truck_02_chassis_CO.paa"
+        };
+        factions[] = {};
+    };
+    class Yellow {
+        displayName = "Yellow";
+        textures[] = {
+            "\lxws\vehicles_f_lxws\data\Truck_02\Truck_02_kab_yellow_CO.paa",
+            QPATHTOEF(vehicle_textures,data\lut\lut_water_white.paa),
+            "\a3\soft_f_beta\truck_02\data\truck_02_int_co.paa",
+            "\A3\Soft_F_Beta\Truck_02\Data\Truck_02_chassis_CO.paa"
+        };
+        factions[] = {};
+    };
+    class Cdf {
+        displayName = "CDF";
+        textures[] = {
+            "\s\synixe_factions\addons\vehicle_textures\data\lut\lut_cab_CDF_CO.paa",
+            QPATHTOEF(vehicle_textures,data\lut\lut_water_white.paa),
+            "\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_int_RUkhk_CO.paa",
+            "\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_chassis_RUkhk_CO.paa"
+        };
+        factions[] = {};
+    };
+};
