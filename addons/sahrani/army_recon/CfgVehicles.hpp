@@ -4,6 +4,7 @@ class CfgVehicles {
     #define TEMPLATE_CAMO NATO
     #include "../../../templates/cars/Ram_Civilian.hpp"
     #include "../../../templates/cars/Ram_Armed.hpp"
+    #include "../../../templates/cars/Ram_Advanced.hpp"
     #undef TEMPLATE_CAMO
     #define TEMPLATE_CAMO Black
     #include "../../../templates/boats/Dinghy.hpp"

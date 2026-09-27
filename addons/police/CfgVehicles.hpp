@@ -4,6 +4,7 @@ class CfgVehicles {
         factionTest = QUOTE(PREFIX);
         displayName = "Police Base Unit";
         @Templated();
+        @Assigned(Military);
     };
 
     @For(Identities)

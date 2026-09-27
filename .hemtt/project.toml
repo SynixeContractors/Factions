@@ -2,6 +2,8 @@ name = "Synixe Factions"
 prefix = "synixe_factions"
 mainprefix = "s"
 
+lints.config.cfgpatches_duplicate_class = false
+
 [lints.config.cfgpatches_scope]
 options.check_cfgpatches = false
 options.check_prefixes = []

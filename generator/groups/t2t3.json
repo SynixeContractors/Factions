@@ -65,6 +65,28 @@
         },
         {
             "types": [
+                "Reserves"
+            ],
+            "icon": "\\a3\\ui_f\\data\\map\\markers\\nato\\n_inf.paa",
+            "groups": [
+                {
+                    "class": "Squad",
+                    "name": "Squad",
+                    "units": [
+                        "SquadLeader",
+                        "Rifleman",
+                        "Rifleman",
+                        "Medic",
+                        "TeamLeader",
+                        "Rifleman",
+                        "Autorifleman",
+                        "Rifleman"
+                    ]
+                }
+            ]
+        },
+        {
+            "types": [
                 "Army_Combat",
                 "Reserves",
                 "Special_Forces"

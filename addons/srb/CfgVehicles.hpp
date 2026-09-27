@@ -1,9 +1,9 @@
 class CfgVehicles {
-    class GCLASS(Base_OPFOR);
-
-    class CLASS(Base): GCLASS(Base_OPFOR) {
-        faction = QCLASS(t4_opfor);
-        displayName = " Base";
+    @ForSides(OPFOR,INDEP)
+    class GCLASS(Base_$UPPER);
+    class CLASS2($UPPER,Base): GCLASS(Base_$UPPER) {
+        faction = QCLASS(t4_$LOWER);
+        displayName = "SRB Base";
         identityTypes[] = {
             "LanguageFRE_F",
             "Head_Tanoan",
@@ -12,4 +12,5 @@ class CfgVehicles {
         genericNames = "lxWS_WSaharaMen";
         @Templated();
     };
+    @EndForSides
 };

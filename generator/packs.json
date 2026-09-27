@@ -10,6 +10,15 @@
             ["ACE_painkillers", 1]
         ]
     },
+    "civilian_medical": {
+        "items": [
+            ["ACE_elasticBandage", 4],
+            ["ACE_packingBandage", 4]
+        ],
+        "magazines": [
+            ["ACE_painkillers", 1]
+        ]
+    },
     "military_standard": {
         "items": [
             ["ACE_CableTie", 6]
@@ -17,6 +26,15 @@
         "magazines": [
             ["SmokeShell", 2],
             ["HandGrenade", 2],
+            ["Chemlight_green", 1],
+            ["Chemlight_blue", 1]
+        ]
+    },
+    "police_standard": {
+        "items": [
+            ["ACE_CableTie", 6]
+        ],
+        "magazines": [
             ["Chemlight_green", 1],
             ["Chemlight_blue", 1]
         ]
@@ -87,6 +105,13 @@
         "magazines": [
             ["SatchelCharge_Remote_Mag", 1],
             ["DemoCharge_Remote_Mag", 2]
+        ]
+    },
+    "ied": {
+        "magazines": [
+            ["IEDUrbanSmall_Remote_Mag", 1],
+            ["IEDUrbanSmall_Remote_Mag", 1],
+            ["IEDUrbanBig_Remote_Mag", 1],
         ]
     },
     "jtac": {

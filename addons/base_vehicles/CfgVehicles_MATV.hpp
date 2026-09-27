@@ -1,4 +1,4 @@
-class B_MRAP_01_F;
+ADD_CAMO_EVENT_HANDLER(B_MRAP_01_F,MRAP_01_base_F);
 class GCLASS(MATV): B_MRAP_01_F {
     displayName = "M-ATV";
     faction = QGCLASS(base_vehicles);
@@ -7,10 +7,11 @@ class GCLASS(MATV): B_MRAP_01_F {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 178;
+    #include "eventhandler_camo.hpp"
     #include "textures/MATV.hpp"
 };
 
-class B_MRAP_01_hmg_F;
+ADD_CAMO_EVENT_HANDLER(B_MRAP_01_hmg_F,MRAP_01_hmg_base_F);
 class GCLASS(MATV_HMG): B_MRAP_01_hmg_F {
     displayName = "M-ATV (HMG)";
     faction = QGCLASS(base_vehicles);
@@ -19,10 +20,11 @@ class GCLASS(MATV_HMG): B_MRAP_01_hmg_F {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 178;
+    #include "eventhandler_camo.hpp"
     #include "textures/MATV.hpp"
 };
 
-class B_MRAP_01_gmg_F;
+ADD_CAMO_EVENT_HANDLER(B_MRAP_01_gmg_F,MRAP_01_gmg_base_F);
 class GCLASS(MATV_GMG): B_MRAP_01_gmg_F {
     displayName = "M-ATV (GMG)";
     faction = QGCLASS(base_vehicles);
@@ -31,5 +33,6 @@ class GCLASS(MATV_GMG): B_MRAP_01_gmg_F {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 178;
+    #include "eventhandler_camo.hpp"
     #include "textures/MATV.hpp"
 };

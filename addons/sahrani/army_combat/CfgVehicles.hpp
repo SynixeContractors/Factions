@@ -20,6 +20,7 @@ class CfgVehicles {
     #define TEMPLATE_CAMO Blufor
     #include "../../../templates/tanks/Merkava.hpp"
     #include "../../../templates/tanks/Merkava_SPG.hpp"
+    #include "../../../templates/apc/Namer.hpp"
     #include "../../../templates/cars/MATV.hpp"
     #include "../../../templates/cars/HEMTT.hpp"
     #undef TEMPLATE_CAMO

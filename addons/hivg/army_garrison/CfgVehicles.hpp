@@ -68,19 +68,15 @@ class CfgVehicles {
                     "probability": 0.2,
                     "magazinesVest": {
                         "30Rnd_556x45_Stanag": 5,
-                        "1Rnd_40mm_HE_lxWS": 3,
                     },
                     "loadedPrimary": "30Rnd_556x45_Stanag",
-                    "loadedSecondary": "1Rnd_40mm_HE_lxWS",
                 },
                 "Atlas_Arifle_famasG2_F": {
                     "probability": 0.2,
                     "magazinesVest": {
                         "30Rnd_556x45_Stanag": 5,
-                        "1Rnd_40mm_HE_lxWS": 3,
                     },
                     "loadedPrimary": "30Rnd_556x45_Stanag",
-                    "loadedSecondary": "1Rnd_40mm_HE_lxWS",
                 },
             },
             "optics": {
@@ -302,19 +298,15 @@ class CfgVehicles {
                     "probability": 0.2,
                     "magazinesVest": {
                         "30Rnd_556x45_Stanag": 5,
-                        "1Rnd_40mm_HE_lxWS": 3,
                     },
                     "loadedPrimary": "30Rnd_556x45_Stanag",
-                    "loadedSecondary": "1Rnd_40mm_HE_lxWS",
                 },
                 "Atlas_Arifle_famasG2_F": {
                     "probability": 0.2,
                     "magazinesVest": {
                         "30Rnd_556x45_Stanag": 5,
-                        "1Rnd_40mm_HE_lxWS": 3,
                     },
                     "loadedPrimary": "30Rnd_556x45_Stanag",
-                    "loadedSecondary": "1Rnd_40mm_HE_lxWS",
                 },
             },
             "optics": {

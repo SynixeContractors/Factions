@@ -140,3 +140,15 @@ class CLASS(LUT_MRL): GCLASS(LUT_MRL) {
     crew = QCLASS(Rifleman);
     typicalCargo[] = {QCLASS(Rifleman), QCLASS(Rifleman)};
 };
+
+class GCLASS(QuadBike);
+class CLASS(QuadBike): GCLASS(QuadBike) {
+    SCOPE_DLC;
+    faction = QPCLASS(t3_indep);
+    side = 2;
+    textureList[] = {"Olive",1};
+    editorPreview = "\A3\EditorPreviews_F\Data\CfgVehicles\C_Quadbike_01_F.jpg";
+    hiddenSelectionsTextures[] = {};
+    crew = QCLASS(Rifleman);
+    typicalCargo[] = {QCLASS(Rifleman), QCLASS(Rifleman)};
+};

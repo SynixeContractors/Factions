@@ -6,5 +6,6 @@ class CfgVehicles {
         displayName = "YSM Base";
         @Identity(Tiyen);
         @Templated();
+        @Assigned(Military);
     };
 };

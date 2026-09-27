@@ -1,4 +1,4 @@
-name = "Synixe Factrions";
+name = "Synixe Factions";
 picture = "logo_ca.paa";
 actionName = "GitHub";
 action = "https://github.com/SynixeContractors/Factions";

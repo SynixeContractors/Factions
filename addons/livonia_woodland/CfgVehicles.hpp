@@ -6,5 +6,6 @@ class CfgVehicles {
         displayName = "Livonia Base";
         @Identity(Livonia);
         @Templated();
+        @Assigned(Military);
     };
 };

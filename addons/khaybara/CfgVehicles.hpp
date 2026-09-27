@@ -7,4 +7,5 @@ class CfgVehicles {
         @Identity(Ngabiri);//FIXME
         @Templated();
     };
+    MAKE_FLAGPOLE(Khaybara,flag.paa);
 };

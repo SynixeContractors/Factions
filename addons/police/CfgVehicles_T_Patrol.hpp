@@ -12,7 +12,8 @@ class CLASS2(SIDE,Policeman): CLASS2(Base,NATION) {
             "U_B_GEN_Commander_F": 0.2,
         },
         "packs": [
-            "rifleman_medical"
+            "rifleman_medical",
+            "police_standard"
         ],
     });
     @Secondary({
@@ -23,8 +24,14 @@ class CLASS2(SIDE,Policeman): CLASS2(Base,NATION) {
                 },
             },
         },
+        "pointers": {
+            "acc_flashlight_pistol": 1,
+        },
     });
     @Primary({
+        "pointers": {
+            "acc_flashlight": 1,
+        },
         "optics": {
             "": 4,
             "optic_r1_high_lxWS": 1,

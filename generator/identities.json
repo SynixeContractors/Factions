@@ -74,7 +74,7 @@
         ],
         "genericNames": "Russian"
     },
-    "Illianz": {
+    "Illanz": {
         "identityTypes": [
             "Head_NATO",
             "Head_Enoch",
@@ -147,5 +147,12 @@
             "LanguageFRE_F"
         ],
         "genericNames": "French"
+    },
+    "Marar": {
+        "identityTypes": [
+            "Head_Greek",
+            "LanguageRUS_F"
+        ],
+        "genericNames": "Russian"
     },
 }

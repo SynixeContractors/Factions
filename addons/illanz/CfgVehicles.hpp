@@ -4,7 +4,8 @@ class CfgVehicles {
     class CLASS(Base): GCLASS(Base_OPFOR) {
         faction = QCLASS(t3_opfor);
         displayName = FACTION_NAME;
-        @Identity(Illianz);
+        @Identity(Illanz);
         @Templated();
     };
+    MAKE_FLAGPOLE(Illanz,flag.paa);
 };

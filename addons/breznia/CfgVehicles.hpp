@@ -12,5 +12,6 @@ class CfgVehicles {
         };
         genericNames = "EnochMen";
         @Templated();
+        @Assigned(Military);
     };
 };
