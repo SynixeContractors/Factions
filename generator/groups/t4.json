@@ -3,7 +3,7 @@
         {
             "types": [
                 "Army_Combat",
-                "Militia"
+                "Militia",
             ],
             "icon": "\\a3\\ui_f\\data\\map\\markers\\nato\\n_inf.paa",
             "groups": [
@@ -30,7 +30,7 @@
         {
             "types": [
                 "Army_Combat",
-                "Militia"
+                "Militia",
             ],
             "icon": "\\a3\\ui_f\\data\\map\\markers\\nato\\n_inf.paa",
             "groups": [

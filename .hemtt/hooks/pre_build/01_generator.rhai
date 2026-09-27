@@ -279,13 +279,12 @@ fn assigned(value) {
     return ret;
 }
 
-fn groups(args) {
-    if args.len() != 3 {
-        fatal("Groups macro requires exactly 3 arguments");
+fn groups(args, context) {
+    if args.len() != 2 {
+        fatal("Groups macro requires exactly 2 arguments");
     }
     let tier = args[0];
-    let side = args[1];
-    let type = args[2];
+    let type = args[1];
     let match_type = type;
     if type.ends_with("_OPFOR") || type.ends_with("_BLUFOR") || type.ends_with("_INDEP") || type.ends_with("_CIV") {
         // remove side suffix
@@ -298,14 +297,14 @@ fn groups(args) {
             match_type += parts[i];
         }
     }
-    let faction = to_lower(tier) + "_" + to_lower(side);
-    let side = switch side {
+    let faction = to_lower(tier) + "_" + to_lower(context["group_side"]);
+    let side = switch context["group_side"] {
         "BLUFOR" => 1,
         "OPFOR" => 0,
         "INDEP" => 2,
         "CIV" => 3,
         _ => {
-            fatal("Unknown side: " + side);
+            fatal("Unknown side: " + context["group_side"] + " in Groups macro with args: " + args);
         }
     };
     let id = tier + "_" + type;
@@ -316,6 +315,8 @@ fn groups(args) {
         let parts = match_type.split("_");
         if parts.len() == 2 {
             ret += "name = \"" + parts[0] + " (" + parts[1] + ")\";\n";
+        } else if parts.len() == 3 {
+            ret += "name = \"" + parts[0] + " (" + parts[1] + ", " + parts[2] + ")\";\n";
         } else {
             ret += "name = \"" + match_type + "\";\n";
         }
@@ -326,7 +327,21 @@ fn groups(args) {
     }
     let group_source = load_json("groups/" + tier_file);
     for section in group_source.groups {
-        if match_type in section.types {
+        let group_type = match_type;
+        if !(group_type in section.types) {
+            // might be an identity
+            // this check could potentially be better for build time
+            // if we load identities and check against them
+            let parts = group_type.split("_");
+            group_type = "";
+            for i in 0..parts.len() - 1 {
+                if i > 0 {
+                    group_type += "_";
+                }
+                group_type += parts[i];
+            }
+        }
+        if group_type in section.types {
             for group in section.groups {
                 ret += "class CLASS(" + group.class + ")";
                 if "parent" in group {
@@ -420,10 +435,10 @@ fn is_alphanumeric(char) {
 
 fn get_side_data(side) {
     switch side {
-        "BLUFOR" => { return #{SIDE: 1, UPPER: "BLUFOR", LOWER: "blufor", GROUP: "West"} }
-        "OPFOR" => { return #{SIDE: 0, UPPER: "OPFOR", LOWER: "opfor", GROUP: "East"} }
-        "INDEP" => { return #{SIDE: 2, UPPER: "INDEP", LOWER: "indep", GROUP: "Indep"} }
-        "CIV" => { return #{SIDE: 3, UPPER: "CIV", LOWER: "civ", GROUP: "Civ"} }
+        "BLUFOR" => { return #{SIDE: 1, UPPER: "BLUFOR", LOWER: "blufor", GROUP: "WEST"} }
+        "OPFOR" => { return #{SIDE: 0, UPPER: "OPFOR", LOWER: "opfor", GROUP: "EAST"} }
+        "INDEP" => { return #{SIDE: 2, UPPER: "INDEP", LOWER: "indep", GROUP: "INDEP"} }
+        "CIV" => { return #{SIDE: 3, UPPER: "CIV", LOWER: "civ", GROUP: "CIV"} }
         _ => { fatal("Unknown side: " + side); }
     }
 }
@@ -485,7 +500,7 @@ fn parse_macro_args(line) {
     return args;
 }
 
-fn parse_macro(line) {
+fn parse_macro(line, context) {
     if !line.starts_with("@") {
         fatal("Line does not start with @: " + line);
     }
@@ -576,7 +591,7 @@ respawnLinkedItems[] = {};
             return assigned(args);
         }
         "Groups" => {
-            return groups(args);
+            return groups(args, context);
         }
         "Names" => {
             return names(args);
@@ -689,6 +704,11 @@ fn build_item_variables(item) {
 }
 
 fn process_block_iterations(block, parent_variables, iteration_items, iter_type) {
+    let context = #{
+    };
+    return process_block_iterations(block, parent_variables, iteration_items, iter_type, context);
+};
+fn process_block_iterations(block, parent_variables, iteration_items, iter_type, context) {
     let result = "";
     for item in iteration_items {
         // Build the variable map for this iteration
@@ -700,19 +720,34 @@ fn process_block_iterations(block, parent_variables, iteration_items, iter_type)
         }
         
         let merged_vars = merge_variables(parent_variables, item_vars);
-        let processed_body = process_lines(block, 0, merged_vars);
+        let processed_body = process_lines(block, 0, merged_vars, context);
         result += processed_body;
     }
     return result;
 }
 
 fn process_lines(lines, start_index, variables) {
+    let context = #{
+        group_side: "",
+    };
+    return process_lines(lines, start_index, variables, context);
+};
+fn process_lines(lines, start_index, variables, context) {
     let replacement = "";
     let index = start_index;
-    
     while index < lines.len() {
         let line = lines[index];
         line.trim();
+
+        if line == "class INDEP {" {
+            context["group_side"] = "INDEP";
+        } else if line == "class EAST {" {
+            context["group_side"] = "OPFOR";
+        } else if line == "class WEST {" {
+            context["group_side"] = "BLUFOR";
+        } else if line == "class CIV {" {
+            context["group_side"] = "CIV";
+        }
         
         if line.starts_with("@ForSides(") {
             // Parse @ForSides and get the sides to iterate
@@ -738,7 +773,7 @@ fn process_lines(lines, start_index, variables) {
             let items = parse_for_items(raw_json);
             let block = find_block(lines, end_index, "@EndFor");
             
-            replacement += process_block_iterations(block[0], variables, items, "For");
+            replacement += process_block_iterations(block[0], variables, items, "For", context);
             index = block[1];
         } else if line.starts_with("@") {
             // Parse and expand a standalone macro
@@ -748,11 +783,25 @@ fn process_lines(lines, start_index, variables) {
             
             // Apply variable substitution to macro text before parsing
             let substituted_macro = replace_placeholder(macro_text, variables);
-            replacement += parse_macro(substituted_macro) + "\n";
+            replacement += parse_macro(substituted_macro, context) + "\n";
             index = end_index;
         } else {
             // Regular line - apply variable substitution
             let processed_line = replace_placeholder(line, variables);
+            let trimmed_line = processed_line;
+            trimmed_line.trim();
+            if trimmed_line.contains("class ") {
+                debug("Processing class line: " + trimmed_line);
+            }
+            if trimmed_line == "class INDEP {" {
+                context["group_side"] = "INDEP";
+            } else if trimmed_line == "class EAST {" {
+                context["group_side"] = "OPFOR";
+            } else if trimmed_line == "class WEST {" {
+                context["group_side"] = "BLUFOR";
+            } else if trimmed_line == "class CIV {" {
+                context["group_side"] = "CIV";
+            }
             replacement += processed_line + "\n";
         }
         index += 1;

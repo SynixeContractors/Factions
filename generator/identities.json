@@ -74,7 +74,7 @@
         ],
         "genericNames": "Russian"
     },
-    "Illianz": {
+    "Illanz": {
         "identityTypes": [
             "Head_NATO",
             "Head_Enoch",
@@ -120,11 +120,32 @@
         ],
         "genericNames": "French"
     },
+    "Tiyen": {
+        "identityTypes": [
+            "Head_Asian",
+            "LanguageCHI_F"
+        ],
+        "genericNames": "Chinese"
+    },
     "Brienne": {
         "identityTypes": [
             "Head_Euro",
             "LanguageFRE_F"
         ],
         "genericNames": "French"
+    },
+    "Tanoan": {
+        "identityTypes": [
+            "Head_Tanoan",
+            "LanguageENGFRE_F"
+        ],
+        "genericNames": "TanoanMen"
+    },
+    "Marar": {
+        "identityTypes": [
+            "Head_Greek",
+            "LanguageRUS_F"
+        ],
+        "genericNames": "Russian"
     },
 }

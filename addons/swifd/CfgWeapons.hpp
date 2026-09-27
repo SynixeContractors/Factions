@@ -8,7 +8,7 @@ class CfgWeapons {
         displayName = "Casual Clothes (SwifD)";
         picture = QPATHTOF(ui\uniform_casual_ca.paa);
         class ItemInfo: ItemInfo {
-            uniformClass = QCLASS(man_casual);
+            uniformClass = QCLASS(man_worker);
         };
     };
 };

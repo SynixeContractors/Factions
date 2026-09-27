@@ -6,5 +6,7 @@ class CfgVehicles {
         identityTypes[] = {"LanguageCHI_F", "Head_Asian"};
         genericNames = "NATOMen"; //FIXME: change to Asian/korean Names
         @Templated();
+        @Assigned(Military);
     };
+    MAKE_FLAGPOLE(Joson,flag.paa);
 };

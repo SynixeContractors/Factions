@@ -1,4 +1,8 @@
-class MELB_H6M;
+class MELB_base;
+class MELB_H6M: MELB_base {
+    class AcreIntercoms;
+    class EventHandlers;
+};
 class GCLASS(MELB): MELB_H6M {
     displayName = "OH-6 Little Bird";
     faction = QGCLASS(base_vehicles);
@@ -7,9 +11,22 @@ class GCLASS(MELB): MELB_H6M {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 233;
+    #include "eventhandler_camo.hpp"
     #include "textures/LittleBird.hpp"
+    class AcreIntercoms: AcreIntercoms {
+        class Intercom_2 {
+            displayName = "Passenger intercom";
+            shortName = "Pax";
+            allowedPositions[] = {"crew", {"cargo", "all"}};
+            connectedByDefault = 0;
+        };
+    };
+
 };
-class MELB_MH6M;
+class MELB_MH6M: MELB_base {
+    class EventHandlers;
+};
+
 class GCLASS(MELB_Rig): MELB_MH6M {
     displayName = "MH-6 Little Bird";
     faction = QGCLASS(base_vehicles);
@@ -18,6 +35,7 @@ class GCLASS(MELB_Rig): MELB_MH6M {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 233;
+    #include "eventhandler_camo.hpp"
     #include "textures/LittleBird.hpp"
 };
 class MELB_AH6M;
@@ -29,5 +47,6 @@ class GCLASS(MELB_Attack): MELB_AH6M {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 233;
+    #include "eventhandler_camo.hpp"
     #include "textures/LittleBird.hpp"
 };

@@ -3,7 +3,7 @@
 add3DENEventHandler ["OnEditableEntityAdded", {
     params ["_entity"];
     if (typeName _entity != "OBJECT") exitWith {};
-    _units = crew _entity;
+    private _units = crew _entity;
     {
         private _entity = _x;
         if (BASE_CLASSES findIf { _entity isKindOf _x } != -1) then {

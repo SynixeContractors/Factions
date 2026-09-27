@@ -2,13 +2,13 @@ class CfgGroups {
     class EAST {
         class CLASS(t4_opfor) {
             name = "[T4] Ikhwan as-Sayf";
-            @Groups(T4,OPFOR,Militia_OPFOR);
+            @Groups(T4,Militia_OPFOR);
         };
     };
     class INDEP {
         class CLASS(t4_indep) {
             name = "[T4] Ikhwan as-Sayf";
-            @Groups(T4,INDEP,Militia_INDEP);
+            @Groups(T4,Militia_INDEP);
         };
     };
 };
