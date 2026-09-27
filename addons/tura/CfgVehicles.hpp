@@ -9,7 +9,7 @@ class CfgVehicles {
     class CLASS2($UPPER,Base2): GCLASS(Base_$UPPER) {
         faction = QCLASS(t4_$LOWER);
         // international intervention
-        @Identity(AllFrench);
+        @Identity(Illanz);
         @Templated();
     };
     @EndForSides
