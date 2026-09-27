@@ -8,4 +8,5 @@ class CfgVehicles {
         @Templated();
         @Assigned(Military);
     };
+    MAKE_FLAGPOLE(Joson,flag.paa);
 };
