@@ -5,9 +5,8 @@ class CLASS2(SIDE,LUT_Transport): GCLASS(LUT_Transport) {
     faction = QPCLASS(SIDE_FACTION);
     side = SIDE_NUMBER;
     textureList[] = {
-        "Green",1,
+        "Green",1
     };
-    editorPreview = "\A3_Aegis\EditorPreviews_F_Aegis\Data\CfgVehicles\O_R_Truck_02_transport_F.jpg";
     crew = QCLASS2(SIDE,Rifleman);
     typicalCargo[] = {QCLASS2(SIDE,Rifleman)};
 };
