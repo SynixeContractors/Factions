@@ -149,5 +149,4 @@ class CLASS2(SIDE,Van_Cargo_Police): GCLASS(Van_Cargo_Lights) {
     textureList[] = {QUOTE(TEMPLATE_CAMO),1};
 };
 
-
 #undef TEMPLATE_CAMO
