@@ -35,6 +35,21 @@ class GCLASS(Van_Transport): C_Van_02_transport_F {
         class reflective_tape_hide;
     };
 };
+class Van_02_vehicle_base_F;
+class C_Van_02_vehicle_F: Van_02_vehicle_base_F {
+    class AnimationSources;
+};
+class GCLASS(Van_Cargo): C_Van_02_vehicle_F {
+    class AnimationSources: AnimationSources {
+        class beacon_front_hide;
+        class beacon_rear_hide;
+        class roof_rack_hide;
+        class front_protective_frame_hide;
+        class side_protective_frame_hide;
+        class LED_lights_hide;
+        class reflective_tape_hide;
+    };
+};
 
 class GCLASS(Ram);
 class Pickup_service_base_rf;
@@ -82,6 +97,21 @@ class GCLASS(Van_Transport_Lights): GCLASS(Van_Transport) {
     scope = 0;
     scopeCurator = 0;
     displayName = "Van (Transport, Lightbar)";
+    textureList[] = {QUOTE(TEMPLATE_CAMO),1};
+    class AnimationSources: AnimationSources {
+        ANIMATION_OFF(beacon_front_hide);
+        ANIMATION_OFF(beacon_rear_hide);
+        ANIMATION_OFF(roof_rack_hide);
+        ANIMATION_OFF(front_protective_frame_hide);
+        ANIMATION_OFF(side_protective_frame_hide);
+        ANIMATION_OFF(LED_lights_hide);
+        ANIMATION_OFF(reflective_tape_hide);
+    };
+};
+class GCLASS(Van_Cargo_Lights): GCLASS(Van_Cargo) {
+    scope = 0;
+    scopeCurator = 0;
+    displayName = "Van (Cargo, Lightbar)";
     textureList[] = {QUOTE(TEMPLATE_CAMO),1};
     class AnimationSources: AnimationSources {
         ANIMATION_OFF(beacon_front_hide);
