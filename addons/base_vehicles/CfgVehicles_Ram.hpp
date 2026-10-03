@@ -69,7 +69,7 @@ class GCLASS(Ram_RCWS): Pickup_01_rcws_base_rf {
     ace_refuel_fuelCapacity = 98;
     RAM_TEXTURE_LIST;
     #include "racks\singlerack.hpp"
-    #include "textures\Ram.hpp"
+    #include "textures\RamRCWS.hpp"
 };
 
 class Pickup_01_minigun_base_rf;
