@@ -168,4 +168,24 @@ class TextureSources {
         materials[] = {"\a3\Soft_F_Orange\Van_02\Data\van_body_dirty.rvmat","\A3\Soft_F_Orange\Van_02\Data\van_wheel_dirty.rvmat","","","\a3\Data_f\Lights\Car_Beacon_Blue_emit.rvmat"};
         factions[] = {};
     };
+    class Police {
+        displayName = "Police";
+        textures[] = {
+            QPATHTOEF(vehicle_textures,data\van\van_body_police_CO.paa),
+            "\a3\soft_f_orange\van_02\data\van_wheel_transport_co.paa",
+            "\a3\Soft_F_Orange\Van_02\Data\van_glass_gen_CA.paa",
+            "\a3\Soft_F_Orange\Van_02\Data\van_body_gen_CO.paa"
+        };
+        factions[] = {};
+    };
+    class Police_white {
+        displayName = "Police (White)";
+        textures[] = {
+            QPATHTOEF(vehicle_textures,data\van\van_body_police_white_CO.paa),
+            "\a3\soft_f_orange\van_02\data\van_wheel_transport_co.paa",
+            "\a3\Soft_F_Orange\Van_02\Data\van_glass_gen_CA.paa",
+            "\a3\Soft_F_Orange\Van_02\Data\van_body_gen_CO.paa"
+        };
+        factions[] = {};
+    };
 };

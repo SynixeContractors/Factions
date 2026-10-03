@@ -160,4 +160,24 @@ class TextureSources {
         textures[] = {"A3_Aegis\soft_f_aegis\Van_02\Data\van_body_malden_bus_co.paa","\A3\Soft_F_Orange\Van_02\Data\van_wheel_transport_CO.paa","\A3\Soft_F_Orange\Van_02\Data\van_glass_transport_CA.paa","A3_Aegis\soft_f_aegis\Van_02\Data\van_body_malden_bus_co.paa"};
         factions[] = {};
     };
+    class Police {
+        displayName = "Police";
+        textures[] = {
+            QPATHTOEF(vehicle_textures,data\van\van_body_police_CO.paa),
+            "\a3\soft_f_orange\van_02\data\van_wheel_transport_co.paa",
+            "\a3\Soft_F_Orange\Van_02\Data\van_glass_gen_CA.paa",
+            "\a3\Soft_F_Orange\Van_02\Data\van_body_gen_CO.paa"
+        };
+        factions[] = {};
+    };
+    class Police_white {
+        displayName = "Police (White)";
+        textures[] = {
+            QPATHTOEF(vehicle_textures,data\van\van_body_police_white_CO.paa),
+            "\a3\soft_f_orange\van_02\data\van_wheel_transport_co.paa",
+            "\a3\Soft_F_Orange\Van_02\Data\van_glass_gen_CA.paa",
+            "\a3\Soft_F_Orange\Van_02\Data\van_body_gen_CO.paa"
+        };
+        factions[] = {};
+    };
 };

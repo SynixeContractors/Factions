@@ -32,6 +32,14 @@ class CLASS2(SIDE,Van_Transport): GCLASS(Van_Transport_Lights) {
     editorSubcategory = QCLASS2(NATION,Gendarmerie_vehicles);
     textureList[] = {QUOTE(TEMPLATE_CAMO),1};
 };
+class CLASS2(SIDE,Van_Cargo): GCLASS(Van_Cargo_Lights) {
+    SCOPE_DLC;
+    faction = FACTION;
+    side = TEMPLATE_SIDE;
+    crew = QCLASS2(SIDE,Gendarme);
+    editorSubcategory = QCLASS2(NATION,Gendarmerie_vehicles);
+    textureList[] = {QUOTE(TEMPLATE_CAMO),1};
+};
 class CLASS2(SIDE,Ram): CLASS(Ram) {
     SCOPE_DLC;
     faction = FACTION;
@@ -124,4 +132,21 @@ class CLASS2(SIDE,Offroad_Comms_Police): GCLASS(Offroad_Comms) {
     editorSubcategory = QCLASS2(NATION,Patrol_vehicles);
     textureList[] = {QUOTE(TEMPLATE_CAMO),1};
 };
+class CLASS2(SIDE,Van_Transport_Police): GCLASS(Van_Transport_Lights) {
+    SCOPE_DLC;
+    faction = FACTION;
+    side = TEMPLATE_SIDE;
+    crew = QCLASS2(SIDE,Policeman);
+    editorSubcategory = QCLASS2(NATION,Patrol_vehicles);
+    textureList[] = {QUOTE(TEMPLATE_CAMO),1};
+};
+class CLASS2(SIDE,Van_Cargo_Police): GCLASS(Van_Cargo_Lights) {
+    SCOPE_DLC;
+    faction = FACTION;
+    side = TEMPLATE_SIDE;
+    crew = QCLASS2(SIDE,Policeman);
+    editorSubcategory = QCLASS2(NATION,Patrol_vehicles);
+    textureList[] = {QUOTE(TEMPLATE_CAMO),1};
+};
+
 #undef TEMPLATE_CAMO
