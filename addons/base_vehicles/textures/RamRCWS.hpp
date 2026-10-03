@@ -618,7 +618,7 @@ class TextureSources {
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_ext_brown_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_adds_co.paa",
             "\lxrf\vehicles_rf\pickup_01\data\pickup_01_ext2_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws_csat_co.paa",
+            "\lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws_black_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_service_brown_co.paa"
         };
         materials[] = {
