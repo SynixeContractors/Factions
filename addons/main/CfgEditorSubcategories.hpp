@@ -37,4 +37,10 @@ class CfgEditorSubcategories {
     class GCLASS(police_cars) {
         displayName = "Cars (Police, Patrol)";
     };
+    class GCLASS(SWAT) {
+        displayName = "Men (Police, SWAT)";
+    };
+    class GCLASS(SWAT_cars) {
+        displayName = "Cars (Police, SWAT)";
+    };
 };
