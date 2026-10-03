@@ -132,7 +132,7 @@ class TextureSources {
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_ext_fia_01_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_adds_fia_01_co.paa",
             "\lxrf\vehicles_rf\pickup_01\data\pickup_01_ext2_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws_black_co.paa",
+            "\lxrf\vehicles_rf\pickup_01\data\rcws\rcws_tan_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_service_fia_01_co.paa"
         };
         materials[] = {
@@ -168,7 +168,7 @@ class TextureSources {
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_ext_fia_03_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_adds_fia_03_co.paa",
             "\lxrf\vehicles_rf\pickup_01\data\pickup_01_ext2_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws_black_co.paa",
+            "\lxrf\vehicles_rf\pickup_01\data\rcws\rcws_tan_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_service_fia_03_co.paa"
         };
         materials[] = {
@@ -222,7 +222,7 @@ class TextureSources {
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_ext_fia_06_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_adds_fia_06_co.paa",
             "\lxrf\vehicles_rf\pickup_01\data\pickup_01_ext2_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws_black_co.paa",
+            "\lxrf\vehicles_rf\pickup_01\data\rcws\rcws_olive_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_service_fia_06_co.paa"
         };
         materials[] = {
@@ -240,7 +240,7 @@ class TextureSources {
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_ext_fia_07_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_adds_fia_07_co.paa",
             "\lxrf\vehicles_rf\pickup_01\data\pickup_01_ext2_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws_black_co.paa",
+            "\lxrf\vehicles_rf\pickup_01\data\rcws\rcws_tan_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_service_fia_07_co.paa"
         };
         materials[] = {
@@ -258,7 +258,7 @@ class TextureSources {
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_ext_fia_08_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_adds_fia_08_co.paa",
             "\lxrf\vehicles_rf\pickup_01\data\pickup_01_ext2_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws_black_co.paa",
+            "\lxrf\vehicles_rf\pickup_01\data\rcws\rcws_tan_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_service_fia_08_co.paa"
         };
         materials[] = {
@@ -276,7 +276,7 @@ class TextureSources {
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_ext_fia_09_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_adds_fia_09_co.paa",
             "\lxrf\vehicles_rf\pickup_01\data\pickup_01_ext2_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws_black_co.paa",
+            "\lxrf\vehicles_rf\pickup_01\data\rcws\rcws_olive_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_service_fia_09_co.paa"
         };
         materials[] = {
@@ -294,7 +294,7 @@ class TextureSources {
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_ext_sfia_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_adds_sfia_co.paa",
             "\lxrf\vehicles_rf\pickup_01\data\pickup_01_ext2_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws_tan_co.paa",
+            "\lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws_csat_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_service_sfia_co.paa"
         };
         materials[] = {
@@ -330,7 +330,7 @@ class TextureSources {
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_ext_ctrg_pacific_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_adds_nato_pacific_co.paa",
             "\lxrf\vehicles_rf\pickup_01\data\pickup_01_ext2_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws_black_co.paa",
+            "\lxrf\vehicles_rf\pickup_01\data\rcws\rcws_olive_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_service_ctrg_pacific_co.paa"
         };
         materials[] = {
@@ -546,7 +546,7 @@ class TextureSources {
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_ext_nato_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_adds_nato_co.paa",
             "\lxrf\vehicles_rf\pickup_01\data\pickup_01_ext2_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws_tan_co.paa",
+            "\lxrf\vehicles_rf\pickup_01\data\rcws\rcws_black_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_service_nato_co.paa"
         };
         materials[] = {
@@ -618,7 +618,7 @@ class TextureSources {
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_ext_brown_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_adds_co.paa",
             "\lxrf\vehicles_rf\pickup_01\data\pickup_01_ext2_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws_black_co.paa",
+            "\lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws_csat_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_service_brown_co.paa"
         };
         materials[] = {
@@ -636,7 +636,7 @@ class TextureSources {
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_ext_olive_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_adds_co.paa",
             "\lxrf\vehicles_rf\pickup_01\data\pickup_01_ext2_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws_black_co.paa",
+            "\lxrf\vehicles_rf\pickup_01\data\rcws\rcws_olive_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_service_olive_co.paa"
         };
         materials[] = {
@@ -744,7 +744,7 @@ class TextureSources {
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_ext_mtp_desert_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_adds_argana_co.paa",
             "\lxrf\vehicles_rf\pickup_01\data\pickup_01_ext2_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws_tan_co.paa",
+            "\lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws_csat_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_service_mtp_desert_co.paa"
         };
         materials[] = {
