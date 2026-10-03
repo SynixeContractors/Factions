@@ -6,16 +6,14 @@ class TextureSources {
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_ext_black_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_adds_white_tank_co.paa",
             "\lxrf\vehicles_rf\pickup_01\data\pickup_01_ext2_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\data\pickup_01_AAT_olive_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\data\pickup_01_launcher_co.paa",
+            "\lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws_black_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_service_black_co.paa"
         };
         materials[] = {
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_adds.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext2.rvmat",
-            "lxrf\vehicles_rf\pickup_01\Data\pickup_01_aat.rvmat",
-            "lxrf\vehicles_rf\pickup_01\Data\pickup_01_launcher.rvmat",
+            "lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_service.rvmat"
         };
         factions[] = {};
@@ -26,16 +24,14 @@ class TextureSources {
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_ext_white_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_adds_black_tank_co.paa",
             "\lxrf\vehicles_rf\pickup_01\data\pickup_01_ext2_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\data\pickup_01_aat_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\data\pickup_01_launcher_co.paa",
+            "\lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws_black_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_service_white_co.paa"
         };
         materials[] = {
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_adds.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext2.rvmat",
-            "lxrf\vehicles_rf\pickup_01\Data\pickup_01_aat.rvmat",
-            "lxrf\vehicles_rf\pickup_01\Data\pickup_01_launcher.rvmat",
+            "lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_service.rvmat"
         };
         factions[] = {};
@@ -46,16 +42,14 @@ class TextureSources {
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_ext_grey_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_adds_black_tank_co.paa",
             "\lxrf\vehicles_rf\pickup_01\data\pickup_01_ext2_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\data\pickup_01_aat_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\data\pickup_01_launcher_co.paa",
+            "\lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws_black_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_service_grey_co.paa"
         };
         materials[] = {
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_adds.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext2.rvmat",
-            "lxrf\vehicles_rf\pickup_01\Data\pickup_01_aat.rvmat",
-            "lxrf\vehicles_rf\pickup_01\Data\pickup_01_launcher.rvmat",
+            "lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_service.rvmat"
         };
         factions[] = {};
@@ -66,16 +60,14 @@ class TextureSources {
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_ext_red_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_adds_white_tank_co.paa",
             "\lxrf\vehicles_rf\pickup_01\data\pickup_01_ext2_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\data\pickup_01_aat_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\data\pickup_01_launcher_co.paa",
+            "\lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws_black_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_service_red_co.paa"
         };
         materials[] = {
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_adds.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext2.rvmat",
-            "lxrf\vehicles_rf\pickup_01\Data\pickup_01_aat.rvmat",
-            "lxrf\vehicles_rf\pickup_01\Data\pickup_01_launcher.rvmat",
+            "lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_service.rvmat"
         };
         factions[] = {};
@@ -86,16 +78,14 @@ class TextureSources {
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_ext_blue_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_adds_white_tank_co.paa",
             "\lxrf\vehicles_rf\pickup_01\data\pickup_01_ext2_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\data\pickup_01_aat_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\data\pickup_01_launcher_co.paa",
+            "\lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws_black_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_service_blue_co.paa"
         };
         materials[] = {
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_adds.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext2.rvmat",
-            "lxrf\vehicles_rf\pickup_01\Data\pickup_01_aat.rvmat",
-            "lxrf\vehicles_rf\pickup_01\Data\pickup_01_launcher.rvmat",
+            "lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_service.rvmat"
         };
         factions[] = {};
@@ -106,16 +96,14 @@ class TextureSources {
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_ext_ldf_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_adds_co.paa",
             "\lxrf\vehicles_rf\pickup_01\data\pickup_01_ext2_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\data\pickup_01_AAT_olive_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\data\pickup_01_launcher_co.paa",
+            "\lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws_black_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_service_ldf_co.paa"
         };
         materials[] = {
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext_military.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_adds.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext2.rvmat",
-            "lxrf\vehicles_rf\pickup_01\Data\pickup_01_aat.rvmat",
-            "lxrf\vehicles_rf\pickup_01\Data\pickup_01_launcher.rvmat",
+            "lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_service_military.rvmat"
         };
         factions[] = {};
@@ -126,16 +114,14 @@ class TextureSources {
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_ext_livonian_ranger_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_adds_co.paa",
             "\lxrf\vehicles_rf\pickup_01\data\pickup_01_ext2_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\data\pickup_01_AAT_olive_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\data\pickup_01_launcher_co.paa",
+            "\lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws_black_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_service_livonian_ranger_co.paa"
         };
         materials[] = {
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_adds.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext2.rvmat",
-            "lxrf\vehicles_rf\pickup_01\Data\pickup_01_aat.rvmat",
-            "lxrf\vehicles_rf\pickup_01\Data\pickup_01_launcher.rvmat",
+            "lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_service.rvmat"
         };
         factions[] = {};
@@ -146,16 +132,14 @@ class TextureSources {
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_ext_fia_01_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_adds_fia_01_co.paa",
             "\lxrf\vehicles_rf\pickup_01\data\pickup_01_ext2_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\data\pickup_01_aat_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\data\pickup_01_launcher_co.paa",
+            "\lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws_black_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_service_fia_01_co.paa"
         };
         materials[] = {
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext_military.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_adds.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext2.rvmat",
-            "lxrf\vehicles_rf\pickup_01\Data\pickup_01_aat.rvmat",
-            "lxrf\vehicles_rf\pickup_01\Data\pickup_01_launcher.rvmat",
+            "lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_service_military.rvmat"
         };
         factions[] = {};
@@ -166,16 +150,14 @@ class TextureSources {
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_ext_fia_02_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_adds_fia_02_co.paa",
             "\lxrf\vehicles_rf\pickup_01\data\pickup_01_ext2_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\data\pickup_01_aat_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\data\pickup_01_launcher_co.paa",
+            "\lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws_black_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_service_fia_02_co.paa"
         };
         materials[] = {
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext_military.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_adds.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext2.rvmat",
-            "lxrf\vehicles_rf\pickup_01\Data\pickup_01_aat.rvmat",
-            "lxrf\vehicles_rf\pickup_01\Data\pickup_01_launcher.rvmat",
+            "lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_service_military.rvmat"
         };
         factions[] = {};
@@ -186,16 +168,14 @@ class TextureSources {
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_ext_fia_03_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_adds_fia_03_co.paa",
             "\lxrf\vehicles_rf\pickup_01\data\pickup_01_ext2_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\data\pickup_01_aat_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\data\pickup_01_launcher_co.paa",
+            "\lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws_black_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_service_fia_03_co.paa"
         };
         materials[] = {
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext_military.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_adds.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext2.rvmat",
-            "lxrf\vehicles_rf\pickup_01\Data\pickup_01_aat.rvmat",
-            "lxrf\vehicles_rf\pickup_01\Data\pickup_01_launcher.rvmat",
+            "lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_service_military.rvmat"
         };
         factions[] = {};
@@ -206,16 +186,14 @@ class TextureSources {
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_ext_fia_04_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_adds_fia_04_co.paa",
             "\lxrf\vehicles_rf\pickup_01\data\pickup_01_ext2_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\data\pickup_01_aat_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\data\pickup_01_launcher_co.paa",
+            "\lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws_black_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_service_fia_04_co.paa"
         };
         materials[] = {
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext_military.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_adds.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext2.rvmat",
-            "lxrf\vehicles_rf\pickup_01\Data\pickup_01_aat.rvmat",
-            "lxrf\vehicles_rf\pickup_01\Data\pickup_01_launcher.rvmat",
+            "lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_service_military.rvmat"
         };
         factions[] = {};
@@ -226,16 +204,14 @@ class TextureSources {
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_ext_fia_05_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_adds_fia_05_co.paa",
             "\lxrf\vehicles_rf\pickup_01\data\pickup_01_ext2_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\data\pickup_01_aat_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\data\pickup_01_launcher_co.paa",
+            "\lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws_black_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_service_fia_05_co.paa"
         };
         materials[] = {
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext_military.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_adds.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext2.rvmat",
-            "lxrf\vehicles_rf\pickup_01\Data\pickup_01_aat.rvmat",
-            "lxrf\vehicles_rf\pickup_01\Data\pickup_01_launcher.rvmat",
+            "lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_service_military.rvmat"
         };
         factions[] = {};
@@ -246,16 +222,14 @@ class TextureSources {
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_ext_fia_06_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_adds_fia_06_co.paa",
             "\lxrf\vehicles_rf\pickup_01\data\pickup_01_ext2_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\data\pickup_01_aat_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\data\pickup_01_launcher_co.paa",
+            "\lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws_black_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_service_fia_06_co.paa"
         };
         materials[] = {
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext_military.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_adds.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext2.rvmat",
-            "lxrf\vehicles_rf\pickup_01\Data\pickup_01_aat.rvmat",
-            "lxrf\vehicles_rf\pickup_01\Data\pickup_01_launcher.rvmat",
+            "lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_service_military.rvmat"
         };
         factions[] = {};
@@ -266,16 +240,14 @@ class TextureSources {
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_ext_fia_07_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_adds_fia_07_co.paa",
             "\lxrf\vehicles_rf\pickup_01\data\pickup_01_ext2_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\data\pickup_01_aat_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\data\pickup_01_launcher_co.paa",
+            "\lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws_black_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_service_fia_07_co.paa"
         };
         materials[] = {
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext_military.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_adds.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext2.rvmat",
-            "lxrf\vehicles_rf\pickup_01\Data\pickup_01_aat.rvmat",
-            "lxrf\vehicles_rf\pickup_01\Data\pickup_01_launcher.rvmat",
+            "lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_service_military.rvmat"
         };
         factions[] = {};
@@ -286,16 +258,14 @@ class TextureSources {
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_ext_fia_08_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_adds_fia_08_co.paa",
             "\lxrf\vehicles_rf\pickup_01\data\pickup_01_ext2_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\data\pickup_01_aat_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\data\pickup_01_launcher_co.paa",
+            "\lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws_black_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_service_fia_08_co.paa"
         };
         materials[] = {
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext_military.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_adds.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext2.rvmat",
-            "lxrf\vehicles_rf\pickup_01\Data\pickup_01_aat.rvmat",
-            "lxrf\vehicles_rf\pickup_01\Data\pickup_01_launcher.rvmat",
+            "lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_service_military.rvmat"
         };
         factions[] = {};
@@ -306,16 +276,14 @@ class TextureSources {
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_ext_fia_09_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_adds_fia_09_co.paa",
             "\lxrf\vehicles_rf\pickup_01\data\pickup_01_ext2_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\data\pickup_01_aat_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\data\pickup_01_launcher_co.paa",
+            "\lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws_black_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_service_fia_09_co.paa"
         };
         materials[] = {
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext_military.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_adds.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext2.rvmat",
-            "lxrf\vehicles_rf\pickup_01\Data\pickup_01_aat.rvmat",
-            "lxrf\vehicles_rf\pickup_01\Data\pickup_01_launcher.rvmat",
+            "lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_service_military.rvmat"
         };
         factions[] = {};
@@ -326,16 +294,14 @@ class TextureSources {
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_ext_sfia_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_adds_sfia_co.paa",
             "\lxrf\vehicles_rf\pickup_01\data\pickup_01_ext2_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\data\pickup_01_aat_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\data\pickup_01_Launcher_tan_co.paa",
+            "\lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws_tan_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_service_sfia_co.paa"
         };
         materials[] = {
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext_military.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_adds.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext2.rvmat",
-            "lxrf\vehicles_rf\pickup_01\Data\pickup_01_aat.rvmat",
-            "lxrf\vehicles_rf\pickup_01\Data\pickup_01_launcher.rvmat",
+            "lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_service_military.rvmat"
         };
         factions[] = {};
@@ -346,16 +312,14 @@ class TextureSources {
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_ext_aaf_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_adds_aaf_co.paa",
             "\lxrf\vehicles_rf\pickup_01\data\pickup_01_ext2_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\data\pickup_01_AAT_olive_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\data\pickup_01_launcher_co.paa",
+            "\lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws_olive_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_service_aaf_co.paa"
         };
         materials[] = {
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext_military.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_adds.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext2.rvmat",
-            "lxrf\vehicles_rf\pickup_01\Data\pickup_01_aat.rvmat",
-            "lxrf\vehicles_rf\pickup_01\Data\pickup_01_launcher.rvmat",
+            "lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_service_military.rvmat"
         };
         factions[] = {};
@@ -366,16 +330,14 @@ class TextureSources {
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_ext_ctrg_pacific_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_adds_nato_pacific_co.paa",
             "\lxrf\vehicles_rf\pickup_01\data\pickup_01_ext2_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\data\pickup_01_AAT_olive_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\data\pickup_01_launcher_co.paa",
+            "\lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws_black_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_service_ctrg_pacific_co.paa"
         };
         materials[] = {
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext_military.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_adds.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext2.rvmat",
-            "lxrf\vehicles_rf\pickup_01\Data\pickup_01_aat.rvmat",
-            "lxrf\vehicles_rf\pickup_01\Data\pickup_01_launcher.rvmat",
+            "lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_service_military.rvmat"
         };
         factions[] = {};
@@ -386,16 +348,14 @@ class TextureSources {
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_ext_ctrg_arid_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_adds_nato_co.paa",
             "\lxrf\vehicles_rf\pickup_01\data\pickup_01_ext2_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\data\pickup_01_aat_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\data\pickup_01_Launcher_tan_co.paa",
+            "\lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws_tan_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_service_ctrg_arid_co.paa"
         };
         materials[] = {
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext_military.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_adds.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext2.rvmat",
-            "lxrf\vehicles_rf\pickup_01\Data\pickup_01_aat.rvmat",
-            "lxrf\vehicles_rf\pickup_01\Data\pickup_01_launcher.rvmat",
+            "lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_service_military.rvmat"
         };
         factions[] = {};
@@ -406,16 +366,14 @@ class TextureSources {
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_ext_urban_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_adds_black_co.paa",
             "\lxrf\vehicles_rf\pickup_01\data\pickup_01_ext2_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\data\pickup_01_AAT_olive_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\data\pickup_01_Launcher_black_co.paa",
+            "\lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws_black_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_service_urban_co.paa"
         };
         materials[] = {
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext_military.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_adds.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext2.rvmat",
-            "lxrf\vehicles_rf\pickup_01\Data\pickup_01_aat.rvmat",
-            "lxrf\vehicles_rf\pickup_01\Data\pickup_01_launcher.rvmat",
+            "lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_service_military.rvmat"
         };
         factions[] = {};
@@ -426,16 +384,14 @@ class TextureSources {
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_ext_tan_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_adds_white_tank_co.paa",
             "\lxrf\vehicles_rf\pickup_01\data\pickup_01_ext2_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\data\pickup_01_aat_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\data\pickup_01_Launcher_tan_co.paa",
+            "\lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws_tan_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_service_tan_co.paa"
         };
         materials[] = {
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_adds.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext2.rvmat",
-            "lxrf\vehicles_rf\pickup_01\Data\pickup_01_aat.rvmat",
-            "lxrf\vehicles_rf\pickup_01\Data\pickup_01_launcher.rvmat",
+            "lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_service.rvmat"
         };
         factions[] = {};
@@ -446,16 +402,14 @@ class TextureSources {
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_ext_green_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_adds_white_tank_co.paa",
             "\lxrf\vehicles_rf\pickup_01\data\pickup_01_ext2_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\data\pickup_01_aat_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\data\pickup_01_launcher_co.paa",
+            "\lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws_black_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_service_green_co.paa"
         };
         materials[] = {
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_adds.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext2.rvmat",
-            "lxrf\vehicles_rf\pickup_01\Data\pickup_01_aat.rvmat",
-            "lxrf\vehicles_rf\pickup_01\Data\pickup_01_launcher.rvmat",
+            "lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_service.rvmat"
         };
         factions[] = {};
@@ -466,16 +420,14 @@ class TextureSources {
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_ext_yellow_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_adds_black_co.paa",
             "\lxrf\vehicles_rf\pickup_01\data\pickup_01_ext2_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\data\pickup_01_AAT_olive_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\data\pickup_01_Launcher_black_co.paa",
+            "\lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws_black_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_service_yellow_co.paa"
         };
         materials[] = {
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_adds.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext2.rvmat",
-            "lxrf\vehicles_rf\pickup_01\Data\pickup_01_aat.rvmat",
-            "lxrf\vehicles_rf\pickup_01\Data\pickup_01_launcher.rvmat",
+            "lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_service.rvmat"
         };
         factions[] = {};
@@ -486,16 +438,14 @@ class TextureSources {
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_ext_orange_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_adds_blue_tank_co.paa",
             "\lxrf\vehicles_rf\pickup_01\data\pickup_01_ext2_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\data\pickup_01_AAT_olive_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\data\pickup_01_launcher_co.paa",
+            "\lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws_black_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_service_orange_co.paa"
         };
         materials[] = {
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_adds.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext2.rvmat",
-            "lxrf\vehicles_rf\pickup_01\Data\pickup_01_aat.rvmat",
-            "lxrf\vehicles_rf\pickup_01\Data\pickup_01_launcher.rvmat",
+            "lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_service.rvmat"
         };
         factions[] = {};
@@ -506,16 +456,14 @@ class TextureSources {
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_ext_daltgreen_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_adds_white_tank_co.paa",
             "\lxrf\vehicles_rf\pickup_01\data\pickup_01_ext2_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\data\pickup_01_AAT_olive_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\data\pickup_01_launcher_co.paa",
+            "\lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws_black_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_service_daltgreen_co.paa"
         };
         materials[] = {
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_adds.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext2.rvmat",
-            "lxrf\vehicles_rf\pickup_01\Data\pickup_01_aat.rvmat",
-            "lxrf\vehicles_rf\pickup_01\Data\pickup_01_launcher.rvmat",
+            "lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_service.rvmat"
         };
         factions[] = {};
@@ -526,16 +474,14 @@ class TextureSources {
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_ext_idap_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_adds_fuel_black_co.paa",
             "\lxrf\vehicles_rf\pickup_01\data\pickup_01_ext2_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\data\pickup_01_aat_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\data\pickup_01_launcher_co.paa",
+            "\lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws_black_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_service_idap_co.paa"
         };
         materials[] = {
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_adds.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext2.rvmat",
-            "lxrf\vehicles_rf\pickup_01\Data\pickup_01_aat.rvmat",
-            "lxrf\vehicles_rf\pickup_01\Data\pickup_01_launcher.rvmat",
+            "lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_service.rvmat"
         };
         factions[] = {};
@@ -546,16 +492,14 @@ class TextureSources {
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_ext_ion_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_adds_black_co.paa",
             "\lxrf\vehicles_rf\pickup_01\data\pickup_01_ext2_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\data\pickup_01_AAT_olive_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\data\pickup_01_Launcher_black_co.paa",
+            "\lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws_black_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_service_black_co.paa"
         };
         materials[] = {
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext_military.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_adds.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext2.rvmat",
-            "lxrf\vehicles_rf\pickup_01\Data\pickup_01_aat.rvmat",
-            "lxrf\vehicles_rf\pickup_01\Data\pickup_01_launcher.rvmat",
+            "lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_service_military.rvmat"
         };
         factions[] = {};
@@ -566,16 +510,14 @@ class TextureSources {
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_ext_gendarmerie_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_adds_gendarmerie_co.paa",
             "\lxrf\vehicles_rf\pickup_01\data\pickup_01_ext2_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\data\pickup_01_AAT_olive_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\data\pickup_01_Launcher_black_co.paa",
+            "\lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws_black_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_service_gendarmerie_co.paa"
         };
         materials[] = {
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_adds.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext2.rvmat",
-            "lxrf\vehicles_rf\pickup_01\Data\pickup_01_aat.rvmat",
-            "lxrf\vehicles_rf\pickup_01\Data\pickup_01_launcher.rvmat",
+            "lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_service.rvmat"
         };
         factions[] = {};
@@ -586,16 +528,14 @@ class TextureSources {
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_ext_argana_royal_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_adds_argana_co.paa",
             "\lxrf\vehicles_rf\pickup_01\data\pickup_01_ext2_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\data\pickup_01_aat_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\data\pickup_01_Launcher_black_co.paa",
+            "\lxrf\vehicles_rf\pickup_01\data\rcws\rcws_tan_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_service_argana_royal_co.paa"
         };
         materials[] = {
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext_military.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_adds.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext2.rvmat",
-            "lxrf\vehicles_rf\pickup_01\Data\pickup_01_aat.rvmat",
-            "lxrf\vehicles_rf\pickup_01\Data\pickup_01_launcher.rvmat",
+            "lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_service_military.rvmat"
         };
         factions[] = {};
@@ -606,16 +546,14 @@ class TextureSources {
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_ext_nato_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_adds_nato_co.paa",
             "\lxrf\vehicles_rf\pickup_01\data\pickup_01_ext2_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\data\pickup_01_aat_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\data\pickup_01_Launcher_tan_co.paa",
+            "\lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws_tan_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_service_nato_co.paa"
         };
         materials[] = {
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext_military.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_adds.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext2.rvmat",
-            "lxrf\vehicles_rf\pickup_01\Data\pickup_01_aat.rvmat",
-            "lxrf\vehicles_rf\pickup_01\Data\pickup_01_launcher.rvmat",
+            "lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_service_military.rvmat"
         };
         factions[] = {};
@@ -626,16 +564,14 @@ class TextureSources {
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_ext_nato_pacific_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_adds_nato_pacific_co.paa",
             "\lxrf\vehicles_rf\pickup_01\data\pickup_01_ext2_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\data\pickup_01_AAT_olive_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\data\pickup_01_launcher_co.paa",
+            "\lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws_black_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_service_nato_pacific_co.paa"
         };
         materials[] = {
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext_military.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_adds.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext2.rvmat",
-            "lxrf\vehicles_rf\pickup_01\Data\pickup_01_aat.rvmat",
-            "lxrf\vehicles_rf\pickup_01\Data\pickup_01_launcher.rvmat",
+            "lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_service_military.rvmat"
         };
         factions[] = {};
@@ -646,16 +582,14 @@ class TextureSources {
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_ext_csat_hex_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_adds_csat_co.paa",
             "\lxrf\vehicles_rf\pickup_01\data\pickup_01_ext2_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\data\pickup_01_aat_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\data\pickup_01_Launcher_tan_co.paa",
+            "\lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws_csat_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_service_csat_hex_co.paa"
         };
         materials[] = {
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext_military.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_adds.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext2.rvmat",
-            "lxrf\vehicles_rf\pickup_01\Data\pickup_01_aat.rvmat",
-            "lxrf\vehicles_rf\pickup_01\Data\pickup_01_launcher.rvmat",
+            "lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_service_military.rvmat"
         };
         factions[] = {};
@@ -666,16 +600,14 @@ class TextureSources {
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_ext_csat_ghex_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_adds_nato_pacific_co.paa",
             "\lxrf\vehicles_rf\pickup_01\data\pickup_01_ext2_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\data\pickup_01_AAT_olive_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\data\pickup_01_launcher_co.paa",
+            "\lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws_black_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_service_csat_ghex_co.paa"
         };
         materials[] = {
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext_military.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_adds.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext2.rvmat",
-            "lxrf\vehicles_rf\pickup_01\Data\pickup_01_aat.rvmat",
-            "lxrf\vehicles_rf\pickup_01\Data\pickup_01_launcher.rvmat",
+            "lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_service_military.rvmat"
         };
         factions[] = {};
@@ -686,16 +618,14 @@ class TextureSources {
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_ext_brown_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_adds_co.paa",
             "\lxrf\vehicles_rf\pickup_01\data\pickup_01_ext2_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\data\pickup_01_AAT_olive_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\data\pickup_01_launcher_co.paa",
+            "\lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws_black_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_service_brown_co.paa"
         };
         materials[] = {
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext_military.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_adds.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext2.rvmat",
-            "lxrf\vehicles_rf\pickup_01\Data\pickup_01_aat.rvmat",
-            "lxrf\vehicles_rf\pickup_01\Data\pickup_01_launcher.rvmat",
+            "lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_service_military.rvmat"
         };
         factions[] = {};
@@ -706,16 +636,14 @@ class TextureSources {
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_ext_olive_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_adds_co.paa",
             "\lxrf\vehicles_rf\pickup_01\data\pickup_01_ext2_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\data\pickup_01_AAT_olive_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\data\pickup_01_launcher_co.paa",
+            "\lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws_black_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_service_olive_co.paa"
         };
         materials[] = {
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext_military.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_adds.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext2.rvmat",
-            "lxrf\vehicles_rf\pickup_01\Data\pickup_01_aat.rvmat",
-            "lxrf\vehicles_rf\pickup_01\Data\pickup_01_launcher.rvmat",
+            "lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_service_military.rvmat"
         };
         factions[] = {};
@@ -726,16 +654,14 @@ class TextureSources {
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_ext_port_authority_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_adds_white_tank_co.paa",
             "\lxrf\vehicles_rf\pickup_01\data\pickup_01_ext2_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\data\pickup_01_AAT_olive_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\data\pickup_01_launcher_co.paa",
+            "\lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws_black_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_service_port_authority_co.paa"
         };
         materials[] = {
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_adds.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext2.rvmat",
-            "lxrf\vehicles_rf\pickup_01\Data\pickup_01_aat.rvmat",
-            "lxrf\vehicles_rf\pickup_01\Data\pickup_01_launcher.rvmat",
+            "lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_service.rvmat"
         };
         factions[] = {};
@@ -746,16 +672,14 @@ class TextureSources {
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_ext_cougarcruiser_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_adds_black_co.paa",
             "\lxrf\vehicles_rf\pickup_01\data\pickup_01_ext2_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\data\pickup_01_AAT_olive_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\data\pickup_01_Launcher_black_co.paa",
+            "\lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws_black_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_service_cougarcruiser_co.paa"
         };
         materials[] = {
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_adds.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext2.rvmat",
-            "lxrf\vehicles_rf\pickup_01\Data\pickup_01_aat.rvmat",
-            "lxrf\vehicles_rf\pickup_01\Data\pickup_01_launcher.rvmat",
+            "lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_service.rvmat"
         };
         factions[] = {};
@@ -766,16 +690,14 @@ class TextureSources {
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_ext_firefighter_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_adds_white_tank_co.paa",
             "\lxrf\vehicles_rf\pickup_01\data\pickup_01_ext2_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\data\pickup_01_aat_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\data\pickup_01_launcher_co.paa",
+            "\lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws_black_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_service_firefighter_co.paa"
         };
         materials[] = {
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_adds.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext2.rvmat",
-            "lxrf\vehicles_rf\pickup_01\Data\pickup_01_aat.rvmat",
-            "lxrf\vehicles_rf\pickup_01\Data\pickup_01_launcher.rvmat",
+            "lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_service.rvmat"
         };
         factions[] = {};
@@ -786,16 +708,14 @@ class TextureSources {
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_ext_rescue_team_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_adds_white_tank_co.paa",
             "\lxrf\vehicles_rf\pickup_01\data\pickup_01_ext2_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\data\pickup_01_AAT_olive_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\data\pickup_01_Launcher_black_co.paa",
+            "\lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws_black_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_service_firefighter_co.paa"
         };
         materials[] = {
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_adds.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext2.rvmat",
-            "lxrf\vehicles_rf\pickup_01\Data\pickup_01_aat.rvmat",
-            "lxrf\vehicles_rf\pickup_01\Data\pickup_01_launcher.rvmat",
+            "lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_service.rvmat"
         };
         factions[] = {};
@@ -806,16 +726,14 @@ class TextureSources {
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_ext_una_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_adds_water_co.paa",
             "\lxrf\vehicles_rf\pickup_01\data\pickup_01_ext2_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\data\pickup_01_aat_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\data\pickup_01_launcher_co.paa",
+            "\lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws_black_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_service_white_co.paa"
         };
         materials[] = {
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext_military.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_adds.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext2.rvmat",
-            "lxrf\vehicles_rf\pickup_01\Data\pickup_01_aat.rvmat",
-            "lxrf\vehicles_rf\pickup_01\Data\pickup_01_launcher.rvmat",
+            "lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_service_military.rvmat"
         };
         factions[] = {};
@@ -826,16 +744,14 @@ class TextureSources {
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_ext_mtp_desert_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_adds_argana_co.paa",
             "\lxrf\vehicles_rf\pickup_01\data\pickup_01_ext2_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\data\pickup_01_aat_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\data\pickup_01_Launcher_tan_co.paa",
+            "\lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws_tan_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_service_mtp_desert_co.paa"
         };
         materials[] = {
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext_military.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_adds.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext2.rvmat",
-            "lxrf\vehicles_rf\pickup_01\Data\pickup_01_aat.rvmat",
-            "lxrf\vehicles_rf\pickup_01\Data\pickup_01_launcher.rvmat",
+            "lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_service_military.rvmat"
         };
         factions[] = {};
@@ -846,16 +762,14 @@ class TextureSources {
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_ext_tundra_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_adds_black_tank_co.paa",
             "\lxrf\vehicles_rf\pickup_01\data\pickup_01_ext2_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\data\pickup_01_AAT_olive_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\data\pickup_01_Launcher_black_co.paa",
+            "\lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws_black_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_service_tundra_co.paa"
         };
         materials[] = {
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext_military.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_adds.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext2.rvmat",
-            "lxrf\vehicles_rf\pickup_01\Data\pickup_01_aat.rvmat",
-            "lxrf\vehicles_rf\pickup_01\Data\pickup_01_launcher.rvmat",
+            "lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_service_military.rvmat"
         };
         factions[] = {};
@@ -866,16 +780,14 @@ class TextureSources {
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_ext_digital_desert_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_adds_argana_co.paa",
             "\lxrf\vehicles_rf\pickup_01\data\pickup_01_ext2_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\data\pickup_01_aat_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\data\pickup_01_Launcher_tan_co.paa",
+            "\lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws_tan_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_service_digital_desert_co.paa"
         };
         materials[] = {
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext_military.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_adds.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext2.rvmat",
-            "lxrf\vehicles_rf\pickup_01\Data\pickup_01_aat.rvmat",
-            "lxrf\vehicles_rf\pickup_01\Data\pickup_01_launcher.rvmat",
+            "lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_service_military.rvmat"
         };
         factions[] = {};
@@ -886,16 +798,14 @@ class TextureSources {
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_ext_astra_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_adds_black_tank_co.paa",
             "\lxrf\vehicles_rf\pickup_01\data\pickup_01_ext2_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\data\pickup_01_AAT_olive_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\data\pickup_01_Launcher_black_co.paa",
+            "\lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws_black_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_service_white_co.paa"
         };
         materials[] = {
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_adds.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext2.rvmat",
-            "lxrf\vehicles_rf\pickup_01\Data\pickup_01_aat.rvmat",
-            "lxrf\vehicles_rf\pickup_01\Data\pickup_01_launcher.rvmat",
+            "lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws.rvmat",
             "lxrf\vehicles_rf\pickup_01\Data\pickup_01_service.rvmat"
         };
         factions[] = {};
@@ -906,8 +816,7 @@ class TextureSources {
             "\A3_Aegis\Soft_F_Aegis_RF\pickup_01\Data\pickup_01_ext_eaf_arid_CO.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_adds_nato_co.paa",
             "\lxrf\vehicles_rf\pickup_01\data\pickup_01_ext2_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\data\pickup_01_aat_nato_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\data\pickup_01_launcher_tan_co.paa",
+            "\lxrf\vehicles_rf\pickup_01\data\rcws\rcws_tan_co.paa",
             "\A3_Aegis\Soft_F_Aegis_RF\pickup_01\Data\pickup_01_service_eaf_arid_CO.paa"
         };
         factions[] = {};
@@ -918,8 +827,7 @@ class TextureSources {
             "\A3_Atlas\Soft_F_Atlas_RF\pickup_01\Data\atlas_b_k_pickup_01_ext_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_adds_nato_co.paa",
             "\lxrf\vehicles_rf\pickup_01\data\pickup_01_ext2_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\data\pickup_01_aat_nato_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\data\pickup_01_launcher_tan_co.paa",
+            "\lxrf\vehicles_rf\pickup_01\data\rcws\rcws_tan_co.paa",
             "\A3_Atlas\Soft_F_Atlas_RF\pickup_01\Data\atlas_b_k_pickup_01_service_co.paa"
         };
         factions[] = {};
@@ -930,8 +838,7 @@ class TextureSources {
             "\A3_Atlas\Soft_F_Atlas_RF\pickup_01\Data\atlas_b_h_pickup_01_ext_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_adds_co.paa",
             "\lxrf\vehicles_rf\pickup_01\data\pickup_01_ext2_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\data\pickup_01_AAT_olive_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\data\pickup_01_launcher_co.paa",
+            "\lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws_black_co.paa",
             "\A3_Atlas\Soft_F_Atlas_RF\pickup_01\Data\atlas_b_h_pickup_01_service_co.paa"
         };
         factions[] = {};
@@ -942,8 +849,7 @@ class TextureSources {
             "\A3_Atlas\Soft_F_Atlas_RF\pickup_01\Data\atlas_i_u_pickup_01_ext_co.paa",
             "\lxRF\vehicles_rf\pickup_01\Data\pickup_01_adds_co.paa",
             "\lxrf\vehicles_rf\pickup_01\data\pickup_01_ext2_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\data\pickup_01_AAT_olive_co.paa",
-            "\lxrf\vehicles_rf\pickup_01\data\pickup_01_launcher_co.paa",
+            "\lxrf\vehicles_rf\pickup_01\Data\RCWS\rcws_black_co.paa",
             "\A3_Atlas\Soft_F_Atlas_RF\pickup_01\Data\atlas_i_u_pickup_01_service_co.paa"
         };
         factions[] = {};
