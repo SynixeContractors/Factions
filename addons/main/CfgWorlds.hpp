@@ -12,5 +12,6 @@ class CfgWorlds {
         @Names(Spanish);
         @Names(Synixe);
         @Names(Zulu);
+        @Names(Korean);
     };
 };
