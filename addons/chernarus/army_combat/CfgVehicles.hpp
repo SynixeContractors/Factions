@@ -36,6 +36,18 @@ class CfgVehicles {
         #include "../wear/facewear_army.hpp"
         @Assigned(Military);
     };
+    class CLASS(Officer): CLASS(Base) {
+        @Role(Officer);
+        @Headgear({
+            "": 1,
+        });
+        @Vests({
+            "variants": {
+                "Aegis_V_CarrierRigKBT_01_holster_olive_F": 1,
+            },
+        });
+        #include "../weapons/pistol.hpp"
+    };
     class CLASS(Rifleman): CLASS(Base) {
         @Role(Rifleman);
         #include "../weapons/rifle.hpp"

@@ -42,6 +42,26 @@ class CfgVehicles {
         #include "../weapons/launcher.hpp"
         #include "../weapons/attachments_army.hpp"
     };
+    class CLASS(Officer): CLASS(Base) {
+        @Role(Officer);
+        @Uniforms({
+            "variants": {
+                "Atlas_U_B_M_CombatUniform_des": 1,
+            },
+            "packs": [
+                "rifleman_medical",
+            ],
+        });
+        @Headgear({
+            "JCA_H_Beret_01_sand_F": 1,
+        });
+        @Vests({
+            "variants": {
+                "JCA_V_CarrierRigKBT_01_holster_sand_F": 1,
+            },
+        });
+        #include "../weapons/pistol.hpp"
+    };
     class CLASS(RiflemanCarabine): CLASS(Base) {
         @Role(Hidden);
         #include "../weapons/rifle.hpp"

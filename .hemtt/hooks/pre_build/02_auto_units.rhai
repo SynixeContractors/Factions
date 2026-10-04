@@ -72,7 +72,7 @@ for addon in addons {
                             }
                         }
                     } else {
-                        fatal("Included file " + path + " not found, skipping...");
+                        fatal("Included file " + path + " not found, needed by " + config );
                     }
                 }
             }

@@ -38,6 +38,18 @@ class CfgVehicles {
         #include "../wear/facewear_army.hpp"
         @Assigned(Military);
     };
+    class CLASS(Officer): CLASS(Base) {
+        @Role(Officer);
+        @Headgear({
+            "H_Beret_CSAT_01_F": 1,
+        });
+        @Vests({
+            "variants": {
+                "Atlas_H_MilCap_nohs_semiarid": 1,
+            },
+        });
+        #include "../weapons/pistol.hpp"
+    };
     class CLASS(Rifleman): CLASS(Base) {
         @Role(Rifleman);
         #include "../weapons/rifle.hpp"

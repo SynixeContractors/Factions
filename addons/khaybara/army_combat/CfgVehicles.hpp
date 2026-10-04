@@ -66,6 +66,26 @@ class CfgVehicles {
         @Role(TeamLeader);
         #include "../weapons/pistol.hpp"
     };
+    class CLASS(Officer): CLASS(Base) {
+        @Role(Officer);
+        @Uniforms({
+            "variants": {
+                "Atlas_U_B_K_CombatUniform": 1,
+            },
+            "packs": [
+                "rifleman_medical",
+            ],
+        });
+        @Headgear({
+            "": 1,
+        });
+        @Vests({
+            "variants": {
+                "JCA_V_CarrierRigKBT_01_holster_sand_F": 1,
+            },
+        });
+        #include "../weapons/pistol.hpp"
+    };
     class CLASS(SquadLeader): CLASS(TeamLeader) {
         @Role(SquadLeader);
         #include "../weapons/gl.hpp"
