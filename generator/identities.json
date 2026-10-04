@@ -127,6 +127,13 @@
         ],
         "genericNames": "Chinese"
     },
+    "Joson": {
+        "identityTypes": [
+            "Head_Asian",
+            "LanguageCHI_F"
+        ],
+        "genericNames": "Korean"
+    },
     "Brienne": {
         "identityTypes": [
             "Head_Euro",
