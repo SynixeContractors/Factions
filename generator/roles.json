@@ -26,10 +26,12 @@
         "synixe_radioOperator": 1
     },
     "SquadLeader": {
-        "displayName": "Squad Leader"
+        "displayName": "Squad Leader",
+        "icon": "iconManLeader"
     },
     "TeamLeader": {
-        "displayName": "Team Leader"
+        "displayName": "Team Leader",
+        "icon": "iconManLeader"
     },
     "Officer": {
         "displayName": "Officer",
@@ -59,7 +61,9 @@
         "displayName": "Worker"
     },
     "Crewman": {
-        "displayName": "Crewman"
+        "displayName": "Crewman",
+        "role": "Crewman",
+        "icon": "iconManEngineer"
     },
     "HeliPilot": {
         "displayName": "Helicopter Pilot"
