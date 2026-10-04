@@ -46,7 +46,7 @@ class CfgVehicles {
         });
         @Vests({
             "variants": {
-                "synixe_mgp_h_cap_cb": 1,
+                "JCA_V_CarrierRigKBT_01_holster_sand_F": 1,
             },
         });
         #include "../weapons/pistol.hpp"
