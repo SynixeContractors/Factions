@@ -53,6 +53,26 @@ class CfgVehicles {
         #include "../wear/helmet.hpp"
         @Assigned(Military);
     };
+    class CLASS(Officer): CLASS(Base) {
+        @Role(Officer);
+        @Uniforms({
+            "variants": {
+                "U_I_OfficerUniform": 1,
+            },
+            "packs": [
+                "rifleman_medical",
+            ],
+        });
+        @Headgear({
+            "H_Beret_AAF_01_F": 1,
+        });
+        @Vests({
+            "variants": {
+                "H_Beret_AAF_01_F": 1,
+            },
+        });
+        #include "../weapons/pistol.hpp"
+    };
     class CLASS(Rifleman): CLASS(Base) {
         @Role(Rifleman);
         #include "../weapons/carabine.hpp"

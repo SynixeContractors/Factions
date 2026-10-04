@@ -44,7 +44,7 @@ class CfgVehicles {
     class CLASS(Base): PCLASS(Base) {
         displayName = "Livonia Base Army Combat";
         editorSubcategory = QGCLASS(army_combat);
-        
+
         @Uniforms({
             "variants": {
                 "U_I_E_Uniform_01_F": 1,
@@ -95,7 +95,34 @@ class CfgVehicles {
             }
         });
     };
+    class CLASS(Officer): CLASS(Base) {
+        @Role(Officer);
+        @Uniforms({
+            "variants": {
+                "U_I_E_Uniform_01_officer_F": 1,
+            },
+            "packs": [
+                "rifleman_medical",
+            ],
+        });
+        @Headgear({
+            "H_Beret_EAF_01_green": 1,
+        });
+        @Vests({
+            "variants": {
+                "Aegis_V_CarrierRigKBT_01_holster_olive_F": 1,
+            },
+        });
+        @Primary({
+            "weapons": {
+                "": {
+                   "probability": 1
+                },
+            },
+        });
 
+        #include "../weapons/Pistol.hpp"
+    };
     class CLASS(Rifleman): CLASS(Base) {
         @Role(Rifleman);
 
@@ -134,7 +161,7 @@ class CfgVehicles {
         @Role(Autorifleman);
 
         #include "..\weapons\Autorifleman.hpp"
-        
+
         @Backpacks({
             "variants": {
                 "B_AssaultPack_eaf_F": 1,
@@ -231,7 +258,7 @@ class CfgVehicles {
         @Launchers({
             "weapons": {
                 "launch_I_Titan_short_F": {
-                    "magazinesBackpack": { 
+                    "magazinesBackpack": {
                         "Titan_AT": 2,
                     },
                     "loadedPrimary": "Titan_AT",
@@ -337,7 +364,7 @@ class CfgVehicles {
                 "Aegis_V_TacVest_RigB_grn_RF": 1,
                 "Aegis_V_TacVest_RigB_khk_RF": 1,
                 "Aegis_V_TacVest_RigB_oli_RF": 1,
-                
+
             },
             "packs": [
                 "t2_standard",

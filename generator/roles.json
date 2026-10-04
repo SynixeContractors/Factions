@@ -31,6 +31,9 @@
     "TeamLeader": {
         "displayName": "Team Leader"
     },
+    "Officer": {
+        "displayName": "Officer"
+    },
     "Demolitions": {
         "displayName": "Demolitions",
         "icon": "iconManEngineer",

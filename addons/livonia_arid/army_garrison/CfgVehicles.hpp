@@ -36,7 +36,7 @@ class CfgVehicles {
     class CLASS(Base): PCLASS(Base) {
         displayName = "Livonia Base Army Garrison";
         editorSubcategory = QGCLASS(army_garrison);
-        
+
         @Uniforms({
             "variants": {
                 "U_I_E_Uniform_01_arid_F": 0.5,
@@ -82,7 +82,26 @@ class CfgVehicles {
 
         #include "..\..\livonia_woodland\weapons\Pistol.hpp"
     };
-
+    class CLASS(Officer): CLASS(Base) {
+        @Role(Officer);
+        @Uniforms({
+            "variants": {
+                "U_I_E_Uniform_01_arid_officer_F": 1,
+            },
+            "packs": [
+                "rifleman_medical",
+            ],
+        });
+        @Headgear({
+            "H_Beret_EAF_01_green": 1,
+        });
+        @Vests({
+            "variants": {
+                "JCA_V_CarrierRigKBT_01_holster_sand_F": 1,
+            },
+        });
+        #include "..\..\livonia_woodland\weapons\Pistol.hpp"
+    };
     class CLASS(TeamLeader): CLASS(Rifleman) {
         @Role(TeamLeader);
 
@@ -154,7 +173,7 @@ class CfgVehicles {
             "H_Headset_Tactical_khk": 1,
             "H_Construction_earprot_white_F": 1,
             "H_Construction_earprot_yellow_F": 1,
-            "Atlas_H_FieldCap_hs_ldf": 1,           
+            "Atlas_H_FieldCap_hs_ldf": 1,
         });
 
         @Vests({

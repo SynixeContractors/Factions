@@ -41,6 +41,18 @@ class CfgVehicles {
         #include "../wear/facewear_army.hpp"
         @Assigned(Military);
     };
+    class CLASS(Officer): CLASS(Base) {
+        @Role(Officer);
+        @Headgear({
+            "": 1,
+        });
+        @Vests({
+            "variants": {
+                "synixe_mgp_vest_battle_belt_assaulter_mc": 1,
+            },
+        });
+        #include "../weapons/pistol.hpp"
+    };
     class CLASS(Rifleman): CLASS(Base) {
         @Role(Rifleman);
         #include "../weapons/rifle.hpp"

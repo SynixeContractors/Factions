@@ -20,10 +20,6 @@ class CfgVehicles {
     class CLASS(Base): PCLASS(Base) {
         displayName = "JSR Base Army Combat";
         editorSubcategory = QGCLASS(army_combat);
-    };
-    class CLASS(Rifleman): CLASS(Base) {
-        @Role(Rifleman);
-
         @Uniforms({
             "variants": {
                 "tacs_Uniform_Combat_LS_ATACS_IX": 0.75,
@@ -34,6 +30,9 @@ class CfgVehicles {
                 "t3_standard",
             ],
         });
+    };
+    class CLASS(Rifleman): CLASS(Base) {
+        @Role(Rifleman);
         @Vests({
             "variants": {
                 "V_TacVest_grn": 0.95,
@@ -76,7 +75,34 @@ class CfgVehicles {
             },
         });
     };
-
+    class CLASS(Officer): CLASS(Base) {
+        @Role(Officer);
+        @Uniforms({
+            "variants": {
+                "tacs_Uniform_Combat_LS_ATACS_IX": 1,
+            },
+            "packs": [
+                "rifleman_medical",
+            ],
+        });
+        @Headgear({
+            "JCA_H_Beret_01_olive_F": 1,
+        });
+        @Vests({
+            "variants": {
+                "synixe_mgp_vest_battle_belt_assaulter_mc": 1,
+            },
+        });
+        @Secondary({
+            "weapons": {
+                "Aegis_hgun_P320_khaki_F": {
+                    "magazinesVest": {
+                        "17Rnd_9x21_Mag": 1,
+                    },
+                },
+            },
+        });
+    };
     class CLASS(TeamLeader): CLASS(Rifleman) {
         @Role(TeamLeader);
         @Primary({
