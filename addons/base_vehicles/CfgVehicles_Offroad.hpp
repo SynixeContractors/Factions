@@ -25,6 +25,12 @@ class GCLASS(Offroad): C_Offroad_01_F {
     ace_refuel_fuelCapacity = 80;
     OFFROAD_TEXTURE_LIST;
     #include "textures/Offroad.hpp"
+    animationList[] = {
+        "HideBumper1", 0.17,
+        "HideBumper2", 0.5,
+        "HideConstruction", 1,
+        "HideDoor3", 0.1
+    };
 };
 
 class C_Offroad_01_covered_F;
