@@ -25,6 +25,16 @@ class GCLASS(Ram): Pickup_01_base_rf {
     ace_refuel_fuelCapacity = 98;
     RAM_TEXTURE_LIST;
     #include "textures\Ram.hpp"
+    animationList[] = {
+        "hide_bullbar", 0.5,
+        "hide_fuel_tank", 1,
+        "hide_snorkel", 1,
+        "hide_antenna", 0.1,
+        "hide_trunk_cover", 1,
+        "hide_trunk_door", 0.1,
+        "hide_frame", 0.8,
+        "hide_armor_window_armor_top", 1
+    };
 };
 class Pickup_covered_base_rf;
 class GCLASS(Ram_Covered): Pickup_covered_base_rf {
