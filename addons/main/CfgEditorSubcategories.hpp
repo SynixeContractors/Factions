@@ -32,9 +32,15 @@ class CfgEditorSubcategories {
         displayName = "Men (Army - Airborne)";
     };
     class GCLASS(police) {
-        displayName = "Men (Police)";
+        displayName = "Men (Police, Patrol)";
     };
     class GCLASS(police_cars) {
-        displayName = "Cars (Police)";
+        displayName = "Cars (Police, Patrol)";
+    };
+    class GCLASS(SWAT) {
+        displayName = "Men (Police, SWAT)";
+    };
+    class GCLASS(SWAT_cars) {
+        displayName = "Cars (Police, SWAT)";
     };
 };
