@@ -1,4 +1,5 @@
 class CfgVehicles {
+    #include "CfgVehicles_Vehicles.hpp"
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {
         displayName = "Livonia Base";
@@ -35,6 +36,27 @@ class CfgVehicles {
     class CLASS(RiflemanSMG): CLASS(Base) {
         @Role(SMG);
         #include "../weapons/smg.hpp"
+    };
+    class CLASS(RiflemanPistol): CLASS(Base) {
+        @Role(Pistol);
+        #include "../weapons/Pistol.hpp"
+    };
+    class CLASS(Breacher): CLASS(Base) {
+        @Role(Breacher);
+        @Primary({
+            "weapons": {
+                "sgun_M4_F": {
+                    "probability": 1,
+                    "magazinesVest": {
+                        "8Rnd_12Gauge_Pellets": 4,
+                        "8Rnd_12Gauge_Slug": 4,
+                    },
+                },
+            },
+            "pointers": {
+                "acc_flashlight_pistol": 1,
+            },
+        });
     };
 
     class CLASS(TeamLeader): CLASS(Rifleman) {
