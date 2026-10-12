@@ -2,10 +2,10 @@
     "weapons": {
         "LMG_Mk200_black_F": {
             "magazinesVest": {
-                "synixe_armoury_200Rnd_65x39_EPR_Belt": 2,
+                "200Rnd_65x39_cased_Box": 2,
             },
             "magazinesBackpack": {
-                "synixe_armoury_200Rnd_65x39_EPR_Belt": 4,
+                "200Rnd_65x39_cased_Box": 4,
             },
         },
     },

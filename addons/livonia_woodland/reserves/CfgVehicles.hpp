@@ -3,7 +3,7 @@ class CfgVehicles {
     class CLASS(Base): PCLASS(Base) {
         displayName = "Livonia Base National Reserves";
         editorSubcategory = QGCLASS(reserves);
-        
+
         @Uniforms({
             "variants": {
                 "Atlas_U_UniformBDU_03_reservist_F": 1,
@@ -46,8 +46,7 @@ class CfgVehicles {
             "weapons": {
                 "arifle_MSBS65_camo_F": {
                     "magazinesVest": {
-                        "synixe_armoury_30Rnd_65x39_EPR_MSBS": 7,
-                        "synixe_armoury_30Rnd_65x39_Ball_Tracer_MSBS": 2,
+                        "30Rnd_65x39_caseless_msbs_mag_Tracer": 7,
                     }
                 },
             },
@@ -86,12 +85,11 @@ class CfgVehicles {
             "weapons": {
                 "arifle_MSBS65_GL_camo_F": {
                     "magazinesVest": {
-                        "synixe_armoury_30Rnd_65x39_EPR_MSBS": 5,
-                        "synixe_armoury_30Rnd_65x39_Ball_Tracer_MSBS": 2,
+                        "30Rnd_65x39_caseless_msbs_mag_Tracer": 7,
                         "1Rnd_HE_Grenade_shell": 6,
                         "1Rnd_Smoke_Grenade_shell": 2,
                     },
-                    "loadedPrimary": "synixe_armoury_30Rnd_65x39_EPR_MSBS",
+                    "loadedPrimary": "30Rnd_65x39_caseless_msbs_mag_Tracer",
                     "loadedSecondary": "1Rnd_HE_Grenade_shell",
                 },
             },
@@ -112,10 +110,10 @@ class CfgVehicles {
             "weapons": {
                 "LMG_Mk200_black_F": {
                     "magazinesVest": {
-                        "synixe_armoury_200Rnd_65x39_EPR_Belt": 4,
+                        "200Rnd_65x39_cased_Box": 4,
                     },
                     "magazinesBackpack": {
-                        "synixe_armoury_200Rnd_65x39_EPR_Belt": 4,
+                        "200Rnd_65x39_cased_Box": 4,
                     },
                 },
             },
@@ -127,7 +125,7 @@ class CfgVehicles {
                 "Aegis_acc_pointer_DM": 0.4,
             },
         });
-        
+
         @Backpacks({
             "variants": {
                 "B_AssaultPack_eaf_F": 1,
