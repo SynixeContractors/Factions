@@ -15,20 +15,21 @@ class CfgVehicles {
             ],
         });
         @Headgear({
-            "Aegis_H_Milcap_nohs_eaf_F": 0.6,
-            "H_Booniehat_ldf_hs": 0.2,
-            "H_Watchcap_ldf_hsless": 0.1,
+            "Aegis_H_Milcap_nohs_eaf_F": 6,
+            "H_Booniehat_ldf_hs": 2,
+            "H_Watchcap_ldf_hsless": 1,
+            "": 4,
         });
         @Vests({
             "variants": {
                 "V_TacChestrig_grn_F": 1,
+                "synixe_mgp_vest_battle_belt_hgunner_rgr": 1.
             },
             "packs": [
                 "t4_standard",
             ],
         });
     };
-
     class CLASS(Rifleman): CLASS(Base) {
         @Role(Rifleman);
         #include "../weapons/Rifleman.hpp"
@@ -45,11 +46,18 @@ class CfgVehicles {
         @Role(Breacher);
         @Primary({
             "weapons": {
-                "sgun_M4_F": {
+                "sgun_Mp153_black_F": {
                     "probability": 1,
                     "magazinesVest": {
-                        "8Rnd_12Gauge_Pellets": 4,
-                        "8Rnd_12Gauge_Slug": 4,
+                        "4Rnd_12Gauge_Pellets": 8,
+                        "4Rnd_12Gauge_Slug": 8,
+                    },
+                },
+                "sgun_Mp153_classic_F": {
+                    "probability": 1,
+                    "magazinesVest": {
+                        "4Rnd_12Gauge_Pellets": 8,
+                        "4Rnd_12Gauge_Slug": 8,
                     },
                 },
             },
@@ -58,15 +66,12 @@ class CfgVehicles {
             },
         });
     };
-
     class CLASS(TeamLeader): CLASS(Rifleman) {
         @Role(TeamLeader);
         #include "../weapons/Pistol.hpp"
     };
-
     class CLASS(Medic): CLASS(RiflemanSMG) {
         @Role(Medic);
-
         @Backpacks({
             "variants": {
                 "tacs_Backpack_Kitbag_Medic_Sage": 1,
@@ -76,16 +81,14 @@ class CfgVehicles {
             ],
         });
     };
-
-    class CLASS(Maintainer): CLASS(Base) {
-        @Role(Maintainer);
-        #include "../../civilians/wear/hivis.hpp"
-        #include "../weapons/Pistol.hpp"
-    };
-
     class CLASS(Worker): CLASS(Base) {
         @Role(Worker);
         #include "../../civilians/wear/hivis.hpp"
         #include "../weapons/smg.hpp"
+    };
+    class CLASS(Maintainer): CLASS(Base) {
+        @Role(Maintainer);
+        #include "../../civilians/wear/hivis.hpp"
+        #include "../weapons/Pistol.hpp"
     };
 };
