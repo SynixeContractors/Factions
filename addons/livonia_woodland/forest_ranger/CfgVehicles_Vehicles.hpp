@@ -45,8 +45,8 @@ class CLASS(Ram_Covered_Lights): GCLASS(Ram_Covered_Lights) {
     textureList[] = {QUOTE(TEMPLATE_CAMO),1};
     crew = QCLASS(RiflemanSMG);
 };
-class GCLASS(Ram_Covered_Bars);
-class CLASS(Ram_Covered_Bars): GCLASS(Ram_Covered_Bars) {
+class GCLASS(Ram_Bars_Covered);
+class CLASS(Ram_Bars_Covered): GCLASS(Ram_Bars_Covered) {
     SCOPE_DLC;
     faction = QPCLASS(t2_opfor);
     side = 0;
