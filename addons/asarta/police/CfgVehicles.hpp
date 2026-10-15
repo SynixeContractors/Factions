@@ -15,7 +15,7 @@ class CfgVehicles {
             },
         });
         @Headgear({
-            "H_Cap_police": 1,
+            "synixe_factions_asarta_police_PoliceCap": 1,
         });
         @Uniforms({
             "variants": {

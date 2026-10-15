@@ -10,4 +10,10 @@ class CfgWeapons {
             mass = 20;
         };
     };
+    class H_ParadeDressCap_01_LDF_F;
+    class CLASS(PoliceCap): H_ParadeDressCap_01_LDF_F {
+        SCOPE_DLC;
+        displayName = "Parade Cap (Blue)";
+        hiddenSelectionsTextures[] = {QPATHTOEF(vehicle_textures,data\uniforms\paradecap_asarta.paa)};
+    };
 };
