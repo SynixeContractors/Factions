@@ -38,11 +38,11 @@ class CfgVehicles {
     };
     class CLASS(Worker): CLASS(Base) {
         @Role(Worker);
-        #include "../wear/worker.hpp"
+        #include "../../civilians/wear/hivis.hpp"
     };
     class CLASS(Maintainer): CLASS(Base) {
         @Role(Maintainer);
-        #include "../wear/worker.hpp"
+        #include "../../civilians/wear/hivis.hpp"
         #include "../weapons/pdw.hpp"
     };
 };
