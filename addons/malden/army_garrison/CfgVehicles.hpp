@@ -32,12 +32,12 @@ class CfgVehicles {
     };
     class CLASS(Worker): CLASS(Base) {
         @Role(Worker);
-        #include "../wear/Worker.hpp"
+        #include "../../civilians/wear/hivis.hpp"
         #include "../weapons/Pistol.hpp"
     };
     class CLASS(Maintainer): CLASS(Base) {
         @Role(Maintainer);
-        #include "../wear/Worker.hpp"
+        #include "../../civilians/wear/hivis.hpp"
         #include "../weapons/Pistol.hpp"
     };
 };
