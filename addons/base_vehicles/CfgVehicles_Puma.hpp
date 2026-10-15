@@ -8,6 +8,7 @@ class GCLASS(Puma): C_Heli_EC_01_civ_RF {
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 1680;
     #include "textures\Puma.hpp"
+    ace_cargo_space = 12; //default: 8
 };
 
 class C_Heli_EC_01A_civ_RF;
@@ -20,6 +21,7 @@ class GCLASS(PumaA): C_Heli_EC_01A_civ_RF {
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 1480;
     #include "textures\Puma.hpp"
+    ace_cargo_space = 12; //default; 8
 };
 
 class I_Heli_EC_01A_military_RF;
@@ -32,6 +34,7 @@ class GCLASS(PumaM): I_Heli_EC_01A_military_RF {
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 1480;
     #include "textures\Puma.hpp"
+    ace_cargo_space = 12; //default: 8
 };
 
 class B_ION_Heli_EC_01_RF;
@@ -44,6 +47,7 @@ class GCLASS(PumaT): B_ION_Heli_EC_01_RF {
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 1680;
     #include "textures\Puma.hpp"
+    ace_cargo_space = 12; //default: 8
 };
 
 class B_Heli_EC_04_military_RF;
@@ -56,6 +60,7 @@ class GCLASS(Cougar): B_Heli_EC_04_military_RF {
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 1680;
     #include "textures\Puma.hpp"
+    ace_cargo_space = 12; //default: 8
 };
 
 class B_Heli_EC_03_RF;
@@ -68,6 +73,7 @@ class GCLASS(Cougar_Armed): B_Heli_EC_03_RF {
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 1680;
     #include "textures\Puma.hpp"
+    ace_cargo_space = 12; //default: 8
 };
 
 class I_E_EC_02_RF;
@@ -80,6 +86,7 @@ class GCLASS(Cougar_Pylon): I_E_EC_02_RF {
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 1680;
     #include "textures\Puma.hpp"
+    ace_cargo_space = 12; //default: 8
 };
 
 class C_Heli_EC_04_rescue_RF;
@@ -92,4 +99,5 @@ class GCLASS(Cougar_Rescue): C_Heli_EC_04_rescue_RF {
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 1680;
     #include "textures\Puma.hpp"
+    ace_cargo_space = 12; //default: 8
 };

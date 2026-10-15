@@ -7,6 +7,7 @@ class GCLASS(Ghosthawk): B_Heli_Transport_01_unarmed {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 1100;
+    ace_cargo_space = 12; //default: 8
     #include "eventhandler_camo.hpp"
     #include "textures/Ghosthawk.hpp"
 };
@@ -20,6 +21,7 @@ class GCLASS(Ghosthawk_MEV): B_Heli_Transport_01_unarmed {
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 1100;
     hiddenSelectionsTextures[] = {"\A3_Aegis\Air_F_Aegis\Heli_Transport_01\Data\Heli_Transport_01_ext01_medevac_CO.paa","\A3\Air_F_Beta\Heli_Transport_01\Data\Heli_Transport_01_ext02_CO.paa"};
+    ace_cargo_space = 12; //default: 8
     class TextureSources {};
 };
 
@@ -32,6 +34,7 @@ class GCLASS(Ghosthawk_M134): B_Heli_Transport_01_F {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 1100;
+    ace_cargo_space = 12; //default: 8
     #include "eventhandler_camo.hpp"
     #include "textures/Ghosthawk.hpp"
 };
@@ -45,6 +48,7 @@ class GCLASS(Ghosthawk_Pylons): B_Heli_Transport_01_pylons_F {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 2200;
+    ace_cargo_space = 12; //default: 8
     #include "eventhandler_camo.hpp"
     #include "textures/Ghosthawk.hpp"
 };
@@ -58,6 +62,7 @@ class GCLASS(Ghosthawk_Assault): Heli_Transport_01_Assault_base_F {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 2200;
+    ace_cargo_space = 12; //default: 8
     #include "eventhandler_camo.hpp"
     #include "textures/Ghosthawk.hpp"
 };
@@ -71,6 +76,7 @@ class GCLASS(Ghosthawk_DAP): Heli_Transport_01_DAP_base_F {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 2200;
+    ace_cargo_space = 12; //default: 8
     #include "eventhandler_camo.hpp"
     #include "textures/Ghosthawk.hpp"
 };
