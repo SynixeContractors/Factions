@@ -354,7 +354,7 @@ class GCLASS(T14_RCWS): O_MBT_04_command_F {
         factions[] = {};
       };
       class Green_jungle {
-        displayName = "Green (Green Net)";
+        displayName = "Green (Jungle Net)";
         T14K_GREEN(NET_JUNGLE)
         factions[] = {};
       };
@@ -384,7 +384,7 @@ class GCLASS(T14_RCWS): O_MBT_04_command_F {
         factions[] = {};
       };
       class Ru_jungle {
-        displayName = "Summer (Ru Jungle)";
+        displayName = "Summer (Jungle Net)";
         T14K_RU(NET_JUNGLE)
         factions[] = {};
       };
