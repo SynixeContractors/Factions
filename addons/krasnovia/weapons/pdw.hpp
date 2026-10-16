@@ -1,13 +1,13 @@
 @Primary({
     "weapons": {
-        "SMG_01_F": {
+        "SMG_05_F": {
             "magazinesUniform": {
-                "30Rnd_45ACP_Mag_SMG_01": 3,
+                "30Rnd_9x21_Mag_SMG_02": 3,
             },
         },
     },
     "pointers": {
-        "acc_flashlight_smg_01": 5,
+        "acc_flashlight": 5,
         "": 2,
     },
 });

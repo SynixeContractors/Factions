@@ -1,8 +1,8 @@
 @Secondary({
     "weapons": {
-        "tacs_FNX_45_Black": {
+        "JCA_hgun_M9A1_black_F": {
             "magazinesUniform": {
-                "11Rnd_45ACP_Mag": 3,
+                "JCA_15Rnd_9x19_M9A1_FMJ_Mag": 3,
             },
         },
     },
