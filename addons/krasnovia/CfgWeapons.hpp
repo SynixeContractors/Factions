@@ -22,11 +22,31 @@ class CLASS(helmet_protector): H_HelmetHBK_ear_F { \
 
 class UniformItem;
 class CfgWeapons {
-    class U_B_CTRG_Soldier_Black_F;
-    class CLASS(uniform): U_B_CTRG_Soldier_Black_F {
+    class U_B_CTRG_Soldier_F;
+    class U_B_CTRG_Soldier_2_F;
+    class U_B_CTRG_Soldier_3_F;
+    class CLASS(uniform): U_B_CTRG_Soldier_F {
         displayName = "Combat Uniform (Summer Digital)";
         class ItemInfo: UniformItem {
             uniformClass = QCLASS(uniform);
+            containerClass = "Supply40";
+            uniformModel = "-";
+            mass = 20;
+        };
+    };
+    class CLASS(uniform_tee): U_B_CTRG_Soldier_2_F {
+        displayName = "Combat Uniform (Summer Digital, Tee)";
+        class ItemInfo: UniformItem {
+            uniformClass = QCLASS(uniform_tee);
+            containerClass = "Supply40";
+            uniformModel = "-";
+            mass = 20;
+        };
+    };
+    class CLASS(uniform_rolled): U_B_CTRG_Soldier_3_F {
+        displayName = "Combat Uniform (Summer Digital, Rolled-Up)";
+        class ItemInfo: UniformItem {
+            uniformClass = QCLASS(uniform_rolled);
             containerClass = "Supply40";
             uniformModel = "-";
             mass = 20;
