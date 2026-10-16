@@ -7,4 +7,5 @@ class CfgVehicles {
         @Identity(Krasnovia);
         @Templated();
     };
+    #include "CfgVehicles_Uniform.hpp"
 };

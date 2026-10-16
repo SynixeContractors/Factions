@@ -1,3 +1,3 @@
 @Headgear({
-    "H_HelmetB_light_wdl": 1,
+    "synixe_factions_krasnovia_helmet": 1,
 });

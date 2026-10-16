@@ -1,7 +1,6 @@
 @Vests({
     "variants" : {
-        "V_TacVest_camo": 0.9,
-        "V_BandollierB_wdl": 0.1,
+        "V_TacVest_oli": 1,
     },
     "packs": [
         "t3_standard",
