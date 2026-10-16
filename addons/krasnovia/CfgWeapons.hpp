@@ -1,22 +1,22 @@
 #define HELMET_AMH(var1,var2) \
 class H_HelmetHBK_F; \
 class CLASS(helmet): H_HelmetHBK_F { \
-    displayName = QUOTE(AMH (##var1##)); \
+    displayName = "AMH (##var1##)"; \
     hiddenSelectionsTextures[] = {var2}; \
 }; \
 class H_HelmetHBK_headset_F; \
 class CLASS(helmet_headset): H_HelmetHBK_headset_F { \
-    displayName = QUOTE(AMH (##var1##, Headphones)); \
+    displayName = "AMH (##var1##, Headphones)"; \
     hiddenSelectionsTextures[] = {var2}; \
 }; \
 class H_HelmetHBK_chops_F; \
 class CLASS(helmet_chops): H_HelmetHBK_chops_F { \
-    displayName = QUOTE(AMH (##var1##, Chops));  \
+    displayName = "AMH (##var1##, Chops)"; \
     hiddenSelectionsTextures[] = {var2}; \
 }; \
 class H_HelmetHBK_ear_F; \
 class CLASS(helmet_protector): H_HelmetHBK_ear_F { \
-    displayName = QUOTE(AMH (##var1##, Ear Protector)); \
+    displayName = "AMH (##var1##, Ear Protector)"; \
     hiddenSelectionsTextures[] = {var2}; \
 } \
 
