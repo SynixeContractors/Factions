@@ -90,7 +90,7 @@ class TextureSources {
         factions[] = {};
     };
     class Guerilla_09 {
-        displayName = "Guerrilla 09";
+        displayName = "Summer";
         textures[] = {"\lxRF\vehicles_rf\pickup_01\Data\pickup_01_ext_fia_09_co.paa","\lxRF\vehicles_rf\pickup_01\Data\pickup_01_adds_fia_09_co.paa","\lxrf\vehicles_rf\pickup_01\data\pickup_01_ext2_co.paa","\lxrf\vehicles_rf\pickup_01\data\pickup_01_aat_co.paa","\lxrf\vehicles_rf\pickup_01\data\pickup_01_launcher_co.paa","\lxRF\vehicles_rf\pickup_01\Data\pickup_01_service_fia_09_co.paa"};
         materials[] = {"lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext_military.rvmat","lxrf\vehicles_rf\pickup_01\Data\pickup_01_adds.rvmat","lxrf\vehicles_rf\pickup_01\Data\pickup_01_ext2.rvmat","lxrf\vehicles_rf\pickup_01\Data\pickup_01_aat.rvmat","lxrf\vehicles_rf\pickup_01\Data\pickup_01_launcher.rvmat","lxrf\vehicles_rf\pickup_01\Data\pickup_01_service_military.rvmat"};
         factions[] = {};

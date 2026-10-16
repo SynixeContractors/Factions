@@ -1,6 +1,18 @@
 class CfgVehicles {
     #define TEMPLATE_FACTION QPCLASS(t3_indep)
-    #define TEMPLATE_SIDE 0
+    #define TEMPLATE_SIDE 2
+    #include "../../../templates/statics/M2.hpp"
+    #define TEMPLATE_CAMO Ru
+    #include "../../../templates/cars/Karatel.hpp"
+    #include "../../../templates/cars/Typhoon.hpp"
+    #undef TEMPLATE_CAMO
+    #define TEMPLATE_CAMO Ru_ru
+    #include "../../../templates/tanks/T14.hpp"
+    #undef TEMPLATE_CAMO
+    #define TEMPLATE_CAMO Guerilla_09
+    #include "../../../templates/cars/Ram_Civilian.hpp"
+    #include "../../../templates/cars/Ram_Armed.hpp"
+    #include "../../../templates/cars/Ram_Advanced.hpp"
 
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {
