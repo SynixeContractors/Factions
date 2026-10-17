@@ -24,7 +24,12 @@ class CfgEditorSubcategories {
     class GCLASS(reserves) {
         displayName = "Men (Reserves)";
     };
-
+    class GCLASS(forest_ranger) {
+        displayName = "Men (Forest Rangers)";
+    };
+    class GCLASS(forest_ranger_cars) {
+        displayName = "Cars (Forest Rangers)";
+    };
     class GCLASS(militia) {
         displayName = "Men (Militia)";
     };
