@@ -36,7 +36,7 @@ class GCLASS(MELB_Rig): MELB_MH6M {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 233;
-    ace_cargo_space = 4; //default: 8
+    ace_cargo_space = 2; //default: 8
     #include "eventhandler_camo.hpp"
     #include "textures/LittleBird.hpp"
 };
@@ -49,7 +49,7 @@ class GCLASS(MELB_Attack): MELB_AH6M {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 233;
-    ace_cargo_space = 4; //default: 8
+    ace_cargo_space = 2; //default: 8
     #include "eventhandler_camo.hpp"
     #include "textures/LittleBird.hpp"
 };

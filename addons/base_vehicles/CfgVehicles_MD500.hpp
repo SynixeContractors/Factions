@@ -108,7 +108,7 @@ class GCLASS(MD500E): B_Heli_Light_01_F {
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 233;
     ace_cargo_has_space = 1;
-    ace_cargo_space = 2; //default: 0
+    ace_cargo_space = 1; //default: 0
     #include "eventhandler_camo.hpp"
     #include "racks/helirack.hpp"
     class TextureSources {
@@ -160,7 +160,7 @@ class GCLASS(MD500E_Armed): B_Heli_Light_01_dynamicLoadout_F {
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 233;
     ace_cargo_has_space = 1;
-    ace_cargo_space = 2; //default: 0
+    ace_cargo_space = 1; //default: 0
     #include "eventhandler_camo.hpp"
     #include "racks/helirack.hpp"
     class TextureSources {

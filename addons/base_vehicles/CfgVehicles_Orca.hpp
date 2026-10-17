@@ -8,7 +8,6 @@ class GCLASS(Orca): O_Heli_Light_02_unarmed_F {
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
     ace_refuel_fuelCapacity = 1800;
-    ace_cargo_space = 12; //default: 8
     class EventHandlers: EventHandlers {
         postinit = "if (local (_this select 0)) then {[(_this select 0), """", [], true] call bis_fnc_initVehicle;}";
     };
@@ -99,7 +98,6 @@ class GCLASS(OrcaArmed): O_Heli_Light_02_dynamicLoadout_F {
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
     ace_refuel_fuelCapacity = 1800;
-    ace_cargo_space = 12; //default: 8
     class EventHandlers: EventHandlers {
         postinit = "if (local (_this select 0)) then {[(_this select 0), """", [], true] call bis_fnc_initVehicle;}";
     };
@@ -189,7 +187,6 @@ class GCLASS(OrcaR): B_ION_Heli_Light_02_unarmed_lxWS {
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
     ace_refuel_fuelCapacity = 1800;
-    ace_cargo_space = 12; //default: 8
     class EventHandlers: EventHandlers {
         postinit = "if (local (_this select 0)) then {[(_this select 0), """", [], true] call bis_fnc_initVehicle;}";
     };
@@ -284,7 +281,6 @@ class GCLASS(OrcaAR): B_ION_Heli_Light_02_dynamicLoadout_lxWS {
     SCOPE_DLC_VEHICLE;
     EMPTY_INVENTORY;
     ace_refuel_fuelCapacity = 1800;
-    ace_cargo_space = 12; //default: 8
     class EventHandlers: EventHandlers {
         postinit = "if (local (_this select 0)) then {[(_this select 0), """", [], true] call bis_fnc_initVehicle;}";
     };
