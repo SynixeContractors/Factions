@@ -7,6 +7,8 @@ class GCLASS(Taru): O_Heli_Transport_04_F {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 1400;
+    ace_cargo_has_space = 1;
+    ace_cargo_space = 1; //default: 0
     #include "textures/Taru.hpp"
 };
 class O_Heli_Transport_04_ammo_F;
@@ -18,6 +20,8 @@ class GCLASS(Taru_Ammo): O_Heli_Transport_04_ammo_F {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 1400;
+    ace_cargo_has_space = 1;
+    ace_cargo_space = 3; //default: 2
     #include "textures/Taru.hpp"
 };
 class O_Heli_Transport_04_bench_F;
@@ -29,6 +33,8 @@ class GCLASS(Taru_Bench): O_Heli_Transport_04_bench_F {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 1400;
+    ace_cargo_has_space = 1;
+    ace_cargo_space = 1; //default: 0
     #include "textures/Taru.hpp"
 };
 class O_Heli_Transport_04_box_F;
@@ -40,6 +46,8 @@ class GCLASS(Taru_Container): O_Heli_Transport_04_box_F {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 1400;
+    ace_cargo_has_space = 1;
+    ace_cargo_space = 8; //default: 8
     #include "textures/Taru.hpp"
 };
 class O_Heli_Transport_04_fuel_F;
@@ -51,6 +59,8 @@ class GCLASS(Taru_Fuel): O_Heli_Transport_04_fuel_F {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 1400;
+    ace_cargo_has_space = 1;
+    ace_cargo_space = 1; //default: 0
     #include "textures/Taru_Fuel.hpp"
 };
 class O_Heli_Transport_04_medevac_F;
@@ -62,6 +72,8 @@ class GCLASS(Taru_Medevac): O_Heli_Transport_04_medevac_F {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 1400;
+    ace_cargo_has_space = 3;
+    ace_cargo_space = 1; //default: 0
     #include "textures/Taru.hpp"
 };
 class O_Heli_Transport_04_repair_F;
@@ -73,6 +85,8 @@ class GCLASS(Taru_Repair): O_Heli_Transport_04_repair_F {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 1400;
+    ace_cargo_has_space = 1;
+    ace_cargo_space = 3; //default: 0
     #include "textures/Taru.hpp"
 };
 class O_Heli_Transport_04_covered_F;
@@ -84,5 +98,7 @@ class GCLASS(Taru_Covered): O_Heli_Transport_04_covered_F {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 1400;
+    ace_cargo_has_space = 1;
+    ace_cargo_space = 3; //default: 0
     #include "textures/Taru.hpp"
 };
