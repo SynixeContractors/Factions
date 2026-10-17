@@ -7,6 +7,7 @@ class CfgGroups {
             @Groups(T2,Army_Recon);
             @Groups(T2,Special_Forces);
             @Groups(T2,Reserves);
+            @Groups(T2,Police);
         };
     };
 };
