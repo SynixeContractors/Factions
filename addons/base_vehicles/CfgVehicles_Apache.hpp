@@ -7,7 +7,7 @@ class GCLASS(Apache): Aegis_B_Heli_Attack_03_F {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 1600;
-    ace_cargo_space = 2; //default: 8
+    ace_cargo_space = 1; //default: 8
     #include "eventhandler_camo.hpp"
     class TextureSources {
         class BAF {
