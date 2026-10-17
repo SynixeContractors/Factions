@@ -7,7 +7,7 @@ class GCLASS(Ghosthawk): B_Heli_Transport_01_unarmed {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 1100;
-    ace_cargo_space = 12; //default: 8
+    ace_cargo_space = 4; //default: 8
     #include "eventhandler_camo.hpp"
     #include "textures/Ghosthawk.hpp"
 };

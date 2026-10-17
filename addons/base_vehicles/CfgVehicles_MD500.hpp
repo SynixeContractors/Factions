@@ -7,7 +7,7 @@ class GCLASS(MD500): C_Heli_Light_01_civil_F {
     ace_refuel_fuelCapacity = 233;
     textureList[] = {"Blue",1,"Red",1,"Ion",1,"BlueLine",1,"Digital",1,"Elliptical",1,"Furious",1,"Graywatcher",1,"Jeans",1,"Light",1,"Shadow",1,"Sheriff",1,"Speedy",1,"Sunset",1,"Vrana",1,"Wasp",1,"Wave",1};
     ace_cargo_has_space = 1;
-    ace_cargo_space = 2; //default: 0
+    ace_cargo_space = 1; //default: 0
     #include "eventhandler_camo.hpp"
     #include "racks/helirack.hpp"
     class TextureSources {
