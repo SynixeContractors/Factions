@@ -16,9 +16,8 @@ class CfgVehicles {
 
         @Vests({
             "variants": {
-                "Atlas_V_OCarrierRig_CQB_oli_F": 1,
-                "Atlas_V_OCarrierRig_Lite_oli_F": 1,
-                "Atlas_V_ORigLBV_oli_F": 0.5,
+                "V_TacChestrig_grn_F": 1,
+                "V_CarrierRigKBT_01_light_EAF_F": 0.2
             },
             "packs": [
                 "t2_standard",
