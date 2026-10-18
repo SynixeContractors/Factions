@@ -7,6 +7,7 @@ class GCLASS(Wildcat): I_Heli_light_03_unarmed_F {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 1400;
+    ace_cargo_space = 4; //default: 8
     #include "eventhandler_camo.hpp"
     #include "textures/Wildcat.hpp"
 };
@@ -20,6 +21,7 @@ class GCLASS(Wildcat_Pylons): I_Heli_light_03_dynamicLoadout_F {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 1400;
+    ace_cargo_space = 4; //default: 8
     #include "eventhandler_camo.hpp"
     #include "textures/Wildcat.hpp"
 };

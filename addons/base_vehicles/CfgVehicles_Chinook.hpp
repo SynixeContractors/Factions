@@ -7,6 +7,7 @@ class GCLASS(Chinook): B_Heli_Transport_03_unarmed_F {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 1800;
+    ace_cargo_space = 20; //default: 40
     #include "textures/Chinook.hpp"
 };
 
@@ -19,5 +20,6 @@ class GCLASS(Chinook_M134): B_Heli_Transport_03_F {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 1800;
+    ace_cargo_space = 20; //default: 40
     #include "textures/Chinook.hpp"
 };
