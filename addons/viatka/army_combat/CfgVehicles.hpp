@@ -422,7 +422,7 @@ class CfgVehicles {
             "weapons": {
                 "JCA_smg_MP5_FL_black_F": {
                     "magazinesVest": {
-                        "JCA_30Rnd_9x21_MP5_Mag": 4,
+                        "JCA_30Rnd_9x19_MP5_Mag": 4,
                     }
                 },
             },

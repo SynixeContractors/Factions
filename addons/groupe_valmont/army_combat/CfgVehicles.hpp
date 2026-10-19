@@ -476,7 +476,7 @@ class CLASS2(SIDE,RiflemanAA): CLASS2(SIDE,Base) {
             },
             "JCA_smg_MP5_FL_black_F": {
                 "magazinesVest": {
-                    "JCA_30Rnd_9x21_MP5_Mag": 7,
+                    "JCA_30Rnd_9x19_MP5_Mag": 7,
                 },
             },
             "JCA_smg_UMP_VFG_black_F": {
@@ -535,7 +535,7 @@ class CLASS2(SIDE,RiflemanHAT): CLASS2(SIDE,Base) {
             },
             "JCA_smg_MP5_FL_black_F": {
                 "magazinesVest": {
-                    "JCA_30Rnd_9x21_MP5_Mag": 7,
+                    "JCA_30Rnd_9x19_MP5_Mag": 7,
                 },
             },
             "JCA_smg_UMP_VFG_black_F": {
@@ -650,7 +650,7 @@ class CLASS2(SIDE,HeliPilot): CLASS2(SIDE,Base) {
             },
             "JCA_smg_MP5_FL_black_F": {
                 "magazinesVest": {
-                    "JCA_30Rnd_9x21_MP5_Mag": 4,
+                    "JCA_30Rnd_9x19_MP5_Mag": 4,
                 },
             },
             "JCA_smg_UMP_VFG_black_F": {

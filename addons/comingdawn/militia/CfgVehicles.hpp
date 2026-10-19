@@ -275,12 +275,12 @@ class CLASS2(SIDE,Base): PCLASS2(SIDE,Base) {
             },
             "JCA_smg_MP5_FL_black_F": {
                 "magazinesVest": {
-                    "JCA_30Rnd_9x21_MP5_Mag": 7,
+                    "JCA_30Rnd_9x19_MP5_Mag": 7,
                 }
             },
             "JCA_smg_MP5_VFG_black_F": {
                 "magazinesVest": {
-                    "JCA_30Rnd_9x21_MP5_Mag": 21,
+                    "JCA_30Rnd_9x19_MP5_Mag": 21,
                 }
             },
             "JCA_smg_UMP_black_F": {
