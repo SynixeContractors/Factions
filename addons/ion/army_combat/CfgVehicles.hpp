@@ -564,7 +564,7 @@ class CLASS2(SIDE,HeliPilot): CLASS2(SIDE,Base) {
             "JCA_smg_MP5_FL_black_F": {
                 "probability": 1,
                 "magazinesVest": {
-                    "JCA_30Rnd_9x21_MP5_Mag": 4,
+                    "JCA_30Rnd_9x19_MP5_Mag": 4,
                 },
             },
         },
