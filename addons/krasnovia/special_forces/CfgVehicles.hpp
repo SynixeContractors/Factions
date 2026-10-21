@@ -38,11 +38,23 @@ class CfgVehicles {
     class CLASS(TeamLeader): CLASS(RiflemanCarabine) {
         @Role(TeamLeader);
         #include "../weapons/pistol.hpp"
-        #include "../weapons/gl.hpp"
     };
     class CLASS(SquadLeader): CLASS(RiflemanCarabine) {
         @Role(SquadLeader);
         #include "../weapons/pistol.hpp"
+        @Primary({
+            "weapons": {
+                "JCA_arifle_M4A4_GL_black_F": {
+                    "probability": 1,
+                    "magazinesVest": {
+                        "30Rnd_556x45_Stanag": 8,
+                        "1Rnd_HE_Grenade_shell": 4,
+                    },
+                    "loadedPrimary": "30Rnd_556x45_Stanag",
+                    "loadedSecondary": "1Rnd_HE_Grenade_shell",
+                },
+            },
+        });
     };
     class CLASS(Autorifleman): CLASS(RiflemanBackpack) {
         @Role(Autorifleman);
@@ -51,7 +63,7 @@ class CfgVehicles {
                 "LMG_03_F": {
                     "probability": 1,
                     "magazinesVest": {
-                        "LMG_03_F": 6,
+                        "200Rnd_556x45_Box_Red_F": 6,
                     },
                 },
             },
@@ -90,7 +102,7 @@ class CfgVehicles {
                 "JCA_arifle_SR10_VFG_black_F": {
                     "probability": 1,
                     "magazinesVest": {
-                        "JCA_arifle_SR10_VFG_black_F": 6,
+                        "JCA_20Rnd_762x51_PMAG": 6,
                     },
                 },
             },
@@ -101,7 +113,6 @@ class CfgVehicles {
     };
     class CLASS(Spotter): CLASS(Marksman) {
         @Role(Spotter);
-        #include "../weapons/sniper.hpp"
         @Uniforms({
             "variants": {
                 "U_B_W_FullGhillie_wdl_F": 1,
@@ -114,5 +125,6 @@ class CfgVehicles {
     };
     class CLASS(Sniper): CLASS(Spotter) {
         @Role(Sniper);
+        #include "../weapons/sniper.hpp"
     };
 };

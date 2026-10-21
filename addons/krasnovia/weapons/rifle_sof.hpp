@@ -1,12 +1,12 @@
 @Primary({
     "weapons": {
-        "arifle_TRG21_F": {
+        "JCA_arifle_M4A4_VFG_black_F": {
             "probability": 0.5,
             "magazinesVest": {
                 "30Rnd_556x45_Stanag": 8,
             },
         },
-        "arifle_TRG20_F": {
+        "JCA_arifle_M4A4_AFG_black_F": {
             "probability": 0.5,
             "magazinesVest": {
                 "30Rnd_556x45_Stanag": 8,
