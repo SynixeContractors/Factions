@@ -13,7 +13,7 @@ class CfgVehicles {
         #include "../wear/uniform.hpp"
         #include "../wear/vest_army.hpp"
         #include "../wear/helmet.hpp"
-        #include "../../krasnovia/wear/facewear_army.hpp"
+        #include "../wear/facewear_army.hpp"
         @Assigned(Military);
     };
     class CLASS(Rifleman): CLASS(Base) {
