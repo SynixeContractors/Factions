@@ -33,21 +33,21 @@ class CfgWeapons {
     class H_HelmetHBK_F;
     class CLASS(helmet): H_HelmetHBK_F {
         displayName = "AMH (Pakra Summer)";
-        hiddenSelectionsTextures[] = {QPATHTOF(data\summer_digital_helmet.paa)};
+        hiddenSelectionsTextures[] = {QPATHTOF(data\amh_helmet.paa)};
     };
     class H_HelmetHBK_headset_F;
     class CLASS(helmet_headset): H_HelmetHBK_headset_F {
         displayName = "AMH (Pakra Summer, Headphones)";
-        hiddenSelectionsTextures[] = {QPATHTOF(data\summer_digital_helmet.paa)};
+        hiddenSelectionsTextures[] = {QPATHTOF(data\amh_helmet.paa)};
     };
     class H_HelmetHBK_chops_F;
     class CLASS(helmet_chops): H_HelmetHBK_chops_F {
         displayName = "AMH (Pakra Summer, Chops)";
-        hiddenSelectionsTextures[] = {QPATHTOF(data\summer_digital_helmet.paa)};
+        hiddenSelectionsTextures[] = {QPATHTOF(data\amh_helmet.paa)};
     };
     class H_HelmetHBK_ear_F;
     class CLASS(helmet_protector): H_HelmetHBK_ear_F {
         displayName = "AMH (Pakra Summer, Ear Protector)";
-        hiddenSelectionsTextures[] = {QPATHTOF(data\summer_digital_helmet.paa)};
+        hiddenSelectionsTextures[] = {QPATHTOF(data\amh_helmet.paa)};
     };
 };
