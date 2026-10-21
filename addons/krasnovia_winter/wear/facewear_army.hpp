@@ -1,0 +1,16 @@
+@Facewear({
+    "": 10,
+    "G_Balaclava_TI_G_blk_F": 1,
+    "G_Balaclava_TI_blk_F": 1,
+    "G_Balaclava_light_G_blk_F": 1,
+    "G_Balaclava_light_blk_F": 1,
+    "G_Shemag_white": 1,
+    "JCA_G_shemagh_01_glasses_sand_F": 1,
+    "JCA_G_shemagh_01_goggles_black_F": 1,
+    "JCA_G_shemagh_01_goggles_sand_F": 1,
+    "synixe_mgp_f_shemagh_blk": 1,
+    "synixe_mgp_f_shemagh_blk_ess": 1,
+    "synixe_mgp_f_shemagh_rgr": 1,
+    "synixe_mgp_f_shemagh_rgr_ess": 1,
+    "synixe_mgp_f_shemagh_wht_ess": 1,
+});
