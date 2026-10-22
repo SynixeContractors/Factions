@@ -7,9 +7,9 @@ class CfgVehicles {
         #include "../wear/uniform.hpp"
         @Vests({
             "variants": {
-              "synixe_mgp_vest_jpc_assaulter_gryr": 0.8,
-              "synixe_mgp_vest_jpc_assaulter_gryr_belt": 0.1,
-              "synixe_mgp_vest_jpc_grenadier_gryr": 0.1,
+              "synixe_mgp_vest_jpc_assaulter_gry": 0.8,
+              "synixe_mgp_vest_jpc_assaulter_gry_belt": 0.1,
+              "synixe_mgp_vest_jpc_grenadier_gry": 0.1,
             },
             "packs": [
                 "t2_standard",
