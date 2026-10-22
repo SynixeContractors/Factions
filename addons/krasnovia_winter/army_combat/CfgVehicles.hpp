@@ -42,7 +42,7 @@ class CfgVehicles {
     };
     class CLASS(Autorifleman): CLASS(RiflemanBackpack) {
         @Role(Autorifleman);
-        #include "../../krasnovia/weapons/rifle.hpp"
+        #include "../../krasnovia/weapons/lmg.hpp"
         #include "../../krasnovia/weapons/pistol.hpp"
     };
     class CLASS(Machinegunner): CLASS(RiflemanCarabine) {
