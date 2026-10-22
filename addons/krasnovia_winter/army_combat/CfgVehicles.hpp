@@ -29,7 +29,7 @@ class CfgVehicles {
     };
     class CLASS(RiflemanBackpack): CLASS(RiflemanCarabine) {
         @Role(Hidden);
-        #include "../../krasnovia/wear/backpack.hpp"
+        #include "../wear/backpack.hpp"
     };
     class CLASS(TeamLeader): CLASS(RiflemanCarabine) {
         @Role(TeamLeader);
@@ -52,11 +52,11 @@ class CfgVehicles {
     };
     class CLASS(AsstMachinegunner): CLASS(RiflemanBackpack) {
         @Role(AsstMachinegunner);
-        #include "../../krasnovia/wear/backpack_mg.hpp"
+        #include "../wear/backpack_mg.hpp"
     };
     class CLASS(Medic): CLASS(RiflemanBackpack) {
         @Role(Medic);
-        #include "../../krasnovia/wear/backpack_medic.hpp"
+        #include "../wear/backpack_medic.hpp"
     };
     class CLASS(RiflemanMAT): CLASS(RiflemanBackpack) {
         @Role(RiflemanMAT);
@@ -72,15 +72,15 @@ class CfgVehicles {
     };
     class CLASS(Engineer): CLASS(RiflemanBackpack) {
         @Role(Engineer);
-        #include "../../krasnovia/wear/engineer.hpp"
+        #include "../wear/engineer.hpp"
     };
     class CLASS(RadioOperator): CLASS(RiflemanCarabine) {
         @Role(RadioOperator);
-        #include "../../krasnovia/wear/backpack_radio.hpp"
+        #include "../wear/backpack_radio.hpp"
     };
     class CLASS(Demolitions): CLASS(RiflemanBackpack) {
         @Role(Demolitions);
-        #include "../../krasnovia/wear/demo.hpp"
+        #include "../wear/demo.hpp"
     };
     class CLASS(Crewman): CLASS(Base) {
         @Role(Crewman);
