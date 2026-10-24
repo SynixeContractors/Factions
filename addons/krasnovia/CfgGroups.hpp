@@ -4,6 +4,7 @@ class CfgGroups {
             name = FACTION_NAME;
             @Groups(T3,Army_Combat);
             @Groups(T3,Army_Garrison);
+            @Groups(T3,Special_Forces);
         };
     };
 };

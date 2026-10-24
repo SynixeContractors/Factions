@@ -13,6 +13,13 @@ class CfgVehicles {
     #include "../../../templates/cars/Ram_Civilian.hpp"
     #include "../../../templates/cars/Ram_Armed.hpp"
     #include "../../../templates/cars/Ram_Advanced.hpp"
+    #undef TEMPLATE_CAMO
+    #define TEMPLATE_CAMO Olive
+    #include "../../../templates/helicopters/Puma_Civilian.hpp"
+    #include "../../../templates/helicopters/Puma_Military.hpp"
+    #undef TEMPLATE_CAMO
+    #define TEMPLATE_CAMO Green
+    #include "../../../templates/helicopters/Mi35.hpp"
 
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {
@@ -51,7 +58,7 @@ class CfgVehicles {
     };
     class CLASS(Autorifleman): CLASS(RiflemanBackpack) {
         @Role(Autorifleman);
-        #include "../weapons/rifle.hpp"
+        #include "../weapons/lmg.hpp"
         #include "../weapons/pistol.hpp"
     };
     class CLASS(Machinegunner): CLASS(RiflemanCarabine) {
