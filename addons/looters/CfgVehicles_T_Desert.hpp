@@ -58,17 +58,17 @@ class CLASS2(SIDE,Desert): CLASS2(Base,NATION) {
 class CLASS2(SIDE,Desert_Looter): CLASS2(SIDE,Desert) {
     @Role(Rifleman);
 
-    #include "weapons/primary.hpp"
+    #include "weapons\primary.hpp"
 };
 
 class CLASS2(SIDE,Desert_LooterPistol): CLASS2(SIDE,Desert) {
     @Role(Pistol);
 
-    #include "weapons/secondary.hpp"
+    #include "weapons\secondary.hpp"
 };
 
 class CLASS2(SIDE,Desert_Hunter): CLASS2(SIDE,Desert) {
     @Role(Marksman);
 
-    #include "weapons/hunter.hpp"
+    #include "weapons\hunter.hpp"
 };

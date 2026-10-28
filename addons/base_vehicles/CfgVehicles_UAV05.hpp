@@ -7,10 +7,10 @@ class GCLASS(MQ47): B_UAV_05_F {
     crew = "C_UAV_AI_F";
     ace_refuel_fuelCapacity = 2000; //total guess
     #include "eventhandler_camo.hpp"
-    #include "textures/UAV05.hpp"
+    #include "textures\UAV05.hpp"
     // class Components {
     //   class TransportPylonsComponent {
-    //     #include "pylons/UAV05.hpp"
+    //     #include "pylons\UAV05.hpp"
     //   };
     // };
 };

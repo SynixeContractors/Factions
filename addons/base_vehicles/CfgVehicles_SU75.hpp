@@ -8,10 +8,10 @@ class GCLASS(SU75): O_Plane_Fighter_02_F {
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 10300;
     #include "eventhandler_camo.hpp"
-    #include "textures/SU75.hpp"
+    #include "textures\SU75.hpp"
     // class Components {
     //   class TransportPylonsComponent {
-    //     #include "pylons/SU75.hpp"
+    //     #include "pylons\SU75.hpp"
     //   };
     // };
 };
@@ -26,10 +26,10 @@ class GCLASS(SU75_Stealth): O_Plane_Fighter_02_Stealth_F {
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 10300;
     #include "eventhandler_camo.hpp"
-    #include "textures/SU75.hpp"
+    #include "textures\SU75.hpp"
     // class Components {
     //   class TransportPylonsComponent {
-    //     #include "pylons/SU75_Stealth.hpp"
+    //     #include "pylons\SU75_Stealth.hpp"
     //   };
     // };
 };

@@ -2,24 +2,24 @@ class CfgVehicles {
     #define TEMPLATE_FACTION QPCLASS(t1_indep)
     #define TEMPLATE_SIDE 2
     #define TEMPLATE_CAMO Olive
-    #include "../../../templates/statics/RGS60.hpp"
+    #include "..\..\..\templates\statics\RGS60.hpp"
     #undef TEMPLATE_CAMO
     #define TEMPLATE_CAMO Green
-    #include "../../../templates/drones/UGV.hpp"
-    #include "../../../templates/drones/MQ12.hpp"
-    #include "../../../templates/cars/LSV.hpp"
+    #include "..\..\..\templates\drones\UGV.hpp"
+    #include "..\..\..\templates\drones\MQ12.hpp"
+    #include "..\..\..\templates\cars\LSV.hpp"
     #undef TEMPLATE_CAMO
     #define TEMPLATE_CAMO Default
-    #include "../../../templates/drones/MQ47.hpp"
+    #include "..\..\..\templates\drones\MQ47.hpp"
     #undef TEMPLATE_CAMO
     #define TEMPLATE_CAMO Gray
-    #include "../../../templates/cars/Ram_Advanced.hpp"
-    #include "../../../templates/cars/Ram_Civilian.hpp"
+    #include "..\..\..\templates\cars\Ram_Advanced.hpp"
+    #include "..\..\..\templates\cars\Ram_Civilian.hpp"
     #undef TEMPLATE_CAMO
     #define TEMPLATE_CAMO Black
-    #include "../../../templates/helicopters/Ka54.hpp"
-    #include "../../../templates/helicopters/Orca_Military.hpp"
-    #include "../../../templates/helicopters/Orca_Civilian.hpp"
+    #include "..\..\..\templates\helicopters\Ka54.hpp"
+    #include "..\..\..\templates\helicopters\Orca_Military.hpp"
+    #include "..\..\..\templates\helicopters\Orca_Civilian.hpp"
 
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {

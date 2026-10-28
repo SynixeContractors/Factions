@@ -6,7 +6,7 @@ class GCLASS(LSV) : O_LSV_02_unarmed_F {
     EMPTY_INVENTORY;
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
-    #include "textures/LSV.hpp"
+    #include "textures\LSV.hpp"
 };
 
 class O_LSV_02_armed_F;
@@ -17,7 +17,7 @@ class GCLASS(LSV_M134) : O_LSV_02_armed_F {
     EMPTY_INVENTORY;
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
-    #include "textures/LSV.hpp"
+    #include "textures\LSV.hpp"
 };
 
 class O_LSV_02_AT_F;
@@ -28,5 +28,5 @@ class GCLASS(LSV_Metis) : O_LSV_02_AT_F {
     EMPTY_INVENTORY;
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
-    #include "textures/LSV.hpp"
+    #include "textures\LSV.hpp"
 };

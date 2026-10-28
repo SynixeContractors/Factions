@@ -6,5 +6,5 @@ class GCLASS(Ka54): O_Heli_Attack_02_dynamicLoadout_F {
     EMPTY_INVENTORY;
     ace_refuel_fuelCapacity = 2000;
     #include "eventhandler_camo.hpp"
-    #include "textures/Ka54.hpp"
+    #include "textures\Ka54.hpp"
 };

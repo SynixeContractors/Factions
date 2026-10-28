@@ -29,5 +29,5 @@ class GCLASS(Kart): Kart_01_Base_F {
     ace_refuel_fuelCapacity = 5;
     KART_TEXTURE_LIST;
     #include "eventhandler_camo.hpp"
-    #include "textures/Kart.hpp"
+    #include "textures\Kart.hpp"
 };

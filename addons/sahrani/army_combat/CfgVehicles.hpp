@@ -1,34 +1,34 @@
 class CfgVehicles {
     #define TEMPLATE_FACTION QPCLASS(t2_indep)
     #define TEMPLATE_SIDE 2
-    #include "../../../templates/statics/M2.hpp"
+    #include "..\..\..\templates\statics\M2.hpp"
     #define TEMPLATE_CAMO Green
-    #include "../../../templates/statics/Mk6.hpp"
+    #include "..\..\..\templates\statics\Mk6.hpp"
     #undef TEMPLATE_CAMO
     #define TEMPLATE_CAMO Grey
-    #include "../../../templates/helicopters/Wildcat.hpp"
-    #include "../../../templates/helicopters/Mohawk_Military.hpp"
-    #include "../../../templates/boats/ABoat_HMG.hpp"
+    #include "..\..\..\templates\helicopters\Wildcat.hpp"
+    #include "..\..\..\templates\helicopters\Mohawk_Military.hpp"
+    #include "..\..\..\templates\boats\ABoat_HMG.hpp"
     #undef TEMPLATE_CAMO
     #define TEMPLATE_CAMO DarkGrey_BAF
-    #include "../../../templates/planes/F35.hpp"
+    #include "..\..\..\templates\planes\F35.hpp"
     #undef TEMPLATE_CAMO
     #define TEMPLATE_CAMO BAF
-    #include "../../../templates/helicopters/Apache.hpp"
-    #include "../../../templates/drones/Shahpar.hpp"
+    #include "..\..\..\templates\helicopters\Apache.hpp"
+    #include "..\..\..\templates\drones\Shahpar.hpp"
     #undef TEMPLATE_CAMO
     #define TEMPLATE_CAMO Blufor
-    #include "../../../templates/tanks/Merkava.hpp"
-    #include "../../../templates/tanks/Merkava_SPG.hpp"
-    #include "../../../templates/apc/Namer.hpp"
-    #include "../../../templates/cars/MATV.hpp"
-    #include "../../../templates/cars/HEMTT.hpp"
+    #include "..\..\..\templates\tanks\Merkava.hpp"
+    #include "..\..\..\templates\tanks\Merkava_SPG.hpp"
+    #include "..\..\..\templates\apc\Namer.hpp"
+    #include "..\..\..\templates\cars\MATV.hpp"
+    #include "..\..\..\templates\cars\HEMTT.hpp"
     #undef TEMPLATE_CAMO
     #define TEMPLATE_CAMO dark_grey
-    #include "../../../templates/planes/C130.hpp"
+    #include "..\..\..\templates\planes\C130.hpp"
     #undef TEMPLATE_CAMO
     #define TEMPLATE_CAMO Sand
-    #include "../../../templates/statics/SAM01.hpp"
+    #include "..\..\..\templates\statics\SAM01.hpp"
 
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {

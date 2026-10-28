@@ -23,7 +23,7 @@ class CLASS2(SIDE,Suit): CLASS2(Base,NATION) {
 };
 class CLASS2(SIDE,Suit_Rifleman_Pistol): CLASS2(SIDE,Suit) {
     @Role(Pistol);
-    #include "weapons/pistol.hpp"
+    #include "weapons\pistol.hpp"
     @Vests({
         "variants": {
             "Aegis_V_CarrierRigKBT_01_holster_black_F": 1,

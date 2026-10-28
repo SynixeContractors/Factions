@@ -7,7 +7,7 @@ class GCLASS(AssaultBoat_HMG): I_Boat_Armed_01_hmg {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 400;
-    #include "textures/AssaultBoat.hpp"
+    #include "textures\AssaultBoat.hpp"
     #include "eventhandler_camo.hpp"
 };
 
@@ -20,6 +20,6 @@ class GCLASS(AssaultBoat_M134): I_Boat_Armed_01_minigun_F {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 400;
-    #include "textures/AssaultBoat.hpp"
+    #include "textures\AssaultBoat.hpp"
     #include "eventhandler_camo.hpp"
 };

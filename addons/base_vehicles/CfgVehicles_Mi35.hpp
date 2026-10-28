@@ -6,5 +6,5 @@ class GCLASS(Mi35): Aegis_O_R_Heli_Attack_04_F {
     EMPTY_INVENTORY;
     ace_refuel_fuelCapacity = 1500;
     #include "eventhandler_camo.hpp"
-    #include "textures/Mi35.hpp"
+    #include "textures\Mi35.hpp"
 };

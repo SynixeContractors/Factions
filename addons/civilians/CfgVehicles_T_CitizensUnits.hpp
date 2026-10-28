@@ -262,6 +262,6 @@ class CLASS2(Citizen_Winter,NATION): CLASS2(Base,NATION) {
     SCOPE_DLC;
     displayName = "Citizen (Winter)";
 
-    #include "wear/winter.hpp"
-    #include "wear/headwear_winter.hpp"
+    #include "wear\winter.hpp"
+    #include "wear\headwear_winter.hpp"
 };

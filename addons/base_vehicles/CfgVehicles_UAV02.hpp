@@ -7,10 +7,10 @@ class GCLASS(Shahpar): O_UAV_02_dynamicLoadout_F {
     crew = "C_UAV_AI_F";
     ace_refuel_fuelCapacity = 480; //like mq1 predator
     #include "eventhandler_camo.hpp"
-    #include "textures/UAV02.hpp"
+    #include "textures\UAV02.hpp"
     // class Components {
     //   class TransportPylonsComponent {
-    //     #include "pylons/UAV02.hpp"
+    //     #include "pylons\UAV02.hpp"
     //   };
     // };
 };

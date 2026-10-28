@@ -1,30 +1,30 @@
 class CfgVehicles {
     #define TEMPLATE_FACTION QPCLASS(t2_opfor)
     #define TEMPLATE_SIDE 0
-    #include "../../../templates/statics/XM3XX.hpp"
-    #include "../../../templates/statics/Ship.hpp"
+    #include "..\..\..\templates\statics\XM3XX.hpp"
+    #include "..\..\..\templates\statics\Ship.hpp"
     #define TEMPLATE_CAMO Grey
-    #include "../../../templates/tanks/T14.hpp"
-    #include "../../../templates/tanks/T100.hpp"
-    #include "../../../templates/apc/BM2K.hpp"
-    #include "../../../templates/planes/Xian.hpp"
+    #include "..\..\..\templates\tanks\T14.hpp"
+    #include "..\..\..\templates\tanks\T100.hpp"
+    #include "..\..\..\templates\apc\BM2K.hpp"
+    #include "..\..\..\templates\planes\Xian.hpp"
     #undef TEMPLATE_CAMO
     #define TEMPLATE_CAMO MarineHex
-    #include "../../../templates/apc/Otokar.hpp"
+    #include "..\..\..\templates\apc\Otokar.hpp"
     #undef TEMPLATE_CAMO
     #define TEMPLATE_CAMO Black
-    #include "../../../templates/helicopters/Ka54.hpp"
-    #include "../../../templates/helicopters/Orca_Civilian.hpp"
-    #include "../../../templates/helicopters/Orca_Military.hpp"
-    #include "../../../templates/helicopters/Taru.hpp"
-    #include "../../../templates/cars/Ram_Civilian.hpp"
+    #include "..\..\..\templates\helicopters\Ka54.hpp"
+    #include "..\..\..\templates\helicopters\Orca_Civilian.hpp"
+    #include "..\..\..\templates\helicopters\Orca_Military.hpp"
+    #include "..\..\..\templates\helicopters\Taru.hpp"
+    #include "..\..\..\templates\cars\Ram_Civilian.hpp"
     #undef TEMPLATE_CAMO
     #define TEMPLATE_CAMO Opfor
-    #include "../../../templates/boats/ABoat_M134.hpp"
-    #include "../../../templates/boats/ABoat_HMG.hpp"
+    #include "..\..\..\templates\boats\ABoat_M134.hpp"
+    #include "..\..\..\templates\boats\ABoat_HMG.hpp"
     #undef TEMPLATE_CAMO
     #define TEMPLATE_CAMO Green
-    #include "../../../templates/statics/Mk6.hpp"
+    #include "..\..\..\templates\statics\Mk6.hpp"
 
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {

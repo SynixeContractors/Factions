@@ -7,7 +7,7 @@ class GCLASS(Fennek): I_MRAP_03_F {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 190;
-    #include "textures/Fennek.hpp"
+    #include "textures\Fennek.hpp"
     #include "eventhandler_camo.hpp"
 };
 
@@ -20,7 +20,7 @@ class GCLASS(Fennek_HMG): I_MRAP_03_hmg_F {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 190;
-    #include "textures/Fennek.hpp"
+    #include "textures\Fennek.hpp"
     #include "eventhandler_camo.hpp"
 };
 
@@ -33,6 +33,6 @@ class GCLASS(Fennek_GMG): I_MRAP_03_gmg_F {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 190;
-    #include "textures/Fennek.hpp"
+    #include "textures\Fennek.hpp"
     #include "eventhandler_camo.hpp"
 };

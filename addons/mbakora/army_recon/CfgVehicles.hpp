@@ -2,7 +2,7 @@ class CfgVehicles {
     #define TEMPLATE_FACTION QPCLASS(t3_opfor)
     #define TEMPLATE_SIDE 0
     #define TEMPLATE_CAMO CSAT
-    #include "../../../templates/cars/Ram_Civilian.hpp"
+    #include "..\..\..\templates\cars\Ram_Civilian.hpp"
 
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {

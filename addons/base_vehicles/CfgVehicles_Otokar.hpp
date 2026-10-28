@@ -7,7 +7,7 @@ class GCLASS(Otokar): O_APC_Wheeled_02_unarmed_lxWS {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 210;
-    #include "textures/Otokar.hpp"
+    #include "textures\Otokar.hpp"
 };
 
 class O_APC_Wheeled_02_hmg_lxWS;
@@ -19,7 +19,7 @@ class GCLASS(Otokar_HMG): O_APC_Wheeled_02_hmg_lxWS {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 210;
-    #include "textures/OtokarArmed.hpp"
+    #include "textures\OtokarArmed.hpp"
 };
 
 class O_APC_Wheeled_02_rcws_v2_F;
@@ -31,5 +31,5 @@ class GCLASS(Otokar_RCWS): O_APC_Wheeled_02_rcws_v2_F {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 210;
-    #include "textures/OtokarRCWS.hpp"
+    #include "textures\OtokarRCWS.hpp"
 };

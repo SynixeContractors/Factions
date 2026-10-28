@@ -2,7 +2,7 @@ class CfgVehicles {
     #define TEMPLATE_FACTION QPCLASS(t3_blufor)
     #define TEMPLATE_SIDE 1
     #define TEMPLATE_CAMO Olive
-    #include "../../../templates/cars/Polaris.hpp"
+    #include "..\..\..\templates\cars\Polaris.hpp"
     #undef TEMPLATE_CAMO
 
     class PCLASS(Base);
@@ -10,10 +10,10 @@ class CfgVehicles {
         displayName = "Brienne Base Army SOF";
         editorSubcategory = QGCLASS(special_forces);
 
-        #include "../wear/uniform_sof.hpp"
-        #include "../wear/helmet_sof.hpp"
-        #include "../wear/facewear_recon.hpp"
-        #include "../weapons/suppressor.hpp"
+        #include "..\wear\uniform_sof.hpp"
+        #include "..\wear\helmet_sof.hpp"
+        #include "..\wear\facewear_recon.hpp"
+        #include "..\weapons\suppressor.hpp"
 
         @Vests({
             "variants" : {
@@ -29,8 +29,8 @@ class CfgVehicles {
     };
     class CLASS(Rifleman): CLASS(Base) {
         @Role(Rifleman);
-        #include "../weapons/rifle.hpp"
-        #include "../weapons/launcher_lite.hpp"
+        #include "..\weapons\rifle.hpp"
+        #include "..\weapons\launcher_lite.hpp"
     };
     class CLASS(SquadLeader): CLASS(Base) {
         @Role(SquadLeader);
@@ -45,12 +45,12 @@ class CfgVehicles {
             ],
         });
 
-        #include "../weapons/rifle.hpp"
-        #include "../weapons/pistol.hpp"
+        #include "..\weapons\rifle.hpp"
+        #include "..\weapons\pistol.hpp"
     };
     class CLASS(TeamLeader): CLASS(SquadLeader) {
         @Role(TeamLeader);
-        #include "../weapons/gl.hpp"
+        #include "..\weapons\gl.hpp"
     };
     class CLASS(Autorifleman): CLASS(Base) {
         @Role(Autorifleman);
@@ -65,9 +65,9 @@ class CfgVehicles {
             ],
         });
 
-        #include "../weapons/lmg.hpp"
-        #include "../weapons/pistol.hpp"
-        #include "../wear/backpack.hpp"
+        #include "..\weapons\lmg.hpp"
+        #include "..\weapons\pistol.hpp"
+        #include "..\wear\backpack.hpp"
     };
     class CLASS(Medic): CLASS(Base) {
         @Role(Medic);
@@ -82,30 +82,30 @@ class CfgVehicles {
             ],
         });
 
-        #include "../weapons/carbine.hpp"
-        #include "../weapons/pistol.hpp"
-        #include "../wear/backpack_medic.hpp"
+        #include "..\weapons\carbine.hpp"
+        #include "..\weapons\pistol.hpp"
+        #include "..\wear\backpack_medic.hpp"
     };
     class CLASS(RiflemanMAT): CLASS(Base) {
         @Role(RiflemanMAT);
-        #include "../weapons/rifle.hpp"
-        #include "../weapons/mat.hpp"
-        #include "../wear/backpack.hpp"
+        #include "..\weapons\rifle.hpp"
+        #include "..\weapons\mat.hpp"
+        #include "..\wear\backpack.hpp"
     };
     class CLASS(Engineer): CLASS(Base) {
         @Role(Engineer);
-        #include "../weapons/carbine.hpp"
-        #include "../wear/engineer.hpp"
+        #include "..\weapons\carbine.hpp"
+        #include "..\wear\engineer.hpp"
     };
     class CLASS(RadioOperator): CLASS(Base) {
         @Role(RadioOperator);
-        #include "../weapons/rifle.hpp"
-        #include "../wear/backpack_radio.hpp"
+        #include "..\weapons\rifle.hpp"
+        #include "..\wear\backpack_radio.hpp"
     };
     class CLASS(Demolitions): CLASS(Base) {
         @Role(Demolitions);
-        #include "../weapons/carbine.hpp"
-        #include "../wear/demo.hpp"
+        #include "..\weapons\carbine.hpp"
+        #include "..\wear\demo.hpp"
     };
     class CLASS(Marksman): CLASS(Base) {
         @Role(Marksman);
@@ -120,8 +120,8 @@ class CfgVehicles {
             ],
         });
 
-        #include "../weapons/marksman.hpp"
-        #include "../weapons/pistol.hpp"
+        #include "..\weapons\marksman.hpp"
+        #include "..\weapons\pistol.hpp"
     };
     class CLASS(Spotter): CLASS(Marksman) {
         @Role(Spotter);
@@ -139,6 +139,6 @@ class CfgVehicles {
             ],
         });
 
-        #include "../weapons/sniper.hpp"
+        #include "..\weapons\sniper.hpp"
     };
 };

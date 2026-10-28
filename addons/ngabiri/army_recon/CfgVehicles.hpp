@@ -2,12 +2,12 @@ class CfgVehicles {
     #define TEMPLATE_FACTION QPCLASS(t3_indep)
     #define TEMPLATE_SIDE 2
     #define TEMPLATE_CAMO SFIA
-    #include "../../../templates/cars/Offroad_Armed.hpp"
-    #include "../../../templates/cars/Offroad_Civilian.hpp"
+    #include "..\..\..\templates\cars\Offroad_Armed.hpp"
+    #include "..\..\..\templates\cars\Offroad_Civilian.hpp"
     #undef TEMPLATE_CAMO
     #define TEMPLATE_CAMO Black
-    #include "../../../templates/boats/RHIB.hpp"
-    #include "../../../templates/boats/Dinghy.hpp"
+    #include "..\..\..\templates\boats\RHIB.hpp"
+    #include "..\..\..\templates\boats\Dinghy.hpp"
 
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {

@@ -9,7 +9,7 @@
     forceInGarage = 1
 
 // Pylon macros
-#include "pylons/pylons.hpp"
+#include "pylons\pylons.hpp"
 class EventHandlers;
 
 class CfgVehicles {

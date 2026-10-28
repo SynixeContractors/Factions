@@ -67,13 +67,13 @@ class CLASS2(SIDE,PolicemanPistol): CLASS2(SIDE,Policeman) {
 };
 class CLASS2(SIDE,PolicemanSMG): CLASS2(SIDE,PolicemanPistol) {
     @Role(SMG);
-    #include "weapons/smg.hpp"
+    #include "weapons\smg.hpp"
 };
 class CLASS2(SIDE,PolicemanRifle):CLASS2(SIDE,PolicemanPistol) {
     @Role(Rifleman);
-    #include "weapons/rifle.hpp"
+    #include "weapons\rifle.hpp"
 };
 class CLASS2(SIDE,PolicemanBreacher): CLASS2(SIDE,PolicemanPistol) {
     @Role(Breacher);
-    #include "weapons/shotgun.hpp"
+    #include "weapons\shotgun.hpp"
 };

@@ -12,6 +12,7 @@ options.check_prefixes = []
 dlc = []
 workshop = [
     "3499977893", # ADT
+    # "1487260770", # tahiti
     "synixe:@3den_attributes_fast_load",
     "synixe:@ace_noactionmenu",
     "synixe:@ace_nocrosshair",
@@ -26,7 +27,6 @@ workshop = [
     "synixe:@gorkas",
     "synixe:@jca_ia",
     "synixe:@jca_ie",
-    "synixe:@jca_scar",
     "synixe:@jca_spar",
     "synixe:@low_visibility_attir",
     "synixe:@melb",

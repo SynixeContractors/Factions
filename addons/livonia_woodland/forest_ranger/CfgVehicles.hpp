@@ -32,15 +32,15 @@ class CfgVehicles {
     };
     class CLASS(Rifleman): CLASS(Base) {
         @Role(Rifleman);
-        #include "../weapons/Rifleman.hpp"
+        #include "..\weapons\Rifleman.hpp"
     };
     class CLASS(RiflemanSMG): CLASS(Base) {
         @Role(SMG);
-        #include "../weapons/smg.hpp"
+        #include "..\weapons\smg.hpp"
     };
     class CLASS(RiflemanPistol): CLASS(Base) {
         @Role(Pistol);
-        #include "../weapons/Pistol.hpp"
+        #include "..\weapons\Pistol.hpp"
     };
     class CLASS(Breacher): CLASS(Base) {
         @Role(Breacher);
@@ -68,7 +68,7 @@ class CfgVehicles {
     };
     class CLASS(TeamLeader): CLASS(Rifleman) {
         @Role(TeamLeader);
-        #include "../weapons/Pistol.hpp"
+        #include "..\weapons\Pistol.hpp"
     };
     class CLASS(Medic): CLASS(RiflemanSMG) {
         @Role(Medic);
@@ -83,12 +83,12 @@ class CfgVehicles {
     };
     class CLASS(Worker): CLASS(Base) {
         @Role(Worker);
-        #include "../../civilians/wear/hivis.hpp"
-        #include "../weapons/smg.hpp"
+        #include "..\..\civilians\wear\hivis.hpp"
+        #include "..\weapons\smg.hpp"
     };
     class CLASS(Maintainer): CLASS(Base) {
         @Role(Maintainer);
-        #include "../../civilians/wear/hivis.hpp"
-        #include "../weapons/Pistol.hpp"
+        #include "..\..\civilians\wear\hivis.hpp"
+        #include "..\weapons\Pistol.hpp"
     };
 };

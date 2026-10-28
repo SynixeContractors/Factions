@@ -1,12 +1,12 @@
 class CfgVehicles {
     #define TEMPLATE_FACTION QPCLASS(t4_opfor)
     #define TEMPLATE_SIDE 0
-    #include "../../../templates/statics/M2.hpp"
+    #include "..\..\..\templates\statics\M2.hpp"
     #define TEMPLATE_CAMO_LIST {\
         QUOTE(Olive),1,\
         QUOTE(Brown),1,\
     }
-    #include "../../../templates/cars/Quadbike.hpp"
+    #include "..\..\..\templates\cars\Quadbike.hpp"
     #undef TEMPLATE_CAMO_LIST
     #define TEMPLATE_CAMO_LIST {\
         QUOTE(Guerilla_04),1,\
@@ -15,9 +15,9 @@ class CfgVehicles {
         QUOTE(Guerilla_08),1,\
         QUOTE(Guerilla_09),1,\
     }
-    #include "../../../templates/cars/Offroad_Civilian.hpp"
-    #include "../../../templates/cars/Offroad_Armed.hpp"
-    #include "../../../templates/cars/Offroad_AA.hpp"
+    #include "..\..\..\templates\cars\Offroad_Civilian.hpp"
+    #include "..\..\..\templates\cars\Offroad_Armed.hpp"
+    #include "..\..\..\templates\cars\Offroad_AA.hpp"
     #undef TEMPLATE_CAMO_LIST
 
     class PCLASS(Base);

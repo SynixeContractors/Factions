@@ -108,7 +108,7 @@ class GCLASS(HEMTT_Cargo): B_Truck_01_cargo_F {
     EMPTY_INVENTORY;
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
-    #include "textures/HEMTTCargo.hpp"
+    #include "textures\HEMTTCargo.hpp"
 };
 
 class B_Truck_01_flatbed_F;
@@ -119,7 +119,7 @@ class GCLASS(HEMTT_Flatbed): B_Truck_01_flatbed_F {
     EMPTY_INVENTORY;
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
-    #include "textures/HEMTTFlatbed.hpp"
+    #include "textures\HEMTTFlatbed.hpp"
 };
 
 class B_Truck_01_repair_F;
@@ -130,7 +130,7 @@ class GCLASS(HEMTT_Repair): B_Truck_01_repair_F {
     EMPTY_INVENTORY;
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
-    #include "textures/HEMTTContainer.hpp"
+    #include "textures\HEMTTContainer.hpp"
 };
 class B_Truck_01_box_F;
 class GCLASS(HEMTT_Container): B_Truck_01_box_F {
@@ -140,7 +140,7 @@ class GCLASS(HEMTT_Container): B_Truck_01_box_F {
     EMPTY_INVENTORY;
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
-    #include "textures/HEMTTContainer.hpp"
+    #include "textures\HEMTTContainer.hpp"
 };
 
 class B_Truck_01_transport_F;
@@ -151,7 +151,7 @@ class GCLASS(HEMTT_Bench): B_Truck_01_transport_F {
     EMPTY_INVENTORY;
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
-    #include "textures/HEMTTTransport.hpp"
+    #include "textures\HEMTTTransport.hpp"
 };
 
 class B_Truck_01_covered_F;
@@ -162,7 +162,7 @@ class GCLASS(HEMTT_Covered): B_Truck_01_covered_F {
     EMPTY_INVENTORY;
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
-    #include "textures/HEMTTTransport.hpp"
+    #include "textures\HEMTTTransport.hpp"
 };
 
 class B_Truck_01_medical_F;
@@ -173,7 +173,7 @@ class GCLASS(HEMTT_Medical): B_Truck_01_medical_F {
     EMPTY_INVENTORY;
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
-    #include "textures/HEMTTTransport.hpp"
+    #include "textures\HEMTTTransport.hpp"
 };
 
 class B_Truck_01_fuel_F;

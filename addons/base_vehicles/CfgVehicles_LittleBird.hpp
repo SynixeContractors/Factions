@@ -13,7 +13,7 @@ class GCLASS(MELB): MELB_H6M {
     ace_refuel_fuelCapacity = 233;
     ace_cargo_space = 2; //default: 8
     #include "eventhandler_camo.hpp"
-    #include "textures/LittleBird.hpp"
+    #include "textures\LittleBird.hpp"
     class AcreIntercoms: AcreIntercoms {
         class Intercom_2 {
             displayName = "Passenger intercom";
@@ -38,7 +38,7 @@ class GCLASS(MELB_Rig): MELB_MH6M {
     ace_refuel_fuelCapacity = 233;
     ace_cargo_space = 2; //default: 8
     #include "eventhandler_camo.hpp"
-    #include "textures/LittleBird.hpp"
+    #include "textures\LittleBird.hpp"
 };
 class MELB_AH6M;
 class GCLASS(MELB_Attack): MELB_AH6M {
@@ -51,5 +51,5 @@ class GCLASS(MELB_Attack): MELB_AH6M {
     ace_refuel_fuelCapacity = 233;
     ace_cargo_space = 2; //default: 8
     #include "eventhandler_camo.hpp"
-    #include "textures/LittleBird.hpp"
+    #include "textures\LittleBird.hpp"
 };

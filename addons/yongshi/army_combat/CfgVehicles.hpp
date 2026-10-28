@@ -11,12 +11,12 @@ class CfgVehicles {
         QUOTE(Guerilla_11),1,\
         QUOTE(Guerilla_12),1,\
     }
-    #include "../../../templates/cars/Offroad_Civilian.hpp"
+    #include "..\..\..\templates\cars\Offroad_Civilian.hpp"
     #undef TEMPLATE_CAMO_LIST
     #define TEMPLATE_CAMO_LIST {\
         QUOTE(Desert),1,\
     }
-    #include "../../../templates/cars/LSV.hpp"
+    #include "..\..\..\templates\cars\LSV.hpp"
     #undef TEMPLATE_CAMO_LIST
 
     class PCLASS(Base);

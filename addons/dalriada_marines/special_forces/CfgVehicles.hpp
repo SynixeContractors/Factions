@@ -2,12 +2,12 @@ class CfgVehicles {
     #define TEMPLATE_FACTION QPCLASS(t2_opfor)
     #define TEMPLATE_SIDE 0
     #define TEMPLATE_CAMO Black
-    #include "../../../templates/cars/LSV.hpp"
-    #include "../../../templates/cars/Ram_Advanced.hpp"
-    #include "../../../templates/boats/RHIB.hpp"
+    #include "..\..\..\templates\cars\LSV.hpp"
+    #include "..\..\..\templates\cars\Ram_Advanced.hpp"
+    #include "..\..\..\templates\boats\RHIB.hpp"
     #undef TEMPLATE_CAMO
     #define TEMPLATE_CAMO Hex
-    #include "../../../templates/boats/Dinghy.hpp"
+    #include "..\..\..\templates\boats\Dinghy.hpp"
     
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {

@@ -32,7 +32,7 @@ class GCLASS(Hatchback): C_Hatchback_01_F {
     #undef HATCHBACK_TEXTURE_CIVILIAN
     #undef HATCHBACK_TEXTURE_SPORT
     class TextureSources {
-         #include "textures/Hatchback.hpp"
+         #include "textures\Hatchback.hpp"
     };
 };
 
@@ -50,6 +50,6 @@ class GCLASS(Hatchback_Sport): C_Hatchback_01_sport_F {
     #undef HATCHBACK_TEXTURE_CIVILIAN
     #undef HATCHBACK_TEXTURE_SPORT
     class TextureSources {
-        #include "textures/Hatchback.hpp"
+        #include "textures\Hatchback.hpp"
     };
 };

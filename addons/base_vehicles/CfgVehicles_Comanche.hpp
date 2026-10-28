@@ -8,7 +8,7 @@ class GCLASS(Comanche): B_Heli_Attack_01_dynamicLoadout_F {
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 1400;
     #include "eventhandler_camo.hpp"
-    #include "textures/Comanche.hpp"
+    #include "textures\Comanche.hpp"
 };
 
 ADD_CAMO_EVENT_HANDLER(B_Heli_Attack_01_pylons_dynamicLoadout_F,Heli_Attack_01_pylons_dynamicLoadout_base_F);
@@ -21,5 +21,5 @@ class GCLASS(Comanche_Pylons): B_Heli_Attack_01_pylons_dynamicLoadout_F {
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 1400;
     #include "eventhandler_camo.hpp"
-    #include "textures/Comanche.hpp"
+    #include "textures\Comanche.hpp"
 };

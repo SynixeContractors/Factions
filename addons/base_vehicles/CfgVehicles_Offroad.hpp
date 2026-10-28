@@ -24,7 +24,7 @@ class GCLASS(Offroad): C_Offroad_01_F {
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 80;
     OFFROAD_TEXTURE_LIST;
-    #include "textures/Offroad.hpp"
+    #include "textures\Offroad.hpp"
     animationList[] = {
         "HideBumper1", 0.17,
         "HideBumper2", 0.5,
@@ -43,7 +43,7 @@ class GCLASS(Offroad_Covered): C_Offroad_01_covered_F {
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 80;
     OFFROAD_TEXTURE_LIST;
-    #include "textures/Offroad.hpp"
+    #include "textures\Offroad.hpp"
 };
 class C_Offroad_01_comms_F;
 class GCLASS(Offroad_Comms): C_Offroad_01_comms_F {
@@ -55,7 +55,7 @@ class GCLASS(Offroad_Comms): C_Offroad_01_comms_F {
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 80;
     OFFROAD_TEXTURE_LIST;
-    #include "textures/Offroad.hpp"
+    #include "textures\Offroad.hpp"
     #include "racks\carcomms.hpp"
 };
 
@@ -69,7 +69,7 @@ class GCLASS(Offroad_Services): C_Offroad_01_repair_F {
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 80;
     OFFROAD_TEXTURE_LIST;
-    #include "textures/Offroad.hpp"
+    #include "textures\Offroad.hpp"
 };
 
 class I_G_Offroad_01_armed_F;
@@ -81,7 +81,7 @@ class GCLASS(Offroad_HMG): I_G_Offroad_01_armed_F {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 80;
-    #include "textures/Offroad.hpp"
+    #include "textures\Offroad.hpp"
 };
 
 class I_G_Offroad_01_AT_F;
@@ -93,7 +93,7 @@ class GCLASS(Offroad_AT): I_G_Offroad_01_AT_F {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 80;
-    #include "textures/Offroad.hpp"
+    #include "textures\Offroad.hpp"
 };
 
 class I_G_Offroad_AA_lxWS;
@@ -105,7 +105,7 @@ class GCLASS(Offroad_AA): I_G_Offroad_AA_lxWS {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 80;
-    #include "textures/OffroadAA.hpp"
+    #include "textures\OffroadAA.hpp"
 };
 
 class I_G_Offroad_01_armor_base_lxWS;
@@ -117,7 +117,7 @@ class GCLASS(Offroad_Armored): I_G_Offroad_01_armor_base_lxWS {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 80;
-    #include "textures/OffroadArmored.hpp"
+    #include "textures\OffroadArmored.hpp"
 };
 
 class I_G_Offroad_01_armor_AT_lxWS;
@@ -129,7 +129,7 @@ class GCLASS(Offroad_Armored_AT): I_G_Offroad_01_armor_AT_lxWS {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 80;
-    #include "textures/OffroadArmored.hpp"
+    #include "textures\OffroadArmored.hpp"
 };
 
 class I_G_Offroad_01_armor_armed_lxWS;
@@ -141,7 +141,7 @@ class GCLASS(Offroad_Armored_HMG): I_G_Offroad_01_armor_armed_lxWS {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 80;
-    #include "textures/OffroadArmored.hpp"
+    #include "textures\OffroadArmored.hpp"
 };
 
 class I_Tura_Offroad_armor_AA_lxWS;
@@ -153,5 +153,5 @@ class GCLASS(Offroad_Armored_AA): I_Tura_Offroad_armor_AA_lxWS {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 80;
-    #include "textures/OffroadAA.hpp"
+    #include "textures\OffroadAA.hpp"
 };

@@ -4,7 +4,7 @@ class CfgVehicles {
         displayName = "Special Forces";
         editorSubcategory = QGCLASS(special_forces);
 
-        #include "../wear/uniform.hpp"
+        #include "..\wear\uniform.hpp"
         @Vests({
             "variants": {
               "synixe_mgp_vest_jpc_assaulter_gry": 0.8,
@@ -16,32 +16,32 @@ class CfgVehicles {
                 "military_standard"
             ],
         });
-        #include "../wear/helmet.hpp"
-        #include "../wear/facewear_army.hpp"
+        #include "..\wear\helmet.hpp"
+        #include "..\wear\facewear_army.hpp"
         @Assigned(Military);
     };
     class CLASS(Rifleman): CLASS(Base) {
         @Role(Rifleman);
-        #include "../../krasnovia/weapons/rifle_sof.hpp"
-        #include "../../krasnovia/weapons/launcher.hpp"
-        #include "../../krasnovia/weapons/attachments_sof.hpp"
+        #include "..\..\krasnovia\weapons\rifle_sof.hpp"
+        #include "..\..\krasnovia\weapons\launcher.hpp"
+        #include "..\..\krasnovia\weapons\attachments_sof.hpp"
     };
     class CLASS(RiflemanCarabine): CLASS(Base) {
         @Role(Hidden);
-        #include "../../krasnovia/weapons/rifle_sof.hpp"
-        #include "../../krasnovia/weapons/attachments_sof.hpp"
+        #include "..\..\krasnovia\weapons\rifle_sof.hpp"
+        #include "..\..\krasnovia\weapons\attachments_sof.hpp"
     };
     class CLASS(RiflemanBackpack): CLASS(RiflemanCarabine) {
         @Role(Hidden);
-        #include "../wear/backpack.hpp"
+        #include "..\wear\backpack.hpp"
     };
     class CLASS(TeamLeader): CLASS(RiflemanCarabine) {
         @Role(TeamLeader);
-        #include "../../krasnovia/weapons/pistol.hpp"
+        #include "..\..\krasnovia\weapons\pistol.hpp"
     };
     class CLASS(SquadLeader): CLASS(RiflemanCarabine) {
         @Role(SquadLeader);
-        #include "../../krasnovia/weapons/pistol.hpp"
+        #include "..\..\krasnovia\weapons\pistol.hpp"
         @Primary({
             "weapons": {
                 "JCA_arifle_M4A4_GL_black_F": {
@@ -68,35 +68,35 @@ class CfgVehicles {
                 },
             },
         });
-        #include "../../krasnovia/weapons/pistol.hpp"
+        #include "..\..\krasnovia\weapons\pistol.hpp"
     };
     class CLASS(Medic): CLASS(RiflemanBackpack) {
         @Role(Medic);
-        #include "../wear/backpack_medic.hpp"
+        #include "..\wear\backpack_medic.hpp"
     };
     class CLASS(RiflemanMAT): CLASS(RiflemanBackpack) {
         @Role(RiflemanMAT);
-        #include "../../krasnovia/weapons/mat.hpp"
+        #include "..\..\krasnovia\weapons\mat.hpp"
     };
     class CLASS(Engineer): CLASS(RiflemanBackpack) {
         @Role(Engineer);
-        #include "../wear/engineer.hpp"
+        #include "..\wear\engineer.hpp"
     };
     class CLASS(RadioOperator): CLASS(RiflemanCarabine) {
         @Role(RadioOperator);
-        #include "../wear/backpack_radio.hpp"
+        #include "..\wear\backpack_radio.hpp"
     };
     class CLASS(Demolitions): CLASS(RiflemanBackpack) {
         @Role(Demolitions);
-        #include "../wear/demo.hpp"
+        #include "..\wear\demo.hpp"
     };
     class CLASS(HeliPilot): CLASS(RiflemanCarabine) {
         @Role(HeliPilot);
-        #include "../../krasnovia/wear/pilot.hpp"
+        #include "..\..\krasnovia\wear\pilot.hpp"
     };
     class CLASS(Marksman): CLASS(RiflemanCarabine) {
         @Role(Marksman);
-        #include "../../krasnovia/weapons/pistol.hpp"
+        #include "..\..\krasnovia\weapons\pistol.hpp"
         @Primary({
             "weapons": {
                 "JCA_arifle_SR10_VFG_black_F": {
@@ -117,6 +117,6 @@ class CfgVehicles {
     };
     class CLASS(Sniper): CLASS(Spotter) {
         @Role(Sniper);
-        #include "../../krasnovia/weapons/sniper.hpp"
+        #include "..\..\krasnovia\weapons\sniper.hpp"
     };
 };

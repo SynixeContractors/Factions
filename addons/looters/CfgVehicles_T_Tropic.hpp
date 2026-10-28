@@ -61,17 +61,17 @@ class CLASS2(SIDE,Tropic): CLASS2(Base,NATION) {
 class CLASS2(SIDE,Tropic_Looter): CLASS2(SIDE,Tropic) {
     @Role(Rifleman);
 
-    #include "weapons/primary.hpp"
+    #include "weapons\primary.hpp"
 };
 
 class CLASS2(SIDE,Tropic_LooterPistol): CLASS2(SIDE,Tropic) {
     @Role(Pistol);
 
-    #include "weapons/secondary.hpp"
+    #include "weapons\secondary.hpp"
 };
 
 class CLASS2(SIDE,Tropic_Hunter): CLASS2(SIDE,Tropic) {
     @Role(Marksman);
 
-    #include "weapons/hunter.hpp"
+    #include "weapons\hunter.hpp"
 };

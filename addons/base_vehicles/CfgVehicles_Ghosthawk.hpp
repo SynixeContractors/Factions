@@ -9,7 +9,7 @@ class GCLASS(Ghosthawk): B_Heli_Transport_01_unarmed {
     ace_refuel_fuelCapacity = 1100;
     ace_cargo_space = 4; //default: 8
     #include "eventhandler_camo.hpp"
-    #include "textures/Ghosthawk.hpp"
+    #include "textures\Ghosthawk.hpp"
 };
 
 class GCLASS(Ghosthawk_MEV): B_Heli_Transport_01_unarmed {
@@ -36,7 +36,7 @@ class GCLASS(Ghosthawk_M134): B_Heli_Transport_01_F {
     ace_refuel_fuelCapacity = 1100;
     ace_cargo_space = 4; //default: 8
     #include "eventhandler_camo.hpp"
-    #include "textures/Ghosthawk.hpp"
+    #include "textures\Ghosthawk.hpp"
 };
 
 ADD_CAMO_EVENT_HANDLER(B_Heli_Transport_01_pylons_F,Heli_Transport_01_pylons_base_F);
@@ -50,7 +50,7 @@ class GCLASS(Ghosthawk_Pylons): B_Heli_Transport_01_pylons_F {
     ace_refuel_fuelCapacity = 2200;
     ace_cargo_space = 4; //default: 8
     #include "eventhandler_camo.hpp"
-    #include "textures/Ghosthawk.hpp"
+    #include "textures\Ghosthawk.hpp"
 };
 
 class Heli_Transport_01_Assault_base_F;
@@ -64,7 +64,7 @@ class GCLASS(Ghosthawk_Assault): Heli_Transport_01_Assault_base_F {
     ace_refuel_fuelCapacity = 2200;
     ace_cargo_space = 4; //default: 8
     #include "eventhandler_camo.hpp"
-    #include "textures/Ghosthawk.hpp"
+    #include "textures\Ghosthawk.hpp"
 };
 
 class Heli_Transport_01_DAP_base_F;
@@ -78,5 +78,5 @@ class GCLASS(Ghosthawk_DAP): Heli_Transport_01_DAP_base_F {
     ace_refuel_fuelCapacity = 2200;
     ace_cargo_space = 4; //default: 8
     #include "eventhandler_camo.hpp"
-    #include "textures/Ghosthawk.hpp"
+    #include "textures\Ghosthawk.hpp"
 };

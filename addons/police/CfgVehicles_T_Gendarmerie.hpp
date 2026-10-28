@@ -18,11 +18,11 @@ class CLASS2(SIDE,Gendarme): CLASS2(SIDE,Policeman) {
 };
 class CLASS2(SIDE,GendarmeSMG): CLASS2(SIDE,Gendarme) {
     @Role(SMG);
-    #include "weapons/smg.hpp"
+    #include "weapons\smg.hpp"
 };
 class CLASS2(SIDE,Crewman): CLASS2(SIDE,Gendarme) {
     @Role(Crewman);
-    #include "weapons/smg.hpp"
+    #include "weapons\smg.hpp"
     @Headgear({
         "lxWS_H_HelmetCrew_Blue": 1,
     });
@@ -30,11 +30,11 @@ class CLASS2(SIDE,Crewman): CLASS2(SIDE,Gendarme) {
 
 class CLASS2(SIDE,GendarmeRifle): CLASS2(SIDE,Gendarme) {
     @Role(Rifleman);
-    #include "weapons/rifle.hpp"
+    #include "weapons\rifle.hpp"
 };
 class CLASS2(SIDE,GendarmeBreacher): CLASS2(SIDE,Gendarme) {
     @Role(Breacher);
-    #include "weapons/shotgun.hpp"
+    #include "weapons\shotgun.hpp"
 };
 class CLASS2(SIDE,GendarmeSniper): CLASS2(SIDE,Gendarme) {
     @Role(Sniper);

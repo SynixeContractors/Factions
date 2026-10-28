@@ -2,7 +2,7 @@ class CfgVehicles {
     #define TEMPLATE_FACTION QPCLASS(t2_indep)
     #define TEMPLATE_SIDE 2
     #define TEMPLATE_CAMO Sand
-    #include "../../../templates/cars/Polaris.hpp"
+    #include "..\..\..\templates\cars\Polaris.hpp"
 
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {

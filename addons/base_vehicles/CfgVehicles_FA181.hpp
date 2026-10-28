@@ -8,10 +8,10 @@ class GCLASS(FA181): B_Plane_Fighter_01_F {
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 2000;
     #include "eventhandler_camo.hpp"
-    #include "textures/FA181.hpp"
+    #include "textures\FA181.hpp"
     // class Components {
     //   class TransportPylonsComponent {
-    //     #include "pylons/FA181.hpp"
+    //     #include "pylons\FA181.hpp"
     //   };
     // };
 };
@@ -26,11 +26,11 @@ class GCLASS(FA181_Stealth): B_Plane_Fighter_01_Stealth_F {
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 2000;
     #include "eventhandler_camo.hpp"
-    #include "textures/FA181.hpp"
+    #include "textures\FA181.hpp"
     // class Components {
     //   class TransportPylonsComponent {
     //     //FIXME
-    //     #include "pylons/FA181.hpp"
+    //     #include "pylons\FA181.hpp"
     //   };
     // };
 };

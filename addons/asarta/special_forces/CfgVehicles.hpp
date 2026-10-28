@@ -4,7 +4,7 @@ class CfgVehicles {
         displayName = "Special Forces";
         editorSubcategory = QGCLASS(special_forces);
 
-        #include "../wear/uniform.hpp"
+        #include "..\wear\uniform.hpp"
         @Vests({
             "variants": {
               "Atlas_V_OCarrierRig_Lite_semiarid_F": 0.8,
@@ -26,22 +26,22 @@ class CfgVehicles {
     };
     class CLASS(Rifleman): CLASS(Base) {
         @Role(Rifleman);
-        #include "../weapons/rifle_sof.hpp"
-        #include "../weapons/launcher.hpp"
-        #include "../weapons/attachments_sof.hpp"
+        #include "..\weapons\rifle_sof.hpp"
+        #include "..\weapons\launcher.hpp"
+        #include "..\weapons\attachments_sof.hpp"
     };
     class CLASS(RiflemanCarabine): CLASS(Base) {
         @Role(Hidden);
-        #include "../weapons/rifle_sof.hpp"
-        #include "../weapons/attachments_sof.hpp"
+        #include "..\weapons\rifle_sof.hpp"
+        #include "..\weapons\attachments_sof.hpp"
     };
     class CLASS(RiflemanBackpack): CLASS(RiflemanCarabine) {
         @Role(Hidden);
-        #include "../wear/backpack.hpp"
+        #include "..\wear\backpack.hpp"
     };
     class CLASS(TeamLeader): CLASS(RiflemanCarabine) {
         @Role(TeamLeader);
-        #include "../weapons/pistol.hpp"
+        #include "..\weapons\pistol.hpp"
         @Primary({
             "weapons": {
                 "synixe_armoury_arifle_AK03_GL_sand": {
@@ -58,7 +58,7 @@ class CfgVehicles {
     };
     class CLASS(SquadLeader): CLASS(RiflemanCarabine) {
         @Role(SquadLeader);
-        #include "../weapons/pistol.hpp"
+        #include "..\weapons\pistol.hpp"
     };
     class CLASS(Autorifleman): CLASS(RiflemanBackpack) {
         @Role(Autorifleman);
@@ -72,31 +72,31 @@ class CfgVehicles {
                 },
             },
         });
-        #include "../weapons/pistol.hpp"
+        #include "..\weapons\pistol.hpp"
     };
     class CLASS(Medic): CLASS(RiflemanBackpack) {
         @Role(Medic);
-        #include "../wear/backpack_medic.hpp"
+        #include "..\wear\backpack_medic.hpp"
     };
     class CLASS(RiflemanMAT): CLASS(RiflemanBackpack) {
         @Role(RiflemanMAT);
-        #include "../weapons/mat.hpp"
+        #include "..\weapons\mat.hpp"
     };
     class CLASS(Engineer): CLASS(RiflemanBackpack) {
         @Role(Engineer);
-        #include "../wear/engineer.hpp"
+        #include "..\wear\engineer.hpp"
     };
     class CLASS(RadioOperator): CLASS(RiflemanCarabine) {
         @Role(RadioOperator);
-        #include "../wear/backpack_radio.hpp"
+        #include "..\wear\backpack_radio.hpp"
     };
     class CLASS(Demolitions): CLASS(RiflemanBackpack) {
         @Role(Demolitions);
-        #include "../wear/demo.hpp"
+        #include "..\wear\demo.hpp"
     };
     class CLASS(HeliPilot): CLASS(RiflemanCarabine) {
         @Role(HeliPilot);
-        #include "../wear/pilot.hpp"
+        #include "..\wear\pilot.hpp"
     };
     class CLASS(Marksman): CLASS(RiflemanCarabine) {
         @Role(Marksman);
@@ -114,7 +114,7 @@ class CfgVehicles {
             },
         });
 
-        #include "../weapons/pistol.hpp"
+        #include "..\weapons\pistol.hpp"
     };
     class CLASS(Spotter): CLASS(Marksman) {
         @Role(Spotter);
@@ -129,6 +129,6 @@ class CfgVehicles {
     };
     class CLASS(Sniper): CLASS(Spotter) {
         @Role(Sniper);
-        #include "../weapons/sniper.hpp"
+        #include "..\weapons\sniper.hpp"
     };
 };

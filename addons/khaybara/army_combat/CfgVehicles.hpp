@@ -1,39 +1,39 @@
 class CfgVehicles {
     #define TEMPLATE_FACTION QPCLASS(t2_blufor)
     #define TEMPLATE_SIDE 1
-    #include "../../../templates/statics/M2.hpp"
-    #include "../../../templates/statics/Ship.hpp"
+    #include "..\..\..\templates\statics\M2.hpp"
+    #include "..\..\..\templates\statics\Ship.hpp"
     #define TEMPLATE_CAMO Desert
-    #include "../../../templates/statics/SAM01.hpp"
+    #include "..\..\..\templates\statics\SAM01.hpp"
     #undef TEMPLATE_CAMO
     #define TEMPLATE_CAMO Karzeg_01
-    #include "../../../templates/apc/Pandur.hpp"
-    #include "../../../templates/helicopters/Puma_Military.hpp"
+    #include "..\..\..\templates\apc\Pandur.hpp"
+    #include "..\..\..\templates\helicopters\Puma_Military.hpp"
     #undef TEMPLATE_CAMO
     #define TEMPLATE_CAMO KZG_01
-    #include "../../../templates/tanks/Leopard.hpp"
-    #include "../../../templates/tanks/Merkava.hpp"
-    #include "../../../templates/tanks/Merkava_SPG.hpp"
-    #include "../../../templates/apc/Namer.hpp"
-    #include "../../../templates/cars/Fennek.hpp"
-    #include "../../../templates/cars/Polaris.hpp"
-    #include "../../../templates/cars/Ram_Civilian.hpp"
-    #include "../../../templates/cars/Ram_Armed.hpp"
-    #include "../../../templates/cars/Ram_Advanced.hpp"
+    #include "..\..\..\templates\tanks\Leopard.hpp"
+    #include "..\..\..\templates\tanks\Merkava.hpp"
+    #include "..\..\..\templates\tanks\Merkava_SPG.hpp"
+    #include "..\..\..\templates\apc\Namer.hpp"
+    #include "..\..\..\templates\cars\Fennek.hpp"
+    #include "..\..\..\templates\cars\Polaris.hpp"
+    #include "..\..\..\templates\cars\Ram_Civilian.hpp"
+    #include "..\..\..\templates\cars\Ram_Armed.hpp"
+    #include "..\..\..\templates\cars\Ram_Advanced.hpp"
     #undef TEMPLATE_CAMO
     #define TEMPLATE_CAMO KZG
-    #include "../../../templates/cars/Offroad_Civilian.hpp"
-    #include "../../../templates/cars/HEMTT.hpp"
-    #include "../../../templates/helicopters/Wildcat.hpp"
+    #include "..\..\..\templates\cars\Offroad_Civilian.hpp"
+    #include "..\..\..\templates\cars\HEMTT.hpp"
+    #include "..\..\..\templates\helicopters\Wildcat.hpp"
     #undef TEMPLATE_CAMO
     #define TEMPLATE_CAMO Khaybaran
-    #include "../../../templates/planes/FA181.hpp"
+    #include "..\..\..\templates\planes\FA181.hpp"
     #undef TEMPLATE_CAMO
     #define TEMPLATE_CAMO Default
-    #include "../../../templates/drones/MQ47.hpp"
+    #include "..\..\..\templates\drones\MQ47.hpp"
     #undef TEMPLATE_CAMO
     #define TEMPLATE_CAMO Sand
-    #include "../../../templates/drones/MQ12.hpp"
+    #include "..\..\..\templates\drones\MQ12.hpp"
 
 
     class PCLASS(Base);
@@ -41,30 +41,30 @@ class CfgVehicles {
         displayName = "Khaybara Base Army Combat";
         editorSubcategory = QGCLASS(army_combat);
 
-        #include "../wear/uniform.hpp"
-        #include "../wear/vest_army.hpp"
-        #include "../wear/helmet.hpp"
-        #include "../wear/facewear_army.hpp"
+        #include "..\wear\uniform.hpp"
+        #include "..\wear\vest_army.hpp"
+        #include "..\wear\helmet.hpp"
+        #include "..\wear\facewear_army.hpp"
         @Assigned(Military);
     };
     class CLASS(Rifleman): CLASS(Base) {
         @Role(Rifleman);
-        #include "../weapons/rifle.hpp"
-        #include "../weapons/launcher.hpp"
-        #include "../weapons/attachments_army.hpp"
+        #include "..\weapons\rifle.hpp"
+        #include "..\weapons\launcher.hpp"
+        #include "..\weapons\attachments_army.hpp"
     };
     class CLASS(RiflemanCarabine): CLASS(Base) {
         @Role(Hidden);
-        #include "../weapons/carabine.hpp"
-        #include "../weapons/attachments_army.hpp"
+        #include "..\weapons\carabine.hpp"
+        #include "..\weapons\attachments_army.hpp"
     };
     class CLASS(RiflemanBackpack): CLASS(RiflemanCarabine) {
         @Role(Hidden);
-        #include "../wear/backpack.hpp"
+        #include "..\wear\backpack.hpp"
     };
     class CLASS(TeamLeader): CLASS(RiflemanCarabine) {
         @Role(TeamLeader);
-        #include "../weapons/pistol.hpp"
+        #include "..\weapons\pistol.hpp"
     };
     class CLASS(Officer): CLASS(Base) {
         @Role(Officer);
@@ -84,69 +84,69 @@ class CfgVehicles {
                 "JCA_V_CarrierRigKBT_01_holster_sand_F": 1,
             },
         });
-        #include "../weapons/pistol.hpp"
+        #include "..\weapons\pistol.hpp"
     };
     class CLASS(SquadLeader): CLASS(TeamLeader) {
         @Role(SquadLeader);
-        #include "../weapons/gl.hpp"
+        #include "..\weapons\gl.hpp"
     };
     class CLASS(Autorifleman): CLASS(RiflemanBackpack) {
         @Role(Autorifleman);
-        #include "../weapons/lmg.hpp"
-        #include "../weapons/pistol.hpp"
+        #include "..\weapons\lmg.hpp"
+        #include "..\weapons\pistol.hpp"
     };
     class CLASS(Machinegunner): CLASS(RiflemanCarabine) {
         @Role(Machinegunner);
-        #include "../weapons/mg.hpp"
-        #include "../weapons/pistol.hpp"
+        #include "..\weapons\mg.hpp"
+        #include "..\weapons\pistol.hpp"
     };
     class CLASS(AsstMachinegunner): CLASS(RiflemanBackpack) {
         @Role(AsstMachinegunner);
-        #include "../wear/backpack_mg.hpp"
+        #include "..\wear\backpack_mg.hpp"
     };
     class CLASS(Medic): CLASS(RiflemanBackpack) {
         @Role(Medic);
-        #include "../wear/backpack_medic.hpp"
+        #include "..\wear\backpack_medic.hpp"
     };
     class CLASS(RiflemanMAT): CLASS(RiflemanBackpack) {
         @Role(RiflemanMAT);
-        #include "../weapons/mat.hpp"
+        #include "..\weapons\mat.hpp"
     };
     class CLASS(RiflemanAA): CLASS(RiflemanBackpack) {
         @Role(RiflemanAA);
-        #include "../weapons/aa.hpp"
+        #include "..\weapons\aa.hpp"
     };
     class CLASS(RiflemanHAT): CLASS(RiflemanBackpack) {
         @Role(RiflemanHAT);
-        #include "../weapons/hat.hpp"
+        #include "..\weapons\hat.hpp"
     };
     class CLASS(Engineer): CLASS(RiflemanBackpack) {
         @Role(Engineer);
-        #include "../wear/engineer.hpp"
+        #include "..\wear\engineer.hpp"
     };
     class CLASS(RadioOperator): CLASS(RiflemanCarabine) {
         @Role(RadioOperator);
-        #include "../wear/backpack_radio.hpp"
+        #include "..\wear\backpack_radio.hpp"
     };
     class CLASS(Demolitions): CLASS(RiflemanBackpack) {
         @Role(Demolitions);
-        #include "../wear/demo.hpp"
+        #include "..\wear\demo.hpp"
     };
     class CLASS(Crewman): CLASS(RiflemanCarabine) {
         @Role(Crewman);
-        #include "../weapons/pdw.hpp"
+        #include "..\weapons\pdw.hpp"
     };
     class CLASS(HeliPilot): CLASS(Crewman) {
         @Role(HeliPilot);
-        #include "../wear/pilot.hpp"
+        #include "..\wear\pilot.hpp"
     };
     class CLASS(Marksman): CLASS(RiflemanCarabine) {
         @Role(Marksman);
-        #include "../weapons/marksman.hpp"
-        #include "../weapons/pistol.hpp"
+        #include "..\weapons\marksman.hpp"
+        #include "..\weapons\pistol.hpp"
     };
     class CLASS(Sniper): CLASS(Marksman) {
         @Role(Sniper);
-        #include "../weapons/sniper.hpp"
+        #include "..\weapons\sniper.hpp"
     };
 };

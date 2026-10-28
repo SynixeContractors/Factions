@@ -1,30 +1,30 @@
 class CfgVehicles {
     #define TEMPLATE_FACTION QPCLASS(t3_opfor)
     #define TEMPLATE_SIDE 0
-    #include "../../../templates/statics/M2.hpp"
+    #include "..\..\..\templates\statics\M2.hpp"
     #define TEMPLATE_CAMO Hex
-    #include "../../../templates/statics/Mk6.hpp"
-    #include "../../../templates/apc/BTR.hpp"
-    #include "../../../templates/apc/BTR_IFV.hpp"
-    #include "../../../templates/apc/BTR_SPG.hpp"
-    #include "../../../templates/apc/Otokar.hpp"
-    #include "../../../templates/tanks/T100.hpp"
-    #include "../../../templates/planes/Yak130.hpp"
-    #include "../../../templates/planes/L159.hpp"
-    #include "../../../templates/planes/C130.hpp"
+    #include "..\..\..\templates\statics\Mk6.hpp"
+    #include "..\..\..\templates\apc\BTR.hpp"
+    #include "..\..\..\templates\apc\BTR_IFV.hpp"
+    #include "..\..\..\templates\apc\BTR_SPG.hpp"
+    #include "..\..\..\templates\apc\Otokar.hpp"
+    #include "..\..\..\templates\tanks\T100.hpp"
+    #include "..\..\..\templates\planes\Yak130.hpp"
+    #include "..\..\..\templates\planes\L159.hpp"
+    #include "..\..\..\templates\planes\C130.hpp"
     #undef TEMPLATE_CAMO
     #define TEMPLATE_CAMO Opfor
-    #include "../../../templates/cars/LUT_AA.hpp"
-    #include "../../../templates/cars/LUT_Ammo.hpp"
-    #include "../../../templates/cars/LUT_Cargo.hpp"
-    #include "../../../templates/cars/LUT_Fuel.hpp"
-    #include "../../../templates/cars/LUT_Medical.hpp"
-    #include "../../../templates/cars/LUT_MRL.hpp"
-    #include "../../../templates/cars/LUT_Repair.hpp"
-    #include "../../../templates/cars/LUT_Transport.hpp"
+    #include "..\..\..\templates\cars\LUT_AA.hpp"
+    #include "..\..\..\templates\cars\LUT_Ammo.hpp"
+    #include "..\..\..\templates\cars\LUT_Cargo.hpp"
+    #include "..\..\..\templates\cars\LUT_Fuel.hpp"
+    #include "..\..\..\templates\cars\LUT_Medical.hpp"
+    #include "..\..\..\templates\cars\LUT_MRL.hpp"
+    #include "..\..\..\templates\cars\LUT_Repair.hpp"
+    #include "..\..\..\templates\cars\LUT_Transport.hpp"
     #undef TEMPLATE_CAMO
     #define TEMPLATE_CAMO CSAT
-    #include "../../../templates/helicopters/Puma_Military.hpp"
+    #include "..\..\..\templates\helicopters\Puma_Military.hpp"
     
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {

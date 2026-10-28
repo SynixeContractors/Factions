@@ -3,7 +3,7 @@ class CfgVehicles {
     #define TEMPLATE_FACTION QPCLASS(t4_blufor)
     #define TEMPLATE_SIDE 1
     #define TEMPLATE_CAMO Grey
-    #include "../../../templates/helicopters/LittleBird.hpp"
+    #include "..\..\..\templates\helicopters\LittleBird.hpp"
     class PCLASS(ContractorOffice);
     class CLASS(HeliPilot): PCLASS(ContractorOffice) {
         displayName = "Contractor (Pilot, Helicopter)";

@@ -3,8 +3,8 @@ class CLASS2(SIDE,Polo): CLASS2(Base,NATION) {
     editorSubcategory = QCLASS2(NATION,Security_Polo);
     faction = FACTION;
 
-    #include "wear/polo.hpp"
-    #include "wear/headwear.hpp"
+    #include "wear\polo.hpp"
+    #include "wear\headwear.hpp"
     @Vests({
         "variants": {
             "V_Rangemaster_belt_blk": 1,
@@ -45,36 +45,36 @@ class CLASS2(SIDE,Polo): CLASS2(Base,NATION) {
 };
 class CLASS2(SIDE,Polo_Rifleman_Pistol): CLASS2(SIDE,Polo) {
     @Role(Pistol);
-    #include "weapons/pistol.hpp"
+    #include "weapons\pistol.hpp"
 };
 class CLASS2(SIDE,Polo_Rifleman_SMG): CLASS2(SIDE,Polo) {
     @Role(SMG);
-    #include "weapons/smg.hpp"
+    #include "weapons\smg.hpp"
 };
 class CLASS2(SIDE,Polo_Rifleman_556): CLASS2(SIDE,Polo) {
     scope = 2;
     scopeCurator = 2;
     displayName = "Rifleman (5.56mm)";
-    #include "weapons/556.hpp"
+    #include "weapons\556.hpp"
 };
 class CLASS2(SIDE,Polo_Rifleman_545): CLASS2(SIDE,Polo_Rifleman_556) {
     displayName = "Rifleman (5.45mm)";
-    #include "weapons/545.hpp"
+    #include "weapons\545.hpp"
 };
 class CLASS2(SIDE,Polo_Rifleman_762): CLASS2(SIDE,Polo_Rifleman_556) {
     displayName = "Rifleman (7.62x39mm)";
-    #include "weapons/762.hpp"
+    #include "weapons\762.hpp"
 };
 class CLASS2(SIDE,Polo_Rifleman_65): CLASS2(SIDE,Polo_Rifleman_556) {
     displayName = "Rifleman (6.5mm)";
-    #include "weapons/65.hpp"
+    #include "weapons\65.hpp"
 };
 class CLASS2(SIDE,Polo_Rifleman_58): CLASS2(SIDE,Polo_Rifleman_556) {
     displayName = "Rifleman (5.8mm)";
-    #include "weapons/58.hpp"
+    #include "weapons\58.hpp"
 };
 class CLASS2(SIDE,Polo_Marksman): CLASS2(SIDE,Polo) {
     @Role(Marksman);
-    #include "weapons/pistol.hpp"
-    #include "weapons/marksman.hpp"
+    #include "weapons\pistol.hpp"
+    #include "weapons\marksman.hpp"
 };

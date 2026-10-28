@@ -64,17 +64,17 @@ class CLASS2(SIDE,Boreal): CLASS2(Base,NATION) {
 class CLASS2(SIDE,Boreal_Looter): CLASS2(SIDE,Boreal) {
     @Role(Rifleman);
 
-    #include "weapons/primary.hpp"
+    #include "weapons\primary.hpp"
 };
 
 class CLASS2(SIDE,Boreal_LooterPistol): CLASS2(SIDE,Boreal) {
     @Role(Pistol);
 
-    #include "weapons/secondary.hpp"
+    #include "weapons\secondary.hpp"
 };
 
 class CLASS2(SIDE,Boreal_Hunter): CLASS2(SIDE,Boreal) {
     @Role(Marksman);
 
-    #include "weapons/hunter.hpp"
+    #include "weapons\hunter.hpp"
 };

@@ -6,7 +6,7 @@ class GCLASS(Radar01): B_Radar_System_01_F {
     EMPTY_INVENTORY;
     crew = "C_UAV_AI_F";
     #include "eventhandler_camo.hpp"
-    #include "textures/Radar01.hpp"
+    #include "textures\Radar01.hpp"
 };
 ADD_CAMO_EVENT_HANDLER(B_SAM_System_03_F,SAM_System_03_base_F);
 class GCLASS(SAM01): B_SAM_System_03_F {
@@ -16,5 +16,5 @@ class GCLASS(SAM01): B_SAM_System_03_F {
     EMPTY_INVENTORY;
     crew = "C_UAV_AI_F";
     #include "eventhandler_camo.hpp"
-    #include "textures/SAM01.hpp"
+    #include "textures\SAM01.hpp"
 };

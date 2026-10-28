@@ -42,25 +42,25 @@ class CfgVehicles {
     };
     class CLASS(Rifleman): CLASS(Base) {
         @Role(Rifleman);
-        #include "../weapons/rifle_old.hpp"
+        #include "..\weapons\rifle_old.hpp"
     };
     class CLASS(RiflemanCarabine): CLASS(Base) {
         @Role(Hidden);
-        #include "../weapons/rifle_old.hpp"
+        #include "..\weapons\rifle_old.hpp"
     };
     class CLASS(TeamLeader): CLASS(RiflemanCarabine) {
         @Role(TeamLeader);
     };
     class CLASS(RiflemanPistol): CLASS(Base) {
         @Role(Pistol);
-        #include "../weapons/pistol.hpp"
+        #include "..\weapons\pistol.hpp"
     };
     class CLASS(RiflemanSMG): CLASS(Base) {
         @Role(SMG);
-        #include "../weapons/pdw.hpp"
+        #include "..\weapons\pdw.hpp"
     };
     class CLASS(Breacher): CLASS(RiflemanPistol) {
         @Role(Breacher);
-        #include "../../police/weapons/shotgun.hpp"
+        #include "..\..\police\weapons\shotgun.hpp"
     };
 };

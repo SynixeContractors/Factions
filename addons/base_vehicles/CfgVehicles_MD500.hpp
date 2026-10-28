@@ -9,7 +9,7 @@ class GCLASS(MD500): C_Heli_Light_01_civil_F {
     ace_cargo_has_space = 1;
     ace_cargo_space = 1; //default: 0
     #include "eventhandler_camo.hpp"
-    #include "racks/helirack.hpp"
+    #include "racks\helirack.hpp"
     class TextureSources {
         class Blue {
             displayName = "White Two-Tone (Blue)";
@@ -110,7 +110,7 @@ class GCLASS(MD500E): B_Heli_Light_01_F {
     ace_cargo_has_space = 1;
     ace_cargo_space = 1; //default: 0
     #include "eventhandler_camo.hpp"
-    #include "racks/helirack.hpp"
+    #include "racks\helirack.hpp"
     class TextureSources {
         class Green {
             displayName = "Green";
@@ -162,7 +162,7 @@ class GCLASS(MD500E_Armed): B_Heli_Light_01_dynamicLoadout_F {
     ace_cargo_has_space = 1;
     ace_cargo_space = 1; //default: 0
     #include "eventhandler_camo.hpp"
-    #include "racks/helirack.hpp"
+    #include "racks\helirack.hpp"
     class TextureSources {
         class Green {
             displayName = "Green";

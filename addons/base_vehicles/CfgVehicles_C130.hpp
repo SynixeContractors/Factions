@@ -8,7 +8,7 @@ class GCLASS(C130): Plane_Transport_01_infantry_base_F {
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 5800;
     #include "eventhandler_camo.hpp"
-    #include "textures/C130.hpp"
+    #include "textures\C130.hpp"
 };
 ADD_CAMO_EVENT_HANDLER_NOBASE(Plane_Transport_01_vehicle_base_F,Plane_Transport_01_base_F);
 class GCLASS(C130_Cargo): Plane_Transport_01_vehicle_base_F {
@@ -20,5 +20,5 @@ class GCLASS(C130_Cargo): Plane_Transport_01_vehicle_base_F {
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 5800;
     #include "eventhandler_camo.hpp"
-    #include "textures/C130.hpp"
+    #include "textures\C130.hpp"
 };

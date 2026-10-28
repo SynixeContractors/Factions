@@ -34,7 +34,7 @@ class GCLASS(Jay_Flatbed): C_Van_01_transport_F {
     #undef JAY_TEXTURE_FLATBED
     #undef JAY_TEXTURE_BOX
     class TextureSources {
-        #include "textures/Jay_Flatbed.hpp"
+        #include "textures\Jay_Flatbed.hpp"
     };
 };
 
@@ -52,8 +52,8 @@ class GCLASS(Jay_Box): C_Van_01_box_F {
     #undef JAY_TEXTURE_FLATBED
     #undef JAY_TEXTURE_BOX
     class TextureSources {
-        #include "textures/Jay_Flatbed.hpp"
-        #include "textures/Jay_Box.hpp"
+        #include "textures\Jay_Flatbed.hpp"
+        #include "textures\Jay_Box.hpp"
     };
 };
 

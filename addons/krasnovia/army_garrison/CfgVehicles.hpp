@@ -4,46 +4,46 @@ class CfgVehicles {
         displayName = "Army Garrison";
         editorSubcategory = QGCLASS(army_garrison);
 
-        #include "../wear/uniform.hpp"
-        #include "../wear/vest_garrison.hpp"
-        #include "../wear/helmet.hpp"
-        #include "../wear/facewear_army.hpp"
+        #include "..\wear\uniform.hpp"
+        #include "..\wear\vest_garrison.hpp"
+        #include "..\wear\helmet.hpp"
+        #include "..\wear\facewear_army.hpp"
         @Assigned(Military);
     };
     class CLASS(Rifleman): CLASS(Base) {
         @Role(Rifleman);
-        #include "../weapons/rifle.hpp"
-        #include "../weapons/launcher.hpp"
-        #include "../weapons/attachments_reserve.hpp"
+        #include "..\weapons\rifle.hpp"
+        #include "..\weapons\launcher.hpp"
+        #include "..\weapons\attachments_reserve.hpp"
     };
     class CLASS(RiflemanCarabine): CLASS(Base) {
         @Role(Hidden);
-        #include "../weapons/carabine.hpp"
-        #include "../weapons/attachments_reserve.hpp"
+        #include "..\weapons\carabine.hpp"
+        #include "..\weapons\attachments_reserve.hpp"
     };
     class CLASS(RiflemanBackpack): CLASS(RiflemanCarabine) {
         @Role(Hidden);
-        #include "../wear/backpack.hpp"
+        #include "..\wear\backpack.hpp"
     };
     class CLASS(TeamLeader): CLASS(RiflemanCarabine) {
         @Role(TeamLeader);
     };
     class CLASS(Autorifleman): CLASS(RiflemanBackpack) {
         @Role(Autorifleman);
-        #include "../weapons/lmg.hpp"
+        #include "..\weapons\lmg.hpp"
     };
     class CLASS(Medic): CLASS(RiflemanBackpack) {
         @Role(Medic);
-        #include "../wear/backpack_medic.hpp"
+        #include "..\wear\backpack_medic.hpp"
     };
     class CLASS(Worker): CLASS(Base) {
         @Role(Worker);
-        #include "../weapons/pistol.hpp"
-        #include "../../civilians/wear/hivis.hpp"
+        #include "..\weapons\pistol.hpp"
+        #include "..\..\civilians\wear\hivis.hpp"
     };
     class CLASS(Maintainer): CLASS(Base) {
         @Role(Maintainer);
-        #include "../weapons/pdw.hpp"
-        #include "../../civilians/wear/hivis.hpp"
+        #include "..\weapons\pdw.hpp"
+        #include "..\..\civilians\wear\hivis.hpp"
     };
 };

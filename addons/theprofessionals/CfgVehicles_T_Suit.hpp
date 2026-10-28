@@ -3,9 +3,9 @@ class CLASS2(SIDE,Suit): CLASS2(Base,NATION) {
     editorSubcategory = QCLASS2(NATION,Professionals_Suit);
     faction = FACTION;
 
-    #include "wear/suit.hpp"
-    #include "wear/headwearsuit.hpp"
-    #include "weapons/pistol.hpp"
+    #include "wear\suit.hpp"
+    #include "wear\headwearsuit.hpp"
+    #include "weapons\pistol.hpp"
 
     @Vests({
         "variants": {

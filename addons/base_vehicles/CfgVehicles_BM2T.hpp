@@ -8,7 +8,7 @@ class GCLASS(BM2_IFV1): O_APC_Tracked_02_cannon_F {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 1200;
-    #include "textures/BM2_IFV1.hpp"
+    #include "textures\BM2_IFV1.hpp"
 };
 
 
@@ -21,7 +21,7 @@ class GCLASS(BM2_IFV2):  O_APC_Tracked_02_30mm_lxWS {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 1200;
-    #include "textures/BM2_IFV2.hpp"
+    #include "textures\BM2_IFV2.hpp"
 };
 
 class O_R_APC_Tracked_02_medical_F;
@@ -70,5 +70,5 @@ class GCLASS(BM2_AA): O_APC_Tracked_02_AA_F {
     crew = "Civilian";
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 1200;
-    #include "textures/BM2_AA.hpp"
+    #include "textures\BM2_AA.hpp"
 };

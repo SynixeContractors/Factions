@@ -5,8 +5,8 @@ class CfgVehicles {
         QUOTE(Olive),1,\
         QUOTE(Brown),1,\
     }
-    #include "../../../templates/cars/Jeep.hpp"
-    #include "../../../templates/cars/Jay.hpp"
+    #include "..\..\..\templates\cars\Jeep.hpp"
+    #include "..\..\..\templates\cars\Jay.hpp"
     #undef TEMPLATE_CAMO_LIST
     #define TEMPLATE_CAMO_LIST {\
         QUOTE(Furious),1,\
@@ -15,7 +15,7 @@ class CfgVehicles {
         QUOTE(Jeans),1,\
         QUOTE(Vrana),1,\
     }
-    #include "../../../templates/helicopters/MD500_Civilian.hpp"
+    #include "..\..\..\templates\helicopters\MD500_Civilian.hpp"
     #undef TEMPLATE_CAMO_LIST
 
     class PCLASS(Base);

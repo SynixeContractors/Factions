@@ -2,7 +2,6 @@
 // #include "CfgVehicles_Tank.hpp"
 // #include "CfgVehicles_Cars.hpp"
 
-
 class PCLASS2(SIDE,Base);
 class CLASS2(SIDE,Base): PCLASS2(SIDE,Base) {
     #define TEMPLATE_FACTION QPCLASS(SIDE_FACTION)

@@ -1,44 +1,44 @@
 class CfgVehicles {
     #define TEMPLATE_FACTION QPCLASS(t2_opfor)
     #define TEMPLATE_SIDE 0
-    #include "../../../templates/statics/M2.hpp"
-    #include "../../../templates/statics/Ship.hpp"
+    #include "..\..\..\templates\statics\M2.hpp"
+    #include "..\..\..\templates\statics\Ship.hpp"
     #define TEMPLATE_CAMO EAF_01
-    #include "../../../templates/apc/Badger.hpp"
-    #include "../../../templates/apc/Warrior.hpp"
+    #include "..\..\..\templates\apc\Badger.hpp"
+    #include "..\..\..\templates\apc\Warrior.hpp"
     #undef TEMPLATE_CAMO
     #define TEMPLATE_CAMO EAF_01_woodland
-    #include "../../../templates/tanks/Leopard.hpp"
+    #include "..\..\..\templates\tanks\Leopard.hpp"
     #undef TEMPLATE_CAMO
     #define TEMPLATE_CAMO EAF
-    #include "../../../templates/statics/SAM01.hpp"
+    #include "..\..\..\templates\statics\SAM01.hpp"
 
-    #include "../../../templates/cars/LUT_AA.hpp"
-    #include "../../../templates/cars/LUT_Ammo.hpp"
-    #include "../../../templates/cars/LUT_Cargo.hpp"
-    #include "../../../templates/cars/LUT_Fuel.hpp"
-    #include "../../../templates/cars/LUT_MRL.hpp"
-    #include "../../../templates/cars/LUT_Medical.hpp"
-    #include "../../../templates/cars/LUT_Repair.hpp"
-    #include "../../../templates/cars/LUT_Transport.hpp"
+    #include "..\..\..\templates\cars\LUT_AA.hpp"
+    #include "..\..\..\templates\cars\LUT_Ammo.hpp"
+    #include "..\..\..\templates\cars\LUT_Cargo.hpp"
+    #include "..\..\..\templates\cars\LUT_Fuel.hpp"
+    #include "..\..\..\templates\cars\LUT_MRL.hpp"
+    #include "..\..\..\templates\cars\LUT_Medical.hpp"
+    #include "..\..\..\templates\cars\LUT_Repair.hpp"
+    #include "..\..\..\templates\cars\LUT_Transport.hpp"
 
-    #include "../../../templates/cars/Offroad_Civilian.hpp"
-    #include "../../../templates/cars/Offroad_Armed.hpp"
+    #include "..\..\..\templates\cars\Offroad_Civilian.hpp"
+    #include "..\..\..\templates\cars\Offroad_Armed.hpp"
 
-    #include "../../../templates/cars/Ram_Civilian.hpp"
-    #include "../../../templates/cars/Ram_Armed.hpp"
-    #include "../../../templates/cars/Ram_Advanced.hpp"
+    #include "..\..\..\templates\cars\Ram_Civilian.hpp"
+    #include "..\..\..\templates\cars\Ram_Armed.hpp"
+    #include "..\..\..\templates\cars\Ram_Advanced.hpp"
 
-    #include "../../../templates/helicopters/Wildcat.hpp"
-    #include "../../../templates/helicopters/Mi35.hpp"
-    #include "../../../templates/helicopters/Puma_Military.hpp"
+    #include "..\..\..\templates\helicopters\Wildcat.hpp"
+    #include "..\..\..\templates\helicopters\Mi35.hpp"
+    #include "..\..\..\templates\helicopters\Puma_Military.hpp"
 
-    #include "../../../templates/drones/MQ9.hpp"
-    #include "../../../templates/drones/UGV.hpp"
+    #include "..\..\..\templates\drones\MQ9.hpp"
+    #include "..\..\..\templates\drones\UGV.hpp"
 
     #undef TEMPLATE_CAMO
     #define TEMPLATE_CAMO LDF
-    #include "../../../templates/planes/JAS39.hpp"
+    #include "..\..\..\templates\planes\JAS39.hpp"
 
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {
@@ -121,7 +121,7 @@ class CfgVehicles {
             },
         });
 
-        #include "../weapons/Pistol.hpp"
+        #include "..\weapons\Pistol.hpp"
     };
     class CLASS(Rifleman): CLASS(Base) {
         @Role(Rifleman);

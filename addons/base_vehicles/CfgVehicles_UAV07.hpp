@@ -7,10 +7,10 @@ class GCLASS(MQ9): Atlas_B_L_UAV_07_F {
     crew = "C_UAV_AI_F";
     ace_refuel_fuelCapacity = 2200;
     #include "eventhandler_camo.hpp"
-    #include "textures/UAV07.hpp"
+    #include "textures\UAV07.hpp"
     // class Components {
     //   class TransportPylonsComponent {
-    //     #include "pylons/UAV07.hpp"
+    //     #include "pylons\UAV07.hpp"
     //   };
     // };
 };

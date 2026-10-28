@@ -16,19 +16,19 @@ class CLASS2(SIDE,SWAT): CLASS2(SIDE,Policeman) {
 };
 class CLASS2(SIDE,SWATBreacher): CLASS2(SIDE,SWAT) {
     @Role(Breacher);
-    #include "weapons/shotgun.hpp"
+    #include "weapons\shotgun.hpp"
 };
 class CLASS2(SIDE,SWATSMG): CLASS2(SIDE,SWAT) {
     @Role(SMG);
-    #include "weapons/smg.hpp"
+    #include "weapons\smg.hpp"
 };
 class CLASS2(SIDE,SWATRifle): CLASS2(SIDE,SWAT) {
     @Role(Rifleman);
-    #include "weapons/rifle.hpp"
+    #include "weapons\rifle.hpp"
 };
 class CLASS2(SIDE,SWATDemo): CLASS2(SIDE,SWAT) {
     @Role(Demolitions);
-    #include "weapons/smg.hpp"
+    #include "weapons\smg.hpp"
     @Headgear({
         "H_HelmetHeavy_Black_RF": 1,
     });

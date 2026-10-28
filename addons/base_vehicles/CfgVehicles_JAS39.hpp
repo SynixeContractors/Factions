@@ -8,10 +8,10 @@ class GCLASS(JAS39): I_Plane_Fighter_04_F {
     typicalCargo[] = {"Soldier"};
     ace_refuel_fuelCapacity = 3000;
     #include "eventhandler_camo.hpp"
-    #include "textures/JAS39.hpp"
+    #include "textures\JAS39.hpp"
     // class Components {
     //   class TransportPylonsComponent {
-    //     #include "pylons/JAS39.hpp"
+    //     #include "pylons\JAS39.hpp"
     //   };
     // };
 };

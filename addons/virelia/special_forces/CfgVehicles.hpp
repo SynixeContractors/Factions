@@ -2,30 +2,30 @@ class CfgVehicles {
     #define TEMPLATE_FACTION QPCLASS(t1_blufor)
     #define TEMPLATE_SIDE 1
     #define TEMPLATE_CAMO Default
-    #include "../../../templates/drones/MQ47.hpp"
+    #include "..\..\..\templates\drones\MQ47.hpp"
     #undef TEMPLATE_CAMO
     #define TEMPLATE_CAMO AAF
     //FIXME: placeholder camo
-    #include "../../../templates/drones/MQ9.hpp"
+    #include "..\..\..\templates\drones\MQ9.hpp"
     #undef TEMPLATE_CAMO
     #define TEMPLATE_CAMO Dazzle
-    #include "../../../templates/cars/Polaris.hpp"
-    #include "../../../templates/cars/Ram_Advanced.hpp"
-    #include "../../../templates/cars/Ram_Armed.hpp"
-    #include "../../../templates/cars/Ram_Civilian.hpp"
+    #include "..\..\..\templates\cars\Polaris.hpp"
+    #include "..\..\..\templates\cars\Ram_Advanced.hpp"
+    #include "..\..\..\templates\cars\Ram_Armed.hpp"
+    #include "..\..\..\templates\cars\Ram_Civilian.hpp"
     #undef TEMPLATE_CAMO
     #define TEMPLATE_CAMO Olive
-    #include "../../../templates/statics/RGS60.hpp"
+    #include "..\..\..\templates\statics\RGS60.hpp"
     #undef TEMPLATE_CAMO
     #define TEMPLATE_CAMO DazzleDark
-    #include "../../../templates/helicopters/Ghosthawk.hpp"
-    #include "../../../templates/helicopters/Ghosthawk_Armed.hpp"
+    #include "..\..\..\templates\helicopters\Ghosthawk.hpp"
+    #include "..\..\..\templates\helicopters\Ghosthawk_Armed.hpp"
     #undef TEMPLATE_CAMO
     #define TEMPLATE_CAMO Black
-    #include "../../../templates/helicopters/MD500_Military.hpp"
+    #include "..\..\..\templates\helicopters\MD500_Military.hpp"
     #undef TEMPLATE_CAMO
     #define TEMPLATE_CAMO Blue
-    #include "../../../templates/planes/Blackfish.hpp"
+    #include "..\..\..\templates\planes\Blackfish.hpp"
 
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {
