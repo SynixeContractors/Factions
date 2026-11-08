@@ -69,7 +69,7 @@ class CfgWeapons {
 	class V_CarrierRigKBT_01_light_base_F;
 	class CarrierRigKBT_01_SYNIXE_lite: V_CarrierRigKBT_01_light_base_F {
 		scope=2;
-		displayName="Modular Carrier Lite (Synixe)";
+		displayName="Modular Carrier Lite [Synixe] (Black)";
 		picture="\A3_Aegis\Characters_F_Aegis\Vests\data\UI\icon_V_CarrierRigKBT_01_Black_F_CA.paa";
 		model="\A3\Characters_F_Enoch\Vests\V_CarrierRigKBT_01_light_F.p3d";
 		hiddenSelections[]=
