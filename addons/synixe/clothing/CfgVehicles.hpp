@@ -80,6 +80,20 @@ class CfgVehicles {
             "\A3\Characters_F_Exp\Civil\Data\U_C_Man_casual_4_F_2_co.paa",
         };
     };
+    class PCLASS(summer_shorts_blue_nologo): C_Man_casual_4_F {
+        uniformClass = QPCLASS(summer_shorts_blue_nologo);
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(clothing\data\synixe_shorts_nologo.paa),
+            "\A3\Characters_F_Exp\Civil\Data\U_C_Man_casual_5_F_2_co.paa",
+        };
+    };
+    class PCLASS(summer_shorts_green_nologo): C_Man_casual_4_F {
+        uniformClass = QPCLASS(summer_shorts_green_nologo);
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(clothing\data\synixe_shorts_nologo.paa),
+            "\A3\Characters_F_Exp\Civil\Data\U_C_Man_casual_6_F_2_co.paa",
+        };
+    };
 
     #include "CfgVehicles_GroundItems.hpp"
 };
