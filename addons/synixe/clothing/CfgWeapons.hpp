@@ -71,4 +71,10 @@ class CfgWeapons {
             uniformClass = QPCLASS(summer_shorts);
         };
     };
+    class PCLASS(summer_shorts_nologo): U_C_Man_casual_4_F {
+        displayName = "Summer Clothes (Black)";
+        class ItemInfo: ItemInfo {
+            uniformClass = QPCLASS(summer_shorts_nologo);
+        };
+    };
 };
