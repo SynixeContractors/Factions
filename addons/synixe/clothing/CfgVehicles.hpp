@@ -64,6 +64,15 @@ class CfgVehicles {
             "lxws\characters_f_lxws\uniform\djellaba\data\lxWS_djellaba_pants_black_co.paa"
         };
     };
+    //shorts
+    class C_Man_casual_4_F;
+    class PCLASS(summer_shorts): C_Man_casual_4_F {
+        uniformClass = QPCLASS(summer_shorts);
+        hiddenSelectionsTextures[] = {
+            QPATHTOF(clothing\data\synixe_shorts.paa),
+            "\A3\Characters_F_Exp\Civil\Data\U_C_Man_casual_4_F_2_co.paa",
+        };
+    };
 
     #include "CfgVehicles_GroundItems.hpp"
 };

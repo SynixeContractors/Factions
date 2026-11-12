@@ -61,4 +61,14 @@ class CfgWeapons {
             uniformClass = QPCLASS(WSLV_Black_Synixe_Uniform);
         };
     };
+    //shorts
+    class U_C_Man_casual_4_F: Uniform_Base {
+        class ItemInfo;
+    };
+    class PCLASS(summer_shorts): U_C_Man_casual_4_F {
+        displayName = "Summer Clothes [Synixe] (Black)";
+        class ItemInfo: ItemInfo {
+            uniformClass = QPCLASS(summer_shorts);
+        };
+    };
 };
