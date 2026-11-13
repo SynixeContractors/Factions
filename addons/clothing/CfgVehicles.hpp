@@ -1,3 +1,26 @@
+#define SUMMER_SHORTS_VEHICLE(var1,var2)\
+class CLASS(summer_shorts_##var1##_blue): C_Man_casual_4_F {\
+    uniformClass = QCLASS(summer_shorts_##var1##_blue);\
+    hiddenSelectionsTextures[] = {\
+        QPATHTOF(data\##var2##),\
+        "\A3\Characters_F_Exp\Civil\Data\U_C_Man_casual_5_F_2_co.paa"\
+    };\
+};\
+class CLASS(summer_shorts_##var1##_green): C_Man_casual_4_F {\
+    uniformClass = QCLASS(summer_shorts_##var1##_green);\
+    hiddenSelectionsTextures[] = {\
+        QPATHTOF(data\##var2##),\
+        "\A3\Characters_F_Exp\Civil\Data\U_C_Man_casual_6_F_2_co.paa"\
+    };\
+};\
+class CLASS(summer_shorts_##var1##_black): C_Man_casual_4_F {\
+    uniformClass = QCLASS(summer_shorts_##var1##_black);\
+    hiddenSelectionsTextures[] = {\
+        QPATHTOF(data\##var2##),\
+        "\A3\Characters_F_Exp\Civil\Data\U_C_Man_casual_4_F_2_co.paa"\
+    };\
+}\
+
 class CfgVehicles {
     //Summer Clothes
     class C_Man_casual_4_F;
@@ -43,4 +66,9 @@ class CfgVehicles {
             "\A3\Characters_F_Exp\Civil\Data\U_C_Man_casual_6_F_2_co.paa"
         };
     };
+    //new ones
+    SUMMER_SHORTS_VEHICLE(green,summer_shirt_green);
+    SUMMER_SHORTS_VEHICLE(grey,summer_shirt_grey);
+    SUMMER_SHORTS_VEHICLE(orange,summer_shirt_orange);
+    SUMMER_SHORTS_VEHICLE(pink,summer_shirt_pink);
 };
