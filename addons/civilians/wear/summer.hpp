@@ -7,8 +7,10 @@
         "synixe_factions_synixe_summer_shorts_blue_nologo": 0.5,
         "synixe_factions_synixe_summer_shorts_green_nologo": 0.5,
         "synixe_factions_clothing_summer_shorts_red_black": 1,
-        "synixe_factions_clothing_summer_shorts_red_green": 1,
+        "synixe_factions_clothing_summer_shorts_red_blue": 1,
         "synixe_factions_clothing_summer_shorts_blue_blue": 1,
         "synixe_factions_clothing_summer_shorts_blue_green": 1,
+        "synixe_factions_clothing_summer_shorts_yellow_black": 1,
+        "synixe_factions_clothing_summer_shorts_yellow_greem": 1,
     },
 });

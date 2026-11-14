@@ -22,8 +22,8 @@ class CfgVehicles {
             "\A3\Characters_F_Exp\Civil\Data\U_C_Man_casual_4_F_2_co.paa"
         };
     };
-    class CLASS(summer_shorts_red_green): C_Man_casual_4_F {
-        uniformClass = QCLASS(summer_shorts_red_green);
+    class CLASS(summer_shorts_red_blue): C_Man_casual_4_F {
+        uniformClass = QCLASS(summer_shorts_red_blue);
         hiddenSelectionsTextures[] = {
             "\A3\Characters_F_Exp\Civil\Data\U_C_Man_casual_6_F_1_co.paa",
             "\A3\Characters_F_Exp\Civil\Data\U_C_Man_casual_5_F_2_co.paa"
@@ -36,8 +36,8 @@ class CfgVehicles {
             "\A3\Characters_F_Exp\Civil\Data\U_C_Man_casual_4_F_2_co.paa"
         };
     };
-    class CLASS(summer_shorts_yellow_blue): C_Man_casual_4_F {
-        uniformClass = QCLASS(summer_shorts_yellow_blue);
+    class CLASS(summer_shorts_yellow_green): C_Man_casual_4_F {
+        uniformClass = QCLASS(summer_shorts_yellow_green);
         hiddenSelectionsTextures[] = {
             "\A3\Characters_F_Exp\Civil\Data\U_C_Man_casual_5_F_1_co.paa",
             "\A3\Characters_F_Exp\Civil\Data\U_C_Man_casual_6_F_2_co.paa"

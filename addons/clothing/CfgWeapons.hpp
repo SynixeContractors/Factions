@@ -24,10 +24,10 @@ class CfgWeapons {
             uniformClass = QCLASS(summer_shorts_red_black);
         };
     };
-    class CLASS(summer_shorts_red_green): CLASS(summer_shorts_red_black) {
-        displayName = "Summer Clothes (Red, Shorts Green)";
+    class CLASS(summer_shorts_red_blue): CLASS(summer_shorts_red_black) {
+        displayName = "Summer Clothes (Red, Shorts Blue)";
         class ItemInfo: ItemInfo {
-            uniformClass = QCLASS(summer_shorts_red_green);
+            uniformClass = QCLASS(summer_shorts_red_blue);
         };
     };
     class CLASS(summer_shorts_yellow_black): U_C_Man_casual_4_F {
@@ -38,10 +38,10 @@ class CfgWeapons {
             uniformClass = QCLASS(summer_shorts_yellow_black);
         };
     };
-    class CLASS(summer_shorts_yellow_blue): CLASS(summer_shorts_yellow_black) {
-        displayName = "Summer Clothes (Yellow, Shorts Blue)";
+    class CLASS(summer_shorts_yellow_green): CLASS(summer_shorts_yellow_black) {
+        displayName = "Summer Clothes (Yellow, Shorts Green)";
         class ItemInfo: ItemInfo {
-            uniformClass = QCLASS(summer_shorts_yellow_blue);
+            uniformClass = QCLASS(summer_shorts_yellow_green);
         };
     };
 };
