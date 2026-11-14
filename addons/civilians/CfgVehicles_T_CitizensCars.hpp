@@ -109,3 +109,19 @@ class CLASS2(Van_Service,NATION): GCLASS(Van_Service) {
     crew = QUOTE(CLASS2(Citizen_Polo_Shorts,NATION));
     typicalCargo[] = {QUOTE(CLASS2(Citizen_Polo_Shorts,NATION))};
 };
+class CLASS2(Ram,NATION): GCLASS(Ram) {
+    SCOPE_DLC;
+    faction = QCLASS(NATION);
+    editorSubcategory = QGCLASS(fire_department);
+    crew = QUOTE(CLASS2(Citizen_Firefighter,NATION));
+    typicalCargo[] = {QUOTE(CLASS2(Citizen_Firefighter,NATION))};
+    textureList[] = {"FireDept",1};
+};
+class CLASS2(HEMTT_FireTruck,NATION): GCLASS(HEMTT_FireTruck) {
+    SCOPE_DLC;
+    faction = QCLASS(NATION);
+    editorSubcategory = QGCLASS(fire_department);
+    crew = QUOTE(CLASS2(Citizen_Firefighter_Gear,NATION));
+    typicalCargo[] = {QUOTE(CLASS2(Citizen_Firefighter_Gear,NATION))};
+    textureList[] = {"Red",1};
+};

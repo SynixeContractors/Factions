@@ -24,6 +24,8 @@ class CfgVehicles {
     class GCLASS(Van_Cargo);
     class GCLASS(Van_Service);
     class GCLASS(Van_Transport);
+    class GCLASS(Ram);
+    class GCLASS(HEMTT_FireTruck);
 
     // Boats
     class GCLASS(CabinSkiff);

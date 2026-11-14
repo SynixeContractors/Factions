@@ -265,3 +265,30 @@ class CLASS2(Citizen_Winter,NATION): CLASS2(Base,NATION) {
     #include "wear\winter.hpp"
     #include "wear\headwear_winter.hpp"
 };
+class CLASS2(Citizen_Firefighter,NATION): CLASS2(Base,NATION) {
+    SCOPE_DLC;
+    displayName = "Firefighter";
+    editorSubcategory = QGCLASS(fire_department);
+    @Uniforms({
+        "variants": {
+            "U_C_ConstructionCoverall_Black_F": 1,
+            "U_C_ConstructionCoverall_Red_F": 1,
+        },
+    });
+    @Headgear({
+        "H_Helmet_HardHat_Yellow_RF": 1,
+        "H_Helmet_HardHat_Red_RF": 1,
+    });
+};
+class CLASS2(Citizen_Firefighter_Gear,NATION): CLASS2(Citizen_Firefighter,NATION) {
+    SCOPE_DLC;
+    displayName = "Firefighter (In Gear)";
+    @Facewear({
+        "JCA_G_AirPurifyingRespirator_03_black_clear_F": 1,
+    });
+    @Backpacks({
+        "variants": {
+            "B_SCBA_01_F": 1,
+        },
+    });
+};
