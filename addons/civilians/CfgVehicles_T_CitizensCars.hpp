@@ -89,13 +89,6 @@ class CLASS2(Van_Transport,NATION): GCLASS(Van_Transport) {
     typicalCargo[] = {QUOTE(CLASS2(Citizen_Polo_Shorts,NATION))};
 };
 
-class CLASS2(Van_Ambulance,NATION): GCLASS(Van_Ambulance) {
-    SCOPE_DLC;
-    faction = QCLASS(NATION);
-    crew = QUOTE(CLASS2(Citizen_Paramedic,NATION));
-    typicalCargo[] = {QUOTE(CLASS2(Citizen_Paramedic,NATION))};
-};
-
 class CLASS2(Van_Cargo,NATION): GCLASS(Van_Cargo) {
     SCOPE_DLC;
     faction = QCLASS(NATION);

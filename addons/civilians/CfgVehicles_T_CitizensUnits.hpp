@@ -265,26 +265,3 @@ class CLASS2(Citizen_Winter,NATION): CLASS2(Base,NATION) {
     #include "wear\winter.hpp"
     #include "wear\headwear_winter.hpp"
 };
-class CLASS2(Citizen_Paramedic,NATION): CLASS2(Base,NATION) {
-    SCOPE_DLC;
-    displayName = "Paramedic";
-
-    @Uniforms({
-        "variants": {
-            "U_C_Paramedic_01_F": 1,
-        },
-    });
-    @Headgear({
-        "G_Respirator_white_F": 1,
-         "": 1,
-    });
-    @Backpacks({
-        "variants": {
-            "tacs_Backpack_Kitbag_Medic_White" : 1,
-        },
-        "packs": [
-            "t2_t3_medic",
-        ],
-    });
-
-};
