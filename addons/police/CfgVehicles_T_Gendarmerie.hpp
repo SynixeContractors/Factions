@@ -20,7 +20,7 @@ class CLASS2(SIDE,GendarmeSMG): CLASS2(SIDE,Gendarme) {
     @Role(SMG);
     #include "weapons\smg.hpp"
 };
-class CLASS2(SIDE,Crewman): CLASS2(SIDE,Gendarme) {
+class CLASS2(SIDE,GendarmeCrewman): CLASS2(SIDE,Gendarme) {
     @Role(Crewman);
     #include "weapons\smg.hpp"
     @Headgear({
@@ -139,7 +139,7 @@ class CLASS2(SIDE,Otokar): GCLASS(Otokar) {
     SCOPE_DLC;
     faction = FACTION_GEND;
     side = TEMPLATE_SIDE;
-    crew = QCLASS2(SIDE,Crewman);
+    crew = QCLASS2(SIDE,GendarmeCrewman);
     editorSubcategory = QCLASS2(NATION,Gendarmerie_vehicles);
     textureList[] = {QUOTE(TEMPLATE_CAMO),1};
 };
@@ -147,7 +147,7 @@ class CLASS2(SIDE,Otokar_HMG): GCLASS(Otokar_HMG) {
     SCOPE_DLC;
     faction = FACTION_GEND;
     side = TEMPLATE_SIDE;
-    crew = QCLASS2(SIDE,Crewman);
+    crew = QCLASS2(SIDE,GendarmeCrewman);
     editorSubcategory = QCLASS2(NATION,Gendarmerie_vehicles);
     textureList[] = {QUOTE(TEMPLATE_CAMO),1};
 };
@@ -155,7 +155,7 @@ class CLASS2(SIDE,Otokar_RCWS): GCLASS(Otokar_RCWS) {
     SCOPE_DLC;
     faction = FACTION_GEND;
     side = TEMPLATE_SIDE;
-    crew = QCLASS2(SIDE,Crewman);
+    crew = QCLASS2(SIDE,GendarmeCrewman);
     editorSubcategory = QCLASS2(NATION,Gendarmerie_vehicles);
     textureList[] = {QUOTE(TEMPLATE_CAMO),1};
 };

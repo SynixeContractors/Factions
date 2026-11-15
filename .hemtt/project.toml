@@ -38,6 +38,7 @@ workshop = [
     "synixe:@theseus_services",
     "synixe:@toh_characters",
     "synixe:@ws",
+    "synixe:@zen",
 ]
 
 [hemtt.launch.maps]
