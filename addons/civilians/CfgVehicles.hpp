@@ -59,6 +59,7 @@ class CfgVehicles {
         #include "CfgVehicles_T_CitizensHelicopters.hpp"
         #include "CfgVehicles_T_CitizensPlanes.hpp"
         #include "CfgVehicles_T_Firefighters.hpp"
+        #include "CfgVehicles_T_Medical.hpp"
         #undef NATION
     @EndFor
 };

@@ -3,7 +3,7 @@ class CfgEditorSubcategories {
         displayName = "Small Drones";
     };
     class CLASS(plane) {
-        displayName = "Fixed wing";
+        displayName = "Planes";
     };
     class CLASS(helicopter) {
         displayName = "Helicopter";
