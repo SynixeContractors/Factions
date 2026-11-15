@@ -127,14 +127,7 @@ class CLASS2(Citizen_Summer,NATION): CLASS2(Base,NATION) {
     SCOPE_DLC;
     displayName = "Citizen (Summer)";
 
-    @Uniforms({
-        "variants": {
-            "U_C_Man_casual_6_F": 1,
-            "U_C_Man_casual_4_F": 1,
-            "U_C_Man_casual_8_F": 1,
-            "U_C_Man_casual_5_F": 1,
-        },
-    });
+    #include "wear\summer.hpp"
 };
 
 class CLASS2(Citizen_Sport,NATION): CLASS2(Base,NATION) {

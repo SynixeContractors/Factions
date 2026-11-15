@@ -61,4 +61,32 @@ class CfgWeapons {
             uniformClass = QPCLASS(WSLV_Black_Synixe_Uniform);
         };
     };
+    //shorts
+    class U_C_Man_casual_4_F: Uniform_Base {
+        class ItemInfo;
+    };
+    class PCLASS(summer_shorts): U_C_Man_casual_4_F {
+        displayName = "Summer Clothes [Synixe] (Black)";
+        class ItemInfo: ItemInfo {
+            uniformClass = QPCLASS(summer_shorts);
+        };
+    };
+    class PCLASS(summer_shorts_nologo): U_C_Man_casual_4_F {
+        displayName = "Summer Clothes (Black)";
+        class ItemInfo: ItemInfo {
+            uniformClass = QPCLASS(summer_shorts_nologo);
+        };
+    };
+    class PCLASS(summer_shorts_blue_nologo): U_C_Man_casual_4_F {
+        displayName = "Summer Clothes (Black, Shorts Blue)";
+        class ItemInfo: ItemInfo {
+            uniformClass = QPCLASS(summer_shorts_blue_nologo);
+        };
+    };
+    class PCLASS(summer_shorts_green_nologo): U_C_Man_casual_4_F {
+        displayName = "Summer Clothes (Black, Shorts Green)";
+        class ItemInfo: ItemInfo {
+            uniformClass = QPCLASS(summer_shorts_green_nologo);
+        };
+    };
 };
