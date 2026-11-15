@@ -12,5 +12,33 @@
         "synixe_factions_clothing_summer_shorts_blue_green": 1,
         "synixe_factions_clothing_summer_shorts_yellow_black": 1,
         "synixe_factions_clothing_summer_shorts_yellow_greem": 1,
+
+        "synixe_factions_clothing_summer_shorts_green_blue": 1,
+        "synixe_factions_clothing_summer_shorts_green_green": 1,
+        "synixe_factions_clothing_summer_shorts_green_black": 1,
+
+        "synixe_factions_clothing_summer_shorts_grey_blue": 1,
+        "synixe_factions_clothing_summer_shorts_grey_green": 1,
+        "synixe_factions_clothing_summer_shorts_grey_black": 1,
+
+        "synixe_factions_clothing_summer_shorts_artist_blue": 0.25,
+        "synixe_factions_clothing_summer_shorts_artist_green": 0.25,
+        "synixe_factions_clothing_summer_shorts_artist_black": 0.25,
+
+        "synixe_factions_clothing_summer_shorts_peace_blue": 0.25,
+        "synixe_factions_clothing_summer_shorts_peace_green": 0.25,
+        "synixe_factions_clothing_summer_shorts_peace_black": 0.25,
+
+        "synixe_factions_clothing_summer_shorts_robogeddon_blue": 0.25,
+        "synixe_factions_clothing_summer_shorts_robogeddon_green": 0.25,
+        "synixe_factions_clothing_summer_shorts_robogeddon_black": 0.25,
+
+        "synixe_factions_clothing_summer_shorts_greygoo_blue": 0.25,
+        "synixe_factions_clothing_summer_shorts_greygoo_green": 0.25,
+        "synixe_factions_clothing_summer_shorts_greygoo_black": 0.25,
+
+        "synixe_factions_clothing_summer_shorts_pink_blue": 0.1,
+        "synixe_factions_clothing_summer_shorts_pink_green": 0.1,
+        "synixe_factions_clothing_summer_shorts_pink_black": 0.1,
     },
 });
