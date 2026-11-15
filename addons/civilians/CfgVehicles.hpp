@@ -24,6 +24,8 @@ class CfgVehicles {
     class GCLASS(Van_Cargo);
     class GCLASS(Van_Service);
     class GCLASS(Van_Transport);
+    class GCLASS(Ram);
+    class GCLASS(HEMTT_FireTruck);
 
     // Boats
     class GCLASS(CabinSkiff);
@@ -56,6 +58,7 @@ class CfgVehicles {
         #include "CfgVehicles_T_CitizensCars.hpp"
         #include "CfgVehicles_T_CitizensHelicopters.hpp"
         #include "CfgVehicles_T_CitizensPlanes.hpp"
+        #include "CfgVehicles_T_Firefighters.hpp"
         #include "CfgVehicles_T_Medical.hpp"
         #undef NATION
     @EndFor

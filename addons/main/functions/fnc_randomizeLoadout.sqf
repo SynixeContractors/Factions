@@ -73,7 +73,7 @@ if (_cache isEqualTo []) exitWith {true};
     } forEach [1,2,3,6];
 } forEach [0,1,2,8];
 
-// Headgear
+// Headgear & Facewear
 {
     private _cached = _cache select _x;
     if (_cached isEqualTo []) then {
@@ -81,7 +81,7 @@ if (_cache isEqualTo []) exitWith {true};
         continue;
     };
     _loadout set [_x, selectRandomWeighted _cached];
-} forEach [6];
+} forEach [6,7];
 
 // Assigned Items
 private _assignedCache = _cache select 9;

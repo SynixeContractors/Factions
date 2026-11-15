@@ -70,14 +70,4 @@ if (_cache isEqualTo []) exitWith {true};
     } forEach _packs;
 } forEach [3,4,5];
 
-// Facewear
-{
-    private _cached = _cache select _x;
-    if (_cached isEqualTo []) then {
-        _loadout set [_x, []];
-        continue;
-    };
-    _loadout set [_x, selectRandomWeighted _cached];
-} forEach [7];
-
 [_unit, [_loadout, _extendedInfo], true] call CBA_fnc_setLoadout;
