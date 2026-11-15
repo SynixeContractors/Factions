@@ -16,3 +16,10 @@ _ctrl lbAdd "All";
 
 // TODO select best for map
 _ctrl lbSetCurSel 0;
+
+add3DENEventHandler ["OnModeChange", {
+    call FUNC(handleVisibility);
+}];
+add3DENEventHandler ["OnSubmodeChange", {
+    call FUNC(handleVisibility);
+}];

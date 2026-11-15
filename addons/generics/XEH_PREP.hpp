@@ -1,4 +1,5 @@
-PREP(onIdentitySelectChange);
-PREP(filter);
-PREP(onSearchCreateKeyDown);
 PREP(countTree);
+PREP(filter);
+PREP(handleVisibility);
+PREP(onIdentitySelectChange);
+PREP(onSearchCreateKeyDown);

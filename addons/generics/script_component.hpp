@@ -5,5 +5,6 @@
 #include "..\main\script_macros.hpp"
 
 #define IDC_IDENTITY_SELECT 486651
+#define IDC_IDENTITY_SELECT_BOX 486652
 
 #define IDCS_FACTIONS [61,62,63,64,65,56,57,58,59,71]

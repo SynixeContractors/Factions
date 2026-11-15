@@ -22,6 +22,7 @@ class Display3DEN {
                                     h = "(5 + 2) * (pixelH * pixelGrid * 0.50)";
                                     w = "60 * (pixelW * pixelGrid * 0.50)";
                                     y = "safezoneH - ((5 + (5 + 2) + (5 + 1) + 10) + 14 + 5 + (5 + 2) + (5 + 2)) * (pixelH * pixelGrid * 0.50)";
+                                    idc = IDC_IDENTITY_SELECT_BOX;
                                     class Controls {
                                         class Background: ctrlStatic {
                                             colorBackground[] = {0.2,0.2,0.2,1};
