@@ -357,9 +357,6 @@ class CfgVehicles {
                 "Aegis_optic_1p87_snd": 1,
                 "Aegis_optic_1p87": 1,
             },
-            "bipods": {
-                "bipod_01_F_blk": 1,
-            },
         });
         
         @Backpacks({
