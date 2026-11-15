@@ -51,6 +51,16 @@ class CfgVehicles {
             faction = QCLASS($1);
             displayName = "$1 Civilian Base Unit";
             @Identity($1);
+
+            @Facewear({
+                "": 8,
+                "G_Glasses_black_RF": 1,
+                "G_Glasses_brown_RF": 1,
+                "G_Glasses_white_RF": 1,
+                "G_Spectacles": 0.8,
+                "G_Glasses_blue_RF": 0.1,
+                "G_Glasses_red_RF": 0.1,
+            });
         };
         #define NATION $1
         #include "CfgVehicles_T_CitizensUnits.hpp"

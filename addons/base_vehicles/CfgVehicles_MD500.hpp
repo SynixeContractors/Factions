@@ -144,7 +144,12 @@ class GCLASS(MD500E): B_Heli_Light_01_F {
         };
         class Digital {
             displayName = "Digital";
-            textures[] = {"a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_digital_co.paa"};
+            textures[] = {"\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_digital_co.paa"};
+            factions[] = {};
+        };
+        class Vrana {
+            displayName = "Black & Red";
+            textures[] = {"\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_vrana_co.paa"};
             factions[] = {};
         };
     };
@@ -171,7 +176,7 @@ class GCLASS(MD500E_Armed): B_Heli_Light_01_dynamicLoadout_F {
         };
         class Sand {
             displayName = "Sand";
-            textures[] = {"\lxWS\air_f_lxWS\Data\NATO\lxWS_Heli_Light_01_ext_sand_CO.paa","a3\air_f\heli_light_01\data\heli_light_01_dot_ca.paa"};
+            textures[] = {"\lxWS\air_f_lxWS\Data\NATO\lxWS_Heli_Light_01_ext_sand_CO.paa","\a3\air_f\heli_light_01\data\heli_light_01_dot_ca.paa"};
             factions[] = {};
         };
         class Black {
@@ -196,7 +201,7 @@ class GCLASS(MD500E_Armed): B_Heli_Light_01_dynamicLoadout_F {
         };
         class Digital {
             displayName = "Digital";
-            textures[] = {"a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_digital_co.paa"};
+            textures[] = {"\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_digital_co.paa"};
             factions[] = {};
         };
     };

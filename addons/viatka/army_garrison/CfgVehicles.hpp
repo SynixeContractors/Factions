@@ -186,7 +186,7 @@ class CfgVehicles {
             "H_EarProtectors_yellow_F": 1,
             "H_EarProtectors_white_F": 1,
             "H_Construction_earprot_white_F": 1,
-            "H_Construction_earprot_yellow_F": 1,           
+            "H_Construction_earprot_yellow_F": 1,
         });
 
         @Vests({
