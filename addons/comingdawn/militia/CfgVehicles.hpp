@@ -522,9 +522,6 @@ class CLASS2(SIDE,Machinegunner): CLASS2(SIDE,Autorifleman) {
             "saber_light_lxWS": 0.6,
             "Aegis_acc_pointer_DM": 0.4,
         },
-        "bipods": {
-            "bipod_01_F_blk": 1,
-        },
     });
 };
 
