@@ -81,6 +81,8 @@ class CLASS(Paramedic): CLASS(Base) {
     displayName = "Paramedic";
     editorPreview = "\A3\EditorPreviews_F_Orange\Data\CfgVehicles\C_IDAP_Man_Paramedic_01_F.jpg";
     attendant = 1;
+    icon = "iconManMedic";
+    role = "Combat Life Saver";
 
     @Uniforms({
         "variants": {
