@@ -21,8 +21,5 @@
         "synixe_factions_clothing_summer_shorts_grey_blue": 1,
         "synixe_factions_clothing_summer_shorts_grey_green": 1,
         "synixe_factions_clothing_summer_shorts_grey_black": 1,
-        "synixe_factions_clothing_summer_shorts_pink_blue": 1,
-        "synixe_factions_clothing_summer_shorts_pink_green": 1,
-        "synixe_factions_clothing_summer_shorts_pink_black": 1,
     },
 });
