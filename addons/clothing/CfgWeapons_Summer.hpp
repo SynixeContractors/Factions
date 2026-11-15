@@ -1,4 +1,3 @@
-#define QUOTE2(var3,var4) ##var3##, var4##
 #define SUMMER_SHORTS(var1,var2)\
 class CLASS(summer_shorts_##var1##_blue): U_C_Man_casual_4_F {\
     displayName = QUOTE(ARR_2(Summer Clothes (##var2##,Shorts Blue)));  \
@@ -65,5 +64,3 @@ class CLASS(summer_shorts_yellow_green): CLASS(summer_shorts_yellow_black) {
 //new ones
 SUMMER_SHORTS(green,Green);
 SUMMER_SHORTS(grey,Grey);
-SUMMER_SHORTS(orange,Orange);
-SUMMER_SHORTS(pink,Pink);
