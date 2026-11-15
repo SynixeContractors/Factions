@@ -2,7 +2,7 @@ class CfgGroups {
     @ForSides(OPFOR,BLUFOR,INDEP,CIV)
     class $GROUP {
         class CLASS(SIDE) {
-            name = "[T4] Police";
+            name = "[C] Police";
             @For(Identities)
             #define SIDE DOUBLES($1,$UPPER)
             class CLASS2(SIDE,Patrol) {
@@ -63,8 +63,15 @@ class CfgGroups {
                     GROUP_UNIT(CLASS2(SIDE,SWATDemo),$SIDE);
                 };
             };
+            #undef SIDE
+            @EndFor
+        };
+        class CLASS2(SIDE,Gendarmerie) {
+            name = "[T4] Gendarmerie";
+            @For(Identities)
+            #define SIDE DOUBLES($1,$UPPER)
             class CLASS2(SIDE,Gendarmerie) {
-                name = "Gendarmerie ($2)";
+                name = "Officers ($2)";
                 class CLASS2(SIDE,Gendarmerie_Patrol) {
                     name = "Patrol";
                     faction = QCLASS($LOWER);

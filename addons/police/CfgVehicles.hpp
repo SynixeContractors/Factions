@@ -20,6 +20,7 @@ class CfgVehicles {
         #define TEMPLATE_SIDE $SIDE
         #define SIDE DOUBLES(NATION,$UPPER)
         #define FACTION QCLASS($LOWER)
+        #define FACTION_GEND QCLASS2($LOWER,Gendarmerie)
         @For(Identities)
             #define NATION $1
             #include "CfgVehicles_T_Patrol.hpp"
@@ -28,6 +29,7 @@ class CfgVehicles {
             #undef NATION
         @EndFor
         #undef FACTION
+        #undef FACTION_GEND
         #undef SIDE
         #undef TEMPLATE_SIDE
     @EndForSides
