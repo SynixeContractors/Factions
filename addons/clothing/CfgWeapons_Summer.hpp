@@ -64,3 +64,8 @@ class CLASS(summer_shorts_yellow_green): CLASS(summer_shorts_yellow_black) {
 //new ones
 SUMMER_SHORTS(green,Green);
 SUMMER_SHORTS(grey,Grey);
+SUMMER_SHORTS(pink,Pink);
+SUMMER_SHORTS(artist,Artiste);
+SUMMER_SHORTS(peace,Peace);
+SUMMER_SHORTS(robogeddon,Robogeddon);
+SUMMER_SHORTS(greygoo,Grey Goo);

@@ -65,7 +65,10 @@ class CLASS(summer_shorts_yellow_green): C_Man_casual_4_F {
     };
 };
 //new ones
-SUMMER_SHORTS_VEHICLE(green,QUOTE(data\datasummer_shirt_green));
-SUMMER_SHORTS_VEHICLE(grey,QUOTE(data\summer_shirt_grey));
-SUMMER_SHORTS_VEHICLE(orange,QUOTE(data\summer_shirt_orange));
-SUMMER_SHORTS_VEHICLE(pink,QUOTE(data\summer_shirt_pink));
+SUMMER_SHORTS_VEHICLE(green,QPATHTOF(data\summer_shirt_green));
+SUMMER_SHORTS_VEHICLE(grey,QPATHTOF(data\summer_shirt_grey));
+SUMMER_SHORTS_VEHICLE(pink,QPATHTOF(data\summer_shirt_pink));
+SUMMER_SHORTS_VEHICLE(artist,"\A3\Missions_F_AoW\Data\Img\Textures\Uniforms\u_art_shirt_co.paa");
+SUMMER_SHORTS_VEHICLE(peace,"lxws\characters_f_lxws\data\clothes\outfit_tshirt_peace_1_co.paa");
+SUMMER_SHORTS_VEHICLE(robogeddon,"\A3\Characters_F_AoW\Uniforms\Data\U_C_ArtTShirt_01_v5_F_co.paa");
+SUMMER_SHORTS_VEHICLE(greygoo,"\A3\Characters_F_AoW\Uniforms\Data\U_C_ArtTShirt_01_v6_F_co.paa");
