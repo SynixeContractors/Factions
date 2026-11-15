@@ -4,11 +4,7 @@ class CfgPatches {
     class DOUBLES(ADDON,SUBCOMPONENT) {
         name = QUOTE(DOUBLES(COMPONENT,SUBCOMPONENT));
         units[] = {};
-        weapons[] = {
-            QPCLASS(Uniform_Combat_LS_Synixe_BP_BB),
-            QPCLASS(Uniform_Combat_RS_Synixe_BP_BB),
-            QPCLASS(Uniform_Contractor_Shirt)
-        };
+        weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
             "synixe_factions_base_vehicles"

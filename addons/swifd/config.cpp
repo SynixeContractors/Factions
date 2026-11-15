@@ -4,9 +4,7 @@ class CfgPatches {
     class ADDON {
         name = QUOTE(COMPONENT);
         units[] = {};
-        weapons[] = {
-            QCLASS(uniform_casual),
-        };
+        weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
             "synixe_factions_base_vehicles"
@@ -14,10 +12,6 @@ class CfgPatches {
         author = "Synixe Contractors";
         VERSION_CONFIG;
     };
-};
-
-class synixe_factions_generics {
-    class GCLASS(swifd) {};
 };
 
 #include "CfgFactionClasses.hpp"

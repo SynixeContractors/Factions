@@ -14,10 +14,5 @@ class CfgPatches {
     };
 };
 
-class synixe_factions_generics {
-    class GCLASS(vrana) {};
-};
-
-#include "CfgEditorSubcategories.hpp"
 #include "CfgFactionClasses.hpp"
 #include "CfgVehicles.hpp"

@@ -19,7 +19,7 @@ class CfgVehicles {
     @For(Identities)
         class CLASS2(Base,$1): CLASS(Base) {
             displayName = "$1 Vrana Base Unit";
-            editorSubcategory = QCLASS($1_Men);
+            editorSubcategory = QGCLASS(generics_$1);
             @Identity($1);
         };
         #define NATION $1

@@ -21,7 +21,7 @@ class CfgVehicles {
         crew = QCLASS(man_worker_$1);
         typicalCargo[] = {QCLASS(man_worker_$1)};
         editorPreview = QPATHTOF(previews\van.jpg);
-        editorSubcategory = QGCLASS(generics_$1_cars);
+        editorSubcategory = QGCLASS(generics_cars_$1);
     };
     class CLASS(Van_Transport_$1): GCLASS(Van_Transport) {
         SCOPE_DLC;
@@ -30,7 +30,7 @@ class CfgVehicles {
         crew = QCLASS(man_worker_$1);
         typicalCargo[] = {QCLASS(man_worker_$1)};
         editorPreview = QPATHTOF(previews\van.jpg);
-        editorSubcategory = QGCLASS(generics_$1_cars);
+        editorSubcategory = QGCLASS(generics_cars_$1);
     };
 
     class CLASS(man_worker_$1): CLASS(man_worker) {

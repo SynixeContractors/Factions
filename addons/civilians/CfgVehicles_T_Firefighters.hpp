@@ -1,7 +1,7 @@
 class CLASS2(Citizen_Firefighter,NATION): CLASS2(Base,NATION) {
     SCOPE_DLC;
     displayName = "Firefighter";
-    editorSubcategory = QGCLASS(fire_department);
+    editorSubcategory = QGCLASS(fire);
     @Uniforms({
         "variants": {
             "U_C_FirefighterFatigues_RF": 1,
@@ -32,10 +32,10 @@ class CLASS2(Citizen_Firefighter_SCBA,NATION): CLASS2(Citizen_Firefighter,NATION
     });
 };
 
-class CLASS2(Ram,NATION): GCLASS(Ram) {
+class CLASS2(Ram_Fire,NATION): GCLASS(Ram) {
     SCOPE_DLC;
     faction = QCLASS(NATION);
-    editorSubcategory = QGCLASS(fire_department);
+    editorSubcategory = QGCLASS(fire);
     crew = QUOTE(CLASS2(Citizen_Firefighter,NATION));
     typicalCargo[] = {QUOTE(CLASS2(Citizen_Firefighter,NATION))};
     textureList[] = {"FireDept",1};
@@ -43,7 +43,7 @@ class CLASS2(Ram,NATION): GCLASS(Ram) {
 class CLASS2(HEMTT_FireTruck,NATION): GCLASS(HEMTT_FireTruck) {
     SCOPE_DLC;
     faction = QCLASS(NATION);
-    editorSubcategory = QGCLASS(fire_department);
+    editorSubcategory = QGCLASS(fire);
     crew = QUOTE(CLASS2(Citizen_Firefighter_SCBA,NATION));
     typicalCargo[] = {QUOTE(CLASS2(Citizen_Firefighter_SCBA,NATION))};
     textureList[] = {"Red",1};

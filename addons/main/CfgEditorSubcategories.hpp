@@ -42,7 +42,4 @@ class CfgEditorSubcategories {
     class GCLASS(police_cars) {
         displayName = "Cars (Police)";
     };
-    class GCLASS(fire_department) {
-        displayName = "Fire Department";
-    };
 };

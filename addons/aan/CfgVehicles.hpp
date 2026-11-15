@@ -15,7 +15,7 @@ class CfgVehicles {
         textureList[] = {"AAN",1};
         crew = QCLASS(Reporter_$1);
         typicalCargo[] = {QCLASS(Reporter_$1)};
-        editorSubcategory = QGCLASS(generics_$1_cars);
+        editorSubcategory = QGCLASS(generics_cars_$1);
     };
     class CLASS(Van_Transport_$1): GCLASS(Van_Transport) {
         SCOPE_DLC;
@@ -23,7 +23,7 @@ class CfgVehicles {
         textureList[] = {"AAN",1};
         crew = QCLASS(Reporter_$1);
         typicalCargo[] = {QCLASS(Reporter_$1)};
-        editorSubcategory = QGCLASS(generics_$1_cars);
+        editorSubcategory = QGCLASS(generics_cars_$1);
     };
 
     class CLASS(Reporter_$1): CLASS(CIV) {

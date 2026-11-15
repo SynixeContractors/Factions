@@ -1,6 +1,7 @@
 class CLASS2(Citizen_Paramedic,NATION): CLASS2(Base,NATION) {
     SCOPE_DLC;
     displayName = "Paramedic";
+    editorSubcategory = QGCLASS(ems);
     editorPreview = "\A3\EditorPreviews_F_Orange\Data\CfgVehicles\C_IDAP_Man_Paramedic_01_F.jpg";
     attendant = 1;
     icon = "iconManMedic";
@@ -30,6 +31,7 @@ class CLASS2(Citizen_Paramedic,NATION): CLASS2(Base,NATION) {
 class CLASS2(Van_Ambulance,NATION): GCLASS(Van_Ambulance) {
     SCOPE_DLC;
     faction = QCLASS(NATION);
+    editorSubcategory = QGCLASS(ems);
     crew = QUOTE(CLASS2(Citizen_Paramedic,NATION));
     typicalCargo[] = {QUOTE(CLASS2(Citizen_Paramedic,NATION))};
 };

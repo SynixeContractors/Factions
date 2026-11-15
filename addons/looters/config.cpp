@@ -14,12 +14,6 @@ class CfgPatches {
     };
 };
 
-class synixe_factions_generics {
-    @ForSides(BLUFOR,INDEP,OPFOR)
-        class CLASS($LOWER) {};
-    @EndForSides
-};
-
 #include "CfgEditorSubcategories.hpp"
 #include "CfgFactionClasses.hpp"
 #include "CfgGroups.hpp"

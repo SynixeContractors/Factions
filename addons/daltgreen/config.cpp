@@ -14,9 +14,5 @@ class CfgPatches {
     };
 };
 
-class synixe_factions_generics {
-    class GCLASS(daltgreen) {};
-};
-
 #include "CfgFactionClasses.hpp"
 #include "CfgVehicles.hpp"

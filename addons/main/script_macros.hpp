@@ -26,6 +26,8 @@
 // Class
 #define GCLASS(var1) DOUBLES(PREFIX,var1)
 #define QGCLASS(var1) QUOTE(DOUBLES(PREFIX,var1))
+#define GCLASS2(var1,var2) TRIPLES(PREFIX,var1,var2)
+#define QGCLASS2(var1,var2) QUOTE(TRIPLES(PREFIX,var1,var2))
 
 #define PCLASS(var1) TRIPLES(PREFIX,COMPONENT,var1)
 #define PCLASS2(var1,var2) DOUBLES(TRIPLES(PREFIX,COMPONENT,var1),var2)
@@ -107,7 +109,7 @@ class CLASS(VEHICLE##_##SIDE): GCLASS(##VEHICLE##) {      \
     faction = QGCLASS(FACTION);                           \
     textureList[] = {QUOTE(TEXTURE),1};                   \
     crew = QCLASS2(CREW,SIDE);                            \
-    editorSubcategory = QGCLASS(generics_##SIDE##_cars);  \
+    editorSubcategory = QGCLASS(generics_cars_##SIDE##);  \
 }
 
 #define MAKE_FLAG(NAME,IMG_PATH) \

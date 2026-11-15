@@ -15,12 +15,12 @@ class CfgEditorSubcategories {
             displayName = "Militia ($2)";
             GCLASS(identity) = "$1";
         };
-        class CLASS($1_cars) {
+        class CLASS(cars_$1) {
             SCOPE_DLC;
             displayName = "Cars ($2)";
             GCLASS(identity) = "$1";
         };
-        class CLASS($1_helicopters) {
+        class CLASS(helicopters_$1) {
             SCOPE_DLC;
             displayName = "Helicopters ($2)";
             GCLASS(identity) = "$1";

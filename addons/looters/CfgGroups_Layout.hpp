@@ -1,6 +1,7 @@
 @For(Arid,Boreal,Cold,Desert,Tropic)
 class CLASS2(IDENT,$1) {
     name = QUOTE($1 (NAME));
+    GCLASS(identity) = QUOTE(NATION);
     class CLASS3(IDENT,$1,Pair) {
         name = "Pair";
         faction = QCLASS(LOWER);

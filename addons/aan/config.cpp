@@ -14,9 +14,5 @@ class CfgPatches {
     };
 };
 
-class synixe_factions_generics {
-    class GCLASS(aan) {};
-};
-
 #include "CfgFactionClasses.hpp"
 #include "CfgVehicles.hpp"
