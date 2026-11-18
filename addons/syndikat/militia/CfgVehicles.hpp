@@ -87,6 +87,12 @@ class CfgVehicles {
                     },
                 },
                 "arifle_AKM_F": {
+                    "probability": 0.01,
+                    "magazinesVest": {
+                        "30Rnd_762x39_Mag_F": 6,
+                    },
+                },
+                "arifle_AKM_FL_F": {
                     "probability": 1,
                     "magazinesVest": {
                         "30Rnd_762x39_Mag_F": 6,
@@ -110,6 +116,10 @@ class CfgVehicles {
                         "30Rnd_545x39_Mag_F": 6,
                     },
                 },
+            },
+            "pointers": {
+                "acc_flashlight_pistol": 5,
+                "": 1,
             },
         });
     };
@@ -172,6 +182,10 @@ class CfgVehicles {
                     "loadedPrimary": "30Rnd_762x39_Mag_F",
                     "loadedSecondary": "1Rnd_HEDP_Grenade_shell",
                 },
+            },
+            "pointers": {
+                "saber_light_lxWS": 5,
+                "": 1,
             },
         });
     };

@@ -105,8 +105,14 @@ class CfgVehicles {
                         "30Rnd_556x45_Stanag_Sand_red": 6,
                     },
                 },
-                "arifle_AKM_F": {
+                "arifle_AKM_FL_F": {
                     "probability": 1,
+                    "magazinesVest": {
+                        "30Rnd_762x39_Mag_F": 6,
+                    },
+                },
+                "arifle_AKM_F": {
+                    "probability": 0.01,
                     "magazinesVest": {
                         "30Rnd_762x39_Mag_F": 6,
                     },
@@ -141,6 +147,10 @@ class CfgVehicles {
                         "30Rnd_545x39_Mag_F": 6,
                     },
                 },
+            },
+            "pointers": {
+                "saber_light_lxWS": 5,
+                "": 1,
             },
         });
     };
@@ -230,6 +240,10 @@ class CfgVehicles {
                     "loadedPrimary": "30Rnd_762x39_Mag_F",
                     "loadedSecondary": "1Rnd_HEDP_Grenade_shell",
                 },
+            },
+            "pointers": {
+                "saber_light_lxWS": 5,
+                "": 1,
             },
         });
     };
@@ -328,7 +342,7 @@ class CfgVehicles {
     };
     class CLASS(Engineer): CLASS(Rifleman) {
         @Role(Engineer);
-        
+
         @Backpacks({
             "variants": {
                 "B_FieldPack_khk": 1,
