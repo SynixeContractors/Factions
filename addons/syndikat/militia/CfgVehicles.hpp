@@ -111,6 +111,9 @@ class CfgVehicles {
                     },
                 },
             },
+            "pointers": {
+                "JCA_acc_LightMount_Pistol_black": 1,
+            },
         });
     };
     class CLASS(SquadLeader): CLASS(Rifleman) {
@@ -173,6 +176,9 @@ class CfgVehicles {
                     "loadedSecondary": "1Rnd_HEDP_Grenade_shell",
                 },
             },
+            "pointers": {
+                "acc_flashlight": 1,
+            },
         });
     };
     class CLASS(Autorifleman): CLASS(Rifleman) {
@@ -195,6 +201,9 @@ class CfgVehicles {
                         "75Rnd_762x39_Mag_F": 4,
                     },
                 },
+            },
+            "pointers": {
+                "JCA_acc_LightMount_Pistol_black": 1,
             },
         });
 
@@ -296,7 +305,10 @@ class CfgVehicles {
             },
             "optics": {
                 "optic_DMS_weathered_F": 1,
-            }
+            },
+            "pointers": {
+                "JCA_acc_LightMount_Pistol_black": 1,
+            },
         });
     };
 
