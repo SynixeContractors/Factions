@@ -17,6 +17,7 @@ class CfgVehicles {
             "H_PilotHelmetHeli_Yellow_RF": 1,
         });
     };
+
     class C_IDAP_supplyCrate_F;
     class CLASS(SupplyCrate): C_IDAP_supplyCrate_F {
         editorCategory = "SynixeContractors";
