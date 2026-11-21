@@ -18,7 +18,7 @@ class CfgVehicles {
         });
     };
     class C_IDAP_supplyCrate_F;
-    class CLASS(supplyCrate): C_IDAP_supplyCrate_F {
+    class CLASS(SupplyCrate): C_IDAP_supplyCrate_F {
         editorCategory = "SynixeContractors";
         editorSubCategory = "EdSubcat_Default";
         displayName = "Supply Box [Synixe]";
