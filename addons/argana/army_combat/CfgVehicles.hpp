@@ -64,6 +64,15 @@ class CfgVehicles {
         ],
     });
 
+    @Vehicles({
+        "faction": "t4_opfor",
+        "side": "OPFOR",
+        "camo": "Green",
+        "vehicles": [
+            "Orca",
+        ],
+    });
+
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {
         displayName = "Army Combat";

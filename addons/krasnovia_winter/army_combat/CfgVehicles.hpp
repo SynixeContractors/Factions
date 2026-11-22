@@ -11,6 +11,58 @@ class CfgVehicles {
         ],
     });
 
+    @Vehicles({
+        "faction": "t3_indep",
+        "side": "INDEP",
+        "camo": "Ru",
+        "vehicles": [
+            "Karatel",
+            "Karatel_HMG",
+            "Karatel_GMG",
+            "Typhoon_Bench",
+            "Typhoon_Covered",
+            "Typhoon_Cargo",
+            "Typhoon_Fuel",
+            "Typhoon_Ammo",
+            "Typhoon_Device",
+            "Typhoon_Repair",
+            "Typhoon_Medical",
+        ],
+    });
+
+    @Vehicles({
+        "faction": "t3_indep",
+        "side": "INDEP",
+        "camo": "Guerilla_09",
+        "vehicles": [
+            "Ram",
+            "Ram_Covered",
+            "Ram_Comms",
+            "Ram_Fuel",
+            "Ram_HMG",
+            "Ram_MMG",
+            "Ram_AA",
+            "Ram_RCWS",
+            "Ram_M134",
+            "Ram_MRL",
+            "Ram_AT",
+        ],
+    });
+
+    @Vehicles({
+        "faction": "t3_indep",
+        "side": "INDEP",
+        "camo": "CAMO_SNOW",
+        "vehicles": [
+            "PumaM",
+            "PumaT",
+            "Cougar",
+            "Cougar_Armed",
+            "Cougar_Pylon",
+            "Cougar_Rescue",
+        ],
+    });
+
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {
         displayName = "Army Combat";

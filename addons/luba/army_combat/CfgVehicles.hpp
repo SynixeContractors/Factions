@@ -41,6 +41,26 @@ class CfgVehicles {
         ],
     });
 
+    @Vehicles({
+        "faction": "t3_indep",
+        "side": "INDEP",
+        "camo": "CAMO_AFRICA",
+        "vehicles": [
+            "PumaM",
+            "PumaT",
+            "Cougar_Armed",
+        ],
+    });
+
+    @Vehicles({
+        "faction": "t3_indep",
+        "side": "INDEP",
+        "camo": "Takistan",
+        "vehicles": [
+            "Mi35",
+        ],
+    });
+
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {
         displayName = "Luban Base Army Combat";

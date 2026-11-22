@@ -42,10 +42,7 @@ class CfgVehicles {
         "side": "OPFOR",
         "camo": "ArganaRoyal",
         "vehicles": [
-            {
-                "class": "Van_Transport_Lights",
-                "editorSubcategory": "QGCLASS(police_cars)",
-            },
+            {"class": "Van_Transport_Lights", "editorSubcategory": "QGCLASS(police_cars)"},
         ],
     });
 

@@ -1,4 +1,27 @@
 class CfgVehicles {
+    @Vehicles({
+        "faction": "t3_opfor",
+        "side": "OPFOR",
+        "camo": "Tan",
+        "vehicles": [
+            "Ram",
+            "Ram_M134",
+            "Ram_RCWS",
+            "Ram_AT",
+        ],
+    });
+
+    @Vehicles({
+        "faction": "t3_opfor",
+        "side": "OPFOR",
+        "camo": "Marar",
+        "vehicles": [
+            "MATV",
+            "MATV_HMG",
+            "Orca",
+        ],
+    });
+
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {
         displayName = "Special Forces";

@@ -1,3 +1,28 @@
+@Vehicles({
+    "faction": "QPCLASS(SIDE_FACTION)",
+    "side": "SIDE_NUMBER",
+    "camo": "Tan",
+    "prefix": "SIDE",
+    "vehicles": [
+        "Ram",
+        "Ram_M134",
+        "Ram_RCWS",
+        "Ram_AT",
+    ],
+});
+
+@Vehicles({
+    "faction": "QPCLASS(SIDE_FACTION)",
+    "side": "SIDE_NUMBER",
+    "camo": "Desert",
+    "prefix": "SIDE",
+    "vehicles": [
+        "LSV",
+        "LSV_M134",
+        "LSV_Metis",
+    ],
+});
+
 class PCLASS2(SIDE,Base);
 class CLASS2(SIDE,Base): PCLASS2(SIDE,Base) {
     editorSubcategory = QGCLASS(special_forces);

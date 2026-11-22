@@ -23,6 +23,7 @@ class CfgVehicles {
             #include "CfgVehicles_T_Polo.hpp"
             #include "CfgVehicles_T_Suit.hpp"
             #include "CfgVehicles_T_Armor.hpp"
+            #include "CfgVehicles_T_Vehicles.hpp"
             #undef NATION
         @EndFor
         #undef FACTION

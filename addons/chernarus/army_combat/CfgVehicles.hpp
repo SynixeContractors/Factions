@@ -54,6 +54,26 @@ class CfgVehicles {
         ],
     });
 
+    @Vehicles({
+        "faction": "t2_indep",
+        "side": "INDEP",
+        "camo": "Green",
+        "vehicles": [
+            "Mi35",
+        ],
+    });
+
+    @Vehicles({
+        "faction": "t2_indep",
+        "side": "INDEP",
+        "camo": "OLIVE",
+        "vehicles": [
+            "PumaM",
+            "PumaT",
+            "Cougar_Armed",
+        ],
+    });
+
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {
         displayName = "Chernarus Base Army Combat";

@@ -34,6 +34,22 @@ class CLASS2(SIDE,Suit_Rifleman_Pistol): CLASS2(SIDE,Suit) {
         ],
     });
 };
+class CLASS2(SIDE,HeliPilot): CLASS2(SIDE,Suit) {
+    @Role(HeliPilot);
+    #include "weapons\pistol.hpp"
+    @Vests({
+        "variants": {
+            "Aegis_V_CarrierRigKBT_01_holster_black_F": 1,
+        },
+        "packs": [
+            "t4_standard",
+        ],
+    });
+    @Headgear({
+        "H_PilotHelmetHeli_B": 1,
+        "H_Cap_headphones_blk": 1,
+    });
+};
 class CLASS2(SIDE,Suit_Rifleman_SMG): CLASS2(SIDE,Suit) {
     @Role(SMG);
     @Primary({

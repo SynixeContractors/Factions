@@ -103,6 +103,27 @@ class CfgVehicles {
         ],
     });
 
+    @Vehicles({
+        "faction": "t4_indep",
+        "side": "INDEP",
+        "camo": "Takistan",
+        "vehicles": [
+            "BTR",
+            "BTR_IFV",
+            "BTR_SPG",
+            "BM2_IFV1",
+            "BM2_IFV2",
+            {"class": "BM2_AA", "camo": "Sand"},
+            "T100",
+            "LUT_Fuel",
+            "LUT_Repair",
+            "LUT_Ammo",
+            "LUT_Medical",
+            "Mi35",
+            "Orca",
+        ],
+    });
+
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {
         displayName = "Takistan Base Army Combat";
