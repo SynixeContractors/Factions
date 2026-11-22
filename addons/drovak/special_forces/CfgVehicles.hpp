@@ -1,25 +1,57 @@
 class CfgVehicles {
-    #define TEMPLATE_FACTION QPCLASS(t1_indep)
-    #define TEMPLATE_SIDE 2
-    #define TEMPLATE_CAMO Olive
-    #include "..\..\..\templates\statics\RGS60.hpp"
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO Green
-    #include "..\..\..\templates\drones\UGV.hpp"
-    #include "..\..\..\templates\drones\MQ12.hpp"
-    #include "..\..\..\templates\cars\LSV.hpp"
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO Default
-    #include "..\..\..\templates\drones\MQ47.hpp"
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO Gray
-    #include "..\..\..\templates\cars\Ram_Advanced.hpp"
-    #include "..\..\..\templates\cars\Ram_Civilian.hpp"
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO Black
-    #include "..\..\..\templates\helicopters\Ka54.hpp"
-    #include "..\..\..\templates\helicopters\Orca_Military.hpp"
-    #include "..\..\..\templates\helicopters\Orca_Civilian.hpp"
+    @Vehicles({
+        "faction": "t1_indep",
+        "side": "INDEP",
+        "camo": "Olive",
+        "vehicles": [
+            "RSG60Mortar",
+        ],
+    });
+
+    @Vehicles({
+        "faction": "t1_indep",
+        "side": "INDEP",
+        "camo": "Green",
+        "vehicles": [
+            "UGV",
+            "UGV_RCWS",
+            "MQ12",
+            "LSV",
+            "LSV_M134",
+            "LSV_Metis",
+            {"class": "MQ47", "camo": "Default"},
+        ],
+    });
+
+    @Vehicles({
+        "faction": "t1_indep",
+        "side": "INDEP",
+        "camo": "Gray",
+        "vehicles": [
+            "Ram_AA",
+            "Ram_RCWS",
+            "Ram_M134",
+            "Ram_MRL",
+            "Ram_AT",
+            "Ram",
+            "Ram_Covered",
+            "Ram_Comms",
+            "Ram_Fuel",
+        ],
+    });
+
+    @Vehicles({
+        "faction": "t1_indep",
+        "side": "INDEP",
+        "camo": "Black",
+        "vehicles": [
+            "Ka54",
+            "OrcaAR",
+            "OrcaR",
+            "OrcaArmed",
+            "Orca",
+        ],
+    });
 
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {

@@ -1,5 +1,12 @@
 class CfgVehicles {
-    #include "CfgVehicles_Quad.hpp"
+    @Vehicles({
+        "faction": "t2_opfor",
+        "side": "OPFOR",
+        "camo": "Blufor",
+        "vehicles": [
+            "QuadBike",
+        ],
+    });
 
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {

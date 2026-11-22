@@ -1,29 +1,67 @@
 class CfgVehicles {
-    #define TEMPLATE_FACTION QPCLASS(t3_opfor)
-    #define TEMPLATE_SIDE 0
-    #include "..\..\..\templates\statics\XM3XX.hpp"
-    #define TEMPLATE_CAMO Hex
-    #include "..\..\..\templates\statics\SAM02.hpp"
-    #include "..\..\..\templates\statics\Mk6.hpp"
-    #include "..\..\..\templates\tanks\T100.hpp"
-    #include "..\..\..\templates\tanks\T100_SPG.hpp"
-    #include "..\..\..\templates\apc\Otokar.hpp"
-    #include "..\..\..\templates\apc\BM2_AA.hpp"
-    #include "..\..\..\templates\apc\BM2K.hpp"
-    #include "..\..\..\templates\apc\BM2T.hpp"
-    #include "..\..\..\templates\cars\Karatel.hpp"
-    #include "..\..\..\templates\cars\Typhoon.hpp"
-    #include "..\..\..\templates\helicopters\Mi35.hpp"
-    #include "..\..\..\templates\planes\Yak130.hpp"
-    #include "..\..\..\templates\planes\C130.hpp"
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO Opfor
-    #include "..\..\..\templates\drones\CH3A.hpp"
-    #include "..\..\..\templates\helicopters\Orca_Civilian.hpp"
-    #include "..\..\..\templates\helicopters\Orca_Military.hpp"
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO CSAT
-    #include "..\..\..\templates\helicopters\Puma_Military.hpp"
+    @Vehicles({
+        "faction": "t3_opfor",
+        "side": "OPFOR",
+        "camo": "Hex",
+        "vehicles": [
+            "XM_GMG_High",
+            "XM_GMG_Low",
+            "XM_HMG_High",
+            "XM_HMG_Low",
+            "Radar02",
+            "SAM02",
+            "Mk6Mortar",
+            "T100",
+            "T100_SPG",
+            "Otokar",
+            "Otokar_HMG",
+            "Otokar_RCWS",
+            "BM2_AA",
+            "BM2_IFV2",
+            "BM2_IFV1",
+            "Karatel",
+            "Karatel_HMG",
+            "Karatel_GMG",
+            "Typhoon_Bench",
+            "Typhoon_Covered",
+            "Typhoon_Cargo",
+            "Typhoon_Fuel",
+            "Typhoon_Ammo",
+            "Typhoon_Device",
+            "Typhoon_Repair",
+            "Typhoon_Medical",
+            "Mi35",
+            "Yak130",
+            "C130",
+            "C130_Cargo",
+        ],
+    });
+
+    @Vehicles({
+        "faction": "t3_opfor",
+        "side": "OPFOR",
+        "camo": "Opfor",
+        "vehicles": [
+            "CH3A",
+            "Orca",
+            "OrcaAR",
+            "OrcaR",
+            "OrcaArmed",
+        ],
+    });
+
+    @Vehicles({
+        "faction": "t3_opfor",
+        "side": "OPFOR",
+        "camo": "CSAT",
+        "vehicles": [
+            "PumaM",
+            "PumaT",
+            "Cougar",
+            "Cougar_Armed",
+            "Cougar_Pylon",
+        ],
+    });
 
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {

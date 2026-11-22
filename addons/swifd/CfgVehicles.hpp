@@ -1,6 +1,4 @@
 class CfgVehicles {
-    class GCLASS(Van_Cargo);
-    class GCLASS(Van_Transport);
     class C_Man_casual_3_F;
 
     class CLASS(man_worker): C_Man_casual_3_F {
@@ -14,24 +12,19 @@ class CfgVehicles {
     };
 
     @For(Identities)
-    class CLASS(Van_$1): GCLASS(Van_Cargo) {
-        SCOPE_DLC;
-        faction = QGCLASS(swifd);
-        textureList[] = {"SwifD",1};
-        crew = QCLASS(man_worker_$1);
-        typicalCargo[] = {QCLASS(man_worker_$1)};
-        editorPreview = QPATHTOF(previews\van.jpg);
-        editorSubcategory = QGCLASS(generics_cars_$1);
-    };
-    class CLASS(Van_Transport_$1): GCLASS(Van_Transport) {
-        SCOPE_DLC;
-        faction = QGCLASS(swifd);
-        textureList[] = {"SwifD",1};
-        crew = QCLASS(man_worker_$1);
-        typicalCargo[] = {QCLASS(man_worker_$1)};
-        editorPreview = QPATHTOF(previews\van.jpg);
-        editorSubcategory = QGCLASS(generics_cars_$1);
-    };
+    @Vehicles({
+        "faction": "QGCLASS(swifd)",
+        "camo": "SwifD",
+        "crew": "man_worker_$1",
+        "properties": {
+            "editorPreview": "QPATHTOF(previews\\van.jpg)",
+            "editorSubcategory": "QGCLASS(generics_cars_$1)",
+        },
+        "vehicles": [
+            {"class": "Van_Cargo", "name": "Van_$1"},
+            {"class": "Van_Transport", "name": "Van_Transport_$1"},
+        ],
+    });
 
     class CLASS(man_worker_$1): CLASS(man_worker) {
         SCOPE_DLC;

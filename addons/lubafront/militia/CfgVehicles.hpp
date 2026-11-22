@@ -1,7 +1,12 @@
 class CfgVehicles {
-    #define TEMPLATE_FACTION QPCLASS(t4_opfor)
-    #define TEMPLATE_SIDE 0
-    #include "..\..\..\templates\statics\M2.hpp"
+    @Vehicles({
+        "faction": "t4_opfor",
+        "side": "OPFOR",
+        "vehicles": [
+            "M2_High",
+            "M2_Low",
+        ],
+    });
 
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {

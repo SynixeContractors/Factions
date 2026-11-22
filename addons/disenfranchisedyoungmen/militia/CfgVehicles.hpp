@@ -1,13 +1,125 @@
-#include "CfgVehicles_Cars.hpp"
+// LUT
+
+@Vehicles({
+    "faction": "QPCLASS(SIDE_FACTION)",
+    "side": "SIDE_NUMBER",
+    "camo": ["Black", "Brown", "Blue", "Green"],
+    "prefix": "SIDE",
+    "vehicles": [
+        {
+            "class": "LUT_Transport",
+            "editorPreview": "\\A3\\EditorPreviews_F\\Data\\CfgVehicles\\C_Truck_02_transport_F.jpg",
+        },
+    ],
+});
+
+@Vehicles({
+    "faction": "QPCLASS(SIDE_FACTION)",
+    "side": "SIDE_NUMBER",
+    "camo": ["Black", "Brown", "Blue", "Olive"],
+    "prefix": "SIDE",
+    "vehicles": [
+        {
+            "class": "LUT_TransportCovered",
+            "editorPreview": "\\A3\\EditorPreviews_F\\Data\\CfgVehicles\\C_Truck_02_covered_F.jpg",
+        },
+        {
+            "class": "LUT_Flatbed",
+            "editorPreview": "\\lxws\\editorpreviews_f_lxws\\Data\\CfgVehicles\\C_Truck_02_flatbed_lxWS.jpg",
+        },
+        {
+            "class": "LUT_Cargo",
+            "editorPreview": "\\lxws\\editorpreviews_f_lxws\\Data\\CfgVehicles\\C_Truck_02_cargo_lxWS.jpg",
+        },
+    ],
+});
+
+// Offroad
+
+@Vehicles({
+    "faction": "QPCLASS(SIDE_FACTION)",
+    "side": "SIDE_NUMBER",
+    "camo": ["Beige", "Black", "Blue", "Darkred", "Green", "Olive", "Red", "White"],
+    "prefix": "SIDE",
+    "vehicles": [
+        {
+            "class": "Offroad",
+            "editorPreview": "\\A3\\EditorPreviews_F\\Data\\CfgVehicles\\C_Offroad_01_F.jpg",
+            "animationList": ["HideDoor1", 0.333333, "HideDoor2", 0.333333, "HideDoor3", 0.333333, "HideBumper1", 0.5, "HideBumper2", 0.5],
+        },
+        {
+            "class": "Offroad_Covered",
+            "editorPreview": "\\A3\\EditorPreviews_F_Enoch\\Data\\CfgVehicles\\C_Offroad_01_covered_F.jpg",
+            "animationList": ["HideRoofRack", 1, "HideCover", 0, "HideDoor3", 0, "HideBumper1", 1, "HideBumper2", 0],
+        },
+    ],
+});
+
+// Jay
+
+@Vehicles({
+    "faction": "QPCLASS(SIDE_FACTION)",
+    "side": "SIDE_NUMBER",
+    "camo": ["Black", "Red", "White", "Black_v2", "White_v2", "Red_v2"],
+    "prefix": "SIDE",
+    "vehicles": [
+        {"class": "Jay_Fuel", "editorPreview": "\\A3\\EditorPreviews_F\\Data\\CfgVehicles\\C_Van_01_fuel_F.jpg"},
+        {
+            "class": "Jay_Box",
+            "camo": ["Black", "Red", "White", "White Box", "Yellow"],
+            "editorPreview": "\\A3\\EditorPreviews_F\\Data\\CfgVehicles\\C_Van_01_box_F.jpg",
+        },
+        {
+            "class": "Jay_Flatbed",
+            "camo": ["Black", "Red", "Insurgent_04", "Insurgent_05", "Insurgent_06"],
+            "editorPreview": "\\A3\\EditorPreviews_F\\Data\\CfgVehicles\\C_Van_01_transport_F.jpg",
+        },
+    ],
+});
+
+// Van
+
+@Vehicles({
+    "faction": "QPCLASS(SIDE_FACTION)",
+    "side": "SIDE_NUMBER",
+    "camo": ["Green", "Black", "Red", "Blue", "White"],
+    "prefix": "SIDE",
+    "vehicles": [
+        {
+            "class": "Van_Transport",
+            "editorPreview": "\\A3\\EditorPreviews_F_Orange\\Data\\CfgVehicles\\C_Van_02_transport_F.jpg",
+        },
+        {
+            "class": "Van_Cargo",
+            "editorPreview": "\\A3\\EditorPreviews_F_Orange\\Data\\CfgVehicles\\C_Van_02_vehicle_F.jpg",
+        },
+    ],
+});
+
+// Quad
+
+@Vehicles({
+    "faction": "QPCLASS(SIDE_FACTION)",
+    "side": "SIDE_NUMBER",
+    "camo": ["Black", "Blue", "Brown", "Green", "Red", "White"],
+    "prefix": "SIDE",
+    "vehicles": [
+        {"class": "QuadBike", "editorPreview": "\\A3\\EditorPreviews_F\\Data\\CfgVehicles\\C_Quadbike_01_F.jpg"},
+    ],
+});
+
+@Vehicles({
+    "faction": "QPCLASS(SIDE_FACTION)",
+    "side": "SIDE_NUMBER",
+    "prefix": "SIDE",
+    "vehicles": [
+        "M2_High",
+        "M2_Low",
+    ],
+});
 
 class PCLASS2(SIDE,Base);
 class CLASS2(SIDE,Base): PCLASS2(SIDE,Base) {
-    #define TEMPLATE_FACTION QPCLASS(SIDE_FACTION)
-    #define TEMPLATE_SIDE SIDE_NUMBER
-    #include "..\..\..\templates\statics\M2.hpp"
-    #undef TEMPLATE_FACTION
-    #undef TEMPLATE_SIDE
-
     displayName = "Disenfranchised Young Men";
     editorSubcategory = QGCLASS(militia);
     

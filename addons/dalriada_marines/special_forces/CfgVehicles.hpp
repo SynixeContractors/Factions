@@ -1,13 +1,21 @@
 class CfgVehicles {
-    #define TEMPLATE_FACTION QPCLASS(t2_opfor)
-    #define TEMPLATE_SIDE 0
-    #define TEMPLATE_CAMO Black
-    #include "..\..\..\templates\cars\LSV.hpp"
-    #include "..\..\..\templates\cars\Ram_Advanced.hpp"
-    #include "..\..\..\templates\boats\RHIB.hpp"
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO Hex
-    #include "..\..\..\templates\boats\Dinghy.hpp"
+    @Vehicles({
+        "faction": "t2_opfor",
+        "side": "OPFOR",
+        "camo": "Black",
+        "vehicles": [
+            "LSV",
+            "LSV_M134",
+            "LSV_Metis",
+            "Ram_AA",
+            "Ram_RCWS",
+            "Ram_M134",
+            "Ram_MRL",
+            "Ram_AT",
+            "RHIB",
+            {"class": "Dinghy", "camo": "Hex"},
+        ],
+    });
     
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {

@@ -25,7 +25,7 @@ class GCLASS(BM2_IFV2):  O_APC_Tracked_02_30mm_lxWS {
 };
 
 class O_R_APC_Tracked_02_medical_F;
-class GCLASS(BM2_unarmed): O_R_APC_Tracked_02_medical_F {
+class GCLASS(BM2_Unarmed): O_R_APC_Tracked_02_medical_F {
     displayName = "BM-2P (Medical)";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;

@@ -1,5 +1,5 @@
 class CLASS2(SIDE,Desert): CLASS2(Base,NATION) {
-    side = TEMPLATE_SIDE;
+    side = SIDE_NUMBER;
     editorSubcategory = QCLASS2(NATION,Looters_Desert);
     faction = FACTION;
 

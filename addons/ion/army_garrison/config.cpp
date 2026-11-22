@@ -15,7 +15,6 @@ class CfgPatches {
 };
 
 class CfgVehicles {
-
     @ForSides(BLUFOR,OPFOR,INDEP)
     #define SIDE $UPPER
     #define SIDE_NUMBER $SIDE

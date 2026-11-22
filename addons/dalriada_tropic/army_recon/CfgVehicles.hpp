@@ -1,8 +1,15 @@
 class CfgVehicles {
-    #define TEMPLATE_FACTION QPCLASS(t2_opfor)
-    #define TEMPLATE_SIDE 0
-    #define TEMPLATE_CAMO CSAT_Pacific
-    #include "..\..\..\templates\cars\Ram_Civilian.hpp"
+    @Vehicles({
+        "faction": "t2_opfor",
+        "side": "OPFOR",
+        "camo": "CSAT_Pacific",
+        "vehicles": [
+            "Ram",
+            "Ram_Covered",
+            "Ram_Comms",
+            "Ram_Fuel",
+        ],
+    });
 
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {

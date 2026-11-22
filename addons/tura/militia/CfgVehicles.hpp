@@ -1,12 +1,118 @@
-#include "CfgVehicles_Cars.hpp"
+@Vehicles({
+    "faction": "QPCLASS(SIDE_FACTION)",
+    "side": "SIDE_NUMBER",
+    "camo": "Sand",
+    "crew": "Rifleman",
+    "prefix": "SIDE",
+    "vehicles": [
+        "BTR",
+        "BTR_SPG",
+    ],
+});
+
+// Rams with civilian variants
+@Vehicles({
+    "faction": "QPCLASS(SIDE_FACTION)",
+    "side": "SIDE_NUMBER",
+    "camo": [
+        "Black",
+        "Blue",
+        "Brown",
+        "Cruiser",
+        "Gray",
+        "Green",
+        "NATO",
+        "NATO_P",
+        "Olive",
+        "Orange",
+        "Red",
+        "Tan",
+        "White",
+        "Yellow",
+    ],
+    "prefix": "SIDE",
+    "vehicles": [
+        "Ram",
+        "Ram_Covered",
+        "Ram_HMG",
+        "Ram_Fuel",
+        "Ram_Rocket",
+    ],
+});
+
+//military styled rams
+@Vehicles({
+    "faction": "QPCLASS(SIDE_FACTION)",
+    "side": "SIDE_NUMBER",
+    "camo": [
+        "Black",
+        "Blue",
+        "Brown",
+        "Cruiser",
+        "Gray",
+        "Green",
+        "NATO",
+        "NATO_P",
+        "Olive",
+        "Orange",
+        "Red",
+        "Tan",
+        "White",
+        "Yellow",
+    ],
+    "prefix": "SIDE",
+    "vehicles": [
+        "Ram_MMG",
+        "Ram_RCWS",
+        "Ram_M134",
+        "Ram_Comms",
+        "Ram_MRL",
+        "Ram_AA",
+        "Ram_AT",
+    ],
+});
+
+@Vehicles({
+    "faction": "QPCLASS(SIDE_FACTION)",
+    "side": "SIDE_NUMBER",
+    "camo": ["Black", "Blue", "Brown", "Green", "Lime", "Orange", "Sand", "Yellow"],
+    "prefix": "SIDE",
+    "vehicles": [
+        "LUT_Transport",
+        "LUT_TransportCovered",
+        "LUT_Repair",
+        "LUT_Medical",
+        "LUT_Fuel",
+        "LUT_Cargo",
+        "LUT_Flatbed",
+        "LUT_AA",
+        "LUT_Ammo",
+        "LUT_MRL",
+    ],
+});
+
+@Vehicles({
+    "faction": "QPCLASS(SIDE_FACTION)",
+    "side": "SIDE_NUMBER",
+    "camo": ["Black", "Blue", "Bluecustom", "Brown", "Darkred", "Green", "Olive", "Pink", "Red", "White", "Zebra"],
+    "prefix": "SIDE",
+    "vehicles": [
+        "Offroad",
+        "Offroad_Covered",
+        "Offroad_Comms",
+        "Offroad_Services",
+        "Offroad_HMG",
+        "Offroad_AT",
+        "Offroad_AA",
+        "Offroad_Armored",
+        "Offroad_Armored_AT",
+        "Offroad_Armored_HMG",
+        "Offroad_Armored_AA",
+    ],
+});
 
 class PCLASS2(SIDE,Base);
 class CLASS2(SIDE,Base): PCLASS2(SIDE,Base) {
-    #define TEMPLATE_FACTION QPCLASS(SIDE_FACTION)
-    #define TEMPLATE_SIDE SIDE_NUMBER
-    #undef TEMPLATE_FACTION
-    #undef TEMPLATE_SIDE
-
     editorSubcategory = QGCLASS(militia);
 
     #include "..\wear\uniform_militia.hpp"

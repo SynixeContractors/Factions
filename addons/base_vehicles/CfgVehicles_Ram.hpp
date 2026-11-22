@@ -36,8 +36,26 @@ class GCLASS(Ram): Pickup_01_base_rf {
         "hide_armor_window_armor_top", 1
     };
 };
-class Pickup_covered_base_rf;
+class Pickup_service_base_rf;
+class Pickup_covered_base_rf: Pickup_service_base_rf {
+    class AnimationSources;
+};
 class GCLASS(Ram_Covered): Pickup_covered_base_rf {
+    class AnimationSources: AnimationSources {
+        class hide_police;
+        class hide_armor_window_armor_top;
+        class hide_armor_window_armor_front;
+        class hide_armor_window_armor_F_R;
+        class hide_armor_window_armor_F_L;
+        class hide_armor_window_armor_R_R;
+        class hide_armor_window_armor_R_L;
+        class hide_box;
+        class hide_frame;
+        class hide_frame_full;
+        class hide_fram_full_panel;
+        class box_door_open;
+        class enable_FFV;
+    };
     displayName = "Ram 1500 (Covered)";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;

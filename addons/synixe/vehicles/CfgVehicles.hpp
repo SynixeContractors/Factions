@@ -1,9 +1,16 @@
 class CfgVehicles {
     #include "md500e.hpp"
-    #define TEMPLATE_FACTION QPCLASS(t4_blufor)
-    #define TEMPLATE_SIDE 1
-    #define TEMPLATE_CAMO Grey
-    #include "..\..\..\templates\helicopters\LittleBird.hpp"
+    @Vehicles({
+        "faction": "t4_blufor",
+        "side": "BLUFOR",
+        "camo": "Grey",
+        "vehicles": [
+            "MELB",
+            "MELB_Rig",
+            "MELB_Attack",
+        ],
+    });
+
     class PCLASS(ContractorOffice);
     class CLASS(HeliPilot): PCLASS(ContractorOffice) {
         displayName = "Contractor (Pilot, Helicopter)";
@@ -24,6 +31,6 @@ class CfgVehicles {
         editorSubCategory = "EdSubcat_Default";
         displayName = "Supply Box [Synixe]";
         hiddenSelectionsTextures[] = {QPATHTOF(vehicles\data\supplydrop.paa)};
-        EMPTY_VEHICLE_INVENTORY;
+        EMPTY_INVENTORY;
     };
 };

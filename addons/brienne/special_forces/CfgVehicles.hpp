@@ -1,9 +1,15 @@
 class CfgVehicles {
-    #define TEMPLATE_FACTION QPCLASS(t3_blufor)
-    #define TEMPLATE_SIDE 1
-    #define TEMPLATE_CAMO Olive
-    #include "..\..\..\templates\cars\Polaris.hpp"
-    #undef TEMPLATE_CAMO
+    @Vehicles({
+        "faction": "t3_blufor",
+        "side": "BLUFOR",
+        "camo": "Olive",
+        "vehicles": [
+            "Polaris",
+            "Polaris_NoDoor",
+            "Polaris_Titan",
+            "Polaris_HMG",
+        ],
+    });
 
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {

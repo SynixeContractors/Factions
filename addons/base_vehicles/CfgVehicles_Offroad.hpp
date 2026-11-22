@@ -14,8 +14,14 @@
 }
 
 
-class C_Offroad_01_F;
+class Offroad_01_civil_base_F;
+class C_Offroad_01_F: Offroad_01_civil_base_F {
+    class AnimationSources;
+};
 class GCLASS(Offroad): C_Offroad_01_F {
+    class AnimationSources: AnimationSources {
+        class hidePolice;
+    };
     displayName = "Offroad";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
@@ -33,8 +39,14 @@ class GCLASS(Offroad): C_Offroad_01_F {
     };
 };
 
-class C_Offroad_01_covered_F;
+class Offroad_01_military_covered_base_F;
+class C_Offroad_01_covered_F: Offroad_01_military_covered_base_F {
+    class AnimationSources;
+};
 class GCLASS(Offroad_Covered): C_Offroad_01_covered_F {
+    class AnimationSources: AnimationSources {
+        class hidePolice;
+    };
     displayName = "Offroad (Covered)";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;

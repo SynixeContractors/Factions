@@ -15,46 +15,63 @@ class CfgPatches {
 };
 
 class CfgVehicles {
-    class GCLASS(LUT_AA);
-    class GCLASS(LUT_Cargo);
-    class GCLASS(LUT_Flatbed);
-    class GCLASS(LUT_Fuel);
-    class GCLASS(LUT_Medical);
-    class GCLASS(LUT_Repair);
-    class GCLASS(LUT_Transport);
-    class GCLASS(LUT_TransportCovered);
-    class GCLASS(Ram);
-    class GCLASS(Ram_Covered);
-    class GCLASS(Ram_Fuel);
-    class GCLASS(Ram_HMG);
-    class GCLASS(Ram_Rocket);
-    class GCLASS(Offroad);
-    class GCLASS(Offroad_AA);
-    class GCLASS(Offroad_AT);
-    class GCLASS(Offroad_Armored);
-    class GCLASS(Offroad_Armored_AA);
-    class GCLASS(Offroad_Armored_AT);
-    class GCLASS(Offroad_Armored_HMG);
-    class GCLASS(Offroad_Comms);
-    class GCLASS(Offroad_Covered);
-    class GCLASS(Offroad_HMG);
-    class GCLASS(Offroad_Services);
-
     @For(Identities)
     class PCLASS(DOUBLES(Base,$1));
     @EndFor
     @ForSides(OPFOR,BLUFOR,INDEP)
-    #define TEMPLATE_SIDE $SIDE
+    #define SIDE_NUMBER $SIDE
     #define SIDE DOUBLES(NATION,$UPPER)
     #define FACTION QPCLASS($LOWER)
         @For(Identities)
         #define NATION $1
         #include "CfgVehicles_T_Units.hpp"
-        #include "CfgVehicles_Cars.hpp"
+        @Vehicles({
+            "faction": "FACTION",
+            "side": "SIDE_NUMBER",
+            "prefix": "SIDE",
+            "properties": {"editorSubcategory": "QGCLASS(TRIPLES(generics,cars,NATION))"},
+            "vehicles": [
+                "Ram",
+                "Ram_Covered",
+                "Ram_HMG",
+                "Ram_Fuel",
+                "Ram_Rocket",
+                "LUT_Transport",
+                "LUT_TransportCovered",
+                "LUT_Repair",
+                "LUT_Medical",
+                "LUT_Fuel",
+                "LUT_Cargo",
+                "LUT_Flatbed",
+                "LUT_AA",
+            ],
+        });
+
+        // Offroad
+        @Vehicles({
+            "faction": "FACTION",
+            "side": "SIDE_NUMBER",
+            "prefix": "SIDE",
+            "properties": {"editorSubcategory": "QGCLASS(TRIPLES(generics,cars,NATION))"},
+            "vehicles": [
+                "Offroad",
+                "Offroad_Covered",
+                "Offroad_Comms",
+                "Offroad_Services",
+                "Offroad_HMG",
+                "Offroad_AT",
+                "Offroad_AA",
+                "Offroad_Armored",
+                "Offroad_Armored_AT",
+                "Offroad_Armored_HMG",
+                "Offroad_Armored_AA",
+            ],
+        });
+
         #undef NATION
         @EndFor
     #undef FACTION
     #undef SIDE
-    #undef TEMPLATE_SIDE
+    #undef SIDE_NUMBER
     @EndForSides
 };

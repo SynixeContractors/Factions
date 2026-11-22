@@ -1,33 +1,70 @@
 class CfgVehicles {
-    #define TEMPLATE_FACTION QPCLASS(t3_blufor)
-    #define TEMPLATE_SIDE 1
-    #include "..\..\..\templates\statics\M2.hpp"
-    #define TEMPLATE_CAMO Green
-    #include "..\..\..\templates\statics\Mk6.hpp"
-    #include "..\..\..\templates\apc\BM2_AA.hpp"
-    #include "..\..\..\templates\apc\BM2_Unarmed.hpp"
-    #include "..\..\..\templates\apc\BM2K.hpp"
-    #include "..\..\..\templates\apc\BM2T.hpp"
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO OLIVE
-    #include "..\..\..\templates\helicopters\Puma_Military.hpp"
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO Olive_01_green
-    #include "..\..\..\templates\tanks\Leopard.hpp" 
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO Olive 
-    #include "..\..\..\templates\cars\Fennek.hpp"
-    #include "..\..\..\templates\cars\HEMTT.hpp"
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO NATO_P
-    #include "..\..\..\templates\cars\Ram_Armed.hpp"
-    #include "..\..\..\templates\cars\Ram_Civilian.hpp"
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO France
-    #include "..\..\..\templates\drones\MQ9.hpp"
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO CamoGrey
-    #include "..\..\..\templates\planes\JAS39.hpp"
+    @Vehicles({
+        "faction": "t3_blufor",
+        "side": "BLUFOR",
+        "camo": "Green",
+        "vehicles": [
+            "M2_High",
+            "M2_Low",
+            "Mk6Mortar",
+            "BM2_AA",
+            "BM2_Unarmed",
+            "BM2_IFV2",
+            "BM2_IFV1",
+        ],
+    });
+
+    @Vehicles({
+        "faction": "t3_blufor",
+        "side": "BLUFOR",
+        "camo": "OLIVE",
+        "vehicles": [
+            "PumaM",
+            "PumaT",
+            "Cougar",
+            "Cougar_Armed",
+            "Cougar_Pylon",
+            {"class": "Leopard2", "camo": "Olive_01_green"},
+        ],
+    });
+
+    @Vehicles({
+        "faction": "t3_blufor",
+        "side": "BLUFOR",
+        "camo": "Olive",
+        "vehicles": [
+            "Fennek",
+            "Fennek_HMG",
+            "Fennek_GMG",
+            "HEMTT",
+            "HEMTT_Cargo",
+            "HEMTT_Flatbed",
+            "HEMTT_Repair",
+            "HEMTT_Container",
+            "HEMTT_Bench",
+            "HEMTT_Covered",
+            "HEMTT_Medical",
+            "HEMTT_Fuel",
+            "HEMTT_Ammo",
+            "HEMTT_FireTruck",
+        ],
+    });
+
+    @Vehicles({
+        "faction": "t3_blufor",
+        "side": "BLUFOR",
+        "camo": "NATO_P",
+        "vehicles": [
+            "Ram_HMG",
+            "Ram_MMG",
+            "Ram",
+            "Ram_Covered",
+            "Ram_Comms",
+            "Ram_Fuel",
+            {"class": "MQ9", "camo": "France"},
+            {"class": "JAS39", "camo": "CamoGrey"},
+        ],
+    });
 
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {

@@ -1,20 +1,48 @@
 class CfgVehicles {
-    #define TEMPLATE_FACTION QPCLASS(t3_opfor)
-    #define TEMPLATE_SIDE 0
-    #include "..\..\..\templates\statics\M2.hpp"
-    #include "..\..\..\templates\statics\Ship.hpp"
-    #define TEMPLATE_CAMO Maze
-    #include "..\..\..\templates\cars\Fennek.hpp"
-    #include "..\..\..\templates\cars\Typhoon.hpp"
-    #include "..\..\..\templates\cars\LSV.hpp"
-    #include "..\..\..\templates\planes\C130.hpp"
-    #include "..\..\..\templates\apc\Otokar.hpp"
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO Maze_jungle
-    #include "..\..\..\templates\tanks\T100.hpp"
-    #include "..\..\..\templates\tanks\T100_Railgun.hpp"
-    #include "..\..\..\templates\tanks\T100_SPG.hpp"
+    @Vehicles({
+        "faction": "t3_opfor",
+        "side": "OPFOR",
+        "camo": "Maze",
+        "vehicles": [
+            "M2_High",
+            "M2_Low",
+            "Ship_CIWS",
+            "Ship_BoxIR",
+            "Ship_BoxARH",
+            "Ship_Gun",
+            "Ship_VLS",
+            "Fennek",
+            "Fennek_HMG",
+            "Fennek_GMG",
+            "Typhoon_Bench",
+            "Typhoon_Covered",
+            "Typhoon_Cargo",
+            "Typhoon_Fuel",
+            "Typhoon_Ammo",
+            "Typhoon_Device",
+            "Typhoon_Repair",
+            "Typhoon_Medical",
+            "LSV",
+            "LSV_M134",
+            "LSV_Metis",
+            "C130",
+            "C130_Cargo",
+            "Otokar",
+            "Otokar_HMG",
+            "Otokar_RCWS",
+        ],
+    });
 
+    @Vehicles({
+        "faction": "t3_opfor",
+        "side": "OPFOR",
+        "camo": "Maze_jungle",
+        "vehicles": [
+            "T100",
+            "T100_Railgun",
+            "T100_SPG",
+        ],
+    });
 
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {

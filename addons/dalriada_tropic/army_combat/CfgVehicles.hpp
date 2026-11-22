@@ -1,32 +1,75 @@
 class CfgVehicles {
-    #define TEMPLATE_FACTION QPCLASS(t2_opfor)
-    #define TEMPLATE_SIDE 0
-    #include "..\..\..\templates\statics\XM3XX.hpp"
-    #define TEMPLATE_CAMO GreenHex
-    #include "..\..\..\templates\statics\SAM02.hpp"
-    #include "..\..\..\templates\tanks\T14.hpp"
-    #include "..\..\..\templates\tanks\T100.hpp"
-    #include "..\..\..\templates\tanks\T100_SPG.hpp"
-    #include "..\..\..\templates\apc\Otokar.hpp"
-    #include "..\..\..\templates\apc\BM2_AA.hpp"
-    #include "..\..\..\templates\apc\BM2K.hpp"
-    #include "..\..\..\templates\apc\BM2T.hpp"
-    #include "..\..\..\templates\cars\Karatel.hpp"
-    #include "..\..\..\templates\cars\Typhoon.hpp"
-    #include "..\..\..\templates\helicopters\Ka54.hpp"
-    #include "..\..\..\templates\helicopters\Orca_Civilian.hpp"
-    #include "..\..\..\templates\helicopters\Orca_Military.hpp"
-    #include "..\..\..\templates\helicopters\Taru.hpp"
-    #include "..\..\..\templates\planes\Yak130.hpp"
-    #include "..\..\..\templates\drones\UGV.hpp"
-    #include "..\..\..\templates\statics\Mk6.hpp"
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO CamoGreenHex
-    #include "..\..\..\templates\planes\SU75.hpp"
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO Opfor
-    #include "..\..\..\templates\drones\Shahpar.hpp"
-    #include "..\..\..\templates\drones\CH3A.hpp"
+    @Vehicles({
+        "faction": "t2_opfor",
+        "side": "OPFOR",
+        "camo": "GreenHex",
+        "vehicles": [
+            "XM_GMG_High",
+            "XM_GMG_Low",
+            "XM_HMG_High",
+            "XM_HMG_Low",
+            "Radar02",
+            "SAM02",
+            "T14",
+            "T14_RCWS",
+            "T100",
+            "T100_SPG",
+            "Otokar",
+            "Otokar_HMG",
+            "Otokar_RCWS",
+            "BM2_AA",
+            "BM2_IFV2",
+            "BM2_IFV1",
+            "Karatel",
+            "Karatel_HMG",
+            "Karatel_GMG",
+            "Typhoon_Bench",
+            "Typhoon_Covered",
+            "Typhoon_Cargo",
+            "Typhoon_Fuel",
+            "Typhoon_Ammo",
+            "Typhoon_Device",
+            "Typhoon_Repair",
+            "Typhoon_Medical",
+            "Ka54",
+            "Orca",
+            "OrcaAR",
+            "OrcaR",
+            "OrcaArmed",
+            "Taru",
+            "Taru_Ammo",
+            "Taru_Bench",
+            "Taru_Container",
+            "Taru_Fuel",
+            "Taru_Medevac",
+            "Taru_Repair",
+            "Taru_Covered",
+            "Yak130",
+            "UGV",
+            "UGV_RCWS",
+            "Mk6Mortar",
+        ],
+    });
+
+    @Vehicles({
+        "faction": "t2_opfor",
+        "side": "OPFOR",
+        "camo": "CamoGreenHex",
+        "vehicles": [
+            "SU75",
+            "SU75_Stealth",
+        ],
+    });
+
+    @Vehicles({
+        "faction": "t2_opfor",
+        "side": "OPFOR",
+        "camo": "Opfor",
+        "vehicles": [
+            "Shahpar",
+            "CH3A",
+        ],
+    });
 
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {

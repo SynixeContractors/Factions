@@ -1,24 +1,29 @@
 class CfgVehicles {
-    #define TEMPLATE_FACTION QPCLASS(t4_opfor)
-    #define TEMPLATE_SIDE 0
-    #include "..\..\..\templates\statics\M2.hpp"
-    #define TEMPLATE_CAMO_LIST {\
-        QUOTE(Olive),1,\
-        QUOTE(Brown),1,\
-    }
-    #include "..\..\..\templates\cars\Quadbike.hpp"
-    #undef TEMPLATE_CAMO_LIST
-    #define TEMPLATE_CAMO_LIST {\
-        QUOTE(Guerilla_04),1,\
-        QUOTE(Guerilla_05),1,\
-        QUOTE(Guerilla_07),1,\
-        QUOTE(Guerilla_08),1,\
-        QUOTE(Guerilla_09),1,\
-    }
-    #include "..\..\..\templates\cars\Offroad_Civilian.hpp"
-    #include "..\..\..\templates\cars\Offroad_Armed.hpp"
-    #include "..\..\..\templates\cars\Offroad_AA.hpp"
-    #undef TEMPLATE_CAMO_LIST
+    @Vehicles({
+        "faction": "t4_opfor",
+        "side": "OPFOR",
+        "camo": ["Olive", "Brown"],
+        "vehicles": [
+            "M2_High",
+            "M2_Low",
+            "QuadBike",
+        ],
+    });
+
+    @Vehicles({
+        "faction": "t4_opfor",
+        "side": "OPFOR",
+        "camo": ["Guerilla_04", "Guerilla_05", "Guerilla_07", "Guerilla_08", "Guerilla_09"],
+        "vehicles": [
+            "Offroad",
+            "Offroad_Covered",
+            "Offroad_Comms",
+            "Offroad_Services",
+            "Offroad_HMG",
+            "Offroad_AT",
+            "Offroad_AA",
+        ],
+    });
 
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {

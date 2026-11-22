@@ -366,6 +366,263 @@ fn groups(args, context) {
     return ret;
 }
 
+// True for preprocessor expressions such as QGCLASS(foo) or QUOTE(CLASS2(A,B)),
+// which are emitted as-is instead of being quoted
+fn is_macro_call(value) {
+    if type_of(value) != "string" || value.len() < 3 {
+        return false;
+    }
+    let first = value[0];
+    if !(first >= "A" && first <= "Z") || !value.ends_with(")") {
+        return false;
+    }
+    let open = value.index_of('(');
+    if open == -1 {
+        return false;
+    }
+    for i in 0..open {
+        let c = value[i];
+        if !((c >= "A" && c <= "Z") || (c >= "0" && c <= "9") || c == "_") {
+            return false;
+        }
+    }
+    return true;
+}
+
+// True for an all-caps preprocessor define such as FACTION or SIDE_NUMBER
+fn is_define(value) {
+    if type_of(value) != "string" || value.len() == 0 || !(value[0] >= "A" && value[0] <= "Z") {
+        return false;
+    }
+    for c in value.chars() {
+        if !((c >= 'A' && c <= 'Z') || (c >= '0' && c <= '9') || c == '_') {
+            return false;
+        }
+    }
+    return true;
+}
+
+fn config_value(value) {
+    switch type_of(value) {
+        "string" => {
+            if is_macro_call(value) {
+                return value;
+            }
+            let escaped = value;
+            escaped.replace("\"", "\"\"");
+            return "\"" + escaped + "\"";
+        }
+        "array" => {
+            let items = [];
+            for item in value {
+                items.push(config_value(item));
+            }
+            return "{" + items.reduce(|sum, v| if sum == () { v } else { sum + "," + v }, ()) + "}";
+        }
+        "bool" => {
+            return if value { "1" } else { "0" };
+        }
+        _ => { return "" + value; }
+    }
+}
+
+// Flatten generator/vehicles.json ({category: {class: definition}}) into {class: {crew, camo}}
+fn load_vehicles() {
+    let vehicles = #{};
+    let source = load_json("vehicles");
+    for category in source.keys() {
+        for class in source[category].keys() {
+            if class in vehicles {
+                fatal("Vehicle defined twice in vehicles.json: " + class);
+            }
+            let def = source[category][class];
+            let entry = #{ crew: (), camo: true };
+            switch type_of(def) {
+                "string" => { entry.crew = def; }
+                "()" => {}
+                "map" => {
+                    if "crew" in def { entry.crew = def.crew; }
+                    if "camo" in def { entry.camo = def.camo; }
+                }
+                _ => { fatal("Invalid vehicles.json entry for " + class); }
+            }
+            vehicles[class] = entry;
+        }
+    }
+    return vehicles;
+}
+
+// Wrap a name in the CLASS macro, applying an optional prefix / suffix (e.g. SIDE or NATION)
+fn vehicle_class_name(name, prefix, suffix) {
+    if prefix != () && suffix != () {
+        return "CLASS3(" + prefix + "," + name + "," + suffix + ")";
+    }
+    if prefix != () {
+        return "CLASS2(" + prefix + "," + name + ")";
+    }
+    if suffix != () {
+        return "CLASS2(" + name + "," + suffix + ")";
+    }
+    return "CLASS(" + name + ")";
+}
+
+fn vehicle_unit(role, prefix, suffix) {
+    if is_macro_call(role) {
+        return role;
+    }
+    return "QUOTE(" + vehicle_class_name(role, prefix, suffix) + ")";
+}
+
+fn vehicle_camo(camo) {
+    let list = [];
+    switch type_of(camo) {
+        "string" => { list.push(camo); list.push(1); }
+        "array" => { for c in camo { list.push(c); list.push(1); } }
+        "map" => { for c in camo.keys() { list.push(c); list.push(camo[c]); } }
+        _ => { fatal("Invalid camo: " + camo); }
+    }
+    return list;
+}
+
+// @Vehicles({
+//     "faction": "t3_opfor",      // QPCLASS(...) of this component, or a raw macro
+//     "side": "OPFOR",            // BLUFOR, OPFOR, INDEP, CIV, a number, or a raw define
+//     "camo": "Hex",              // optional: a texture name, list of names, or {name: weight}
+//     "crew": "Rifleman",         // optional: replace every vehicle's crew, or map {"HeliPilot": "Pilot"}
+//     "prefix": "SIDE",           // optional: CLASS2(prefix,Name) for classes and crew
+//     "suffix": "NATION",         // optional: CLASS2(Name,suffix) for classes and crew
+//     "properties": {...},        // optional: extra config properties for every vehicle
+//     "vehicles": [
+//         "Offroad_HMG",
+//         {"class": "Ram", "camo": "ION", "editorPreview": "\\path\\to\\preview.jpg"},
+//     ],
+// });
+//
+// Vehicle entries are base classes from generator/vehicles.json, which also gives each
+// one's default crew role and whether it accepts camo. An object entry can override
+// "name" (the class name, defaults to "class"), "camo", "crew" (null for none) and
+// "cargo" (list of roles, defaults to the crew), and any other key is emitted as a
+// config property.
+fn vehicles(args) {
+    if type_of(args) != "map" {
+        fatal("Vehicles macro requires an object argument");
+    }
+    for key in args.keys() {
+        if !(key in ["faction", "side", "camo", "crew", "prefix", "suffix", "properties", "vehicles"]) {
+            fatal("Unknown Vehicles option: " + key);
+        }
+    }
+    if !("faction" in args) || !("vehicles" in args) {
+        fatal("Vehicles macro requires faction and vehicles");
+    }
+
+    let prefix = if "prefix" in args { args.prefix } else { () };
+    let suffix = if "suffix" in args { args.suffix } else { () };
+
+    let faction = args.faction;
+    if !is_macro_call(faction) && !is_define(faction) {
+        faction = "QPCLASS(" + faction + ")";
+    }
+
+    let side = ();
+    if "side" in args {
+        side = switch args.side {
+            "BLUFOR" => 1,
+            "OPFOR" => 0,
+            "INDEP" => 2,
+            "CIV" => 3,
+            _ => args.side,
+        };
+    }
+
+    let declared = [];
+    let ret = "";
+    for entry in args.vehicles {
+        let opts = #{};
+        if type_of(entry) == "string" {
+            opts["class"] = entry;
+        } else if type_of(entry) == "map" && "class" in entry {
+            opts = entry;
+        } else {
+            fatal("Invalid Vehicles entry: " + entry);
+        }
+
+        let base = opts["class"];
+        if !(base in global::VEHICLES) {
+            fatal("Unknown vehicle (add it to generator/vehicles.json): " + base);
+        }
+        let def = global::VEHICLES[base];
+        let name = if "name" in opts { opts.name } else { base };
+
+        let crew = def.crew;
+        if crew != () && "crew" in args {
+            if type_of(args.crew) == "map" {
+                if crew in args.crew {
+                    crew = args.crew[crew];
+                }
+            } else {
+                crew = args.crew;
+            }
+        }
+        if "crew" in opts {
+            crew = opts.crew;
+        }
+
+        let camo = ();
+        if def.camo && "camo" in args {
+            camo = args.camo;
+        }
+        if "camo" in opts {
+            camo = opts.camo;
+        }
+
+        // Guarded so the declaration is emitted once per config, even when the
+        // macro is expanded repeatedly by @For / @ForSides or #include
+        if !(base in declared) {
+            let guard = "SYNIXE_VEHICLE_DECLARED_" + base;
+            ret += "#ifndef " + guard + "\n#define " + guard + "\nclass GCLASS(" + base + ");\n#endif\n";
+            declared.push(base);
+        }
+        ret += "class " + vehicle_class_name(name, prefix, suffix) + ": GCLASS(" + base + ") {\n";
+        ret += "SCOPE_DLC;\n";
+        ret += "faction = " + faction + ";\n";
+        if side != () {
+            ret += "side = " + side + ";\n";
+        }
+        if crew != () {
+            ret += "crew = " + vehicle_unit(crew, prefix, suffix) + ";\n";
+            let cargo = if "cargo" in opts { opts.cargo } else { [crew] };
+            let units = [];
+            for unit in cargo {
+                units.push(vehicle_unit(unit, prefix, suffix));
+            }
+            ret += "typicalCargo[] = {" + units.reduce(|sum, v| if sum == () { v } else { sum + "," + v }, ()) + "};\n";
+        }
+        if camo != () {
+            ret += "textureList[] = " + config_value(vehicle_camo(camo)) + ";\n";
+        }
+        let properties = #{};
+        if "properties" in args {
+            properties = args.properties;
+        }
+        for key in opts.keys() {
+            if !(key in ["class", "name", "crew", "cargo", "camo"]) {
+                properties[key] = opts[key];
+            }
+        }
+        for key in properties.keys() {
+            let value = properties[key];
+            if type_of(value) == "array" {
+                ret += key + "[] = " + config_value(value) + ";\n";
+            } else {
+                ret += key + " = " + config_value(value) + ";\n";
+            }
+        }
+        ret += "};\n";
+    }
+    return ret;
+}
+
 fn build_name_list(name, names_array) {
     let ret = "class " + name + " {\n";
     for i in 0..names_array.len() {
@@ -596,6 +853,9 @@ respawnLinkedItems[] = {};
         "Names" => {
             return names(args);
         }
+        "Vehicles" => {
+            return vehicles(args);
+        }
         "For" => {
             fatal("@For must be paired with @EndFor");
         }
@@ -811,6 +1071,7 @@ fn process_lines(lines, start_index, variables, context) {
 }
 
 const PACKS = load_json("packs");
+const VEHICLES = load_vehicles();
 
 let addons = HEMTT_VFS.join("addons").list();
 for addon in addons {

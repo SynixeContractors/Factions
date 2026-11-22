@@ -1,29 +1,64 @@
 class CfgVehicles {
-    #define TEMPLATE_FACTION QPCLASS(t3_opfor)
-    #define TEMPLATE_SIDE 0
-    #include "..\..\..\templates\statics\M2.hpp"
-    #define TEMPLATE_CAMO Sand
-    #include "..\..\..\templates\statics\Mk6.hpp"
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO Marar
-    #include "..\..\..\templates\cars\LUT_AA.hpp"
-    #include "..\..\..\templates\cars\LUT_Ammo.hpp"
-    #include "..\..\..\templates\cars\LUT_Cargo.hpp"
-    #include "..\..\..\templates\cars\LUT_Fuel.hpp"
-    #include "..\..\..\templates\cars\LUT_Medical.hpp"
-    #include "..\..\..\templates\cars\LUT_MRL.hpp"
-    #include "..\..\..\templates\cars\LUT_Repair.hpp"
-    #include "..\..\..\templates\cars\LUT_Transport.hpp"
-    #include "..\..\..\templates\apc\Badger.hpp"
-    #include "..\..\..\templates\cars\MATV.hpp"
-    #include "..\..\..\templates\helicopters\Orca_Civilian.hpp"
-    #include "..\..\..\templates\helicopters\Orca_Military.hpp"
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO Tan
-    #include "..\..\..\templates\cars\Ram_Civilian.hpp"
-    #include "..\..\..\templates\cars\Ram_Armed.hpp"
-    #include "..\..\..\templates\cars\Ram_Advanced.hpp"
-    #include "..\..\..\templates\cars\Ram_Rocket.hpp"
+    @Vehicles({
+        "faction": "t3_opfor",
+        "side": "OPFOR",
+        "camo": "Sand",
+        "vehicles": [
+            "M2_High",
+            "M2_Low",
+            "Mk6Mortar",
+        ],
+    });
+
+    @Vehicles({
+        "faction": "t3_opfor",
+        "side": "OPFOR",
+        "camo": "Marar",
+        "vehicles": [
+            "LUT_AA",
+            "LUT_Ammo",
+            "LUT_Cargo",
+            "LUT_Flatbed",
+            "LUT_Fuel",
+            "LUT_Medical",
+            "LUT_MRL",
+            "LUT_Repair",
+            "LUT_Transport",
+            "LUT_TransportCovered",
+            "Badger",
+            "Badger_Command",
+            "Badger_Mortar",
+            "Badger_ATGM",
+            "Badger_Unarmed",
+            "MATV",
+            "MATV_HMG",
+            "MATV_GMG",
+            "Orca",
+            "OrcaAR",
+            "OrcaR",
+            "OrcaArmed",
+        ],
+    });
+
+    @Vehicles({
+        "faction": "t3_opfor",
+        "side": "OPFOR",
+        "camo": "Tan",
+        "vehicles": [
+            "Ram",
+            "Ram_Covered",
+            "Ram_Comms",
+            "Ram_Fuel",
+            "Ram_HMG",
+            "Ram_MMG",
+            "Ram_AA",
+            "Ram_RCWS",
+            "Ram_M134",
+            "Ram_MRL",
+            "Ram_AT",
+            "Ram_Rocket",
+        ],
+    });
 
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {

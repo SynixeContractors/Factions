@@ -32,19 +32,14 @@ class CLASS2(Citizen_Firefighter_SCBA,NATION): CLASS2(Citizen_Firefighter,NATION
     });
 };
 
-class CLASS2(Ram_Fire,NATION): GCLASS(Ram) {
-    SCOPE_DLC;
-    faction = QCLASS(NATION);
-    editorSubcategory = QGCLASS(fire);
-    crew = QUOTE(CLASS2(Citizen_Firefighter,NATION));
-    typicalCargo[] = {QUOTE(CLASS2(Citizen_Firefighter,NATION))};
-    textureList[] = {"FireDept",1};
-};
-class CLASS2(HEMTT_FireTruck,NATION): GCLASS(HEMTT_FireTruck) {
-    SCOPE_DLC;
-    faction = QCLASS(NATION);
-    editorSubcategory = QGCLASS(fire);
-    crew = QUOTE(CLASS2(Citizen_Firefighter_SCBA,NATION));
-    typicalCargo[] = {QUOTE(CLASS2(Citizen_Firefighter_SCBA,NATION))};
-    textureList[] = {"Red",1};
-};
+@Vehicles({
+    "faction": "QPCLASS(NATION)",
+    "camo": "FireDept",
+    "crew": "Citizen_Firefighter",
+    "suffix": "NATION",
+    "properties": {"editorSubcategory": "QGCLASS(fire)"},
+    "vehicles": [
+        {"class": "Ram", "name": "Ram_Fire"},
+        {"class": "HEMTT_FireTruck", "camo": "Red", "crew": "Citizen_Firefighter_SCBA"},
+    ],
+});

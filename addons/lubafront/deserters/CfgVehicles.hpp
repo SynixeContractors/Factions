@@ -1,23 +1,32 @@
 class CfgVehicles {
-    #define TEMPLATE_FACTION QPCLASS(t4_opfor)
-    #define TEMPLATE_SIDE 0
-    #include "..\..\..\templates\statics\M2.hpp"
-    #define TEMPLATE_CAMO_LIST {\
-        QUOTE(Guerilla_03),1,\
-        QUOTE(Guerilla_06),1,\
-        QUOTE(Guerilla_07),1,\
-        QUOTE(Guerilla_08),1,\
-        QUOTE(Guerilla_09),1,\
-        QUOTE(Guerilla_10),1,\
-        QUOTE(Guerilla_11),1,\
-        QUOTE(Guerilla_12),1,\
-    }
-    #include "..\..\..\templates\cars\Offroad_Civilian.hpp"
-    #include "..\..\..\templates\cars\Offroad_Armed.hpp"
-    #include "..\..\..\templates\cars\Offroad_Armor.hpp"
-    #include "..\..\..\templates\cars\Offroad_AA.hpp"
-    #include "..\..\..\templates\cars\Offroad_Armor_AA.hpp"
-    #undef TEMPLATE_CAMO_LIST
+    @Vehicles({
+        "faction": "t4_opfor",
+        "side": "OPFOR",
+        "camo": [
+            "Guerilla_03",
+            "Guerilla_06",
+            "Guerilla_07",
+            "Guerilla_08",
+            "Guerilla_09",
+            "Guerilla_10",
+            "Guerilla_11",
+            "Guerilla_12",
+        ],
+        "vehicles": [
+            "M2_High",
+            "M2_Low",
+            "Offroad",
+            "Offroad_Covered",
+            "Offroad_Comms",
+            "Offroad_Services",
+            "Offroad_HMG",
+            "Offroad_AT",
+            "Offroad_Armored_HMG",
+            "Offroad_Armored_AT",
+            "Offroad_AA",
+            "Offroad_Armored_AA",
+        ],
+    });
 
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {

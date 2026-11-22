@@ -1,5 +1,43 @@
 class CfgVehicles {
-    #include "CfgVehicles_Vehicles.hpp"
+    @Vehicles({
+        "faction": "t2_opfor",
+        "side": "OPFOR",
+        "camo": "ForestRangers",
+        "crew": "RiflemanSMG",
+        "vehicles": [
+            {"class": "QuadBike", "editorSubcategory": "QGCLASS(forest_ranger_cars)"},
+        ],
+    });
+    //ram
+    @Vehicles({
+        "faction": "t2_opfor",
+        "side": "OPFOR",
+        "camo": "ParkRanger",
+        "crew": "RiflemanSMG",
+        "vehicles": [
+            {"class": "Ram", "editorSubcategory": "QGCLASS(forest_ranger_cars)"},
+            {"class": "Ram_Covered", "editorSubcategory": "QGCLASS(forest_ranger_cars)"},
+            {"class": "Ram_Comms", "editorSubcategory": "QGCLASS(forest_ranger_cars)"},
+            {"class": "Ram_Covered_Lights", "editorSubcategory": "QGCLASS(forest_ranger_cars)"},
+            {"class": "Ram_Bars_Covered", "editorSubcategory": "QGCLASS(forest_ranger_cars)"},
+            {"class": "Ram_Bars", "editorSubcategory": "QGCLASS(forest_ranger_cars)"},
+        ],
+    });
+    //offroad
+    @Vehicles({
+        "faction": "t2_opfor",
+        "side": "OPFOR",
+        "camo": "ParkRanger",
+        "crew": "RiflemanSMG",
+        "vehicles": [
+            {"class": "Offroad", "editorSubcategory": "QGCLASS(forest_ranger_cars)"},
+            {"class": "Offroad_Covered", "editorSubcategory": "QGCLASS(forest_ranger_cars)"},
+            {"class": "Offroad_Comms", "editorSubcategory": "QGCLASS(forest_ranger_cars)"},
+            {"class": "Offroad_Lights", "editorSubcategory": "QGCLASS(forest_ranger_cars)"},
+            {"class": "Offroad_Covered_Lights", "editorSubcategory": "QGCLASS(forest_ranger_cars)"},
+        ],
+    });
+
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {
         displayName = "Livonia Base";

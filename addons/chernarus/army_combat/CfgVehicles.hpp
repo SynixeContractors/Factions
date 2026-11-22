@@ -1,29 +1,58 @@
 class CfgVehicles {
-    #define TEMPLATE_FACTION QPCLASS(t2_indep)
-    #define TEMPLATE_SIDE 2
-    #include "..\..\..\templates\statics\M2.hpp"
-    #include "..\..\..\templates\statics\Ship.hpp"
-    #define TEMPLATE_CAMO Cdf
-    #include "..\..\..\templates\apc\BM2_AA.hpp"
-    #include "..\..\..\templates\cars\Karatel.hpp"
-    #include "..\..\..\templates\cars\LUT_AA.hpp"
-    #include "..\..\..\templates\cars\LUT_Ammo.hpp"
-    #include "..\..\..\templates\cars\LUT_Cargo.hpp"
-    #include "..\..\..\templates\cars\LUT_Fuel.hpp"
-    #include "..\..\..\templates\cars\LUT_MRL.hpp"
-    #include "..\..\..\templates\cars\LUT_Medical.hpp"
-    #include "..\..\..\templates\cars\LUT_Repair.hpp"
-    #include "..\..\..\templates\cars\LUT_Transport.hpp"
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO green
-    #include "..\..\..\templates\cars\Offroad_Civilian.hpp"
-    #include "..\..\..\templates\cars\Offroad_Armed.hpp"
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO cdf_green
-    #include "..\..\..\templates\tanks\T100.hpp"
-    #include "..\..\..\templates\tanks\T100_Railgun.hpp"
-    #include "..\..\..\templates\apc\BM2K.hpp"
-    #include "..\..\..\templates\apc\BM2T.hpp"
+    @Vehicles({
+        "faction": "t2_indep",
+        "side": "INDEP",
+        "camo": "Cdf",
+        "vehicles": [
+            "M2_High",
+            "M2_Low",
+            "Ship_CIWS",
+            "Ship_BoxIR",
+            "Ship_BoxARH",
+            "Ship_Gun",
+            "Ship_VLS",
+            "BM2_AA",
+            "Karatel",
+            "Karatel_HMG",
+            "Karatel_GMG",
+            "LUT_AA",
+            "LUT_Ammo",
+            "LUT_Cargo",
+            "LUT_Flatbed",
+            "LUT_Fuel",
+            "LUT_MRL",
+            "LUT_Medical",
+            "LUT_Repair",
+            "LUT_Transport",
+            "LUT_TransportCovered",
+        ],
+    });
+
+    @Vehicles({
+        "faction": "t2_indep",
+        "side": "INDEP",
+        "camo": "green",
+        "vehicles": [
+            "Offroad",
+            "Offroad_Covered",
+            "Offroad_Comms",
+            "Offroad_Services",
+            "Offroad_HMG",
+            "Offroad_AT",
+        ],
+    });
+
+    @Vehicles({
+        "faction": "t2_indep",
+        "side": "INDEP",
+        "camo": "cdf_green",
+        "vehicles": [
+            "T100",
+            "T100_Railgun",
+            "BM2_IFV2",
+            "BM2_IFV1",
+        ],
+    });
 
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {

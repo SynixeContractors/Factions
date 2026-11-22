@@ -1,34 +1,96 @@
 class CfgVehicles {
-    #define TEMPLATE_FACTION QPCLASS(t2_indep)
-    #define TEMPLATE_SIDE 2
-    #include "..\..\..\templates\statics\M2.hpp"
-    #define TEMPLATE_CAMO Green
-    #include "..\..\..\templates\statics\Mk6.hpp"
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO Grey
-    #include "..\..\..\templates\helicopters\Wildcat.hpp"
-    #include "..\..\..\templates\helicopters\Mohawk_Military.hpp"
-    #include "..\..\..\templates\boats\ABoat_HMG.hpp"
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO DarkGrey_BAF
-    #include "..\..\..\templates\planes\F35.hpp"
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO BAF
-    #include "..\..\..\templates\helicopters\Apache.hpp"
-    #include "..\..\..\templates\drones\Shahpar.hpp"
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO Blufor
-    #include "..\..\..\templates\tanks\Merkava.hpp"
-    #include "..\..\..\templates\tanks\Merkava_SPG.hpp"
-    #include "..\..\..\templates\apc\Namer.hpp"
-    #include "..\..\..\templates\cars\MATV.hpp"
-    #include "..\..\..\templates\cars\HEMTT.hpp"
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO dark_grey
-    #include "..\..\..\templates\planes\C130.hpp"
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO Sand
-    #include "..\..\..\templates\statics\SAM01.hpp"
+    @Vehicles({
+        "faction": "t2_indep",
+        "side": "INDEP",
+        "camo": "Green",
+        "vehicles": [
+            "M2_High",
+            "M2_Low",
+            "Mk6Mortar",
+        ],
+    });
+
+    @Vehicles({
+        "faction": "t2_indep",
+        "side": "INDEP",
+        "camo": "Grey",
+        "vehicles": [
+            "Wildcat",
+            "Wildcat_Pylons",
+            "Mohawk",
+            "AssaultBoat_HMG",
+        ],
+    });
+
+    @Vehicles({
+        "faction": "t2_indep",
+        "side": "INDEP",
+        "camo": "DarkGrey_BAF",
+        "vehicles": [
+            "F35",
+            "F35_Stealth",
+        ],
+    });
+
+    @Vehicles({
+        "faction": "t2_indep",
+        "side": "INDEP",
+        "camo": "BAF",
+        "vehicles": [
+            "Apache",
+            "Shahpar",
+        ],
+    });
+
+    @Vehicles({
+        "faction": "t2_indep",
+        "side": "INDEP",
+        "camo": "Blufor",
+        "vehicles": [
+            "Merkava",
+            "Merkava_TUSK",
+            "Merkava_SPG",
+            "Merkava_MLRS",
+            "Namer",
+            "Namer_AA",
+            "Namer_RCWS",
+            "Namer_CEV",
+            "MATV",
+            "MATV_HMG",
+            "MATV_GMG",
+            "HEMTT",
+            "HEMTT_Cargo",
+            "HEMTT_Flatbed",
+            "HEMTT_Repair",
+            "HEMTT_Container",
+            "HEMTT_Bench",
+            "HEMTT_Covered",
+            "HEMTT_Medical",
+            "HEMTT_Fuel",
+            "HEMTT_Ammo",
+            "HEMTT_FireTruck",
+        ],
+    });
+
+    @Vehicles({
+        "faction": "t2_indep",
+        "side": "INDEP",
+        "camo": "dark_grey",
+        "vehicles": [
+            "C130",
+            "C130_Cargo",
+        ],
+    });
+
+    @Vehicles({
+        "faction": "t2_indep",
+        "side": "INDEP",
+        "camo": "Sand",
+        "vehicles": [
+            "Radar01",
+            "SAM01",
+        ],
+    });
 
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {

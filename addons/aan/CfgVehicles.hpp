@@ -1,7 +1,4 @@
 class CfgVehicles {
-    class GCLASS(Van_Cargo);
-    class GCLASS(Van_Transport);
-
     class GCLASS(Base_CIV);
     class CLASS(CIV): GCLASS(Base_CIV) {
         faction = QGCLASS(aan);
@@ -9,22 +6,16 @@ class CfgVehicles {
     };
 
     @For(Identities)
-    class CLASS(Van_Cargo_$1): GCLASS(Van_Cargo) {
-        SCOPE_DLC;
-        faction = QGCLASS(aan);
-        textureList[] = {"AAN",1};
-        crew = QCLASS(Reporter_$1);
-        typicalCargo[] = {QCLASS(Reporter_$1)};
-        editorSubcategory = QGCLASS(generics_cars_$1);
-    };
-    class CLASS(Van_Transport_$1): GCLASS(Van_Transport) {
-        SCOPE_DLC;
-        faction = QGCLASS(aan);
-        textureList[] = {"AAN",1};
-        crew = QCLASS(Reporter_$1);
-        typicalCargo[] = {QCLASS(Reporter_$1)};
-        editorSubcategory = QGCLASS(generics_cars_$1);
-    };
+    @Vehicles({
+        "faction": "QGCLASS(aan)",
+        "camo": "AAN",
+        "crew": "Reporter_$1",
+        "properties": {"editorSubcategory": "QGCLASS(generics_cars_$1)"},
+        "vehicles": [
+            {"class": "Van_Cargo", "name": "Van_Cargo_$1"},
+            {"class": "Van_Transport", "name": "Van_Transport_$1"},
+        ],
+    });
 
     class CLASS(Reporter_$1): CLASS(CIV) {
         SCOPE_DLC;

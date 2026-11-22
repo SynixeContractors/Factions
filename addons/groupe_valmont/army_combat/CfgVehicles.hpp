@@ -1,12 +1,194 @@
-#include "CfgVehicles_Dinghy.hpp"
-#include "CfgVehicles_Fennek.hpp"
-#include "CfgVehicles_LUT.hpp"
-#include "CfgVehicles_Mk6Mortar.hpp"
-#include "CfgVehicles_Quad.hpp"
-#include "CfgVehicles_Ram.hpp"
-#include "CfgVehicles_UGV.hpp"
-#include "CfgVehicles_XM.hpp"
-#include "CfgVehicles_Wildcat.hpp"
+@Vehicles({
+    "faction": "QPCLASS(SIDE_FACTION)",
+    "side": "SIDE_NUMBER",
+    "camo": "Black",
+    "prefix": "SIDE",
+    "vehicles": [
+        {
+            "class": "Dinghy",
+            "hiddenSelectionsTextures": ["\\A3\\boat_F\\Boat_Transport_01\\data\\boat_transport_01_co.paa"],
+            "editorPreview": "\\A3\\EditorPreviews_F\\Data\\CfgVehicles\\B_Boat_Transport_01_F.jpg",
+        },
+    ],
+});
+
+@Vehicles({
+    "faction": "QPCLASS(SIDE_FACTION)",
+    "side": "SIDE_NUMBER",
+    "camo": "Olive",
+    "prefix": "SIDE",
+    "properties": {
+        "hiddenSelectionsTextures": ["\\A3_Aegis\\Soft_F_Aegis\\MRAP_03\\Data\\MRAP_03_ext_olive_CO.paa", "\\A3\\Data_F_Exp\\Vehicles\\Turret_olive_CO.paa"],
+    },
+    "vehicles": [
+        {
+            "class": "Fennek",
+            "cargo": ["Rifleman", "Rifleman"],
+            "editorPreview": "\\A3_Aegis\\EditorPreviews_F_Aegis\\Data\\CfgVehicles\\B_A_MRAP_03_tna_F.jpg",
+        },
+        {
+            "class": "Fennek_HMG",
+            "cargo": ["Rifleman", "Rifleman"],
+            "editorPreview": "\\A3_Aegis\\EditorPreviews_F_Aegis\\Data\\CfgVehicles\\B_A_MRAP_03_hmg_tna_F.jpg",
+        },
+        {
+            "class": "Fennek_GMG",
+            "cargo": ["Rifleman", "Rifleman"],
+            "editorPreview": "\\A3_Aegis\\EditorPreviews_F_Aegis\\Data\\CfgVehicles\\B_A_MRAP_03_gmg_tna_F.jpg",
+        },
+    ],
+});
+
+@Vehicles({
+    "faction": "QPCLASS(SIDE_FACTION)",
+    "side": "SIDE_NUMBER",
+    "camo": "Green",
+    "prefix": "SIDE",
+    "vehicles": [
+        {
+            "class": "LUT_Transport",
+            "hiddenSelectionsTextures": ["\\A3_Aegis\\Soft_F_Aegis\\Truck_02\\Data\\Truck_02_kab_RUkhk_CO.paa", "\\A3_Aegis\\Soft_F_Aegis\\Truck_02\\Data\\Truck_02_kuz_RUkhk_CO.paa", "\\A3_Aegis\\Soft_F_Aegis\\Truck_02\\Data\\Truck_02_int_RUkhk_CO.paa", "\\A3_Aegis\\Soft_F_Aegis\\Truck_02\\Data\\Truck_02_chassis_RUkhk_CO.paa"],
+            "editorPreview": "\\A3_Aegis\\EditorPreviews_F_Aegis\\Data\\CfgVehicles\\O_R_Truck_02_transport_F.jpg",
+        },
+        {
+            "class": "LUT_TransportCovered",
+            "hiddenSelectionsTextures": ["\\A3_Aegis\\Soft_F_Aegis\\Truck_02\\Data\\Truck_02_kab_RUkhk_CO.paa", "\\A3_Aegis\\Soft_F_Aegis\\Truck_02\\Data\\Truck_02_kuz_RUkhk_CO.paa", "\\A3_Aegis\\Soft_F_Aegis\\Truck_02\\Data\\Truck_02_int_RUkhk_CO.paa", "\\A3_Aegis\\Soft_F_Aegis\\Truck_02\\Data\\Truck_02_chassis_RUkhk_CO.paa"],
+            "editorPreview": "\\A3_Aegis\\EditorPreviews_F_Aegis\\Data\\CfgVehicles\\O_R_Truck_02_F.jpg",
+        },
+        {
+            "class": "LUT_Repair",
+            "hiddenSelectionsTextures": ["\\A3_Aegis\\Soft_F_Aegis\\Truck_02\\Data\\Truck_02_kab_RUkhk_CO.paa", "\\A3_Aegis\\Soft_F_Aegis\\Truck_02\\Data\\Truck_02_repair_RUkhk_CO.paa", "\\A3_Aegis\\Soft_F_Aegis\\Truck_02\\Data\\Truck_02_int_RUkhk_CO.paa", "\\A3_Aegis\\Soft_F_Aegis\\Truck_02\\Data\\Truck_02_chassis_RUkhk_CO.paa"],
+            "editorPreview": "\\A3_Aegis\\EditorPreviews_F_Aegis\\Data\\CfgVehicles\\O_R_Truck_02_box_F.jpg",
+        },
+        {
+            "class": "LUT_Medical",
+            "hiddenSelectionsTextures": ["\\A3_Aegis\\Soft_F_Aegis\\Truck_02\\Data\\Truck_02_kab_RUkhk_CO.paa", "\\A3_Aegis\\Soft_F_Aegis\\Truck_02\\Data\\Truck_02_kuz_RUkhk_CO.paa", "\\A3_Aegis\\Soft_F_Aegis\\Truck_02\\Data\\Truck_02_int_RUkhk_CO.paa", "\\A3_Aegis\\Soft_F_Aegis\\Truck_02\\Data\\Truck_02_chassis_RUkhk_CO.paa"],
+            "editorPreview": "\\A3_Aegis\\EditorPreviews_F_Aegis\\Data\\CfgVehicles\\O_R_Truck_02_medical_F.jpg",
+        },
+        {
+            "class": "LUT_Fuel",
+            "hiddenSelectionsTextures": ["\\A3_Aegis\\Soft_F_Aegis\\Truck_02\\Data\\Truck_02_kab_RUkhk_CO.paa", "\\A3_Aegis\\Soft_F_Aegis\\Truck_02\\Data\\Truck_02_fuel_RUkhk_CO.paa", "\\A3_Aegis\\Soft_F_Aegis\\Truck_02\\Data\\Truck_02_int_RUkhk_CO.paa", "\\A3_Aegis\\Soft_F_Aegis\\Truck_02\\Data\\Truck_02_chassis_RUkhk_CO.paa"],
+            "editorPreview": "\\A3_Aegis\\EditorPreviews_F_Aegis\\Data\\CfgVehicles\\O_R_Truck_02_fuel_F.jpg",
+        },
+        {
+            "class": "LUT_Ammo",
+            "hiddenSelectionsTextures": ["\\A3_Aegis\\Soft_F_Aegis\\Truck_02\\Data\\Truck_02_kab_RUkhk_CO.paa", "\\A3_Aegis\\Soft_F_Aegis\\Truck_02\\Data\\Truck_02_repair_RUkhk_CO.paa", "\\A3_Aegis\\Soft_F_Aegis\\Truck_02\\Data\\Truck_02_int_RUkhk_CO.paa", "\\A3_Aegis\\Soft_F_Aegis\\Truck_02\\Data\\Truck_02_chassis_RUkhk_CO.paa"],
+            "editorPreview": "\\A3_Aegis\\EditorPreviews_F_Aegis\\Data\\CfgVehicles\\O_R_Truck_02_Ammo_F.jpg",
+        },
+        {
+            "class": "LUT_MRL",
+            "hiddenSelectionsTextures": ["\\A3_Aegis\\Soft_F_Aegis\\Truck_02\\Data\\Truck_02_kab_RUkhk_CO.paa", "\\A3_Aegis\\Soft_F_Aegis\\Truck_02\\Data\\Truck_02_int_RUkhk_CO.paa", "\\A3_Aegis\\Soft_F_Aegis\\Truck_02\\Data\\Truck_02_MRL_RUkhk_CO.paa", "\\A3_Aegis\\Soft_F_Aegis\\Truck_02\\Data\\Truck_02_chassis_RUkhk_CO.paa"],
+            "editorPreview": "\\A3_Aegis\\EditorPreviews_F_Aegis\\Data\\CfgVehicles\\O_R_Truck_02_MRL_F.jpg",
+        },
+        {
+            "class": "LUT_Flatbed",
+            "camo": "Olive",
+            "hiddenSelectionsTextures": ["\\A3\\Soft_F_Beta\\Truck_02\\Data\\Truck_02_kab_OPFOR_CO.paa", "\\A3\\Soft_F_Beta\\Truck_02\\Data\\Truck_02_kuz_OPFOR_CO.paa", "\\A3\\Soft_F_Beta\\Truck_02\\Data\\Truck_02_int_CO.paa", "\\A3\\Soft_F_Beta\\Truck_02\\Data\\Truck_02_chassis_OPFOR_CO.paa", "lxws\\vehicles_f_lxws\\Truck_02\\data\\addons_black_co.paa"],
+            "editorPreview": "\\lxws\\editorpreviews_f_lxws\\Data\\CfgVehicles\\O_Truck_02_flatbed_lxWS.jpg",
+        },
+        {
+            "class": "Mk6Mortar",
+            "editorPreview": "\\A3\\EditorPreviews_F\\Data\\CfgVehicles\\B_Mortar_01_F.jpg",
+            "hiddenSelectionsTextures": ["\\A3\\Static_f\\Mortar_01\\data\\Mortar_01_CO.paa"],
+        },
+    ],
+});
+
+@Vehicles({
+    "faction": "QPCLASS(SIDE_FACTION)",
+    "side": "SIDE_NUMBER",
+    "camo": "Olive",
+    "prefix": "SIDE",
+    "vehicles": [
+        {
+            "class": "QuadBike",
+            "editorPreview": "\\A3\\EditorPreviews_F_Exp\\Data\\CfgVehicles\\B_T_Quadbike_01_F.jpg",
+            "hiddenSelectionsTextures": ["\\A3\\Soft_F_Exp\\Quadbike_01\\Data\\Quadbike_01_olive_CO.paa", "\\A3\\Soft_F_Exp\\Quadbike_01\\Data\\Quadbike_01_wheel_olive_CO.paa"],
+        },
+    ],
+});
+
+@Vehicles({
+    "faction": "QPCLASS(SIDE_FACTION)",
+    "side": "SIDE_NUMBER",
+    "camo": "NATO_P",
+    "prefix": "SIDE",
+    "vehicles": [
+        {
+            "class": "Ram",
+            "hiddenSelectionsTextures": ["\\lxRF\\vehicles_rf\\pickup_01\\Data\\pickup_01_ext_black_co.paa", "\\lxRF\\vehicles_rf\\pickup_01\\Data\\pickup_01_adds_co.paa", "\\lxrf\\vehicles_rf\\pickup_01\\data\\pickup_01_ext2_co.paa", "\\lxrf\\vehicles_rf\\pickup_01\\data\\pickup_01_aat_co.paa", "\\lxrf\\vehicles_rf\\pickup_01\\data\\pickup_01_launcher_co.paa", "\\lxRF\\vehicles_rf\\pickup_01\\Data\\pickup_01_service_black_co.paa"],
+            "editorPreview": "\\lxRF\\editorpreviews_rf\\Data\\CfgVehicles\\B_T_Pickup_rf.jpg",
+        },
+        {
+            "class": "Ram_Comms",
+            "hiddenSelectionsTextures": ["\\lxRF\\vehicles_rf\\pickup_01\\Data\\pickup_01_ext_black_co.paa", "\\lxRF\\vehicles_rf\\pickup_01\\Data\\pickup_01_adds_co.paa", "\\lxrf\\vehicles_rf\\pickup_01\\data\\pickup_01_ext2_co.paa", "\\lxrf\\vehicles_rf\\pickup_01\\data\\pickup_01_aat_co.paa", "\\lxrf\\vehicles_rf\\pickup_01\\data\\pickup_01_launcher_co.paa", "\\lxRF\\vehicles_rf\\pickup_01\\Data\\pickup_01_service_black_co.paa"],
+            "editorPreview": "\\lxRF\\editorpreviews_rf\\Data\\CfgVehicles\\B_T_Pickup_Comms_rf.jpg",
+        },
+        {
+            "class": "Ram_AT",
+            "cargo": ["Rifleman", "Rifleman"],
+            "hiddenSelectionsTextures": ["\\lxRF\\vehicles_rf\\pickup_01\\Data\\pickup_01_ext_black_co.paa", "\\lxRF\\vehicles_rf\\pickup_01\\Data\\pickup_01_adds_co.paa", "\\lxrf\\vehicles_rf\\pickup_01\\data\\pickup_01_ext2_co.paa", "\\lxrf\\vehicles_rf\\pickup_01\\data\\pickup_01_aat_co.paa", "\\lxrf\\vehicles_rf\\pickup_01\\data\\pickup_01_launcher_co.paa", "\\lxRF\\vehicles_rf\\pickup_01\\Data\\pickup_01_service_black_co.paa"],
+            "editorPreview": "\\lxRF\\editorpreviews_rf\\Data\\CfgVehicles\\B_T_Pickup_aat_rf.jpg",
+        },
+        {
+            "class": "Ram_AA",
+            "cargo": ["Rifleman", "Rifleman"],
+            "hiddenSelectionsTextures": ["\\lxRF\\vehicles_rf\\pickup_01\\Data\\pickup_01_ext_black_co.paa", "\\lxRF\\vehicles_rf\\pickup_01\\Data\\pickup_01_adds_co.paa", "\\lxrf\\vehicles_rf\\pickup_01\\data\\pickup_01_ext2_co.paa", "\\lxrf\\vehicles_rf\\pickup_01\\data\\pickup_01_aat_co.paa", "\\lxrf\\vehicles_rf\\pickup_01\\data\\pickup_01_launcher_co.paa", "\\lxRF\\vehicles_rf\\pickup_01\\Data\\pickup_01_service_black_co.paa"],
+            "editorPreview": "\\lxRF\\editorpreviews_rf\\Data\\CfgVehicles\\B_T_Pickup_aat_rf.jpg",
+        },
+        {
+            "class": "Ram_MRL",
+            "hiddenSelectionsTextures": ["\\lxRF\\vehicles_rf\\pickup_01\\Data\\pickup_01_ext_black_co.paa", "\\lxRF\\vehicles_rf\\pickup_01\\Data\\pickup_01_adds_co.paa", "\\lxrf\\vehicles_rf\\pickup_01\\data\\pickup_01_ext2_co.paa", "lxrf\\weapons_rf\\dynamicloadout\\data\\missile_Tratnyr_olive_co.paa", "\\lxRF\\vehicles_rf\\pickup_01\\Data\\pickup_01_service_black_co.paa"],
+            "editorPreview": "\\A3_Aegis\\EditorPreviews_F_Aegis\\Data\\CfgVehicles\\Aegis_O_A_Pickup_MRL_RF.jpg",
+        },
+        {
+            "class": "Ram_MMG",
+            "hiddenSelectionsTextures": ["\\lxRF\\vehicles_rf\\pickup_01\\Data\\pickup_01_ext_black_co.paa", "\\lxRF\\vehicles_rf\\pickup_01\\Data\\pickup_01_adds_co.paa", "\\lxrf\\vehicles_rf\\pickup_01\\data\\pickup_01_ext2_co.paa", "\\lxrf\\vehicles_rf\\pickup_01\\data\\pickup_01_aat_co.paa", "\\lxrf\\vehicles_rf\\pickup_01\\data\\pickup_01_launcher_co.paa", "\\lxRF\\vehicles_rf\\pickup_01\\Data\\pickup_01_service_black_co.paa"],
+            "editorPreview": "\\lxRF\\editorpreviews_rf\\Data\\CfgVehicles\\B_T_Pickup_mmg_rf.jpg",
+        },
+    ],
+});
+
+@Vehicles({
+    "faction": "QPCLASS(SIDE_FACTION)",
+    "side": "SIDE_NUMBER",
+    "camo": "Green",
+    "prefix": "SIDE",
+    "properties": {
+        "hiddenSelectionsTextures": ["\\A3\\Soft_F_Exp\\UGV_01\\Data\\UGV_01_ext_olive_CO.paa", "\\A3\\Soft_F_Exp\\UGV_01\\Data\\UGV_01_int_olive_CO.paa", "\\A3\\Data_F_Exp\\Vehicles\\Turret_olive_CO.paa"],
+    },
+    "vehicles": [
+        {
+            "class": "UGV_RCWS",
+            "editorPreview": "\\A3\\EditorPreviews_F_Exp\\Data\\CfgVehicles\\B_T_UGV_01_rcws_olive_F.jpg",
+        },
+        {"class": "UGV", "editorPreview": "\\A3\\EditorPreviews_F_Exp\\Data\\CfgVehicles\\B_T_UGV_01_olive_F.jpg"},
+    ],
+});
+
+@Vehicles({
+    "faction": "QPCLASS(SIDE_FACTION)",
+    "side": "SIDE_NUMBER",
+    "prefix": "SIDE",
+    "vehicles": [
+        "XM_HMG_Low",
+        "XM_HMG_High",
+    ],
+});
+
+@Vehicles({
+    "faction": "QPCLASS(SIDE_FACTION)",
+    "side": "SIDE_NUMBER",
+    "camo": "Black",
+    "prefix": "SIDE",
+    "properties": {
+        "hiddenSelectionsTextures": ["\\lxRF\\air_rf\\Heli_Light_03\\data\\Heli_Light_03_base_black_CO.paa", "a3\\weapons_f\\ammoboxes\\data\\ammobox_co.paa", "a3\\weapons_f\\ammoboxes\\data\\ammobox_signs_ca.paa"],
+    },
+    "vehicles": [
+        "Wildcat_Pylons",
+        "Wildcat",
+    ],
+});
 
 class PCLASS2(SIDE,Base);
 class CLASS2(SIDE,Base): PCLASS2(SIDE,Base) {

@@ -1,22 +1,17 @@
 class CfgVehicles {
-    #define TEMPLATE_FACTION QPCLASS(t4_opfor)
-    #define TEMPLATE_SIDE 0
-    #define TEMPLATE_CAMO_LIST {\
-        QUOTE(Olive),1,\
-        QUOTE(Brown),1,\
-    }
-    #include "..\..\..\templates\cars\Jeep.hpp"
-    #include "..\..\..\templates\cars\Jay.hpp"
-    #undef TEMPLATE_CAMO_LIST
-    #define TEMPLATE_CAMO_LIST {\
-        QUOTE(Furious),1,\
-        QUOTE(Graywatcher),1,\
-        QUOTE(Shadow),1,\
-        QUOTE(Jeans),1,\
-        QUOTE(Vrana),1,\
-    }
-    #include "..\..\..\templates\helicopters\MD500_Civilian.hpp"
-    #undef TEMPLATE_CAMO_LIST
+    @Vehicles({
+        "faction": "t4_opfor",
+        "side": "OPFOR",
+        "camo": ["Olive", "Brown"],
+        "vehicles": [
+            "Jeep",
+            "Jeep_LMG",
+            "Jay_Flatbed",
+            "Jay_Box",
+            "Jay_Fuel",
+            {"class": "MD500", "camo": ["Furious", "Graywatcher", "Shadow", "Jeans", "Vrana"]},
+        ],
+    });
 
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {

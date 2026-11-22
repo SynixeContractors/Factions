@@ -1,7 +1,36 @@
 class CfgVehicles {
+    @Vehicles({
+        "faction": "t3_indep",
+        "side": "INDEP",
+        "camo": "Olive",
+        "vehicles": [
+            {
+                "class": "Polaris",
+                "cargo": ["Rifleman", "Rifleman"],
+                "editorPreview": "\\A3\\EditorPreviews_F_Exp\\Data\\CfgVehicles\\B_LSV_01_unarmed_F.jpg",
+                "hiddenSelectionsTextures": [],
+            },
+            {
+                "class": "Polaris_NoDoor",
+                "cargo": ["Rifleman", "Rifleman"],
+                "editorPreview": "\\A3_Aegis\\EditorPreviews_F_Aegis\\Data\\CfgVehicles\\B_LSV_01_light_F.jpg",
+                "hiddenSelectionsTextures": [],
+            },
+            {
+                "class": "Polaris_Titan",
+                "cargo": ["Rifleman", "Rifleman"],
+                "editorPreview": "\\A3\\EditorPreviews_F_Exp\\Data\\CfgVehicles\\B_LSV_01_AT_F.jpg",
+                "hiddenSelectionsTextures": [],
+            },
+            {
+                "class": "Polaris_HMG",
+                "cargo": ["Rifleman", "Rifleman"],
+                "editorPreview": "\\A3\\EditorPreviews_F_Exp\\Data\\CfgVehicles\\B_LSV_01_armed_F.jpg",
+                "hiddenSelectionsTextures": [],
+            },
+        ],
+    });
 
-    #include "CfgVehicles_Cars.hpp"
-    
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {
         displayName = "Breznia Base Army SOF";

@@ -1,5 +1,5 @@
 class CLASS2(SIDE,Suit): CLASS2(Base,NATION) {
-    side = TEMPLATE_SIDE;
+    side = SIDE_NUMBER;
     editorSubcategory = QCLASS2(NATION,Professionals_Suit);
     faction = FACTION;
 

@@ -1,47 +1,94 @@
 class CfgVehicles {
-    #define TEMPLATE_FACTION QPCLASS(t2_indep)
-    #define TEMPLATE_SIDE 2
-    #include "..\..\..\templates\statics\M2.hpp"
-    #define TEMPLATE_CAMO Indep
-    #include "..\..\..\templates\cars\LUT_AA.hpp"
-    #include "..\..\..\templates\cars\LUT_Ammo.hpp"
-    #include "..\..\..\templates\cars\LUT_Cargo.hpp"
-    #include "..\..\..\templates\cars\LUT_Fuel.hpp"
-    #include "..\..\..\templates\cars\LUT_MRL.hpp"
-    #include "..\..\..\templates\cars\LUT_Medical.hpp"
-    #include "..\..\..\templates\cars\LUT_Repair.hpp"
-    #include "..\..\..\templates\cars\LUT_Transport.hpp"
-    #include "..\..\..\templates\cars\Fennek.hpp"
-    #include "..\..\..\templates\apc\BTR.hpp"
-    #include "..\..\..\templates\apc\BTR_SPG.hpp"
-    #include "..\..\..\templates\apc\Pandur.hpp"
-    #include "..\..\..\templates\apc\Warrior.hpp"
-    #include "..\..\..\templates\drones\Shahpar.hpp"
-    #include "..\..\..\templates\drones\UGV.hpp"
-    #include "..\..\..\templates\helicopters\Apache.hpp"
-    #include "..\..\..\templates\helicopters\Mohawk_Military.hpp"
-    #include "..\..\..\templates\helicopters\Orca_Military.hpp"
-    #include "..\..\..\templates\helicopters\Orca_Civilian.hpp"
-    #include "..\..\..\templates\helicopters\Wildcat.hpp"
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO Indep_01_green
-    #include "..\..\..\templates\tanks\Leopard.hpp"
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO Indep_01
-    #include "..\..\..\templates\tanks\Wiesel.hpp"
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO AAF
-    #include "..\..\..\templates\helicopters\Puma_Military.hpp"
-    #include "..\..\..\templates\helicopters\Puma_Civilian.hpp"
-    #include "..\..\..\templates\drones\MQ9.hpp"
-    #include "..\..\..\templates\cars\Ram_Civilian.hpp"
-    #include "..\..\..\templates\cars\Ram_Advanced.hpp"
-    #include "..\..\..\templates\cars\Ram_Armed.hpp"
-    #include "..\..\..\templates\cars\Ram_Rocket.hpp"
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO Green
-    #include "..\..\..\templates\statics\SAM02.hpp"
-    #include "..\..\..\templates\statics\Mk6.hpp"
+    @Vehicles({
+        "faction": "t2_indep",
+        "side": "INDEP",
+        "camo": "Indep",
+        "vehicles": [
+            "M2_High",
+            "M2_Low",
+            "LUT_AA",
+            "LUT_Ammo",
+            "LUT_Cargo",
+            "LUT_Flatbed",
+            "LUT_Fuel",
+            "LUT_MRL",
+            "LUT_Medical",
+            "LUT_Repair",
+            "LUT_Transport",
+            "LUT_TransportCovered",
+            "Fennek",
+            "Fennek_HMG",
+            "Fennek_GMG",
+            "BTR",
+            "BTR_SPG",
+            "Pandur",
+            "Warrior",
+            "Shahpar",
+            "UGV",
+            "UGV_RCWS",
+            "Apache",
+            "Mohawk",
+            "OrcaAR",
+            "OrcaR",
+            "OrcaArmed",
+            "Orca",
+            "Wildcat",
+            "Wildcat_Pylons",
+            {"class": "Leopard2", "camo": "Indep_01_green"},
+        ],
+    });
+
+    @Vehicles({
+        "faction": "t2_indep",
+        "side": "INDEP",
+        "camo": "Indep_01",
+        "vehicles": [
+            "Wiesel",
+            "Wiesel_SAM",
+            "Wiesel_ATGM",
+            "Wiesel_Radar",
+        ],
+    });
+
+    @Vehicles({
+        "faction": "t2_indep",
+        "side": "INDEP",
+        "camo": "AAF",
+        "vehicles": [
+            "PumaM",
+            "PumaT",
+            "Cougar",
+            "Cougar_Armed",
+            "Cougar_Pylon",
+            "Puma",
+            "PumaA",
+            "Cougar_Rescue",
+            "MQ9",
+            "Ram",
+            "Ram_Covered",
+            "Ram_Comms",
+            "Ram_Fuel",
+            "Ram_AA",
+            "Ram_RCWS",
+            "Ram_M134",
+            "Ram_MRL",
+            "Ram_AT",
+            "Ram_HMG",
+            "Ram_MMG",
+            "Ram_Rocket",
+        ],
+    });
+
+    @Vehicles({
+        "faction": "t2_indep",
+        "side": "INDEP",
+        "camo": "Green",
+        "vehicles": [
+            "Radar02",
+            "SAM02",
+            "Mk6Mortar",
+        ],
+    });
 
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {

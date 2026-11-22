@@ -4,11 +4,6 @@
 
 class PCLASS2(SIDE,Base);
 class CLASS2(SIDE,Base): PCLASS2(SIDE,Base) {
-    #define TEMPLATE_FACTION QPCLASS(SIDE_FACTION)
-    #define TEMPLATE_SIDE SIDE_NUMBER
-    #undef TEMPLATE_FACTION
-    #undef TEMPLATE_SIDE
-
     displayName = "Swift Response Battalions";
     editorSubcategory = QGCLASS(Militia);
         

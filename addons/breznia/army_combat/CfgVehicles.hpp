@@ -1,10 +1,329 @@
 class CfgVehicles {
+    // Pandur
 
-    #include "CfgVehicles_APC.hpp"
-    #include "CfgVehicles_Tank.hpp"
-    #include "CfgVehicles_Cars.hpp"
-    #include "CfgVehicles_Helicopters.hpp"
-    #include "CfgVehicles_Planes.hpp"
+    @Vehicles({
+        "faction": "t3_indep",
+        "side": "INDEP",
+        "camo": "Olive_01",
+        "vehicles": [
+            {
+                "class": "Pandur",
+                "cargo": ["Crewman", "Crewman", "Crewman"],
+                "editorPreview": "\\A3_Aegis\\EditorPreviews_F_Aegis\\Data\\CfgVehicles\\B_APC_Wheeled_01_cannon_v2_F.jpg",
+            },
+        ],
+    });
+
+    // Badger
+
+    @Vehicles({
+        "faction": "t3_indep",
+        "side": "INDEP",
+        "camo": "Olive",
+        "vehicles": [
+            {
+                "class": "Badger_Unarmed",
+                "cargo": ["Crewman", "Crewman", "Crewman"],
+                "editorPreview": "\\A3_Aegis\\EditorPreviews_F_Aegis\\Data\\CfgVehicles\\B_APC_Wheeled_01_medical_F.jpg",
+            },
+            {
+                "class": "Badger_Medical",
+                "cargo": ["Crewman", "Crewman", "Crewman"],
+                "editorPreview": "\\A3_Aegis\\EditorPreviews_F_Aegis\\Data\\CfgVehicles\\B_APC_Wheeled_01_medical_F.jpg",
+            },
+        ],
+    });
+
+    // Warrior
+
+    @Vehicles({
+        "faction": "t3_indep",
+        "side": "INDEP",
+        "camo": "Olive_01",
+        "vehicles": [
+            {
+                "class": "Warrior",
+                "cargo": ["Crewman", "Crewman", "Crewman"],
+                "editorPreview": "\\A3_Aegis\\EditorPreviews_F_Aegis\\Data\\CfgVehicles\\I_APC_tracked_03_cannon_v2_F.jpg",
+            },
+        ],
+    });
+
+    // BMP
+
+    @Vehicles({
+        "faction": "t3_indep",
+        "side": "INDEP",
+        "camo": "Green",
+        "vehicles": [
+            {
+                "class": "BM2_IFV1",
+                "cargo": ["Crewman", "Crewman", "Crewman"],
+                "editorPreview": "\\lxws\\editorpreviews_f_lxws\\Data\\CfgVehicles\\O_APC_Tracked_02_30mm_lxWS.jpg",
+            },
+            {
+                "class": "BM2_IFV2",
+                "cargo": ["Crewman", "Crewman", "Crewman"],
+                "editorPreview": "\\A3\\EditorPreviews_F\\Data\\CfgVehicles\\O_APC_Tracked_02_cannon_F.jpg",
+            },
+            {
+                "class": "BM2_AA",
+                "cargo": ["Crewman", "Crewman", "Crewman"],
+                "editorPreview": "\\A3\\EditorPreviews_F\\Data\\CfgVehicles\\O_APC_Tracked_02_AA_F.jpg",
+            },
+        ],
+    });
+
+    // BTR
+
+    @Vehicles({
+        "faction": "t3_indep",
+        "side": "INDEP",
+        "camo": "Green",
+        "vehicles": [
+            {
+                "class": "BTR",
+                "cargo": ["Crewman", "Crewman", "Crewman"],
+                "editorPreview": "\\A3_Aegis\\EditorPreviews_F_Aegis\\Data\\CfgVehicles\\Aegis_O_A_APC_Wheeled_04_export_F.jpg",
+            },
+            {
+                "class": "BTR_IFV",
+                "cargo": ["Crewman", "Crewman", "Crewman"],
+                "editorPreview": "\\A3_Aegis\\EditorPreviews_F_Aegis\\Data\\CfgVehicles\\O_R_APC_Wheeled_04_cannon_F.jpg",
+            },
+        ],
+    });
+
+    @Vehicles({
+        "faction": "t3_indep",
+        "side": "INDEP",
+        "camo": "Olive_01_green",
+        "vehicles": [
+            {
+                "class": "Leopard2",
+                "cargo": ["Crewman", "Crewman", "Crewman"],
+                "editorPreview": "\\A3\\EditorPreviews_F\\Data\\CfgVehicles\\I_MBT_03_cannon_F.jpg",
+            },
+        ],
+    });
+
+    @Vehicles({
+        "faction": "t3_indep",
+        "side": "INDEP",
+        "camo": "Green",
+        "vehicles": [
+            {
+                "class": "T100",
+                "cargo": ["Crewman", "Crewman", "Crewman"],
+                "editorPreview": "\\A3\\EditorPreviews_F\\Data\\CfgVehicles\\O_MBT_02_cannon_F.jpg",
+            },
+            {"class": "Ram", "editorPreview": "\\lxRF\\editorpreviews_rf\\Data\\CfgVehicles\\B_T_Pickup_rf.jpg"},
+            {"class": "Ram_Covered", "editorPreview": ""},
+            {"class": "Ram_MMG", "editorPreview": ""},
+        ],
+    });
+
+    @Vehicles({
+        "faction": "t3_indep",
+        "side": "INDEP",
+        "camo": "NATO_P",
+        "vehicles": [
+            {
+                "class": "Ram_AA",
+                "editorPreview": "\\A3_Atlas\\EditorPreviews_F_Atlas\\Data\\CfgVehicles\\Atlas_I_I_Pickup_aat_F.jpg",
+            },
+            {
+                "class": "Ram_RCWS",
+                "editorPreview": "\\lxrf\\editorpreviews_rf\\Data\\CfgVehicles\\B_ION_Pickup_rcws_rf.jpg",
+            },
+            {
+                "class": "Ram_Comms",
+                "editorPreview": "\\lxRF\\editorpreviews_rf\\Data\\CfgVehicles\\B_T_Pickup_Comms_rf.jpg",
+            },
+        ],
+    });
+
+    @Vehicles({
+        "faction": "t3_indep",
+        "side": "INDEP",
+        "camo": "Green",
+        "vehicles": [
+            {
+                "class": "LUT_Transport",
+                "editorPreview": "\\A3_Aegis\\EditorPreviews_F_Aegis\\Data\\CfgVehicles\\O_R_Truck_02_transport_ard_F.jpg",
+            },
+            {
+                "class": "LUT_TransportCovered",
+                "editorPreview": "\\A3_Aegis\\EditorPreviews_F_Aegis\\Data\\CfgVehicles\\O_R_Truck_02_ard_F.jpg",
+            },
+            {
+                "class": "LUT_Repair",
+                "editorPreview": "\\A3_Aegis\\EditorPreviews_F_Aegis\\Data\\CfgVehicles\\O_R_Truck_02_box_ard_F.jpg",
+            },
+        ],
+    });
+
+    @Vehicles({
+        "faction": "t3_indep",
+        "side": "INDEP",
+        "camo": "Green",
+        "crew": "Medic",
+        "vehicles": [
+            {
+                "class": "LUT_Medical",
+                "editorPreview": "\\A3_Aegis\\EditorPreviews_F_Aegis\\Data\\CfgVehicles\\O_R_Truck_02_medical_ard_F.jpg",
+            },
+        ],
+    });
+
+    @Vehicles({
+        "faction": "t3_indep",
+        "side": "INDEP",
+        "camo": "Green",
+        "vehicles": [
+            {
+                "class": "LUT_Fuel",
+                "editorPreview": "\\A3_Aegis\\EditorPreviews_F_Aegis\\Data\\CfgVehicles\\O_R_Truck_02_fuel_ard_F.jpg",
+            },
+        ],
+    });
+
+    @Vehicles({
+        "faction": "t3_indep",
+        "side": "INDEP",
+        "camo": "Rus",
+        "vehicles": [
+            {
+                "class": "LUT_Flatbed",
+                "editorPreview": "\\lxws\\editorpreviews_f_lxws\\Data\\CfgVehicles\\O_Truck_02_flatbed_lxWS.jpg",
+            },
+        ],
+    });
+
+    @Vehicles({
+        "faction": "t3_indep",
+        "side": "INDEP",
+        "camo": "Green",
+        "vehicles": [
+            {
+                "class": "LUT_Ammo",
+                "editorPreview": "\\A3_Aegis\\EditorPreviews_F_Aegis\\Data\\CfgVehicles\\O_R_Truck_02_Ammo_ard_F.jpg",
+            },
+            {
+                "class": "LUT_MRL",
+                "cargo": ["Rifleman", "Rifleman"],
+                "editorPreview": "\\A3_Aegis\\EditorPreviews_F_Aegis\\Data\\CfgVehicles\\O_R_Truck_02_MRL_F.jpg",
+            },
+        ],
+    });
+
+    @Vehicles({
+        "faction": "t3_indep",
+        "side": "INDEP",
+        "camo": "Olive",
+        "vehicles": [
+            {
+                "class": "MATV",
+                "cargo": ["Rifleman", "Rifleman"],
+                "editorPreview": "\\A3\\EditorPreviews_F\\Data\\CfgVehicles\\B_MRAP_01_F.jpg",
+            },
+            {
+                "class": "MATV_HMG",
+                "cargo": ["Rifleman", "Rifleman"],
+                "editorPreview": "\\A3\\EditorPreviews_F\\Data\\CfgVehicles\\B_MRAP_01_hmg_F.jpg",
+            },
+            {
+                "class": "MATV_GMG",
+                "cargo": ["Rifleman", "Rifleman"],
+                "editorPreview": "\\A3\\EditorPreviews_F\\Data\\CfgVehicles\\B_MRAP_01_gmg_F.jpg",
+            },
+        ],
+    });
+
+    @Vehicles({
+        "faction": "t3_indep",
+        "side": "INDEP",
+        "camo": "Green",
+        "vehicles": [
+            {
+                "class": "Orca",
+                "cargo": ["HeliPilot", "HeliPilot", "HeliPilot"],
+                "editorPreview": "\\A3\\EditorPreviews_F\\Data\\CfgVehicles\\O_Heli_Light_02_unarmed_F.jpg",
+            },
+            {
+                "class": "OrcaArmed",
+                "cargo": ["HeliPilot", "HeliPilot", "HeliPilot"],
+                "editorPreview": "\\A3\\EditorPreviews_F\\Data\\CfgVehicles\\O_Heli_Light_02_dynamicLoadout_F.jpg",
+            },
+            {
+                "class": "OrcaR",
+                "cargo": ["HeliPilot", "HeliPilot", "HeliPilot"],
+                "editorPreview": "\\lxws\\editorpreviews_f_lxws\\Data\\CfgVehicles\\B_ION_Heli_Light_02_unarmed_lxWS.jpg",
+            },
+            {
+                "class": "OrcaAR",
+                "cargo": ["HeliPilot", "HeliPilot", "HeliPilot"],
+                "editorPreview": "\\lxws\\editorpreviews_f_lxws\\Data\\CfgVehicles\\B_ION_Heli_Light_02_dynamicLoadout_lxWS.jpg",
+            },
+            {
+                "class": "Mi35",
+                "cargo": ["HeliPilot", "HeliPilot", "HeliPilot"],
+                "editorPreview": "\\A3_Aegis\\EditorPreviews_F_Aegis\\Data\\CfgVehicles\\Aegis_B_Heli_Attack_03_F.jpg",
+            },
+            {
+                "class": "Ka54",
+                "cargo": ["HeliPilot", "HeliPilot", "HeliPilot"],
+                "editorPreview": "\\A3\\EditorPreviews_F\\Data\\CfgVehicles\\O_Heli_Attack_02_dynamicLoadout_F.jpg",
+            },
+        ],
+    });
+
+    @Vehicles({
+        "faction": "t3_indep",
+        "side": "INDEP",
+        "camo": "RUBlue",
+        "crew": "FighterPilot",
+        "vehicles": [
+            {
+                "class": "SU75",
+                "editorPreview": "\\A3\\EditorPreviews_F_Jets\\Data\\CfgVehicles\\O_Plane_Fighter_02_F.jpg",
+            },
+            {
+                "class": "SU75_Stealth",
+                "editorPreview": "\\A3\\EditorPreviews_F_Jets\\Data\\Cfgvehicles\\O_Plane_Fighter_02_F.jpg",
+            },
+            {
+                "class": "Yak130",
+                "editorPreview": "\\A3\\EditorPreviews_F\\Data\\CfgVehicles\\O_Plane_CAS_02_dynamicLoadout_F.jpg",
+            },
+        ],
+    });
+
+    @Vehicles({
+        "faction": "t3_indep",
+        "side": "INDEP",
+        "camo": "Rus",
+        "vehicles": [
+            {
+                "class": "Shahpar",
+                "crew": "QUOTE(C_UAV_AI_F)",
+                "editorPreview": "\\A3\\EditorPreviews_F\\Data\\CfgVehicles\\O_UAV_02_dynamicLoadout_F.jpg",
+            },
+        ],
+    });
+
+    @Vehicles({
+        "faction": "t3_indep",
+        "side": "INDEP",
+        "camo": "GenBlue",
+        "vehicles": [
+            {
+                "class": "C130",
+                "cargo": ["HeliPilot", "HeliPilot", "HeliPilot"],
+                "editorPreview": "\\A3_Aegis\\EditorPreviews_F_Aegis\\Data\\CfgVehicles\\B_A_Plane_Transport_01_infantry_F.jpg",
+            },
+        ],
+    });
 
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {

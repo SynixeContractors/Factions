@@ -1,36 +1,68 @@
 class CfgVehicles {
-    #define TEMPLATE_FACTION QPCLASS(t2_opfor)
-    #define TEMPLATE_SIDE 0
-    #include "..\..\..\templates\statics\XM3XX.hpp"
-    #include "..\..\..\templates\statics\M2.hpp"
+    @Vehicles({
+        "faction": "t2_opfor",
+        "side": "OPFOR",
+        "vehicles": [
+            "XM_GMG_High",
+            "XM_GMG_Low",
+            "XM_HMG_High",
+            "XM_HMG_Low",
+            "M2_High",
+            "M2_Low",
+        ],
+    });
     // this probably should go into an army faction
-    #define TEMPLATE_CAMO EAF_Arid
-    #include "..\..\..\templates\apc\Badger.hpp"
-    #include "..\..\..\templates\apc\Warrior.hpp"
-
-    #include "..\..\..\templates\tanks\Leopard.hpp"
-
-    #include "..\..\..\templates\cars\LUT_AA.hpp"
-    #include "..\..\..\templates\cars\LUT_Ammo.hpp"
-    #include "..\..\..\templates\cars\LUT_Cargo.hpp"
-    #include "..\..\..\templates\cars\LUT_Fuel.hpp"
-    #include "..\..\..\templates\cars\LUT_MRL.hpp"
-    #include "..\..\..\templates\cars\LUT_Medical.hpp"
-    #include "..\..\..\templates\cars\LUT_Repair.hpp"
-    #include "..\..\..\templates\cars\LUT_Transport.hpp"
-
-    #include "..\..\..\templates\cars\Offroad_Civilian.hpp"
-    #include "..\..\..\templates\cars\Offroad_Armed.hpp"
-
-    #include "..\..\..\templates\cars\Ram_Civilian.hpp"
-    #include "..\..\..\templates\cars\Ram_Armed.hpp"
-    #include "..\..\..\templates\cars\Ram_Advanced.hpp"
-
-    #include "..\..\..\templates\helicopters\Wildcat.hpp"
-    #include "..\..\..\templates\helicopters\Mi35.hpp"
-    #include "..\..\..\templates\helicopters\Puma_Military.hpp"
-
-    #include "..\..\..\templates\drones\UGV.hpp"
+    @Vehicles({
+        "faction": "t2_opfor",
+        "side": "OPFOR",
+        "camo": "EAF_Arid",
+        "vehicles": [
+            "Badger",
+            "Badger_Command",
+            "Badger_Mortar",
+            "Badger_ATGM",
+            "Badger_Unarmed",
+            "Warrior",
+            "Leopard2",
+            "LUT_AA",
+            "LUT_Ammo",
+            "LUT_Cargo",
+            "LUT_Flatbed",
+            "LUT_Fuel",
+            "LUT_MRL",
+            "LUT_Medical",
+            "LUT_Repair",
+            "LUT_Transport",
+            "LUT_TransportCovered",
+            "Offroad",
+            "Offroad_Covered",
+            "Offroad_Comms",
+            "Offroad_Services",
+            "Offroad_HMG",
+            "Offroad_AT",
+            "Ram",
+            "Ram_Covered",
+            "Ram_Comms",
+            "Ram_Fuel",
+            "Ram_HMG",
+            "Ram_MMG",
+            "Ram_AA",
+            "Ram_RCWS",
+            "Ram_M134",
+            "Ram_MRL",
+            "Ram_AT",
+            "Wildcat",
+            "Wildcat_Pylons",
+            "Mi35",
+            "PumaM",
+            "PumaT",
+            "Cougar",
+            "Cougar_Armed",
+            "Cougar_Pylon",
+            "UGV",
+            "UGV_RCWS",
+        ],
+    });
 
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {
