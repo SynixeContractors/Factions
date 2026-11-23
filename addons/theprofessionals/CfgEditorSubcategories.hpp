@@ -12,5 +12,9 @@ class CfgEditorSubcategories {
             displayName = "Men (Vest, $2)";
             GCLASS(identity) = "$1";
         };
+        class CLASS($1_Professionals_vehicles) {
+            displayName = "Vehicles ($2)";
+            GCLASS(identity) = "$1";
+        };
     @EndFor
 };

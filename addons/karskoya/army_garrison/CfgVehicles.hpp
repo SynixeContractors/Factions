@@ -1,8 +1,16 @@
 class CfgVehicles {
-    #define TEMPLATE_FACTION QPCLASS(t3_blufor)
-    #define TEMPLATE_SIDE 1
-    #include "..\..\..\templates\statics\M2.hpp"
-    #include "..\..\..\templates\statics\XM3XX.hpp"
+    @Vehicles({
+        "faction": "t3_blufor",
+        "side": "BLUFOR",
+        "vehicles": [
+            "M2_High",
+            "M2_Low",
+            "XM_GMG_High",
+            "XM_GMG_Low",
+            "XM_HMG_High",
+            "XM_HMG_Low",
+        ],
+    });
 
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {

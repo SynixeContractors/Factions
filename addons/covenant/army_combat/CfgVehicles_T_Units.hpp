@@ -1,5 +1,5 @@
 class CLASS2(SIDE,Base): PCLASS(DOUBLES(Base,NATION)) {
-    side = TEMPLATE_SIDE;
+    side = SIDE_NUMBER;
     editorSubcategory = QGCLASS(TRIPLES(generics,army_combat,NATION));
     faction = FACTION;
     @Role(Hidden);

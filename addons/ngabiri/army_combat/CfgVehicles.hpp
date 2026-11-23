@@ -1,35 +1,58 @@
 class CfgVehicles {
-    #define TEMPLATE_FACTION QPCLASS(t3_indep)
-    #define TEMPLATE_SIDE 2
-    #include "..\..\..\templates\statics\M2.hpp"
-    #define TEMPLATE_CAMO Green
-    #include "..\..\..\templates\statics\Mk6.hpp"
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO SFIA
-    #include "..\..\..\templates\tanks\T100.hpp"
-    #include "..\..\..\templates\apc\Otokar.hpp"
-    #include "..\..\..\templates\apc\BM2_AA.hpp"
-    #include "..\..\..\templates\apc\BM2K.hpp"
-    #include "..\..\..\templates\apc\BM2T.hpp"
-    #include "..\..\..\templates\apc\BTR.hpp"
-    #include "..\..\..\templates\apc\BTR_IFV.hpp"
-    #include "..\..\..\templates\apc\BTR_SPG.hpp"
-    #include "..\..\..\templates\cars\LUT_AA.hpp"
-    #include "..\..\..\templates\cars\LUT_Ammo.hpp"
-    #include "..\..\..\templates\cars\LUT_Cargo.hpp"
-    #include "..\..\..\templates\cars\LUT_Fuel.hpp"
-    #include "..\..\..\templates\cars\LUT_Medical.hpp"
-    #include "..\..\..\templates\cars\LUT_MRL.hpp"
-    #include "..\..\..\templates\cars\LUT_Repair.hpp"
-    #include "..\..\..\templates\cars\LUT_Transport.hpp"
-    #include "..\..\..\templates\helicopters\Ka54.hpp"
-    #include "..\..\..\templates\helicopters\Mi35.hpp"
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO CAMO_SFIA
-    #include "..\..\..\templates\helicopters\Puma_Military.hpp"
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO Rus
-    #include "..\..\..\templates\drones\Shahpar.hpp"
+    @Vehicles({
+        "faction": "t3_indep",
+        "side": "INDEP",
+        "camo": "Green",
+        "vehicles": [
+            "M2_High",
+            "M2_Low",
+            "Mk6Mortar",
+        ],
+    });
+
+    @Vehicles({
+        "faction": "t3_indep",
+        "side": "INDEP",
+        "camo": "SFIA",
+        "vehicles": [
+            "T100",
+            "Otokar",
+            "Otokar_HMG",
+            "Otokar_RCWS",
+            "BM2_AA",
+            "BM2_IFV2",
+            "BM2_IFV1",
+            "BTR",
+            "BTR_IFV",
+            "BTR_SPG",
+            "LUT_AA",
+            "LUT_Ammo",
+            "LUT_Cargo",
+            "LUT_Flatbed",
+            "LUT_Fuel",
+            "LUT_Medical",
+            "LUT_MRL",
+            "LUT_Repair",
+            "LUT_Transport",
+            "LUT_TransportCovered",
+            "Ka54",
+            "Mi35",
+        ],
+    });
+
+    @Vehicles({
+        "faction": "t3_indep",
+        "side": "INDEP",
+        "camo": "CAMO_SFIA",
+        "vehicles": [
+            "PumaM",
+            "PumaT",
+            "Cougar",
+            "Cougar_Armed",
+            "Cougar_Pylon",
+            {"class": "Shahpar", "camo": "Rus"},
+        ],
+    });
     
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {

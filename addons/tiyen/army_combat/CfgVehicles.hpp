@@ -1,30 +1,56 @@
 class CfgVehicles {
-    #define TEMPLATE_FACTION QPCLASS(t3_opfor)
-    #define TEMPLATE_SIDE 0
-    #include "..\..\..\templates\statics\M2.hpp"
-    #define TEMPLATE_CAMO Hex
-    #include "..\..\..\templates\statics\Mk6.hpp"
-    #include "..\..\..\templates\apc\BTR.hpp"
-    #include "..\..\..\templates\apc\BTR_IFV.hpp"
-    #include "..\..\..\templates\apc\BTR_SPG.hpp"
-    #include "..\..\..\templates\apc\Otokar.hpp"
-    #include "..\..\..\templates\tanks\T100.hpp"
-    #include "..\..\..\templates\planes\Yak130.hpp"
-    #include "..\..\..\templates\planes\L159.hpp"
-    #include "..\..\..\templates\planes\C130.hpp"
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO Opfor
-    #include "..\..\..\templates\cars\LUT_AA.hpp"
-    #include "..\..\..\templates\cars\LUT_Ammo.hpp"
-    #include "..\..\..\templates\cars\LUT_Cargo.hpp"
-    #include "..\..\..\templates\cars\LUT_Fuel.hpp"
-    #include "..\..\..\templates\cars\LUT_Medical.hpp"
-    #include "..\..\..\templates\cars\LUT_MRL.hpp"
-    #include "..\..\..\templates\cars\LUT_Repair.hpp"
-    #include "..\..\..\templates\cars\LUT_Transport.hpp"
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO CSAT
-    #include "..\..\..\templates\helicopters\Puma_Military.hpp"
+    @Vehicles({
+        "faction": "t3_opfor",
+        "side": "OPFOR",
+        "camo": "Hex",
+        "vehicles": [
+            "M2_High",
+            "M2_Low",
+            "Mk6Mortar",
+            "BTR",
+            "BTR_IFV",
+            "BTR_SPG",
+            "Otokar",
+            "Otokar_HMG",
+            "Otokar_RCWS",
+            "T100",
+            "Yak130",
+            "L159",
+            "C130",
+            "C130_Cargo",
+        ],
+    });
+
+    @Vehicles({
+        "faction": "t3_opfor",
+        "side": "OPFOR",
+        "camo": "Opfor",
+        "vehicles": [
+            "LUT_AA",
+            "LUT_Ammo",
+            "LUT_Cargo",
+            "LUT_Flatbed",
+            "LUT_Fuel",
+            "LUT_Medical",
+            "LUT_MRL",
+            "LUT_Repair",
+            "LUT_Transport",
+            "LUT_TransportCovered",
+        ],
+    });
+
+    @Vehicles({
+        "faction": "t3_opfor",
+        "side": "OPFOR",
+        "camo": "CSAT",
+        "vehicles": [
+            "PumaM",
+            "PumaT",
+            "Cougar",
+            "Cougar_Armed",
+            "Cougar_Pylon",
+        ],
+    });
     
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {

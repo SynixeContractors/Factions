@@ -19,7 +19,7 @@ class CfgVehicles {
     class PCLASS(DOUBLES(Base,$1));
     @EndFor
     @ForSides(OPFOR,BLUFOR,INDEP)
-    #define TEMPLATE_SIDE $SIDE
+    #define SIDE_NUMBER $SIDE
     #define SIDE DOUBLES(NATION,$UPPER)
     #define FACTION QPCLASS($LOWER)
         @For(Identities)
@@ -29,6 +29,6 @@ class CfgVehicles {
         @EndFor
     #undef FACTION
     #undef SIDE
-    #undef TEMPLATE_SIDE
+    #undef SIDE_NUMBER
     @EndForSides
 };

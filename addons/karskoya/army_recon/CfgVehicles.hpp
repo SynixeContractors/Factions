@@ -1,7 +1,50 @@
 class CfgVehicles {
-    #include "CfgVehicles_Ram.hpp"
-    #include "CfgVehicles_Quad.hpp"
-    #include "CfgVehicles_Dinghy.hpp"
+    @Vehicles({
+        "faction": "t3_blufor",
+        "side": "BLUFOR",
+        "camo": "NATO_P",
+        "vehicles": [
+            {"class": "Ram", "editorPreview": "\\lxRF\\editorpreviews_rf\\Data\\CfgVehicles\\B_T_Pickup_rf.jpg"},
+            {
+                "class": "Ram_Comms",
+                "editorPreview": "\\lxRF\\editorpreviews_rf\\Data\\CfgVehicles\\B_T_Pickup_Comms_rf.jpg",
+            },
+            {
+                "class": "Ram_AT",
+                "cargo": ["Rifleman", "Rifleman"],
+                "editorPreview": "\\lxRF\\editorpreviews_rf\\Data\\CfgVehicles\\B_T_Pickup_aat_rf.jpg",
+            },
+            {
+                "class": "Ram_AA",
+                "cargo": ["Rifleman", "Rifleman"],
+                "editorPreview": "\\lxRF\\editorpreviews_rf\\Data\\CfgVehicles\\B_T_Pickup_aat_rf.jpg",
+            },
+        ],
+    });
+
+    @Vehicles({
+        "faction": "t3_blufor",
+        "side": "BLUFOR",
+        "camo": "Olive",
+        "vehicles": [
+            {
+                "class": "QuadBike",
+                "editorPreview": "\\A3\\EditorPreviews_F_Exp\\Data\\CfgVehicles\\B_T_Quadbike_01_F.jpg",
+            },
+        ],
+    });
+
+    @Vehicles({
+        "faction": "t3_blufor",
+        "side": "BLUFOR",
+        "camo": "Black",
+        "vehicles": [
+            {
+                "class": "Dinghy",
+                "editorPreview": "\\A3\\EditorPreviews_F\\Data\\CfgVehicles\\B_Boat_Transport_01_F.jpg",
+            },
+        ],
+    });
 
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {

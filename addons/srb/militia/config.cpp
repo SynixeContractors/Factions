@@ -15,30 +15,6 @@ class CfgPatches {
 };
 
 class CfgVehicles {
-    class GCLASS(Ram_HMG);
-    class GCLASS(Ram_Rocket);
-    class GCLASS(Ram_MRL);
-    class GCLASS(LUT_MRL);
-    class GCLASS(LUT_AA);
-    class GCLASS(LUT_Cargo);
-    class GCLASS(LUT_Flatbed);
-    class GCLASS(LUT_Transport);
-    class GCLASS(LUT_TransportCovered);
-    class GCLASS(Offroad);
-    class GCLASS(Offroad_Covered);
-    class GCLASS(Offroad_HMG);
-    class GCLASS(Offroad_AA);
-    class GCLASS(Offroad_AT);
-    class GCLASS(Offroad_Armored);
-    class GCLASS(Offroad_Armored_HMG);
-    class GCLASS(Offroad_Armored_AT);
-    class GCLASS(Jay_Fuel);
-    class GCLASS(BTR);
-    class GCLASS(BTR_IFV);
-    class GCLASS(BM2_IFV1);
-    class GCLASS(BM2_IFV2);
-    class GCLASS(T100);
-
     @ForSides(OPFOR,INDEP)
     #define SIDE $UPPER
     #define SIDE_NUMBER $SIDE

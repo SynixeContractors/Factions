@@ -1,4 +1,25 @@
 class CfgVehicles {
+    @Vehicles({
+        "faction": "t4_opfor",
+        "side": "OPFOR",
+        "camo": "Para_01",
+        "vehicles": [
+            "BTR",
+        ],
+    });
+
+    @Vehicles({
+        "faction": "t4_opfor",
+        "side": "OPFOR",
+        "camo": "Brown",
+        "vehicles": [
+            "LUT_Transport",
+            "LUT_TransportCovered",
+            "LUT_Fuel",
+            "LUT_Repair",
+        ],
+    });
+
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {
         displayName = "Army Reserve";

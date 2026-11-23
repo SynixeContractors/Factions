@@ -1,16 +1,65 @@
 class CfgVehicles {
-    #define TEMPLATE_FACTION QPCLASS(t3_indep)
-    #define TEMPLATE_SIDE 2
-    #include "..\..\..\templates\statics\M2.hpp"
-    #define TEMPLATE_CAMO Desert
-    #include "..\..\..\templates\cars\LSV.hpp"
-    #undef  TEMPLATE_CAMO
-    #define TEMPLATE_CAMO Luba
-    #include "..\..\..\templates\cars\HEMTT.hpp"
-    #undef  TEMPLATE_CAMO
-    #define TEMPLATE_CAMO Guerrilla_04
-    #include "..\..\..\templates\apc\BTR.hpp"
-    #include "..\..\..\templates\apc\BTR_IFV.hpp"
+    @Vehicles({
+        "faction": "t3_indep",
+        "side": "INDEP",
+        "camo": "Desert",
+        "vehicles": [
+            "M2_High",
+            "M2_Low",
+            "LSV",
+            "LSV_M134",
+            "LSV_Metis",
+        ],
+    });
+
+    @Vehicles({
+        "faction": "t3_indep",
+        "side": "INDEP",
+        "camo": "Luba",
+        "vehicles": [
+            "HEMTT",
+            "HEMTT_Cargo",
+            "HEMTT_Flatbed",
+            "HEMTT_Repair",
+            "HEMTT_Container",
+            "HEMTT_Bench",
+            "HEMTT_Covered",
+            "HEMTT_Medical",
+            "HEMTT_Fuel",
+            "HEMTT_Ammo",
+            "HEMTT_FireTruck",
+        ],
+    });
+
+    @Vehicles({
+        "faction": "t3_indep",
+        "side": "INDEP",
+        "camo": "Guerrilla_04",
+        "vehicles": [
+            "BTR",
+            "BTR_IFV",
+        ],
+    });
+
+    @Vehicles({
+        "faction": "t3_indep",
+        "side": "INDEP",
+        "camo": "CAMO_AFRICA",
+        "vehicles": [
+            "PumaM",
+            "PumaT",
+            "Cougar_Armed",
+        ],
+    });
+
+    @Vehicles({
+        "faction": "t3_indep",
+        "side": "INDEP",
+        "camo": "Takistan",
+        "vehicles": [
+            "Mi35",
+        ],
+    });
 
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {

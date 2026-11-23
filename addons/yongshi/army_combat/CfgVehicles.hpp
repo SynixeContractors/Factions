@@ -1,23 +1,35 @@
 class CfgVehicles {
-    #define TEMPLATE_FACTION QPCLASS(t3_opfor)
-    #define TEMPLATE_SIDE 0
-    #define TEMPLATE_CAMO_LIST {\
-        QUOTE(Guerilla_03),1,\
-        QUOTE(Guerilla_06),1,\
-        QUOTE(Guerilla_07),1,\
-        QUOTE(Guerilla_08),1,\
-        QUOTE(Guerilla_09),1,\
-        QUOTE(Guerilla_10),1,\
-        QUOTE(Guerilla_11),1,\
-        QUOTE(Guerilla_12),1,\
-    }
-    #include "..\..\..\templates\cars\Offroad_Civilian.hpp"
-    #undef TEMPLATE_CAMO_LIST
-    #define TEMPLATE_CAMO_LIST {\
-        QUOTE(Desert),1,\
-    }
-    #include "..\..\..\templates\cars\LSV.hpp"
-    #undef TEMPLATE_CAMO_LIST
+    @Vehicles({
+        "faction": "t3_opfor",
+        "side": "OPFOR",
+        "camo": [
+            "Guerilla_03",
+            "Guerilla_06",
+            "Guerilla_07",
+            "Guerilla_08",
+            "Guerilla_09",
+            "Guerilla_10",
+            "Guerilla_11",
+            "Guerilla_12",
+        ],
+        "vehicles": [
+            "Offroad",
+            "Offroad_Covered",
+            "Offroad_Comms",
+            "Offroad_Services",
+        ],
+    });
+
+    @Vehicles({
+        "faction": "t3_opfor",
+        "side": "OPFOR",
+        "camo": "Desert",
+        "vehicles": [
+            "LSV",
+            "LSV_M134",
+            "LSV_Metis",
+        ],
+    });
 
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {

@@ -1,32 +1,77 @@
 class CfgVehicles {
-    #define TEMPLATE_FACTION QPCLASS(t4_opfor)
-    #define TEMPLATE_SIDE 0
-    #include "..\..\..\templates\statics\M2.hpp"
-    #define TEMPLATE_CAMO Green
-    #include "..\..\..\templates\statics\Mk6.hpp"
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO Brown
-    #include "..\..\..\templates\cars\LUT_AA.hpp"
-    #include "..\..\..\templates\cars\LUT_Ammo.hpp"
-    #include "..\..\..\templates\cars\LUT_Cargo.hpp"
-    #include "..\..\..\templates\cars\LUT_Fuel.hpp"
-    #include "..\..\..\templates\cars\LUT_Medical.hpp"
-    #include "..\..\..\templates\cars\LUT_MRL.hpp"
-    #include "..\..\..\templates\cars\LUT_Repair.hpp"
-    #include "..\..\..\templates\cars\LUT_Transport.hpp"
-    #include "..\..\..\templates\cars\Jeep.hpp"
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO Para_01
-    #include "..\..\..\templates\apc\BTR.hpp"
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO Guerilla_02
-    #include "..\..\..\templates\cars\Ram_Civilian.hpp"
-    #include "..\..\..\templates\cars\Ram_Armed.hpp"
-    #include "..\..\..\templates\cars\Ram_Advanced.hpp"
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO Guerilla_06
-    #include "..\..\..\templates\cars\Offroad_Civilian.hpp"
-    #include "..\..\..\templates\cars\Offroad_Armed.hpp"
+    @Vehicles({
+        "faction": "t4_opfor",
+        "side": "OPFOR",
+        "camo": "Green",
+        "vehicles": [
+            "M2_High",
+            "M2_Low",
+            "Mk6Mortar",
+        ],
+    });
+
+    @Vehicles({
+        "faction": "t4_opfor",
+        "side": "OPFOR",
+        "camo": "Brown",
+        "vehicles": [
+            "LUT_AA",
+            "LUT_Ammo",
+            "LUT_Cargo",
+            "LUT_Flatbed",
+            "LUT_Fuel",
+            "LUT_Medical",
+            "LUT_MRL",
+            "LUT_Repair",
+            "LUT_Transport",
+            "LUT_TransportCovered",
+            "Jeep",
+            "Jeep_LMG",
+            {"class": "BTR", "camo": "Para_01"},
+        ],
+    });
+
+    @Vehicles({
+        "faction": "t4_opfor",
+        "side": "OPFOR",
+        "camo": "Guerilla_02",
+        "vehicles": [
+            "Ram",
+            "Ram_Covered",
+            "Ram_Comms",
+            "Ram_Fuel",
+            "Ram_HMG",
+            "Ram_MMG",
+            "Ram_AA",
+            "Ram_RCWS",
+            "Ram_M134",
+            "Ram_MRL",
+            "Ram_AT",
+        ],
+    });
+
+    @Vehicles({
+        "faction": "t4_opfor",
+        "side": "OPFOR",
+        "camo": "Guerilla_06",
+        "vehicles": [
+            "Offroad",
+            "Offroad_Covered",
+            "Offroad_Comms",
+            "Offroad_Services",
+            "Offroad_HMG",
+            "Offroad_AT",
+        ],
+    });
+
+    @Vehicles({
+        "faction": "t4_opfor",
+        "side": "OPFOR",
+        "camo": "Green",
+        "vehicles": [
+            "Orca",
+        ],
+    });
 
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {

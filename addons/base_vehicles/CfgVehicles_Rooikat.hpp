@@ -40,7 +40,7 @@
         };
 
 class B_AFV_Wheeled_01_cannon_F;
-class GCLASS(Roooikat): B_AFV_Wheeled_01_cannon_F {
+class GCLASS(Rooikat): B_AFV_Wheeled_01_cannon_F {
     displayName = "Rooikat 120";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;
@@ -255,7 +255,7 @@ class GCLASS(Roooikat): B_AFV_Wheeled_01_cannon_F {
 
 
 class B_AFV_Wheeled_01_up_cannon_F;
-class GCLASS(Roooikat_ERA): B_AFV_Wheeled_01_up_cannon_F {
+class GCLASS(Rooikat_ERA): B_AFV_Wheeled_01_up_cannon_F {
     displayName = "Rooikat 120 (UP)";
     faction = QGCLASS(base_vehicles);
     SCOPE_DLC_VEHICLE;

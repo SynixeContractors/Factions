@@ -1,31 +1,79 @@
 class CfgVehicles {
-    #define TEMPLATE_FACTION QPCLASS(t1_blufor)
-    #define TEMPLATE_SIDE 1
-    #define TEMPLATE_CAMO Default
-    #include "..\..\..\templates\drones\MQ47.hpp"
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO AAF
+    @Vehicles({
+        "faction": "t1_blufor",
+        "side": "BLUFOR",
+        "camo": "Default",
+        "vehicles": [
+            "MQ47",
+        ],
+    });
     //FIXME: placeholder camo
-    #include "..\..\..\templates\drones\MQ9.hpp"
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO Dazzle
-    #include "..\..\..\templates\cars\Polaris.hpp"
-    #include "..\..\..\templates\cars\Ram_Advanced.hpp"
-    #include "..\..\..\templates\cars\Ram_Armed.hpp"
-    #include "..\..\..\templates\cars\Ram_Civilian.hpp"
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO Olive
-    #include "..\..\..\templates\statics\RGS60.hpp"
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO DazzleDark
-    #include "..\..\..\templates\helicopters\Ghosthawk.hpp"
-    #include "..\..\..\templates\helicopters\Ghosthawk_Armed.hpp"
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO Black
-    #include "..\..\..\templates\helicopters\MD500_Military.hpp"
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO Blue
-    #include "..\..\..\templates\planes\Blackfish.hpp"
+    @Vehicles({
+        "faction": "t1_blufor",
+        "side": "BLUFOR",
+        "camo": "AAF",
+        "vehicles": [
+            "MQ9",
+        ],
+    });
+
+    @Vehicles({
+        "faction": "t1_blufor",
+        "side": "BLUFOR",
+        "camo": "Dazzle",
+        "vehicles": [
+            "Polaris",
+            "Polaris_NoDoor",
+            "Polaris_Titan",
+            "Polaris_HMG",
+            "Ram_AA",
+            "Ram_RCWS",
+            "Ram_M134",
+            "Ram_MRL",
+            "Ram_AT",
+            "Ram_HMG",
+            "Ram_MMG",
+            "Ram",
+            "Ram_Covered",
+            "Ram_Comms",
+            "Ram_Fuel",
+            {"class": "RSG60Mortar", "camo": "Olive"},
+        ],
+    });
+
+    @Vehicles({
+        "faction": "t1_blufor",
+        "side": "BLUFOR",
+        "camo": "DazzleDark",
+        "vehicles": [
+            "Ghosthawk",
+            "Ghosthawk_M134",
+            "Ghosthawk_Pylons",
+            "Ghosthawk_Assault",
+            "Ghosthawk_DAP",
+        ],
+    });
+
+    @Vehicles({
+        "faction": "t1_blufor",
+        "side": "BLUFOR",
+        "camo": "Black",
+        "vehicles": [
+            "MD500E",
+            "MD500E_Armed",
+        ],
+    });
+
+    @Vehicles({
+        "faction": "t1_blufor",
+        "side": "BLUFOR",
+        "camo": "Blue",
+        "vehicles": [
+            "Blackfish",
+            "Blackfish_Transport",
+            "Blackfish_Cargo",
+        ],
+    });
 
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {

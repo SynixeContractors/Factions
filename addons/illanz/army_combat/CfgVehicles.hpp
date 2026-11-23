@@ -1,34 +1,93 @@
 class CfgVehicles {
-    #define TEMPLATE_FACTION QPCLASS(t3_opfor)
-    #define TEMPLATE_SIDE 0
-    #include "..\..\..\templates\statics\M2.hpp"
-    #include "..\..\..\templates\statics\Ship.hpp"
-    #define TEMPLATE_CAMO Desert
-    #include "..\..\..\templates\statics\SAM01.hpp"
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO France
-    #include "..\..\..\templates\tanks\Rooikat.hpp"
-    #include "..\..\..\templates\cars\Polaris.hpp"
-    #include "..\..\..\templates\cars\HEMTT.hpp"
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO Jagged
-    #include "..\..\..\templates\cars\Fennek.hpp"
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO NATO
-    #include "..\..\..\templates\cars\Ram_Civilian.hpp"
-    #include "..\..\..\templates\cars\Ram_Armed.hpp"
-    #include "..\..\..\templates\cars\Ram_Advanced.hpp"
+    @Vehicles({
+        "faction": "t3_opfor",
+        "side": "OPFOR",
+        "camo": "Desert",
+        "vehicles": [
+            "M2_High",
+            "M2_Low",
+            "Ship_CIWS",
+            "Ship_BoxIR",
+            "Ship_BoxARH",
+            "Ship_Gun",
+            "Ship_VLS",
+            "Radar01",
+            "SAM01",
+        ],
+    });
 
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO Sand
-    #include "..\..\..\templates\helicopters\Ghosthawk.hpp"
-    #include "..\..\..\templates\helicopters\Ghosthawk_Armed.hpp"
-    #include "..\..\..\templates\helicopters\Comanche.hpp"
-    #include "..\..\..\templates\helicopters\MD500_Military.hpp"
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO CamoGrey
-    #include "..\..\..\templates\planes\JAS39.hpp"
+    @Vehicles({
+        "faction": "t3_opfor",
+        "side": "OPFOR",
+        "camo": "France",
+        "vehicles": [
+            "Rooikat",
+            "Rooikat_ERA",
+            "Polaris",
+            "Polaris_NoDoor",
+            "Polaris_Titan",
+            "Polaris_HMG",
+            "HEMTT",
+            "HEMTT_Cargo",
+            "HEMTT_Flatbed",
+            "HEMTT_Repair",
+            "HEMTT_Container",
+            "HEMTT_Bench",
+            "HEMTT_Covered",
+            "HEMTT_Medical",
+            "HEMTT_Fuel",
+            "HEMTT_Ammo",
+            "HEMTT_FireTruck",
+        ],
+    });
 
+    @Vehicles({
+        "faction": "t3_opfor",
+        "side": "OPFOR",
+        "camo": "Jagged",
+        "vehicles": [
+            "Fennek",
+            "Fennek_HMG",
+            "Fennek_GMG",
+        ],
+    });
+
+    @Vehicles({
+        "faction": "t3_opfor",
+        "side": "OPFOR",
+        "camo": "NATO",
+        "vehicles": [
+            "Ram",
+            "Ram_Covered",
+            "Ram_Comms",
+            "Ram_Fuel",
+            "Ram_HMG",
+            "Ram_MMG",
+            "Ram_AA",
+            "Ram_RCWS",
+            "Ram_M134",
+            "Ram_MRL",
+            "Ram_AT",
+        ],
+    });
+
+    @Vehicles({
+        "faction": "t3_opfor",
+        "side": "OPFOR",
+        "camo": "Sand",
+        "vehicles": [
+            "Ghosthawk",
+            "Ghosthawk_M134",
+            "Ghosthawk_Pylons",
+            "Ghosthawk_Assault",
+            "Ghosthawk_DAP",
+            "Comanche",
+            "Comanche_Pylons",
+            "MD500E",
+            "MD500E_Armed",
+            {"class": "JAS39", "camo": "CamoGrey"},
+        ],
+    });
 
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {

@@ -2,7 +2,7 @@
 
 class CLASS2(SIDE,Policeman): CLASS2(Base,NATION) {
     @Role(Worker);
-    side = TEMPLATE_SIDE;
+    side = SIDE_NUMBER;
     editorSubcategory = QCLASS2(NATION,Patrol);
     faction = FACTION;
 

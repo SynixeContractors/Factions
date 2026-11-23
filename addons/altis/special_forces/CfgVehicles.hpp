@@ -1,4 +1,26 @@
 class CfgVehicles {
+    @Vehicles({
+        "faction": "t2_indep",
+        "side": "INDEP",
+        "camo": "AAF",
+        "vehicles": [
+            "Ram",
+            "Ram_M134",
+            "Ram_RCWS",
+            "Ram_AT",
+        ],
+    });
+
+    @Vehicles({
+        "faction": "t2_indep",
+        "side": "INDEP",
+        "camo": "Indep",
+        "vehicles": [
+            "QuadBike",
+            "Wildcat",
+        ],
+    });
+
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {
         displayName = "Special Forces";

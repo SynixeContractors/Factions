@@ -28,10 +28,11 @@ class CLASS2(Citizen_Paramedic,NATION): CLASS2(Base,NATION) {
     });
 };
 
-class CLASS2(Van_Ambulance,NATION): GCLASS(Van_Ambulance) {
-    SCOPE_DLC;
-    faction = QCLASS(NATION);
-    editorSubcategory = QGCLASS(ems);
-    crew = QUOTE(CLASS2(Citizen_Paramedic,NATION));
-    typicalCargo[] = {QUOTE(CLASS2(Citizen_Paramedic,NATION))};
-};
+@Vehicles({
+    "faction": "QPCLASS(NATION)",
+    "crew": "Citizen_Paramedic",
+    "suffix": "NATION",
+    "vehicles": [
+        {"class": "Van_Ambulance", "editorSubcategory": "QGCLASS(ems)"},
+    ],
+});

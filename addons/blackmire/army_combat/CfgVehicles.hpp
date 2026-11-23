@@ -1,4 +1,46 @@
 class CfgVehicles {
+    @Vehicles({
+        "faction": "t3_opfor",
+        "side": "OPFOR",
+        "camo": "Tan",
+        "vehicles": [
+            "Ram",
+            "Ram_Covered",
+            "Ram_Comms",
+            "Ram_HMG",
+            "Ram_MMG",
+            "Ram_M134",
+            "Ram_AT",
+        ],
+    });
+
+    @Vehicles({
+        "faction": "t3_opfor",
+        "side": "OPFOR",
+        "camo": "Arid",
+        "vehicles": [
+            "LSV",
+            "LSV_M134",
+            "LSV_Metis",
+        ],
+    });
+
+    @Vehicles({
+        "faction": "t3_opfor",
+        "side": "OPFOR",
+        "camo": "Ardistan",
+        "vehicles": [
+            "LUT_Transport",
+            "LUT_TransportCovered",
+            "LUT_Fuel",
+            "LUT_Repair",
+            "LUT_Ammo",
+            "LUT_Medical",
+            "Orca",
+            "OrcaR",
+        ],
+    });
+
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {
         displayName = "Blackmire Base Army Combat";

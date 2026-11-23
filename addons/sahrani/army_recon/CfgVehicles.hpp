@@ -1,14 +1,32 @@
 class CfgVehicles {
-    #define TEMPLATE_FACTION QPCLASS(t2_indep)
-    #define TEMPLATE_SIDE 2
-    #define TEMPLATE_CAMO NATO
-    #include "..\..\..\templates\cars\Ram_Civilian.hpp"
-    #include "..\..\..\templates\cars\Ram_Armed.hpp"
-    #include "..\..\..\templates\cars\Ram_Advanced.hpp"
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO Black
-    #include "..\..\..\templates\boats\Dinghy.hpp"
-    #include "..\..\..\templates\boats\RHIB.hpp"
+    @Vehicles({
+        "faction": "t2_indep",
+        "side": "INDEP",
+        "camo": "NATO",
+        "vehicles": [
+            "Ram",
+            "Ram_Covered",
+            "Ram_Comms",
+            "Ram_Fuel",
+            "Ram_HMG",
+            "Ram_MMG",
+            "Ram_AA",
+            "Ram_RCWS",
+            "Ram_M134",
+            "Ram_MRL",
+            "Ram_AT",
+        ],
+    });
+
+    @Vehicles({
+        "faction": "t2_indep",
+        "side": "INDEP",
+        "camo": "Black",
+        "vehicles": [
+            "Dinghy",
+            "RHIB",
+        ],
+    });
 
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {

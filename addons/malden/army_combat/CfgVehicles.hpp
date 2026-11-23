@@ -1,23 +1,53 @@
 class CfgVehicles {
-    #define TEMPLATE_FACTION QPCLASS(t3_indep)
-    #define TEMPLATE_SIDE 2
-    #include "..\..\..\templates\statics\M2.hpp"
+    @Vehicles({
+        "faction": "t3_indep",
+        "side": "INDEP",
+        "camo": "Hex",
+        "vehicles": [
+            "M2_High",
+            "M2_Low",
+            "Karatel",
+            "Karatel_HMG",
+            "Karatel_GMG",
+            "Yak130",
+        ],
+    });
 
-    #define TEMPLATE_CAMO Hex
-    #include "..\..\..\templates\cars\Karatel.hpp"
-    #include "..\..\..\templates\planes\Yak130.hpp"
+    @Vehicles({
+        "faction": "t3_indep",
+        "side": "INDEP",
+        "camo": "Green",
+        "vehicles": [
+            "Ram",
+            "Ram_Covered",
+            "Ram_Comms",
+            "Ram_Fuel",
+            "Ram_AA",
+            "Ram_RCWS",
+            "Ram_M134",
+            "Ram_MRL",
+            "Ram_AT",
+            "Ram_HMG",
+            "Ram_MMG",
+            "Ram_Rocket",
+            "OrcaAR",
+            "OrcaR",
+            "OrcaArmed",
+        ],
+    });
 
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO Green
-    #include "..\..\..\templates\cars\Ram_Civilian.hpp"
-    #include "..\..\..\templates\cars\Ram_Advanced.hpp"
-    #include "..\..\..\templates\cars\Ram_Armed.hpp"
-    #include "..\..\..\templates\cars\Ram_Rocket.hpp"
-    #include "..\..\..\templates\helicopters\Orca_Military.hpp"
-
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO AAF_Olive
-    #include "..\..\..\templates\helicopters\Puma_Military.hpp"
+    @Vehicles({
+        "faction": "t3_indep",
+        "side": "INDEP",
+        "camo": "AAF_Olive",
+        "vehicles": [
+            "PumaM",
+            "PumaT",
+            "Cougar",
+            "Cougar_Armed",
+            "Cougar_Pylon",
+        ],
+    });
 
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {

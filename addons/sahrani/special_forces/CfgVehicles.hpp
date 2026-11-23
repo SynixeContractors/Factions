@@ -1,8 +1,15 @@
 class CfgVehicles {
-    #define TEMPLATE_FACTION QPCLASS(t2_indep)
-    #define TEMPLATE_SIDE 2
-    #define TEMPLATE_CAMO Sand
-    #include "..\..\..\templates\cars\Polaris.hpp"
+    @Vehicles({
+        "faction": "t2_indep",
+        "side": "INDEP",
+        "camo": "Sand",
+        "vehicles": [
+            "Polaris",
+            "Polaris_NoDoor",
+            "Polaris_Titan",
+            "Polaris_HMG",
+        ],
+    });
 
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {

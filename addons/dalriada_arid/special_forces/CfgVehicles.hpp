@@ -1,11 +1,27 @@
 class CfgVehicles {
-    #define TEMPLATE_FACTION QPCLASS(t2_opfor)
-    #define TEMPLATE_SIDE 0
-    #define TEMPLATE_CAMO Hex
-    #include "..\..\..\templates\cars\LSV.hpp"
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO CSAT
-    #include "..\..\..\templates\cars\Ram_Advanced.hpp"
+    @Vehicles({
+        "faction": "t2_opfor",
+        "side": "OPFOR",
+        "camo": "Hex",
+        "vehicles": [
+            "LSV",
+            "LSV_M134",
+            "LSV_Metis",
+        ],
+    });
+
+    @Vehicles({
+        "faction": "t2_opfor",
+        "side": "OPFOR",
+        "camo": "CSAT",
+        "vehicles": [
+            "Ram_AA",
+            "Ram_RCWS",
+            "Ram_M134",
+            "Ram_MRL",
+            "Ram_AT",
+        ],
+    });
 
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {

@@ -1,21 +1,170 @@
-#include "CfgVehicles_APC.hpp"
-#include "CfgVehicles_Arcadian.hpp"
-#include "CfgVehicles_Dinghy.hpp"
-#include "CfgVehicles_LUT.hpp"
-#include "CfgVehicles_Mk6Mortar.hpp"
-#include "CfgVehicles_Quad.hpp"
-#include "CfgVehicles_Ram.hpp"
-#include "CfgVehicles_UGV.hpp"
-#include "CfgVehicles_M2.hpp"
-#include "CfgVehicles_Orca.hpp"
+@Vehicles({
+    "faction": "QPCLASS(SIDE_FACTION)",
+    "side": "SIDE_NUMBER",
+    "camo": "Black",
+    "prefix": "SIDE",
+    "properties": {
+        "editorPreview": "\\lxws\\editorpreviews_f_lxws\\Data\\CfgVehicles\\B_ION_APC_Wheeled_02_hmg_lxWS.jpg",
+    },
+    "vehicles": [
+        "Otokar",
+        {"class": "Otokar_HMG", "cargo": ["Crewman", "Crewman"]},
+    ],
+});
+
+@Vehicles({
+    "faction": "QPCLASS(SIDE_FACTION)",
+    "side": "SIDE_NUMBER",
+    "camo": "ION_BLACK",
+    "prefix": "SIDE",
+    "properties": {
+        "editorPreview": "\\lxws\\editorpreviews_f_lxws\\Data\\CfgVehicles\\B_ION_APC_Wheeled_01_command_lxWS.jpg",
+    },
+    "vehicles": [
+        {"class": "Badger", "cargo": ["Crewman", "Crewman"]},
+        {"class": "Badger_Command", "cargo": ["Crewman", "Crewman"]},
+        {"class": "Badger_ATGM", "cargo": ["Crewman", "Crewman"]},
+        "Badger_Unarmed",
+    ],
+});
+
+@Vehicles({
+    "faction": "QPCLASS(SIDE_FACTION)",
+    "side": "SIDE_NUMBER",
+    "camo": "Black",
+    "prefix": "SIDE",
+    "vehicles": [
+        "Arcadian",
+        "Arcadian_M134",
+        {"class": "Dinghy", "editorPreview": "\\A3\\EditorPreviews_F\\Data\\CfgVehicles\\B_Boat_Transport_01_F.jpg"},
+        "RHIB",
+        {
+            "class": "LUT_Transport",
+            "editorPreview": "\\A3_Aegis\\EditorPreviews_F_Aegis\\Data\\CfgVehicles\\O_R_Truck_02_transport_F.jpg",
+        },
+        {
+            "class": "LUT_TransportCovered",
+            "editorPreview": "\\lxws\\editorpreviews_f_lxws\\Data\\CfgVehicles\\B_ION_Truck_02_covered_lxWS.jpg",
+        },
+        {
+            "class": "LUT_Flatbed",
+            "editorPreview": "\\lxws\\editorpreviews_f_lxws\\Data\\CfgVehicles\\O_Truck_02_flatbed_lxWS.jpg",
+        },
+        {
+            "class": "LUT_Ammo",
+            "editorPreview": "\\lxws\\editorpreviews_f_lxws\\Data\\CfgVehicles\\B_ION_Truck_02_covered_lxWS.jpg",
+        },
+        {
+            "class": "LUT_Repair",
+            "editorPreview": "\\lxws\\editorpreviews_f_lxws\\Data\\CfgVehicles\\B_ION_Truck_02_covered_lxWS.jpg",
+        },
+        {
+            "class": "LUT_Medical",
+            "editorPreview": "\\lxws\\editorpreviews_f_lxws\\Data\\CfgVehicles\\B_ION_Truck_02_covered_lxWS.jpg",
+        },
+        {
+            "class": "LUT_Fuel",
+            "editorPreview": "\\lxws\\editorpreviews_f_lxws\\Data\\CfgVehicles\\B_ION_Truck_02_covered_lxWS.jpg",
+        },
+        {
+            "class": "LUT_Cargo",
+            "editorPreview": "\\lxws\\editorpreviews_f_lxws\\Data\\CfgVehicles\\B_ION_Truck_02_covered_lxWS.jpg",
+        },
+    ],
+});
+
+@Vehicles({
+    "faction": "QPCLASS(SIDE_FACTION)",
+    "side": "SIDE_NUMBER",
+    "camo": "Green",
+    "prefix": "SIDE",
+    "vehicles": [
+        {
+            "class": "Mk6Mortar",
+            "editorPreview": "\\A3\\EditorPreviews_F\\Data\\CfgVehicles\\B_Mortar_01_F.jpg",
+            "hiddenSelectionsTextures": ["\\A3\\Static_f\\Mortar_01\\data\\Mortar_01_CO.paa"],
+        },
+    ],
+});
+
+@Vehicles({
+    "faction": "QPCLASS(SIDE_FACTION)",
+    "side": "SIDE_NUMBER",
+    "camo": "Black",
+    "prefix": "SIDE",
+    "vehicles": [
+        {"class": "QuadBike", "editorPreview": "\\A3\\EditorPreviews_F\\Data\\CfgVehicles\\C_Quadbike_01_F.jpg"},
+    ],
+});
+
+@Vehicles({
+    "faction": "QPCLASS(SIDE_FACTION)",
+    "side": "SIDE_NUMBER",
+    "camo": "ION",
+    "prefix": "SIDE",
+    "vehicles": [
+        {"class": "Ram", "editorPreview": "\\lxrf\\editorpreviews_rf\\Data\\CfgVehicles\\B_ION_Pickup_rf.jpg"},
+        {
+            "class": "Ram_Comms",
+            "editorPreview": "\\lxRF\\editorpreviews_rf\\Data\\CfgVehicles\\B_T_Pickup_Comms_rf.jpg",
+        },
+        {
+            "class": "Ram_AT",
+            "cargo": ["Rifleman", "Rifleman"],
+            "editorPreview": "\\lxrf\\editorpreviews_rf\\Data\\CfgVehicles\\B_ION_Pickup_aat_rf.jpg",
+        },
+        {
+            "class": "Ram_AA",
+            "cargo": ["Rifleman", "Rifleman"],
+            "editorPreview": "\\lxrf\\editorpreviews_rf\\Data\\CfgVehicles\\B_ION_Pickup_aat_rf.jpg",
+        },
+        {
+            "class": "Ram_MRL",
+            "editorPreview": "\\A3_Aegis\\EditorPreviews_F_Aegis\\Data\\CfgVehicles\\Aegis_O_A_Pickup_MRL_RF.jpg",
+        },
+        {"class": "Ram_MMG", "editorPreview": "\\lxrf\\editorpreviews_rf\\Data\\CfgVehicles\\B_ION_Pickup_mmg_rf.jpg"},
+        {
+            "class": "Ram_M134",
+            "editorPreview": "\\A3_Aegis\\EditorPreviews_F_Aegis\\Data\\CfgVehicles\\Aegis_B_ION_Pickup_Minigun_RF.jpg",
+        },
+        {
+            "class": "Ram_RCWS",
+            "editorPreview": "\\lxrf\\editorpreviews_rf\\Data\\CfgVehicles\\B_ION_Pickup_rcws_rf.jpg",
+        },
+        {
+            "class": "UGV_RCWS",
+            "editorPreview": "\\A3_Aegis\\EditorPreviews_F_Aegis\\Data\\CfgVehicles\\B_ION_UGV_01_rcws_F.jpg",
+        },
+        {"class": "UGV", "editorPreview": "\\A3_Aegis\\EditorPreviews_F_Aegis\\Data\\CfgVehicles\\B_ION_UGV_01_F.jpg"},
+    ],
+});
+//as of rn, drones are kinda broken, gotta figure that out lol
+
+@Vehicles({
+    "faction": "QPCLASS(SIDE_FACTION)",
+    "side": "SIDE_NUMBER",
+    "prefix": "SIDE",
+    "vehicles": [
+        "M2_Low",
+        "M2_High",
+    ],
+});
+
+@Vehicles({
+    "faction": "QPCLASS(SIDE_FACTION)",
+    "side": "SIDE_NUMBER",
+    "camo": "ION_BLACK",
+    "prefix": "SIDE",
+    "vehicles": [
+        "Orca",
+        "OrcaArmed",
+        "OrcaR",
+        "OrcaAR",
+    ],
+});
 
 class PCLASS2(SIDE,Base);
 class CLASS2(SIDE,Base): PCLASS2(SIDE,Base) {
-    #define TEMPLATE_FACTION QPCLASS(SIDE_FACTION)
-    #define TEMPLATE_SIDE SIDE_NUMBER
-    #undef TEMPLATE_FACTION
-    #undef TEMPLATE_SIDE
-
     displayName = "ION Base Army Combat";
     editorSubcategory = QGCLASS(army_combat);
     

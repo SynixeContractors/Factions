@@ -1,10 +1,30 @@
+@Vehicles({
+    "faction": "QPCLASS(SIDE_FACTION)",
+    "side": "SIDE_NUMBER",
+    "camo": "Tan",
+    "prefix": "SIDE",
+    "vehicles": [
+        "Ram",
+        "Ram_M134",
+        "Ram_RCWS",
+        "Ram_AT",
+    ],
+});
+
+@Vehicles({
+    "faction": "QPCLASS(SIDE_FACTION)",
+    "side": "SIDE_NUMBER",
+    "camo": "Desert",
+    "prefix": "SIDE",
+    "vehicles": [
+        "LSV",
+        "LSV_M134",
+        "LSV_Metis",
+    ],
+});
+
 class PCLASS2(SIDE,Base);
 class CLASS2(SIDE,Base): PCLASS2(SIDE,Base) {
-    #define TEMPLATE_FACTION QPCLASS(SIDE_FACTION)
-    #define TEMPLATE_SIDE SIDE_NUMBER
-    #undef TEMPLATE_FACTION
-    #undef TEMPLATE_SIDE
-
     editorSubcategory = QGCLASS(special_forces);
 
     #include "..\wear\uniform_sof.hpp"

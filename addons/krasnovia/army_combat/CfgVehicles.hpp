@@ -1,25 +1,70 @@
 class CfgVehicles {
-    #define TEMPLATE_FACTION QPCLASS(t3_indep)
-    #define TEMPLATE_SIDE 2
-    #include "..\..\..\templates\statics\M2.hpp"
-    #define TEMPLATE_CAMO Ru
-    #include "..\..\..\templates\cars\Karatel.hpp"
-    #include "..\..\..\templates\cars\Typhoon.hpp"
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO Ru_ru
-    #include "..\..\..\templates\tanks\T14.hpp"
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO Guerilla_09
-    #include "..\..\..\templates\cars\Ram_Civilian.hpp"
-    #include "..\..\..\templates\cars\Ram_Armed.hpp"
-    #include "..\..\..\templates\cars\Ram_Advanced.hpp"
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO Olive
-    #include "..\..\..\templates\helicopters\Puma_Civilian.hpp"
-    #include "..\..\..\templates\helicopters\Puma_Military.hpp"
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO Green
-    #include "..\..\..\templates\helicopters\Mi35.hpp"
+    @Vehicles({
+        "faction": "t3_indep",
+        "side": "INDEP",
+        "camo": "Ru",
+        "vehicles": [
+            "M2_High",
+            "M2_Low",
+            "Karatel",
+            "Karatel_HMG",
+            "Karatel_GMG",
+            "Typhoon_Bench",
+            "Typhoon_Covered",
+            "Typhoon_Cargo",
+            "Typhoon_Fuel",
+            "Typhoon_Ammo",
+            "Typhoon_Device",
+            "Typhoon_Repair",
+            "Typhoon_Medical",
+        ],
+    });
+
+    @Vehicles({
+        "faction": "t3_indep",
+        "side": "INDEP",
+        "camo": "Ru_ru",
+        "vehicles": [
+            "T14",
+            "T14_RCWS",
+        ],
+    });
+
+    @Vehicles({
+        "faction": "t3_indep",
+        "side": "INDEP",
+        "camo": "Guerilla_09",
+        "vehicles": [
+            "Ram",
+            "Ram_Covered",
+            "Ram_Comms",
+            "Ram_Fuel",
+            "Ram_HMG",
+            "Ram_MMG",
+            "Ram_AA",
+            "Ram_RCWS",
+            "Ram_M134",
+            "Ram_MRL",
+            "Ram_AT",
+        ],
+    });
+
+    @Vehicles({
+        "faction": "t3_indep",
+        "side": "INDEP",
+        "camo": "Olive",
+        "vehicles": [
+            "Puma",
+            "PumaA",
+            "Cougar_Rescue",
+            "PumaM",
+            "PumaT",
+            "Cougar",
+            "Cougar_Armed",
+            "Cougar_Pylon",
+            {"class": "Mi35", "camo": "Green"},
+        ],
+    });
 
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {

@@ -1,5 +1,5 @@
 class CLASS2(SIDE,Suit): CLASS2(Base,NATION) {
-    side = TEMPLATE_SIDE;
+    side = SIDE_NUMBER;
     editorSubcategory = QCLASS2(NATION,Security_Suit);
     faction = FACTION;
 
@@ -32,6 +32,22 @@ class CLASS2(SIDE,Suit_Rifleman_Pistol): CLASS2(SIDE,Suit) {
         "packs": [
             "t4_standard",
         ],
+    });
+};
+class CLASS2(SIDE,HeliPilot): CLASS2(SIDE,Suit) {
+    @Role(HeliPilot);
+    #include "weapons\pistol.hpp"
+    @Vests({
+        "variants": {
+            "Aegis_V_CarrierRigKBT_01_holster_black_F": 1,
+        },
+        "packs": [
+            "t4_standard",
+        ],
+    });
+    @Headgear({
+        "H_PilotHelmetHeli_B": 1,
+        "H_Cap_headphones_blk": 1,
     });
 };
 class CLASS2(SIDE,Suit_Rifleman_SMG): CLASS2(SIDE,Suit) {

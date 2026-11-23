@@ -1,30 +1,73 @@
 class CfgVehicles {
-    #define TEMPLATE_FACTION QPCLASS(t2_opfor)
-    #define TEMPLATE_SIDE 0
-    #include "..\..\..\templates\statics\XM3XX.hpp"
-    #include "..\..\..\templates\statics\Ship.hpp"
-    #define TEMPLATE_CAMO Grey
-    #include "..\..\..\templates\tanks\T14.hpp"
-    #include "..\..\..\templates\tanks\T100.hpp"
-    #include "..\..\..\templates\apc\BM2K.hpp"
-    #include "..\..\..\templates\planes\Xian.hpp"
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO MarineHex
-    #include "..\..\..\templates\apc\Otokar.hpp"
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO Black
-    #include "..\..\..\templates\helicopters\Ka54.hpp"
-    #include "..\..\..\templates\helicopters\Orca_Civilian.hpp"
-    #include "..\..\..\templates\helicopters\Orca_Military.hpp"
-    #include "..\..\..\templates\helicopters\Taru.hpp"
-    #include "..\..\..\templates\cars\Ram_Civilian.hpp"
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO Opfor
-    #include "..\..\..\templates\boats\ABoat_M134.hpp"
-    #include "..\..\..\templates\boats\ABoat_HMG.hpp"
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO Green
-    #include "..\..\..\templates\statics\Mk6.hpp"
+    @Vehicles({
+        "faction": "t2_opfor",
+        "side": "OPFOR",
+        "camo": "Grey",
+        "vehicles": [
+            "XM_GMG_High",
+            "XM_GMG_Low",
+            "XM_HMG_High",
+            "XM_HMG_Low",
+            "Ship_CIWS",
+            "Ship_BoxIR",
+            "Ship_BoxARH",
+            "Ship_Gun",
+            "Ship_VLS",
+            "T14",
+            "T14_RCWS",
+            "T100",
+            "BM2_IFV2",
+            "Xian_Transport",
+            "Xian_Cargo",
+        ],
+    });
+
+    @Vehicles({
+        "faction": "t2_opfor",
+        "side": "OPFOR",
+        "camo": "MarineHex",
+        "vehicles": [
+            "Otokar",
+            "Otokar_HMG",
+            "Otokar_RCWS",
+        ],
+    });
+
+    @Vehicles({
+        "faction": "t2_opfor",
+        "side": "OPFOR",
+        "camo": "Black",
+        "vehicles": [
+            "Ka54",
+            "Orca",
+            "OrcaAR",
+            "OrcaR",
+            "OrcaArmed",
+            "Taru",
+            "Taru_Ammo",
+            "Taru_Bench",
+            "Taru_Container",
+            "Taru_Fuel",
+            "Taru_Medevac",
+            "Taru_Repair",
+            "Taru_Covered",
+            "Ram",
+            "Ram_Covered",
+            "Ram_Comms",
+            "Ram_Fuel",
+        ],
+    });
+
+    @Vehicles({
+        "faction": "t2_opfor",
+        "side": "OPFOR",
+        "camo": "Opfor",
+        "vehicles": [
+            "AssaultBoat_M134",
+            "AssaultBoat_HMG",
+            {"class": "Mk6Mortar", "camo": "Green"},
+        ],
+    });
 
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {

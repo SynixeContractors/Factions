@@ -1,40 +1,106 @@
 class CfgVehicles {
-    #define TEMPLATE_FACTION QPCLASS(t2_blufor)
-    #define TEMPLATE_SIDE 1
-    #include "..\..\..\templates\statics\M2.hpp"
-    #include "..\..\..\templates\statics\Ship.hpp"
-    #define TEMPLATE_CAMO Desert
-    #include "..\..\..\templates\statics\SAM01.hpp"
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO Karzeg_01
-    #include "..\..\..\templates\apc\Pandur.hpp"
-    #include "..\..\..\templates\helicopters\Puma_Military.hpp"
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO KZG_01
-    #include "..\..\..\templates\tanks\Leopard.hpp"
-    #include "..\..\..\templates\tanks\Merkava.hpp"
-    #include "..\..\..\templates\tanks\Merkava_SPG.hpp"
-    #include "..\..\..\templates\apc\Namer.hpp"
-    #include "..\..\..\templates\cars\Fennek.hpp"
-    #include "..\..\..\templates\cars\Polaris.hpp"
-    #include "..\..\..\templates\cars\Ram_Civilian.hpp"
-    #include "..\..\..\templates\cars\Ram_Armed.hpp"
-    #include "..\..\..\templates\cars\Ram_Advanced.hpp"
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO KZG
-    #include "..\..\..\templates\cars\Offroad_Civilian.hpp"
-    #include "..\..\..\templates\cars\HEMTT.hpp"
-    #include "..\..\..\templates\helicopters\Wildcat.hpp"
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO Khaybaran
-    #include "..\..\..\templates\planes\FA181.hpp"
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO Default
-    #include "..\..\..\templates\drones\MQ47.hpp"
-    #undef TEMPLATE_CAMO
-    #define TEMPLATE_CAMO Sand
-    #include "..\..\..\templates\drones\MQ12.hpp"
+    @Vehicles({
+        "faction": "t2_blufor",
+        "side": "BLUFOR",
+        "camo": "Desert",
+        "vehicles": [
+            "M2_High",
+            "M2_Low",
+            "Ship_CIWS",
+            "Ship_BoxIR",
+            "Ship_BoxARH",
+            "Ship_Gun",
+            "Ship_VLS",
+            "Radar01",
+            "SAM01",
+        ],
+    });
 
+    @Vehicles({
+        "faction": "t2_blufor",
+        "side": "BLUFOR",
+        "camo": "Karzeg_01",
+        "vehicles": [
+            "Pandur",
+            "PumaM",
+            "PumaT",
+            "Cougar",
+            "Cougar_Armed",
+            "Cougar_Pylon",
+        ],
+    });
+
+    @Vehicles({
+        "faction": "t2_blufor",
+        "side": "BLUFOR",
+        "camo": "KZG_01",
+        "vehicles": [
+            "Leopard2",
+            "Merkava",
+            "Merkava_TUSK",
+            "Merkava_SPG",
+            "Merkava_MLRS",
+            "Namer",
+            "Namer_AA",
+            "Namer_RCWS",
+            "Namer_CEV",
+            "Fennek",
+            "Fennek_HMG",
+            "Fennek_GMG",
+            "Polaris",
+            "Polaris_NoDoor",
+            "Polaris_Titan",
+            "Polaris_HMG",
+            "Ram",
+            "Ram_Covered",
+            "Ram_Comms",
+            "Ram_Fuel",
+            "Ram_HMG",
+            "Ram_MMG",
+            "Ram_AA",
+            "Ram_RCWS",
+            "Ram_M134",
+            "Ram_MRL",
+            "Ram_AT",
+        ],
+    });
+
+    @Vehicles({
+        "faction": "t2_blufor",
+        "side": "BLUFOR",
+        "camo": "KZG",
+        "vehicles": [
+            "Offroad",
+            "Offroad_Covered",
+            "Offroad_Comms",
+            "Offroad_Services",
+            "HEMTT",
+            "HEMTT_Cargo",
+            "HEMTT_Flatbed",
+            "HEMTT_Repair",
+            "HEMTT_Container",
+            "HEMTT_Bench",
+            "HEMTT_Covered",
+            "HEMTT_Medical",
+            "HEMTT_Fuel",
+            "HEMTT_Ammo",
+            "HEMTT_FireTruck",
+            "Wildcat",
+            "Wildcat_Pylons",
+        ],
+    });
+
+    @Vehicles({
+        "faction": "t2_blufor",
+        "side": "BLUFOR",
+        "camo": "Khaybaran",
+        "vehicles": [
+            "FA181",
+            "FA181_Stealth",
+            {"class": "MQ47", "camo": "Default"},
+            {"class": "MQ12", "camo": "Sand"},
+        ],
+    });
 
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {

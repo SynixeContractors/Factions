@@ -1,21 +1,6 @@
-#define EMPTY_INVENTORY class TransportItems {}; \
-    class TransportMagazines {}; \
-    class TransportWeapons {}; \
-    class TransportBackpacks {}
-
-#define SCOPE_DLC_VEHICLE side = 3; \
-    scope = 2; \
-    scopeCurator = 2; \
-    forceInGarage = 1
-
-// Pylon macros
-#include "pylons\pylons.hpp"
 class EventHandlers;
 
 class CfgVehicles {
-    #define HIDEBROKEN
-    //we might be able to fix those textures and its gonna save copypasting
-
     // Cars
     #include "CfgVehicles_Arcadian.hpp"
     #include "CfgVehicles_Fennek.hpp"
@@ -37,6 +22,7 @@ class CfgVehicles {
     #include "CfgVehicles_Typhoon.hpp"
     #include "CfgVehicles_Van.hpp"
     #include "CfgVehicles_HEMTT.hpp"
+    #include "CfgVehicles_Police.hpp"
 
     // APCS
     #include "CfgVehicles_Badger.hpp"

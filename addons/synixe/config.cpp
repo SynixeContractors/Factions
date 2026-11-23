@@ -14,6 +14,14 @@ class CfgPatches {
     };
 };
 
+class CfgEditorCategories {
+    class SynixeContractors {
+        scope = 2;
+        curatorScope = 2;
+        displayName = "Synixe Contractors";
+    };
+};
+
 #include "CfgFactionClasses.hpp"
 #include "CfgGroups.hpp"
 #include "CfgVehicles.hpp"

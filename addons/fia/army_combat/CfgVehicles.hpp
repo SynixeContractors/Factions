@@ -1,12 +1,45 @@
-#include "CfgVehicles_Cars.hpp"
+@Vehicles({
+    "faction": "QPCLASS(SIDE_FACTION)",
+    "side": "SIDE_NUMBER",
+    "camo": "Loyalist",
+    "crew": "Rifleman",
+    "prefix": "SIDE",
+    "vehicles": [
+        "BTR",
+        "BTR_SPG",
+    ],
+});
+
+//military styled rams
+@Vehicles({
+    "faction": "QPCLASS(SIDE_FACTION)",
+    "side": "SIDE_NUMBER",
+    "camo": "AAF",
+    "prefix": "SIDE",
+    "vehicles": [
+        "Ram_MMG",
+        "Ram_RCWS",
+        "Ram_M134",
+        "Ram_Comms",
+        "Ram_MRL",
+        "Ram_AA",
+        "Ram_AT",
+    ],
+});
+
+@Vehicles({
+    "faction": "QPCLASS(SIDE_FACTION)",
+    "side": "SIDE_NUMBER",
+    "camo": "Indep",
+    "prefix": "SIDE",
+    "vehicles": [
+        "LUT_Ammo",
+        "LUT_MRL",
+    ],
+});
 
 class PCLASS2(SIDE,Base);
 class CLASS2(SIDE,Base): PCLASS2(SIDE,Base) {
-    #define TEMPLATE_FACTION QPCLASS(SIDE_FACTION)
-    #define TEMPLATE_SIDE SIDE_NUMBER
-    #undef TEMPLATE_FACTION
-    #undef TEMPLATE_SIDE
-
     displayName = "FIA Army Combat";
     editorSubcategory = QGCLASS(army_combat);
 

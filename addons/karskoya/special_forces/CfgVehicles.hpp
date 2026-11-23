@@ -1,7 +1,37 @@
 class CfgVehicles {
-    #include "CfgVehicles_Ram.hpp"
-    #include "CfgVehicles_LSV.hpp"
-    
+    @Vehicles({
+        "faction": "t3_blufor",
+        "side": "BLUFOR",
+        "camo": "NATO_P",
+        "vehicles": [
+            "Ram_M134",
+            {
+                "class": "Ram_RCWS",
+                "animationList": ["hide_bullbar", 0, "hide_snorkel", 1, "hide_trunk_door", 0, "hide_sidesteps", 0, "hide_frame", 0, "hide_frame_full", 0, "hide_frame_full_panel", 0, "hide_armor_window_armor_top", 0],
+            },
+        ],
+    });
+
+    @Vehicles({
+        "faction": "t3_blufor",
+        "side": "BLUFOR",
+        "camo": "Green",
+        "vehicles": [
+            {
+                "class": "LSV",
+                "editorPreview": "\\A3_Aegis\\EditorPreviews_F_Aegis\\Data\\CfgVehicles\\O_R_LSV_02_unarmed_F.jpg",
+            },
+            {
+                "class": "LSV_M134",
+                "editorPreview": "\\A3_Aegis\\EditorPreviews_F_Aegis\\Data\\CfgVehicles\\O_R_LSV_02_armed_F.jpg",
+            },
+            {
+                "class": "LSV_Metis",
+                "editorPreview": "\\A3_Aegis\\EditorPreviews_F_Aegis\\Data\\CfgVehicles\\O_R_LSV_02_AT_F.jpg",
+            },
+        ],
+    });
+
     class PCLASS(Base);
     class CLASS(Base): PCLASS(Base) {
         displayName = "Karskoya Base Army SOF";

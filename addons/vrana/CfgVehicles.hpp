@@ -7,15 +7,6 @@ class CfgVehicles {
         @Assigned(Civilian);
     };
 
-    class GCLASS(Van_Cargo);
-    class GCLASS(Van_Transport);
-    class GCLASS(Van_Service);
-
-    class GCLASS(MD500E);
-    class GCLASS(Mohawk);
-    class GCLASS(Mohawk_Executive);
-
-
     @For(Identities)
         class CLASS2(Base,$1): CLASS(Base) {
             displayName = "$1 Vrana Base Unit";
