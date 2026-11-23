@@ -33,6 +33,10 @@ class CLASS2(SIDE,Base): PCLASS2(SIDE,Base) {
             "V_PlateCarrier1_rgr_noflag_F": 1,
             "V_PlateCarrier1_blk": 1,
             "V_CF_CarrierRig_Lite_F": 1,
+            "V_SmershVest_01_F": 1,
+            "V_ChestrigF_rgr": 1,
+            "V_TacChestrig_grn_F": 1,
+            "V_SmershVest_01_radio_F": 1,
         },
         "packs": [
             "military_standard",
@@ -41,7 +45,6 @@ class CLASS2(SIDE,Base): PCLASS2(SIDE,Base) {
     });
 
     @Headgear({
-        "H_HelmetSpecter_black_F": 1,
         "H_HelmetSpecter_F": 1,
         "H_HelmetSpecter_paint_F": 1,
         "H_Watchcap_camo": 1,
@@ -50,6 +53,9 @@ class CLASS2(SIDE,Base): PCLASS2(SIDE,Base) {
         "H_Cap_headphones": 1,
         "H_Cap_headphones_rvs": 1,
         "JCA_H_Headset_Combat_01_black_F": 1,
+        "Atlas_H_PASGT_Cover_Olive_F": 1,
+        "Atlas_H_PASGT_Cover_alt_Black_F": 1,
+        "Atlas_H_PASGT_Cover_wdl_F": 1,
         "": 1,
     });
 
@@ -59,6 +65,7 @@ class CLASS2(SIDE,Base): PCLASS2(SIDE,Base) {
         "G_Balaclava_blk_lxWS": 1,
         "synixe_mgp_f_face_shield_rgr": 1,
         "synixe_mgp_f_face_shield_blk": 1,
+        "": 1,
     });
 
     @Assigned(Military);
@@ -221,6 +228,14 @@ class CLASS2(SIDE,Autorifleman): CLASS2(SIDE,Base) {
                 },
                 "magazinesBackpack": {
                     "Aegis_45Rnd_545x39_Mag_Green_F": 6,
+                },
+            },
+            "arifle_RPK_F": {
+                "magazinesVest": {
+                    "75Rnd_762x39_Mag_Green_F": 3,
+                },
+                "magazinesBackpack": {
+                    "75Rnd_762x39_Mag_Green_F": 3,
                 },
             },
         },
