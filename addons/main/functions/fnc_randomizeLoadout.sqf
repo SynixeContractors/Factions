@@ -33,7 +33,9 @@ if (_cache isEqualTo []) exitWith {true};
         _loadout set [_x, ["", []]];
         _slot = _loadout select _x;
     };
-    _slot set [0, selectRandomWeighted (_cached select 0)];
+    if (count (_cached select 0) > 0) then {
+        _slot set [0, selectRandomWeighted (_cached select 0)];
+    };
     if (!_packs) then { continue; };
     private _packs = _cached select 1;
     private _items = +(_cached select 2);
@@ -64,7 +66,9 @@ if (_cache isEqualTo []) exitWith {true};
         _weaponOptions pushBack (_x select 0);
         _weaponOptions pushBack (_x select 1);
     } forEach (_cached select 0);
-    _slot set [0, selectRandomWeighted _weaponOptions];
+    if (count _weaponOptions > 0) then {
+        _slot set [0, selectRandomWeighted _weaponOptions];
+    };
 
     {
         private _items = _cached select (_forEachIndex + 1);
@@ -77,7 +81,7 @@ if (_cache isEqualTo []) exitWith {true};
 {
     private _cached = _cache select _x;
     if (_cached isEqualTo []) then {
-        _loadout set [_x, []];
+        _loadout set [_x, ""];
         continue;
     };
     _loadout set [_x, selectRandomWeighted _cached];
