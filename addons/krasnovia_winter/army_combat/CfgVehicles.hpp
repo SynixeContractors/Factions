@@ -6,8 +6,14 @@ class CfgVehicles {
         "vehicles": [
             "M2_High",
             "M2_Low",
-            "T14",
-            "T14_RCWS",
+            {
+              "class": "T14",
+              "animationList": ["showCamonetCannon", 1,"showCamonetHull", 1, "showCamonetTurret", 1]
+            },
+            {
+              "class": "T14_RCWS",
+              "animationList": ["showCamonetCannon", 1,"showCamonetHull", 1, "showCamonetTurret", 1]
+            },
         ],
     });
 
@@ -33,7 +39,7 @@ class CfgVehicles {
     @Vehicles({
         "faction": "t3_indep",
         "side": "INDEP",
-        "camo": "Guerilla_09",
+        "camo": "Tundra",
         "vehicles": [
             "Ram",
             "Ram_Covered",

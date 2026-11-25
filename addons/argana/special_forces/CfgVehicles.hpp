@@ -23,9 +23,11 @@ class CfgVehicles {
     @Vehicles({
         "faction": "t4_opfor",
         "side": "OPFOR",
-        "camo": "Green",
+        "camo": "Sand",
         "vehicles": [
-            "Orca",
+            "MD500",
+            "MD500E",
+            "MD500E_Armed",
         ],
     });
 

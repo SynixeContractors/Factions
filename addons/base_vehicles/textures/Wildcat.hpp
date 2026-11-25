@@ -15,12 +15,12 @@ class TextureSources {
         factions[] = {};
     };
     class NAVY {
-        displayName = "NAVY";
+        displayName = "Grey (Navy)";
         textures[] = {"\lxRF\air_rf\Heli_Light_03\data\Heli_Light_03_base_navy_CO.paa","a3\weapons_f\ammoboxes\data\ammobox_co.paa","a3\weapons_f\ammoboxes\data\ammobox_signs_ca.paa"};
         factions[] = {};
     };
     class NAVY_CAMO {
-        displayName = "NAVY (Camo)";
+        displayName = "Tundra";
         textures[] = {"\lxRF\air_rf\Heli_Light_03\data\Heli_Light_03_base_navy_camo_CO.paa","a3\weapons_f\ammoboxes\data\ammobox_co.paa","a3\weapons_f\ammoboxes\data\ammobox_signs_ca.paa"};
         factions[] = {};
     };

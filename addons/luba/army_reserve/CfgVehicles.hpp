@@ -2,7 +2,7 @@ class CfgVehicles {
     @Vehicles({
         "faction": "t3_indep",
         "side": "INDEP",
-        "camo": "Insurgent_06",
+        "camo": "SFIA2",
         "vehicles": [
             "M2_High",
             "M2_Low",
