@@ -8,7 +8,7 @@ class CfgPatches {
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
             "synixe_factions_base_vehicles",
-            "synixe_factions_police_SUBCOMPONENT",
+            "synixe_factions_police",
         };
         author = "Synixe Contractors";
         VERSION_CONFIG;
