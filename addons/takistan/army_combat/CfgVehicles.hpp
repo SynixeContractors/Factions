@@ -36,61 +36,21 @@ class CfgVehicles {
     });
 
     // LUT
-
     @Vehicles({
         "faction": "t4_indep",
         "side": "INDEP",
-        "camo": ["Ardistan", "RUS"],
+        "camo": ["Ardistan", "SFIA", "Jungle", "Black", "Blue"],
         "vehicles": [
-            {
-                "class": "LUT_MRL",
-                "editorPreview": "\\A3_Aegis\\EditorPreviews_F_Aegis\\Data\\CfgVehicles\\O_Truck_02_MRL_F.jpg",
-            },
-        ],
-    });
-
-    @Vehicles({
-        "faction": "t4_indep",
-        "side": "INDEP",
-        "camo": ["SFIA", "Brown", "RUS"],
-        "vehicles": [
-            {
-                "class": "LUT_AA",
-                "editorPreview": "\\A3_Aegis\\EditorPreviews_F_Aegis\\Data\\CfgVehicles\\Aegis_O_A_Truck_02_aa_F.jpg",
-                "animationList": ["hideSpareWheel", 0.5, "hideBumper", 0.5, "hideWindowProtector", 0.77, "hideCrates", 0, "shield_hide", 0.11],
-            },
-        ],
-    });
-
-    @Vehicles({
-        "faction": "t4_indep",
-        "side": "INDEP",
-        "camo": ["Ardistan", "SFIA", "Jungle", "Black"],
-        "vehicles": [
-            {
-                "class": "LUT_Transport",
-                "editorPreview": "\\A3_Atlas\\EditorPreviews_F_Atlas\\Data\\CfgVehicles\\Atlas_O_W_Truck_02_transport_F.jpg",
-            },
-            {
-                "class": "LUT_TransportCovered",
-                "editorPreview": "\\MU\\MU_MILITIA\\data\\preview\\O_MU_MIL_Truck_02_covered_F.jpg",
-            },
-        ],
-    });
-
-    @Vehicles({
-        "faction": "t4_indep",
-        "side": "INDEP",
-        "camo": ["Ardistan", "Mudwalker", "Jungle", "Black", "Blue"],
-        "vehicles": [
-            {
-                "class": "LUT_Flatbed",
-                "editorPreview": "\\lxws\\editorpreviews_f_lxws\\Data\\CfgVehicles\\O_Truck_02_flatbed_lxWS.jpg",
-            },
-            {
-                "class": "LUT_Cargo",
-                "editorPreview": "\\lxws\\editorpreviews_f_lxws\\Data\\CfgVehicles\\O_Truck_02_flatbed_lxWS.jpg",
-            },
+            "LUT_Flatbed",
+            "LUT_Cargo",
+            "LUT_Fuel",
+            "LUT_Repair",
+            "LUT_Ammo",
+            "LUT_Medical",
+            "LUT_AA",
+            "LUT_MRL",
+            "LUT_Transport",
+            "LUT_TransportCovered",
         ],
     });
 
@@ -106,19 +66,15 @@ class CfgVehicles {
     @Vehicles({
         "faction": "t4_indep",
         "side": "INDEP",
-        "camo": "Takistan",
+        "camo": "Sand",
         "vehicles": [
             "BTR",
             "BTR_IFV",
             "BTR_SPG",
             "BM2_IFV1",
             "BM2_IFV2",
-            {"class": "BM2_AA", "camo": "Sand"},
+            "BM2_AA",
             "T100",
-            "LUT_Fuel",
-            "LUT_Repair",
-            "LUT_Ammo",
-            "LUT_Medical",
             "Mi35",
             "Orca",
         ],
@@ -128,7 +84,7 @@ class CfgVehicles {
     class CLASS(Base): PCLASS(Base) {
         displayName = "Takistan Base Army Combat";
         editorSubcategory = QGCLASS(army_combat);
-        
+
         @Uniforms({
             "variants": {
                 "Atlas_U_I_Afghanka_01_ardi_full_F": 1,
@@ -382,7 +338,7 @@ class CfgVehicles {
                 },
             },
         });
-        
+
         @Backpacks({
             "variants": {
                 "B_FieldPack_khk": 1,
@@ -602,4 +558,3 @@ class CfgVehicles {
         });
     };
 };
-
