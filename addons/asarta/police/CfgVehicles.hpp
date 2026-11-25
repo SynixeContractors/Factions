@@ -38,26 +38,26 @@ class CfgVehicles {
     };
     class CLASS(Rifleman): CLASS(Base) {
         @Role(Rifleman);
-        #include "../weapons/rifle.hpp"
+        #include "..\weapons\rifle.hpp"
     };
     class CLASS(RiflemanCarabine): CLASS(Base) {
         @Role(Hidden);
-        #include "../weapons/rifle.hpp"
+        #include "..\weapons\rifle.hpp"
     };
     class CLASS(TeamLeader): CLASS(RiflemanCarabine) {
         @Role(TeamLeader);
     };
     class CLASS(RiflemanPistol): CLASS(Base) {
         @Role(Pistol);
-        #include "../weapons/pistol.hpp"
+        #include "..\weapons\pistol.hpp"
     };
     class CLASS(RiflemanSMG): CLASS(Base) {
         @Role(SMG);
-        #include "../weapons/smg.hpp"
+        #include "..\weapons\smg.hpp"
     };
     class CLASS(Breacher): CLASS(RiflemanPistol) {
         @Role(Breacher);
-        #include "../../police/weapons/shotgun.hpp"
+        #include "..\..\police\weapons\shotgun.hpp"
     };
 
     //SWAT
@@ -87,19 +87,19 @@ class CfgVehicles {
     };
     class CLASS(SWATBreacher): CLASS(SWAT) {
         @Role(Breacher);
-        #include "../../police/weapons/shotgun.hpp"
+        #include "..\..\police\weapons\shotgun.hpp"
     };
     class CLASS(SWATSMG): CLASS(SWAT) {
         @Role(SMG);
-        #include "../weapons/smg.hpp"
+        #include "..\weapons\smg.hpp"
     };
     class CLASS(SWATRifle): CLASS(SWAT) {
         @Role(Rifleman);
-        #include "../weapons/rifle.hpp"
+        #include "..\weapons\rifle.hpp"
     };
     class CLASS(SWATDemo): CLASS(SWAT) {
         @Role(Demolitions);
-        #include "../weapons/smg.hpp"
+        #include "..\weapons\smg.hpp"
         @Headgear({
             "H_HelmetHeavy_Black_RF": 1,
         });
@@ -114,6 +114,6 @@ class CfgVehicles {
     };
     class CLASS(SWATSniper): CLASS(SWAT) {
         @Role(Sniper);
-        #include "../weapons/marksman.hpp"
+        #include "..\weapons\marksman.hpp"
     };
 };
