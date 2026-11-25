@@ -74,8 +74,23 @@ class CfgVehicles {
             "BM2_IFV1",
             "BM2_IFV2",
             "BM2_AA",
+        ],
+    });
+
+    @Vehicles({
+        "faction": "t4_indep",
+        "side": "INDEP",
+        "camo": "SFIA",
+        "vehicles": [
             "T100",
             "Mi35",
+        ],
+    });
+    @Vehicles({
+        "faction": "t4_indep",
+        "side": "INDEP",
+        "camo": "Ardistan",
+        "vehicles": [
             "Orca",
         ],
     });
