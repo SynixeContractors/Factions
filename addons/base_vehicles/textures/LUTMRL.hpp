@@ -180,4 +180,14 @@ class TextureSources {
         };
         factions[] = {};
     };
+    class Blue {
+        displayName = "Blue";
+        textures[] = {
+            "\A3\Soft_F_Beta\Truck_02\Data\Truck_02_kab_blue_CO.paa",
+            "\a3\soft_f_beta\truck_02\data\truck_02_int_co.paa",
+            "\A3_Aegis\Soft_F_Aegis\Truck_02\Data\Truck_02_MRL_RUkhk_CO.paa",
+            "\A3\Soft_F_Beta\Truck_02\Data\Truck_02_chassis_CO.paa",
+        };
+        factions[] = {};
+    };
 };
