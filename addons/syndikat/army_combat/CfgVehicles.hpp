@@ -110,7 +110,7 @@ class CfgVehicles {
                         "30Rnd_556x45_Stanag_Sand_red": 6,
                     },
                 },
-                "arifle_AKM_F": {
+                "arifle_AKM_FL_F": {
                     "probability": 1,
                     "magazinesVest": {
                         "30Rnd_762x39_Mag_F": 6,
@@ -146,6 +146,9 @@ class CfgVehicles {
                         "30Rnd_545x39_Mag_F": 6,
                     },
                 },
+            },
+            "pointers": {
+                "JCA_acc_LightMount_Pistol_black": 1,
             },
         });
     };
@@ -236,6 +239,9 @@ class CfgVehicles {
                     "loadedSecondary": "1Rnd_HEDP_Grenade_shell",
                 },
             },
+            "pointers": {
+                "acc_flashlight": 1,
+            },
         });
     };
     class CLASS(Autorifleman): CLASS(Rifleman) {
@@ -255,6 +261,9 @@ class CfgVehicles {
                         "75Rnd_762x39_Mag_F": 5,
                     },
                 },
+            },
+            "pointers": {
+                "acc_flashlight": 1,
             },
         });
 
@@ -362,7 +371,7 @@ class CfgVehicles {
 
         @Primary({
             "weapons": {
-                "arifle_SLR_V_lxWS": {
+                "arifle_SLR_lxWS": {
                     "probability": 1,
                     "magazinesVest": {
                         "Aegis_20Rnd_762x51_slr_reload_tracer_red_lxWS": 7,
@@ -377,7 +386,10 @@ class CfgVehicles {
             },
             "optics": {
                 "optic_DMS_weathered_F": 1,
-            }
+            },
+            "pointers": {
+                "acc_flashlight": 1,
+            },
         });
     };
 };
