@@ -138,43 +138,43 @@ class TextureSources {
         factions[] = {};
     };
     class CAMO_SFIA {
-        displayName = "Camo 1";
+        displayName = "Mudwalker";
         textures[] = {"\lxRF\air_rf\heli_medium_ec\data\as332_exterior_01_sfia_co.paa","\lxRF\air_rf\heli_medium_ec\data\as332_int_cargo_co.paa","#(rgb,1024,1024,1)ui('lxRF_MFDMinimap','lxRF_MFDMinimap')","\lxRF\air_rf\heli_medium_ec\data\as332_adds_01_sfia_co.paa","\lxRF\air_rf\heli_medium_ec\data\as332_exterior_01_sfia_co.paa","\lxRF\air_rf\heli_medium_ec\data\as332_int_cargo_co.paa"};
         materials[] = {"\lxrf\air_rf\heli_medium_ec\data\as332_exterior_01.rvmat","\lxrf\air_rf\heli_medium_ec\data\as332_int_cargo.rvmat"};
         factions[] = {};
     };
     class CAMO_AFRICA {
-        displayName = "Camo 2";
+        displayName = "Mudwalker (Alt)";
         textures[] = {"\lxRF\air_rf\heli_medium_ec\data\as332_exterior_25_africa_co.paa","\lxRF\air_rf\heli_medium_ec\data\as332_int_cargo_co.paa","#(rgb,1024,1024,1)ui('lxRF_MFDMinimap','lxRF_MFDMinimap')","\lxRF\air_rf\heli_medium_ec\data\as332_adds_25_africa_co.paa","\lxRF\air_rf\heli_medium_ec\data\as332_exterior_25_africa_co.paa","\lxRF\air_rf\heli_medium_ec\data\as332_int_cargo_co.paa"};
         materials[] = {"\lxrf\air_rf\heli_medium_ec\data\as332_exterior_01.rvmat","\lxrf\air_rf\heli_medium_ec\data\as332_int_cargo.rvmat"};
         factions[] = {};
     };
     class CAMO_SNOW {
-        displayName = "Camo 3";
+        displayName = "Winter";
         textures[] = {"\lxRF\air_rf\heli_medium_ec\data\as332_exterior_27_snow_co.paa","\lxRF\air_rf\heli_medium_ec\data\as332_int_cargo_co.paa","#(rgb,1024,1024,1)ui('lxRF_MFDMinimap','lxRF_MFDMinimap')","\lxRF\air_rf\heli_medium_ec\data\as332_adds_27_snow_co.paa","\lxRF\air_rf\heli_medium_ec\data\as332_exterior_27_snow_co.paa","\lxRF\air_rf\heli_medium_ec\data\as332_int_cargo_co.paa"};
         materials[] = {"\lxrf\air_rf\heli_medium_ec\data\as332_exterior_01.rvmat","\lxrf\air_rf\heli_medium_ec\data\as332_int_cargo.rvmat"};
         factions[] = {};
     };
     class CAMO_DESERT {
-        displayName = "Camo 4";
+        displayName = "Desert";
         textures[] = {"\lxRF\air_rf\heli_medium_ec\data\as332_exterior_28_desert_co.paa","\lxRF\air_rf\heli_medium_ec\data\as332_int_cargo_co.paa","#(rgb,1024,1024,1)ui('lxRF_MFDMinimap','lxRF_MFDMinimap')","\lxRF\air_rf\heli_medium_ec\data\as332_adds_28_desert_co.paa","\lxRF\air_rf\heli_medium_ec\data\as332_exterior_28_desert_co.paa","\lxRF\air_rf\heli_medium_ec\data\as332_int_cargo_co.paa"};
         materials[] = {"\lxrf\air_rf\heli_medium_ec\data\as332_exterior_01.rvmat","\lxrf\air_rf\heli_medium_ec\data\as332_int_cargo.rvmat"};
         factions[] = {};
     };
     class CAMO_FRENCH {
-        displayName = "Camo 5";
+        displayName = "Woodland";
         textures[] = {"\lxRF\air_rf\heli_medium_ec\data\as332_exterior_30_french_co.paa","\lxRF\air_rf\heli_medium_ec\data\as332_int_cargo_co.paa","#(rgb,1024,1024,1)ui('lxRF_MFDMinimap','lxRF_MFDMinimap')","\lxRF\air_rf\heli_medium_ec\data\as332_adds_30_french_co.paa","\lxRF\air_rf\heli_medium_ec\data\as332_exterior_30_french_co.paa","\lxRF\air_rf\heli_medium_ec\data\as332_int_cargo_co.paa"};
         materials[] = {"\lxrf\air_rf\heli_medium_ec\data\as332_exterior_01.rvmat","\lxrf\air_rf\heli_medium_ec\data\as332_int_cargo.rvmat"};
         factions[] = {};
     };
     class CAMO_HELLENIC {
-        displayName = "Camo 6";
+        displayName = "Tundra";
         textures[] = {"\lxRF\air_rf\heli_medium_ec\data\as332_exterior_31_hellenic_co.paa","\lxRF\air_rf\heli_medium_ec\data\as332_int_cargo_co.paa","#(rgb,1024,1024,1)ui('lxRF_MFDMinimap','lxRF_MFDMinimap')","\lxRF\air_rf\heli_medium_ec\data\as332_adds_31_hellenic_co.paa","\lxRF\air_rf\heli_medium_ec\data\as332_exterior_31_hellenic_co.paa","\lxRF\air_rf\heli_medium_ec\data\as332_int_cargo_co.paa"};
         materials[] = {"\lxrf\air_rf\heli_medium_ec\data\as332_exterior_01.rvmat","\lxrf\air_rf\heli_medium_ec\data\as332_int_cargo.rvmat"};
         factions[] = {};
     };
     class CAMO_SWISS {
-        displayName = "Camo 7";
+        displayName = "Autumn";
         textures[] = {"\lxRF\air_rf\heli_medium_ec\data\as332_exterior_32_swiss_co.paa","\lxRF\air_rf\heli_medium_ec\data\as332_int_cargo_co.paa","#(rgb,1024,1024,1)ui('lxRF_MFDMinimap','lxRF_MFDMinimap')","\lxRF\air_rf\heli_medium_ec\data\as332_adds_32_swiss_co.paa","\lxRF\air_rf\heli_medium_ec\data\as332_exterior_32_swiss_co.paa","\lxRF\air_rf\heli_medium_ec\data\as332_int_cargo_co.paa"};
         materials[] = {"\lxrf\air_rf\heli_medium_ec\data\as332_exterior_01.rvmat","\lxrf\air_rf\heli_medium_ec\data\as332_int_cargo.rvmat"};
         factions[] = {};

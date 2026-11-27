@@ -48,16 +48,28 @@ class CfgVehicles {
         "vehicles": [
             "PumaM",
             "PumaT",
+            "Cougar",
             "Cougar_Armed",
+            "Cougar_Pylon",
         ],
     });
 
     @Vehicles({
         "faction": "t3_indep",
         "side": "INDEP",
-        "camo": "Takistan",
+        "camo": "Guerilla_08",
         "vehicles": [
-            "Mi35",
+            "Ram",
+            "Ram_Covered",
+            "Ram_Comms",
+            "Ram_Fuel",
+            "Ram_HMG",
+            "Ram_MMG",
+            "Ram_AA",
+            "Ram_RCWS",
+            "Ram_M134",
+            "Ram_MRL",
+            "Ram_AT",
         ],
     });
 

@@ -10,6 +10,7 @@ class CfgVehicles {
             "BTR_IFV",
             "BTR_SPG",
             "BM2_IFV2",
+            "BM2_AA"
         ],
     });
 
@@ -34,8 +35,7 @@ class CfgVehicles {
             "LUT_TransportCovered",
             "Yak130",
             {"class": "T100", "camo": "Ardistan_green"},
-            {"class": "T100_SPG", "camo": "Green_green"},
-            {"class": "BM2_AA", "camo": "Green"},
+            {"class": "T100_SPG", "camo": "Ardistan_green"},
         ],
     });
 
@@ -43,7 +43,7 @@ class CfgVehicles {
     class CLASS(Base): PCLASS(Base) {
         displayName = "Viatka Base Army Combat";
         editorSubcategory = QGCLASS(army_combat);
-        
+
         @Uniforms({
             "variants": {
                 "Atlas_U_I_Afghanka_01_ardi_full_F": 1,
@@ -183,7 +183,7 @@ class CfgVehicles {
                 "acc_pointer_IR": 1,
             },
         });
-        
+
         @Secondary({
             "weapons": {
                 "hgun_G17_black_F": {
@@ -223,7 +223,7 @@ class CfgVehicles {
                 },
             },
         });
-        
+
     };
 
     class CLASS(Machinegunner): CLASS(Autorifleman) {
@@ -318,7 +318,7 @@ class CfgVehicles {
         @Launchers({
             "weapons": {
                 "launch_NLAW_F": {
-                    "loadedPrimary": 
+                    "loadedPrimary":
                         "NLAW_F",
                 },
             },
@@ -352,7 +352,7 @@ class CfgVehicles {
         @Launchers({
             "weapons": {
                 "launch_O_Vorona_green_F": {
-                    "magazinesBackpack": { 
+                    "magazinesBackpack": {
                         "Vorona_HEAT": 2,
                     },
                 },

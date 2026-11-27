@@ -37,6 +37,7 @@ class CfgVehicles {
             "OrcaAR",
             "OrcaR",
             "OrcaArmed",
+            "Apache"
         ],
     });
 

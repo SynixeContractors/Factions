@@ -1,4 +1,16 @@
 class TextureSources {
+    class Ardistan {
+        displayName = "Ardistan";
+        //probably want a bespoke texture, but its better than giving full green AA here
+        textures[] = {
+            "\A3_Atlas\Armor_F_Atlas\APC_Tracked_02\Data\APC_Tracked_02_ext_01_ard_CO.paa",
+            "\A3_Atlas\Armor_F_Atlas\APC_Tracked_02\Data\APC_Tracked_02_ext_02_ard_CO.paa",
+            "\A3_Aegis\Armor_F_Aegis\APC_Tracked_02\Data\APC_Tracked_01_AA_Tower_RUkhk_CO.paa",
+            NET_GREEN,
+            "\A3_Aegis\Armor_F_Aegis\Data\cage_RUkhk_CO.paa"
+        };
+        factions[] = {};
+    };
     class Hex {
         displayName = "Hex Ochre";
         textures[] = {

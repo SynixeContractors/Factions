@@ -96,6 +96,11 @@ class GCLASS(MD500): C_Heli_Light_01_civil_F {
             textures[] = {"\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_wave_co.paa"};
             factions[] = {};
         };
+        class Sand {
+            displayName = "Sand";
+            textures[] = {"\lxWS\air_f_lxWS\Data\NATO\lxWS_Heli_Light_01_ext_sand_CO.paa","\a3\air_f\heli_light_01\data\heli_light_01_dot_ca.paa"};
+            factions[] = {};
+        };
     };
 };
 ADD_CAMO_EVENT_HANDLER(B_Heli_Light_01_F,Heli_Light_01_unarmed_base_F);
