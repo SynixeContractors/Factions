@@ -66,7 +66,7 @@ if (_cache isEqualTo []) exitWith {true};
         _weaponOptions pushBack (_x select 0);
         _weaponOptions pushBack (_x select 1);
     } forEach (_cached select 0);
-    if (count _weaponOptions > 0) then {
+    if (_weaponOptions isNotEqualTo []) then {
         _slot set [0, selectRandomWeighted _weaponOptions];
     };
 
